@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 
 def crawl_economy_news():
-    # 네이버 뉴스 경제 세부 카테고리 (6개 분야로 확장)
     targets = {
         "금융": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=259",
         "증권/주식": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=258",
@@ -24,6 +23,7 @@ def crawl_economy_news():
     for cat_name, url in targets.items():
         try:
             res = requests.get(url, headers=headers, timeout=10)
+            # 이전 undefined 에러 당시 기사를 성공적으로 가져왔던 euc-kr 인코딩 방식 원복
             soup = BeautifulSoup(res.content, 'html.parser', from_encoding='euc-kr')
             
             articles = soup.select('.list_body.newsflash_body ul li')
@@ -39,7 +39,6 @@ def crawl_economy_news():
                 title = target_a.get_text(strip=True)
                 link = target_a.get('href', '')
                 
-                # 언론사 이름 추출 부분 (이전 코드에 없던 핵심 로직)
                 press_elem = li.select_one('.writing')
                 press_name = press_elem.get_text(strip=True) if press_elem else "언론사"
                 
@@ -56,6 +55,7 @@ def crawl_economy_news():
                         count += 1
                         if count > 10: 
                             break
+            print(f"[{cat_name}] {count-1}개 수집 성공")
         except Exception as e:
             print(f"{cat_name} 수집 에러: {e}")
             
@@ -77,7 +77,7 @@ def main():
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
         
-    print(f"경제 뉴스 수집 완료: 총 {len(news_data)}개 기사 저장됨.")
+    print(f"\n최종 수집 완료: 총 {len(news_data)}개 기사 저장됨.")
 
 if __name__ == "__main__":
     main()
