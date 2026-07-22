@@ -2,7 +2,7 @@ name: Economy News Crawler
 
 on:
   schedule:
-    - cron: '30 23,0-15 * * *'
+    - cron: '35 * * * *'  # 매시 35분마다 자동 실행
   workflow_dispatch:
 
 jobs:
@@ -10,26 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Run economy scraper
-      run: python scraper_economy.py
+      - name: Run crawler
+        run: python scraper_economy.py
 
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/economy_news.json
-        git commit -m "Auto update: Economy news data" || exit 0
-        git push
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/economy_news.json
+          git commit -m "Auto update: Economy news data" || exit 0
+          git push
