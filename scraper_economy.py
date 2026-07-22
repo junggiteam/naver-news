@@ -4,6 +4,50 @@ from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
 
+def get_category_news(url):
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
+    }
+    
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        articles = []
+        seen_titles = set()
+        
+        # 네이버 기사 상세 페이지 URL 패턴('/article/')을 가진 태그를 직접 추적
+        a_tags = soup.find_all('a', href=True)
+        
+        for a in a_tags:
+            href = a['href']
+            if '/article/' not in href:
+                continue
+                
+            title = a.get_text(strip=True)
+            
+            # 너무 짧은 단어나 중복 제목 제외 (10자 이상 진짜 기사 제목만 필터링)
+            if len(title) < 10 or title in seen_titles:
+                continue
+                
+            if not href.startswith('http'):
+                href = 'https://news.naver.com' + href
+                
+            seen_titles.add(title)
+            articles.append({
+                "title": title,
+                "link": href
+            })
+            
+            if len(articles) >= 5:
+                break
+                
+        return articles
+    except Exception as e:
+        print(f"수집 중 에러 발생 ({url}): {e}")
+        return []
+
 def crawl_economy_news():
     categories = {
         "기업 (산업/재계)": "https://news.naver.com/section/101/261",
@@ -13,45 +57,24 @@ def crawl_economy_news():
         "경제 일반": "https://news.naver.com/section/101/263"
     }
     
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
-    }
-    
     news_data = []
     
     for cat_name, url in categories.items():
-        try:
-            response = requests.get(url, headers=headers)
-            soup = BeautifulSoup(response.text, 'html.parser')
+        # 1차: 데스크톱 주소로 기사 수집
+        items = get_category_news(url)
+        
+        # 2차 백업: 수집 실패 시 모바일 주소로 재시도
+        if not items:
+            m_url = url.replace("https://news.naver.com", "https://m.news.naver.com")
+            items = get_category_news(m_url)
             
-            # 네이버 섹션별 주요 기사 제목 태그들을 다각도로 탐색
-            articles = soup.select('.sa_text_title, .sa_text_strong, .sh_text_headline, .sa_text a')
-            
-            count = 0
-            seen_titles = set()
-            
-            for article in articles:
-                title = article.get_text(strip=True)
-                # 링크 가져오기
-                link = article.get('href', '') if article.name == 'a' else ''
-                if not link and article.find_parent('a'):
-                    link = article.find_parent('a').get('href', '')
-                
-                # 유효한 제목과 링크만 중복 없이 5개 수집
-                if title and link and title not in seen_titles:
-                    seen_titles.add(title)
-                    count += 1
-                    news_data.append({
-                        "press_name": cat_name,
-                        "rank": f"{count}위",
-                        "title": title,
-                        "link": link
-                    })
-                    if count >= 5:
-                        break
-        except Exception as e:
-            print(f"{cat_name} 수집 중 에러 발생: {e}")
+        for idx, item in enumerate(items, 1):
+            news_data.append({
+                "press_name": cat_name,
+                "rank": f"{idx}위",
+                "title": item["title"],
+                "link": item["link"]
+            })
 
     os.makedirs("data", exist_ok=True)
     
