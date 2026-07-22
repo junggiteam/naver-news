@@ -26,23 +26,20 @@ def crawl_economy_news():
             res = requests.get(url, headers=headers, timeout=10)
             soup = BeautifulSoup(res.content, 'html.parser', from_encoding='euc-kr')
             
-            # 기사 목록 추출
             articles = soup.select('.list_body.newsflash_body ul li')
             seen_titles = set()
             count = 1
             
             for li in articles:
-                # 제목과 링크 추출 (이미지 태그 제외)
                 a_tags = li.select('a')
                 if not a_tags:
                     continue
                 
-                # 보통 두 번째 a 태그가 텍스트 제목, 없으면 첫 번째 사용
                 target_a = a_tags[1] if len(a_tags) > 1 else a_tags[0]
                 title = target_a.get_text(strip=True)
                 link = target_a.get('href', '')
                 
-                # 언론사 이름 추출
+                # 언론사 이름 추출 부분 (이전 코드에 없던 핵심 로직)
                 press_elem = li.select_one('.writing')
                 press_name = press_elem.get_text(strip=True) if press_elem else "언론사"
                 
@@ -50,14 +47,14 @@ def crawl_economy_news():
                     if title not in seen_titles:
                         seen_titles.add(title)
                         news_list.append({
-                            "category": cat_name,       # 분야 (금융, 부동산 등)
-                            "press_name": press_name,   # 실제 언론사 (연합뉴스, 매일경제 등)
+                            "category": cat_name,       
+                            "press_name": press_name,   
                             "rank": f"{count}",
                             "title": title,
                             "link": link
                         })
                         count += 1
-                        if count > 10:  # 각 카테고리별 10개씩 수집 (필요시 숫자 수정 가능)
+                        if count > 10: 
                             break
         except Exception as e:
             print(f"{cat_name} 수집 에러: {e}")
