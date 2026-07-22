@@ -1,21 +1,19 @@
 import os
 import json
-import re
-from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime, timezone, timedelta
 
-def crawl_pure_economy_sections():
-    # 정치 이슈가 섞이지 않는 순수 네이버 경제 하위 섹션별 공식 리스트
-    targets = [
-        {"name": "금융", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=259"},
-        {"name": "증권/투자", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=258"},
-        {"name": "재테크", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=310"},
-        {"name": "부동산", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=260"},
-        {"name": "산업/재계", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=261"},
-        {"name": "글로벌 경제", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=262"},
-        {"name": "경제 일반", "url": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=263"}
-    ]
+def crawl_economy_news():
+    # 네이버 뉴스 경제 세부 카테고리 (6개 분야로 확장)
+    targets = {
+        "금융": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=259",
+        "증권/주식": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=258",
+        "산업/기업": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=261",
+        "부동산": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=260",
+        "글로벌 경제": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=262",
+        "재테크/생활": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=310"
+    }
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
@@ -23,52 +21,51 @@ def crawl_pure_economy_sections():
     
     news_list = []
     
-    for target in targets:
+    for cat_name, url in targets.items():
         try:
-            res = requests.get(target["url"], headers=headers, timeout=10)
-            soup = BeautifulSoup(res.text, 'html.parser')
+            res = requests.get(url, headers=headers, timeout=10)
+            soup = BeautifulSoup(res.content, 'html.parser', from_encoding='euc-kr')
             
-            # 각 섹션 리스트에서 기사 요소 추출
-            items = soup.select('.list_body.newsflash_body ul li a, .sa_text_title, .cluster_text_headline')
-            if not items:
-                items = soup.find_all('a', href=True)
-            
+            # 기사 목록 추출
+            articles = soup.select('.list_body.newsflash_body ul li')
             seen_titles = set()
             count = 1
             
-            for item in items:
-                title = item.get_text(strip=True)
-                link = item.get('href', '') if item.name == 'a' else (item.find_parent('a')['href'] if item.find_parent('a') else '')
+            for li in articles:
+                # 제목과 링크 추출 (이미지 태그 제외)
+                a_tags = li.select('a')
+                if not a_tags:
+                    continue
                 
-                if not link and item.name != 'a':
-                    a_tag = item.select_one('a')
-                    if a_tag:
-                        title = a_tag.get_text(strip=True)
-                        link = a_tag.get('href', '')
-                        
-                if title and link and ('/article/' in link or 'mnews.naver.com' in link) and len(title) >= 10:
-                    clean_title = re.sub(r'\s+', ' ', title)
-                    
-                    if clean_title not in seen_titles:
-                        seen_titles.add(clean_title)
-                        if not link.startswith('http'):
-                            link = 'https://news.naver.com' + link
+                # 보통 두 번째 a 태그가 텍스트 제목, 없으면 첫 번째 사용
+                target_a = a_tags[1] if len(a_tags) > 1 else a_tags[0]
+                title = target_a.get_text(strip=True)
+                link = target_a.get('href', '')
+                
+                # 언론사 이름 추출
+                press_elem = li.select_one('.writing')
+                press_name = press_elem.get_text(strip=True) if press_elem else "언론사"
+                
+                if title and link and len(title) > 5:
+                    if title not in seen_titles:
+                        seen_titles.add(title)
                         news_list.append({
-                            "press_name": target["name"],
-                            "rank": f"{count}위",
-                            "title": clean_title,
+                            "category": cat_name,       # 분야 (금융, 부동산 등)
+                            "press_name": press_name,   # 실제 언론사 (연합뉴스, 매일경제 등)
+                            "rank": f"{count}",
+                            "title": title,
                             "link": link
                         })
                         count += 1
-                        if count > 5:
+                        if count > 10:  # 각 카테고리별 10개씩 수집 (필요시 숫자 수정 가능)
                             break
         except Exception as e:
-            print(f"{target['name']} 수집 에러: {e}")
+            print(f"{cat_name} 수집 에러: {e}")
             
     return news_list
 
 def main():
-    news_data = crawl_pure_economy_sections()
+    news_data = crawl_economy_news()
     
     os.makedirs("data", exist_ok=True)
     kst = timezone(timedelta(hours=9))
@@ -83,7 +80,7 @@ def main():
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
         
-    print(f"수집 완료: 총 {len(news_data)}개 기사 저장됨.")
+    print(f"경제 뉴스 수집 완료: 총 {len(news_data)}개 기사 저장됨.")
 
 if __name__ == "__main__":
     main()

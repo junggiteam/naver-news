@@ -2,34 +2,43 @@ name: Economy News Crawler
 
 on:
   schedule:
-    - cron: '35 * * * *'  # 매시 35분마다 자동 실행
-  workflow_dispatch:
+    # 매일 오전 8시~자정까지 매시 35분에 동작 (KST 기준)
+    - cron: '35 23,0-15 * * *'
+  workflow_dispatch: # 수동으로 버튼을 눌러서 실행할 수 있게 해주는 옵션
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 저장소 가져오기
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 파이썬 설치하기
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: 필요한 프로그램(라이브러리) 설치
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests beautifulsoup4
 
-      - name: Run crawler
+      - name: 크롤러 실행 (데이터 수집)
         run: python scraper_economy.py
 
-      - name: Commit and push if changed
+      - name: 깃허브에 새로운 데이터 저장 (Push)
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/economy_news.json
-          git commit -m "Auto update: Economy news data" || exit 0
-          git push
+          
+          # 변경사항이 없으면 에러 내지 말고 조용히 넘어가기
+          git diff --staged --quiet || git commit -m "Auto update: Economy news data"
+          
+          # 충돌 방지를 위해 서버에 있는 최신 상태를 먼저 가져오기
+          git pull --rebase origin main
+          git push origin main
