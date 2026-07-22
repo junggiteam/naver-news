@@ -12,7 +12,7 @@ def crawl_economy_all():
     news_list = []
 
     # -------------------------------------------------------------
-    # PART 1: 네이버 경제 카테고리 6개 수집
+    # PART 1: 네이버 경제 카테고리 6개 수집 (TOP 5)
     # -------------------------------------------------------------
     cat_targets = {
         "금융": "https://news.naver.com/breakingnews/section/101/259",
@@ -23,11 +23,11 @@ def crawl_economy_all():
         "재테크/생활": "https://news.naver.com/breakingnews/section/101/310"
     }
     
-    print("--- [1] 경제 카테고리 6개 수집 시작 ---")
+    print("--- [1] 카테고리 6개 수집 시작 (TOP 5) ---")
     for cat_name, url in cat_targets.items():
         try:
             res = requests.get(url, headers=headers, timeout=10)
-            res.encoding = 'utf-8'
+            res.encoding = res.apparent_encoding or 'utf-8' # 글자 깨짐 방지
             soup = BeautifulSoup(res.text, 'html.parser')
             
             articles = soup.select('.sa_text')
@@ -57,26 +57,29 @@ def crawl_economy_all():
                             "link": link
                         })
                         count += 1
-                        if count > 10: 
+                        if count > 5: # TOP 5로 조정
                             break
             print(f"[{cat_name}] {count-1}개 수집 성공")
         except Exception as e:
             print(f"{cat_name} 수집 에러: {e}")
 
     # -------------------------------------------------------------
-    # PART 2: 메이저 언론사 15곳 랭킹 수집
+    # PART 2: 요청하신 주요 신문사/경제지/방송사 15곳 지정 수집 (TOP 5)
     # -------------------------------------------------------------
-    print("\n--- [2] 메이저 언론사 랭킹 수집 시작 ---")
-    ranking_url = "https://news.naver.com/main/ranking/popularDay.naver"
-    MAJOR_PRESSES = [
-        "매일경제", "한국경제", "서울경제", "머니투데이", "헤럴드경제",
-        "연합뉴스", "조선일보", "중앙일보", "동아일보", "한겨레",
-        "KBS", "MBC", "SBS", "YTN", "JTBC"
+    print("\n--- [2] 지정 언론사 15곳 수집 시작 (TOP 5) ---")
+    
+    # 대표님이 지정하신 주요 언론사 리스트
+    TARGET_PRESSES = [
+        "조선일보", "중앙일보", "동아일보", "매일경제", "한국경제", 
+        "이데일리", "한경비즈니스", "파이낸셜뉴스", "연합뉴스", "머니투데이", 
+        "이투데이", "KBS", "MBC", "SBS", "YTN", "JTBC"
     ]
+    
+    ranking_url = "https://news.naver.com/main/ranking/popularDay.naver"
     
     try:
         res = requests.get(ranking_url, headers=headers, timeout=10)
-        res.encoding = 'utf-8'
+        res.encoding = res.apparent_encoding or 'utf-8' # 글자 깨짐 방지
         soup = BeautifulSoup(res.text, 'html.parser')
         
         boxes = soup.select('.rankingnews_box')
@@ -88,7 +91,8 @@ def crawl_economy_all():
                 
             press_name = press_elem.get_text(strip=True)
             
-            if press_name in MAJOR_PRESSES:
+            # 지정된 언론사만 엄격히 추출
+            if any(target in press_name for target in TARGET_PRESSES):
                 items = box.select('.rankingnews_list li')
                 count = 1
                 
@@ -102,18 +106,18 @@ def crawl_economy_all():
                     
                     if title and link:
                         news_list.append({
-                            "category": press_name, # 언론사 이름을 카테고리로 통합
+                            "category": press_name,
                             "press_name": press_name,
                             "rank": f"{count}위",
                             "title": title,
                             "link": link
                         })
                         count += 1
-                        if count > 10:
+                        if count > 5: # TOP 5로 조정
                             break
-                print(f"[{press_name}] 10개 수집 완료")
+                print(f"[{press_name}] 5개 수집 완료")
     except Exception as e:
-        print(f"메이저 언론사 수집 중 에러: {e}")
+        print(f"언론사 수집 중 에러: {e}")
         
     return news_list
 
