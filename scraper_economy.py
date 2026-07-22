@@ -1,10 +1,12 @@
 import os
 import json
+import re
+from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timezone, timedelta
 
 def crawl_economy_categories():
+    # 네이버 경제 세부 카테고리 8개 목록
     categories = {
         "금융": "https://news.naver.com/section/101/259",
         "증권/투자": "https://news.naver.com/section/101/258",
@@ -27,32 +29,35 @@ def crawl_economy_categories():
             res = requests.get(url, headers=headers, timeout=10)
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            articles = soup.select('.sa_text_title, .sh_text_headline, .sa_text_strong')
+            # 클래스 이름에 의존하지 않고 /article/ 링크 패턴을 직접 탐색하는 견고한 방식
+            links = soup.find_all('a', href=True)
+            articles = []
             seen_titles = set()
             
-            count = 1
-            for t in articles:
-                title = t.get_text(strip=True)
-                parent_a = t.find_parent('a') if t.name != 'a' else t
+            for a in links:
+                href = a['href']
+                title = a.get_text(strip=True)
                 
-                if parent_a and parent_a.has_attr('href'):
-                    link = parent_a['href']
-                else:
-                    continue
-                    
-                if len(title) >= 10 and title not in seen_titles:
-                    seen_titles.add(title)
-                    if not link.startswith('http'):
-                        link = 'https://news.naver.com' + link
-                    news_list.append({
-                        "press_name": cat_name,
-                        "rank": f"{count}위",
-                        "title": title,
-                        "link": link
-                    })
-                    count += 1
-                    if count > 5:
-                        break
+                if '/article/' in href and len(title) >= 10:
+                    clean_title = re.sub(r'\s+', ' ', title)
+                    if clean_title not in seen_titles:
+                        seen_titles.add(clean_title)
+                        if not href.startswith('http'):
+                            href = 'https://news.naver.com' + href
+                        articles.append({
+                            "title": clean_title,
+                            "link": href
+                        })
+                        if len(articles) >= 5:
+                            break
+                            
+            for idx, item in enumerate(articles, 1):
+                news_list.append({
+                    "press_name": cat_name,
+                    "rank": f"{idx}위",
+                    "title": item["title"],
+                    "link": item["link"]
+                })
         except Exception as e:
             print(f"{cat_name} 수집 에러: {e}")
             
