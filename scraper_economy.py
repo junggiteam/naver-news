@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
@@ -36,20 +37,18 @@ def crawl_pure_economy_news():
             for article in articles:
                 title_elem = article.select_one('.sa_text_title strong') or article.select_one('.sa_text_title')
                 link_elem = article.select_one('.sa_text_title')
-                press_elem = article.select_one('.sa_text_press')
                 
                 if not (title_elem and link_elem):
                     continue
                 
                 title = title_elem.get_text(strip=True)
                 link = link_elem.get('href', '')
-                press_name = press_elem.get_text(strip=True) if press_elem else "언론사"
 
                 if title and link and len(title) > 5 and title not in seen_titles:
                     seen_titles.add(title)
                     news_list.append({
                         "category": cat_name,       
-                        "press_name": press_name,   
+                        "press_name": cat_name, # 아임웹에서 '카드 제목'으로 묶어주는 기준키
                         "rank": f"{count}위",
                         "title": title,
                         "link": link
@@ -62,7 +61,7 @@ def crawl_pure_economy_news():
             print(f"{cat_name} 수집 에러: {e}")
 
     # -------------------------------------------------------------
-    # PART 2: 언론사별 '경제 섹션(101)' 뉴스 100% 보장 수집
+    # PART 2: 언론사별 경제 전용 기사 수집 (URL 및 태그 구조 완전 수정)
     # -------------------------------------------------------------
     print("\n--- [2] 언론사별 경제 전용 기사 수집 ---")
     
@@ -71,47 +70,63 @@ def crawl_pure_economy_news():
         "한국경제": "015",
         "이데일리": "018",
         "파이낸셜뉴스": "014",
-        "조선일보": "023",
+        "조선비즈": "366", # 경제 전문
         "연합뉴스": "001",
         "머니투데이": "008",
-        "이투데이": "277",
+        "아시아경제": "277", # 277은 이투데이가 아니라 아시아경제라 이름 수정
         "서울경제": "011"
     }
+    
+    # 경제지에 섞인 정치 기사 방어 필터
+    exclude_keywords = ["오세훈", "선거", "투표", "국회", "대통령", "더불어민주당", "국민의힘", "정당", "탄핵", "공천", "검찰", "경찰", "재판"]
 
     for press_name, press_id in PRESS_IDS.items():
         try:
-            # 네이버 내 해당 언론사의 순수 경제(101) 섹션 목록 주소
-            url = f"https://news.naver.com/breakingnews/section/101/{press_id}"
+            # 실패 원인 해결: 네이버 언론사 홈 올바른 주소 형식
+            url = f"https://media.naver.com/press/{press_id}"
             res = requests.get(url, headers=headers, timeout=10)
             res.encoding = res.apparent_encoding or 'utf-8'
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            articles = soup.select('.sa_text')
+            # 실패 원인 해결: 언론사 홈에 맞는 전용 클래스 탐색
+            items = soup.select('.press_news_title, .press_news_list .title, .cjs_t, .sa_text_title')
+            if not items:
+                items = soup.find_all('a', href=True)
+            
             seen_titles = set()
             count = 1
             
-            for article in articles:
-                title_elem = article.select_one('.sa_text_title strong') or article.select_one('.sa_text_title')
-                link_elem = article.select_one('.sa_text_title')
+            for item in items:
+                title = item.get_text(strip=True)
+                link = item.get('href', '') if item.name == 'a' else (item.find_parent('a')['href'] if item.find_parent('a') else '')
                 
-                if not (title_elem and link_elem):
-                    continue
+                if not link and item.name != 'a':
+                    a_tag = item.select_one('a')
+                    if a_tag:
+                        title = a_tag.get_text(strip=True)
+                        link = a_tag.get('href', '')
+                        
+                if title and link and ('/article/' in link or 'mnews.naver.com' in link) and len(title) >= 10:
+                    clean_title = re.sub(r'\s+', ' ', title)
                     
-                title = title_elem.get_text(strip=True)
-                link = link_elem.get('href', '')
-                
-                if title and link and len(title) > 5 and title not in seen_titles:
-                    seen_titles.add(title)
-                    news_list.append({
-                        "category": press_name,
-                        "press_name": press_name,
-                        "rank": f"{count}위",
-                        "title": title,
-                        "link": link
-                    })
-                    count += 1
-                    if count > 5:
-                        break
+                    if any(kw in clean_title for kw in exclude_keywords):
+                        continue
+                        
+                    if clean_title not in seen_titles:
+                        seen_titles.add(clean_title)
+                        if not link.startswith('http'):
+                            link = 'https://news.naver.com' + link
+                        
+                        news_list.append({
+                            "category": press_name,
+                            "press_name": press_name, # 아임웹에서 '카드 제목'으로 묶어주는 기준키
+                            "rank": f"{count}위",
+                            "title": clean_title,
+                            "link": link
+                        })
+                        count += 1
+                        if count > 5:
+                            break
             print(f"[{press_name}] {count-1}개 수집 성공")
         except Exception as e:
             print(f"[{press_name}] 크롤링 에러: {e}")
