@@ -1,6 +1,6 @@
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
 
@@ -19,19 +19,15 @@ def crawl_naver_news():
     soup = BeautifulSoup(response.text, 'html.parser')
     news_data = []
     
-    # 언론사별 랭킹 박스 파싱
     ranking_boxes = soup.select('.rankingnews_box')
     
     for box in ranking_boxes:
-        # 언론사 이름 추출 (유연한 태그 탐색)
         press_elem = box.select_one('.rankingnews_name') or box.select_one('strong') or box.select_one('.rankingnews_box_head_title')
         press_name = press_elem.get_text(strip=True) if press_elem else "알 수 없는 언론사"
         
         items = box.select('.rankingnews_list li')
         for item in items:
-            # 순위 추출
             rank_elem = item.select_one('.list_num') or item.select_one('em')
-            # 제목 및 링크 추출
             title_elem = item.select_one('.list_title') or item.select_one('a')
             
             if title_elem:
@@ -47,8 +43,13 @@ def crawl_naver_news():
                 })
 
     os.makedirs("data", exist_ok=True)
+    
+    # 한국 표준시(KST = UTC + 9시간) 적용
+    kst_timezone = timezone(timedelta(hours=9))
+    now_kst = datetime.now(kst_timezone).strftime("%Y-%m-%d %H:%M:%S")
+
     output = {
-        "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "updated_at": now_kst,
         "news": news_data
     }
     
