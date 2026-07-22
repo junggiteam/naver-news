@@ -4,7 +4,7 @@ on:
   schedule:
     # 매일 오전 8시~자정까지 매시 35분에 동작 (KST 기준)
     - cron: '35 23,0-15 * * *'
-  workflow_dispatch: # 수동으로 버튼을 눌러서 실행할 수 있게 해주는 옵션
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -32,8 +32,9 @@ jobs:
 
       - name: 깃허브에 새로운 데이터 저장 (Push)
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          # 🔴 대표님 계정 정보로 변경 완료 🔴
+          git config --local user.email "junggiteam@gmail.com"
+          git config --local user.name "junggiteam"
           git add data/economy_news.json
           
           # 변경사항이 없으면 에러 내지 말고 조용히 넘어가기
