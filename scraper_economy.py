@@ -4,62 +4,67 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 
-def crawl_all_economy_ranking():
-    # 종합 뉴스와 동일한 랭킹 페이지 구조에서 경제 섹션 데이터 추출
-    url = "https://news.naver.com/main/ranking/popularDay.naver?sectionId=101"
+def crawl_economy_press_news():
+    # 대한민국 주요 경제/비즈니스 전문 언론사 목록 (10개사)
+    press_list = [
+        {"name": "매일경제", "url": "https://media.naver.com/press/009"},
+        {"name": "한국경제", "url": "https://media.naver.com/press/015"},
+        {"name": "머니투데이", "url": "https://media.naver.com/press/008"},
+        {"name": "서울경제", "url": "https://media.naver.com/press/011"},
+        {"name": "이데일리", "url": "https://media.naver.com/press/018"},
+        {"name": "아시아경제", "url": "https://media.naver.com/press/277"},
+        {"name": "헤럴드경제", "url": "https://media.naver.com/press/016"},
+        {"name": "파이낸셜뉴스", "url": "https://media.naver.com/press/014"},
+        {"name": "조선비즈", "url": "https://media.naver.com/press/366"},
+        {"name": "디지털타임스", "url": "https://media.naver.com/press/029"}
+    ]
+    
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
     }
     
-    news_list = []
+    all_news = []
     
-    try:
-        res = requests.get(url, headers=headers, timeout=10)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        
-        # 랭킹 페이지 내의 모든 언론사 카드 박스 탐색
-        press_boxes = soup.select('.rankingnews_box')
-        
-        for box in press_boxes:
-            # 언론사 이름 추출
-            press_name_tag = box.select_one('.rankingnews_name')
-            if not press_name_tag:
-                continue
-            press_name = press_name_tag.get_text(strip=True)
+    for press in press_list:
+        try:
+            res = requests.get(press["url"], headers=headers, timeout=10)
+            soup = BeautifulSoup(res.text, 'html.parser')
             
-            # 해당 언론사의 상위 5개 기사 수집
-            articles = box.select('.rankingnews_list li')
-            count = 1
+            # 해당 언론사의 기사 링크 및 제목 추출
+            a_tags = soup.find_all('a', href=True)
+            articles = []
+            seen_titles = set()
             
-            for li in articles:
-                a_tag = li.select_one('a')
-                if not a_tag:
-                    continue
+            for a in a_tags:
+                href = a['href']
+                title = a.get_text(strip=True)
                 
-                title = a_tag.get_text(strip=True)
-                link = a_tag.get('href', '')
-                
-                if title and link:
-                    if not link.startswith('http'):
-                        link = 'https://news.naver.com' + link
-                        
-                    news_list.append({
-                        "press_name": press_name,
-                        "rank": f"{count}위",
-                        "title": title,
-                        "link": link
-                    })
-                    count += 1
-                    if count > 5:
-                        break
-                        
-    except Exception as e:
-        print(f"경제 전체 랭킹 수집 중 에러: {e}")
-        
-    return news_list
+                if '/article/' in href and len(title) >= 10:
+                    if title not in seen_titles:
+                        seen_titles.add(title)
+                        if not href.startswith('http'):
+                            href = 'https://news.naver.com' + href
+                        articles.append({
+                            "title": title,
+                            "link": href
+                        })
+                        if len(articles) >= 5:
+                            break
+                            
+            for idx, item in enumerate(articles, 1):
+                all_news.append({
+                    "press_name": press["name"],
+                    "rank": f"{idx}위",
+                    "title": item["title"],
+                    "link": item["link"]
+                })
+        except Exception as e:
+            print(f"{press['name']} 수집 중 에러: {e}")
+            
+    return all_news
 
 def main():
-    all_news = crawl_all_economy_ranking()
+    news_data = crawl_economy_press_news()
     
     os.makedirs("data", exist_ok=True)
     kst = timezone(timedelta(hours=9))
@@ -67,14 +72,14 @@ def main():
 
     output = {
         "updated_at": now_kst,
-        "news": all_news
+        "news": news_data
     }
     
     file_path = os.path.join("data", "economy_news.json")
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
         
-    print(f"수집 완료: 총 {len(all_news)}개 기사 (언론사 약 {len(all_news)//5}개) 저장됨.")
+    print(f"수집 완료: 총 {len(news_data)}개 기사 저장됨.")
 
 if __name__ == "__main__":
     main()
