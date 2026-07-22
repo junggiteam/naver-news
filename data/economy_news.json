@@ -1,96 +1,65 @@
-import os
-import json
-from datetime import datetime, timezone, timedelta
-import requests
-from bs4 import BeautifulSoup
-
-def get_category_news(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
-    }
-    
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        articles = []
-        seen_titles = set()
-        
-        # 네이버 기사 상세 페이지 URL 패턴('/article/')을 가진 태그를 직접 추적
-        a_tags = soup.find_all('a', href=True)
-        
-        for a in a_tags:
-            href = a['href']
-            if '/article/' not in href:
-                continue
-                
-            title = a.get_text(strip=True)
-            
-            # 너무 짧은 단어나 중복 제목 제외 (10자 이상 진짜 기사 제목만 필터링)
-            if len(title) < 10 or title in seen_titles:
-                continue
-                
-            if not href.startswith('http'):
-                href = 'https://news.naver.com' + href
-                
-            seen_titles.add(title)
-            articles.append({
-                "title": title,
-                "link": href
-            })
-            
-            if len(articles) >= 5:
-                break
-                
-        return articles
-    except Exception as e:
-        print(f"수집 중 에러 발생 ({url}): {e}")
-        return []
-
-def crawl_economy_news():
-    categories = {
-        "기업 (산업/재계)": "https://news.naver.com/section/101/261",
-        "금융": "https://news.naver.com/section/101/259",
-        "투자 (증권)": "https://news.naver.com/section/101/258",
-        "재테크 (생활경제)": "https://news.naver.com/section/101/310",
-        "경제 일반": "https://news.naver.com/section/101/263"
-    }
-    
-    news_data = []
-    
-    for cat_name, url in categories.items():
-        # 1차: 데스크톱 주소로 기사 수집
-        items = get_category_news(url)
-        
-        # 2차 백업: 수집 실패 시 모바일 주소로 재시도
-        if not items:
-            m_url = url.replace("https://news.naver.com", "https://m.news.naver.com")
-            items = get_category_news(m_url)
-            
-        for idx, item in enumerate(items, 1):
-            news_data.append({
-                "press_name": cat_name,
-                "rank": f"{idx}위",
-                "title": item["title"],
-                "link": item["link"]
-            })
-
-    os.makedirs("data", exist_ok=True)
-    
-    kst_timezone = timezone(timedelta(hours=9))
-    now_kst = datetime.now(kst_timezone).strftime("%Y-%m-%d %H:%M:%S")
-
-    output = {
-        "updated_at": now_kst,
-        "news": news_data
-    }
-    
-    file_path = os.path.join("data", "economy_news.json")
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=4)
-        
-    print(f"성공! 총 {len(news_data)}개의 경제 뉴스가 {file_path}에 저장되었습니다.")
-
-if __name__ == "__main__":
-    crawl_economy_news()
+{
+    "updated_at": "2026-07-22 15:53:49",
+    "news": [
+        {
+            "press_name": "금융/증권",
+            "rank": "1위",
+            "title": "김정관 산업장관 방미…관세·대미투자 등 협의[현장연결]",
+            "link": "https://n.news.naver.com/mnews/article/422/0000887587"
+        },
+        {
+            "press_name": "금융/증권",
+            "rank": "2위",
+            "title": "올해 상반기 마약 1007㎏ 밀수 덜미…10대 밀수 사범 14명 적발",
+            "link": "https://n.news.naver.com/mnews/article/025/0003539329"
+        },
+        {
+            "press_name": "금융/증권",
+            "rank": "3위",
+            "title": "쿠팡 \"인천 물류센터 화재로 발생한 판매자 손실 전액 보상\"",
+            "link": "https://n.news.naver.com/mnews/article/015/0005312500"
+        },
+        {
+            "press_name": "금융/증권",
+            "rank": "4위",
+            "title": "행복청, 3개월만에 대통령 세종집무실 당선작 발표…건축계 “4년 안 완공 무리”",
+            "link": "https://n.news.naver.com/mnews/article/025/0003539342"
+        },
+        {
+            "press_name": "금융/증권",
+            "rank": "5위",
+            "title": "LGD 2분기 영업손실 1천77억원…상반기 기준 5년만에 흑자(종합2보)",
+            "link": "https://n.news.naver.com/mnews/article/001/0016207785"
+        },
+        {
+            "press_name": "산업/재계",
+            "rank": "1위",
+            "title": "삼성 AR 기술 체험 위해 줄서는 참가자들",
+            "link": "https://n.news.naver.com/mnews/article/421/0009073246"
+        },
+        {
+            "press_name": "산업/재계",
+            "rank": "2위",
+            "title": "원전 수요 확대…공공기관 인력도 4년 만에 증가세 전환",
+            "link": "https://n.news.naver.com/mnews/article/003/0014081795"
+        },
+        {
+            "press_name": "산업/재계",
+            "rank": "3위",
+            "title": "경기·울산 등 전국 소방서에 벤츠 지휘차 뜬다… 벤츠의 사회공헌",
+            "link": "https://n.news.naver.com/mnews/article/469/0000943727"
+        },
+        {
+            "press_name": "산업/재계",
+            "rank": "4위",
+            "title": "\"고용·세무·법률지식 알기 쉽게 전달\"…소기업·소상공인 법률토크콘서트",
+            "link": "https://n.news.naver.com/mnews/article/079/0004170944"
+        },
+        {
+            "press_name": "산업/재계",
+            "rank": "5위",
+            "title": "다자녀 가족, 공항 이용 더 편해진다…주차료 즉시 50% 할인",
+            "link": "https://n.news.naver.com/mnews/article/015/0005312588"
+        }
+    ]
+}
