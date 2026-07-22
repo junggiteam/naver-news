@@ -5,13 +5,14 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 
 def crawl_economy_news():
+    # 1. 완전히 바뀐 최신 네이버 뉴스 섹션 주소로 변경
     targets = {
-        "금융": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=259",
-        "증권/주식": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=258",
-        "산업/기업": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=261",
-        "부동산": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=260",
-        "글로벌 경제": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=262",
-        "재테크/생활": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=310"
+        "금융": "https://news.naver.com/breakingnews/section/101/259",
+        "증권/주식": "https://news.naver.com/breakingnews/section/101/258",
+        "산업/기업": "https://news.naver.com/breakingnews/section/101/261",
+        "부동산": "https://news.naver.com/breakingnews/section/101/260",
+        "글로벌 경제": "https://news.naver.com/breakingnews/section/101/262",
+        "재테크/생활": "https://news.naver.com/breakingnews/section/101/310"
     }
     
     headers = {
@@ -23,23 +24,24 @@ def crawl_economy_news():
     for cat_name, url in targets.items():
         try:
             res = requests.get(url, headers=headers, timeout=10)
-            # 이전 undefined 에러 당시 기사를 성공적으로 가져왔던 euc-kr 인코딩 방식 원복
-            soup = BeautifulSoup(res.content, 'html.parser', from_encoding='euc-kr')
+            res.encoding = 'utf-8' # 2. 바뀐 최신 인코딩(utf-8) 적용
+            soup = BeautifulSoup(res.text, 'html.parser')
             
-            articles = soup.select('.list_body.newsflash_body ul li')
+            # 3. 바뀐 네이버 뉴스 기사 태그(.sa_text) 적용
+            articles = soup.select('.sa_text')
             seen_titles = set()
             count = 1
             
-            for li in articles:
-                a_tags = li.select('a')
-                if not a_tags:
+            for article in articles:
+                title_elem = article.select_one('.sa_text_title strong') or article.select_one('.sa_text_title')
+                link_elem = article.select_one('.sa_text_title')
+                press_elem = article.select_one('.sa_text_press')
+                
+                if not (title_elem and link_elem):
                     continue
                 
-                target_a = a_tags[1] if len(a_tags) > 1 else a_tags[0]
-                title = target_a.get_text(strip=True)
-                link = target_a.get('href', '')
-                
-                press_elem = li.select_one('.writing')
+                title = title_elem.get_text(strip=True)
+                link = link_elem.get('href', '')
                 press_name = press_elem.get_text(strip=True) if press_elem else "언론사"
                 
                 if title and link and len(title) > 5:
@@ -48,7 +50,7 @@ def crawl_economy_news():
                         news_list.append({
                             "category": cat_name,       
                             "press_name": press_name,   
-                            "rank": f"{count}",
+                            "rank": f"{count}위",
                             "title": title,
                             "link": link
                         })
