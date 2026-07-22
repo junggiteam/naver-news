@@ -4,67 +4,62 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 
-def crawl_economy_press_news():
-    # 대한민국 주요 경제/비즈니스 전문 언론사 목록 (10개사)
-    press_list = [
-        {"name": "매일경제", "url": "https://media.naver.com/press/009"},
-        {"name": "한국경제", "url": "https://media.naver.com/press/015"},
-        {"name": "머니투데이", "url": "https://media.naver.com/press/008"},
-        {"name": "서울경제", "url": "https://media.naver.com/press/011"},
-        {"name": "이데일리", "url": "https://media.naver.com/press/018"},
-        {"name": "아시아경제", "url": "https://media.naver.com/press/277"},
-        {"name": "헤럴드경제", "url": "https://media.naver.com/press/016"},
-        {"name": "파이낸셜뉴스", "url": "https://media.naver.com/press/014"},
-        {"name": "조선비즈", "url": "https://media.naver.com/press/366"},
-        {"name": "디지털타임스", "url": "https://media.naver.com/press/029"}
-    ]
+def crawl_economy_categories():
+    categories = {
+        "금융": "https://news.naver.com/section/101/259",
+        "증권/투자": "https://news.naver.com/section/101/258",
+        "재테크/생활경제": "https://news.naver.com/section/101/310",
+        "부동산": "https://news.naver.com/section/101/260",
+        "산업/재계": "https://news.naver.com/section/101/261",
+        "중기/벤처": "https://news.naver.com/section/101/771",
+        "글로벌 경제": "https://news.naver.com/section/101/262",
+        "경제 일반": "https://news.naver.com/section/101/263"
+    }
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
     }
     
-    all_news = []
+    news_list = []
     
-    for press in press_list:
+    for cat_name, url in categories.items():
         try:
-            res = requests.get(press["url"], headers=headers, timeout=10)
+            res = requests.get(url, headers=headers, timeout=10)
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            # 해당 언론사의 기사 링크 및 제목 추출
-            a_tags = soup.find_all('a', href=True)
-            articles = []
+            articles = soup.select('.sa_text_title, .sh_text_headline, .sa_text_strong')
             seen_titles = set()
             
-            for a in a_tags:
-                href = a['href']
-                title = a.get_text(strip=True)
+            count = 1
+            for t in articles:
+                title = t.get_text(strip=True)
+                parent_a = t.find_parent('a') if t.name != 'a' else t
                 
-                if '/article/' in href and len(title) >= 10:
-                    if title not in seen_titles:
-                        seen_titles.add(title)
-                        if not href.startswith('http'):
-                            href = 'https://news.naver.com' + href
-                        articles.append({
-                            "title": title,
-                            "link": href
-                        })
-                        if len(articles) >= 5:
-                            break
-                            
-            for idx, item in enumerate(articles, 1):
-                all_news.append({
-                    "press_name": press["name"],
-                    "rank": f"{idx}위",
-                    "title": item["title"],
-                    "link": item["link"]
-                })
+                if parent_a and parent_a.has_attr('href'):
+                    link = parent_a['href']
+                else:
+                    continue
+                    
+                if len(title) >= 10 and title not in seen_titles:
+                    seen_titles.add(title)
+                    if not link.startswith('http'):
+                        link = 'https://news.naver.com' + link
+                    news_list.append({
+                        "press_name": cat_name,
+                        "rank": f"{count}위",
+                        "title": title,
+                        "link": link
+                    })
+                    count += 1
+                    if count > 5:
+                        break
         except Exception as e:
-            print(f"{press['name']} 수집 중 에러: {e}")
+            print(f"{cat_name} 수집 에러: {e}")
             
-    return all_news
+    return news_list
 
 def main():
-    news_data = crawl_economy_press_news()
+    news_data = crawl_economy_categories()
     
     os.makedirs("data", exist_ok=True)
     kst = timezone(timedelta(hours=9))
@@ -79,7 +74,7 @@ def main():
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
         
-    print(f"수집 완료: 총 {len(news_data)}개 기사 저장됨.")
+    print(f"완료: 총 {len(news_data)}개 기사 수집됨.")
 
 if __name__ == "__main__":
     main()
