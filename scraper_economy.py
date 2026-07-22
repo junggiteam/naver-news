@@ -4,9 +4,17 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 
-def crawl_economy_news():
-    # 1. 완전히 바뀐 최신 네이버 뉴스 섹션 주소로 변경
-    targets = {
+def crawl_economy_all():
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    }
+    
+    news_list = []
+
+    # -------------------------------------------------------------
+    # PART 1: 네이버 경제 카테고리 6개 수집
+    # -------------------------------------------------------------
+    cat_targets = {
         "금융": "https://news.naver.com/breakingnews/section/101/259",
         "증권/주식": "https://news.naver.com/breakingnews/section/101/258",
         "산업/기업": "https://news.naver.com/breakingnews/section/101/261",
@@ -15,19 +23,13 @@ def crawl_economy_news():
         "재테크/생활": "https://news.naver.com/breakingnews/section/101/310"
     }
     
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-    }
-    
-    news_list = []
-    
-    for cat_name, url in targets.items():
+    print("--- [1] 경제 카테고리 6개 수집 시작 ---")
+    for cat_name, url in cat_targets.items():
         try:
             res = requests.get(url, headers=headers, timeout=10)
-            res.encoding = 'utf-8' # 2. 바뀐 최신 인코딩(utf-8) 적용
+            res.encoding = 'utf-8'
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            # 3. 바뀐 네이버 뉴스 기사 태그(.sa_text) 적용
             articles = soup.select('.sa_text')
             seen_titles = set()
             count = 1
@@ -60,11 +62,63 @@ def crawl_economy_news():
             print(f"[{cat_name}] {count-1}개 수집 성공")
         except Exception as e:
             print(f"{cat_name} 수집 에러: {e}")
+
+    # -------------------------------------------------------------
+    # PART 2: 메이저 언론사 15곳 랭킹 수집
+    # -------------------------------------------------------------
+    print("\n--- [2] 메이저 언론사 랭킹 수집 시작 ---")
+    ranking_url = "https://news.naver.com/main/ranking/popularDay.naver"
+    MAJOR_PRESSES = [
+        "매일경제", "한국경제", "서울경제", "머니투데이", "헤럴드경제",
+        "연합뉴스", "조선일보", "중앙일보", "동아일보", "한겨레",
+        "KBS", "MBC", "SBS", "YTN", "JTBC"
+    ]
+    
+    try:
+        res = requests.get(ranking_url, headers=headers, timeout=10)
+        res.encoding = 'utf-8'
+        soup = BeautifulSoup(res.text, 'html.parser')
+        
+        boxes = soup.select('.rankingnews_box')
+        
+        for box in boxes:
+            press_elem = box.select_one('.rankingnews_name')
+            if not press_elem:
+                continue
+                
+            press_name = press_elem.get_text(strip=True)
             
+            if press_name in MAJOR_PRESSES:
+                items = box.select('.rankingnews_list li')
+                count = 1
+                
+                for item in items:
+                    title_elem = item.select_one('.list_title')
+                    if not title_elem:
+                        continue
+                        
+                    title = title_elem.get_text(strip=True)
+                    link = title_elem.get('href', '')
+                    
+                    if title and link:
+                        news_list.append({
+                            "category": press_name, # 언론사 이름을 카테고리로 통합
+                            "press_name": press_name,
+                            "rank": f"{count}위",
+                            "title": title,
+                            "link": link
+                        })
+                        count += 1
+                        if count > 10:
+                            break
+                print(f"[{press_name}] 10개 수집 완료")
+    except Exception as e:
+        print(f"메이저 언론사 수집 중 에러: {e}")
+        
     return news_list
 
 def main():
-    news_data = crawl_economy_news()
+    news_data = crawl_economy_all()
     
     os.makedirs("data", exist_ok=True)
     kst = timezone(timedelta(hours=9))
