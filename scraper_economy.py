@@ -12,7 +12,7 @@ def crawl_pure_economy_news():
     news_list = []
 
     # -------------------------------------------------------------
-    # PART 1: 5개 순수 경제 카테고리 (필터 코드 전혀 없음)
+    # PART 1: 네이버 핵심 경제 5대 카테고리 (TOP 5)
     # -------------------------------------------------------------
     cat_targets = {
         "금융": "https://news.naver.com/breakingnews/section/101/259",
@@ -22,7 +22,7 @@ def crawl_pure_economy_news():
         "글로벌 경제": "https://news.naver.com/breakingnews/section/101/262"
     }
     
-    print("--- [1] 순수 경제 5대 섹션 수집 ---")
+    print("--- [1] 네이버 핵심 경제 5대 카테고리 수집 ---")
     for cat_name, url in cat_targets.items():
         try:
             res = requests.get(url, headers=headers, timeout=10)
@@ -45,7 +45,6 @@ def crawl_pure_economy_news():
                 link = link_elem.get('href', '')
                 press_name = press_elem.get_text(strip=True) if press_elem else "언론사"
 
-                # 조건 없이 단순 중복 검사 후 바로 수집
                 if title and link and len(title) > 5 and title not in seen_titles:
                     seen_titles.add(title)
                     news_list.append({
@@ -63,42 +62,44 @@ def crawl_pure_economy_news():
             print(f"{cat_name} 수집 에러: {e}")
 
     # -------------------------------------------------------------
-    # PART 2: 언론사 공식 사이트 경제 RSS 수집 (필터 코드 전혀 없음)
+    # PART 2: 언론사별 '경제 섹션(101)' 뉴스 100% 보장 수집
     # -------------------------------------------------------------
-    print("\n--- [2] 언론사 직영 경제 RSS 수집 ---")
+    print("\n--- [2] 언론사별 경제 전용 기사 수집 ---")
     
-    PRESS_RSS_URLS = {
-        "매일경제": "https://www.mk.co.kr/rss/30100041/",
-        "한국경제": "https://www.hankyung.com/feed/economy",
-        "이데일리": "https://rss.edaily.co.kr/edaily_news.xml",
-        "파이낸셜뉴스": "https://www.fnnews.com/rss/fn_realnews_economy.xml",
-        "조선일보": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
-        "연합뉴스": "https://www.yna.co.kr/rss/economy.xml"
+    PRESS_IDS = {
+        "매일경제": "009",
+        "한국경제": "015",
+        "이데일리": "018",
+        "파이낸셜뉴스": "014",
+        "조선일보": "023",
+        "연합뉴스": "001",
+        "머니투데이": "008",
+        "이투데이": "277",
+        "서울경제": "011"
     }
 
-    for press_name, rss_url in PRESS_RSS_URLS.items():
+    for press_name, press_id in PRESS_IDS.items():
         try:
-            res = requests.get(rss_url, headers=headers, timeout=10)
+            # 네이버 내 해당 언론사의 순수 경제(101) 섹션 목록 주소
+            url = f"https://news.naver.com/breakingnews/section/101/{press_id}"
+            res = requests.get(url, headers=headers, timeout=10)
             res.encoding = res.apparent_encoding or 'utf-8'
-            soup = BeautifulSoup(res.text, 'xml')
+            soup = BeautifulSoup(res.text, 'html.parser')
             
-            items = soup.find_all('item')
+            articles = soup.select('.sa_text')
             seen_titles = set()
             count = 1
             
-            for item in items:
-                title_elem = item.find('title')
-                link_elem = item.find('link')
+            for article in articles:
+                title_elem = article.select_one('.sa_text_title strong') or article.select_one('.sa_text_title')
+                link_elem = article.select_one('.sa_text_title')
                 
                 if not (title_elem and link_elem):
                     continue
                     
                 title = title_elem.get_text(strip=True)
-                link = link_elem.get_text(strip=True)
+                link = link_elem.get('href', '')
                 
-                title = BeautifulSoup(title, "html.parser").get_text(strip=True)
-
-                # 조건 없이 단순 중복 검사 후 바로 수집
                 if title and link and len(title) > 5 and title not in seen_titles:
                     seen_titles.add(title)
                     news_list.append({
@@ -111,7 +112,7 @@ def crawl_pure_economy_news():
                     count += 1
                     if count > 5:
                         break
-            print(f"[{press_name} 자체사이트] {count-1}개 수집 완료")
+            print(f"[{press_name}] {count-1}개 수집 성공")
         except Exception as e:
             print(f"[{press_name}] 크롤링 에러: {e}")
         
