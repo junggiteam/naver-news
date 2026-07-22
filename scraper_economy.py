@@ -1,21 +1,17 @@
 import os
 import json
-import re
-from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime, timezone, timedelta
 
-def crawl_economy_categories():
-    # 네이버 경제 세부 카테고리 8개 목록
-    categories = {
-        "금융": "https://news.naver.com/section/101/259",
-        "증권/투자": "https://news.naver.com/section/101/258",
-        "재테크/생활경제": "https://news.naver.com/section/101/310",
-        "부동산": "https://news.naver.com/section/101/260",
-        "산업/재계": "https://news.naver.com/section/101/261",
-        "중기/벤처": "https://news.naver.com/section/101/771",
-        "글로벌 경제": "https://news.naver.com/section/101/262",
-        "경제 일반": "https://news.naver.com/section/101/263"
+def crawl_economy_news():
+    # 100% 안정적으로 데이터를 긁어오는 네이버 뉴스 전통 리스트 페이지
+    targets = {
+        "금융": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=259",
+        "증권/투자": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=258",
+        "재테크": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=310",
+        "부동산": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=260",
+        "산업/재계": "https://news.naver.com/main/list.naver?mode=LS2D&mid=shm&sid1=101&sid2=261"
     }
     
     headers = {
@@ -24,47 +20,39 @@ def crawl_economy_categories():
     
     news_list = []
     
-    for cat_name, url in categories.items():
+    for cat_name, url in targets.items():
         try:
             res = requests.get(url, headers=headers, timeout=10)
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            # 클래스 이름에 의존하지 않고 /article/ 링크 패턴을 직접 탐색하는 견고한 방식
-            links = soup.find_all('a', href=True)
-            articles = []
+            # 리스트 페이지 내 기사 제목 및 링크 추출
+            items = soup.select('.list_body.newsflash_body ul li a')
             seen_titles = set()
             
-            for a in links:
-                href = a['href']
+            count = 1
+            for a in items:
                 title = a.get_text(strip=True)
+                link = a.get('href', '')
                 
-                if '/article/' in href and len(title) >= 10:
-                    clean_title = re.sub(r'\s+', ' ', title)
-                    if clean_title not in seen_titles:
-                        seen_titles.add(clean_title)
-                        if not href.startswith('http'):
-                            href = 'https://news.naver.com' + href
-                        articles.append({
-                            "title": clean_title,
-                            "link": href
+                if title and link and len(title) > 5:
+                    if title not in seen_titles:
+                        seen_titles.add(title)
+                        news_list.append({
+                            "press_name": cat_name,
+                            "rank": f"{count}위",
+                            "title": title,
+                            "link": link
                         })
-                        if len(articles) >= 5:
+                        count += 1
+                        if count > 5:
                             break
-                            
-            for idx, item in enumerate(articles, 1):
-                news_list.append({
-                    "press_name": cat_name,
-                    "rank": f"{idx}위",
-                    "title": item["title"],
-                    "link": item["link"]
-                })
         except Exception as e:
             print(f"{cat_name} 수집 에러: {e}")
             
     return news_list
 
 def main():
-    news_data = crawl_economy_categories()
+    news_data = crawl_economy_news()
     
     os.makedirs("data", exist_ok=True)
     kst = timezone(timedelta(hours=9))
@@ -79,7 +67,7 @@ def main():
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
         
-    print(f"완료: 총 {len(news_data)}개 기사 수집됨.")
+    print(f"수집 완료: 총 {len(news_data)}개 기사 저장됨.")
 
 if __name__ == "__main__":
     main()
