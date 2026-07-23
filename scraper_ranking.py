@@ -26,6 +26,9 @@ def crawl_ranking_news():
         press_elem = box.select_one('.rankingnews_name')
         press_name = press_elem.get_text(strip=True) if press_elem else "알 수 없는 언론사"
 
+        logo_elem = box.select_one('.rankingnews_thumb img')
+        press_logo = (logo_elem.get('src') or logo_elem.get('data-src') or '') if logo_elem else ""
+
         items = box.select('.rankingnews_list li')
         for item in items:
             rank_elem = item.select_one('.list_ranking_num')
@@ -50,6 +53,7 @@ def crawl_ranking_news():
 
             news_data.append({
                 "press_name": press_name,
+                "press_logo": press_logo,
                 "rank": rank,
                 "title": title,
                 "link": link,
