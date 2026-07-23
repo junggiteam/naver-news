@@ -26,7 +26,7 @@ def build_change_percent(rate):
 def crawl_domestic_index(code, name):
     """코스피/코스닥: /sise/sise_index.naver 페이지"""
     html = fetch(f"https://finance.naver.com/sise/sise_index.naver?code={code}")
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('#now_value')
     fluc_elem = soup.select_one('#change_value_and_rate')
@@ -88,7 +88,7 @@ def crawl_world_indices():
 def crawl_detail_price(url, name):
     """국내금, 휘발유 등: marketindex 상세 페이지 공통 구조(.no_today / .no_exday)"""
     html = fetch(url)
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('.today .no_today em')
     exday_ems = soup.select('.today .no_exday em')
@@ -153,16 +153,31 @@ def crawl_bitcoin():
     }
 
 
-def crawl_stock_news():
-    """finance.naver.com/news/ 증권 뉴스 랭킹 1~5위"""
-    html = fetch("https://finance.naver.com/news/news_list.naver?mode=RANK")
-    soup = BeautifulSoup(html, 'html.parser')
+NEWS_CATEGORIES = [
+    ("시황·전망", 401),
+    ("기업·종목분석", 402),
+    ("해외증시", 403),
+    ("채권·선물", 404),
+    ("공시·메모", 406),
+    ("환율", 429),
+]
 
-    news_data = []
-    items = soup.select('ul.simpleNewsList li')
 
-    for rank, item in enumerate(items[:5], start=1):
-        title_elem = item.select_one('a')
+def crawl_news_category(category_name, section_id3):
+    """finance.naver.com/news/ 카테고리별(시황·전망 등) 뉴스 1~5위"""
+    url = (
+        "https://finance.naver.com/news/news_list.naver"
+        f"?mode=LSS3D&section_id=101&section_id2=258&section_id3={section_id3}"
+    )
+    html = fetch(url)
+    soup = BeautifulSoup(html, 'lxml')
+
+    items = []
+    top_list = soup.select_one('ul.realtimeNewsList li.newsList.top')
+    subjects = top_list.select('.articleSubject') if top_list else []
+
+    for rank, subject in enumerate(subjects[:5], start=1):
+        title_elem = subject.select_one('a')
         if not title_elem:
             continue
 
@@ -171,10 +186,11 @@ def crawl_stock_news():
         if link.startswith('/'):
             link = "https://finance.naver.com" + link
 
-        press_elem = item.select_one('.press')
-        time_elem = item.select_one('.wdate')
+        summary = subject.find_next_sibling(class_='articleSummary')
+        press_elem = summary.select_one('.press') if summary else None
+        time_elem = summary.select_one('.wdate') if summary else None
 
-        news_data.append({
+        items.append({
             "press_name": press_elem.get_text(strip=True) if press_elem else "",
             "rank": rank,
             "title": title,
@@ -182,7 +198,7 @@ def crawl_stock_news():
             "upload_time": time_elem.get_text(strip=True) if time_elem else ""
         })
 
-    return news_data
+    return {"category": category_name, "items": items}
 
 
 def crawl_stock_data():
@@ -231,11 +247,13 @@ def crawl_stock_data():
     except Exception as e:
         print(f"비트코인 수집 실패: {e}")
 
-    try:
-        news_data = crawl_stock_news()
-    except Exception as e:
-        print(f"증권 뉴스 수집 실패: {e}")
-        news_data = []
+    news_categories = []
+    for category_name, section_id3 in NEWS_CATEGORIES:
+        try:
+            news_categories.append(crawl_news_category(category_name, section_id3))
+        except Exception as e:
+            print(f"[{category_name}] 뉴스 수집 실패: {e}")
+            news_categories.append({"category": category_name, "items": []})
 
     os.makedirs("data", exist_ok=True)
 
@@ -245,14 +263,15 @@ def crawl_stock_data():
     output = {
         "updated_at": now_kst,
         "indices": indices,
-        "news": news_data
+        "news_categories": news_categories
     }
 
     file_path = os.path.join("data", "stock_news.json")
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
 
-    print(f"성공! 지표 {len(indices)}개, 뉴스 {len(news_data)}개가 {file_path}에 저장되었습니다.")
+    total_news = sum(len(c["items"]) for c in news_categories)
+    print(f"성공! 지표 {len(indices)}개, 뉴스 카테고리 {len(news_categories)}개(총 {total_news}건)가 {file_path}에 저장되었습니다.")
 
 
 if __name__ == "__main__":
