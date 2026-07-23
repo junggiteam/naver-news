@@ -29,7 +29,7 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: 크롤러 실행 (데이터 수집)
-        run: python scraper_economy.py
+        run: python scraper_economy_section.py
 
       - name: 깃허브에 데이터 저장 (Push)
         run: |
