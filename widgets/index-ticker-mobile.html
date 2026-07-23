@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주요 지표 (모바일)</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+</style>
+</head>
+<body>
+
+<div id="idx-strip-h">
+  <div class="ish-header">
+    <span class="ish-label">주요 지표</span>
+  </div>
+
+  <div class="ish-viewport">
+    <div class="ish-track" id="ish-track">
+      <span class="ish-loading">불러오는 중...</span>
+    </div>
+  </div>
+
+  <div class="ish-meta">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    <span id="ish-meta-text"></span>
+  </div>
+</div>
+
+<style>
+  #idx-strip-h {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 14px 18px 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-family: "Noto Sans KR", "Malgun Gothic", -apple-system, sans-serif;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  #idx-strip-h * { box-sizing: border-box; }
+
+  .ish-header {
+    margin: -14px -18px 10px -18px;
+    padding: 10px 18px;
+    background: #142c67;
+    border-radius: 10px 10px 0 0;
+  }
+  .ish-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.3px;
+  }
+
+  /* 가로로 흐르는 티커 영역 */
+  .ish-viewport {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ish-track {
+    display: inline-flex;
+    align-items: baseline;
+    animation: ish-scroll-left linear infinite;
+  }
+  .ish-viewport:hover .ish-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes ish-scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .ish-loading { font-size: 13px; color: #aaa; }
+
+  .ish-item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 0 18px;
+    border-right: 1px solid #eee;
+    white-space: nowrap;
+  }
+  .ish-item:last-child { border-right: none; }
+
+  .ish-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+  }
+  .ish-value {
+    font-size: 14px;
+    font-weight: 800;
+    color: #191919;
+  }
+  .ish-change {
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+  .ish-change.up { color: #c0392b; }
+  .ish-change.down { color: #2a5db0; }
+  .ish-change.flat { color: #999; }
+
+  .ish-meta {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+    padding-top: 9px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    color: #aaa;
+  }
+</style>
+
+<script>
+(function () {
+  var STOCK_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_news.json";
+  var DURATION_PER_ITEM_S = 1.3; // 항목 하나가 지나가는 데 걸리는 시간(초) - 작을수록 빠름
+
+  var track = document.getElementById("ish-track");
+  var metaTextEl = document.getElementById("ish-meta-text");
+
+  function arrow(direction) {
+    if (direction === "up") return "▲";
+    if (direction === "down") return "▼";
+    return "-";
+  }
+
+  function buildItem(idx) {
+    var cleanPercent = (idx.change_percent || "").replace(/^[▲▼△▽+\-\s]+/, "").trim();
+    var dirClass = idx.direction === "up" ? "up" : idx.direction === "down" ? "down" : "flat";
+    var el = document.createElement("span");
+    el.className = "ish-item";
+    el.innerHTML =
+      '<span class="ish-name">' + idx.name + '</span>' +
+      '<span class="ish-value">' + idx.value + '</span>' +
+      '<span class="ish-change ' + dirClass + '">' + arrow(idx.direction) + ' ' + cleanPercent + '</span>';
+    return el;
+  }
+
+  fetch(STOCK_URL + "?t=" + Date.now())
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      var indices = data.indices || [];
+      if (!indices.length) {
+        track.innerHTML = '<span class="ish-loading">지표 데이터가 없습니다.</span>';
+        return;
+      }
+
+      track.innerHTML = "";
+      // 무한루프처럼 보이게 리스트를 두 번 이어붙임
+      indices.concat(indices).forEach(function (idx) {
+        track.appendChild(buildItem(idx));
+      });
+
+      var totalSeconds = indices.length * DURATION_PER_ITEM_S;
+      track.style.animationDuration = totalSeconds + "s";
+
+      metaTextEl.textContent = data.updated_at ? data.updated_at + " 기준" : "";
+    })
+    .catch(function (err) {
+      track.innerHTML = '<span class="ish-loading">지표를 불러오지 못했습니다.</span>';
+      console.error("지수 티커(모바일) 로드 실패:", err);
+    });
+})();
+</script>
+
+</body>
+</html>
