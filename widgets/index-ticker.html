@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주요 지표</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+</style>
+</head>
+<body>
+<div id="idx-strip">
+  <div class="is-header">
+    <span class="is-label">주요 지표</span>
+  </div>
+
+  <div class="is-marquee-viewport">
+    <div class="is-marquee-track" id="is-marquee-track">
+      <p class="is-loading">불러오는 중...</p>
+    </div>
+  </div>
+
+  <div class="is-meta" id="is-meta">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    <span id="is-meta-text"></span>
+  </div>
+</div>
+
+<style>
+  #idx-strip {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 14px 18px 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-family: "Noto Sans KR", "Malgun Gothic", -apple-system, sans-serif;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  #idx-strip * { box-sizing: border-box; }
+
+  .is-header {
+    margin: -14px -18px 12px -18px;
+    padding: 12px 18px;
+    background: #142c67;
+    border-radius: 10px 10px 0 0;
+  }
+  .is-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.3px;
+  }
+
+  /* 4줄만 보이는 창, 나머지는 위로 흐름 */
+  .is-marquee-viewport {
+    height: 136px; /* 34px x 4줄 */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .is-marquee-track {
+    animation: is-scroll-up linear infinite;
+  }
+  .is-marquee-viewport:hover .is-marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes is-scroll-up {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
+
+  .is-loading { font-size: 13px; color: #aaa; }
+
+  .is-row {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .is-row-name {
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .is-row-right {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    min-width: 0;
+  }
+  .is-row-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: #191919;
+    white-space: nowrap;
+  }
+  .is-row-change {
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .is-row-change.up { color: #c0392b; }
+  .is-row-change.down { color: #2a5db0; }
+  .is-row-change.flat { color: #999; }
+
+  .is-meta {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+    padding-top: 9px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    color: #aaa;
+  }
+</style>
+
+<script>
+(function () {
+  var STOCK_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_news.json";
+  var DURATION_PER_ROW_S = 1.1; // 한 줄이 흘러가는 데 걸리는 시간(초) - 작을수록 빠름
+
+  var track = document.getElementById("is-marquee-track");
+  var metaTextEl = document.getElementById("is-meta-text");
+
+  function arrow(direction) {
+    if (direction === "up") return "▲";
+    if (direction === "down") return "▼";
+    return "-";
+  }
+
+  function buildRow(idx) {
+    var cleanPercent = (idx.change_percent || "").replace(/^[▲▼△▽+\-\s]+/, "").trim();
+    var dirClass = idx.direction === "up" ? "up" : idx.direction === "down" ? "down" : "flat";
+    var row = document.createElement("div");
+    row.className = "is-row";
+    row.innerHTML =
+      '<span class="is-row-name">' + idx.name + '</span>' +
+      '<span class="is-row-right">' +
+        '<span class="is-row-value">' + idx.value + '</span>' +
+        '<span class="is-row-change ' + dirClass + '">' + arrow(idx.direction) + ' ' + cleanPercent + '</span>' +
+      '</span>';
+    return row;
+  }
+
+  fetch(STOCK_URL + "?t=" + Date.now())
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      var indices = data.indices || [];
+      if (!indices.length) {
+        track.innerHTML = '<p class="is-loading">지표 데이터가 없습니다.</p>';
+        return;
+      }
+
+      track.innerHTML = "";
+      // 무한루프처럼 보이게 리스트를 두 번 이어붙임 (뒤 절반이 앞 절반과 동일)
+      indices.concat(indices).forEach(function (idx) {
+        track.appendChild(buildRow(idx));
+      });
+
+      var totalSeconds = indices.length * DURATION_PER_ROW_S;
+      track.style.animationDuration = totalSeconds + "s";
+
+      metaTextEl.textContent = data.updated_at ? data.updated_at + " 기준" : "";
+    })
+    .catch(function (err) {
+      track.innerHTML = '<p class="is-loading">지표를 불러오지 못했습니다.</p>';
+      console.error("지수 티커 로드 실패:", err);
+    });
+})();
+</script>
+</body></html>
