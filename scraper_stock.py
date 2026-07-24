@@ -1,6 +1,8 @@
 import os
 import re
 import json
+import time
+import random
 from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
@@ -9,11 +11,31 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
+MAX_RETRIES = 3
+RETRY_WAIT_RANGE = (15, 20)  # 재시도 사이 대기 시간(초)
 
-def fetch(url):
-    response = requests.get(url, headers=HEADERS, timeout=10)
-    response.raise_for_status()
-    return response.text
+
+def fetch(url, label=""):
+    """요청 실패(타임아웃/5xx 등 비정상 응답) 시 최대 MAX_RETRIES회까지 재시도.
+    모두 실패하면 None을 반환해 호출부에서 해당 페이지를 건너뛸 수 있게 한다."""
+    display_label = label or url
+
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=10)
+            if response.status_code == 200:
+                return response.text
+            print(f"[{display_label}] 응답이 비정상입니다 (상태 코드 {response.status_code}) - {attempt}/{MAX_RETRIES}회 시도")
+        except requests.exceptions.RequestException as e:
+            print(f"[{display_label}] 요청 중 오류가 발생했습니다: {e} - {attempt}/{MAX_RETRIES}회 시도")
+
+        if attempt < MAX_RETRIES:
+            wait_seconds = random.uniform(*RETRY_WAIT_RANGE)
+            print(f"[{display_label}] {wait_seconds:.1f}초 대기 후 재시도합니다...")
+            time.sleep(wait_seconds)
+
+    print(f"[{display_label}] 페이지 3회 재시도 후 실패")
+    return None
 
 
 def parse_time_to_iso(text, now_kst):
@@ -56,7 +78,9 @@ def build_change_percent(rate):
 
 def crawl_domestic_index(code, name):
     """코스피/코스닥: /sise/sise_index.naver 페이지"""
-    html = fetch(f"https://finance.naver.com/sise/sise_index.naver?code={code}")
+    html = fetch(f"https://finance.naver.com/sise/sise_index.naver?code={code}", label=f"{name} 지수")
+    if html is None:
+        return None
     soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('#now_value')
@@ -88,7 +112,9 @@ def crawl_domestic_index(code, name):
 
 def crawl_world_indices():
     """다우존스, 나스닥, S&P500: /world/ 페이지에 내장된 실시간 데이터(JS 변수)"""
-    html = fetch("https://finance.naver.com/world/")
+    html = fetch("https://finance.naver.com/world/", label="해외증시(다우존스/나스닥/S&P500)")
+    if html is None:
+        return []
     match = re.search(r"var americaData = jindo\.\$H\((\{.*?\})\);", html)
     if not match:
         return []
@@ -118,7 +144,9 @@ def crawl_world_indices():
 
 def crawl_detail_price(url, name):
     """국내금, 휘발유 등: marketindex 상세 페이지 공통 구조(.no_today / .no_exday)"""
-    html = fetch(url)
+    html = fetch(url, label=name)
+    if html is None:
+        return None
     soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('.today .no_today em')
@@ -200,7 +228,9 @@ def crawl_news_category(category_name, section_id3, now_kst):
         "https://finance.naver.com/news/news_list.naver"
         f"?mode=LSS3D&section_id=101&section_id2=258&section_id3={section_id3}"
     )
-    html = fetch(url)
+    html = fetch(url, label=f"{category_name} 뉴스")
+    if html is None:
+        return {"category": category_name, "items": []}
     soup = BeautifulSoup(html, 'lxml')
 
     items = []

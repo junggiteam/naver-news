@@ -1,9 +1,36 @@
 import os
 import re
 import json
+import time
+import random
 from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
+
+MAX_RETRIES = 3
+RETRY_WAIT_RANGE = (15, 20)  # 재시도 사이 대기 시간(초)
+
+
+def fetch_with_retry(url, headers, label, timeout=10):
+    """요청 실패(타임아웃/5xx 등 비정상 응답) 시 최대 MAX_RETRIES회까지 재시도.
+    모두 실패하면 None을 반환해 호출부에서 해당 페이지를 건너뛸 수 있게 한다."""
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            response = requests.get(url, headers=headers, timeout=timeout)
+            if response.status_code == 200:
+                return response
+            print(f"[{label}] 응답이 비정상입니다 (상태 코드 {response.status_code}) - {attempt}/{MAX_RETRIES}회 시도")
+        except requests.exceptions.RequestException as e:
+            print(f"[{label}] 요청 중 오류가 발생했습니다: {e} - {attempt}/{MAX_RETRIES}회 시도")
+
+        if attempt < MAX_RETRIES:
+            wait_seconds = random.uniform(*RETRY_WAIT_RANGE)
+            print(f"[{label}] {wait_seconds:.1f}초 대기 후 재시도합니다...")
+            time.sleep(wait_seconds)
+
+    print(f"[{label}] 페이지 3회 재시도 후 실패")
+    return None
+
 
 def parse_time_to_iso(text, now_kst):
     """네이버가 제공하는 상대/절대 시간 표기를 크롤링 시점(now_kst) 기준
@@ -43,9 +70,8 @@ def crawl_realestate_news():
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
 
-    response = requests.get(url, headers=headers, timeout=10)
-    if response.status_code != 200:
-        print(f"페이지를 불러오지 못했습니다. 에러 코드: {response.status_code}")
+    response = fetch_with_retry(url, headers, "부동산 뉴스")
+    if response is None:
         return
 
     soup = BeautifulSoup(response.text, 'html.parser')
