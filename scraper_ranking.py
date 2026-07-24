@@ -138,5 +138,10 @@ def crawl_ranking_news():
 
     print(f"성공! 총 {len(news_data)}개의 랭킹 뉴스가 {file_path}에 저장되었습니다.")
 
-if __name__ == "__main__":
+
+def main():
     crawl_ranking_news()
+
+
+if __name__ == "__main__":
+    main()

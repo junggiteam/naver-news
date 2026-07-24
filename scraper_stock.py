@@ -339,5 +339,9 @@ def crawl_stock_data():
     print(f"성공! 지표 {len(indices)}개, 뉴스 카테고리 {len(news_categories)}개(총 {total_news}건)가 {file_path}에 저장되었습니다.")
 
 
-if __name__ == "__main__":
+def main():
     crawl_stock_data()
+
+
+if __name__ == "__main__":
+    main()

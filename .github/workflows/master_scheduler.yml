@@ -1,0 +1,45 @@
+name: Master Scheduler
+
+on:
+  schedule:
+    # 10분마다 실행 (정각 0/10/20/30/40/50분은 피하고 3분으로 스태거링)
+    # GitHub Actions의 schedule 트리거는 public 저장소에서 best-effort라
+    # 정시 실행이 보장되지 않으므로, 10분마다 깨어나 run_scheduled.py가
+    # 각 크롤러의 목표 시각(KST) 대비 현재 시각을 직접 판단해 실행한다.
+    - cron: '3,13,23,33,43,53 * * * *'
+  workflow_dispatch: # 필요할 때 깃허브 웹에서 수동 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 저장소 가져오기
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설치하기
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 필요한 라이브러리 설치
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 스케줄된 크롤러 실행 (목표 시각 판단 후 필요한 것만 실행)
+        run: python run_scheduled.py
+
+      - name: 깃허브에 데이터 저장 (Push)
+        run: |
+          git config --local user.email "junggiteam@gmail.com"
+          git config --local user.name "junggiteam"
+          git add data/
+
+          git diff --staged --quiet || git commit -m "Auto update: Scheduled crawler run (master_scheduler)"
+
+          git pull --rebase origin main
+          git push origin main

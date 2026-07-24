@@ -126,5 +126,10 @@ def crawl_economy_section_news():
 
     print(f"성공! 총 {len(news_data)}개의 경제 뉴스가 {file_path}에 저장되었습니다.")
 
-if __name__ == "__main__":
+
+def main():
     crawl_economy_section_news()
+
+
+if __name__ == "__main__":
+    main()

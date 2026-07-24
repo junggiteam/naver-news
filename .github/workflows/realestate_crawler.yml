@@ -1,11 +1,9 @@
 name: Realestate News Crawler
 
 on:
-  schedule:
-    # 한국 시간(KST) 기준: 매일 00:12, 07:12, 12:12, 15:12, 18:12, 21:12
-    # UTC 기준: 전날 15:12, 당일 22:12, 03:12, 06:12, 09:12, 12:12
-    # 정각(0분) 집중을 피하기 위해 12분으로 스태거링
-    - cron: '12 15,22,3,6,9,12 * * *'
+  # schedule 트리거는 master_scheduler.yml로 이전됨 (10분마다 목표 시각 확인 후 실행).
+  # GitHub Actions의 schedule은 public 저장소에서 best-effort라 실행 누락이 잦아
+  # 이 워크플로우는 이제 수동 실행(workflow_dispatch) 용도로만 유지한다.
   workflow_dispatch: # 필요할 때 깃허브 웹에서 수동 실행 가능
 
 permissions:
