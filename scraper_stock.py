@@ -16,6 +16,37 @@ def fetch(url):
     return response.text
 
 
+def parse_time_to_iso(text, now_kst):
+    """네이버가 제공하는 상대/절대 시간 표기를 크롤링 시점(now_kst) 기준
+    ISO 8601 절대 시각 문자열로 변환. 인식하지 못하면 빈 문자열을 반환."""
+    text = (text or "").strip()
+    if not text:
+        return ""
+
+    if text in ("방금전", "방금 전"):
+        return now_kst.isoformat()
+
+    match = re.match(r'^(\d+)분전$', text)
+    if match:
+        return (now_kst - timedelta(minutes=int(match.group(1)))).isoformat()
+
+    match = re.match(r'^(\d+)시간전$', text)
+    if match:
+        return (now_kst - timedelta(hours=int(match.group(1)))).isoformat()
+
+    match = re.match(r'^(\d+)일전$', text)
+    if match:
+        return (now_kst - timedelta(days=int(match.group(1)))).isoformat()
+
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"):
+        try:
+            return datetime.strptime(text, fmt).replace(tzinfo=now_kst.tzinfo).isoformat()
+        except ValueError:
+            continue
+
+    return ""
+
+
 def build_change_percent(rate):
     rate = float(rate)
     direction = "up" if rate >= 0 else "down"
@@ -163,7 +194,7 @@ NEWS_CATEGORIES = [
 ]
 
 
-def crawl_news_category(category_name, section_id3):
+def crawl_news_category(category_name, section_id3, now_kst):
     """finance.naver.com/news/ 카테고리별(시황·전망 등) 뉴스 1~5위"""
     url = (
         "https://finance.naver.com/news/news_list.naver"
@@ -190,12 +221,15 @@ def crawl_news_category(category_name, section_id3):
         press_elem = summary.select_one('.press') if summary else None
         time_elem = summary.select_one('.wdate') if summary else None
 
+        upload_time = time_elem.get_text(strip=True) if time_elem else ""
+
         items.append({
             "press_name": press_elem.get_text(strip=True) if press_elem else "",
             "rank": rank,
             "title": title,
             "link": link,
-            "upload_time": time_elem.get_text(strip=True) if time_elem else ""
+            "upload_time": upload_time,
+            "published_at": parse_time_to_iso(upload_time, now_kst)
         })
 
     return {"category": category_name, "items": items}
@@ -247,21 +281,22 @@ def crawl_stock_data():
     except Exception as e:
         print(f"비트코인 수집 실패: {e}")
 
+    kst_timezone = timezone(timedelta(hours=9))
+    now_kst_dt = datetime.now(kst_timezone)
+    now_kst_minute = now_kst_dt.replace(second=0, microsecond=0)
+
     news_categories = []
     for category_name, section_id3 in NEWS_CATEGORIES:
         try:
-            news_categories.append(crawl_news_category(category_name, section_id3))
+            news_categories.append(crawl_news_category(category_name, section_id3, now_kst_minute))
         except Exception as e:
             print(f"[{category_name}] 뉴스 수집 실패: {e}")
             news_categories.append({"category": category_name, "items": []})
 
     os.makedirs("data", exist_ok=True)
 
-    kst_timezone = timezone(timedelta(hours=9))
-    now_kst = datetime.now(kst_timezone).strftime("%Y-%m-%d %H:%M:%S")
-
     output = {
-        "updated_at": now_kst,
+        "updated_at": now_kst_dt.strftime("%Y-%m-%d %H:%M:%S"),
         "indices": indices,
         "news_categories": news_categories
     }
