@@ -2,11 +2,14 @@ name: Master Scheduler
 
 on:
   schedule:
-    # 10분마다 실행 (정각 0/10/20/30/40/50분은 피하고 3분으로 스태거링)
-    # GitHub Actions의 schedule 트리거는 public 저장소에서 best-effort라
-    # 정시 실행이 보장되지 않으므로, 10분마다 깨어나 run_scheduled.py가
-    # 각 크롤러의 목표 시각(KST) 대비 현재 시각을 직접 판단해 실행한다.
+    # GitHub 자체 schedule은 public 저장소에서 best-effort라 3~10시간
+    # 간격으로 불규칙 발동됨(2026-07-24~27 실측). 완전히 없애지는 않고
+    # 최후의 안전망으로만 남겨둔다. 실제 정시 실행은 아래 repository_dispatch가 담당.
     - cron: '3,13,23,33,43,53 * * * *'
+  repository_dispatch:
+    # 외부 크론 서비스(cron-job.org)가 정확한 시각에 GitHub API로
+    # 이 이벤트를 호출해서 깨운다. GitHub 자체 스케줄러보다 훨씬 정시성이 높음.
+    types: [wake-up]
   workflow_dispatch: # 필요할 때 깃허브 웹에서 수동 실행 가능
 
 permissions:
