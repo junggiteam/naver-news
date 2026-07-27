@@ -69,7 +69,7 @@
     align-items: baseline;
     animation: ish-scroll-left linear infinite;
   }
-  .ish-viewport:hover .ish-track {
+  .ish-track.ish-paused {
     animation-play-state: paused;
   }
 
@@ -127,6 +127,14 @@
 
   var track = document.getElementById("ish-track");
   var metaTextEl = document.getElementById("ish-meta-text");
+  var viewport = document.querySelector(".ish-viewport");
+
+  // 지수 영역을 탭할 때마다 멈춤 <-> 재생 토글.
+  // (기존 CSS :hover 방식은 모바일에서 탭한 영역에만 붙어있어서,
+  //  다시 그 영역을 터치해도 안 풀리고 다른 영역을 터치해야 풀리는 문제가 있었음)
+  viewport.addEventListener("click", function () {
+    track.classList.toggle("ish-paused");
+  });
 
   function arrow(direction) {
     if (direction === "up") return "▲";
