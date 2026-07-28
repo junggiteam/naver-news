@@ -12,12 +12,17 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = "gemini-2.5-flash-lite"
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
+# 오류 원인 파악용(임시 디버깅). 정상화되면 제거 예정.
+LAST_ERROR = None
+
 # 코스피/코스닥 중 하나라도 이 이상 움직이면 시황 코멘트 생성
 STOCK_COMMENTARY_THRESHOLD = 1.5
 
 
 def _call_gemini(prompt, timeout=30):
+    global LAST_ERROR
     if not GEMINI_API_KEY:
+        LAST_ERROR = "GEMINI_API_KEY 환경변수 없음"
         print("[ai_briefing] GEMINI_API_KEY 없음 - AI 기능 생략")
         return None
     try:
@@ -31,7 +36,13 @@ def _call_gemini(prompt, timeout=30):
         data = resp.json()
         return data["candidates"][0]["content"]["parts"][0]["text"].strip()
     except Exception as e:
-        print(f"[ai_briefing] Gemini 호출 실패: {e}")
+        body = ""
+        try:
+            body = resp.text[:300]
+        except Exception:
+            pass
+        LAST_ERROR = f"{type(e).__name__}: {e} | body={body}"
+        print(f"[ai_briefing] Gemini 호출 실패: {LAST_ERROR}")
         return None
 
 
