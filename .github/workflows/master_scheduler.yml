@@ -38,13 +38,19 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python run_scheduled.py
 
-      - name: 깃허브에 데이터 저장 (Push)
+      - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
           git config --local user.name "junggiteam"
           git add data/
 
-          git diff --staged --quiet || git commit -m "Auto update: Scheduled crawler run (master_scheduler)"
+          git diff --staged --quiet && exit 0
+          git commit -m "Auto update: Scheduled crawler run (master_scheduler)"
 
-          git pull --rebase origin main
-          git push origin main
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push 충돌(동시 실행) - ${i}번째 재시도 대기 중..."
+            sleep $((RANDOM % 20 + 5))
+          done
+          echo "5회 재시도 후에도 push 실패"
+          exit 1
