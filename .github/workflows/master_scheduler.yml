@@ -44,12 +44,17 @@ jobs:
           git config --local user.name "junggiteam"
           git add data/
 
-          git diff --staged --quiet && exit 0
+          if git diff --staged --quiet; then
+            echo "변경사항 없음 - 종료"
+            exit 0
+          fi
           git commit -m "Auto update: Scheduled crawler run (master_scheduler)"
 
           for i in 1 2 3 4 5; do
             if git pull --rebase -X theirs origin main; then
-              git push origin main && exit 0
+              if git push origin main; then
+                exit 0
+              fi
             fi
             git rebase --abort 2>/dev/null || true
             echo "push 충돌(동시 실행) - ${i}번째 재시도 대기 중..."
