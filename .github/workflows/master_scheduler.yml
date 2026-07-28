@@ -34,6 +34,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: 스케줄된 크롤러 실행 (목표 시각 판단 후 필요한 것만 실행)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python run_scheduled.py
 
       - name: 깃허브에 데이터 저장 (Push)

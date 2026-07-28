@@ -6,6 +6,7 @@ import scraper_ranking
 import scraper_economy_section
 import scraper_stock
 import scraper_realestate
+import ai_briefing
 
 KST = timezone(timedelta(hours=9))
 MARKER_FILE = os.path.join("data", ".last_run.json")
@@ -29,6 +30,48 @@ CRAWLER_FUNCS = {
     "stock": scraper_stock.main,
     "realestate": scraper_realestate.main,
 }
+
+
+TAB_BRIEFING_TARGETS = {
+    # 크롤러 이름: (데이터 파일 경로, 브리핑 프롬프트에 쓸 한글 라벨)
+    "ranking": ("data/ranking_news.json", "종합"),
+    "economy": ("data/economy_news.json", "경제"),
+    "realestate": ("data/realestate_news.json", "부동산"),
+}
+
+
+def _augment_with_ai(name):
+    """크롤링 직후 해당 카테고리 데이터 파일에 AI 브리핑/코멘트를 추가.
+    AI 호출이 실패해도 예외를 밖으로 던지지 않는다 - 크롤링 성공 자체는
+    이 단계와 무관하게 보장되어야 하기 때문."""
+    try:
+        if name in TAB_BRIEFING_TARGETS:
+            path, label = TAB_BRIEFING_TARGETS[name]
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            titles = [item["title"] for item in data.get("news", [])]
+            data["ai_briefing"] = ai_briefing.generate_tab_briefing(titles, label)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"[{name}] AI 브리핑 {'생성됨' if data['ai_briefing'] else '생략됨(키 없음/호출 실패)'}")
+
+        elif name == "stock":
+            path = "data/stock_news.json"
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            titles = [
+                item["title"]
+                for cat in data.get("news_categories", [])
+                for item in cat.get("items", [])
+            ]
+            data["ai_commentary"] = ai_briefing.generate_stock_commentary(
+                data.get("indices", []), titles
+            )
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"[stock] AI 시황 코멘트 {'생성됨' if data['ai_commentary'] else '생략됨(변동폭 작음/키 없음/호출 실패)'}")
+    except Exception as e:
+        print(f"[{name}] AI 후처리 중 오류(크롤링 결과 자체는 정상 저장됨): {e}")
 
 
 def get_now_kst():
@@ -85,6 +128,7 @@ def run_scheduled(now_kst=None):
         print(f"[{name}] 마지막 실행: {last_run_str} - 실행 (간격 {CRAWLER_INTERVALS[name]} 경과)")
         try:
             CRAWLER_FUNCS[name]()
+            _augment_with_ai(name)
             marker[name] = now_kst.isoformat()
             marker_changed = True
             print(f"[{name}] 실행 완료")
