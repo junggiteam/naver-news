@@ -48,7 +48,10 @@ jobs:
           git commit -m "Auto update: Scheduled crawler run (master_scheduler)"
 
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && exit 0
+            if git pull --rebase -X theirs origin main; then
+              git push origin main && exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
             echo "push 충돌(동시 실행) - ${i}번째 재시도 대기 중..."
             sleep $((RANDOM % 20 + 5))
           done

@@ -88,8 +88,14 @@ def get_now_kst():
 def load_marker():
     if not os.path.exists(MARKER_FILE):
         return {}
-    with open(MARKER_FILE, encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(MARKER_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        # 마커 파일이 손상돼도(예: 동시 push 충돌 잔재) 전체 실행이 죽지 않고
+        # "기록 없음"으로 간주해 모든 크롤러를 다시 실행하도록 한다.
+        print(f"[load_marker] 마커 파일 손상, 초기화하고 계속 진행: {e}")
+        return {}
 
 
 def save_marker(marker):
