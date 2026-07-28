@@ -1,333 +1,334 @@
 {
-    "updated_at": "2026-07-28 15:15:37",
-    "indices": [
+  "updated_at": "2026-07-28 17:26:59",
+  "indices": [
+    {
+      "name": "코스피",
+      "value": "6,023.66",
+      "change_percent": "▼10.84%",
+      "direction": "down",
+      "as_of": "2026-07-28 17:26:00"
+    },
+    {
+      "name": "코스닥",
+      "value": "705.85",
+      "change_percent": "▼7.72%",
+      "direction": "down",
+      "as_of": "2026-07-28 17:26:00"
+    },
+    {
+      "name": "다우존스",
+      "value": "52,210.08",
+      "change_percent": "▲0.51%",
+      "direction": "up",
+      "as_of": "2026-07-28 06:45:01"
+    },
+    {
+      "name": "나스닥",
+      "value": "24,932.08",
+      "change_percent": "▼0.18%",
+      "direction": "down",
+      "as_of": "2026-07-28 09:22:39"
+    },
+    {
+      "name": "S&P500",
+      "value": "7,413.18",
+      "change_percent": "▲0.02%",
+      "direction": "up",
+      "as_of": "2026-07-28 06:45:04"
+    },
+    {
+      "name": "국내금(원/돈)",
+      "value": "713,410.42",
+      "change_percent": "▼1.22%",
+      "direction": "down",
+      "as_of": "2026.07.28 17:24"
+    },
+    {
+      "name": "휘발유(원/리터)",
+      "value": "1,869.22",
+      "change_percent": "▼0.03%",
+      "direction": "down",
+      "as_of": "2026.07.28"
+    },
+    {
+      "name": "비트코인(원/코인)",
+      "value": "92,300,000",
+      "change_percent": "▼0.91%",
+      "direction": "down",
+      "as_of": "2026-07-28 17:26:57"
+    }
+  ],
+  "news_categories": [
+    {
+      "category": "시황·전망",
+      "items": [
         {
-            "name": "코스피",
-            "value": "6,009.19",
-            "change_percent": "▼11.05%",
-            "direction": "down",
-            "as_of": "2026-07-28 15:15:00"
+          "press_name": "매일경제",
+          "rank": 1,
+          "title": "“낙폭 과도 극단적 저평가, 반등하려면”…증시 전문가, 긴급진단",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005713394&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:17",
+          "published_at": "2026-07-28T17:17:00+09:00"
         },
         {
-            "name": "코스닥",
-            "value": "701.95",
-            "change_percent": "▼8.23%",
-            "direction": "down",
-            "as_of": "2026-07-28 15:15:00"
+          "press_name": "연합뉴스TV",
+          "rank": 2,
+          "title": "개인 15조 샀는데…단일레버리지 고점 대비 4분의 1 수준",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000889805&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:16",
+          "published_at": "2026-07-28T17:16:00+09:00"
         },
         {
-            "name": "다우존스",
-            "value": "52,210.08",
-            "change_percent": "▲0.51%",
-            "direction": "up",
-            "as_of": "2026-07-28 06:45:01"
+          "press_name": "연합뉴스TV",
+          "rank": 3,
+          "title": "'3천스닥' 간다더니…코스닥, 1년3개월만에 700선 붕괴",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000889804&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:15",
+          "published_at": "2026-07-28T17:15:00+09:00"
         },
         {
-            "name": "나스닥",
-            "value": "24,932.08",
-            "change_percent": "▼0.18%",
-            "direction": "down",
-            "as_of": "2026-07-28 09:22:39"
+          "press_name": "연합뉴스TV",
+          "rank": 4,
+          "title": "코스피, 이달 30% 하락에 시총 2천조 증발",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000889803&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:15",
+          "published_at": "2026-07-28T17:15:00+09:00"
         },
         {
-            "name": "S&P500",
-            "value": "7,413.18",
-            "change_percent": "▲0.02%",
-            "direction": "up",
-            "as_of": "2026-07-28 06:45:04"
-        },
-        {
-            "name": "국내금(원/돈)",
-            "value": "712,993.46",
-            "change_percent": "▼1.27%",
-            "direction": "down",
-            "as_of": "2026.07.28 15:14"
-        },
-        {
-            "name": "휘발유(원/리터)",
-            "value": "1,869.22",
-            "change_percent": "▼0.03%",
-            "direction": "down",
-            "as_of": "2026.07.28"
-        },
-        {
-            "name": "비트코인(원/코인)",
-            "value": "92,340,000",
-            "change_percent": "▼0.87%",
-            "direction": "down",
-            "as_of": "2026-07-28 15:15:35"
+          "press_name": "연합뉴스TV",
+          "rank": 5,
+          "title": "삼성전자, 시총 1조달러 붕괴…세계 15위로 '털썩'",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000889801&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:14",
+          "published_at": "2026-07-28T17:14:00+09:00"
         }
-    ],
-    "news_categories": [
+      ]
+    },
+    {
+      "category": "기업·종목분석",
+      "items": [
         {
-            "category": "시황·전망",
-            "items": [
-                {
-                    "press_name": "머니투데이",
-                    "rank": 1,
-                    "title": "700선 무너진 코스닥, 1년 3개월만에 600선 후퇴(상보)",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005392099&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:05",
-                    "published_at": "2026-07-28T15:05:00+09:00"
-                },
-                {
-                    "press_name": "뉴스1",
-                    "rank": 2,
-                    "title": "\"코스피 급락, 경기침체 시작 아냐…첫 반등 뒤 저점 확인해야\"",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0009083607&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:04",
-                    "published_at": "2026-07-28T15:04:00+09:00"
-                },
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 3,
-                    "title": "코스닥 8%대 급락에 700선마저 이탈",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219531&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:03",
-                    "published_at": "2026-07-28T15:03:00+09:00"
-                },
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 4,
-                    "title": "코스닥 8%대 급락에 700선마저 이탈",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219529&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:03",
-                    "published_at": "2026-07-28T15:03:00+09:00"
-                },
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 5,
-                    "title": "코스닥 8%대 급락에 700선마저 이탈",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219528&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:03",
-                    "published_at": "2026-07-28T15:03:00+09:00"
-                }
-            ]
+          "press_name": "아시아경제",
+          "rank": 1,
+          "title": "中반도체 굴기의 역설…한국 소재株 웃는다[클릭 e종목]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005795799&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:23",
+          "published_at": "2026-07-28T17:23:00+09:00"
         },
         {
-            "category": "기업·종목분석",
-            "items": [
-                {
-                    "press_name": "머니투데이",
-                    "rank": 1,
-                    "title": "하이브, 2분기 매출액 1.5조원  \"BTS 월드투어 효과 본격\"",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005392100&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:05",
-                    "published_at": "2026-07-28T15:05:00+09:00"
-                },
-                {
-                    "press_name": "머니투데이",
-                    "rank": 2,
-                    "title": "폴라리스오피스, 네트릭스 MSP 파트너십 기반 'AI 데이터 보안' 시장 공략",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005392085&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:56",
-                    "published_at": "2026-07-28T14:56:00+09:00"
-                },
-                {
-                    "press_name": "파이낸셜뉴스",
-                    "rank": 3,
-                    "title": "[공시]HD현대마린엔진, 2분기 영업익 313억…79.2%↑",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005554014&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:52",
-                    "published_at": "2026-07-28T14:52:00+09:00"
-                },
-                {
-                    "press_name": "동행미디어 시대",
-                    "rank": 4,
-                    "title": "해외 실적 탄력받은 농심, '12억개 생산체제' 성장엔진 풀가동",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0001153363&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:52",
-                    "published_at": "2026-07-28T14:52:00+09:00"
-                },
-                {
-                    "press_name": "아시아경제",
-                    "rank": 5,
-                    "title": "스튜디오삼익, 자사주 매입 이어 반기배당 실시",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005795681&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:51",
-                    "published_at": "2026-07-28T14:51:00+09:00"
-                }
-            ]
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "기업 공시 [7월 28일]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004646082&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:18",
+          "published_at": "2026-07-28T17:18:00+09:00"
         },
         {
-            "category": "해외증시",
-            "items": [
-                {
-                    "press_name": "아시아경제",
-                    "rank": 1,
-                    "title": "\"AI가 韓·美 증시 하나로 묶었다\"…日도 삼전닉스 영향 우려",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005795706&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:14",
-                    "published_at": "2026-07-28T15:14:00+09:00"
-                },
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 2,
-                    "title": "아시아 반도체주 투매…TSMC·키옥시아도 급락",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219518&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
-                    "upload_time": "2026-07-28 15:00",
-                    "published_at": "2026-07-28T15:00:00+09:00"
-                },
-                {
-                    "press_name": "한국경제",
-                    "rank": 3,
-                    "title": "디웨이브퀀텀, 美 최대 통신사 AT&T와 협력…주가 20% 폭등",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005314654&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:50",
-                    "published_at": "2026-07-28T14:50:00+09:00"
-                },
-                {
-                    "press_name": "이데일리",
-                    "rank": 4,
-                    "title": "“韓증시·美 기술주 동조화 심화…AI로 묶인 ‘운명 공동체’”",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338337&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:42",
-                    "published_at": "2026-07-28T14:42:00+09:00"
-                },
-                {
-                    "press_name": "매일경제",
-                    "rank": 5,
-                    "title": "“하이닉스도 달러 돈으로 사야 안심?”…다시 美증시로 향하는 서학개미",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005713263&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:08",
-                    "published_at": "2026-07-28T14:08:00+09:00"
-                }
-            ]
+          "press_name": "한국경제",
+          "rank": 3,
+          "title": "\"압도적 실적 성장 기대·가격 매력\"…셀트리온 목표가 '줄상향' [종목+]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005314735&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:01",
+          "published_at": "2026-07-28T17:01:00+09:00"
         },
         {
-            "category": "채권·선물",
-            "items": [
-                {
-                    "press_name": "이데일리",
-                    "rank": 1,
-                    "title": "[속보]코스닥, 700선 붕괴…1년 3개월만",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338353&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:57",
-                    "published_at": "2026-07-28T14:57:00+09:00"
-                },
-                {
-                    "press_name": "이데일리",
-                    "rank": 2,
-                    "title": "\"주식창 무서워 못 보겠다\"…'6000피·700닥' 붕괴 위협",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338308&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:07",
-                    "published_at": "2026-07-28T14:07:00+09:00"
-                },
-                {
-                    "press_name": "이데일리",
-                    "rank": 3,
-                    "title": "'검은 화요일' 코스피 이어 코스닥까지 '서킷브레이커' 동반 발동",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338265&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
-                    "upload_time": "2026-07-28 12:37",
-                    "published_at": "2026-07-28T12:37:00+09:00"
-                },
-                {
-                    "press_name": "이데일리",
-                    "rank": 4,
-                    "title": "[속보]코스피 이어 코스닥도 서킷브레이커 발동",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338240&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
-                    "upload_time": "2026-07-28 12:11",
-                    "published_at": "2026-07-28T12:11:00+09:00"
-                },
-                {
-                    "press_name": "이데일리",
-                    "rank": 5,
-                    "title": "‘검은 화요일’ 코스피·코스닥 매도 사이드카에 서킷까지 발동",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338157&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
-                    "upload_time": "2026-07-28 11:08",
-                    "published_at": "2026-07-28T11:08:00+09:00"
-                }
-            ]
+          "press_name": "머니투데이",
+          "rank": 4,
+          "title": "급락장에 \"매수, 매수\" 연기금 반전...대규모 매도 없었다",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005392203&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:57",
+          "published_at": "2026-07-28T16:57:00+09:00"
         },
         {
-            "category": "공시·메모",
-            "items": [
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 1,
-                    "title": "BNK금융지주 2분기 영업이익 2천357억원…작년 동기 대비 7.9%↓",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219476&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:50",
-                    "published_at": "2026-07-28T14:50:00+09:00"
-                },
-                {
-                    "press_name": "헤럴드경제",
-                    "rank": 2,
-                    "title": "HD현대마린엔진, 2분기 영업익 313억…전년비 79.2% ↑",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0002676251&office_id=016&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:43",
-                    "published_at": "2026-07-28T14:43:00+09:00"
-                },
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 3,
-                    "title": "HD현대마린엔진 2분기 영업이익 313억원…작년 대비 79.2%↑",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219431&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:41",
-                    "published_at": "2026-07-28T14:41:00+09:00"
-                },
-                {
-                    "press_name": "이데일리",
-                    "rank": 4,
-                    "title": "에이비엘바이오, ABL503 1상 IND 변경계획 한국 식약처 추가 승인",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338331&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:40",
-                    "published_at": "2026-07-28T14:40:00+09:00"
-                },
-                {
-                    "press_name": "헤럴드경제",
-                    "rank": 5,
-                    "title": "하이브, 2분기 영업익 1709억…전년비 159.3% ↑",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0002676246&office_id=016&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
-                    "upload_time": "2026-07-28 14:39",
-                    "published_at": "2026-07-28T14:39:00+09:00"
-                }
-            ]
-        },
-        {
-            "category": "환율",
-            "items": [
-                {
-                    "press_name": "서울경제",
-                    "rank": 1,
-                    "title": "재생에너지 100GW ‘빨간불’…KDI “보급 속도 4배 높여야”",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0004645703&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
-                    "upload_time": "2026-07-27 17:45",
-                    "published_at": "2026-07-27T17:45:00+09:00"
-                },
-                {
-                    "press_name": "서울경제",
-                    "rank": 2,
-                    "title": "관세청, 상반기 불법 외환거래 7.2조 적발",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0004645698&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
-                    "upload_time": "2026-07-27 17:43",
-                    "published_at": "2026-07-27T17:43:00+09:00"
-                },
-                {
-                    "press_name": "아시아경제",
-                    "rank": 3,
-                    "title": "원·달러 환율 1.9원 오른 1468.5원…외인 주식 매도세 영향(상보)",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0005795192&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
-                    "upload_time": "2026-07-27 16:37",
-                    "published_at": "2026-07-27T16:37:00+09:00"
-                },
-                {
-                    "press_name": "서울경제",
-                    "rank": 4,
-                    "title": "중동 리스크 완화에도 외국인 매도·저가 결제에 환율 반등 [김혜란의 FX]",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0004645659&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
-                    "upload_time": "2026-07-27 16:26",
-                    "published_at": "2026-07-27T16:26:00+09:00"
-                },
-                {
-                    "press_name": "연합뉴스",
-                    "rank": 5,
-                    "title": "중동 소강 국면에도…환율 1.9원 오른 1,468.5원",
-                    "link": "https://finance.naver.com/news/news_read.naver?article_id=0016217447&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
-                    "upload_time": "2026-07-27 16:21",
-                    "published_at": "2026-07-27T16:21:00+09:00"
-                }
-            ]
+          "press_name": "머니투데이",
+          "rank": 5,
+          "title": "방산·우주서 바이오로…링크솔루션, 척추 신경재생 플랫폼 개발 착수",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005392171&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:30",
+          "published_at": "2026-07-28T16:30:00+09:00"
         }
-    ]
+      ]
+    },
+    {
+      "category": "해외증시",
+      "items": [
+        {
+          "press_name": "연합뉴스",
+          "rank": 1,
+          "title": "CXMT 상장에 中안후이성 '대박'…딥시크 창업자 량원펑도 수혜",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219960&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:07",
+          "published_at": "2026-07-28T17:07:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "‘검은 화요일’에도 환율은 1450원대로 하락…하이닉스 환전 방어",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338473&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:30",
+          "published_at": "2026-07-28T16:30:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
+          "title": "10년 분쟁 분수령…J&J, '활석 파우더 소송' 8조원 합의",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338400&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
+          "upload_time": "2026-07-28 15:32",
+          "published_at": "2026-07-28T15:32:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 4,
+          "title": "주식으로 번 돈 명품에…LVMH 패션 매출 2년만에 증가",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338397&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
+          "upload_time": "2026-07-28 15:30",
+          "published_at": "2026-07-28T15:30:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 5,
+          "title": "\"AI가 韓·美 증시 하나로 묶었다\"…日도 삼전닉스 영향 우려",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005795706&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260728&page=1",
+          "upload_time": "2026-07-28 15:14",
+          "published_at": "2026-07-28T15:14:00+09:00"
+        }
+      ]
+    },
+    {
+      "category": "채권·선물",
+      "items": [
+        {
+          "press_name": "연합뉴스",
+          "rank": 1,
+          "title": "국고채, 주가 급락 속 일제히 강세…3년물 3.829%(종합)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219934&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:01",
+          "published_at": "2026-07-28T17:01:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "NH투자, 5천억 회사채 발행…'반도체 머니' 하이닉스가 인수 관측",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219888&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:48",
+          "published_at": "2026-07-28T16:48:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
+          "title": "증시 초토화 '검은 화요일'…장중 한때 6000피·700닥 ‘붕괴’",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338442&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:06",
+          "published_at": "2026-07-28T16:06:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 4,
+          "title": "[속보] 코스피 10.84% 내린 6023.63 마감, 코스닥 705.82",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338402&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
+          "upload_time": "2026-07-28 15:33",
+          "published_at": "2026-07-28T15:33:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 5,
+          "title": "[속보]코스피, 6000선 붕괴…11%대 하락",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338379&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260728&page=1",
+          "upload_time": "2026-07-28 15:15",
+          "published_at": "2026-07-28T15:15:00+09:00"
+        }
+      ]
+    },
+    {
+      "category": "공시·메모",
+      "items": [
+        {
+          "press_name": "연합뉴스",
+          "rank": 1,
+          "title": "한미사이언스 2분기 영업이익 591억원…71%↑(종합)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016220012&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
+          "upload_time": "2026-07-28 17:23",
+          "published_at": "2026-07-28T17:23:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "한미사이언스 2분기 영업이익 591억원…70.9%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219874&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:46",
+          "published_at": "2026-07-28T16:46:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 3,
+          "title": "한미약품, 2분기 영업익 117% 급증…기술이전 효과(종합)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219825&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:26",
+          "published_at": "2026-07-28T16:26:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 4,
+          "title": "고영, 2분기 영업익 146억원…전년比 479% 급증",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006338465&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:22",
+          "published_at": "2026-07-28T16:22:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 5,
+          "title": "한미약품 2분기 영업이익 1천311억원…116.9%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219772&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=406&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:09",
+          "published_at": "2026-07-28T16:09:00+09:00"
+        }
+      ]
+    },
+    {
+      "category": "환율",
+      "items": [
+        {
+          "press_name": "서울경제",
+          "rank": 1,
+          "title": "환율 외인 5조 주식 매도에도 1460원 초반…하이닉스 ADR 환전 영향 [김혜란의 FX]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004646059&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:18",
+          "published_at": "2026-07-28T16:18:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "외국인 5조 순매도에도 하이닉스 ADR 효과…환율 소폭 하락",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016219768&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
+          "upload_time": "2026-07-28 16:09",
+          "published_at": "2026-07-28T16:09:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
+          "title": "원·달러 환율 6.0원 내린 1462.5원(오후 3시30분)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005795714&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
+          "upload_time": "2026-07-28 15:32",
+          "published_at": "2026-07-28T15:32:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 4,
+          "title": "재생에너지 100GW ‘빨간불’…KDI “보급 속도 4배 높여야”",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004645703&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
+          "upload_time": "2026-07-27 17:45",
+          "published_at": "2026-07-27T17:45:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 5,
+          "title": "관세청, 상반기 불법 외환거래 7.2조 적발",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004645698&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260728&page=1",
+          "upload_time": "2026-07-27 17:43",
+          "published_at": "2026-07-27T17:43:00+09:00"
+        }
+      ]
+    }
+  ],
+  "ai_commentary": null
 }
