@@ -90,11 +90,13 @@ def crawl_domestic_index(code, name, debug_notes=None):
     fluc_elem = soup.select_one('#change_value_and_rate')
     if not value_elem or not fluc_elem:
         if debug_notes is not None:
+            percent_idx = html.find('%')
+            snippet_around_percent = html[max(0, percent_idx - 300):percent_idx + 50] if percent_idx != -1 else "(응답에 % 문자 자체가 없음)"
             debug_notes.append(
                 f"{name}({code}) -> 페이지는 받았으나 선택자 없음 "
                 f"(now_value={'있음' if value_elem else '없음'}, "
-                f"change_value_and_rate={'있음' if fluc_elem else '없음'}, "
-                f"응답 길이={len(html)}, 응답앞부분={html[:150]!r}"
+                f"change_value_and_rate={'있음' if fluc_elem else '없음'}) "
+                f"첫 %기호 주변: {snippet_around_percent!r}"
             )
         return None
 
