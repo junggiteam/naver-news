@@ -135,10 +135,10 @@ def crawl_sector_performance(debug_notes=None):
         return []
 
     df = df.dropna(subset=[name_col])
-    change_col = _get_col(df, "등락률")
+    change_col = _get_col(df, "전일대비")
     if change_col is None:
         if debug_notes is not None:
-            debug_notes.append(f"업종별 시세 -> '등락률' 컬럼을 못 찾음 (컬럼들: {[_flat_col_name(c) for c in df.columns]})")
+            debug_notes.append(f"업종별 시세 -> '전일대비' 컬럼을 못 찾음 (컬럼들: {[_flat_col_name(c) for c in df.columns]})")
         return []
 
     def parse_pct(v):
@@ -156,7 +156,7 @@ def crawl_sector_performance(debug_notes=None):
             continue
         items.append({
             "name": name,
-            "change_percent": str(row[change_col]).strip(),
+            "change_value": str(row[change_col]).strip(),
         })
 
     if not items and debug_notes is not None:
@@ -184,7 +184,8 @@ def crawl_ipo_calendar(debug_notes=None):
     df, name_col = _find_table_with_column(tables, "종목명")
     if df is None:
         if debug_notes is not None:
-            debug_notes.append(f"IPO 일정 -> 테이블 {len(tables)}개 중 '종목명' 컬럼을 가진 테이블 없음")
+            cols_preview = [[_flat_col_name(c) for c in t.columns] for t in tables]
+            debug_notes.append(f"IPO 일정 -> 테이블 {len(tables)}개, 컬럼들: {cols_preview}")
         return []
 
     df = df.dropna(subset=[name_col])
