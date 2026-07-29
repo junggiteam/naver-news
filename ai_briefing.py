@@ -19,6 +19,28 @@ LAST_ERROR = None
 STOCK_COMMENTARY_THRESHOLD = 1.5
 
 
+def _list_available_models():
+    """실제 이 API 키로 쓸 수 있는 모델 목록을 조회 (모델명 추측 대신 확인용, 임시)."""
+    if not GEMINI_API_KEY:
+        return "GEMINI_API_KEY 없음"
+    try:
+        resp = requests.get(
+            "https://generativelanguage.googleapis.com/v1beta/models",
+            params={"key": GEMINI_API_KEY},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        names = [
+            m["name"].replace("models/", "")
+            for m in data.get("models", [])
+            if "generateContent" in m.get("supportedGenerationMethods", [])
+        ]
+        return ", ".join(names)
+    except Exception as e:
+        return f"모델 목록 조회 실패: {e}"
+
+
 def _call_gemini(prompt, timeout=60):
     global LAST_ERROR
     if not GEMINI_API_KEY:
