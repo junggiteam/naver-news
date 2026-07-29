@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 03:33:50",
+  "updated_at": "2026-07-30 03:47:05",
   "indices": [
     {
       "name": "코스피",
@@ -24,24 +24,24 @@
     },
     {
       "name": "다우존스",
-      "value": "51,988.33",
-      "change_percent": "▼1.44%",
+      "value": "51,919.35",
+      "change_percent": "▼1.57%",
       "direction": "down",
-      "as_of": "2026-07-30 03:33:01"
+      "as_of": "2026-07-30 03:47:01"
     },
     {
       "name": "나스닥",
-      "value": "24,824.86",
-      "change_percent": "▼0.21%",
+      "value": "24,798.54",
+      "change_percent": "▼0.32%",
       "direction": "down",
-      "as_of": "2026-07-30 03:33:01"
+      "as_of": "2026-07-30 03:47:01"
     },
     {
       "name": "S&P500",
-      "value": "7,390.77",
-      "change_percent": "▼0.51%",
+      "value": "7,397.45",
+      "change_percent": "▼0.42%",
       "direction": "down",
-      "as_of": "2026-07-30 03:33:01"
+      "as_of": "2026-07-30 03:47:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -52,15 +52,15 @@
     },
     {
       "name": "휘발유(원/리터)",
-      "value": "1,868.33",
-      "change_percent": "▼0.04%",
+      "value": "1,868.16",
+      "change_percent": "▼0.01%",
       "direction": "down",
-      "as_of": "2026.07.29"
+      "as_of": "2026.07.30"
     },
     {
       "name": "원/달러 환율",
-      "value": "1,445.70",
-      "change_percent": "▼0.65%",
+      "value": "1,443.70",
+      "change_percent": "▼0.79%",
       "direction": "down",
       "as_of": "2026.07.29 21:07"
     },
@@ -73,10 +73,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,891,000",
-      "change_percent": "▼0.85%",
+      "value": "92,437,000",
+      "change_percent": "▼0.26%",
       "direction": "down",
-      "as_of": "2026-07-30 03:33:30"
+      "as_of": "2026-07-30 03:47:00"
     }
   ],
   "news_categories": [
@@ -184,7 +184,7 @@
         {
           "press_name": "한국경제",
           "rank": 2,
-          "title": "Fed, '9대3' 찬성으로 美 기준금리 동결...시장 안도[Fed 워치]",
+          "title": "Fed, 美 기준금리 5연속 동결…위원 3명은 '인상' 주장 [Fed 워치]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005315431&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:17",
           "published_at": "2026-07-30T03:17:00+09:00"
@@ -208,7 +208,7 @@
         {
           "press_name": "한국경제",
           "rank": 5,
-          "title": "[속보] 美 Fed, 기준금리 연 3.5~3.75%로 동결 [Fed 워치]",
+          "title": "[속보] Fed, 美 기준금리 연 3.5~3.75%로 동결 [Fed 워치]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005315430&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:03",
           "published_at": "2026-07-30T03:03:00+09:00"
@@ -354,7 +354,7 @@
   "_debug": [
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 연방준비제도가 기준금리를 동결했음에도 금리 인상을 주장하는 위원들의 반대표가 나오며 미국 국채 금리 상승과 함께 뉴욕 증시가 큰 폭으로 하락했다. 이러한 대외적 불안과 함께 국내 증시에서는 레버리지 투자에 대한 규제 강화 움직임 및 반대매매에 대한 공포가 확산하며 투자 심리가 급격히 위축되었다. 증권사들의 목표 주가 하향 조정이 이어지는 가운데 시장의 하락세가 지속될 것이라는 불안감이 커지며 지수가 급락했다.",
+  "ai_commentary": "미국 연방준비제도가 기준금리를 동결했으나 일부 위원들의 금리 인상 주장과 함께 국채 금리가 상승하며 투자 심리가 크게 위축되었습니다. 이에 더해 과도한 레버리지 투자에 따른 반대매매 공포가 확산되고 주요 증권사들이 시장 전망치를 하향 조정하면서 지수가 급락했습니다.",
   "top_gainers": [
     {
       "name": "한화갤러리아우",
@@ -433,6 +433,6 @@
   ],
   "ipo_calendar": [],
   "_movers_debug": [
-    "IPO 일정 -> 테이블 1개, 컬럼들: [['종목', '투자정보']]"
+    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(62, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
   ]
 }
