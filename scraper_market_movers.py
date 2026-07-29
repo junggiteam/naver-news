@@ -145,23 +145,36 @@ def crawl_sector_performance(debug_notes=None):
             debug_notes.append(f"업종별 시세 -> '전일대비' 컬럼을 못 찾음 (컬럼들: {[_flat_col_name(c) for c in df.columns]})")
         return []
 
+    def _as_series(df_or_series):
+        """중복된 컬럼 라벨 때문에 df[col]이 DataFrame으로 잡히는 경우를
+        첫 번째 컬럼만 남긴 1차원 Series로 강제 변환."""
+        if isinstance(df_or_series, pd.DataFrame):
+            return df_or_series.iloc[:, 0].reset_index(drop=True)
+        return df_or_series.reset_index(drop=True)
+
+    name_series = _as_series(df[name_col])
+    change_series = _as_series(df[change_col])
+
     def parse_pct(v):
         m = re.search(r'([+-]?[\d.]+)', str(v).replace(",", ""))
         return float(m.group(1)) if m else 0.0
 
-    df = df.copy()
-    df["_pct"] = df[change_col].apply(parse_pct)
-    df = df.sort_values("_pct", ascending=False)
+    combined = pd.DataFrame({
+        "name": name_series,
+        "change_value": change_series.astype(str).str.strip(),
+    })
+    combined["pct"] = combined["change_value"].apply(parse_pct)
+    combined = combined.sort_values("pct", ascending=False)
 
     items = []
-    for _, row in df.iterrows():
-        name = str(row[name_col]).strip()
+    for _, row in combined.iterrows():
+        name = str(row["name"]).strip()
         if not name or name.lower() == "nan":
             continue
         items.append({
             "name": name,
-            "change_value": str(row[change_col]).strip(),
-            "pct": round(float(row["_pct"]), 2),
+            "change_value": row["change_value"],
+            "pct": round(float(row["pct"]), 2),
         })
 
     if not items and debug_notes is not None:
