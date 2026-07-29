@@ -87,7 +87,7 @@ def crawl_domestic_index(code, name, debug_notes=None):
     soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('#now_value')
-    fluc_elem = soup.select_one('#change_value_and_rate')
+    fluc_elem = soup.select_one('#change_value_and_rate') or soup.select_one('#change_rate')
     if not value_elem or not fluc_elem:
         if debug_notes is not None:
             percent_idx = html.find('%')
@@ -100,8 +100,10 @@ def crawl_domestic_index(code, name, debug_notes=None):
             )
         return None
 
-    percent_match = re.search(r'([+-][\d.]+)%', fluc_elem.get_text())
+    percent_match = re.search(r'([+-]?[\d.]+)%', fluc_elem.get_text())
     if not percent_match:
+        if debug_notes is not None:
+            debug_notes.append(f"{name}({code}) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: {fluc_elem.get_text()!r})")
         return None
     change_percent, direction = build_change_percent(percent_match.group(1))
 
@@ -174,8 +176,10 @@ def crawl_detail_price(url, name, debug_notes=None):
             )
         return None
 
-    percent_match = re.search(r'([+-][\d.]+)%', exday_ems[1].get_text())
+    percent_match = re.search(r'([+-]?[\d.]+)%', exday_ems[1].get_text())
     if not percent_match:
+        if debug_notes is not None:
+            debug_notes.append(f"{name} -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: {exday_ems[1].get_text()!r})")
         return None
     change_percent, direction = build_change_percent(percent_match.group(1))
 
