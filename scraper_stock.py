@@ -268,7 +268,7 @@ def crawl_news_category(category_name, section_id3, now_kst):
 def crawl_stock_data():
     indices = []
 
-    for code, name in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥")]:
+    for code, name in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥"), ("KPI200", "코스피200")]:
         try:
             idx = crawl_domestic_index(code, name)
             if idx:
@@ -304,6 +304,45 @@ def crawl_stock_data():
             print("휘발유 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"휘발유 수집 실패: {e}")
+
+    try:
+        usd_krw = crawl_detail_price(
+            "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_USDKRW",
+            "원/달러 환율"
+        )
+        if usd_krw:
+            usd_krw.pop("_soup", None)
+            indices.append(usd_krw)
+        else:
+            print("원/달러 환율 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"원/달러 환율 수집 실패: {e}")
+
+    try:
+        wti = crawl_detail_price(
+            "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_CL",
+            "WTI(국제유가)"
+        )
+        if wti:
+            wti.pop("_soup", None)
+            indices.append(wti)
+        else:
+            print("WTI 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"WTI 수집 실패: {e}")
+
+    try:
+        bond = crawl_detail_price(
+            "https://finance.naver.com/marketindex/interestDetail.naver?marketindexCd=IRR_GOVT03Y",
+            "국고채(3년)"
+        )
+        if bond:
+            bond.pop("_soup", None)
+            indices.append(bond)
+        else:
+            print("국고채(3년) 데이터를 찾지 못했습니다. (페이지 구조가 다를 수 있어 추후 확인 필요)")
+    except Exception as e:
+        print(f"국고채(3년) 수집 실패: {e} (페이지 구조가 다를 수 있어 추후 확인 필요)")
 
     try:
         bitcoin = crawl_bitcoin()
