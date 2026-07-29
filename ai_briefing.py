@@ -12,33 +12,13 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = "gemini-3.1-flash-lite"
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
-# 오류 원인 파악용(임시 디버깅). 정상화되면 제거 예정.
+# Gemini 호출 실패 시 원인을 담아두는 변수. run_scheduled.py에서 필요할 때만
+# 데이터 파일에 ai_debug 필드로 잠깐 노출시켜 원인 파악용으로 쓴다
+# (마스킹 처리되어 있어 키 유출 위험 없음).
 LAST_ERROR = None
 
 # 코스피/코스닥 중 하나라도 이 이상 움직이면 시황 코멘트 생성
 STOCK_COMMENTARY_THRESHOLD = 1.5
-
-
-def _list_available_models():
-    """실제 이 API 키로 쓸 수 있는 모델 목록을 조회 (모델명 추측 대신 확인용, 임시)."""
-    if not GEMINI_API_KEY:
-        return "GEMINI_API_KEY 없음"
-    try:
-        resp = requests.get(
-            "https://generativelanguage.googleapis.com/v1beta/models",
-            params={"key": GEMINI_API_KEY},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        names = [
-            m["name"].replace("models/", "")
-            for m in data.get("models", [])
-            if "generateContent" in m.get("supportedGenerationMethods", [])
-        ]
-        return ", ".join(names)
-    except Exception as e:
-        return f"모델 목록 조회 실패: {e}"
 
 
 def _call_gemini(prompt, timeout=60):
