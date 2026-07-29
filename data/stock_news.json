@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 04:16:42",
+  "updated_at": "2026-07-30 04:22:11",
   "indices": [
     {
       "name": "코스피",
@@ -24,24 +24,24 @@
     },
     {
       "name": "다우존스",
-      "value": "52,192.22",
-      "change_percent": "▼1.05%",
+      "value": "52,058.00",
+      "change_percent": "▼1.31%",
       "direction": "down",
-      "as_of": "2026-07-30 04:16:03"
+      "as_of": "2026-07-30 04:22:07"
     },
     {
       "name": "나스닥",
-      "value": "25,003.98",
-      "change_percent": "▲0.51%",
+      "value": "24,938.23",
+      "change_percent": "▲0.25%",
       "direction": "up",
-      "as_of": "2026-07-30 04:16:04"
+      "as_of": "2026-07-30 04:22:07"
     },
     {
       "name": "S&P500",
-      "value": "7,422.13",
-      "change_percent": "▼0.09%",
+      "value": "7,414.96",
+      "change_percent": "▼0.19%",
       "direction": "down",
-      "as_of": "2026-07-30 04:16:04"
+      "as_of": "2026-07-30 04:22:07"
     },
     {
       "name": "국내금(원/돈)",
@@ -59,10 +59,10 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,442.60",
-      "change_percent": "▼0.87%",
+      "value": "1,442.30",
+      "change_percent": "▼0.89%",
       "direction": "down",
-      "as_of": "2026.07.29 21:08"
+      "as_of": "2026.07.29 21:09"
     },
     {
       "name": "국고채(3년)",
@@ -73,10 +73,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "92,292,000",
-      "change_percent": "▼0.42%",
+      "value": "92,025,000",
+      "change_percent": "▼0.71%",
       "direction": "down",
-      "as_of": "2026-07-30 04:16:31"
+      "as_of": "2026-07-30 04:22:00"
     }
   ],
   "news_categories": [
@@ -176,6 +176,14 @@
         {
           "press_name": "이데일리",
           "rank": 1,
+          "title": "연준은 매파인데 2년물은 하락…채권시장 \"9월 인상 서두르지 않을 것\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006339540&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
+          "upload_time": "2026-07-30 04:13",
+          "published_at": "2026-07-30T04:13:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "연준 동결에도 3명 반대표…국채금리 오르고 다우 800포인트↓",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006339532&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:30",
@@ -183,7 +191,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 3,
           "title": "Fed, 美 기준금리 5연속 동결…위원 3명은 '인상' 주장 [Fed 워치]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005315431&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:17",
@@ -191,7 +199,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 4,
           "title": "[상보]Fed, 기준금리 동결…3명은 25bp 인상 주장",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005796462&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:12",
@@ -199,19 +207,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "[속보]Fed,  5연속 금리 동결…3.50∼3.75% 유지",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005796461&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:04",
           "published_at": "2026-07-30T03:04:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 5,
-          "title": "[속보] Fed, 美 기준금리 연 3.5~3.75%로 동결 [Fed 워치]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005315430&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
-          "upload_time": "2026-07-30 03:03",
-          "published_at": "2026-07-30T03:03:00+09:00"
         }
       ]
     },
@@ -354,7 +354,7 @@
   "_debug": [
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 연방준비제도의 금리 동결 결정에도 불구하고 추가 인상을 주장하는 위원들이 나타나며 긴축 우려가 커졌고, 이에 따른 뉴욕 증시 급락이 국내 시장에 하방 압력을 가했다. 과도한 레버리지 투자에 따른 반대매매 공포와 주요 반도체 종목의 목표가 하향 조정 등이 겹치며 투자 심리가 급격히 위축되어 지수가 큰 폭으로 하락했다.",
+  "ai_commentary": "미국 연방준비제도의 금리 동결 결정에도 불구하고 추가 인상을 주장하는 위원들이 나타나면서 긴축 우려가 커진 것이 시장의 변동성을 키웠다. 이에 더해 과도한 레버리지 투자로 인한 반대매매 물량이 쏟아지고 주요 기업의 목표 주가가 하향 조정되는 등 투자 심리가 급격히 위축되면서 지수가 큰 폭으로 하락했다.",
   "top_gainers": [
     {
       "name": "한화갤러리아우",
