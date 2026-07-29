@@ -51,9 +51,6 @@ def _augment_with_ai(name):
                 data = json.load(f)
             titles = [item["title"] for item in data.get("news", [])]
             data["ai_briefing"] = ai_briefing.generate_tab_briefing(titles, label)
-            if not data["ai_briefing"]:
-                data["ai_debug"] = ai_briefing.LAST_ERROR
-                data["ai_debug_models"] = ai_briefing._list_available_models()
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
             print(f"[{name}] AI 브리핑 {'생성됨' if data['ai_briefing'] else '생략됨(키 없음/호출 실패)'}")
