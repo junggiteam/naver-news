@@ -1,10 +1,19 @@
 {
-  "updated_at": "2026-07-30 03:47:17",
+  "updated_at": "2026-07-30 04:12:26",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
     "kospi_change": -5.98,
-    "kosdaq_change": -6.12
+    "kosdaq_change": -6.12,
+    "kospi_value": 5663.24,
+    "kosdaq_value": 662.68
+  },
+  "hero": {
+    "title": "靑은 한국만 이런 게 아니라는데… 코스피 변동성, 美보다 5배 커",
+    "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/07/30/3990409.jpg?type=nf220_150",
+    "link": "https://n.news.naver.com/mnews/article/023/0003990409",
+    "press_name": "조선일보",
+    "description": "코스피 급락 및 레버리지 투자 규제 등 증시 변동성 확대"
   },
   "headlines": [
     {
@@ -45,85 +54,75 @@
     },
     {
       "category": "증권",
-      "text": "미국 연방준비제도가 기준금리를 동결했으나 일부 위원들의 금리 인상 주장과 함께 국채 금리가 상승하며 투자 심리가 크게 위축되었습니다. 이에 더해 과도한 레버리지 투자에 따른 반대매매 공포가 확산되고 주요 증권사들이 시장 전망치를 하향 조정하면서 지수가 급락했습니다."
+      "text": "미국 연방준비제도의 금리 동결에도 불구하고 추가 인상 주장이 나오며 미국 증시가 하락한 영향으로 투자 심리가 위축되었다. 이와 함께 레버리지 투자에 대한 규제 강화 소식과 반대매매에 따른 손실 공포가 겹치며 국내 증시가 큰 폭으로 하락했다. 증권사들의 목표 주가 하향 조정이 이어지면서 주요 대형주를 중심으로 매도세가 심화되었다."
     }
   ],
   "top_gainers": [
     {
       "name": "한화갤러리아우",
       "price": "3565.0",
-      "change_percent": "+29.87%"
+      "change_percent": "+29.87%",
+      "pct": 29.87
     },
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
       "price": "11095.0",
-      "change_percent": "+23.41%"
+      "change_percent": "+23.41%",
+      "pct": 23.41
     },
     {
       "name": "하나 인버스 2X K방산TOP10 ETN",
       "price": "13585.0",
-      "change_percent": "+20.49%"
+      "change_percent": "+20.49%",
+      "pct": 20.49
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
       "price": "17290.0",
-      "change_percent": "+19.00%"
+      "change_percent": "+19.00%",
+      "pct": 19.0
     },
     {
       "name": "키움 인버스 2X K방산 TOP5 ETN",
       "price": "11930.0",
-      "change_percent": "+18.59%"
+      "change_percent": "+18.59%",
+      "pct": 18.59
     }
   ],
   "top_losers": [
     {
       "name": "SK디앤디",
       "price": "3880.0",
-      "change_percent": "-29.96%"
+      "change_percent": "-29.96%",
+      "pct": 29.96
     },
     {
       "name": "CJ씨푸드1우",
       "price": "5020.0",
-      "change_percent": "-27.46%"
+      "change_percent": "-27.46%",
+      "pct": 27.46
     },
     {
       "name": "키움 레버리지 전력 TOP5 ETN",
       "price": "10845.0",
-      "change_percent": "-24.05%"
+      "change_percent": "-24.05%",
+      "pct": 24.05
     },
     {
       "name": "진흥기업2우B",
       "price": "3010.0",
-      "change_percent": "-23.70%"
+      "change_percent": "-23.70%",
+      "pct": 23.7
     },
     {
       "name": "N2 월간 레버리지 방위산업 Top5 ETN",
       "price": "85195.0",
-      "change_percent": "-22.79%"
+      "change_percent": "-22.79%",
+      "pct": 22.79
     }
   ],
-  "sector_performance": [
-    {
-      "name": "레저용장비와제품",
-      "change_value": "+1.21%"
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "+0.97%"
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.65%"
-    },
-    {
-      "name": "광고",
-      "change_value": "+0.50%"
-    },
-    {
-      "name": "담배",
-      "change_value": "+0.50%"
-    }
-  ],
+  "sector_performance": [],
+  "sector_heatmap": [],
   "article_counts": {
     "종합": 412,
     "경제": 30,
