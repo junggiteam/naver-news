@@ -266,7 +266,8 @@ def crawl_market_movers():
     try:
         result["sector_performance"] = crawl_sector_performance(debug_notes)
     except Exception as e:
-        debug_notes.append(f"업종별 시세 -> 예외: {e}")
+        import traceback
+        debug_notes.append(f"업종별 시세 -> 예외: {e} | traceback: {traceback.format_exc()}")
         result["sector_performance"] = []
 
     try:
