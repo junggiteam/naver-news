@@ -6,6 +6,7 @@ import scraper_ranking
 import scraper_economy_section
 import scraper_stock
 import scraper_realestate
+import scraper_market_movers
 import ai_briefing
 
 KST = timezone(timedelta(hours=9))
@@ -121,6 +122,24 @@ def _record_stock_history():
         print(f"[stock] 지수 이력 기록 실패(스파크라인용, 본체 크롤링엔 영향 없음): {e}")
 
 
+def _augment_with_market_movers():
+    """급등락 TOP5, 업종별 등락, IPO 일정을 stock_news.json에 덧붙임.
+    실패해도 예외를 밖으로 던지지 않음 - 크롤링 본체와 무관해야 함."""
+    try:
+        result, debug_notes = scraper_market_movers.crawl_market_movers()
+        with open("data/stock_news.json", encoding="utf-8") as f:
+            data = json.load(f)
+        data.update(result)
+        if debug_notes:
+            data["_movers_debug"] = debug_notes  # 원인 확인용, 검증되면 제거 예정
+        with open("data/stock_news.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        counts = {k: len(v) for k, v in result.items()}
+        print(f"[market_movers] 저장 완료: {counts}")
+    except Exception as e:
+        print(f"[market_movers] 후처리 중 오류(본체 크롤링엔 영향 없음): {e}")
+
+
 def get_now_kst():
     """실제 현재 시각(KST)을 반환. 테스트에서는 SCHEDULED_NOW_OVERRIDE 환경변수
     (ISO 8601, 예: 2026-07-24T07:03:00+09:00)로 임의 시각을 흉내낼 수 있다."""
@@ -184,6 +203,7 @@ def run_scheduled(now_kst=None):
             _augment_with_ai(name)
             if name == "stock":
                 _record_stock_history()
+                _augment_with_market_movers()
             marker[name] = now_kst.isoformat()
             marker_changed = True
             print(f"[{name}] 실행 완료")
