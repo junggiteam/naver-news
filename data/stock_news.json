@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 05:01:03",
+  "updated_at": "2026-07-30 05:17:06",
   "indices": [
     {
       "name": "코스피",
@@ -24,24 +24,24 @@
     },
     {
       "name": "다우존스",
-      "value": "51,623.31",
-      "change_percent": "▼2.13%",
+      "value": "51,594.86",
+      "change_percent": "▼2.18%",
       "direction": "down",
-      "as_of": "2026-07-30 05:00:29"
+      "as_of": "2026-07-30 05:17:00"
     },
     {
       "name": "나스닥",
-      "value": "24,552.45",
-      "change_percent": "▼1.30%",
+      "value": "24,442.94",
+      "change_percent": "▼1.74%",
       "direction": "down",
-      "as_of": "2026-07-30 05:00:30"
+      "as_of": "2026-07-30 05:17:00"
     },
     {
       "name": "S&P500",
-      "value": "7,333.60",
-      "change_percent": "▼1.28%",
+      "value": "7,316.15",
+      "change_percent": "▼1.52%",
       "direction": "down",
-      "as_of": "2026-07-30 05:00:29"
+      "as_of": "2026-07-30 05:17:00"
     },
     {
       "name": "국내금(원/돈)",
@@ -73,10 +73,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,265,000",
-      "change_percent": "▼1.53%",
+      "value": "91,490,000",
+      "change_percent": "▼1.28%",
       "direction": "down",
-      "as_of": "2026-07-30 05:01:01"
+      "as_of": "2026-07-30 05:17:00"
     }
   ],
   "news_categories": [
@@ -174,8 +174,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "[질의응답] 워시 \"목표는 오직 2% 인플레 달성…시장 금리 상승이 긴축 효과\"[Fed워치]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005315433&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
+          "upload_time": "2026-07-30 04:55",
+          "published_at": "2026-07-30T04:55:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "연준은 매파인데 2년물은 하락…채권시장 \"9월 인상 서두르지 않을 것\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006339540&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 04:13",
@@ -183,7 +191,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 3,
           "title": "연준 동결에도 3명 반대표…국채금리 오르고 다우 800포인트↓",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006339532&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:30",
@@ -191,7 +199,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 3,
+          "rank": 4,
           "title": "Fed, 美 기준금리 5연속 동결…위원 3명은 '인상' 주장 [Fed 워치]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005315431&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:17",
@@ -199,19 +207,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "[상보]Fed, 기준금리 동결…3명은 25bp 인상 주장",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005796462&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
           "upload_time": "2026-07-30 03:12",
           "published_at": "2026-07-30T03:12:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 5,
-          "title": "[속보]Fed,  5연속 금리 동결…3.50∼3.75% 유지",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005796461&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260730&page=1",
-          "upload_time": "2026-07-30 03:04",
-          "published_at": "2026-07-30T03:04:00+09:00"
         }
       ]
     },
@@ -219,8 +219,24 @@
       "category": "채권·선물",
       "items": [
         {
-          "press_name": "매일경제",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "미국채 30년물 금리 5.2%대로 급등…2007년 이후 최고(종합)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016222960&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
+          "upload_time": "2026-07-30 05:08",
+          "published_at": "2026-07-30T05:08:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "[1보] 미국채 30년물 금리 5.2%대로 급등…2007년 이후 최고",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016222956&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
+          "upload_time": "2026-07-30 05:01",
+          "published_at": "2026-07-30T05:01:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 3,
           "title": "메리츠금융 1500억 회사채 수요예측서 4800억 몰려",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005713991&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
           "upload_time": "2026-07-29 17:50",
@@ -228,7 +244,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 4,
           "title": "[마켓인]메리츠금융지주, 회사채 수요예측에 목표액 3.2배 몰려",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006339395&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
           "upload_time": "2026-07-29 17:19",
@@ -236,27 +252,11 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "증시 급락에 국고채 이틀째 강세…3년물 금리 3.800%(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016222478&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
           "upload_time": "2026-07-29 17:09",
           "published_at": "2026-07-29T17:09:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 4,
-          "title": "메리츠금융 회사채 수요예측서 4천800억 몰려…예정액 3배",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016222351&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
-          "upload_time": "2026-07-29 16:25",
-          "published_at": "2026-07-29T16:25:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "역대급 패닉장, 이틀 연속 '서킷브레이커'…6000피·700닥 내줬다",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006339286&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260730&page=1",
-          "upload_time": "2026-07-29 16:09",
-          "published_at": "2026-07-29T16:09:00+09:00"
         }
       ]
     },
@@ -354,7 +354,7 @@
   "_debug": [
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 연방준비제도의 금리 동결과 일부 위원들의 추가 인상 주장으로 시장의 불확실성이 커진 가운데, 레버리지 투자에 따른 반대매매 공포가 확산하며 증시가 급락했다. 주요 증권사들이 기업 목표주가를 하향 조정하며 투자 심리가 위축되었고, 이에 따른 패닉 셀링과 금융당국의 시장 안정화 대책 논의가 이어지고 있다.",
+  "ai_commentary": "미국 연방준비제도의 매파적인 금리 동결 기조와 국채 금리 상승세가 이어지며 투자 심리가 크게 위축되었습니다. 시장 내 레버리지 투자에 대한 우려와 반대매매 공포까지 겹치면서 코스피와 코스닥 지수가 큰 폭으로 하락했습니다.",
   "top_gainers": [
     {
       "name": "한화갤러리아우",
