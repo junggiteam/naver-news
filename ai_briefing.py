@@ -19,7 +19,7 @@ LAST_ERROR = None
 STOCK_COMMENTARY_THRESHOLD = 1.5
 
 
-def _call_gemini(prompt, timeout=30):
+def _call_gemini(prompt, timeout=60):
     global LAST_ERROR
     if not GEMINI_API_KEY:
         LAST_ERROR = "GEMINI_API_KEY 환경변수 없음"
