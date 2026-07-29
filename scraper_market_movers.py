@@ -12,6 +12,7 @@ import time
 import random
 import requests
 import pandas as pd
+from bs4 import BeautifulSoup
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -174,39 +175,53 @@ def crawl_ipo_calendar(debug_notes=None):
             debug_notes.append("IPO 일정 -> fetch 실패")
         return []
 
+    # 1차 시도: <table> 구조로 되어 있는 경우 (pandas)
     try:
         tables = pd.read_html(io.StringIO(html))
-    except Exception as e:
-        if debug_notes is not None:
-            debug_notes.append(f"IPO 일정 -> pandas 테이블 파싱 실패: {e}")
-        return []
+    except Exception:
+        tables = []
 
     df, name_col = _find_table_with_column(tables, "종목명")
-    if df is None:
-        if debug_notes is not None:
-            cols_preview = [[_flat_col_name(c) for c in t.columns] for t in tables]
-            debug_notes.append(f"IPO 일정 -> 테이블 {len(tables)}개, 컬럼들: {cols_preview}")
-        return []
+    if df is not None:
+        df = df.dropna(subset=[name_col])
+        date_col = _get_col(df, "청약일") or _get_col(df, "일정")
+        price_col = _get_col(df, "공모가")
+        items = []
+        for _, row in df.head(10).iterrows():
+            name = str(row[name_col]).strip()
+            if not name or name.lower() == "nan":
+                continue
+            items.append({
+                "name": name,
+                "schedule": str(row[date_col]).strip() if date_col is not None else "",
+                "offer_price": str(row[price_col]).strip() if price_col is not None else "",
+            })
+        if items:
+            return items
 
-    df = df.dropna(subset=[name_col])
-    date_col = _get_col(df, "청약일") or _get_col(df, "일정")
-    price_col = _get_col(df, "공모가")
+    # 2차 시도: <table> 구조가 아닐 수 있으므로, BeautifulSoup으로 "공모/청약"
+    # 관련 텍스트 주변 실제 마크업을 진단용으로 남긴다 (다음 조사를 위한 근거 확보).
+    if debug_notes is not None:
+        soup = BeautifulSoup(html, 'lxml')
+        table_summaries = [
+            f"table#{i}: shape={t.shape}, cols={[_flat_col_name(c) for c in t.columns]}"
+            for i, t in enumerate(tables)
+        ]
 
-    items = []
-    for _, row in df.head(10).iterrows():
-        name = str(row[name_col]).strip()
-        if not name or name.lower() == "nan":
-            continue
-        items.append({
-            "name": name,
-            "schedule": str(row[date_col]).strip() if date_col is not None else "",
-            "offer_price": str(row[price_col]).strip() if price_col is not None else "",
-        })
+        keyword_idx = html.find('공모')
+        snippet = html[max(0, keyword_idx - 200):keyword_idx + 400] if keyword_idx != -1 else "(응답에 '공모' 텍스트 자체가 없음)"
 
-    if not items and debug_notes is not None:
-        debug_notes.append("IPO 일정 -> 테이블은 찾았으나 유효한 행이 0개")
+        list_like = soup.select('ul li a, div.tbl_type1 li')
+        list_preview = [el.get_text(strip=True) for el in list_like[:10]]
 
-    return items
+        debug_notes.append(
+            "IPO 일정 -> table 방식 실패. "
+            f"발견된 table 개수={len(tables)} [{'; '.join(table_summaries)}], "
+            f"'공모' 주변 마크업 스니펫={snippet!r}, "
+            f"리스트형 요소 미리보기={list_preview}"
+        )
+
+    return []
 
 
 def crawl_market_movers():
