@@ -76,16 +76,26 @@ def build_change_percent(rate):
     return f"{arrow}{abs(rate):.2f}%", direction
 
 
-def crawl_domestic_index(code, name):
+def crawl_domestic_index(code, name, debug_notes=None):
     """코스피/코스닥: /sise/sise_index.naver 페이지"""
-    html = fetch(f"https://finance.naver.com/sise/sise_index.naver?code={code}", label=f"{name} 지수")
+    url = f"https://finance.naver.com/sise/sise_index.naver?code={code}"
+    html = fetch(url, label=f"{name} 지수")
     if html is None:
+        if debug_notes is not None:
+            debug_notes.append(f"{name}({code}) -> fetch 자체가 실패(요청/응답 오류, 3회 재시도 후)")
         return None
     soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('#now_value')
     fluc_elem = soup.select_one('#change_value_and_rate')
     if not value_elem or not fluc_elem:
+        if debug_notes is not None:
+            debug_notes.append(
+                f"{name}({code}) -> 페이지는 받았으나 선택자 없음 "
+                f"(now_value={'있음' if value_elem else '없음'}, "
+                f"change_value_and_rate={'있음' if fluc_elem else '없음'}, "
+                f"응답 길이={len(html)}, 응답앞부분={html[:150]!r}"
+            )
         return None
 
     percent_match = re.search(r'([+-][\d.]+)%', fluc_elem.get_text())
@@ -142,16 +152,24 @@ def crawl_world_indices():
     return results
 
 
-def crawl_detail_price(url, name):
+def crawl_detail_price(url, name, debug_notes=None):
     """국내금, 휘발유 등: marketindex 상세 페이지 공통 구조(.no_today / .no_exday)"""
     html = fetch(url, label=name)
     if html is None:
+        if debug_notes is not None:
+            debug_notes.append(f"{name} -> fetch 자체가 실패(요청/응답 오류, 3회 재시도 후)")
         return None
     soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('.today .no_today em')
     exday_ems = soup.select('.today .no_exday em')
     if not value_elem or len(exday_ems) < 2:
+        if debug_notes is not None:
+            debug_notes.append(
+                f"{name} -> 페이지는 받았으나 선택자 없음 "
+                f"(no_today={'있음' if value_elem else '없음'}, no_exday개수={len(exday_ems)}, "
+                f"응답 길이={len(html)}, 응답앞부분={html[:150]!r}"
+            )
         return None
 
     percent_match = re.search(r'([+-][\d.]+)%', exday_ems[1].get_text())
@@ -271,13 +289,11 @@ def crawl_stock_data():
 
     for code, name in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥"), ("KPI200", "코스피200")]:
         try:
-            idx = crawl_domestic_index(code, name)
+            idx = crawl_domestic_index(code, name, debug_notes if name == "코스피200" else None)
             if idx:
                 indices.append(idx)
             else:
                 print(f"{name} 데이터를 찾지 못했습니다.")
-                if name == "코스피200":
-                    debug_notes.append(f"코스피200(code={code}) -> crawl_domestic_index가 None 반환(선택자 불일치 추정)")
         except Exception as e:
             print(f"{name} 수집 실패: {e}")
             if name == "코스피200":
@@ -326,14 +342,14 @@ def crawl_stock_data():
     try:
         wti = crawl_detail_price(
             "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_CL",
-            "WTI(국제유가)"
+            "WTI(국제유가)",
+            debug_notes
         )
         if wti:
             wti.pop("_soup", None)
             indices.append(wti)
         else:
             print("WTI 데이터를 찾지 못했습니다.")
-            debug_notes.append("WTI(marketindexCd=OIL_CL) -> crawl_detail_price가 None 반환(선택자 불일치 추정)")
     except Exception as e:
         print(f"WTI 수집 실패: {e}")
         debug_notes.append(f"WTI(marketindexCd=OIL_CL) -> 예외: {e}")
