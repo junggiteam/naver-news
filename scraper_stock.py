@@ -267,6 +267,7 @@ def crawl_news_category(category_name, section_id3, now_kst):
 
 def crawl_stock_data():
     indices = []
+    debug_notes = []  # 임시 디버깅용, 원인 파악 끝나면 제거 예정
 
     for code, name in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥"), ("KPI200", "코스피200")]:
         try:
@@ -275,8 +276,12 @@ def crawl_stock_data():
                 indices.append(idx)
             else:
                 print(f"{name} 데이터를 찾지 못했습니다.")
+                if name == "코스피200":
+                    debug_notes.append(f"코스피200(code={code}) -> crawl_domestic_index가 None 반환(선택자 불일치 추정)")
         except Exception as e:
             print(f"{name} 수집 실패: {e}")
+            if name == "코스피200":
+                debug_notes.append(f"코스피200(code={code}) -> 예외: {e}")
 
     try:
         indices.extend(crawl_world_indices())
@@ -328,8 +333,10 @@ def crawl_stock_data():
             indices.append(wti)
         else:
             print("WTI 데이터를 찾지 못했습니다.")
+            debug_notes.append("WTI(marketindexCd=OIL_CL) -> crawl_detail_price가 None 반환(선택자 불일치 추정)")
     except Exception as e:
         print(f"WTI 수집 실패: {e}")
+        debug_notes.append(f"WTI(marketindexCd=OIL_CL) -> 예외: {e}")
 
     try:
         bond = crawl_detail_price(
@@ -369,6 +376,8 @@ def crawl_stock_data():
         "indices": indices,
         "news_categories": news_categories
     }
+    if debug_notes:
+        output["_debug"] = debug_notes
 
     file_path = os.path.join("data", "stock_news.json")
     with open(file_path, "w", encoding="utf-8") as f:
