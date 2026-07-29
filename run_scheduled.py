@@ -8,6 +8,7 @@ import scraper_stock
 import scraper_realestate
 import scraper_market_movers
 import ai_briefing
+import dashboard
 
 KST = timezone(timedelta(hours=9))
 MARKER_FILE = os.path.join("data", ".last_run.json")
@@ -211,6 +212,11 @@ def run_scheduled(now_kst=None):
             print(f"[{name}] 실행 중 오류 발생, 마커 갱신 안 함 - 다음 주기에 재시도: {e}")
 
     if marker_changed:
+        try:
+            dashboard.build_dashboard()
+            print("[dashboard] 대시보드 데이터 갱신됨")
+        except Exception as e:
+            print(f"[dashboard] 대시보드 생성 실패(각 탭 데이터 자체엔 영향 없음): {e}")
         save_marker(marker)
 
 
