@@ -20,7 +20,10 @@ MARKER_FILE = os.path.join("data", ".last_run.json")
 CRAWLER_INTERVALS = {
     "ranking": timedelta(hours=3),
     "economy": timedelta(hours=3),
-    "stock": timedelta(hours=3),
+    # 지수(코스피/환율 등)는 체감 실시간성을 위해 훨씬 짧은 주기로 분리.
+    # 증권 뉴스도 같은 크롤러가 같이 수집하지만, 더 자주 갱신되는 건
+    # 단점이 아니라 오히려 이득이라 굳이 분리하지 않음.
+    "stock": timedelta(minutes=15),
     "realestate": timedelta(hours=3),
 }
 
@@ -72,6 +75,50 @@ def _augment_with_ai(name):
             print(f"[stock] AI 시황 코멘트 {'생성됨' if data['ai_commentary'] else '생략됨(변동폭 작음/키 없음/호출 실패)'}")
     except Exception as e:
         print(f"[{name}] AI 후처리 중 오류(크롤링 결과 자체는 정상 저장됨): {e}")
+
+
+STOCK_HISTORY_FILE = os.path.join("data", "stock_index_history.json")
+STOCK_HISTORY_MAX_POINTS = 120  # 15분 간격 기준 대략 30시간치, 여유있게 보관
+
+
+def _record_stock_history():
+    """지수 스냅샷을 이력 파일에 누적 기록 (나중에 위젯에서 미니 추이 그래프용).
+    실패해도 크롤링/저장 본체와는 무관하므로 예외를 삼킨다."""
+    try:
+        with open("data/stock_news.json", encoding="utf-8") as f:
+            data = json.load(f)
+        indices = data.get("indices", [])
+        if not indices:
+            return
+
+        values = {}
+        for idx in indices:
+            try:
+                values[idx["name"]] = float(str(idx["value"]).replace(",", ""))
+            except (ValueError, TypeError):
+                continue
+        if not values:
+            return
+
+        snapshot = {"time": data.get("updated_at"), "values": values}
+
+        if os.path.exists(STOCK_HISTORY_FILE):
+            with open(STOCK_HISTORY_FILE, encoding="utf-8") as f:
+                try:
+                    history = json.load(f)
+                except json.JSONDecodeError:
+                    history = []
+        else:
+            history = []
+
+        history.append(snapshot)
+        history = history[-STOCK_HISTORY_MAX_POINTS:]
+
+        with open(STOCK_HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, indent=2)
+        print(f"[stock] 지수 이력 기록됨 (누적 {len(history)}개)")
+    except Exception as e:
+        print(f"[stock] 지수 이력 기록 실패(스파크라인용, 본체 크롤링엔 영향 없음): {e}")
 
 
 def get_now_kst():
@@ -135,6 +182,8 @@ def run_scheduled(now_kst=None):
         try:
             CRAWLER_FUNCS[name]()
             _augment_with_ai(name)
+            if name == "stock":
+                _record_stock_history()
             marker[name] = now_kst.isoformat()
             marker_changed = True
             print(f"[{name}] 실행 완료")
