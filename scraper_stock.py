@@ -166,20 +166,21 @@ def crawl_detail_price(url, name, debug_notes=None):
     soup = BeautifulSoup(html, 'lxml')
 
     value_elem = soup.select_one('.today .no_today em')
-    exday_ems = soup.select('.today .no_exday em')
-    if not value_elem or len(exday_ems) < 2:
+    exday_container = soup.select_one('.today .no_exday')
+    if not value_elem or not exday_container:
         if debug_notes is not None:
             debug_notes.append(
                 f"{name} -> 페이지는 받았으나 선택자 없음 "
-                f"(no_today={'있음' if value_elem else '없음'}, no_exday개수={len(exday_ems)}, "
-                f"응답 길이={len(html)}, 응답앞부분={html[:150]!r}"
+                f"(no_today={'있음' if value_elem else '없음'}, no_exday={'있음' if exday_container else '없음'})"
             )
         return None
 
-    percent_match = re.search(r'([+-]?[\d.]+)%', exday_ems[1].get_text())
+    # em 태그 개수/순서에 의존하지 않고, no_exday 컨테이너 전체 텍스트에서
+    # 숫자+% 패턴을 찾는다 (일부 지표는 em 구조가 달라 고정 인덱스로는 실패했음, 예: WTI)
+    percent_match = re.search(r'([+-]?[\d.]+)\s*%', exday_container.get_text())
     if not percent_match:
         if debug_notes is not None:
-            debug_notes.append(f"{name} -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: {exday_ems[1].get_text()!r})")
+            debug_notes.append(f"{name} -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: {exday_container.get_text()!r})")
         return None
     change_percent, direction = build_change_percent(percent_match.group(1))
 
