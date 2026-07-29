@@ -101,10 +101,13 @@ def crawl_top_movers(direction, sosok, market_label, debug_notes=None):
         name = str(row[name_col]).strip()
         if not name or name.lower() == "nan":
             continue
+        change_text = str(row[change_col]).strip() if change_col is not None else ""
+        pct_match = re.search(r'([+-]?[\d.]+)', change_text.replace(",", ""))
         items.append({
             "name": name,
             "price": str(row[price_col]).strip() if price_col is not None else "",
-            "change_percent": str(row[change_col]).strip() if change_col is not None else "",
+            "change_percent": change_text,
+            "pct": abs(float(pct_match.group(1))) if pct_match else 0.0,
         })
 
     if not items and debug_notes is not None:
@@ -151,13 +154,14 @@ def crawl_sector_performance(debug_notes=None):
     df = df.sort_values("_pct", ascending=False)
 
     items = []
-    for _, row in df.head(5).iterrows():
+    for _, row in df.iterrows():
         name = str(row[name_col]).strip()
         if not name or name.lower() == "nan":
             continue
         items.append({
             "name": name,
             "change_value": str(row[change_col]).strip(),
+            "pct": round(float(row["_pct"]), 2),
         })
 
     if not items and debug_notes is not None:

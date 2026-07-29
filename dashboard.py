@@ -43,11 +43,21 @@ def _market_mood(indices):
     else:
         label, emoji = "급등", "\U0001F7E2"        # 🟢
 
+    def _numeric_value(entry):
+        if not entry:
+            return None
+        try:
+            return float(str(entry.get("value", "")).replace(",", ""))
+        except (ValueError, TypeError):
+            return None
+
     return {
         "label": label,
         "emoji": emoji,
         "kospi_change": round(kospi_pct, 2),
         "kosdaq_change": round(kosdaq_pct, 2),
+        "kospi_value": _numeric_value(kospi),
+        "kosdaq_value": _numeric_value(kosdaq),
     }
 
 
@@ -97,17 +107,46 @@ def _article_counts():
     return counts
 
 
+def _build_hero():
+    """대표 이슈 카드용: 경제 탭 1번 기사(썸네일 있는 카드형 데이터) +
+    종합 브리핑 첫 줄을 AI 한줄 설명으로 붙임."""
+    economy = _load_json("data/economy_news.json")
+    news_list = economy.get("news") or []
+    if not news_list:
+        return None
+    top = news_list[0]
+
+    ranking = _load_json("data/ranking_news.json")
+    briefing = ranking.get("ai_briefing") or []
+    description = briefing[0] if briefing else ""
+
+    return {
+        "title": top.get("title", ""),
+        "thumbnail": top.get("thumbnail", ""),
+        "link": top.get("link", ""),
+        "press_name": top.get("press_name", ""),
+        "description": description,
+    }
+
+
 def build_dashboard():
     stock_data = _load_json("data/stock_news.json")
     indices = stock_data.get("indices") or []
 
+    all_sectors = stock_data.get("sector_performance") or []
+    # 히트맵은 상승/하락 양쪽 스펙트럼이 다 보여야 의미가 있으므로,
+    # 상위 6개 + 하위 6개를 뽑아 색 대비를 확보한다.
+    sector_heatmap = (all_sectors[:6] + all_sectors[-6:]) if len(all_sectors) > 12 else all_sectors
+
     dashboard = {
         "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "market_mood": _market_mood(indices),
+        "hero": _build_hero(),
         "headlines": _collect_headlines(),
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
-        "sector_performance": stock_data.get("sector_performance") or [],
+        "sector_performance": all_sectors[:5],
+        "sector_heatmap": sector_heatmap,
         "article_counts": _article_counts(),
     }
 
