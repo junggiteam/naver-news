@@ -347,7 +347,7 @@ def crawl_stock_data():
 
     try:
         wti = crawl_detail_price(
-            "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_CL",
+            "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_WTI",
             "WTI(국제유가)",
             debug_notes
         )
