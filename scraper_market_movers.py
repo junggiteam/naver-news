@@ -243,32 +243,47 @@ def crawl_ipo_calendar(debug_notes=None):
 
 def crawl_investor_net_buy(debug_notes=None):
     """외국인/기관 순매수 상위 5종목 (코스피+코스닥 합산). pykrx 라이브러리 사용.
-    KRX 로그인이 필요한 데이터일 경우 실패할 수 있음 - 그 경우 빈 결과 반환."""
+    당일 데이터는 보통 장 마감(18시) 이후에나 확정되므로, 비어있으면
+    최근 영업일 쪽으로 최대 5일까지 거슬러 올라가며 데이터가 있는 날을 찾는다."""
     result = {"foreign": [], "institution": []}
     try:
         from pykrx import stock as krx_stock
         from datetime import datetime, timezone, timedelta
         KST = timezone(timedelta(hours=9))
-        today = datetime.now(KST).strftime("%Y%m%d")
+
+        def _fetch(investor_key, market, date_str):
+            df = krx_stock.get_market_net_purchases_of_equities(date_str, date_str, market, investor_key)
+            return df
 
         for investor_key, result_key in [("외국인", "foreign"), ("기관합계", "institution")]:
             rows = []
             for market in ["KOSPI", "KOSDAQ"]:
-                try:
-                    df = krx_stock.get_market_net_purchases_of_equities(today, today, market, investor_key)
-                    if df is None or df.empty:
+                df = None
+                used_date = None
+                for days_back in range(0, 6):  # 오늘부터 최대 5영업일 전까지 시도
+                    date_str = (datetime.now(KST) - timedelta(days=days_back)).strftime("%Y%m%d")
+                    try:
+                        candidate = _fetch(investor_key, market, date_str)
+                        if candidate is not None and not candidate.empty:
+                            df = candidate
+                            used_date = date_str
+                            break
+                    except Exception as e:
                         if debug_notes is not None:
-                            debug_notes.append(f"{result_key} {market}({today}) 순매수 -> 결과 비어있음(df.empty)")
-                        continue
-                    df = df.sort_values("순매수거래대금", ascending=False)
-                    for ticker, row in df.head(5).iterrows():
-                        rows.append({
-                            "name": str(row.get("종목명", "")),
-                            "net_value": int(row.get("순매수거래대금", 0)),
-                        })
-                except Exception as e:
+                            debug_notes.append(f"{result_key} {market}({date_str}) 순매수 -> 예외: {e}")
+
+                if df is None:
                     if debug_notes is not None:
-                        debug_notes.append(f"{result_key} {market} 순매수 -> 예외: {e}")
+                        debug_notes.append(f"{result_key} {market} 순매수 -> 최근 6일 모두 비어있음")
+                    continue
+
+                df = df.sort_values("순매수거래대금", ascending=False)
+                for ticker, row in df.head(5).iterrows():
+                    rows.append({
+                        "name": str(row.get("종목명", "")),
+                        "net_value": int(row.get("순매수거래대금", 0)),
+                        "as_of": used_date,
+                    })
             rows.sort(key=lambda r: r["net_value"], reverse=True)
             result[result_key] = rows[:5]
     except Exception as e:
