@@ -1,19 +1,32 @@
 {
-  "updated_at": "2026-07-30 10:01:06",
+  "updated_at": "2026-07-30 10:11:33",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.05,
-    "kosdaq_change": -1.5,
-    "kospi_value": 5665.84,
-    "kosdaq_value": 652.71
+    "kospi_change": 1.25,
+    "kosdaq_change": -0.3,
+    "kospi_value": 5734.24,
+    "kosdaq_value": 660.72
   },
-  "hero": {
-    "title": "\"바닥 보이지 않는다\"…코스피 '5000선 붕괴' 가능성까지",
-    "thumbnail": "https://mimgnews.pstatic.net/image/origin/014/2026/07/30/5554918.jpg?type=nf220_150",
-    "link": "https://n.news.naver.com/mnews/article/014/0005554918",
-    "press_name": "파이낸셜뉴스",
-    "description": "국내 증시 하락과 레버리지 투자 손실에 개인 투자자들 이탈 가속화"
+  "heroes": {
+    "종합": {
+      "title": "트럼프, 이란 기습공격에 \"이제 우리 차례…두들겨 팰 것\"(종합2보)",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/07/30/16222965.jpg?type=nf70_70",
+      "link": "https://n.news.naver.com/article/001/0016222965?ntype=RANKING",
+      "press_name": "연합뉴스"
+    },
+    "경제": {
+      "title": "믿었던 삼전닉스 반토막에…개미들 \"주식창 보면 어지러워\"",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/437/2026/07/30/503684.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/437/0000503684",
+      "press_name": "JTBC"
+    },
+    "부동산": {
+      "title": "용산구, 재건축·재개발 '갈등관리조정관' 위촉",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/07/30/16223080.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016223080",
+      "press_name": "연합뉴스"
+    }
   },
   "headlines": [
     {
@@ -51,10 +64,6 @@
     {
       "category": "부동산",
       "text": "전세사기 방지책과 대출 규제로 인한 전세 감소 및 시장 변화"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시가 인공지능 관련 투자 심리 악화와 중동 리스크 등으로 급락한 여파가 국내 시장에도 영향을 미치며 코스닥 지수가 1.5% 하락했다. 반면 코스피는 삼성물산과 LG생활건강 등 일부 기업의 실적 호조에 힘입어 낙폭을 만회하며 보합권에서 혼조세를 보였다. 외국인 투자자들의 매도세가 이어지는 가운데 시장 전반의 불확실성이 지속되면서 지수별로 엇갈린 흐름이 나타났다."
     }
   ],
   "top_gainers": [
@@ -72,29 +81,35 @@
     },
     {
       "name": "티웨이홀딩스",
-      "price": "892.0",
-      "change_percent": "+20.70%",
-      "pct": 20.7
+      "price": "931.0",
+      "change_percent": "+25.98%",
+      "pct": 25.98
     },
     {
       "name": "STX그린로지스",
-      "price": "3060.0",
-      "change_percent": "+18.83%",
-      "pct": 18.83
+      "price": "2955.0",
+      "change_percent": "+14.76%",
+      "pct": 14.76
     },
     {
       "name": "LG생활건강",
-      "price": "308500.0",
-      "change_percent": "+17.30%",
-      "pct": 17.3
+      "price": "299500.0",
+      "change_percent": "+13.88%",
+      "pct": 13.88
     }
   ],
   "top_losers": [
     {
       "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "10500.0",
-      "change_percent": "-11.99%",
-      "pct": 11.99
+      "price": "10300.0",
+      "change_percent": "-13.66%",
+      "pct": 13.66
+    },
+    {
+      "name": "하나 인버스 2X K방산TOP10 ETN",
+      "price": "11965.0",
+      "change_percent": "-11.92%",
+      "pct": 11.92
     },
     {
       "name": "미래에셋 레버리지 반도체 ETN",
@@ -103,111 +118,105 @@
       "pct": 10.04
     },
     {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "12240.0",
-      "change_percent": "-9.90%",
-      "pct": 9.9
-    },
-    {
       "name": "미래산업",
-      "price": "5580.0",
-      "change_percent": "-9.42%",
-      "pct": 9.42
+      "price": "5590.0",
+      "change_percent": "-9.25%",
+      "pct": 9.25
     },
     {
-      "name": "넥센타이어",
-      "price": "5870.0",
-      "change_percent": "-9.13%",
-      "pct": 9.13
+      "name": "하나 레버리지 반도체 ETN",
+      "price": "104945.0",
+      "change_percent": "-8.85%",
+      "pct": 8.85
     }
   ],
   "sector_performance": [
     {
       "name": "우주항공과국방",
-      "change_value": "+5.92%",
-      "pct": 5.92
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "+4.88%",
-      "pct": 4.88
+      "change_value": "+6.94%",
+      "pct": 6.94
     },
     {
       "name": "조선",
-      "change_value": "+4.68%",
-      "pct": 4.68
+      "change_value": "+6.22%",
+      "pct": 6.22
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+5.96%",
+      "pct": 5.96
+    },
+    {
+      "name": "문구류",
+      "change_value": "+5.61%",
+      "pct": 5.61
     },
     {
       "name": "은행",
-      "change_value": "+4.18%",
-      "pct": 4.18
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+4.05%",
-      "pct": 4.05
+      "change_value": "+5.06%",
+      "pct": 5.06
     }
   ],
   "sector_heatmap": [
     {
       "name": "우주항공과국방",
-      "change_value": "+5.92%",
-      "pct": 5.92
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "+4.88%",
-      "pct": 4.88
+      "change_value": "+6.94%",
+      "pct": 6.94
     },
     {
       "name": "조선",
-      "change_value": "+4.68%",
-      "pct": 4.68
+      "change_value": "+6.22%",
+      "pct": 6.22
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+5.96%",
+      "pct": 5.96
+    },
+    {
+      "name": "문구류",
+      "change_value": "+5.61%",
+      "pct": 5.61
     },
     {
       "name": "은행",
-      "change_value": "+4.18%",
-      "pct": 4.18
+      "change_value": "+5.06%",
+      "pct": 5.06
     },
     {
       "name": "전기제품",
-      "change_value": "+4.05%",
-      "pct": 4.05
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "+3.83%",
-      "pct": 3.83
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-1.88%",
-      "pct": -1.88
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "-2.02%",
-      "pct": -2.02
-    },
-    {
-      "name": "전기장비",
-      "change_value": "-2.45%",
-      "pct": -2.45
-    },
-    {
-      "name": "전자제품",
-      "change_value": "-2.59%",
-      "pct": -2.59
+      "change_value": "+4.95%",
+      "pct": 4.95
     },
     {
       "name": "통신장비",
-      "change_value": "-2.67%",
-      "pct": -2.67
+      "change_value": "-0.64%",
+      "pct": -0.64
+    },
+    {
+      "name": "판매업체",
+      "change_value": "-0.68%",
+      "pct": -0.68
+    },
+    {
+      "name": "생명과학도구및서비스",
+      "change_value": "-0.81%",
+      "pct": -0.81
+    },
+    {
+      "name": "전문소매",
+      "change_value": "-0.91%",
+      "pct": -0.91
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "-0.94%",
+      "pct": -0.94
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-3.14%",
-      "pct": -3.14
+      "change_value": "-1.60%",
+      "pct": -1.6
     }
   ],
   "article_counts": {
