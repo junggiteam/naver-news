@@ -107,25 +107,46 @@ def _article_counts():
     return counts
 
 
-def _build_hero():
-    """대표 이슈 카드용: 경제 탭 1번 기사(썸네일 있는 카드형 데이터) +
-    종합 브리핑 첫 줄을 AI 한줄 설명으로 붙임."""
-    economy = _load_json("data/economy_news.json")
-    news_list = economy.get("news") or []
-    if not news_list:
+# 뉴스랭킹 탭 정렬에 쓰는 것과 동일한 인지도 우선순위 (대표 기사 선정용)
+MAJOR_PRESS = [
+    "연합뉴스", "KBS", "MBC", "SBS", "JTBC", "YTN", "MBN",
+    "조선일보", "중앙일보", "동아일보", "한겨레", "경향신문", "한국일보",
+    "매일경제", "한국경제", "서울경제", "헤럴드경제", "이데일리",
+    "아시아경제", "파이낸셜뉴스", "머니투데이", "뉴시스", "뉴스1",
+    "채널A", "TV조선", "SBS Biz", "연합뉴스TV", "노컷뉴스",
+    "세계일보", "국민일보", "문화일보",
+]
+
+
+def _pick_major_or_first(items):
+    """메이저 언론사 기사를 우선순위대로 찾고, 없으면 그냥 첫 기사."""
+    for press in MAJOR_PRESS:
+        for item in items:
+            if item.get("press_name") == press:
+                return item
+    return items[0] if items else None
+
+
+def _build_hero_for_category(path):
+    data = _load_json(path)
+    news_list = data.get("news") or []
+    top = _pick_major_or_first(news_list)
+    if not top:
         return None
-    top = news_list[0]
-
-    ranking = _load_json("data/ranking_news.json")
-    briefing = ranking.get("ai_briefing") or []
-    description = briefing[0] if briefing else ""
-
     return {
         "title": top.get("title", ""),
         "thumbnail": top.get("thumbnail", ""),
         "link": top.get("link", ""),
         "press_name": top.get("press_name", ""),
-        "description": description,
+    }
+
+
+def _build_heroes():
+    """종합/경제/부동산 각각의 대표(메이저 언론사 우선) 이슈 카드."""
+    return {
+        "종합": _build_hero_for_category("data/ranking_news.json"),
+        "경제": _build_hero_for_category("data/economy_news.json"),
+        "부동산": _build_hero_for_category("data/realestate_news.json"),
     }
 
 
@@ -141,7 +162,7 @@ def build_dashboard():
     dashboard = {
         "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "market_mood": _market_mood(indices),
-        "hero": _build_hero(),
+        "heroes": _build_heroes(),
         "headlines": _collect_headlines(),
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
