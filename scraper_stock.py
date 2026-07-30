@@ -347,6 +347,36 @@ def crawl_stock_data():
         print(f"원/달러 환율 수집 실패: {e}")
 
     try:
+        jpy_krw = crawl_detail_price(
+            "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_JPYKRW",
+            "원/엔 환율(100엔)",
+            debug_notes
+        )
+        if jpy_krw:
+            jpy_krw.pop("_soup", None)
+            indices.append(jpy_krw)
+        else:
+            print("원/엔 환율 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"원/엔 환율 수집 실패: {e}")
+        debug_notes.append(f"원/엔 환율(marketindexCd=FX_JPYKRW) -> 예외: {e}")
+
+    try:
+        eur_krw = crawl_detail_price(
+            "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_EURKRW",
+            "원/유로 환율",
+            debug_notes
+        )
+        if eur_krw:
+            eur_krw.pop("_soup", None)
+            indices.append(eur_krw)
+        else:
+            print("원/유로 환율 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"원/유로 환율 수집 실패: {e}")
+        debug_notes.append(f"원/유로 환율(marketindexCd=FX_EURKRW) -> 예외: {e}")
+
+    try:
         wti = crawl_detail_price(
             "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_WTI",
             "WTI(국제유가)",
@@ -373,6 +403,21 @@ def crawl_stock_data():
             print("국고채(3년) 데이터를 찾지 못했습니다. (페이지 구조가 다를 수 있어 추후 확인 필요)")
     except Exception as e:
         print(f"국고채(3년) 수집 실패: {e} (페이지 구조가 다를 수 있어 추후 확인 필요)")
+
+    try:
+        bond10 = crawl_detail_price(
+            "https://finance.naver.com/marketindex/interestDetail.naver?marketindexCd=IRR_GOVT10Y",
+            "국고채(10년)",
+            debug_notes
+        )
+        if bond10:
+            bond10.pop("_soup", None)
+            indices.append(bond10)
+        else:
+            print("국고채(10년) 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"국고채(10년) 수집 실패: {e}")
+        debug_notes.append(f"국고채(10년)(marketindexCd=IRR_GOVT10Y) -> 예외: {e}")
 
     try:
         bitcoin = crawl_bitcoin()
