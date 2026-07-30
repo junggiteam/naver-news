@@ -257,6 +257,8 @@ def crawl_investor_net_buy(debug_notes=None):
                 try:
                     df = krx_stock.get_market_net_purchases_of_equities(today, today, market, investor_key)
                     if df is None or df.empty:
+                        if debug_notes is not None:
+                            debug_notes.append(f"{result_key} {market}({today}) 순매수 -> 결과 비어있음(df.empty)")
                         continue
                     df = df.sort_values("순매수거래대금", ascending=False)
                     for ticker, row in df.head(5).iterrows():
