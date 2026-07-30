@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 22:00:59",
+  "updated_at": "2026-07-30 22:30:48",
   "indices": [
     {
       "name": "코스피",
@@ -45,10 +45,10 @@
     },
     {
       "name": "국내금(원/돈)",
-      "value": "704,020.31",
-      "change_percent": "▼1.02%",
+      "value": "704,877",
+      "change_percent": "▼0.90%",
       "direction": "down",
-      "as_of": "2026.07.30 21:59"
+      "as_of": "2026.07.30 22:24"
     },
     {
       "name": "휘발유(원/리터)",
@@ -59,22 +59,22 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,434.90",
-      "change_percent": "▼0.77%",
+      "value": "1,432.10",
+      "change_percent": "▼0.96%",
       "direction": "down",
       "as_of": "2026.07.30 21:01"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "880.58",
-      "change_percent": "▼0.47%",
+      "value": "879.75",
+      "change_percent": "▼0.57%",
       "direction": "down",
       "as_of": "2026.07.30 21:01"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,646.12",
-      "change_percent": "▼0.74%",
+      "value": "1,643.98",
+      "change_percent": "▼0.87%",
       "direction": "down",
       "as_of": "2026.07.30 21:01"
     },
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "92,229,000",
-      "change_percent": "▲0.88%",
+      "value": "92,217,000",
+      "change_percent": "▲0.87%",
       "direction": "up",
-      "as_of": "2026-07-30 22:00:54"
+      "as_of": "2026-07-30 22:30:46"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "중앙일보",
           "rank": 1,
+          "title": "“샀다 팔았다 말라”던 최태원, 하닉 주식 48억원어치 첫 매수",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0003541360&office_id=025&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260730&page=1",
+          "upload_time": "2026-07-30 21:53",
+          "published_at": "2026-07-30T21:53:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 2,
           "title": "단일종목 레버리지 예탁금 3천만원으로 상향",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000890752&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260730&page=1",
           "upload_time": "2026-07-30 21:03",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 3,
           "title": "코스피 급락장에 미수거래·반대매매 급증",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000890751&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260730&page=1",
           "upload_time": "2026-07-30 21:03",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 3,
+          "rank": 4,
           "title": "\"무서워 주식 앱 못 켜\"…개인 투자자들 '비명'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000890750&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260730&page=1",
           "upload_time": "2026-07-30 21:02",
@@ -123,19 +131,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 5,
           "title": "“샀다 팔았다 말라”던 최태원, SK하이닉스 주식 48억 첫 매수",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005714668&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260730&page=1",
           "upload_time": "2026-07-30 20:33",
           "published_at": "2026-07-30T20:33:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 5,
-          "title": "지금 130만원인데 ‘470만닉스’ 제시했던 노무라…급격한 조정 분석 보니",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005714664&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260730&page=1",
-          "upload_time": "2026-07-30 20:09",
-          "published_at": "2026-07-30T20:09:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 빅테크 기업들의 AI 투자 수익성에 대한 월가의 의구심이 커지면서 반도체를 비롯한 기술주 전반의 투자 심리가 위축되었습니다. 이러한 시장 불안과 함께 미수거래에 따른 반대매매가 급증하며 코스피와 코스닥 지수가 큰 폭으로 하락했습니다.",
+  "ai_commentary": "글로벌 기술 기업들의 인공지능 투자 수익성에 대한 월가의 의구심이 확산하며 반도체 투자 심리가 위축된 것이 지수 하락의 주요 원인으로 작용했다. 시장의 변동성이 확대되면서 미수거래에 따른 반대매매가 급증하고 개인 투자자들의 투자 심리가 크게 악화하며 지수 낙폭을 키웠다.",
   "top_gainers": [
     {
       "name": "금호건설",
