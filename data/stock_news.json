@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31 05:45:42",
+  "updated_at": "2026-07-31 06:00:54",
   "indices": [
     {
       "name": "코스피",
@@ -27,21 +27,21 @@
       "value": "52,208.06",
       "change_percent": "▲1.19%",
       "direction": "up",
-      "as_of": "2026-07-31 05:35:01"
+      "as_of": "2026-07-31 05:56:30"
     },
     {
       "name": "나스닥",
       "value": "25,122.18",
       "change_percent": "▲2.78%",
       "direction": "up",
-      "as_of": "2026-07-31 05:31:25"
+      "as_of": "2026-07-31 05:52:25"
     },
     {
       "name": "S&P500",
       "value": "7,437.63",
       "change_percent": "▲1.66%",
       "direction": "up",
-      "as_of": "2026-07-31 05:30:08"
+      "as_of": "2026-07-31 05:54:35"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,15 +66,15 @@
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "893.28",
-      "change_percent": "▲0.96%",
+      "value": "893.53",
+      "change_percent": "▲0.99%",
       "direction": "up",
       "as_of": "2026.07.30 21:18"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,642.53",
-      "change_percent": "▼0.95%",
+      "value": "1,643.39",
+      "change_percent": "▼0.90%",
       "direction": "down",
       "as_of": "2026.07.30 21:18"
     },
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,766,000",
-      "change_percent": "▲0.37%",
+      "value": "91,745,000",
+      "change_percent": "▲0.35%",
       "direction": "up",
-      "as_of": "2026-07-31 05:45:34"
+      "as_of": "2026-07-31 06:00:36"
     }
   ],
   "news_categories": [
@@ -188,8 +188,24 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "뉴욕증시, 반도체주 반등에 강세 마감…하이닉스ADR 18%↑(종합)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016225875&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
+          "upload_time": "2026-07-31 05:58",
+          "published_at": "2026-07-31T05:58:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "[뉴욕증시]반도체주 강세에 일제히 상승…아마존 시간 외 6%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797063&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
+          "upload_time": "2026-07-31 05:48",
+          "published_at": "2026-07-31T05:48:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
           "title": "MS가 살린 AI 랠리…나스닥 2.8% 급등[월스트리트in]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006340801&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 05:37",
@@ -197,7 +213,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 4,
           "title": "[1보]아마존, AWS 매출 37% 급증…2021년 이후 최고 성장률",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797062&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 05:26",
@@ -205,27 +221,11 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 3,
-          "title": "[속보] SK하이닉스 ADR 17%↑…모처럼 반도체 '강세' 뉴욕증시 활짝",
+          "rank": 5,
+          "title": "SK하이닉스 ADR 17%↑…모처럼 반도체 '강세' 뉴욕증시 활짝",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001260622&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 05:23",
           "published_at": "2026-07-31T05:23:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 4,
-          "title": "뉴욕증시, 반도체주 반등에 강세 마감…나스닥 2.8%↑",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016225869&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
-          "upload_time": "2026-07-31 05:22",
-          "published_at": "2026-07-31T05:22:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "[속보]나스닥 3%↑ 6거래일만에 반등…MS 15% 급등",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006340797&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
-          "upload_time": "2026-07-31 05:16",
-          "published_at": "2026-07-31T05:16:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 나스닥 지수가 빅테크 기업의 실적 호조에 힘입어 큰 폭으로 반등했음에도 불구하고 국내 증시는 반도체 투심 악화와 시장 금리 상승에 대한 우려로 하락세를 보였다. 특히 반도체 업황에 대한 불안감이 이어지면서 반대매매가 급증하는 등 투자 심리가 위축된 점이 지수 하락의 배경으로 작용했다.",
+  "ai_commentary": "미국 증시에서 반도체주가 강세를 보였음에도 불구하고 국내 증시는 반도체 투심 위축과 시장 금리 상승 등의 영향으로 하락세를 보였다. 주가 급락에 따른 미수거래와 반대매매가 급증하며 하방 압력이 가중되었고, 레버리지 상품 투자 규제 강화 소식까지 더해지며 코스피와 코스닥 지수가 큰 폭으로 조정을 받았다.",
   "top_gainers": [
     {
       "name": "금호건설",
