@@ -10,6 +10,7 @@ import scraper_market_movers
 import scraper_dart
 import scraper_ecos
 import scraper_bizinfo
+import scraper_calendar
 import ai_briefing
 import dashboard
 
@@ -35,6 +36,9 @@ CRAWLER_INTERVALS = {
     "dart": timedelta(hours=3),
     "ecos": timedelta(hours=3),
     "bizinfo": timedelta(hours=3),
+    # 경제 캘린더(FOMC/금통위)는 몇 달 전에 이미 확정된 일정이라 자주
+    # 확인할 필요가 없음. 매일 한 번이면 충분.
+    "calendar": timedelta(hours=24),
 }
 
 CRAWLER_FUNCS = {
@@ -45,6 +49,7 @@ CRAWLER_FUNCS = {
     "dart": scraper_dart.main,
     "ecos": scraper_ecos.main,
     "bizinfo": scraper_bizinfo.main,
+    "calendar": scraper_calendar.main,
 }
 
 
