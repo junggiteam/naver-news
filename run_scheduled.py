@@ -56,6 +56,9 @@ def _augment_with_ai(name):
                 data = json.load(f)
             titles = [item["title"] for item in data.get("news", [])]
             data["ai_briefing"] = ai_briefing.generate_tab_briefing(titles, label)
+            if name == "economy":
+                data["daily_term"] = ai_briefing.generate_daily_economic_term(titles)
+                print(f"[economy] 오늘의 경제 용어 {'생성됨: ' + data['daily_term']['term'] if data['daily_term'] else '생략됨(키 없음/호출 실패)'}")
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
             print(f"[{name}] AI 브리핑 {'생성됨' if data['ai_briefing'] else '생략됨(키 없음/호출 실패)'}")

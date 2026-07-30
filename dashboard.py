@@ -159,11 +159,14 @@ def build_dashboard():
     # 상위 6개 + 하위 6개를 뽑아 색 대비를 확보한다.
     sector_heatmap = (all_sectors[:6] + all_sectors[-6:]) if len(all_sectors) > 12 else all_sectors
 
+    economy_data = _load_json("data/economy_news.json")
+
     dashboard = {
         "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "market_mood": _market_mood(indices),
         "heroes": _build_heroes(),
         "headlines": _collect_headlines(),
+        "daily_term": economy_data.get("daily_term"),
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
         "sector_performance": all_sectors[:5],

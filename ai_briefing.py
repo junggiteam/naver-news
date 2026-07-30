@@ -73,6 +73,42 @@ def generate_tab_briefing(titles, label):
     return lines[:3]
 
 
+def generate_daily_economic_term(titles):
+    """오늘 경제 뉴스 제목들에서 가장 이슈된 용어 하나를 뽑아 쉽게 설명.
+    실패/데이터없음 시 None 반환."""
+    if not titles:
+        return None
+
+    titles_block = "\n".join(f"- {t}" for t in titles[:20])
+    prompt = (
+        "아래는 오늘 수집된 경제 뉴스 제목 목록이다.\n"
+        "이 중 오늘 가장 이슈가 된 경제/금융 용어를 딱 하나만 골라라 "
+        "(예: 기준금리, 인플레이션, 밸류업, 공매도 등 - 특정 기업명이나 "
+        "인명은 고르지 말고 일반적인 경제 개념 용어로 골라라).\n"
+        "출력은 아래 형식 정확히 2줄만, 다른 설명이나 번호, 따옴표 없이:\n"
+        "용어: (용어 하나)\n"
+        "설명: (경제 지식이 없는 일반인도 이해할 수 있게 3문장 이내로 쉽게 설명. "
+        "비유를 써도 좋음)\n\n"
+        f"[기사 제목 목록]\n{titles_block}"
+    )
+    text = _call_gemini(prompt)
+    if not text:
+        return None
+
+    term = ""
+    explanation = ""
+    for line in text.splitlines():
+        line = line.strip()
+        if line.startswith("용어:"):
+            term = line[len("용어:"):].strip()
+        elif line.startswith("설명:"):
+            explanation = line[len("설명:"):].strip()
+
+    if not term or not explanation:
+        return None
+    return {"term": term, "explanation": explanation}
+
+
 def _extract_signed_percent(index_entry):
     """indices 항목 하나에서 부호 있는 등락률(float)을 추출. 파싱 실패 시 0.0."""
     if not index_entry:
