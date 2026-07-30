@@ -82,6 +82,45 @@ def _augment_with_ai(name):
         print(f"[{name}] AI 후처리 중 오류(크롤링 결과 자체는 정상 저장됨): {e}")
 
 
+KEYWORD_TAGS_FILE = os.path.join("data", "keyword_tags.json")
+KEYWORD_TAGS_PER_CATEGORY = 15  # 카테고리 하나가(특히 종합 400여개) 편중되지 않도록 상한
+
+
+def _augment_keyword_tags():
+    """종합/경제/부동산/증권 4개 탭의 현재 데이터에서 제목을 골고루 모아
+    핵심 키워드 5~8개를 추출해 data/keyword_tags.json에 저장.
+    economy 크롤러 주기(3시간)에 맞춰 갱신 - 크롤링 본체와 무관하므로
+    실패해도 예외를 밖으로 던지지 않는다."""
+    try:
+        titles = []
+        for path in ("data/ranking_news.json", "data/economy_news.json", "data/realestate_news.json"):
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            titles.extend(item["title"] for item in (data.get("news") or [])[:KEYWORD_TAGS_PER_CATEGORY])
+
+        if os.path.exists("data/stock_news.json"):
+            with open("data/stock_news.json", encoding="utf-8") as f:
+                stock_data = json.load(f)
+            stock_titles = [
+                item["title"]
+                for cat in (stock_data.get("news_categories") or [])
+                for item in cat.get("items", [])
+            ]
+            titles.extend(stock_titles[:KEYWORD_TAGS_PER_CATEGORY])
+
+        tags = ai_briefing.generate_keyword_tags(titles)
+        with open(KEYWORD_TAGS_FILE, "w", encoding="utf-8") as f:
+            json.dump(
+                {"updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"), "tags": tags},
+                f, ensure_ascii=False, indent=2
+            )
+        print(f"[keyword_tags] {'생성됨: ' + ', '.join(tags) if tags else '생략됨(키 없음/호출 실패)'}")
+    except Exception as e:
+        print(f"[keyword_tags] 생성 중 오류(크롤링 결과 자체는 정상 저장됨): {e}")
+
+
 STOCK_HISTORY_FILE = os.path.join("data", "stock_index_history.json")
 STOCK_HISTORY_MAX_POINTS = 120  # 15분 간격 기준 대략 30시간치, 여유있게 보관
 
@@ -208,6 +247,8 @@ def run_scheduled(now_kst=None):
             if name == "stock":
                 _record_stock_history()
                 _augment_with_market_movers()
+            if name == "economy":
+                _augment_keyword_tags()
             marker[name] = now_kst.isoformat()
             marker_changed = True
             print(f"[{name}] 실행 완료")

@@ -73,6 +73,31 @@ def generate_tab_briefing(titles, label):
     return lines[:3]
 
 
+def generate_keyword_tags(titles):
+    """오늘 전체 카테고리(종합/경제/부동산/증권) 뉴스 제목에서 핵심 키워드
+    5~8개를 추출. 실패/데이터없음 시 빈 리스트 반환."""
+    if not titles:
+        return []
+
+    titles_block = "\n".join(f"- {t}" for t in titles)
+    prompt = (
+        "아래는 오늘 수집된 뉴스 제목 목록이다 (종합/경제/부동산/증권 전체를\n"
+        "골고루 섞어둠).\n"
+        "오늘 가장 핵심적인 키워드를 5~8개 뽑아라.\n"
+        "각 키워드는 2~8자 내외의 명사(구)로, 특정 기사 제목을 그대로 베끼지\n"
+        "말고 여러 기사를 관통하는 주제어로 뽑아라 (예: 기준금리, 부동산 규제,\n"
+        "반도체 수출, AI 투자 등). 특정 인물·기업명 하나만 있는 단독 이슈보다는\n"
+        "여러 기사에 걸쳐 반복되는 주제를 우선하라.\n"
+        "출력은 키워드만 한 줄에 하나씩, 번호나 설명, 따옴표 없이.\n\n"
+        f"[기사 제목 목록]\n{titles_block}"
+    )
+    text = _call_gemini(prompt)
+    if not text:
+        return []
+    tags = [line.strip("-•* ").strip() for line in text.splitlines() if line.strip()]
+    return tags[:8]
+
+
 def generate_daily_economic_term(titles):
     """오늘 경제 뉴스 제목들에서 가장 이슈된 용어 하나를 뽑아 쉽게 설명.
     실패/데이터없음 시 None 반환."""

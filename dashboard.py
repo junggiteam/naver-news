@@ -214,6 +214,7 @@ def build_dashboard():
     sector_heatmap = (all_sectors[:6] + all_sectors[-6:]) if len(all_sectors) > 12 else all_sectors
 
     economy_data = _load_json("data/economy_news.json")
+    keyword_data = _load_json("data/keyword_tags.json")
 
     today_str = datetime.now(KST).strftime("%Y-%m-%d")
     counts = _article_counts()
@@ -224,6 +225,7 @@ def build_dashboard():
         "heroes": _build_heroes(),
         "headlines": _collect_headlines(),
         "daily_term": economy_data.get("daily_term"),
+        "keyword_tags": keyword_data.get("tags") or [],
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
         "sector_performance": all_sectors[:5],
