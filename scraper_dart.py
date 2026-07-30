@@ -48,16 +48,15 @@ def crawl_dart_filings():
     kst_timezone = timezone(timedelta(hours=9))
     today = datetime.now(kst_timezone).strftime("%Y%m%d")
 
-    params = {
+    base_params = {
         "crtfc_key": DART_API_KEY,
         "bgn_de": today,
         "end_de": today,
         "pblntf_ty": "B",  # 주요사항보고
-        "page_no": 1,
-        "page_count": 100,
+        "page_count": 100,  # DART API 허용 최대치
     }
 
-    data = fetch_with_retry(params, "DART 공시")
+    data = fetch_with_retry({**base_params, "page_no": 1}, "DART 공시 (1페이지)")
     if data is None:
         return
 
@@ -65,11 +64,28 @@ def crawl_dart_filings():
     if status == "013":
         # 013 = 조회된 데이터가 없습니다 (오늘 해당 유형 공시가 없는 정상 상황)
         filings_raw = []
+        total_count = 0
+        total_page = 0
     elif status != "000":
         print(f"DART API 오류 (status={status}): {data.get('message')}")
         return
     else:
         filings_raw = data.get("list", [])
+        total_count = data.get("total_count", len(filings_raw))
+        total_page = data.get("total_page", 1)
+        print(f"[dart] total_count={total_count}, total_page={total_page}, 1페이지 수신={len(filings_raw)}건")
+
+        # page_count(최대 100)로도 한 페이지에 다 못 담기면(공시가 몰리는 날 등)
+        # 나머지 페이지를 이어서 받아온다. 어느 한 페이지 호출이 끝내 실패해도
+        # 그때까지 모은 결과는 유지 - 부분 실패로 전체를 날리지 않는다.
+        for page_no in range(2, total_page + 1):
+            page_data = fetch_with_retry({**base_params, "page_no": page_no}, f"DART 공시 ({page_no}페이지)")
+            if page_data is None or page_data.get("status") != "000":
+                print(f"[dart] {page_no}페이지 수집 실패 - 지금까지 모은 {len(filings_raw)}건으로 계속 진행")
+                break
+            page_list = page_data.get("list", [])
+            filings_raw.extend(page_list)
+            print(f"[dart] {page_no}페이지 수신={len(page_list)}건 (누적 {len(filings_raw)}건)")
 
     filings = []
     for item in filings_raw:
