@@ -1,0 +1,3039 @@
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<div id="news-widget">
+  <div class="nw-tab-shell">
+    <button class="nw-tab-arrow nw-tab-arrow-left" type="button" aria-label="이전 메뉴 보기" hidden>‹</button>
+    <div class="nw-tabbar">
+      <button class="nw-tab active" data-tab="dashboard">종합</button>
+      <button class="nw-tab" data-tab="ranking">뉴스랭킹</button>
+      <button class="nw-tab" data-tab="economy">기업/경제</button>
+      <button class="nw-tab" data-tab="stock">증권/주식</button>
+      <button class="nw-tab" data-tab="realestate">부동산</button>
+      <button class="nw-tab" data-tab="policy">정책·캘린더</button>
+    </div>
+    <button class="nw-tab-arrow nw-tab-arrow-right" type="button" aria-label="다음 메뉴 보기" hidden>›</button>
+  </div>
+
+  <!-- ===== 오늘 한눈에(대시보드) 탭 ===== -->
+  <div class="nw-panel" id="panel-dashboard">
+    <!-- 1행: 오늘의 이슈 - 종합/경제/부동산 각 대표 기사, 3열 동일폭 -->
+    <h3 class="db-section-title db-issue-title">오늘의 이슈</h3>
+    <div class="db-hero-row" id="db-hero-row">
+      <a class="db-hero" id="db-hero-종합" href="#" target="_blank" rel="noopener noreferrer" hidden>
+        <div class="db-hero-thumb-wrap"><img class="db-hero-thumb" src="" alt="" /></div>
+        <div class="db-hero-body">
+          <span class="db-hero-badge">종합</span>
+          <h2 class="db-hero-title"></h2>
+          <span class="db-hero-press"></span>
+        </div>
+      </a>
+      <a class="db-hero" id="db-hero-경제" href="#" target="_blank" rel="noopener noreferrer" hidden>
+        <div class="db-hero-thumb-wrap"><img class="db-hero-thumb" src="" alt="" /></div>
+        <div class="db-hero-body">
+          <span class="db-hero-badge">경제</span>
+          <h2 class="db-hero-title"></h2>
+          <span class="db-hero-press"></span>
+        </div>
+      </a>
+      <a class="db-hero" id="db-hero-부동산" href="#" target="_blank" rel="noopener noreferrer" hidden>
+        <div class="db-hero-thumb-wrap"><img class="db-hero-thumb" src="" alt="" /></div>
+        <div class="db-hero-body">
+          <span class="db-hero-badge">부동산</span>
+          <h2 class="db-hero-title"></h2>
+          <span class="db-hero-press"></span>
+        </div>
+      </a>
+    </div>
+
+    <!-- 오늘의 경제 용어 (신규) -->
+    <div class="ai-briefing db-term-box" id="db-term-box" hidden>
+      <p class="ai-briefing-label">오늘의 경제 용어</p>
+      <p class="db-term-word" id="db-term-word"></p>
+      <p class="db-term-desc" id="db-term-desc"></p>
+    </div>
+
+    <!-- 오늘의 키워드 (신규, 클릭 시 종합 탭에서 필터링) -->
+    <div class="db-keyword-section" id="db-keyword-section" hidden>
+      <h3 class="db-section-title">오늘의 키워드</h3>
+      <div class="db-keyword-tags" id="db-keyword-tags"></div>
+    </div>
+
+    <!-- 2행: 오늘의 핵심 - 종합 / 경제 / 부동산 3열 -->
+    <h3 class="db-section-title">오늘의 핵심</h3>
+    <div class="db-headline-row" id="db-headline-row">
+      <div class="db-headline-col">
+        <span class="db-headline-col-title">종합<span class="db-surge-badge" id="db-surge-종합" hidden>🔥 급증</span></span>
+        <ul class="db-headline-col-list" id="db-headline-col-종합"><li class="db-loading">불러오는 중...</li></ul>
+      </div>
+      <div class="db-headline-col">
+        <span class="db-headline-col-title">경제<span class="db-surge-badge" id="db-surge-경제" hidden>🔥 급증</span></span>
+        <ul class="db-headline-col-list" id="db-headline-col-경제"><li class="db-loading">불러오는 중...</li></ul>
+      </div>
+      <div class="db-headline-col">
+        <span class="db-headline-col-title">부동산<span class="db-surge-badge" id="db-surge-부동산" hidden>🔥 급증</span></span>
+        <ul class="db-headline-col-list" id="db-headline-col-부동산"><li class="db-loading">불러오는 중...</li></ul>
+      </div>
+    </div>
+
+    <!-- 3행: 시장온도+지수 / 상승·하락 종목 / 업종별 히트맵, 3열 정렬(칼각) -->
+    <div class="db-lower-grid">
+      <div class="db-lower-col db-market-col">
+        <svg class="db-gauge-svg" viewBox="0 0 200 115" aria-hidden="true">
+          <defs>
+            <linearGradient id="dbGaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#3182F6"/>
+              <stop offset="50%" stop-color="#dcdfe6"/>
+              <stop offset="100%" stop-color="#F04452"/>
+            </linearGradient>
+          </defs>
+          <path d="M14,100 A86,86 0 0,1 186,100" fill="none" stroke="url(#dbGaugeGradient)" stroke-width="14" stroke-linecap="round"/>
+          <line id="db-gauge-needle" x1="100" y1="100" x2="100" y2="26" stroke="#222" stroke-width="4" stroke-linecap="round" style="transform-origin:100px 100px; transform:rotate(0deg); transition:transform 1s cubic-bezier(.34,1.4,.64,1);"/>
+          <circle cx="100" cy="100" r="6.5" fill="#222"/>
+        </svg>
+        <p class="db-gauge-label" id="db-gauge-label">시장 분위기 불러오는 중...</p>
+
+        <div class="db-index-cell">
+          <p class="db-index-name">코스피</p>
+          <div class="db-index-value-row">
+            <span class="db-index-value" id="db-kospi-value">-</span>
+            <span class="db-index-change" id="db-kospi-change"></span>
+          </div>
+          <svg class="db-sparkline" id="db-kospi-sparkline" viewBox="0 0 100 40" preserveAspectRatio="none"></svg>
+        </div>
+        <div class="db-index-cell">
+          <p class="db-index-name">코스닥</p>
+          <div class="db-index-value-row">
+            <span class="db-index-value" id="db-kosdaq-value">-</span>
+            <span class="db-index-change" id="db-kosdaq-change"></span>
+          </div>
+          <svg class="db-sparkline" id="db-kosdaq-sparkline" viewBox="0 0 100 40" preserveAspectRatio="none"></svg>
+        </div>
+      </div>
+
+      <div class="db-lower-col">
+        <h3 class="db-section-title db-title-up">오늘의 상승 종목</h3>
+        <div class="db-bar-list" id="db-gainers-list"></div>
+        <h3 class="db-section-title db-title-down" style="margin-top:20px;">오늘의 하락 종목</h3>
+        <div class="db-bar-list" id="db-losers-list"></div>
+      </div>
+
+      <div class="db-lower-col">
+        <h3 class="db-section-title">업종별 히트맵</h3>
+        <div class="db-heatmap" id="db-heatmap"></div>
+        <p class="db-heatmap-empty" id="db-heatmap-empty" hidden>아직 장 시작 전이라<br>업종 데이터가 반영되지 않았습니다.</p>
+      </div>
+    </div>
+
+    <p class="db-updated" id="db-updated"></p>
+    <div class="nw-footer">뉴스 콘텐츠 출처 : 네이버</div>
+  </div>
+
+  <!-- ===== 종합 탭 ===== -->
+  <div class="nw-panel" id="panel-ranking" hidden>
+    <div class="nrw-header">
+      <h2 class="nrw-title">언론사별 많이 본 뉴스</h2>
+      <p class="nrw-updated" id="nrw-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+    <div class="ai-briefing" id="nrw-briefing" hidden>
+      <p class="ai-briefing-label">오늘의 브리핑 (3줄 요약)</p>
+      <ul class="ai-briefing-list" id="nrw-briefing-list"></ul>
+    </div>
+    <div class="nrw-grid" id="nrw-grid">
+      <p class="nrw-loading">뉴스를 불러오는 중입니다...</p>
+    </div>
+    <div class="nrw-more-wrap">
+      <button class="nrw-more-btn" id="nrw-more-btn" style="display:none;">전체 언론사 더보기</button>
+    </div>
+    <div class="nw-footer">뉴스 콘텐츠 출처 : 네이버</div>
+  </div>
+
+  <!-- ===== 경제 탭 ===== -->
+  <div class="nw-panel" id="panel-economy" hidden>
+    <div class="ew-header">
+      <h2 class="ew-title">경제 뉴스</h2>
+      <p class="ew-updated" id="ew-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+    <div class="ai-briefing" id="ew-briefing" hidden>
+      <p class="ai-briefing-label">오늘의 브리핑 (3줄 요약)</p>
+      <ul class="ai-briefing-list" id="ew-briefing-list"></ul>
+    </div>
+    <div class="ew-grid" id="ew-grid">
+      <p class="ew-loading">뉴스를 불러오는 중입니다...</p>
+    </div>
+    <div class="nw-footer">뉴스 콘텐츠 출처 : 네이버</div>
+  </div>
+
+  <!-- ===== 증권/주식 탭 ===== -->
+  <div class="nw-panel" id="panel-stock" hidden>
+    <div class="sw-header">
+      <h2 class="sw-title">증권/주식</h2>
+      <p class="sw-updated" id="sw-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+    <p class="sw-index-label" id="sw-index-label">주요 경제 지표 불러오는 중...</p>
+    <div class="sw-indices" id="sw-indices">
+      <p class="sw-loading">지표를 불러오는 중입니다...</p>
+    </div>
+    <div class="ai-briefing" id="sw-commentary-box" hidden>
+      <p class="ai-briefing-label">오늘의 시황</p>
+      <p class="ai-commentary-text" id="sw-commentary-text"></p>
+    </div>
+    <div class="sw-category-grid" id="sw-category-grid">
+      <p class="sw-loading">뉴스를 불러오는 중입니다...</p>
+    </div>
+    <div class="nw-footer">뉴스 콘텐츠 출처 : 네이버</div>
+  </div>
+
+  <!-- ===== 부동산 탭 ===== -->
+  <div class="nw-panel" id="panel-realestate" hidden>
+    <div class="ew-header">
+      <h2 class="ew-title">부동산 뉴스</h2>
+      <p class="ew-updated" id="rw-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+    <div class="ai-briefing" id="rw-briefing" hidden>
+      <p class="ai-briefing-label">오늘의 브리핑 (3줄 요약)</p>
+      <ul class="ai-briefing-list" id="rw-briefing-list"></ul>
+    </div>
+    <div class="ew-grid" id="rw-grid">
+      <p class="ew-loading">뉴스를 불러오는 중입니다...</p>
+    </div>
+    <div class="nw-footer">뉴스 콘텐츠 출처 : 네이버</div>
+  </div>
+
+  <!-- ===== 정책·캘린더 탭 (신규) ===== -->
+  <div class="nw-panel" id="panel-policy" hidden>
+    <div class="ew-header">
+      <h2 class="ew-title">정책·캘린더</h2>
+      <p class="ew-updated" id="pw-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+
+    <h3 class="db-section-title">다가오는 경제 일정</h3>
+    <div class="pw-calendar-list" id="pw-calendar-list">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+
+    <h3 class="db-section-title" style="margin-top:28px;">거시경제 지표</h3>
+    <div class="sw-indices pw-macro-grid" id="pw-macro-indices">
+      <p class="sw-loading">불러오는 중입니다...</p>
+    </div>
+
+    <h3 class="db-section-title" style="margin-top:28px;">주요 공시 (DART)</h3>
+    <div class="pw-dart-list" id="pw-dart-list">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+
+    <h3 class="db-section-title" style="margin-top:28px;">정부지원사업</h3>
+    <div class="pw-support-list" id="pw-support-list">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+
+    <h3 class="db-section-title" style="margin-top:28px;">소상공인 정책자금</h3>
+    <div class="pw-support-list" id="pw-soso-list">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+
+    <div class="nw-footer">공시 정보 출처 : 금융감독원 DART · 지표 출처 : 한국은행 ECOS · 지원사업 출처 : 기업마당</div>
+  </div>
+</div>
+
+<button id="nrw-top-btn" aria-label="맨 위로 이동">▲</button>
+
+<style>
+  /* =========================================================
+     중기이코노미 뉴스 위젯 - 금융앱형 UI 리디자인
+     방향: 한국투자증권의 신뢰감 + 토스의 간결한 모바일 UX
+     ========================================================= */
+  #news-widget {
+    --nw-primary: #1769e0;
+    --nw-primary-strong: #0f55bf;
+    --nw-primary-soft: #edf5ff;
+    --nw-navy: #111d35;
+    --nw-text: #191f28;
+    --nw-text-sub: #4e5968;
+    --nw-text-muted: #8b95a1;
+    --nw-line: #e5e8eb;
+    --nw-line-soft: #f0f2f4;
+    --nw-surface: #ffffff;
+    --nw-surface-soft: #f7f8fa;
+    --nw-page: #f2f4f6;
+    --nw-up: #e94353;
+    --nw-down: #1769e0;
+    --nw-shadow-sm: 0 6px 20px rgba(16, 29, 53, 0.06);
+    --nw-shadow-md: 0 14px 34px rgba(16, 29, 53, 0.10);
+
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 28px 24px 48px;
+    overflow: hidden;
+    color: var(--nw-text);
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+  }
+
+  #news-widget,
+  #news-widget *,
+  #news-widget *::before,
+  #news-widget *::after {
+    box-sizing: border-box;
+  }
+
+  #news-widget a,
+  #news-widget button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #news-widget img,
+  #news-widget svg {
+    max-width: 100%;
+  }
+
+  #news-widget [hidden] {
+    display: none !important;
+  }
+
+  .nw-panel {
+    min-width: 0;
+    animation: nwPanelIn 0.22s ease both;
+  }
+
+  @keyframes nwPanelIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== 상단 탭: 모바일 가로 스크롤 세그먼트 ===== */
+  .nw-tab-shell {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    margin: 0 0 28px;
+  }
+
+  .nw-tabbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    margin: 0;
+    padding: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid var(--nw-line);
+    border-radius: 16px;
+    background: var(--nw-surface-soft);
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nw-tabbar::-webkit-scrollbar { display: none; }
+
+  .nw-tab-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 6;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid rgba(16, 29, 53, 0.08);
+    border-radius: 11px;
+    background: rgba(255,255,255,0.96);
+    color: var(--nw-text-sub);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(16,29,53,0.10);
+    transform: translateY(-50%);
+    transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nw-tab-arrow:hover {
+    background: #ffffff;
+    color: var(--nw-primary);
+    box-shadow: 0 8px 20px rgba(16,29,53,0.14);
+  }
+  .nw-tab-arrow:active {
+    transform: translateY(-50%) scale(0.97);
+  }
+  .nw-tab-arrow-left { left: 8px; }
+  .nw-tab-arrow-right { right: 8px; }
+  .nw-tab-arrow[hidden] { display: none !important; }
+
+  .nw-tab {
+    appearance: none;
+    flex: 1 0 auto;
+    min-width: 104px;
+    height: 44px;
+    margin: 0;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--nw-text-muted);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  }
+
+  .nw-tab:hover:not(.nw-disabled):not(.active) {
+    color: var(--nw-text-sub);
+    background: rgba(255, 255, 255, 0.72);
+  }
+
+  .nw-tab:active:not(.nw-disabled) { transform: scale(0.98); }
+
+  .nw-tab.active {
+    color: var(--nw-primary);
+    background: var(--nw-surface);
+    box-shadow: 0 4px 12px rgba(16, 29, 53, 0.08);
+  }
+
+  .nw-tab:focus-visible,
+  .nrw-more-btn:focus-visible,
+  #nrw-top-btn:focus-visible,
+  #news-widget a:focus-visible {
+    outline: 3px solid rgba(23, 105, 224, 0.23);
+    outline-offset: 2px;
+  }
+
+  .nw-tab.nw-disabled {
+    color: #c4c9cf;
+    cursor: not-allowed;
+  }
+
+  .nw-coming-soon {
+    padding: 84px 20px;
+    text-align: center;
+    color: var(--nw-text-muted);
+    font-size: 15px;
+  }
+
+  .nw-footer {
+    margin-top: 34px;
+    padding-top: 18px;
+    border-top: 1px solid var(--nw-line-soft);
+    color: var(--nw-text-muted);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* ===== 공통 섹션 헤더 ===== */
+  .nrw-header,
+  .ew-header,
+  .sw-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 14px;
+    margin: 0 0 22px;
+  }
+
+  .nrw-title,
+  .ew-title,
+  .sw-title {
+    margin: 0;
+    color: var(--nw-navy);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.035em;
+  }
+
+  .nrw-updated,
+  .ew-updated,
+  .sw-updated {
+    flex: 0 0 auto;
+    margin: 0;
+    color: var(--nw-text-muted);
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* ===== AI 브리핑 / 시황 ===== */
+  .ai-briefing {
+    position: relative;
+    margin: 0 0 24px;
+    padding: 20px 22px;
+    overflow: hidden;
+    border: 1px solid #d9e9ff;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #edf5ff 0%, #f7fbff 55%, #ffffff 100%);
+    box-shadow: 0 8px 24px rgba(23, 105, 224, 0.06);
+  }
+
+  .ai-briefing-label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    margin: 0 0 12px;
+    padding: 0 12px;
+    border-radius: 999px;
+    color: var(--nw-primary);
+    background: rgba(23, 105, 224, 0.09);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .ai-briefing-list {
+    display: grid;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ai-briefing-list li {
+    position: relative;
+    margin: 0;
+    padding-left: 15px;
+    color: var(--nw-text);
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.6;
+  }
+
+  .ai-briefing-list li::before {
+    content: "";
+    position: absolute;
+    top: 0.68em;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--nw-primary);
+  }
+
+  .ai-commentary-text {
+    margin: 0;
+    color: var(--nw-text-sub);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
+  /* ===== 오늘의 경제 용어 (신규) ===== */
+  .db-term-box { margin-bottom: 24px; }
+
+  .db-term-word {
+    margin: 0 0 6px;
+    color: var(--nw-navy);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .db-term-desc {
+    margin: 0;
+    color: var(--nw-text-sub);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+
+  /* ===== 오늘의 키워드 (신규) ===== */
+  .db-keyword-section { margin: 0 0 24px; }
+
+  .db-keyword-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .db-keyword-tag {
+    appearance: none;
+    height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--nw-line);
+    border-radius: 999px;
+    background: var(--nw-surface);
+    color: var(--nw-text-sub);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+  }
+
+  .db-keyword-tag:hover {
+    color: var(--nw-primary);
+    border-color: var(--nw-primary);
+    background: var(--nw-primary-soft);
+  }
+
+  .db-keyword-tag.is-active {
+    color: #fff;
+    border-color: var(--nw-primary);
+    background: var(--nw-primary);
+  }
+
+  /* ===== 기사량 급증 뱃지 (신규) ===== */
+  .db-headline-col-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .db-surge-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--nw-up);
+    font-size: 10.5px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  /* ===== 종합 탭 키워드 필터 배너 (신규) ===== */
+  .nrw-filter-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 0 16px;
+    padding: 12px 16px;
+    border: 1px solid #d9e9ff;
+    border-radius: 14px;
+    background: var(--nw-primary-soft);
+    color: var(--nw-primary-strong);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .nrw-filter-banner button {
+    appearance: none;
+    height: 28px;
+    padding: 0 12px;
+    border: 1px solid rgba(23, 105, 224, 0.3);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--nw-primary);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* =========================================================
+     종합 대시보드
+     ========================================================= */
+  .db-hero-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0 0 30px;
+  }
+
+  .db-hero {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid var(--nw-line);
+    border-radius: 22px;
+    color: inherit;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+    text-decoration: none;
+    transform: translateZ(0);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .db-hero:hover {
+    border-color: #d4dae1;
+    box-shadow: var(--nw-shadow-md);
+    transform: translateY(-3px);
+  }
+
+  .db-hero-thumb-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e9eef4, #f7f8fa);
+  }
+
+  .db-hero-thumb-wrap::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 32%;
+    background: linear-gradient(to top, rgba(17, 29, 53, 0.12), transparent);
+    pointer-events: none;
+  }
+
+  .db-hero-thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .db-hero:hover .db-hero-thumb { transform: scale(1.035); }
+
+  .db-hero-body {
+    display: flex;
+    min-height: 154px;
+    flex: 1;
+    flex-direction: column;
+    padding: 18px 18px 17px;
+  }
+
+  .db-hero-badge,
+  .ew-press-badge {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    min-height: 29px;
+    margin: 0 0 12px;
+    padding: 0 12px;
+    border-radius: 999px;
+    color: var(--nw-primary);
+    background: var(--nw-primary-soft);
+    font-size: 12.5px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .db-hero-title {
+    display: -webkit-box;
+    margin: 0 0 12px;
+    overflow: hidden;
+    color: var(--nw-navy);
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .db-hero-press {
+    margin-top: auto;
+    color: var(--nw-text-muted);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .db-issue-title {
+    margin-bottom: 14px !important;
+  }
+
+  .db-section-title {
+    margin: 0 0 15px;
+    color: var(--nw-navy);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: -0.03em;
+  }
+
+  .db-headline-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0 0 24px;
+  }
+
+  .db-headline-col {
+    min-width: 0;
+    padding: 20px 20px 18px;
+    border: 1px solid var(--nw-line);
+    border-radius: 20px;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+  }
+
+  .db-headline-col-title {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    min-height: 29px;
+    margin: 0 0 12px;
+    padding: 0 12px;
+    border-radius: 999px;
+    color: var(--nw-primary);
+    background: var(--nw-primary-soft);
+    font-size: 12.5px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .db-headline-col-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .db-headline-col-list li {
+    position: relative;
+    margin: 0;
+    padding: 8px 0 8px 16px;
+    color: var(--nw-text-sub);
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 1.55;
+  }
+
+  .db-headline-col-list li + li {
+    border-top: 1px solid var(--nw-line-soft);
+  }
+
+  .db-headline-col-list li::before {
+    content: "";
+    position: absolute;
+    top: 1.05em;
+    left: 1px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #c6cdd5;
+  }
+
+  .db-lower-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+    margin: 0 0 22px;
+  }
+
+  .db-lower-col {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    padding: 22px 20px;
+    border: 1px solid var(--nw-line);
+    border-radius: 22px;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+  }
+
+  .db-market-col { text-align: center; }
+
+  .db-gauge-svg {
+    display: block;
+    width: min(78%, 224px);
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .db-gauge-label {
+    margin: -4px 0 18px;
+    color: var(--nw-navy);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .db-index-cell {
+    margin: 0 0 10px;
+    padding: 15px 15px 11px;
+    border: 1px solid #edf0f3;
+    border-radius: 16px;
+    background: var(--nw-surface-soft);
+    text-align: left;
+  }
+
+  .db-index-cell:last-child { margin-bottom: 0; }
+
+  .db-index-name {
+    margin: 0 0 6px;
+    color: var(--nw-text-muted);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .db-index-value-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    min-width: 0;
+    margin: 0 0 8px;
+  }
+
+  .db-index-value {
+    min-width: 0;
+    color: var(--nw-navy);
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  .db-index-change {
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: 750;
+  }
+
+  .db-index-change.up,
+  .db-bar-pct.up { color: var(--nw-up); }
+
+  .db-index-change.down,
+  .db-bar-pct.down { color: var(--nw-down); }
+
+  .db-sparkline {
+    display: block;
+    width: 100%;
+    height: 38px;
+  }
+
+  .db-title-up { color: var(--nw-up); }
+  .db-title-down { color: var(--nw-down); }
+
+  .db-loading,
+  .nrw-loading,
+  .ew-loading,
+  .sw-loading {
+    color: var(--nw-text-muted);
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .db-loading { padding: 22px 0; }
+
+  .db-heatmap {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .db-heatmap-cell {
+    min-width: 0;
+    padding: 13px 12px;
+    border: 1px solid var(--nw-line-soft);
+    border-radius: 14px;
+    background: var(--nw-surface-soft);
+    text-align: left;
+  }
+
+  .db-heatmap-cell.up {
+    border-color: rgba(233, 67, 83, 0.12);
+    background: rgba(233, 67, 83, 0.055);
+  }
+
+  .db-heatmap-cell.down {
+    border-color: rgba(23, 105, 224, 0.12);
+    background: rgba(23, 105, 224, 0.055);
+  }
+
+  .db-heatmap-name {
+    margin: 0;
+    overflow: hidden;
+    color: var(--nw-text-sub);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .db-heatmap-pct {
+    margin: 5px 0 0;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .db-heatmap-empty {
+    margin: 0;
+    padding: 28px 12px;
+    border-radius: 16px;
+    color: var(--nw-text-muted);
+    background: var(--nw-surface-soft);
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .db-bar-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .db-bar-item { min-width: 0; font-size: 13px; }
+
+  .db-bar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-width: 0;
+    margin: 0 0 6px;
+  }
+
+  .db-bar-name {
+    min-width: 0;
+    overflow: hidden;
+    color: var(--nw-text-sub);
+    font-weight: 650;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .db-bar-pct {
+    flex: 0 0 auto;
+    font-weight: 800;
+  }
+
+  .db-bar-track {
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #edf0f3;
+  }
+
+  .db-bar-fill {
+    width: 0%;
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.8s ease;
+  }
+
+  .db-bar-fill.up { background: var(--nw-up); }
+  .db-bar-fill.down { background: var(--nw-down); }
+
+  .db-updated {
+    margin: 0 0 20px;
+    color: var(--nw-text-muted);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* =========================================================
+     뉴스 랭킹
+     ========================================================= */
+  .nrw-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .nrw-loading,
+  .ew-loading {
+    grid-column: 1 / -1;
+    padding: 48px 0;
+  }
+
+  .nrw-card {
+    min-width: 0;
+    overflow: hidden;
+    padding: 0 20px 8px;
+    border: 1px solid var(--nw-line);
+    border-radius: 22px;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .nrw-card:hover {
+    border-color: #d4dae1;
+    box-shadow: var(--nw-shadow-md);
+    transform: translateY(-3px);
+  }
+
+  .nrw-card-header {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+    margin: 0 -20px 3px;
+    padding: 17px 20px;
+    border-bottom: 1px solid var(--nw-line-soft);
+    background: #fbfcfd;
+  }
+
+  .nrw-logo,
+  .nrw-logo-fallback {
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+    background: #eef2f6;
+  }
+
+  .nrw-logo { object-fit: cover; }
+
+  .nrw-logo-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nw-primary);
+    background: var(--nw-primary-soft);
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .nrw-press-name {
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
+    color: var(--nw-navy);
+    font-size: 16px;
+    font-weight: 800;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nrw-item {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr) 82px;
+    align-items: start;
+    gap: 11px;
+    min-width: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--nw-line-soft);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nrw-item:last-child { border-bottom: 0; }
+
+  .nrw-item:hover .nrw-item-title { color: var(--nw-primary); }
+
+  .nrw-rank-num {
+    width: 22px;
+    padding-top: 1px;
+    color: #c0c7cf;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .nrw-item-body { min-width: 0; }
+
+  .nrw-item-title {
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--nw-text);
+    font-size: 14px;
+    font-weight: 650;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: color 0.16s ease;
+  }
+
+  .nrw-item-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 7px;
+    color: var(--nw-text-muted);
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .nrw-item-time svg { flex: 0 0 auto; }
+
+  .nrw-thumb {
+    display: block;
+    width: 82px;
+    height: 62px;
+    border-radius: 12px;
+    background: var(--nw-surface-soft);
+    object-fit: cover;
+  }
+
+  .nrw-more-wrap {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .nrw-more-btn {
+    min-width: 190px;
+    height: 48px;
+    padding: 0 24px;
+    border: 1px solid #dbe1e8;
+    border-radius: 14px;
+    color: var(--nw-text-sub);
+    background: var(--nw-surface);
+    box-shadow: 0 4px 12px rgba(16, 29, 53, 0.05);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+  }
+
+  .nrw-more-btn:hover {
+    border-color: var(--nw-primary);
+    color: var(--nw-primary);
+    background: var(--nw-primary-soft);
+  }
+
+  .nrw-more-btn:active { transform: scale(0.98); }
+
+  /* =========================================================
+     증권 / 주식
+     ========================================================= */
+  .sw-index-label {
+    margin: 0 0 12px;
+    color: var(--nw-text-muted);
+    font-size: 12px;
+    font-weight: 650;
+  }
+
+  .sw-indices {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0 0 26px;
+  }
+
+  .sw-loading { grid-column: 1 / -1; padding: 36px 0; }
+
+  .sw-index-card {
+    min-width: 0;
+    padding: 14px 10px;
+    border: 1px solid var(--nw-line);
+    border-radius: 16px;
+    background: var(--nw-surface);
+    box-shadow: 0 5px 16px rgba(16, 29, 53, 0.045);
+    text-align: center;
+  }
+
+  .sw-index-name {
+    margin: 0 0 7px;
+    overflow: hidden;
+    color: var(--nw-text-muted);
+    font-size: 11px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sw-index-value {
+    margin: 0 0 4px;
+    overflow: hidden;
+    color: var(--nw-navy);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sw-index-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 750;
+  }
+
+  .sw-index-change.up { color: var(--nw-up); }
+  .sw-index-change.down { color: var(--nw-down); }
+  .sw-index-change.flat { color: var(--nw-text-muted); }
+
+  .sw-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .sw-cat-card {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--nw-line);
+    border-radius: 20px;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+  }
+
+  .sw-cat-title {
+    display: flex;
+    align-items: center;
+    margin: 0 0 12px;
+    color: var(--nw-navy);
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.35;
+  }
+
+  .sw-cat-title::before {
+    content: "";
+    width: 4px;
+    height: 17px;
+    margin-right: 8px;
+    border-radius: 999px;
+    background: var(--nw-primary);
+  }
+
+  .sw-cat-item {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    align-items: start;
+    gap: 8px;
+    min-width: 0;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--nw-line-soft);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .sw-cat-item:last-child { border-bottom: 0; }
+  .sw-cat-item:hover .sw-cat-item-title { color: var(--nw-primary); }
+
+  .sw-cat-rank {
+    width: 20px;
+    color: var(--nw-primary);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .sw-cat-item-body { min-width: 0; }
+
+  .sw-cat-item-title {
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--nw-text-sub);
+    font-size: 14px;
+    font-weight: 650;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: color 0.16s ease;
+  }
+
+  .sw-cat-meta {
+    margin-top: 5px;
+    overflow: hidden;
+    color: var(--nw-text-muted);
+    font-size: 11px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* =========================================================
+     경제 / 부동산 카드
+     ========================================================= */
+  .ew-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .ew-card {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid var(--nw-line);
+    border-radius: 22px;
+    color: inherit;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+    text-decoration: none;
+    transform: translateZ(0);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .ew-card:hover {
+    border-color: #d4dae1;
+    box-shadow: var(--nw-shadow-md);
+    transform: translateY(-3px);
+  }
+
+  .ew-card:hover .ew-card-title { color: var(--nw-primary); }
+
+  .ew-thumb-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e9eef4, #f7f8fa);
+  }
+
+  .ew-thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .ew-card:hover .ew-thumb { transform: scale(1.035); }
+
+  .ew-card-body {
+    display: flex;
+    min-height: 154px;
+    flex: 1;
+    flex-direction: column;
+    padding: 17px 18px 18px;
+  }
+
+  .ew-card-title {
+    display: -webkit-box;
+    margin: 0 0 11px;
+    overflow: hidden;
+    color: var(--nw-text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: color 0.16s ease;
+  }
+
+  .ew-card-time {
+    margin: auto 0 0;
+    color: var(--nw-text-muted);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* 이미지 로드 실패 시 빈 이미지 영역이 레이아웃을 밀지 않도록 처리 */
+  .db-hero.no-thumb .db-hero-thumb-wrap,
+  .ew-card.no-thumb .ew-thumb-wrap { display: none; }
+
+  .nrw-item.no-thumb {
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+
+  /* =========================================================
+     정책·캘린더 (신규)
+     ========================================================= */
+  .pw-calendar-list,
+  .pw-dart-list,
+  .pw-support-list {
+    display: grid;
+    gap: 10px;
+    margin: 0 0 8px;
+  }
+
+  .pw-calendar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid var(--nw-line);
+    border-radius: 16px;
+    background: var(--nw-surface);
+  }
+
+  .pw-calendar-date {
+    flex: 0 0 auto;
+    min-width: 88px;
+    color: var(--nw-navy);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .pw-calendar-flag { flex: 0 0 auto; font-size: 16px; }
+
+  .pw-calendar-name {
+    color: var(--nw-text-sub);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .pw-dart-item,
+  .pw-support-item {
+    display: block;
+    padding: 16px 18px;
+    border: 1px solid var(--nw-line);
+    border-radius: 18px;
+    background: var(--nw-surface);
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .pw-dart-item:hover,
+  .pw-support-item:hover {
+    border-color: #d4dae1;
+    box-shadow: var(--nw-shadow-sm);
+  }
+
+  .pw-dart-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .pw-dart-corp {
+    color: var(--nw-navy);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .pw-dart-title {
+    color: var(--nw-text-sub);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .pw-dart-desc {
+    margin: 0;
+    color: var(--nw-text-sub);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .pw-support-title {
+    margin: 0 0 6px;
+    color: var(--nw-text);
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .pw-macro-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+  /* ===== 맨 위로 버튼 ===== */
+  #nrw-top-btn {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 16px;
+    color: #fff;
+    background: var(--nw-navy, #111d35);
+    box-shadow: 0 10px 24px rgba(17, 29, 53, 0.24);
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  }
+
+  #nrw-top-btn.nrw-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  #nrw-top-btn:hover { background: var(--nw-primary, #1769e0); }
+
+  /* =========================================================
+     반응형 - 태블릿
+     ========================================================= */
+  @media (max-width: 1024px) {
+    #news-widget { padding: 24px 20px 44px; }
+
+    .db-hero-row,
+    .db-headline-row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .db-lower-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .db-lower-col:last-child { grid-column: 1 / -1; }
+    .db-heatmap { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .nrw-grid,
+    .sw-category-grid,
+    .ew-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .sw-indices { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pw-macro-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 760px) {
+    #news-widget {
+      padding: 18px 16px 38px;
+      word-break: normal;
+    }
+
+    .nw-tab-shell { margin-bottom: 22px; }
+
+    .nw-tab-shell::before,
+    .nw-tab-shell::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      bottom: 6px;
+      width: 44px;
+      border-radius: 12px;
+      pointer-events: none;
+      z-index: 4;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+    }
+
+    .nw-tab-shell::before {
+      left: 6px;
+      background: linear-gradient(90deg, rgba(247,248,250,0.98) 45%, rgba(247,248,250,0));
+    }
+
+    .nw-tab-shell::after {
+      right: 6px;
+      background: linear-gradient(270deg, rgba(247,248,250,0.98) 45%, rgba(247,248,250,0));
+    }
+
+    .nw-tab-shell.has-left::before { opacity: 1; }
+    .nw-tab-shell.has-right::after { opacity: 1; }
+
+    .nw-tabbar {
+      padding: 5px 46px 5px 6px;
+      border-radius: 14px;
+      scroll-padding-inline: 46px;
+    }
+    .nw-tab-shell.has-left .nw-tabbar { padding-left: 46px; }
+    .nw-tab-shell.has-right .nw-tabbar { padding-right: 46px; }
+    .nw-tab-arrow { display: flex; }
+
+    .nw-tab {
+      min-width: max-content;
+      height: 42px;
+      padding: 0 16px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .nrw-header,
+    .ew-header,
+    .sw-header {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .nrw-title,
+    .ew-title,
+    .sw-title { font-size: 22px; }
+
+    .nrw-updated,
+    .ew-updated,
+    .sw-updated { white-space: normal; }
+
+    .db-hero-row,
+    .db-headline-row,
+    .db-lower-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .db-lower-col:last-child { grid-column: auto; }
+    .db-hero-row { margin-bottom: 26px; }
+
+    .db-hero {
+      display: grid;
+      grid-template-columns: minmax(120px, 39%) minmax(0, 1fr);
+      min-height: 150px;
+    }
+
+    .db-hero-thumb-wrap {
+      height: 100%;
+      min-height: 150px;
+      aspect-ratio: auto;
+    }
+
+    .db-hero-body {
+      min-height: 150px;
+      padding: 16px;
+    }
+
+    .db-hero-badge { margin-bottom: 9px; }
+    .db-hero-title { font-size: 16px; line-height: 1.45; }
+
+    .db-headline-col,
+    .db-lower-col { padding: 18px 17px; }
+
+    .db-heatmap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .nrw-grid,
+    .sw-category-grid { grid-template-columns: 1fr; }
+
+    .sw-indices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pw-macro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    /* 모바일 뉴스 피드: 이미지 좌측 + 본문 우측 1열 */
+    .ew-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .ew-card {
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      min-height: 124px;
+      border-radius: 18px;
+    }
+
+
+    .db-hero.no-thumb,
+    .ew-card.no-thumb {
+      grid-template-columns: 1fr;
+    }
+
+    .ew-thumb-wrap {
+      width: 100%;
+      height: 100%;
+      min-height: 124px;
+      aspect-ratio: auto;
+    }
+
+    .ew-card-body {
+      min-height: 124px;
+      padding: 14px 14px 13px;
+    }
+
+    .ew-press-badge {
+      min-height: 25px;
+      margin-bottom: 8px;
+      padding: 0 10px;
+      font-size: 11px;
+    }
+
+    .ew-card-title {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .ew-card-time { font-size: 11px; }
+
+    #nrw-top-btn {
+      right: 16px;
+      bottom: 16px;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+    }
+  }
+
+  /* =========================================================
+     반응형 - 소형 모바일
+     ========================================================= */
+  @media (max-width: 480px) {
+    #news-widget { padding: 14px 14px 34px; }
+
+    .nw-tab-shell {
+      margin-left: -2px;
+      margin-right: -2px;
+    }
+
+    .ai-briefing {
+      padding: 17px 16px;
+      border-radius: 17px;
+    }
+
+    .ai-briefing-label {
+      min-height: 28px;
+      padding: 0 11px;
+      font-size: 12px;
+    }
+
+    .db-headline-col-title,
+    .ew-press-badge {
+      min-height: 24px;
+      padding: 0 10px;
+      font-size: 10.5px;
+    }
+
+    .ai-briefing-list li,
+    .ai-commentary-text { font-size: 14px; }
+
+    .db-hero {
+      grid-template-columns: 116px minmax(0, 1fr);
+      min-height: 138px;
+      border-radius: 18px;
+    }
+
+    .db-hero-thumb-wrap,
+    .db-hero-body {
+      min-height: 138px;
+    }
+
+    .db-hero-body { padding: 14px; }
+
+    .db-hero-badge {
+      min-height: 24px;
+      padding: 0 10px;
+      font-size: 10.5px;
+    }
+
+    .db-hero-title {
+      margin-bottom: 8px;
+      font-size: 14.5px;
+      line-height: 1.42;
+    }
+
+    .db-hero-press { font-size: 11px; }
+
+    .db-section-title { font-size: 17px; }
+
+    .db-headline-col,
+    .db-lower-col {
+      padding: 17px 15px;
+      border-radius: 18px;
+    }
+
+    .db-headline-col-list li {
+      padding-left: 14px;
+      font-size: 13.5px;
+    }
+
+    .db-index-value { font-size: 19px; }
+
+    .nrw-card {
+      padding: 0 15px 5px;
+      border-radius: 18px;
+    }
+
+    .nrw-card-header {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 15px;
+    }
+
+    .nrw-item {
+      grid-template-columns: 20px minmax(0, 1fr) 72px;
+      gap: 8px;
+      padding: 13px 0;
+    }
+
+    .nrw-rank-num { width: 20px; font-size: 15px; }
+    .nrw-item-title { font-size: 13.5px; }
+    .nrw-thumb { width: 72px; height: 56px; border-radius: 10px; }
+
+    .sw-index-card { padding: 13px 7px; }
+    .sw-index-value { font-size: 14px; }
+
+    .sw-cat-card {
+      padding: 17px 15px;
+      border-radius: 18px;
+    }
+
+    .ew-card {
+      grid-template-columns: 108px minmax(0, 1fr);
+      min-height: 112px;
+    }
+
+    .ew-thumb-wrap,
+    .ew-card-body { min-height: 112px; }
+    .ew-card-body { padding: 12px; }
+    .ew-card-title { font-size: 13.5px; }
+
+    .nrw-more-btn {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .pw-macro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 360px) {
+    #news-widget { padding-left: 12px; padding-right: 12px; }
+
+    .db-hero {
+      grid-template-columns: 98px minmax(0, 1fr);
+    }
+
+    .db-hero-body { padding: 12px; }
+    .db-hero-title { font-size: 13.5px; }
+
+    .ew-card {
+      grid-template-columns: 94px minmax(0, 1fr);
+    }
+
+    .nrw-item {
+      grid-template-columns: 18px minmax(0, 1fr);
+    }
+
+    .nrw-thumb { display: none; }
+  }
+
+  @media (hover: none) {
+    .db-hero:hover,
+    .nrw-card:hover,
+    .ew-card:hover {
+      border-color: var(--nw-line);
+      box-shadow: var(--nw-shadow-sm);
+      transform: none;
+    }
+
+    .db-hero:hover .db-hero-thumb,
+    .ew-card:hover .ew-thumb { transform: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #news-widget *,
+    #news-widget *::before,
+    #news-widget *::after,
+    #nrw-top-btn {
+      scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+
+  /* =========================================================
+     아임웹 전역 h2/h3 스타일 충돌 방지 - 제목 크기 고정
+     ========================================================= */
+  #news-widget .db-hero-title {
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.03em !important;
+  }
+
+  #news-widget .db-section-title {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+  }
+
+  #news-widget .nrw-title,
+  #news-widget .ew-title,
+  #news-widget .sw-title {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  #news-widget .sw-cat-title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    font-weight: 800 !important;
+  }
+
+  #news-widget .ew-card-title,
+  #news-widget .nrw-item-title,
+  #news-widget .sw-cat-item-title {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  @media (max-width: 760px) {
+    #news-widget .db-hero-title {
+      font-size: 15px !important;
+      line-height: 1.45 !important;
+    }
+
+    #news-widget .db-section-title {
+      font-size: 17px !important;
+    }
+
+    #news-widget .nrw-title,
+    #news-widget .ew-title,
+    #news-widget .sw-title {
+      font-size: 20px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #news-widget .db-hero-title {
+      font-size: 14px !important;
+      line-height: 1.42 !important;
+    }
+
+    #news-widget .db-section-title {
+      font-size: 16px !important;
+    }
+
+    #news-widget .nrw-title,
+    #news-widget .ew-title,
+    #news-widget .sw-title {
+      font-size: 19px !important;
+    }
+  }
+
+</style>
+
+
+<script>
+(function () {
+  var RANKING_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/ranking_news.json";
+  var STOCK_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_news.json";
+  var ECONOMY_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/economy_news.json";
+  var REALESTATE_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/realestate_news.json";
+  var DASHBOARD_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dashboard.json";
+  var STOCK_HISTORY_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_index_history.json";
+  var INITIAL_COUNT = 9;
+
+  var loaded = { dashboard: false, ranking: false, stock: false, economy: false, realestate: false, policy: false };
+  var keywordFilter = null;
+
+  /* ---------- AI 브리핑 / 시황 코멘트 렌더링 (공용) ---------- */
+  // lines가 비어있거나 없으면 박스 자체를 숨김 (호출 실패/할당량 소진 시에도
+  // 기존 뉴스 목록 표시에는 전혀 영향 없음)
+  function renderBriefing(boxEl, listEl, lines) {
+    if (!lines || !lines.length) {
+      boxEl.hidden = true;
+      return;
+    }
+    listEl.innerHTML = "";
+    lines.forEach(function (line) {
+      var li = document.createElement("li");
+      li.textContent = line;
+      listEl.appendChild(li);
+    });
+    boxEl.hidden = false;
+  }
+
+  function renderCommentary(boxEl, textEl, text) {
+    if (!text) {
+      boxEl.hidden = true;
+      return;
+    }
+    textEl.textContent = text;
+    boxEl.hidden = false;
+  }
+
+  /* ---------- 오늘 한눈에(대시보드) ---------- */
+
+  var HERO_CATEGORIES = ["종합", "경제", "부동산"];
+
+  function renderHeroes(heroes) {
+    HERO_CATEGORIES.forEach(function (category) {
+      var el = document.getElementById("db-hero-" + category);
+      if (!el) return;
+      var hero = heroes && heroes[category];
+      if (!hero || !hero.title) {
+        el.hidden = true;
+        return;
+      }
+      el.href = hero.link || "#";
+      var heroImg = el.querySelector(".db-hero-thumb");
+      heroImg.src = hero.thumbnail || "";
+      heroImg.onerror = function () {
+        el.classList.add("no-thumb");
+        heroImg.removeAttribute("src");
+      };
+      if (!hero.thumbnail) el.classList.add("no-thumb");
+      else el.classList.remove("no-thumb");
+      el.querySelector(".db-hero-title").textContent = hero.title;
+      el.querySelector(".db-hero-press").textContent = hero.press_name || "";
+      el.hidden = false;
+    });
+  }
+
+  // 숫자가 0에서 실제 값까지 빠르게 올라가는 카운트업 효과
+  function animateCountUp(el, target, decimals) {
+    if (target === null || target === undefined || isNaN(target)) {
+      el.textContent = "-";
+      return;
+    }
+    var duration = 800;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = target * eased;
+      el.textContent = current.toLocaleString("ko-KR", {
+        minimumFractionDigits: decimals, maximumFractionDigits: decimals
+      });
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function renderGaugeAndIndices(mood) {
+    if (!mood) return;
+    document.getElementById("db-gauge-label").textContent =
+      "오늘 시장은 '" + mood.label + "'";
+
+    var avg = (mood.kospi_change + mood.kosdaq_change) / 2;
+    var clamped = Math.max(-5, Math.min(5, avg));
+    var angle = (clamped / 5) * 80; // -80deg(급락) ~ +80deg(급등)
+    var needle = document.getElementById("db-gauge-needle");
+    needle.style.transform = "rotate(" + angle + "deg)";
+
+    var sign = function (v) { return v > 0 ? "+" : ""; };
+
+    animateCountUp(document.getElementById("db-kospi-value"), mood.kospi_value, 2);
+    var kospiChangeEl = document.getElementById("db-kospi-change");
+    kospiChangeEl.textContent = sign(mood.kospi_change) + mood.kospi_change + "%";
+    kospiChangeEl.className = "db-index-change " + (mood.kospi_change >= 0 ? "up" : "down");
+
+    animateCountUp(document.getElementById("db-kosdaq-value"), mood.kosdaq_value, 2);
+    var kosdaqChangeEl = document.getElementById("db-kosdaq-change");
+    kosdaqChangeEl.textContent = sign(mood.kosdaq_change) + mood.kosdaq_change + "%";
+    kosdaqChangeEl.className = "db-index-change " + (mood.kosdaq_change >= 0 ? "up" : "down");
+  }
+
+  function renderSparkline(svgEl, points, isUp) {
+    svgEl.innerHTML = "";
+    if (!points || points.length < 2) return;
+    var min = Math.min.apply(null, points);
+    var max = Math.max.apply(null, points);
+    var range = max - min || 1;
+    var w = 100, h = 30;
+    var step = w / (points.length - 1);
+    var color = isUp ? "#F04452" : "#3182F6";
+    var coords = points.map(function (v, i) {
+      var x = i * step;
+      var y = h - ((v - min) / range) * h;
+      return { x: x, y: y };
+    });
+    var lineStr = coords.map(function (c) { return c.x.toFixed(1) + "," + c.y.toFixed(1); }).join(" ");
+
+    // 선 아래 은은한 면적 채우기
+    var areaStr = lineStr + " " + w + "," + h + " 0," + h;
+    var area = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+    area.setAttribute("points", areaStr);
+    area.setAttribute("fill", color);
+    area.setAttribute("opacity", "0.12");
+    svgEl.appendChild(area);
+
+    var poly = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+    poly.setAttribute("points", lineStr);
+    poly.setAttribute("fill", "none");
+    poly.setAttribute("stroke", color);
+    poly.setAttribute("stroke-width", "2.2");
+    poly.setAttribute("stroke-linecap", "round");
+    poly.setAttribute("stroke-linejoin", "round");
+    svgEl.appendChild(poly);
+  }
+
+  function loadSparklines() {
+    fetch(STOCK_HISTORY_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (history) {
+        if (!Array.isArray(history) || !history.length) return;
+        var recent = history.slice(-40);
+        ["코스피", "코스닥"].forEach(function (name) {
+          var points = recent
+            .map(function (snap) { return snap.values && snap.values[name]; })
+            .filter(function (v) { return typeof v === "number"; });
+          if (points.length < 2) return;
+          var isUp = points[points.length - 1] >= points[0];
+          var elId = name === "코스피" ? "db-kospi-sparkline" : "db-kosdaq-sparkline";
+          renderSparkline(document.getElementById(elId), points, isUp);
+        });
+      })
+      .catch(function (err) { console.error("스파크라인 이력 로드 실패:", err); });
+  }
+
+  // 종합/경제/부동산 고정 3열에 각각의 헤드라인을 나눠 담음
+  var HEADLINE_COLUMNS = ["종합", "경제", "부동산"];
+
+  function renderHeadlines(headlines) {
+    var grouped = { "종합": [], "경제": [], "부동산": [] };
+    (headlines || []).forEach(function (h) {
+      if (grouped[h.category]) grouped[h.category].push(h.text);
+    });
+
+    HEADLINE_COLUMNS.forEach(function (category) {
+      var list = document.getElementById("db-headline-col-" + category);
+      if (!list) return;
+      list.innerHTML = "";
+      var items = grouped[category];
+      if (!items.length) {
+        list.innerHTML = '<li class="db-loading" style="padding:8px 0;">아직 브리핑이 없습니다.</li>';
+        return;
+      }
+      items.forEach(function (text) {
+        var li = document.createElement("li");
+        li.textContent = text;
+        list.appendChild(li);
+      });
+    });
+  }
+
+  // 오늘의 경제 용어 (신규)
+  function renderDailyTerm(term) {
+    var box = document.getElementById("db-term-box");
+    if (!term || !term.term) {
+      box.hidden = true;
+      return;
+    }
+    document.getElementById("db-term-word").textContent = term.term;
+    document.getElementById("db-term-desc").textContent = term.explanation || "";
+    box.hidden = false;
+  }
+
+  // 오늘의 키워드 (신규) - 클릭하면 종합 탭으로 이동해서 제목에 그 단어가
+  // 포함된 기사만 걸러서 보여줌
+  function renderKeywordTags(tags) {
+    var section = document.getElementById("db-keyword-section");
+    var wrap = document.getElementById("db-keyword-tags");
+    wrap.innerHTML = "";
+    if (!tags || !tags.length) {
+      section.hidden = true;
+      return;
+    }
+    section.hidden = false;
+    tags.forEach(function (tag) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "db-keyword-tag";
+      btn.textContent = "#" + tag;
+      btn.addEventListener("click", function () { applyKeywordFilter(tag); });
+      wrap.appendChild(btn);
+    });
+  }
+
+  // 기사량 급증 신호 (신규) - 전일 대비 급증한 카테고리에만 뱃지 표시
+  function renderSurgeBadges(trend) {
+    HEADLINE_COLUMNS.forEach(function (category) {
+      var badge = document.getElementById("db-surge-" + category);
+      if (!badge) return;
+      var info = trend && trend[category];
+      badge.hidden = !(info && info.surge);
+    });
+  }
+
+  function renderHeatmap(items) {
+    var el = document.getElementById("db-heatmap");
+    var emptyEl = document.getElementById("db-heatmap-empty");
+    el.innerHTML = "";
+
+    var hasMovement = (items || []).some(function (i) { return Math.abs(i.pct || 0) > 0.001; });
+    if (!items || !items.length || !hasMovement) {
+      el.hidden = true;
+      emptyEl.hidden = false;
+      return;
+    }
+    el.hidden = false;
+    emptyEl.hidden = true;
+
+    items.forEach(function (item) {
+      var pct = typeof item.pct === "number" ? item.pct : 0;
+      var cell = document.createElement("div");
+      cell.className = "db-heatmap-cell " + (pct >= 0 ? "up" : "down");
+
+      var name = document.createElement("p");
+      name.className = "db-heatmap-name";
+      name.textContent = item.name;
+
+      var pctEl = document.createElement("p");
+      pctEl.className = "db-heatmap-pct";
+      pctEl.style.color = pct > 0 ? "#F04452" : (pct < 0 ? "#3182F6" : "#999");
+      pctEl.textContent = item.change_value;
+
+      cell.appendChild(name);
+      cell.appendChild(pctEl);
+      el.appendChild(cell);
+    });
+  }
+
+  function renderBarList(listEl, items, direction) {
+    listEl.innerHTML = "";
+    var maxPct = Math.max.apply(null, (items || []).map(function (i) { return i.pct || 0; }).concat([1]));
+    (items || []).forEach(function (item) {
+      var wrap = document.createElement("div");
+      wrap.className = "db-bar-item";
+
+      var top = document.createElement("div");
+      top.className = "db-bar-top";
+      var name = document.createElement("span");
+      name.className = "db-bar-name";
+      name.textContent = item.name;
+      var pct = document.createElement("span");
+      pct.className = "db-bar-pct " + direction;
+      pct.textContent = item.change_percent;
+      top.appendChild(name);
+      top.appendChild(pct);
+
+      var track = document.createElement("div");
+      track.className = "db-bar-track";
+      var fill = document.createElement("div");
+      fill.className = "db-bar-fill " + direction;
+      track.appendChild(fill);
+
+      wrap.appendChild(top);
+      wrap.appendChild(track);
+      listEl.appendChild(wrap);
+
+      // 살짝 지연 후 폭을 채워서 채워지는 애니메이션 효과
+      requestAnimationFrame(function () {
+        var widthPct = maxPct > 0 ? Math.min((item.pct || 0) / maxPct * 100, 100) : 0;
+        fill.style.width = widthPct + "%";
+      });
+    });
+  }
+
+  function loadDashboard() {
+    fetch(DASHBOARD_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        renderHeroes(data.heroes);
+        renderGaugeAndIndices(data.market_mood);
+        renderHeadlines(data.headlines);
+        renderHeatmap(data.sector_heatmap);
+        renderBarList(document.getElementById("db-gainers-list"), data.top_gainers, "up");
+        renderBarList(document.getElementById("db-losers-list"), data.top_losers, "down");
+        renderDailyTerm(data.daily_term);
+        renderKeywordTags(data.keyword_tags);
+        renderSurgeBadges(data.article_count_trend);
+        document.getElementById("db-updated").textContent =
+          data.updated_at ? data.updated_at + " 기준" : "";
+        loaded.dashboard = true;
+        loadSparklines();
+      })
+      .catch(function (err) {
+        var el = document.getElementById("db-headline-col-종합");
+        if (el) el.innerHTML = '<li class="db-loading" style="padding:8px 0;">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</li>';
+        console.error("대시보드 로드 실패:", err);
+      });
+  }
+
+  /* ---------- 탭 전환 ---------- */
+  var tabs = document.querySelectorAll(".nw-tab");
+  tabs.forEach(function (tab) {
+    tab.setAttribute("role", "tab");
+    tab.setAttribute("aria-selected", tab.classList.contains("active") ? "true" : "false");
+  });
+
+  var tabShell = document.querySelector(".nw-tab-shell");
+  var tabBar = document.querySelector(".nw-tabbar");
+  var tabArrowLeft = document.querySelector(".nw-tab-arrow-left");
+  var tabArrowRight = document.querySelector(".nw-tab-arrow-right");
+
+  function updateTabArrows() {
+    if (!tabBar || !tabShell || !tabArrowLeft || !tabArrowRight) return;
+    var maxScroll = Math.max(0, tabBar.scrollWidth - tabBar.clientWidth);
+    var hasOverflow = maxScroll > 2;
+    var showLeft = hasOverflow && tabBar.scrollLeft > 2;
+    var showRight = hasOverflow && tabBar.scrollLeft < maxScroll - 2;
+    tabArrowLeft.hidden = !showLeft;
+    tabArrowRight.hidden = !showRight;
+    tabShell.classList.toggle("has-left", showLeft);
+    tabShell.classList.toggle("has-right", showRight);
+  }
+
+  function scrollTabs(direction) {
+    if (!tabBar) return;
+    var distance = Math.max(150, Math.round(tabBar.clientWidth * 0.62));
+    tabBar.scrollBy({ left: direction * distance, behavior: "smooth" });
+  }
+
+  if (tabArrowLeft) tabArrowLeft.addEventListener("click", function () { scrollTabs(-1); });
+  if (tabArrowRight) tabArrowRight.addEventListener("click", function () { scrollTabs(1); });
+  if (tabBar) tabBar.addEventListener("scroll", updateTabArrows, { passive: true });
+  window.addEventListener("resize", updateTabArrows, { passive: true });
+  requestAnimationFrame(updateTabArrows);
+  var panels = {
+    dashboard: document.getElementById("panel-dashboard"),
+    ranking: document.getElementById("panel-ranking"),
+    economy: document.getElementById("panel-economy"),
+    stock: document.getElementById("panel-stock"),
+    realestate: document.getElementById("panel-realestate"),
+    policy: document.getElementById("panel-policy")
+  };
+
+  function activateTab(key) {
+    tabs.forEach(function (t) {
+      var isTarget = t.getAttribute("data-tab") === key;
+      t.classList.toggle("active", isTarget);
+      t.setAttribute("aria-selected", isTarget ? "true" : "false");
+    });
+    Object.keys(panels).forEach(function (k) {
+      panels[k].hidden = k !== key;
+    });
+    if (key === "dashboard" && !loaded.dashboard) loadDashboard();
+    if (key === "ranking" && !loaded.ranking) loadRanking();
+    if (key === "stock" && !loaded.stock) loadStock();
+    if (key === "economy" && !loaded.economy) loadEconomy();
+    if (key === "realestate" && !loaded.realestate) loadRealestate();
+    if (key === "policy" && !loaded.policy) loadPolicy();
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      if (tab.disabled) return;
+      var key = tab.getAttribute("data-tab");
+      activateTab(key);
+      tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      window.setTimeout(updateTabArrows, 260);
+      if (window.innerWidth <= 760) {
+        tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      }
+    });
+  });
+
+  // 오늘의 키워드 클릭 -> 종합 탭으로 이동 + 해당 키워드로 필터링
+  function applyKeywordFilter(keyword) {
+    keywordFilter = keyword;
+    var rankingTabBtn = document.querySelector('.nw-tab[data-tab="ranking"]');
+    if (rankingTabBtn) activateTab("ranking");
+    if (loaded.ranking) renderRanking();
+  }
+
+  /* ---------- 종합 탭 ---------- */
+  var grid = document.getElementById("nrw-grid");
+  var updatedEl = document.getElementById("nrw-updated");
+  var moreBtn = document.getElementById("nrw-more-btn");
+  var expanded = false;
+  var groupedEntries = [];
+  var CLOCK_SVG = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>';
+
+  function parseRecencyMinutes(t) {
+    if (!t) return Infinity;
+    if (t.indexOf("방금") !== -1) return 0;
+    var m = t.match(/(\d+)\s*분전/);
+    if (m) return parseInt(m[1], 10);
+    var h = t.match(/(\d+)\s*시간전/);
+    if (h) return parseInt(h[1], 10) * 60;
+    var d = t.match(/(\d+)\s*일전/);
+    if (d) return parseInt(d[1], 10) * 60 * 24;
+    return Infinity;
+  }
+
+  // published_at(ISO, 절대시각)을 기준으로 "지금 이 순간" 몇 분/시간(분)/일 전인지 계산
+  // 화면을 열어본 시점마다 새로 계산되므로, 크롤링 후 시간이 아무리 지나도 항상 정확함
+  function formatRelativeTime(isoString, fallbackText) {
+    if (!isoString) return fallbackText || "";
+    var published = new Date(isoString);
+    if (isNaN(published.getTime())) return fallbackText || "";
+
+    var diffMs = Date.now() - published.getTime();
+    var diffMin = Math.floor(diffMs / 60000);
+
+    if (diffMin < 1) return "방금 전";
+    if (diffMin < 60) return diffMin + "분 전";
+    var diffHour = Math.floor(diffMin / 60);
+    if (diffHour < 24) {
+      var remMin = diffMin % 60;
+      return remMin > 0 ? diffHour + "시간 " + remMin + "분 전" : diffHour + "시간 전";
+    }
+    var diffDay = Math.floor(diffHour / 24);
+    return diffDay + "일 전";
+  }
+
+  // 정렬용: published_at 기준 몇 분 전인지 숫자로 반환 (텍스트 파싱보다 정확함)
+  function minutesAgoFromPublishedAt(isoString) {
+    if (!isoString) return Infinity;
+    var published = new Date(isoString);
+    if (isNaN(published.getTime())) return Infinity;
+    return Math.floor((Date.now() - published.getTime()) / 60000);
+  }
+
+  function buildLogo(pressName, logoUrl) {
+    if (logoUrl) {
+      var img = document.createElement("img");
+      img.className = "nrw-logo";
+      img.src = logoUrl;
+      img.alt = pressName;
+      img.onerror = function () {
+        var fallback = document.createElement("div");
+        fallback.className = "nrw-logo-fallback";
+        fallback.textContent = pressName.charAt(0);
+        img.replaceWith(fallback);
+      };
+      return img;
+    }
+    var fallback = document.createElement("div");
+    fallback.className = "nrw-logo-fallback";
+    fallback.textContent = pressName.charAt(0);
+    return fallback;
+  }
+
+  function buildCard(pressName, items) {
+    var card = document.createElement("div");
+    card.className = "nrw-card";
+
+    var header = document.createElement("div");
+    header.className = "nrw-card-header";
+    header.appendChild(buildLogo(pressName, items[0] && items[0].press_logo));
+
+    var name = document.createElement("span");
+    name.className = "nrw-press-name";
+    name.textContent = pressName;
+    header.appendChild(name);
+
+    card.appendChild(header);
+
+    items.slice(0, 5).forEach(function (item) {
+      var a = document.createElement("a");
+      a.className = "nrw-item";
+      a.href = item.link;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+
+      var rank = document.createElement("span");
+      rank.className = "nrw-rank-num";
+      rank.textContent = item.rank;
+      a.appendChild(rank);
+
+      var body = document.createElement("div");
+      body.className = "nrw-item-body";
+
+      var t = document.createElement("div");
+      t.className = "nrw-item-title";
+      t.textContent = item.title;
+      body.appendChild(t);
+
+      var time = document.createElement("div");
+      time.className = "nrw-item-time";
+      time.innerHTML = CLOCK_SVG + "<span>" + formatRelativeTime(item.published_at, item.upload_time) + "</span>";
+      body.appendChild(time);
+
+      a.appendChild(body);
+
+      var thumb = document.createElement("img");
+      thumb.className = "nrw-thumb";
+      thumb.src = item.thumbnail || "";
+      thumb.loading = "lazy";
+      thumb.alt = "";
+      thumb.onerror = function () {
+        a.classList.add("no-thumb");
+        thumb.remove();
+      };
+      if (!item.thumbnail) {
+        a.classList.add("no-thumb");
+      } else {
+        a.appendChild(thumb);
+      }
+
+      card.appendChild(a);
+    });
+
+    return card;
+  }
+
+  // 키워드 필터가 걸려있을 때 상단에 "필터: #키워드 [해제]" 배너를 보여줌
+  function renderFilterBanner() {
+    var existing = document.getElementById("nrw-filter-banner");
+    if (existing) existing.remove();
+    if (!keywordFilter) return;
+
+    var banner = document.createElement("div");
+    banner.id = "nrw-filter-banner";
+    banner.className = "nrw-filter-banner";
+
+    var span = document.createElement("span");
+    span.textContent = "필터: #" + keywordFilter;
+
+    var clearBtn = document.createElement("button");
+    clearBtn.type = "button";
+    clearBtn.textContent = "필터 해제";
+    clearBtn.addEventListener("click", function () {
+      keywordFilter = null;
+      renderRanking();
+    });
+
+    banner.appendChild(span);
+    banner.appendChild(clearBtn);
+    grid.parentNode.insertBefore(banner, grid);
+  }
+
+  // AI 키워드는 "반도체 실적 호조"처럼 여러 단어를 합성한 주제어라 기사
+  // 제목에 토씨 하나 안 틀리고 그대로 들어있는 경우가 드물다. 그래서 전체
+  // 구문 일치가 아니라, 공백으로 쪼갠 단어 중 하나라도 제목에 포함되면
+  // 매칭되는 것으로 본다.
+  function titleMatchesKeyword(title, keyword) {
+    if (!title || !keyword) return false;
+    var tokens = keyword.split(/\s+/).filter(function (t) { return t.length >= 2; });
+    if (!tokens.length) return title.indexOf(keyword) !== -1;
+    return tokens.some(function (t) { return title.indexOf(t) !== -1; });
+  }
+
+  function renderRanking() {
+    var entries = groupedEntries;
+    if (keywordFilter) {
+      entries = groupedEntries
+        .map(function (entry) {
+          var filteredItems = entry[1].filter(function (item) {
+            return titleMatchesKeyword(item.title, keywordFilter);
+          });
+          return filteredItems.length ? [entry[0], filteredItems, entry[2]] : null;
+        })
+        .filter(function (e) { return e !== null; });
+    }
+
+    grid.innerHTML = "";
+    if (keywordFilter && !entries.length) {
+      grid.innerHTML = '<p class="nrw-loading">"' + keywordFilter + '"이(가) 포함된 기사가 없습니다.</p>';
+    } else {
+      var count = expanded ? entries.length : INITIAL_COUNT;
+      for (var i = 0; i < count && i < entries.length; i++) {
+        grid.appendChild(buildCard(entries[i][0], entries[i][1]));
+      }
+    }
+
+    if (!keywordFilter && entries.length > INITIAL_COUNT) {
+      moreBtn.style.display = "inline-block";
+      moreBtn.textContent = expanded ? "접기" : "전체 언론사 더보기 (" + entries.length + "개)";
+    } else {
+      moreBtn.style.display = "none";
+    }
+
+    renderFilterBanner();
+  }
+
+  moreBtn.addEventListener("click", function () {
+    expanded = !expanded;
+    renderRanking();
+    if (!expanded) {
+      document.getElementById("panel-ranking").scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  // 언론사 인지도 우선순위 (배열 순서 = 우선순위). 목록에 없는 언론사는
+  // 전부 이 순위 밖으로 밀려나고, 그 안에서는 최신 기사 순으로 정렬됨.
+  var MAJOR_PRESS = [
+    "연합뉴스", "KBS", "MBC", "SBS", "JTBC", "YTN", "MBN",
+    "조선일보", "중앙일보", "동아일보", "한겨레", "경향신문", "한국일보",
+    "매일경제", "한국경제", "서울경제", "헤럴드경제", "이데일리",
+    "아시아경제", "파이낸셜뉴스", "머니투데이", "뉴시스", "뉴스1",
+    "채널A", "TV조선", "SBS Biz", "연합뉴스TV", "노컷뉴스",
+    "세계일보", "국민일보", "문화일보"
+  ];
+
+  function pressPriority(name) {
+    var idx = MAJOR_PRESS.indexOf(name);
+    return idx === -1 ? 999 : idx;
+  }
+
+  function loadRanking() {
+    fetch(RANKING_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var newsList = Array.isArray(data) ? data : data.news;
+        var updatedAt = Array.isArray(data) ? "" : data.updated_at;
+
+        var grouped = {};
+        newsList.forEach(function (item) {
+          if (!grouped[item.press_name]) grouped[item.press_name] = [];
+          grouped[item.press_name].push(item);
+        });
+
+        groupedEntries = Object.keys(grouped).map(function (key) { return [key, grouped[key]]; });
+        groupedEntries.forEach(function (entry) {
+          var minMinutes = Infinity;
+          entry[1].forEach(function (item) {
+            var mins = minutesAgoFromPublishedAt(item.published_at);
+            if (mins < minMinutes) minMinutes = mins;
+          });
+          entry[2] = minMinutes;
+        });
+        groupedEntries.sort(function (a, b) {
+          var pa = pressPriority(a[0]);
+          var pb = pressPriority(b[0]);
+          var isMajorA = pa < 999 ? 0 : 1;
+          var isMajorB = pb < 999 ? 0 : 1;
+          if (isMajorA !== isMajorB) return isMajorA - isMajorB; // 주요 언론사가 항상 먼저
+          if (isMajorA === 0) return pa - pb;                     // 주요 언론사끼리는 지정된 순위대로
+          return a[2] - b[2];                                     // 그 외는 최신순
+        });
+
+        updatedEl.textContent = updatedAt ? updatedAt + " 기준 집계" : "";
+        renderBriefing(
+          document.getElementById("nrw-briefing"),
+          document.getElementById("nrw-briefing-list"),
+          Array.isArray(data) ? null : data.ai_briefing
+        );
+        loaded.ranking = true;
+        renderRanking();
+      })
+      .catch(function (err) {
+        grid.innerHTML = '<p class="nrw-loading">뉴스를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("종합 위젯 로드 실패:", err);
+      });
+  }
+
+  /* ---------- 증권/주식 탭 ---------- */
+  var indicesEl = document.getElementById("sw-indices");
+  var catGridEl = document.getElementById("sw-category-grid");
+  var swUpdatedEl = document.getElementById("sw-updated");
+
+  function arrow(direction) {
+    if (direction === "up") return "▲";
+    if (direction === "down") return "▼";
+    return "-";
+  }
+
+  function renderIndices(indices) {
+    indicesEl.innerHTML = "";
+    indices.forEach(function (idx) {
+      var card = document.createElement("div");
+      card.className = "sw-index-card";
+
+      var name = document.createElement("p");
+      name.className = "sw-index-name";
+      name.textContent = idx.name;
+      card.appendChild(name);
+
+      var value = document.createElement("p");
+      value.className = "sw-index-value";
+      value.textContent = idx.value;
+      card.appendChild(value);
+
+      var change = document.createElement("p");
+      change.className = "sw-index-change " + (idx.direction === "up" ? "up" : idx.direction === "down" ? "down" : "flat");
+      var cleanPercent = (idx.change_percent || "").replace(/^[▲▼△▽+\-\s]+/, "").trim();
+      change.textContent = arrow(idx.direction) + " " + cleanPercent;
+      card.appendChild(change);
+
+      indicesEl.appendChild(card);
+    });
+  }
+
+  function renderStockCategories(categories) {
+    catGridEl.innerHTML = "";
+    categories.forEach(function (cat) {
+      var card = document.createElement("div");
+      card.className = "sw-cat-card";
+
+      var title = document.createElement("p");
+      title.className = "sw-cat-title";
+      title.textContent = cat.category;
+      card.appendChild(title);
+
+      (cat.items || []).slice(0, 5).forEach(function (item) {
+        var a = document.createElement("a");
+        a.className = "sw-cat-item";
+        a.href = item.link;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+
+        var rank = document.createElement("span");
+        rank.className = "sw-cat-rank";
+        rank.textContent = item.rank;
+        a.appendChild(rank);
+
+        var body = document.createElement("div");
+        body.className = "sw-cat-item-body";
+
+        var t = document.createElement("div");
+        t.className = "sw-cat-item-title";
+        t.textContent = item.title;
+        body.appendChild(t);
+
+        var meta = document.createElement("div");
+        meta.className = "sw-cat-meta";
+        meta.textContent = (item.press_name || "") + "  ·  " + (item.upload_time || "");
+        body.appendChild(meta);
+
+        a.appendChild(body);
+        card.appendChild(a);
+      });
+
+      catGridEl.appendChild(card);
+    });
+  }
+
+  function loadStock() {
+    fetch(STOCK_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        swUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
+        document.getElementById("sw-index-label").textContent =
+          data.updated_at ? "주요 경제 지표 (" + data.updated_at + " 기준)" : "주요 경제 지표";
+        renderIndices(data.indices || []);
+        renderCommentary(
+          document.getElementById("sw-commentary-box"),
+          document.getElementById("sw-commentary-text"),
+          data.ai_commentary
+        );
+        renderStockCategories(data.news_categories || []);
+        loaded.stock = true;
+      })
+      .catch(function (err) {
+        indicesEl.innerHTML = '<p class="sw-loading">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("증권 위젯 로드 실패:", err);
+      });
+  }
+
+  /* ---------- 경제 / 부동산 공용 카드 렌더링 ---------- */
+  var ewGrid = document.getElementById("ew-grid");
+  var ewUpdatedEl = document.getElementById("ew-updated");
+  var rwGrid = document.getElementById("rw-grid");
+  var rwUpdatedEl = document.getElementById("rw-updated");
+
+  function renderNewsCards(gridEl, newsList) {
+    gridEl.innerHTML = "";
+    newsList.forEach(function (item) {
+      var a = document.createElement("a");
+      a.className = "ew-card";
+      a.href = item.link;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+
+      var thumbWrap = document.createElement("div");
+      thumbWrap.className = "ew-thumb-wrap";
+      var thumb = document.createElement("img");
+      thumb.className = "ew-thumb";
+      thumb.src = item.thumbnail || "";
+      thumb.loading = "lazy";
+      thumb.alt = "";
+      thumb.onerror = function () {
+        a.classList.add("no-thumb");
+        thumbWrap.remove();
+      };
+      if (item.thumbnail) {
+        thumbWrap.appendChild(thumb);
+        a.appendChild(thumbWrap);
+      } else {
+        a.classList.add("no-thumb");
+      }
+
+      var body = document.createElement("div");
+      body.className = "ew-card-body";
+
+      var badge = document.createElement("span");
+      badge.className = "ew-press-badge";
+      badge.textContent = item.press_name || "";
+      body.appendChild(badge);
+
+      var title = document.createElement("p");
+      title.className = "ew-card-title";
+      title.textContent = item.title;
+      body.appendChild(title);
+
+      var time = document.createElement("p");
+      time.className = "ew-card-time";
+      time.textContent = formatRelativeTime(item.published_at, item.upload_time);
+      body.appendChild(time);
+
+      a.appendChild(body);
+      gridEl.appendChild(a);
+    });
+  }
+
+  function loadEconomy() {
+    fetch(ECONOMY_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        ewUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
+        renderBriefing(
+          document.getElementById("ew-briefing"),
+          document.getElementById("ew-briefing-list"),
+          data.ai_briefing
+        );
+        renderNewsCards(ewGrid, data.news || []);
+        loaded.economy = true;
+      })
+      .catch(function (err) {
+        ewGrid.innerHTML = '<p class="ew-loading">뉴스를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("경제 위젯 로드 실패:", err);
+      });
+  }
+
+  function loadRealestate() {
+    fetch(REALESTATE_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        rwUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
+        renderBriefing(
+          document.getElementById("rw-briefing"),
+          document.getElementById("rw-briefing-list"),
+          data.ai_briefing
+        );
+        renderNewsCards(rwGrid, data.news || []);
+        loaded.realestate = true;
+      })
+      .catch(function (err) {
+        rwGrid.innerHTML = '<p class="ew-loading">뉴스를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("부동산 위젯 로드 실패:", err);
+      });
+  }
+
+  /* ---------- 정책·캘린더 탭 (신규) ---------- */
+  function renderCalendar(events) {
+    var el = document.getElementById("pw-calendar-list");
+    el.innerHTML = "";
+    if (!events || !events.length) {
+      el.innerHTML = '<p class="ew-loading">예정된 일정이 없습니다.</p>';
+      return;
+    }
+    events.forEach(function (ev) {
+      var item = document.createElement("div");
+      item.className = "pw-calendar-item";
+
+      var date = document.createElement("span");
+      date.className = "pw-calendar-date";
+      date.textContent = ev.date;
+
+      var flag = document.createElement("span");
+      flag.className = "pw-calendar-flag";
+      flag.textContent = ev.country === "KR" ? "🇰🇷" : "🇺🇸";
+
+      var name = document.createElement("span");
+      name.className = "pw-calendar-name";
+      name.textContent = ev.event;
+
+      item.appendChild(date);
+      item.appendChild(flag);
+      item.appendChild(name);
+      el.appendChild(item);
+    });
+  }
+
+  function renderMacroIndices(indicators) {
+    var el = document.getElementById("pw-macro-indices");
+    el.innerHTML = "";
+    if (!indicators || !indicators.length) {
+      el.innerHTML = '<p class="sw-loading">지표 데이터가 없습니다.</p>';
+      return;
+    }
+    indicators.forEach(function (idx) {
+      var card = document.createElement("div");
+      card.className = "sw-index-card";
+
+      var name = document.createElement("p");
+      name.className = "sw-index-name";
+      name.textContent = idx.name;
+      card.appendChild(name);
+
+      var value = document.createElement("p");
+      value.className = "sw-index-value";
+      var unitSuffix = idx.unit && idx.unit.length <= 3 ? idx.unit : "";
+      value.textContent = idx.value + unitSuffix;
+      card.appendChild(value);
+
+      var cycle = document.createElement("p");
+      cycle.className = "sw-index-change flat";
+      cycle.textContent = idx.cycle || "";
+      card.appendChild(cycle);
+
+      el.appendChild(card);
+    });
+  }
+
+  function renderDartFilings(filings) {
+    var el = document.getElementById("pw-dart-list");
+    el.innerHTML = "";
+    if (!filings || !filings.length) {
+      el.innerHTML = '<p class="ew-loading">오늘 등록된 주요 공시가 없습니다.</p>';
+      return;
+    }
+    filings.forEach(function (f) {
+      var a = document.createElement("a");
+      a.className = "pw-dart-item";
+      a.href = f.link || "#";
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+
+      var top = document.createElement("div");
+      top.className = "pw-dart-top";
+      var corp = document.createElement("span");
+      corp.className = "pw-dart-corp";
+      corp.textContent = f.corp_name;
+      var title = document.createElement("span");
+      title.className = "pw-dart-title";
+      title.textContent = f.report_nm;
+      top.appendChild(corp);
+      top.appendChild(title);
+      a.appendChild(top);
+
+      if (f.ai_explanation) {
+        var desc = document.createElement("p");
+        desc.className = "pw-dart-desc";
+        desc.textContent = f.ai_explanation;
+        a.appendChild(desc);
+      }
+
+      el.appendChild(a);
+    });
+  }
+
+  function renderSupportPrograms(elId, programs) {
+    var el = document.getElementById(elId);
+    el.innerHTML = "";
+    if (!programs || !programs.length) {
+      el.innerHTML = '<p class="ew-loading">현재 표시할 공고가 없습니다.</p>';
+      return;
+    }
+    programs.forEach(function (p) {
+      var a = document.createElement("a");
+      a.className = "pw-support-item";
+      a.href = p.link || "#";
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+
+      var badge = document.createElement("span");
+      badge.className = "ew-press-badge";
+      badge.textContent = p.org || p.target || "";
+      a.appendChild(badge);
+
+      var title = document.createElement("p");
+      title.className = "pw-support-title";
+      title.textContent = p.title;
+      a.appendChild(title);
+
+      var meta = document.createElement("p");
+      meta.className = "sw-cat-meta";
+      meta.textContent = p.apply_period || "";
+      a.appendChild(meta);
+
+      el.appendChild(a);
+    });
+  }
+
+  function loadPolicy() {
+    fetch(DASHBOARD_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        document.getElementById("pw-updated").textContent =
+          data.updated_at ? data.updated_at + " 기준" : "";
+        renderCalendar(data.economic_calendar);
+        renderMacroIndices(data.macro_indicators);
+        renderDartFilings(data.dart_filings);
+        renderSupportPrograms("pw-support-list", data.support_programs);
+        renderSupportPrograms("pw-soso-list", data.soso_support_programs);
+        loaded.policy = true;
+      })
+      .catch(function (err) {
+        document.getElementById("pw-calendar-list").innerHTML =
+          '<p class="ew-loading">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("정책·캘린더 위젯 로드 실패:", err);
+      });
+  }
+
+  /* ---------- TOP 버튼 ---------- */
+  var topBtn = document.getElementById("nrw-top-btn");
+  var SHOW_AFTER_PX = 400;
+  function toggleTopBtn() {
+    if (window.scrollY > SHOW_AFTER_PX) topBtn.classList.add("nrw-visible");
+    else topBtn.classList.remove("nrw-visible");
+  }
+  window.addEventListener("scroll", toggleTopBtn, { passive: true });
+  toggleTopBtn();
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ---------- 초기 로드 (첫 탭인 대시보드만) ---------- */
+  loadDashboard();
+  window.setTimeout(updateTabArrows, 80);
+})();
+</script>
