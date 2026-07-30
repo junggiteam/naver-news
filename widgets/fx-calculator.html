@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>환율 계산기</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+</style>
+</head>
+<body>
+<div id="fx-calc">
+  <div class="fx-header">
+    <span class="fx-label">환율 계산기</span>
+  </div>
+
+  <div class="fx-body">
+    <div class="fx-tabs" id="fx-tabs">
+      <button type="button" class="fx-tab is-active" data-currency="USD">달러 USD</button>
+      <button type="button" class="fx-tab" data-currency="JPY">엔화 JPY</button>
+      <button type="button" class="fx-tab" data-currency="EUR">유로 EUR</button>
+    </div>
+
+    <div class="fx-rate-line" id="fx-rate-line">환율 정보를 불러오는 중...</div>
+
+    <div class="fx-field">
+      <label class="fx-field-label">원화 (KRW)</label>
+      <div class="fx-input-wrap">
+        <input type="text" inputmode="decimal" id="fx-krw-input" class="fx-input" placeholder="0" autocomplete="off">
+        <span class="fx-unit">원</span>
+      </div>
+    </div>
+
+    <div class="fx-field fx-field-foreign">
+      <label class="fx-field-label" id="fx-foreign-label">외화 (USD)</label>
+      <div class="fx-input-wrap">
+        <input type="text" inputmode="decimal" id="fx-foreign-input" class="fx-input" placeholder="0" autocomplete="off">
+        <span class="fx-unit" id="fx-foreign-unit">USD</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fx-meta">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    <span id="fx-meta-text"></span>
+  </div>
+</div>
+
+<style>
+  #fx-calc {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-family: "Noto Sans KR", "Malgun Gothic", -apple-system, sans-serif;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+  }
+  #fx-calc * { box-sizing: border-box; }
+
+  .fx-header {
+    padding: 12px 18px;
+    background: #142c67;
+  }
+  .fx-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.3px;
+  }
+
+  .fx-body {
+    padding: 16px 18px 6px;
+  }
+
+  .fx-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .fx-tab {
+    flex: 1;
+    padding: 8px 4px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #555;
+    background: #f2f3f5;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, color 0.15s;
+  }
+  .fx-tab.is-active {
+    background: #142c67;
+    color: #fff;
+  }
+
+  .fx-rate-line {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-bottom: 14px;
+    min-height: 15px;
+  }
+
+  .fx-field-label {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 5px;
+  }
+
+  .fx-input-wrap {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 12px;
+    background: #fafafa;
+  }
+  .fx-input-wrap:focus-within {
+    border-color: #142c67;
+    background: #fff;
+  }
+
+  .fx-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    color: #191919;
+    padding: 11px 0;
+    font-family: inherit;
+    text-align: right;
+  }
+  .fx-input::placeholder { color: #ccc; }
+
+  .fx-unit {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #666;
+    margin-left: 8px;
+    flex-shrink: 0;
+  }
+
+  .fx-field-foreign {
+    margin-top: 12px;
+  }
+
+  .fx-meta {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 10px 18px 0;
+    padding: 9px 0 12px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    color: #aaa;
+  }
+</style>
+
+<script>
+(function () {
+  var STOCK_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_news.json";
+
+  // stock_news.json의 indices 항목 이름 -> {통화 표시명, 1단위 환산 배수}
+  // 원/엔 환율은 100엔 기준값으로 오므로 1엔당 원화로 환산하려면 100으로 나눈다.
+  var CURRENCY_MAP = {
+    USD: { indexName: "원/달러 환율", perUnits: 1, unitLabel: "USD" },
+    JPY: { indexName: "원/엔 환율(100엔)", perUnits: 100, unitLabel: "JPY" },
+    EUR: { indexName: "원/유로 환율", perUnits: 1, unitLabel: "EUR" }
+  };
+
+  var tabsEl = document.getElementById("fx-tabs");
+  var rateLineEl = document.getElementById("fx-rate-line");
+  var krwInput = document.getElementById("fx-krw-input");
+  var foreignInput = document.getElementById("fx-foreign-input");
+  var foreignLabel = document.getElementById("fx-foreign-label");
+  var foreignUnit = document.getElementById("fx-foreign-unit");
+  var metaTextEl = document.getElementById("fx-meta-text");
+
+  var rates = {};       // { USD: 1439.40 (원/1단위), JPY: 8.8053, EUR: 1648.54 }
+  var updatedAt = "";
+  var currentCurrency = "USD";
+  var lastEdited = "krw"; // "krw" 또는 "foreign" - 마지막으로 사용자가 입력한 쪽 기준으로 재계산
+
+  function parseNumber(text) {
+    var cleaned = (text || "").replace(/,/g, "").trim();
+    var n = parseFloat(cleaned);
+    return isNaN(n) ? null : n;
+  }
+
+  function formatKRW(n) {
+    return Math.round(n).toLocaleString("ko-KR");
+  }
+
+  function formatForeign(n) {
+    return n.toLocaleString("ko-KR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function currentRate() {
+    return rates[currentCurrency];
+  }
+
+  function recompute() {
+    var rate = currentRate();
+    if (!rate) return;
+
+    if (lastEdited === "krw") {
+      var krw = parseNumber(krwInput.value);
+      if (krw === null) { foreignInput.value = ""; return; }
+      foreignInput.value = formatForeign(krw / rate);
+    } else {
+      var foreign = parseNumber(foreignInput.value);
+      if (foreign === null) { krwInput.value = ""; return; }
+      krwInput.value = formatKRW(foreign * rate);
+    }
+  }
+
+  function updateRateLine() {
+    var rate = currentRate();
+    if (!rate) {
+      rateLineEl.textContent = "환율 정보를 불러오지 못했습니다.";
+      return;
+    }
+    var unitCount = currentCurrency === "JPY" ? 100 : 1;
+    rateLineEl.textContent =
+      unitCount + " " + currentCurrency + " = " + formatKRW(rate * unitCount) + "원";
+  }
+
+  function switchCurrency(code) {
+    currentCurrency = code;
+    foreignLabel.textContent = "외화 (" + code + ")";
+    foreignUnit.textContent = code;
+
+    var buttons = tabsEl.querySelectorAll(".fx-tab");
+    for (var i = 0; i < buttons.length; i++) {
+      var isActive = buttons[i].getAttribute("data-currency") === code;
+      buttons[i].classList.toggle("is-active", isActive);
+    }
+
+    updateRateLine();
+    // 통화를 바꾸면 직전에 입력했던 외화 숫자는 이전 통화 기준이라 그대로
+    // 쓰면 안 된다(예: "USD 50" 상태에서 JPY로 바꾸면 "50엔"으로 오인됨).
+    // 원화는 통화와 무관하게 항상 유효하므로, 전환 시엔 원화를 기준으로
+    // 외화 쪽을 다시 계산한다.
+    lastEdited = "krw";
+    recompute();
+  }
+
+  tabsEl.addEventListener("click", function (e) {
+    var btn = e.target.closest(".fx-tab");
+    if (!btn) return;
+    switchCurrency(btn.getAttribute("data-currency"));
+  });
+
+  krwInput.addEventListener("input", function () {
+    lastEdited = "krw";
+    recompute();
+  });
+
+  foreignInput.addEventListener("input", function () {
+    lastEdited = "foreign";
+    recompute();
+  });
+
+  function loadRates() {
+    return fetch(STOCK_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var indices = data.indices || [];
+        rates = {};
+        Object.keys(CURRENCY_MAP).forEach(function (code) {
+          var conf = CURRENCY_MAP[code];
+          var entry = indices.filter(function (idx) { return idx.name === conf.indexName; })[0];
+          if (!entry) return;
+          var raw = parseNumber(entry.value);
+          if (raw === null) return;
+          rates[code] = raw / conf.perUnits;
+        });
+        updatedAt = data.updated_at || "";
+
+        updateRateLine();
+        recompute();
+        metaTextEl.textContent = updatedAt ? updatedAt + " 기준" : "";
+      })
+      .catch(function (err) {
+        rateLineEl.textContent = "환율 정보를 불러오지 못했습니다.";
+        console.error("환율 계산기 로드 실패:", err);
+      });
+  }
+
+  krwInput.value = "10000";
+  loadRates();
+
+  // 페이지를 오래 열어둘 수 있으니 5분마다 최신 환율로 갱신
+  setInterval(loadRates, 5 * 60 * 1000);
+})();
+</script>
+</body></html>
