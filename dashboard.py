@@ -107,6 +107,60 @@ def _article_counts():
     return counts
 
 
+ARTICLE_COUNT_HISTORY_FILE = os.path.join("data", "article_count_history.json")
+ARTICLE_COUNT_HISTORY_MAX_DAYS = 30
+
+# "급증"으로 표시하려면 전일 대비 증가율(%)과 절대 증가량을 동시에 충족해야 한다.
+# 참고: 경제/부동산은 크롤러가 매번 "최신 상위 30개" 스냅샷만 가져오고, 증권
+# 뉴스도 카테고리당 상위 5개(6개x5=30)로 고정이라 개수 자체가 날마다 거의
+# 안 바뀐다. 실제로 날마다 자연스럽게 변하는 건 종합(랭킹, 언론사별 1~5위
+# 집계, 400개 안팎)뿐이라, 이 신호는 사실상 종합 카테고리에서 주로 의미가
+# 있을 가능성이 높다.
+ARTICLE_COUNT_SURGE_PCT = 0.3
+ARTICLE_COUNT_SURGE_MIN_DELTA = 5
+
+
+def _load_article_count_history():
+    if not os.path.exists(ARTICLE_COUNT_HISTORY_FILE):
+        return []
+    try:
+        with open(ARTICLE_COUNT_HISTORY_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        return []
+
+
+def _save_article_count_history(history):
+    os.makedirs("data", exist_ok=True)
+    with open(ARTICLE_COUNT_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+
+
+def _article_count_trend(today_str, counts):
+    """전일(이력상 가장 최근 과거 날짜) 대비 카테고리별 기사량 변화/급증 여부를
+    계산하고, 오늘자 스냅샷을 이력에 기록(같은 날 재실행 시 덮어씀)."""
+    history = _load_article_count_history()
+    past_entries = [h for h in history if h.get("date") != today_str]
+
+    yesterday_counts = past_entries[-1]["counts"] if past_entries else {}
+
+    trend = {}
+    for label, today_count in counts.items():
+        yesterday_count = yesterday_counts.get(label)
+        if not yesterday_count:
+            trend[label] = {"today": today_count, "yesterday": yesterday_count, "change_pct": None, "surge": False}
+            continue
+        change_pct = round((today_count - yesterday_count) / yesterday_count * 100, 1)
+        delta = today_count - yesterday_count
+        surge = change_pct >= ARTICLE_COUNT_SURGE_PCT * 100 and delta >= ARTICLE_COUNT_SURGE_MIN_DELTA
+        trend[label] = {"today": today_count, "yesterday": yesterday_count, "change_pct": change_pct, "surge": surge}
+
+    new_history = past_entries + [{"date": today_str, "counts": counts}]
+    _save_article_count_history(new_history[-ARTICLE_COUNT_HISTORY_MAX_DAYS:])
+
+    return trend
+
+
 # 뉴스랭킹 탭 정렬에 쓰는 것과 동일한 인지도 우선순위 (대표 기사 선정용)
 MAJOR_PRESS = [
     "연합뉴스", "KBS", "MBC", "SBS", "JTBC", "YTN", "MBN",
@@ -161,6 +215,9 @@ def build_dashboard():
 
     economy_data = _load_json("data/economy_news.json")
 
+    today_str = datetime.now(KST).strftime("%Y-%m-%d")
+    counts = _article_counts()
+
     dashboard = {
         "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "market_mood": _market_mood(indices),
@@ -171,7 +228,8 @@ def build_dashboard():
         "top_losers": stock_data.get("top_losers") or [],
         "sector_performance": all_sectors[:5],
         "sector_heatmap": sector_heatmap,
-        "article_counts": _article_counts(),
+        "article_counts": counts,
+        "article_count_trend": _article_count_trend(today_str, counts),
     }
 
     os.makedirs("data", exist_ok=True)
