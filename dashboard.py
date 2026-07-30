@@ -215,6 +215,8 @@ def build_dashboard():
 
     economy_data = _load_json("data/economy_news.json")
     keyword_data = _load_json("data/keyword_tags.json")
+    dart_data = _load_json("data/dart_filings.json")
+    macro_data = _load_json("data/macro_indicators.json")
 
     today_str = datetime.now(KST).strftime("%Y-%m-%d")
     counts = _article_counts()
@@ -226,6 +228,8 @@ def build_dashboard():
         "headlines": _collect_headlines(),
         "daily_term": economy_data.get("daily_term"),
         "keyword_tags": keyword_data.get("tags") or [],
+        "dart_filings": dart_data.get("filings") or [],
+        "macro_indicators": macro_data.get("indicators") or [],
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
         "sector_performance": all_sectors[:5],

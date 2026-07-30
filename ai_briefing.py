@@ -6,6 +6,7 @@ None/빈 리스트를 반환한다. 크롤링 자체(핵심 기능)는 AI 기능
 """
 
 import os
+import re
 import requests
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -168,3 +169,42 @@ def generate_stock_commentary(indices, titles):
         f"[관련 뉴스 제목]\n{titles_block}"
     )
     return _call_gemini(prompt)
+
+
+def generate_dart_summary(filings):
+    """DART 주요사항보고 공시 목록 각각에 쉬운 설명을 붙여 반환.
+    실패하거나 응답 개수가 안 맞으면(매칭을 신뢰할 수 없으므로) 설명 없이
+    원본 그대로 반환한다."""
+    if not filings:
+        return filings
+
+    lines_block = "\n".join(
+        f"{i + 1}. {f['corp_name']} | {f['report_nm']}" for i, f in enumerate(filings)
+    )
+    prompt = (
+        "아래는 오늘 등록된 국내 상장사 주요사항보고서(공시) 목록이다.\n"
+        "각 공시가 일반적으로 무엇을 의미하는지 한 줄(50자 이내)로 쉽게 설명하라.\n"
+        "특정 회사에 대한 투자 조언이나 전망은 하지 말고, 이 공시 유형이\n"
+        "통상적으로 뜻하는 바만 사실대로 설명하라.\n"
+        "출력은 번호를 그대로 유지해서 아래 형식으로만, 입력된 개수와 순서를\n"
+        "정확히 지켜라 (그 외 문장은 쓰지 마라):\n"
+        "1. (설명)\n2. (설명)\n...\n\n"
+        f"[공시 목록]\n{lines_block}"
+    )
+    text = _call_gemini(prompt)
+    if not text:
+        return filings
+
+    explanations = {}
+    for line in text.splitlines():
+        line = line.strip()
+        match = re.match(r'^(\d+)[.)]\s*(.+)$', line)
+        if match:
+            explanations[int(match.group(1))] = match.group(2).strip()
+
+    if len(explanations) != len(filings):
+        return filings
+
+    for i, filing in enumerate(filings):
+        filing["ai_explanation"] = explanations.get(i + 1, "")
+    return filings

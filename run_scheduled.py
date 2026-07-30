@@ -7,6 +7,8 @@ import scraper_economy_section
 import scraper_stock
 import scraper_realestate
 import scraper_market_movers
+import scraper_dart
+import scraper_ecos
 import ai_briefing
 import dashboard
 
@@ -27,6 +29,10 @@ CRAWLER_INTERVALS = {
     # 단점이 아니라 오히려 이득이라 굳이 분리하지 않음.
     "stock": timedelta(minutes=15),
     "realestate": timedelta(hours=3),
+    # DART 공시/ECOS 거시지표는 하루 내내 빈번히 바뀌는 데이터가 아니라
+    # 나머지 뉴스 탭과 같은 3시간 주기로 충분함.
+    "dart": timedelta(hours=3),
+    "ecos": timedelta(hours=3),
 }
 
 CRAWLER_FUNCS = {
@@ -34,6 +40,8 @@ CRAWLER_FUNCS = {
     "economy": scraper_economy_section.main,
     "stock": scraper_stock.main,
     "realestate": scraper_realestate.main,
+    "dart": scraper_dart.main,
+    "ecos": scraper_ecos.main,
 }
 
 
@@ -78,6 +86,16 @@ def _augment_with_ai(name):
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
             print(f"[stock] AI 시황 코멘트 {'생성됨' if data['ai_commentary'] else '생략됨(변동폭 작음/키 없음/호출 실패)'}")
+
+        elif name == "dart":
+            path = "data/dart_filings.json"
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            data["filings"] = ai_briefing.generate_dart_summary(data.get("filings", []))
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            has_explanation = any(f.get("ai_explanation") for f in data["filings"])
+            print(f"[dart] 공시 설명 {'생성됨' if has_explanation else '생략됨(공시 없음/키 없음/호출 실패)'}")
     except Exception as e:
         print(f"[{name}] AI 후처리 중 오류(크롤링 결과 자체는 정상 저장됨): {e}")
 
