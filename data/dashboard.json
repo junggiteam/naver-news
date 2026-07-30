@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-30 13:28:24",
+  "updated_at": "2026-07-30 13:32:27",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -0.45,
-    "kosdaq_change": -1.72,
-    "kospi_value": 5637.74,
-    "kosdaq_value": 651.27
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.01,
+    "kosdaq_change": -1.39,
+    "kospi_value": 5663.81,
+    "kosdaq_value": 653.46
   },
   "heroes": {
     "종합": {
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "국토부가 수도권 신규 공급지 내 위법 의심 부동산 거래 346건을 적발함"
-    },
-    {
-      "category": "증권",
-      "text": "미국 연방준비제도의 금리 동결과 소극적인 통화 정책 대응 우려로 30년물 채권 금리가 19년 만에 최고치로 치솟으며 시장의 투자 심리가 위축되었다. 특히 바이오 업종에 대한 투자 심리 악화와 기업들의 주식시장 평가에 대한 부정적 인식이 겹치면서 코스닥 지수가 코스피보다 큰 폭으로 하락했다. 증시는 주요 기업들의 실적과 대외 변수 사이에서 뚜렷한 방향성을 찾지 못한 채 등락을 거듭하며 변동성을 보였다."
     }
   ],
   "top_gainers": [
@@ -96,30 +92,24 @@
       "pct": 17.11
     },
     {
-      "name": "일성건설",
-      "price": "1367.0",
-      "change_percent": "+14.49%",
-      "pct": 14.49
+      "name": "SOL 조선TOP3플러스레버리지",
+      "price": "8355.0",
+      "change_percent": "+13.75%",
+      "pct": 13.75
     }
   ],
   "top_losers": [
     {
       "name": "동성제약",
-      "price": "1697.0",
-      "change_percent": "-12.80%",
-      "pct": 12.8
-    },
-    {
-      "name": "삼성전기우",
-      "price": "326000.0",
-      "change_percent": "-10.93%",
-      "pct": 10.93
+      "price": "1686.0",
+      "change_percent": "-13.36%",
+      "pct": 13.36
     },
     {
       "name": "미래산업",
-      "price": "5500.0",
-      "change_percent": "-10.71%",
-      "pct": 10.71
+      "price": "5490.0",
+      "change_percent": "-10.88%",
+      "pct": 10.88
     },
     {
       "name": "키움 레버리지 반도체TOP10 ETN",
@@ -128,99 +118,105 @@
       "pct": 10.54
     },
     {
-      "name": "삼성전기",
-      "price": "922000.0",
-      "change_percent": "-10.40%",
-      "pct": 10.4
+      "name": "키움 인버스 2X K방산 TOP5 ETN",
+      "price": "10695.0",
+      "change_percent": "-10.35%",
+      "pct": 10.35
+    },
+    {
+      "name": "삼성전기우",
+      "price": "329000.0",
+      "change_percent": "-10.11%",
+      "pct": 10.11
     }
   ],
   "sector_performance": [
     {
       "name": "조선",
-      "change_value": "+5.65%",
-      "pct": 5.65
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "+5.61%",
-      "pct": 5.61
+      "change_value": "+6.29%",
+      "pct": 6.29
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+5.18%",
-      "pct": 5.18
+      "change_value": "+6.07%",
+      "pct": 6.07
     },
     {
       "name": "전기제품",
-      "change_value": "+4.29%",
-      "pct": 4.29
+      "change_value": "+5.50%",
+      "pct": 5.5
+    },
+    {
+      "name": "복합유틸리티",
+      "change_value": "+5.45%",
+      "pct": 5.45
     },
     {
       "name": "게임엔터테인먼트",
-      "change_value": "+4.17%",
-      "pct": 4.17
+      "change_value": "+4.79%",
+      "pct": 4.79
     }
   ],
   "sector_heatmap": [
     {
       "name": "조선",
-      "change_value": "+5.65%",
-      "pct": 5.65
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "+5.61%",
-      "pct": 5.61
+      "change_value": "+6.29%",
+      "pct": 6.29
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+5.18%",
-      "pct": 5.18
+      "change_value": "+6.07%",
+      "pct": 6.07
     },
     {
       "name": "전기제품",
-      "change_value": "+4.29%",
-      "pct": 4.29
+      "change_value": "+5.50%",
+      "pct": 5.5
+    },
+    {
+      "name": "복합유틸리티",
+      "change_value": "+5.45%",
+      "pct": 5.45
     },
     {
       "name": "게임엔터테인먼트",
-      "change_value": "+4.17%",
-      "pct": 4.17
+      "change_value": "+4.79%",
+      "pct": 4.79
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "+3.98%",
-      "pct": 3.98
+      "change_value": "+4.60%",
+      "pct": 4.6
     },
     {
       "name": "건강관리기술",
-      "change_value": "-2.59%",
-      "pct": -2.59
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "-3.21%",
-      "pct": -3.21
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "-3.22%",
-      "pct": -3.22
+      "change_value": "-2.41%",
+      "pct": -2.41
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-3.37%",
-      "pct": -3.37
+      "change_value": "-2.57%",
+      "pct": -2.57
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "-2.67%",
+      "pct": -2.67
+    },
+    {
+      "name": "백화점과일반상점",
+      "change_value": "-2.71%",
+      "pct": -2.71
     },
     {
       "name": "전기장비",
-      "change_value": "-4.25%",
-      "pct": -4.25
+      "change_value": "-3.65%",
+      "pct": -3.65
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-8.39%",
-      "pct": -8.39
+      "change_value": "-7.88%",
+      "pct": -7.88
     }
   ],
   "article_counts": {
