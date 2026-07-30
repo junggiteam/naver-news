@@ -38,6 +38,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+          BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
         run: python run_scheduled.py
 
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)

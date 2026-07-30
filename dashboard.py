@@ -217,6 +217,7 @@ def build_dashboard():
     keyword_data = _load_json("data/keyword_tags.json")
     dart_data = _load_json("data/dart_filings.json")
     macro_data = _load_json("data/macro_indicators.json")
+    support_data = _load_json("data/support_programs.json")
 
     today_str = datetime.now(KST).strftime("%Y-%m-%d")
     counts = _article_counts()
@@ -230,6 +231,8 @@ def build_dashboard():
         "keyword_tags": keyword_data.get("tags") or [],
         "dart_filings": dart_data.get("filings") or [],
         "macro_indicators": macro_data.get("indicators") or [],
+        "support_programs": support_data.get("programs") or [],
+        "soso_support_programs": support_data.get("soso_programs") or [],
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
         "sector_performance": all_sectors[:5],

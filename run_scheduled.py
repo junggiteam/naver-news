@@ -9,6 +9,7 @@ import scraper_realestate
 import scraper_market_movers
 import scraper_dart
 import scraper_ecos
+import scraper_bizinfo
 import ai_briefing
 import dashboard
 
@@ -33,6 +34,7 @@ CRAWLER_INTERVALS = {
     # 나머지 뉴스 탭과 같은 3시간 주기로 충분함.
     "dart": timedelta(hours=3),
     "ecos": timedelta(hours=3),
+    "bizinfo": timedelta(hours=3),
 }
 
 CRAWLER_FUNCS = {
@@ -42,6 +44,7 @@ CRAWLER_FUNCS = {
     "realestate": scraper_realestate.main,
     "dart": scraper_dart.main,
     "ecos": scraper_ecos.main,
+    "bizinfo": scraper_bizinfo.main,
 }
 
 
