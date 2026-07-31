@@ -1559,17 +1559,8 @@
     line-height: 1;
   }
 
-  .cr-summary-box {
-    margin: 0 0 24px;
-    padding: 20px 22px;
-    border: 1px solid #d9e9ff;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #edf5ff 0%, #f7fbff 55%, #ffffff 100%);
-    box-shadow: 0 8px 24px rgba(23, 105, 224, 0.06);
-  }
-
   .cr-summary-text {
-    margin: 0;
+    margin: 0 0 24px;
     color: var(--nw-text);
     font-size: 15.5px;
     font-weight: 550;
@@ -1634,6 +1625,13 @@
     font-size: 13.5px;
     font-weight: 500;
     line-height: 1.65;
+  }
+
+  /* 데일리 브리핑 본문 전용 - 좌우 끝까지 채워지는 정렬. word-break은
+     #news-widget 전역 keep-all을 그대로 따라 어절 중간에서 끊기지 않음 */
+  .db2-report-text {
+    text-align: justify;
+    word-break: keep-all;
   }
 
   .cr-sowhat-box {
@@ -2042,6 +2040,39 @@
     }
 
     .nrw-thumb { display: none; }
+  }
+
+  /* =========================================================
+     CEO 리포트 / 데일리 브리핑 모바일 가독성 개선
+     ========================================================= */
+  @media (max-width: 576px) {
+    .cr-issue-item {
+      padding: 14px 10px;
+    }
+
+    .cr-sowhat-box {
+      padding: 14px 11px 14px 16px;
+    }
+
+    .cr-issue-title {
+      font-size: 16.5px;
+      line-height: 1.55;
+    }
+
+    .cr-issue-insight {
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .cr-summary-text {
+      font-size: 16.5px;
+      line-height: 1.8;
+    }
+
+    .cr-sowhat-text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
   }
 
   @media (hover: none) {
@@ -3223,13 +3254,10 @@
     }
 
     if (report.executive_summary) {
-      var summaryBox = document.createElement("div");
-      summaryBox.className = "cr-summary-box";
       var summaryText = document.createElement("p");
       summaryText.className = "cr-summary-text";
       summaryText.textContent = report.executive_summary;
-      summaryBox.appendChild(summaryText);
-      el.appendChild(summaryBox);
+      el.appendChild(summaryText);
     }
 
     var issues = report.top_issues || [];
@@ -3365,7 +3393,7 @@
       body.appendChild(title);
 
       var text = document.createElement("p");
-      text.className = "cr-issue-insight";
+      text.className = "cr-issue-insight db2-report-text";
       text.textContent = report.body || "";
       body.appendChild(text);
 
