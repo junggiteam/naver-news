@@ -39,8 +39,8 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
-          # (임시) REPORT_SLOTS(오전판) 실제 편입 검증용 - 확인 끝나면 제거
-          SCHEDULED_NOW_OVERRIDE: "2026-07-31T12:06:00+09:00"
+          # (임시) REPORT_SLOTS(저녁판) 실제 편입 + 스키마 정리 재검증용 - 확인 끝나면 제거
+          SCHEDULED_NOW_OVERRIDE: "2026-07-31T18:30:00+09:00"
         run: python run_scheduled.py
 
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
