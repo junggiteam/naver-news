@@ -207,29 +207,41 @@
       <p class="ew-updated" id="pw-updated">업데이트 시간 불러오는 중...</p>
     </div>
 
-    <h3 class="db-section-title">다가오는 경제 일정</h3>
-    <div class="pw-calendar-list" id="pw-calendar-list">
-      <p class="ew-loading">불러오는 중입니다...</p>
-    </div>
-
-    <h3 class="db-section-title" style="margin-top:28px;">거시경제 지표</h3>
+    <h3 class="db-section-title">거시경제 지표</h3>
     <div class="sw-indices pw-macro-grid" id="pw-macro-indices">
       <p class="sw-loading">불러오는 중입니다...</p>
     </div>
 
-    <h3 class="db-section-title" style="margin-top:28px;">주요 공시 (DART)</h3>
-    <div class="pw-dart-list" id="pw-dart-list">
+    <h3 class="db-section-title" style="margin-top:28px;">다가오는 경제 일정</h3>
+    <div class="pw-calendar-list pw-2col" id="pw-calendar-list">
       <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+    <div class="pw-more-wrap">
+      <button class="nrw-more-btn" id="pw-calendar-more-btn" style="display:none;">더보기</button>
+    </div>
+
+    <h3 class="db-section-title" style="margin-top:28px;">주요 공시 (DART)</h3>
+    <div class="pw-dart-list pw-2col" id="pw-dart-list">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+    <div class="pw-more-wrap">
+      <button class="nrw-more-btn" id="pw-dart-more-btn" style="display:none;">더보기</button>
     </div>
 
     <h3 class="db-section-title" style="margin-top:28px;">정부지원사업</h3>
-    <div class="pw-support-list" id="pw-support-list">
+    <div class="pw-support-list pw-2col" id="pw-support-list">
       <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+    <div class="pw-more-wrap">
+      <button class="nrw-more-btn" id="pw-support-more-btn" style="display:none;">더보기</button>
     </div>
 
     <h3 class="db-section-title" style="margin-top:28px;">소상공인 정책자금</h3>
-    <div class="pw-support-list" id="pw-soso-list">
+    <div class="pw-support-list pw-2col" id="pw-soso-list">
       <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+    <div class="pw-more-wrap">
+      <button class="nrw-more-btn" id="pw-soso-more-btn" style="display:none;">더보기</button>
     </div>
 
     <div class="nw-footer">공시 정보 출처 : 금융감독원 DART · 지표 출처 : 한국은행 ECOS · 지원사업 출처 : 기업마당</div>
@@ -1482,6 +1494,17 @@
     margin: 0 0 8px;
   }
 
+  /* PC: 2열, 모바일에서는 760px 미디어쿼리에서 1열로 전환 */
+  .pw-2col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .pw-more-wrap {
+    margin: 4px 0 28px;
+    text-align: center;
+  }
+
   .pw-calendar-item {
     display: flex;
     align-items: center;
@@ -1860,6 +1883,7 @@
 
     .sw-indices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pw-macro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pw-2col { grid-template-columns: 1fr; }
 
     /* 모바일 뉴스 피드: 이미지 좌측 + 본문 우측 1열 */
     .ew-grid {
@@ -3057,34 +3081,63 @@
   }
 
   /* ---------- 정책·캘린더 탭 (신규) ---------- */
-  function renderCalendar(events) {
-    var el = document.getElementById("pw-calendar-list");
+  // 경제일정/공시/지원사업/소상공인 4개 섹션이 PC 2열로 바뀌면서 항목이
+  // 많으면 스크롤이 길어지므로, 뉴스랭킹 탭의 "더보기" 패턴을 재사용해
+  // 섹션별로 독립적인 펼침 상태를 관리한다.
+  var PW_INITIAL_COUNT = 6;
+  var pwExpanded = {};
+
+  function renderPwList(containerId, moreBtnId, items, buildItemFn, emptyMessage) {
+    var el = document.getElementById(containerId);
+    var moreBtn = document.getElementById(moreBtnId);
     el.innerHTML = "";
-    if (!events || !events.length) {
-      el.innerHTML = '<p class="ew-loading">예정된 일정이 없습니다.</p>';
+    if (!items || !items.length) {
+      el.innerHTML = '<p class="ew-loading">' + emptyMessage + '</p>';
+      if (moreBtn) moreBtn.style.display = "none";
       return;
     }
-    events.forEach(function (ev) {
-      var item = document.createElement("div");
-      item.className = "pw-calendar-item";
+    var expanded = !!pwExpanded[containerId];
+    var count = expanded ? items.length : PW_INITIAL_COUNT;
+    for (var i = 0; i < count && i < items.length; i++) {
+      el.appendChild(buildItemFn(items[i]));
+    }
+    if (!moreBtn) return;
+    if (items.length > PW_INITIAL_COUNT) {
+      moreBtn.style.display = "inline-block";
+      moreBtn.textContent = expanded ? "접기" : "더보기 (" + items.length + "개)";
+      moreBtn.onclick = function () {
+        pwExpanded[containerId] = !pwExpanded[containerId];
+        renderPwList(containerId, moreBtnId, items, buildItemFn, emptyMessage);
+      };
+    } else {
+      moreBtn.style.display = "none";
+    }
+  }
 
-      var date = document.createElement("span");
-      date.className = "pw-calendar-date";
-      date.textContent = ev.date;
+  function buildCalendarItem(ev) {
+    var item = document.createElement("div");
+    item.className = "pw-calendar-item";
 
-      var flag = document.createElement("span");
-      flag.className = "pw-calendar-flag";
-      flag.textContent = ev.country === "KR" ? "🇰🇷" : "🇺🇸";
+    var date = document.createElement("span");
+    date.className = "pw-calendar-date";
+    date.textContent = ev.date;
 
-      var name = document.createElement("span");
-      name.className = "pw-calendar-name";
-      name.textContent = ev.event;
+    var flag = document.createElement("span");
+    flag.className = "pw-calendar-flag";
+    flag.textContent = ev.country === "KR" ? "🇰🇷" : "🇺🇸";
 
-      item.appendChild(date);
-      item.appendChild(flag);
-      item.appendChild(name);
-      el.appendChild(item);
-    });
+    var name = document.createElement("span");
+    name.className = "pw-calendar-name";
+    name.textContent = ev.event;
+
+    item.appendChild(date);
+    item.appendChild(flag);
+    item.appendChild(name);
+    return item;
+  }
+
+  function renderCalendar(events) {
+    renderPwList("pw-calendar-list", "pw-calendar-more-btn", events, buildCalendarItem, "예정된 일정이 없습니다.");
   }
 
   function renderMacroIndices(indicators) {
@@ -3118,74 +3171,66 @@
     });
   }
 
-  function renderDartFilings(filings) {
-    var el = document.getElementById("pw-dart-list");
-    el.innerHTML = "";
-    if (!filings || !filings.length) {
-      el.innerHTML = '<p class="ew-loading">오늘 등록된 주요 공시가 없습니다.</p>';
-      return;
+  function buildDartItem(f) {
+    var a = document.createElement("a");
+    a.className = "pw-dart-item";
+    a.href = f.link || "#";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+
+    var top = document.createElement("div");
+    top.className = "pw-dart-top";
+    var corp = document.createElement("span");
+    corp.className = "pw-dart-corp";
+    corp.textContent = f.corp_name;
+    var title = document.createElement("span");
+    title.className = "pw-dart-title";
+    title.textContent = f.report_nm;
+    top.appendChild(corp);
+    top.appendChild(title);
+    a.appendChild(top);
+
+    if (f.ai_explanation) {
+      var desc = document.createElement("p");
+      desc.className = "pw-dart-desc";
+      desc.textContent = f.ai_explanation;
+      a.appendChild(desc);
     }
-    filings.forEach(function (f) {
-      var a = document.createElement("a");
-      a.className = "pw-dart-item";
-      a.href = f.link || "#";
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
 
-      var top = document.createElement("div");
-      top.className = "pw-dart-top";
-      var corp = document.createElement("span");
-      corp.className = "pw-dart-corp";
-      corp.textContent = f.corp_name;
-      var title = document.createElement("span");
-      title.className = "pw-dart-title";
-      title.textContent = f.report_nm;
-      top.appendChild(corp);
-      top.appendChild(title);
-      a.appendChild(top);
-
-      if (f.ai_explanation) {
-        var desc = document.createElement("p");
-        desc.className = "pw-dart-desc";
-        desc.textContent = f.ai_explanation;
-        a.appendChild(desc);
-      }
-
-      el.appendChild(a);
-    });
+    return a;
   }
 
-  function renderSupportPrograms(elId, programs) {
-    var el = document.getElementById(elId);
-    el.innerHTML = "";
-    if (!programs || !programs.length) {
-      el.innerHTML = '<p class="ew-loading">현재 표시할 공고가 없습니다.</p>';
-      return;
-    }
-    programs.forEach(function (p) {
-      var a = document.createElement("a");
-      a.className = "pw-support-item";
-      a.href = p.link || "#";
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
+  function renderDartFilings(filings) {
+    renderPwList("pw-dart-list", "pw-dart-more-btn", filings, buildDartItem, "오늘 등록된 주요 공시가 없습니다.");
+  }
 
-      var badge = document.createElement("span");
-      badge.className = "ew-press-badge";
-      badge.textContent = p.org || p.target || "";
-      a.appendChild(badge);
+  function buildSupportItem(p) {
+    var a = document.createElement("a");
+    a.className = "pw-support-item";
+    a.href = p.link || "#";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
 
-      var title = document.createElement("p");
-      title.className = "pw-support-title";
-      title.textContent = p.title;
-      a.appendChild(title);
+    var badge = document.createElement("span");
+    badge.className = "ew-press-badge";
+    badge.textContent = p.org || p.target || "";
+    a.appendChild(badge);
 
-      var meta = document.createElement("p");
-      meta.className = "sw-cat-meta";
-      meta.textContent = p.apply_period || "";
-      a.appendChild(meta);
+    var title = document.createElement("p");
+    title.className = "pw-support-title";
+    title.textContent = p.title;
+    a.appendChild(title);
 
-      el.appendChild(a);
-    });
+    var meta = document.createElement("p");
+    meta.className = "sw-cat-meta";
+    meta.textContent = p.apply_period || "";
+    a.appendChild(meta);
+
+    return a;
+  }
+
+  function renderSupportPrograms(elId, moreBtnId, programs) {
+    renderPwList(elId, moreBtnId, programs, buildSupportItem, "현재 표시할 공고가 없습니다.");
   }
 
   function loadPolicy() {
@@ -3197,8 +3242,8 @@
         renderCalendar(data.economic_calendar);
         renderMacroIndices(data.macro_indicators);
         renderDartFilings(data.dart_filings);
-        renderSupportPrograms("pw-support-list", data.support_programs);
-        renderSupportPrograms("pw-soso-list", data.soso_support_programs);
+        renderSupportPrograms("pw-support-list", "pw-support-more-btn", data.support_programs);
+        renderSupportPrograms("pw-soso-list", "pw-soso-more-btn", data.soso_support_programs);
         loaded.policy = true;
       })
       .catch(function (err) {
