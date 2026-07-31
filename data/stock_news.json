@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31 23:00:59",
+  "updated_at": "2026-07-31 23:30:56",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "52,358.52",
-      "change_percent": "▲0.29%",
-      "direction": "up",
-      "as_of": "2026-07-31 23:00:12"
+      "value": "52,047.50",
+      "change_percent": "▼0.31%",
+      "direction": "down",
+      "as_of": "2026-07-31 23:30:01"
     },
     {
       "name": "나스닥",
-      "value": "25,258.47",
-      "change_percent": "▲0.54%",
-      "direction": "up",
-      "as_of": "2026-07-31 23:00:11"
+      "value": "25,037.13",
+      "change_percent": "▼0.34%",
+      "direction": "down",
+      "as_of": "2026-07-31 23:30:01"
     },
     {
       "name": "S&P500",
-      "value": "7,445.74",
-      "change_percent": "▲0.11%",
-      "direction": "up",
-      "as_of": "2026-07-31 23:00:12"
+      "value": "7,409.23",
+      "change_percent": "▼0.38%",
+      "direction": "down",
+      "as_of": "2026-07-31 23:30:01"
     },
     {
       "name": "국내금(원/돈)",
-      "value": "699,762.71",
-      "change_percent": "▼0.88%",
+      "value": "700,638",
+      "change_percent": "▼0.76%",
       "direction": "down",
-      "as_of": "2026.07.31 22:59"
+      "as_of": "2026.07.31 23:29"
     },
     {
       "name": "휘발유(원/리터)",
@@ -59,24 +59,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,440.10",
-      "change_percent": "▲0.97%",
+      "value": "1,438.80",
+      "change_percent": "▲0.88%",
       "direction": "up",
-      "as_of": "2026.07.31 21:03"
+      "as_of": "2026.07.31 21:04"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "902.59",
-      "change_percent": "▲1.06%",
+      "value": "903.49",
+      "change_percent": "▲1.17%",
       "direction": "up",
-      "as_of": "2026.07.31 21:03"
+      "as_of": "2026.07.31 21:04"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,651.35",
-      "change_percent": "▲0.43%",
+      "value": "1,651.67",
+      "change_percent": "▲0.45%",
       "direction": "up",
-      "as_of": "2026.07.31 21:03"
+      "as_of": "2026.07.31 21:04"
     },
     {
       "name": "국고채(3년)",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,677,000",
-      "change_percent": "▼1.03%",
+      "value": "90,151,000",
+      "change_percent": "▼1.60%",
       "direction": "down",
-      "as_of": "2026-07-31 23:00:58"
+      "as_of": "2026-07-31 23:30:55"
     }
   ],
   "news_categories": [
@@ -188,8 +188,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "조선비즈",
           "rank": 1,
+          "title": "아마존 급등에도 애플 약세… 뉴욕증시 혼조 출발",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001183615&office_id=366&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
+          "upload_time": "2026-07-31 23:21",
+          "published_at": "2026-07-31T23:21:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
           "title": "\"이제야 알겠다\"…270% 벌던 20대 투자 천재, 반도체주 급등락 원인이었나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797499&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 21:35",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 3,
           "title": "머스크, 테슬라 中사업부 매각 검토설에 \"가짜뉴스\" 반박",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797495&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 20:24",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "[실적리뷰]애플, 서비스 사업 성장 둔화 '우려'…비중 축소에 목표주가 '하향'-바...",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006341574&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 20:04",
@@ -213,19 +221,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 5,
           "title": "AI 고속도로 먼저 깐 아마존 통행세 급증…도로깔 때마다 돈 버는 삼전닉스도 함박웃음 [플러스 관심종목]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715195&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
           "upload_time": "2026-07-31 19:55",
           "published_at": "2026-07-31T19:55:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "[실적리뷰]애플, 제품 가격 인상으로 마진 압박 완화…투심 개선 기대",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006341572&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260731&page=1",
-          "upload_time": "2026-07-31 19:42",
-          "published_at": "2026-07-31T19:42:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "아마존 등 글로벌 빅테크 기업들이 인공지능 분야에서 긍정적인 실적을 발표하며 투자 심리가 개선된 것이 국내 증시 반등의 주요 원인으로 작용했다. 여기에 반도체 관련 종목들이 강세를 보이고 실적 개선 기업에 대한 기대감이 더해지면서 코스피와 코스닥 지수가 동반 상승했다.",
+  "ai_commentary": "미국 증시에서 아마존 등 빅테크 기업들이 인공지능 관련 실적 호조로 상승세를 보이면서 국내 반도체 관련주를 중심으로 매수세가 유입되어 지수가 급등했다. 연이은 급락에 따른 반발 매수 심리가 작용했고, 시장 내 특정 반도체 종목이 상한가를 기록하는 등 주요 대형주가 지수 상승을 주도했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
