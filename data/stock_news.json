@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31 21:01:05",
+  "updated_at": "2026-07-31 21:30:52",
   "indices": [
     {
       "name": "코스피",
@@ -45,10 +45,10 @@
     },
     {
       "name": "국내금(원/돈)",
-      "value": "705,108.6",
-      "change_percent": "▼0.12%",
+      "value": "704,430.71",
+      "change_percent": "▼0.22%",
       "direction": "down",
-      "as_of": "2026.07.31 20:59"
+      "as_of": "2026.07.31 21:29"
     },
     {
       "name": "휘발유(원/리터)",
@@ -62,21 +62,21 @@
       "value": "1,442.40",
       "change_percent": "▲1.14%",
       "direction": "up",
-      "as_of": "2026.07.31 20:58"
+      "as_of": "2026.07.31 21:00"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "900.38",
-      "change_percent": "▲0.82%",
+      "value": "899.56",
+      "change_percent": "▲0.73%",
       "direction": "up",
-      "as_of": "2026.07.31 20:59"
+      "as_of": "2026.07.31 21:00"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,656.93",
-      "change_percent": "▲0.77%",
+      "value": "1,656.60",
+      "change_percent": "▲0.75%",
       "direction": "up",
-      "as_of": "2026.07.31 20:59"
+      "as_of": "2026.07.31 21:00"
     },
     {
       "name": "국고채(3년)",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,256,000",
-      "change_percent": "▼0.40%",
+      "value": "91,151,000",
+      "change_percent": "▼0.51%",
       "direction": "down",
-      "as_of": "2026-07-31 21:01:01"
+      "as_of": "2026-07-31 21:30:46"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "연합뉴스TV",
           "rank": 1,
+          "title": "코스피 단숨에 1,000p 대반등…SK하이닉스 첫 상한가",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891133&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260731&page=1",
+          "upload_time": "2026-07-31 21:01",
+          "published_at": "2026-07-31T21:01:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
           "title": "엘앤씨바이오, 1400억 주주배정 유증 결정…ECM 생산 거점 구축",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647455&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260731&page=1",
           "upload_time": "2026-07-31 19:35",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 3,
           "title": "예탁금 3천만원 첫날 거래대금 '뚝'…\"뒷북 대책\" 지적도",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891110&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260731&page=1",
           "upload_time": "2026-07-31 19:15",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 4,
           "title": "로이터 “韓 개인투자자, 학살 행위에 분노…국회 앞 근조화환”",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715134&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260731&page=1",
           "upload_time": "2026-07-31 18:25",
@@ -123,19 +131,11 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "[영상] \"하루에도 수십번씩 확인\"…병원 찾는 개미 투자자들",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016227607&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260731&page=1",
           "upload_time": "2026-07-31 18:22",
           "published_at": "2026-07-31T18:22:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 5,
-          "title": "카지노 코스피 … 하루만에 18% 폭등",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715132&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260731&page=1",
-          "upload_time": "2026-07-31 18:15",
-          "published_at": "2026-07-31T18:15:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "개인 투자자들의 시장 참여와 반도체 등 주요 종목에 대한 관심이 집중되면서 코스피와 코스닥 지수가 큰 폭으로 상승했다. 시장 전반의 변동성이 확대되는 가운데 일부 기업의 실적 개선 기대감과 개인 투자자들의 강한 매수세가 지수 움직임에 영향을 미쳤다.",
+  "ai_commentary": "최근 반도체 산업의 실적 호조와 AI 관련 시장의 성장세가 부각되면서 코스피와 코스닥 지수가 큰 폭으로 상승했다. 시장 전반의 투심이 개선되는 가운데, 반도체 대형주를 중심으로 매수세가 유입되며 지수 상승을 견인했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
