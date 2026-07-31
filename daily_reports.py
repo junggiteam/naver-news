@@ -184,16 +184,24 @@ def _generate_reports(materials, report_type):
     return reports
 
 
+VALID_REPORT_TYPES = ("morning", "evening")
+
+
 def _save_edition(report_type, basis, reports):
     """daily_reports.json에서 report_type 판(오전/저녁)만 갱신하고 다른 판은
-    보존한다."""
+    보존한다. morning/evening 구조 도입 이전의 평면 스키마(카테고리명이
+    reports 바로 아래 있던 구버전) 잔재가 있으면 함께 정리한다."""
     output = _load_json(REPORTS_FILE)
-    output.setdefault("reports", {})
-    output["reports"][report_type] = {
+    existing_reports = output.get("reports", {})
+    # 구버전 스키마 잔재 제거: morning/evening이 아닌 키(예: 예전 "시황" 등)는 버림
+    cleaned_reports = {k: v for k, v in existing_reports.items() if k in VALID_REPORT_TYPES}
+
+    cleaned_reports[report_type] = {
         "generated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "basis": basis,
         **reports,
     }
+    output["reports"] = cleaned_reports
     output["updated_at"] = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
 
     os.makedirs("data", exist_ok=True)
