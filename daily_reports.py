@@ -173,13 +173,40 @@ def _build_investment_material_morning(stock_data):
     return "\n".join(lines)
 
 
+# CLAUDE.md 6번 원칙 - 과거 전체 기록과 비교하는 느낌을 주는 미검증 표현
+# 목록. 프롬프트 지침만으로는 100% 지켜지지 않는 경우가 실제로 확인돼서
+# (예: "기록적인 반등"), 생성 후 후처리 검증으로 한 번 더 걸러낸다.
+BANNED_SUPERLATIVE_WORDS = ["역대", "최고", "최대", "사상 처음", "기록적"]
+
+
+def _contains_banned_expression(report):
+    if not report:
+        return False
+    text = f"{report.get('title', '')} {report.get('body', '')}"
+    return any(word in text for word in BANNED_SUPERLATIVE_WORDS)
+
+
+def _generate_checked_report(category, material, report_type):
+    """금지 표현(BANNED_SUPERLATIVE_WORDS) 포함 시 1회 자동 재생성.
+    재생성해도 또 걸리면 해당 카테고리는 이번 판에서 생략(None) - 전체
+    발행을 막지 않고 그 카테고리만 스킵한다."""
+    report = ai_briefing.generate_category_report(category, material, report_type=report_type)
+    if _contains_banned_expression(report):
+        print(f"[daily_reports:{report_type}] {category} 금지 표현 감지 - 1회 재생성 시도")
+        report = ai_briefing.generate_category_report(category, material, report_type=report_type)
+        if _contains_banned_expression(report):
+            print(f"[daily_reports:{report_type}] {category} 재생성 후에도 금지 표현 감지 - 이번 판에서 생략")
+            return None
+    return report
+
+
 def _generate_reports(materials, report_type):
     reports = {}
     for category in CATEGORIES:
         material = materials[category]
-        report = ai_briefing.generate_category_report(category, material, report_type=report_type)
+        report = _generate_checked_report(category, material, report_type)
         reports[category] = report
-        status = "생성됨" if report else "생략됨(재료 없음/키 없음/호출 실패)"
+        status = "생성됨" if report else "생략됨(재료 없음/키 없음/호출 실패/금지 표현 재생성 실패)"
         print(f"[daily_reports:{report_type}] {category} {status}")
     return reports
 
