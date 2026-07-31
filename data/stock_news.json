@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01 06:32:59",
+  "updated_at": "2026-08-01 07:00:55",
   "indices": [
     {
       "name": "코스피",
@@ -27,7 +27,7 @@
       "value": "52,485.03",
       "change_percent": "▲0.53%",
       "direction": "up",
-      "as_of": "2026-08-01 06:22:18"
+      "as_of": "2026-08-01 06:45:02"
     },
     {
       "name": "나스닥",
@@ -41,7 +41,7 @@
       "value": "7,489.72",
       "change_percent": "▲0.70%",
       "direction": "up",
-      "as_of": "2026-08-01 06:32:12"
+      "as_of": "2026-08-01 06:45:04"
     },
     {
       "name": "국내금(원/돈)",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,450,000",
-      "change_percent": "▼1.28%",
+      "value": "90,324,000",
+      "change_percent": "▼1.41%",
       "direction": "down",
-      "as_of": "2026-08-01 06:32:56"
+      "as_of": "2026-08-01 07:00:53"
     }
   ],
   "news_categories": [
@@ -188,8 +188,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "엔비디아, 나흘 만에 시가총액 1위 복귀…애플, 7%대 폭락",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016227959&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260801&page=1",
+          "upload_time": "2026-08-01 06:29",
+          "published_at": "2026-08-01T06:29:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "아마존·MS·알파벳 주주 웃었다…이번주 시총 2000조원↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006341824&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260801&page=1",
           "upload_time": "2026-08-01 05:57",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "뉴욕증시, 아마존 실적 훈풍에 강세 마감…나스닥 1%↑(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016227938&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260801&page=1",
           "upload_time": "2026-08-01 05:53",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "오늘은 아마존이 이끌었다…나스닥 1%↑[월스트리트in]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006341823&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260801&page=1",
           "upload_time": "2026-08-01 05:38",
@@ -213,19 +221,11 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "뉴욕증시, 아마존 실적 훈풍에 강세 마감…나스닥 1%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016227935&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260801&page=1",
           "upload_time": "2026-08-01 05:33",
           "published_at": "2026-08-01T05:33:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "[속보]아마존 15%↑·애플 7%↓ 극과 극…나스닥 1% 상승",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006341820&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260801&page=1",
-          "upload_time": "2026-08-01 05:15",
-          "published_at": "2026-08-01T05:15:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 증시에서 아마존 등 빅테크 기업들의 실적 호조에 따른 투자 심리 개선이 국내 증시에도 긍정적인 영향을 미쳤다. 이에 힘입어 코스피는 SK하이닉스의 상한가 기록 등을 포함해 최근 1일간 최대치인 17.91% 상승했으며, 코스닥 또한 11.63% 오르며 최근 1일간 최대 상승폭을 기록했다.",
+  "ai_commentary": "미국 증시에서 아마존 등 주요 기술주가 실적 호조에 힘입어 강세를 보이면서 국내 시장에도 긍정적인 영향을 미쳤다. 이러한 투자 심리 개선 속에 SK하이닉스의 상한가 기록 등이 반영되며 코스피와 코스닥 지수는 최근 1일간 데이터 기준 각각 최대 등락폭을 기록하며 최고치로 마감했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
