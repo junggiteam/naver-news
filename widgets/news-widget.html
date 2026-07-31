@@ -9,6 +9,7 @@
       <button class="nw-tab" data-tab="stock">증권/주식</button>
       <button class="nw-tab" data-tab="realestate">부동산</button>
       <button class="nw-tab" data-tab="policy">정책·캘린더</button>
+      <button class="nw-tab" data-tab="ceo">CEO 리포트</button>
     </div>
     <button class="nw-tab-arrow nw-tab-arrow-right" type="button" aria-label="다음 메뉴 보기" hidden>›</button>
   </div>
@@ -231,6 +232,20 @@
     </div>
 
     <div class="nw-footer">공시 정보 출처 : 금융감독원 DART · 지표 출처 : 한국은행 ECOS · 지원사업 출처 : 기업마당</div>
+  </div>
+
+  <!-- ===== CEO 리포트 탭 (신규, CEO NOTE 뉴스레터/쏘왓레터 연동) ===== -->
+  <div class="nw-panel" id="panel-ceo" hidden>
+    <div class="ew-header">
+      <h2 class="ew-title">CEO 리포트</h2>
+      <p class="ew-updated" id="cr-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+
+    <div id="cr-content">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+
+    <div class="nw-footer">CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)</div>
   </div>
 </div>
 
@@ -1512,6 +1527,136 @@
 
   .pw-macro-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
+  /* =========================================================
+     CEO 리포트 (신규, CEO NOTE 뉴스레터 연동)
+     ========================================================= */
+  .cr-headline {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    margin: 0 0 14px;
+    padding: 0 12px;
+    border-radius: 999px;
+    color: var(--nw-primary);
+    background: rgba(23, 105, 224, 0.09);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .cr-summary-box {
+    margin: 0 0 24px;
+    padding: 20px 22px;
+    border: 1px solid #d9e9ff;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #edf5ff 0%, #f7fbff 55%, #ffffff 100%);
+    box-shadow: 0 8px 24px rgba(23, 105, 224, 0.06);
+  }
+
+  .cr-summary-text {
+    margin: 0;
+    color: var(--nw-text);
+    font-size: 15.5px;
+    font-weight: 550;
+    line-height: 1.75;
+  }
+
+  .cr-issue-list {
+    display: grid;
+    gap: 12px;
+    margin: 0 0 24px;
+  }
+
+  .cr-issue-item {
+    display: flex;
+    gap: 14px;
+    padding: 18px 20px;
+    border: 1px solid var(--nw-line);
+    border-radius: 18px;
+    background: var(--nw-surface);
+  }
+
+  .cr-issue-number {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--nw-surface-soft);
+    color: var(--nw-navy);
+    font-size: 12.5px;
+    font-weight: 800;
+  }
+
+  .cr-issue-body { flex: 1; min-width: 0; }
+
+  .cr-issue-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    margin: 0 0 8px;
+    padding: 0 10px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .cr-issue-title {
+    margin: 0 0 6px;
+    color: var(--nw-navy);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .cr-issue-insight {
+    margin: 0;
+    color: var(--nw-text-sub);
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+
+  .cr-sowhat-box {
+    position: relative;
+    margin: 0 0 8px;
+    padding: 18px 22px 18px 26px;
+    overflow: hidden;
+    border: 1px solid #ffd9dc;
+    border-radius: 16px;
+    background: #fff5f5;
+  }
+
+  .cr-sowhat-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    background: #F04452;
+  }
+
+  .cr-sowhat-label {
+    display: inline-flex;
+    margin: 0 0 8px;
+    color: #F04452;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .cr-sowhat-text {
+    margin: 0;
+    color: var(--nw-text);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.75;
+  }
+
   /* ===== 맨 위로 버튼 ===== */
   #nrw-top-btn {
     position: fixed;
@@ -1994,9 +2139,10 @@
   var REALESTATE_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/realestate_news.json";
   var DASHBOARD_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dashboard.json";
   var STOCK_HISTORY_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_index_history.json";
+  var CEO_REPORT_URL = "https://script.google.com/macros/s/AKfycbw1IAnWQKm5Idxs__nxWGN0sd9AfU8OGXmcNO4if8cp8ATv0D6ZYUtflvFooy56Na2qIg/exec";
   var INITIAL_COUNT = 9;
 
-  var loaded = { dashboard: false, ranking: false, stock: false, economy: false, realestate: false, policy: false };
+  var loaded = { dashboard: false, ranking: false, stock: false, economy: false, realestate: false, policy: false, ceo: false };
   var keywordFilter = null;
 
   /* ---------- AI 브리핑 / 시황 코멘트 렌더링 (공용) ---------- */
@@ -2356,7 +2502,8 @@
     economy: document.getElementById("panel-economy"),
     stock: document.getElementById("panel-stock"),
     realestate: document.getElementById("panel-realestate"),
-    policy: document.getElementById("panel-policy")
+    policy: document.getElementById("panel-policy"),
+    ceo: document.getElementById("panel-ceo")
   };
 
   function activateTab(key) {
@@ -2374,6 +2521,7 @@
     if (key === "economy" && !loaded.economy) loadEconomy();
     if (key === "realestate" && !loaded.realestate) loadRealestate();
     if (key === "policy" && !loaded.policy) loadPolicy();
+    if (key === "ceo" && !loaded.ceo) loadCeo();
   }
 
   tabs.forEach(function (tab) {
@@ -3016,6 +3164,130 @@
         document.getElementById("pw-calendar-list").innerHTML =
           '<p class="ew-loading">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
         console.error("정책·캘린더 위젯 로드 실패:", err);
+      });
+  }
+
+  /* =========================================================
+     CEO 리포트 (신규, CEO NOTE 뉴스레터/쏘왓레터 연동)
+     Apps Script 웹앱은 daily_reports.json(시황/투자/기업 데일리
+     브리핑)과는 완전히 별개의 시스템 - 9개 카테고리를 다루는
+     자체 리포트다. 응답은 날짜별 배열이며 각 항목은
+     {date, vol, articles[], report} 구조. report는 그 날짜의
+     리포트가 아직 생성되지 않았으면 null일 수 있다.
+     ========================================================= */
+  var CEO_BADGE_COLORS = ["#3182F6", "#F04452", "#00C471", "#F5A623"];
+  var ceoCategoryColorMap = {};
+  var ceoColorIndex = 0;
+  function getCeoCategoryColor(category) {
+    if (!ceoCategoryColorMap[category]) {
+      ceoCategoryColorMap[category] = CEO_BADGE_COLORS[ceoColorIndex % CEO_BADGE_COLORS.length];
+      ceoColorIndex++;
+    }
+    return ceoCategoryColorMap[category];
+  }
+
+  function renderCeoReport(entry) {
+    var el = document.getElementById("cr-content");
+    el.innerHTML = "";
+
+    if (!entry || !entry.report) {
+      el.innerHTML = '<p class="ew-loading">아직 오늘의 CEO 리포트가 준비되지 않았습니다.</p>';
+      return;
+    }
+
+    var report = entry.report;
+
+    if (report.headline) {
+      var headline = document.createElement("p");
+      headline.className = "cr-headline";
+      headline.textContent = report.headline;
+      el.appendChild(headline);
+    }
+
+    if (report.executive_summary) {
+      var summaryBox = document.createElement("div");
+      summaryBox.className = "cr-summary-box";
+      var summaryText = document.createElement("p");
+      summaryText.className = "cr-summary-text";
+      summaryText.textContent = report.executive_summary;
+      summaryBox.appendChild(summaryText);
+      el.appendChild(summaryBox);
+    }
+
+    var issues = report.top_issues || [];
+    if (issues.length) {
+      var issueList = document.createElement("div");
+      issueList.className = "cr-issue-list";
+      issues.forEach(function (issue, idx) {
+        var item = document.createElement("div");
+        item.className = "cr-issue-item";
+
+        var number = document.createElement("span");
+        number.className = "cr-issue-number";
+        number.textContent = String(idx + 1);
+        item.appendChild(number);
+
+        var body = document.createElement("div");
+        body.className = "cr-issue-body";
+
+        if (issue.category) {
+          var badge = document.createElement("span");
+          badge.className = "cr-issue-badge";
+          badge.textContent = issue.category;
+          badge.style.background = getCeoCategoryColor(issue.category);
+          body.appendChild(badge);
+        }
+
+        var title = document.createElement("p");
+        title.className = "cr-issue-title";
+        title.textContent = issue.title || "";
+        body.appendChild(title);
+
+        var insight = document.createElement("p");
+        insight.className = "cr-issue-insight";
+        insight.textContent = issue.insight || "";
+        body.appendChild(insight);
+
+        item.appendChild(body);
+        issueList.appendChild(item);
+      });
+      el.appendChild(issueList);
+    }
+
+    if (report.overall_sowhat) {
+      var sowhatBox = document.createElement("div");
+      sowhatBox.className = "cr-sowhat-box";
+      var sowhatLabel = document.createElement("p");
+      sowhatLabel.className = "cr-sowhat-label";
+      sowhatLabel.textContent = "종합 시사점";
+      sowhatBox.appendChild(sowhatLabel);
+      var sowhatText = document.createElement("p");
+      sowhatText.className = "cr-sowhat-text";
+      sowhatText.textContent = report.overall_sowhat;
+      sowhatBox.appendChild(sowhatText);
+      el.appendChild(sowhatBox);
+    }
+  }
+
+  function loadCeo() {
+    fetch(CEO_REPORT_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var list = Array.isArray(data) ? data : [];
+        var latest = list.reduce(function (a, b) {
+          if (!a) return b;
+          if (!b) return a;
+          return a.date > b.date ? a : b;
+        }, null);
+        document.getElementById("cr-updated").textContent =
+          latest && latest.date ? latest.date + " 기준" : "";
+        renderCeoReport(latest);
+        loaded.ceo = true;
+      })
+      .catch(function (err) {
+        document.getElementById("cr-content").innerHTML =
+          '<p class="ew-loading">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("CEO 리포트 위젯 로드 실패:", err);
       });
   }
 
