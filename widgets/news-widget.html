@@ -289,13 +289,32 @@
     --nw-shadow-sm: 0 6px 20px rgba(16, 29, 53, 0.06);
     --nw-shadow-md: 0 14px 34px rgba(16, 29, 53, 0.10);
 
+    /* =========================================================
+       타이포그래피 표준 (쏘왓레터 뉴스레터 본문 스타일 기준, CLAUDE.md
+       "타이포그래피 표준" 섹션과 동일 - 새 탭/컴포넌트도 이 변수를 따를 것)
+       ========================================================= */
+    --nw-font-stack: 'Pretendard', 'Helvetica Neue', 'Helvetica', 'Arial', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    --nw-title-weight: 600;
+    --nw-title-size: 22px;
+    --nw-title-ls: -0.04em;
+    --nw-title-lh: 26px;
+    --nw-title-color: #1A1A1B;
+    --nw-body-weight: 400;
+    --nw-body-size: 18px;
+    --nw-body-ls: -0.02em;
+    --nw-body-lh: 28px;
+    --nw-body-color: #1A1A1B;
+    --nw-link-color: #005AFF;
+    --nw-sowhat-bg: #FDF7F7;
+    --nw-sowhat-title-color: #d12f30;
+
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
     padding: 28px 24px 48px;
     overflow: hidden;
     color: var(--nw-text);
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    font-family: var(--nw-font-stack);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
@@ -533,10 +552,11 @@
     position: relative;
     margin: 0;
     padding-left: 15px;
-    color: var(--nw-text);
-    font-size: 15px;
-    font-weight: 550;
-    line-height: 1.6;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
   }
 
   .ai-briefing-list li::before {
@@ -552,10 +572,11 @@
 
   .ai-commentary-text {
     margin: 0;
-    color: var(--nw-text-sub);
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.7;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
   }
 
   /* ===== 오늘의 경제 용어 (신규) ===== */
@@ -749,11 +770,11 @@
     display: -webkit-box;
     margin: 0 0 12px;
     overflow: hidden;
-    color: var(--nw-navy);
-    font-size: 17px;
-    font-weight: 750;
-    line-height: 1.45;
-    letter-spacing: -0.03em;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
@@ -1159,11 +1180,11 @@
   .nrw-item-title {
     display: -webkit-box;
     overflow: hidden;
-    color: var(--nw-text);
-    font-size: 14px;
-    font-weight: 650;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     transition: color 0.16s ease;
@@ -1344,10 +1365,11 @@
   .sw-cat-item-title {
     display: -webkit-box;
     overflow: hidden;
-    color: var(--nw-text-sub);
-    font-size: 14px;
-    font-weight: 650;
-    line-height: 1.5;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     transition: color 0.16s ease;
@@ -1424,11 +1446,11 @@
     display: -webkit-box;
     margin: 0 0 11px;
     overflow: hidden;
-    color: var(--nw-text);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: -0.025em;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     transition: color 0.16s ease;
@@ -1513,9 +1535,11 @@
   }
 
   .pw-dart-corp {
-    color: var(--nw-navy);
-    font-size: 14px;
-    font-weight: 800;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
   }
 
   .pw-dart-title {
@@ -1526,18 +1550,20 @@
 
   .pw-dart-desc {
     margin: 0;
-    color: var(--nw-text-sub);
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.6;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
   }
 
   .pw-support-title {
     margin: 0 0 6px;
-    color: var(--nw-text);
-    font-size: 14.5px;
-    font-weight: 700;
-    line-height: 1.5;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
   }
 
   .pw-macro-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1561,10 +1587,11 @@
 
   .cr-summary-text {
     margin: 0 0 24px;
-    color: var(--nw-text);
-    font-size: 15.5px;
-    font-weight: 550;
-    line-height: 1.75;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
   }
 
   .cr-issue-list {
@@ -1580,20 +1607,6 @@
     border: 1px solid var(--nw-line);
     border-radius: 18px;
     background: var(--nw-surface);
-  }
-
-  .cr-issue-number {
-    display: flex;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: var(--nw-surface-soft);
-    color: var(--nw-navy);
-    font-size: 12.5px;
-    font-weight: 800;
   }
 
   .cr-issue-body { flex: 1; min-width: 0; }
@@ -1613,25 +1626,27 @@
 
   .cr-issue-title {
     margin: 0 0 6px;
-    color: var(--nw-navy);
-    font-size: 15px;
-    font-weight: 800;
-    line-height: 1.5;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
   }
 
   .cr-issue-insight {
     margin: 0;
-    color: var(--nw-text-sub);
-    font-size: 13.5px;
-    font-weight: 500;
-    line-height: 1.65;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
   }
 
-  /* 데일리 브리핑 본문 전용 - 좌우 끝까지 채워지는 정렬. word-break은
-     #news-widget 전역 keep-all을 그대로 따라 어절 중간에서 끊기지 않음 */
+  /* 데일리 브리핑 본문 전용 - justify는 한글에서 단어 간격이 불균등하게
+     벌어지는 문제가 있어 좌측 정렬로 되돌림 (word-break keep-all은
+     #news-widget 전역 설정을 그대로 따름) */
   .db2-report-text {
-    text-align: justify;
-    word-break: keep-all;
+    text-align: left;
   }
 
   .cr-sowhat-box {
@@ -1641,7 +1656,7 @@
     overflow: hidden;
     border: 1px solid #ffd9dc;
     border-radius: 16px;
-    background: #fff5f5;
+    background: var(--nw-sowhat-bg);
   }
 
   .cr-sowhat-box::before {
@@ -1657,17 +1672,18 @@
   .cr-sowhat-label {
     display: inline-flex;
     margin: 0 0 8px;
-    color: #F04452;
+    color: var(--nw-sowhat-title-color);
     font-size: 13px;
     font-weight: 800;
   }
 
   .cr-sowhat-text {
     margin: 0;
-    color: var(--nw-text);
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.75;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
   }
 
   /* ===== 맨 위로 버튼 ===== */
@@ -2045,6 +2061,8 @@
   /* =========================================================
      CEO 리포트 / 데일리 브리핑 모바일 가독성 개선
      ========================================================= */
+  /* 폰트 크기는 새 타이포그래피 표준(제목/본문 변수)이 화면 폭과 무관하게
+     고정 적용되므로 여기서는 여백만 모바일 기준으로 축소 */
   @media (max-width: 576px) {
     .cr-issue-item {
       padding: 14px 10px;
@@ -2052,26 +2070,6 @@
 
     .cr-sowhat-box {
       padding: 14px 11px 14px 16px;
-    }
-
-    .cr-issue-title {
-      font-size: 16.5px;
-      line-height: 1.55;
-    }
-
-    .cr-issue-insight {
-      font-size: 15px;
-      line-height: 1.75;
-    }
-
-    .cr-summary-text {
-      font-size: 16.5px;
-      line-height: 1.8;
-    }
-
-    .cr-sowhat-text {
-      font-size: 16px;
-      line-height: 1.8;
     }
   }
 
@@ -2105,10 +2103,10 @@
      아임웹 전역 h2/h3 스타일 충돌 방지 - 제목 크기 고정
      ========================================================= */
   #news-widget .db-hero-title {
-    font-size: 17px !important;
-    line-height: 1.45 !important;
-    font-weight: 750 !important;
-    letter-spacing: -0.03em !important;
+    font-size: var(--nw-title-size) !important;
+    line-height: var(--nw-title-lh) !important;
+    font-weight: var(--nw-title-weight) !important;
+    letter-spacing: var(--nw-title-ls) !important;
   }
 
   #news-widget .db-section-title {
@@ -2136,16 +2134,15 @@
   #news-widget .ew-card-title,
   #news-widget .nrw-item-title,
   #news-widget .sw-cat-item-title {
-    font-size: 14px !important;
-    line-height: 1.5 !important;
+    font-size: var(--nw-title-size) !important;
+    line-height: var(--nw-title-lh) !important;
+    font-weight: var(--nw-title-weight) !important;
+    letter-spacing: var(--nw-title-ls) !important;
   }
 
+  /* db-hero-title은 새 타이포그래피 표준(22px)을 화면 폭과 무관하게
+     고정 적용 - 더 이상 뷰포트별로 줄이지 않음 */
   @media (max-width: 760px) {
-    #news-widget .db-hero-title {
-      font-size: 15px !important;
-      line-height: 1.45 !important;
-    }
-
     #news-widget .db-section-title {
       font-size: 17px !important;
     }
@@ -2158,11 +2155,6 @@
   }
 
   @media (max-width: 480px) {
-    #news-widget .db-hero-title {
-      font-size: 14px !important;
-      line-height: 1.42 !important;
-    }
-
     #news-widget .db-section-title {
       font-size: 16px !important;
     }
@@ -3267,11 +3259,6 @@
       issues.forEach(function (issue, idx) {
         var item = document.createElement("div");
         item.className = "cr-issue-item";
-
-        var number = document.createElement("span");
-        number.className = "cr-issue-number";
-        number.textContent = String(idx + 1);
-        item.appendChild(number);
 
         var body = document.createElement("div");
         body.className = "cr-issue-body";

@@ -39,3 +39,28 @@
      주어져서 그 비교가 사실로 확인된 경우에만 쓸 것. 오늘 수치가 아무리
      커도 그것만으로 이런 단정적 표현을 쓰지 말 것 - 비교 대상 과거 기록이
      자료에 없으면 이런 유형의 표현 자체를 쓰지 말 것
+
+# 프로젝트 원칙: 타이포그래피 표준
+
+`widgets/news-widget.html` 등 프론트엔드 위젯에 새 탭/컴포넌트를 추가하거나
+기존 텍스트 스타일을 만질 때는, 개별 요소마다 임의로 폰트 크기를 정하지
+말고 아래 표준(쏘왓레터 뉴스레터 본문 스타일 기준)을 따를 것. 위젯의
+`#news-widget` CSS 변수로 이미 정의돼 있으므로 새 요소도 인라인 스타일이
+아니라 이 변수를 참조할 것.
+
+- 폰트 스택: `'Pretendard','Helvetica Neue','Helvetica','Arial','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif`
+  (`--nw-font-stack`)
+- 제목(기사/항목 제목 등 title·headline 계열): weight 600, 22px,
+  letter-spacing -0.04em, line-height 26px, color #1A1A1B
+  (`--nw-title-weight/-size/-ls/-lh/-color`)
+- 본문(body·summary·insight 계열): weight 400, 18px, letter-spacing -0.02em,
+  line-height 28px, color #1A1A1B (`--nw-body-weight/-size/-ls/-lh/-color`)
+- 강조 박스("SO WHAT" 성격의 인사이트/핵심 포인트 영역, 예:
+  `overall_sowhat`): 배경 #FDF7F7(`--nw-sowhat-bg`), 타이틀 색상
+  #d12f30(`--nw-sowhat-title-color`), 본문은 위 "본문" 스타일 그대로.
+  일반 AI 브리핑/코멘트 박스(파란 톤)는 이 배색 대상이 아님 - 순수
+  "SO WHAT"류 강조 영역에만 적용
+- 링크: color #005AFF (`--nw-link-color`)
+- 탭 버튼, 카테고리 뱃지, 타임스탬프, 섹션 소제목, 페이지 제목
+  (`.nrw/.ew/.sw-title` 등), 수치값처럼 UI 구조/네비게이션 요소는 이
+  표준 대상이 아님 - 뉴스 기사·항목의 실제 제목/본문 콘텐츠에만 적용
