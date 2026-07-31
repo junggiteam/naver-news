@@ -41,6 +41,11 @@ jobs:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
         run: python run_scheduled.py
 
+      - name: (임시) 아카이브 로직 실검증 - 오전판/저녁판 재생성 - 확인 끝나면 제거
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -c "import daily_reports; daily_reports.build_morning_reports(); daily_reports.build_evening_reports()"
+
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
