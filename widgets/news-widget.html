@@ -307,7 +307,7 @@
        ========================================================= */
     --nw-font-stack: 'Pretendard', 'Helvetica Neue', 'Helvetica', 'Arial', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     --nw-title-weight: 600;
-    --nw-title-size: 22px;
+    --nw-title-size: 20px;
     --nw-title-ls: -0.04em;
     --nw-title-lh: 26px;
     --nw-title-color: #1A1A1B;
@@ -1519,15 +1519,18 @@
     flex: 0 0 auto;
     min-width: 88px;
     color: var(--nw-navy);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 800;
   }
 
-  .pw-calendar-flag { flex: 0 0 auto; font-size: 16px; }
+  .pw-calendar-flag { flex: 0 0 auto; font-size: 18px; }
 
+  /* 22px 새 타이포그래피 표준 대상에서는 제외(CLAUDE.md "레이아웃 확정
+     사항" 참고 - 고정폭 행에서 줄바꿈이 깨짐). 다만 가독성 확대 요청으로
+     14px -> 16px 만큼은 별도로 키움 - 이 정도는 레이아웃에 안전함. */
   .pw-calendar-name {
     color: var(--nw-text-sub);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
   }
 
@@ -1591,19 +1594,33 @@
 
   .pw-macro-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
+  /* 거시경제 지표 카드만 폰트 확대 - .sw-index-* 클래스는 증권/주식 탭과
+     공유하므로 베이스 규칙은 그대로 두고 #pw-macro-indices 안에서만
+     덮어쓴다 (증권 탭 지표 카드는 영향 없음) */
+  #pw-macro-indices .sw-index-name {
+    font-size: 13px;
+  }
+
+  #pw-macro-indices .sw-index-value {
+    font-size: 19px;
+  }
+
+  #pw-macro-indices .sw-index-change {
+    font-size: 13px;
+  }
+
   /* =========================================================
      CEO 리포트 (신규, CEO NOTE 뉴스레터 연동)
      ========================================================= */
   .cr-headline {
     display: inline-flex;
     align-items: center;
-    height: 30px;
     margin: 0 0 14px;
-    padding: 0 12px;
+    padding: 9px 18px;
     border-radius: 999px;
     color: var(--nw-primary);
     background: rgba(23, 105, 224, 0.09);
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1;
   }

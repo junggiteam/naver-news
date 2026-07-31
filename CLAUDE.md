@@ -50,7 +50,8 @@
 
 - 폰트 스택: `'Pretendard','Helvetica Neue','Helvetica','Arial','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif`
   (`--nw-font-stack`)
-- 제목(기사/항목 제목 등 title·headline 계열): weight 600, 22px,
+- 제목(기사/항목 제목 등 title·headline 계열): weight 600, 20px(최초
+  확정치는 22px였으나 실제 렌더링 확인 후 20px로 축소 확정),
   letter-spacing -0.04em, line-height 26px, color #1A1A1B
   (`--nw-title-weight/-size/-ls/-lh/-color`)
 - 본문(body·summary·insight 계열): weight 400, 18px, letter-spacing -0.02em,
@@ -74,9 +75,20 @@
 유실된 적이 있어 명문화한다.
 
 - **`.pw-calendar-name`(정책·캘린더 탭의 "다가오는 경제 일정" 항목명)은
-  새 타이포그래피 제목 표준(22px) 적용 대상에서 제외한다.** 날짜 컬럼이
-  고정폭인 가로 배치 행이라 22px을 적용하면 2~3줄로 어색하게 줄바꿈되며
-  깨진다. 14px, weight 600, `var(--nw-text-sub)` 색상을 그대로 유지할 것.
+  새 타이포그래피 제목 표준(`--nw-title-size`) 적용 대상에서 제외한다.**
+  날짜 컬럼이 고정폭인 가로 배치 행이라 22px을 적용했을 때 2~3줄로
+  어색하게 줄바꿈되며 깨졌던 전례가 있다. 가독성 확대 요청으로
+  14px→16px까지는 별도로 키웠지만(레이아웃 안전 확인됨), title 표준
+  변수를 그대로 참조하지는 않는다 - weight 600, `var(--nw-text-sub)`
+  색상 유지.
+- **정책·캘린더 탭 "거시경제 지표"(`#pw-macro-indices`) 카드와 "다가오는
+  경제 일정"(`#pw-calendar-list`) 섹션만 폰트가 확대돼 있다** (지표
+  카드: `.sw-index-name` 13px/`.sw-index-value` 19px/`.sw-index-change`
+  13px, `#pw-macro-indices` 안에서만 스코프 - 증권/주식 탭이 공유하는
+  `.sw-index-*` 베이스 규칙은 건드리지 않음. 일정 날짜: `.pw-calendar-date`
+  16px). 그 아래 주요공시/정부지원사업/소상공인 섹션은 확대 대상이
+  아니다 - 이 두 섹션만 별도로 요청받아 키운 것이므로 전역 작업 시
+  같이 건드리지 말 것.
 - **정책·캘린더 탭 섹션 순서와 배치**:
   1. 거시경제 지표(`#pw-macro-indices`) - 탭 최상단에 배치
   2. 다가오는 경제 일정(`#pw-calendar-list`)
