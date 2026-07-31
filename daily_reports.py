@@ -212,6 +212,25 @@ def _generate_reports(materials, report_type):
 
 
 VALID_REPORT_TYPES = ("morning", "evening")
+ARCHIVE_FILE = os.path.join("data", "daily_reports_archive.json")
+
+
+def _append_to_archive(report_type, edition_entry):
+    """daily_reports.json은 위젯 로딩 속도를 위해 판(오전/저녁)당 최신
+    1건만 유지하지만, 나중에 지난 브리핑을 다시 참고할 수 있도록(예:
+    쏘왓레터 작성 시) 날짜별로 무기한 누적 기록한다. 위젯이 읽는
+    daily_reports.json의 구조/로직에는 전혀 영향을 주지 않는 별도 파일."""
+    archive = _load_json(ARCHIVE_FILE)
+    date_str = edition_entry["generated_at"].split(" ")[0]
+    day_entry = archive.get(date_str, {})
+    day_entry[report_type] = edition_entry
+    archive[date_str] = day_entry
+
+    os.makedirs("data", exist_ok=True)
+    with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive, f, ensure_ascii=False, indent=2)
+
+    print(f"[daily_reports:{report_type}] 아카이브({ARCHIVE_FILE})에 {date_str} 기록 저장됨")
 
 
 def _save_edition(report_type, basis, reports):
@@ -223,11 +242,12 @@ def _save_edition(report_type, basis, reports):
     # 구버전 스키마 잔재 제거: morning/evening이 아닌 키(예: 예전 "시황" 등)는 버림
     cleaned_reports = {k: v for k, v in existing_reports.items() if k in VALID_REPORT_TYPES}
 
-    cleaned_reports[report_type] = {
+    edition_entry = {
         "generated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "basis": basis,
         **reports,
     }
+    cleaned_reports[report_type] = edition_entry
     output["reports"] = cleaned_reports
     output["updated_at"] = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
 
@@ -236,6 +256,9 @@ def _save_edition(report_type, basis, reports):
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"성공! {report_type}판 카테고리 {len(CATEGORIES)}개 리포트가 {REPORTS_FILE}에 저장되었습니다.")
+
+    _append_to_archive(report_type, edition_entry)
+
     return output
 
 
