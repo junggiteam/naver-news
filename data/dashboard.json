@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31 08:31:03",
+  "updated_at": "2026-07-31 09:01:16",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -10,9 +10,9 @@
   },
   "heroes": {
     "종합": {
-      "title": "\"한마디로 죽을맛\"…연이틀 폭락후에도 반등실패, 개미들 곡소리",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/07/30/16225095.jpg?type=nf70_70",
-      "link": "https://n.news.naver.com/article/001/0016225095?ntype=RANKING",
+      "title": "뉴욕증시, 반도체주 반등에 강세 마감…하이닉스ADR 18%↑(종합)",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/07/31/16225875.jpg?type=nf70_70",
+      "link": "https://n.news.naver.com/article/001/0016225875?ntype=RANKING",
       "press_name": "연합뉴스"
     },
     "경제": {
@@ -22,24 +22,24 @@
       "press_name": "조선일보"
     },
     "부동산": {
-      "title": "“文정부만도 못해” 李의 부동산 멘토들도 돌아섰다",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/07/31/3990640.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/023/0003990640",
-      "press_name": "조선일보"
+      "title": "'부동산토론회.kr' 운영 종료…\"국민 의견 7천500건 정책 활용\"",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/07/31/16226097.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016226097",
+      "press_name": "연합뉴스"
     }
   },
   "headlines": [
     {
       "category": "종합",
-      "text": "중국 외교 인선 교체 및 SK하이닉스 주식 매수 등 기업 책임경영 움직임"
+      "text": "증시 폭락으로 인한 반대매매와 레버리지 투자 손실 피해 급증"
     },
     {
       "category": "종합",
-      "text": "HSBC의 한국 증시 경고와 반도체 공급 부족 전망 등 경제 현안 지속"
+      "text": "반도체 경쟁력 약화와 증시 침체에 대한 우려 및 대응 움직임"
     },
     {
       "category": "종합",
-      "text": "서울 단성학교 남녀공학 전환과 강력범죄 및 사회적 사건 사고 발생"
+      "text": "정치권 논란과 사회 범죄 등 각종 사건 사고 이어져"
     },
     {
       "category": "경제",
@@ -55,15 +55,15 @@
     },
     {
       "category": "부동산",
-      "text": "20대 종부세 납부자 증가 등 조기 증여 현상 지속"
+      "text": "서울 아파트 상반기 입주·준공 물량 50% 이상 급감"
     },
     {
       "category": "부동산",
-      "text": "비아파트 공급난 해소를 위한 정부 패키지 대책 추진"
+      "text": "주택 공급지표 후퇴 및 전국 미분양 증가세 지속"
     },
     {
       "category": "부동산",
-      "text": "고분양가와 대출 규제 속 정비사업 청약 쏠림 현상"
+      "text": "대출 규제 속 2030 세대의 서울 초소형 아파트 거래 폭증"
     }
   ],
   "daily_term": {
@@ -542,108 +542,170 @@
       "country": "US"
     }
   ],
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "금호전기",
+      "price": "5050.0",
+      "change_percent": "+12.98%",
+      "pct": 12.98
+    },
+    {
+      "name": "대한전선",
+      "price": "23000.0",
+      "change_percent": "+10.58%",
+      "pct": 10.58
+    },
+    {
+      "name": "KoAct 미국나스닥성장기업액티브",
+      "price": "19010.0",
+      "change_percent": "+8.82%",
+      "pct": 8.82
+    },
+    {
+      "name": "SK증권우",
+      "price": "3695.0",
+      "change_percent": "+8.68%",
+      "pct": 8.68
+    },
+    {
+      "name": "PLUS 미국양자컴퓨팅TOP10",
+      "price": "15320.0",
+      "change_percent": "+7.93%",
+      "pct": 7.93
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "삼양식품",
+      "price": "1155000.0",
+      "change_percent": "-7.08%",
+      "pct": 7.08
+    },
+    {
+      "name": "동양2우B",
+      "price": "6910.0",
+      "change_percent": "-3.63%",
+      "pct": 3.63
+    },
+    {
+      "name": "고려산업",
+      "price": "2015.0",
+      "change_percent": "-3.36%",
+      "pct": 3.36
+    },
+    {
+      "name": "아세아",
+      "price": "208500.0",
+      "change_percent": "-2.57%",
+      "pct": 2.57
+    },
+    {
+      "name": "1Q 미국배당TOP30",
+      "price": "9420.0",
+      "change_percent": "-2.43%",
+      "pct": 2.43
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "문구류",
+      "change_value": "+11.49%",
+      "pct": 11.49
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+6.16%",
+      "pct": 6.16
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "디스플레이패널",
+      "change_value": "+4.79%",
+      "pct": 4.79
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "증권",
+      "change_value": "+4.50%",
+      "pct": 4.5
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "무선통신서비스",
+      "change_value": "+4.17%",
+      "pct": 4.17
     }
   ],
   "sector_heatmap": [
     {
+      "name": "문구류",
+      "change_value": "+11.49%",
+      "pct": 11.49
+    },
+    {
+      "name": "전자제품",
+      "change_value": "+6.16%",
+      "pct": 6.16
+    },
+    {
+      "name": "디스플레이패널",
+      "change_value": "+4.79%",
+      "pct": 4.79
+    },
+    {
+      "name": "증권",
+      "change_value": "+4.50%",
+      "pct": 4.5
+    },
+    {
+      "name": "무선통신서비스",
+      "change_value": "+4.17%",
+      "pct": 4.17
+    },
+    {
+      "name": "기계",
+      "change_value": "+3.86%",
+      "pct": 3.86
+    },
+    {
+      "name": "운송인프라",
+      "change_value": "-0.03%",
+      "pct": -0.03
+    },
+    {
+      "name": "판매업체",
+      "change_value": "-0.08%",
+      "pct": -0.08
+    },
+    {
+      "name": "가정용기기와용품",
+      "change_value": "-0.39%",
+      "pct": -0.39
+    },
+    {
       "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "-0.39%",
+      "pct": -0.39
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "은행",
+      "change_value": "-0.52%",
+      "pct": -0.52
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품",
+      "change_value": "-0.87%",
+      "pct": -0.87
     }
   ],
   "article_counts": {
-    "종합": 411,
+    "종합": 410,
     "경제": 30,
     "부동산": 30,
     "증권": 30
   },
   "article_count_trend": {
     "종합": {
-      "today": 411,
+      "today": 410,
       "yesterday": 411,
-      "change_pct": 0.0,
+      "change_pct": -0.2,
       "surge": false
     },
     "경제": {
