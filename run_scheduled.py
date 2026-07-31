@@ -13,6 +13,7 @@ import scraper_bizinfo
 import scraper_calendar
 import ai_briefing
 import dashboard
+import daily_reports
 
 KST = timezone(timedelta(hours=9))
 MARKER_FILE = os.path.join("data", ".last_run.json")
@@ -252,13 +253,52 @@ def find_due_crawlers(now_kst, marker):
     return due
 
 
+# 데일리 브리핑(오전판/저녁판)은 CRAWLER_INTERVALS의 "마지막 실행 후 N시간
+# 경과" 방식과 다르게, "하루 중 특정 시각 근처인지"로 판단해야 한다.
+# cron-job.org가 15분마다 깨워주므로 목표 시각 ±윈도우 안에 항상 최소 한 번은
+# 걸리고, 마커에 "오늘 이미 실행했는지"를 날짜 단위로 기록해 중복 실행을 막는다.
+# CRAWLER_INTERVALS/CRAWLER_FUNCS 체계와는 완전히 별도 로직이라 기존
+# 크롤러 스케줄에는 영향이 없다.
+REPORT_SLOTS = {
+    "daily_report_morning": {
+        "target": "12:06", "window_minutes": 15, "func": daily_reports.build_morning_reports,
+    },
+    "daily_report_evening": {
+        "target": "18:30", "window_minutes": 15, "func": daily_reports.build_evening_reports,
+    },
+}
+
+
+def _is_in_time_window(now_kst, target_hhmm, window_minutes):
+    hour, minute = map(int, target_hhmm.split(":"))
+    target_dt = now_kst.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    return abs((now_kst - target_dt).total_seconds()) <= window_minutes * 60
+
+
+def find_due_report_slots(now_kst, marker):
+    """목표 시각(±윈도우) 안에 들어왔고 오늘 아직 실행하지 않은 리포트
+    슬롯 이름 목록을 반환."""
+    today_str = now_kst.strftime("%Y-%m-%d")
+    due_slots = []
+    for slot_name, cfg in REPORT_SLOTS.items():
+        last_run_str = marker.get(slot_name)
+        last_run_date = last_run_str.split("T")[0] if last_run_str else None
+        if last_run_date == today_str:
+            continue
+        if _is_in_time_window(now_kst, cfg["target"], cfg["window_minutes"]):
+            due_slots.append(slot_name)
+    return due_slots
+
+
 def run_scheduled(now_kst=None):
     if now_kst is None:
         now_kst = get_now_kst()
 
     marker = load_marker()
     due = find_due_crawlers(now_kst, marker)
-    if not due:
+    due_slots = find_due_report_slots(now_kst, marker)
+
+    if not due and not due_slots:
         print(f"[{now_kst.isoformat()}] 지금은 실행 대상 없음")
         return
 
@@ -280,6 +320,17 @@ def run_scheduled(now_kst=None):
             print(f"[{name}] 실행 완료")
         except Exception as e:
             print(f"[{name}] 실행 중 오류 발생, 마커 갱신 안 함 - 다음 주기에 재시도: {e}")
+
+    for slot_name in due_slots:
+        cfg = REPORT_SLOTS[slot_name]
+        print(f"[{slot_name}] 목표 시각({cfg['target']}) 윈도우 진입 - 실행")
+        try:
+            cfg["func"]()
+            marker[slot_name] = now_kst.isoformat()
+            marker_changed = True
+            print(f"[{slot_name}] 실행 완료")
+        except Exception as e:
+            print(f"[{slot_name}] 실행 중 오류 발생, 마커 갱신 안 함 - 다음 주기에 재시도: {e}")
 
     if marker_changed:
         try:
