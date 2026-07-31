@@ -10,6 +10,7 @@
       <button class="nw-tab" data-tab="realestate">부동산</button>
       <button class="nw-tab" data-tab="policy">정책·캘린더</button>
       <button class="nw-tab" data-tab="ceo">CEO 리포트</button>
+      <button class="nw-tab" data-tab="briefing">데일리 브리핑</button>
     </div>
     <button class="nw-tab-arrow nw-tab-arrow-right" type="button" aria-label="다음 메뉴 보기" hidden>›</button>
   </div>
@@ -246,6 +247,20 @@
     </div>
 
     <div class="nw-footer">CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)</div>
+  </div>
+
+  <!-- ===== 데일리 브리핑 탭 (신규, 시황/투자/기업 오전판·저녁판) ===== -->
+  <div class="nw-panel" id="panel-briefing" hidden>
+    <div class="ew-header">
+      <h2 class="ew-title">데일리 브리핑</h2>
+      <p class="ew-updated" id="db2-updated">업데이트 시간 불러오는 중...</p>
+    </div>
+
+    <div id="db2-content">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+
+    <div class="nw-footer">데일리 브리핑은 자체 수집 데이터를 종합해 생성됩니다.</div>
   </div>
 </div>
 
@@ -2140,9 +2155,10 @@
   var DASHBOARD_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dashboard.json";
   var STOCK_HISTORY_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_index_history.json";
   var CEO_REPORT_URL = "https://script.google.com/macros/s/AKfycbw1IAnWQKm5Idxs__nxWGN0sd9AfU8OGXmcNO4if8cp8ATv0D6ZYUtflvFooy56Na2qIg/exec";
+  var DAILY_REPORTS_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/daily_reports.json";
   var INITIAL_COUNT = 9;
 
-  var loaded = { dashboard: false, ranking: false, stock: false, economy: false, realestate: false, policy: false, ceo: false };
+  var loaded = { dashboard: false, ranking: false, stock: false, economy: false, realestate: false, policy: false, ceo: false, briefing: false };
   var keywordFilter = null;
 
   /* ---------- AI 브리핑 / 시황 코멘트 렌더링 (공용) ---------- */
@@ -2503,7 +2519,8 @@
     stock: document.getElementById("panel-stock"),
     realestate: document.getElementById("panel-realestate"),
     policy: document.getElementById("panel-policy"),
-    ceo: document.getElementById("panel-ceo")
+    ceo: document.getElementById("panel-ceo"),
+    briefing: document.getElementById("panel-briefing")
   };
 
   function activateTab(key) {
@@ -2522,6 +2539,7 @@
     if (key === "realestate" && !loaded.realestate) loadRealestate();
     if (key === "policy" && !loaded.policy) loadPolicy();
     if (key === "ceo" && !loaded.ceo) loadCeo();
+    if (key === "briefing" && !loaded.briefing) loadBriefing();
   }
 
   tabs.forEach(function (tab) {
@@ -3288,6 +3306,94 @@
         document.getElementById("cr-content").innerHTML =
           '<p class="ew-loading">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
         console.error("CEO 리포트 위젯 로드 실패:", err);
+      });
+  }
+
+  /* =========================================================
+     데일리 브리핑 (신규, daily_reports.json - 시황/투자/기업
+     오전판/저녁판. CEO 리포트와는 완전히 별개 시스템)
+     ========================================================= */
+  var BRIEFING_CATEGORIES = ["시황", "투자", "기업"];
+
+  function todayKstDateStr() {
+    return new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" });
+  }
+
+  function pickLatestBriefingEdition(reports) {
+    var editions = [
+      { key: "morning", label: "오전판", data: reports && reports.morning },
+      { key: "evening", label: "저녁판", data: reports && reports.evening }
+    ].filter(function (e) { return e.data && e.data.generated_at; });
+    if (!editions.length) return null;
+    return editions.reduce(function (a, b) {
+      return a.data.generated_at >= b.data.generated_at ? a : b;
+    });
+  }
+
+  function renderBriefingReport(edition) {
+    var el = document.getElementById("db2-content");
+    el.innerHTML = "";
+
+    var isToday = edition && edition.data.generated_at.slice(0, 10) === todayKstDateStr();
+    if (!edition || !isToday) {
+      el.innerHTML = '<p class="ew-loading">아직 오늘의 데일리 브리핑이 준비되지 않았습니다.</p>';
+      return;
+    }
+
+    var issueList = document.createElement("div");
+    issueList.className = "cr-issue-list";
+
+    BRIEFING_CATEGORIES.forEach(function (category) {
+      var report = edition.data[category];
+      if (!report || !report.title) return;
+
+      var item = document.createElement("div");
+      item.className = "cr-issue-item";
+
+      var body = document.createElement("div");
+      body.className = "cr-issue-body";
+
+      var badge = document.createElement("span");
+      badge.className = "cr-issue-badge";
+      badge.textContent = category;
+      badge.style.background = getCeoCategoryColor(category);
+      body.appendChild(badge);
+
+      var title = document.createElement("p");
+      title.className = "cr-issue-title";
+      title.textContent = report.title;
+      body.appendChild(title);
+
+      var text = document.createElement("p");
+      text.className = "cr-issue-insight";
+      text.textContent = report.body || "";
+      body.appendChild(text);
+
+      item.appendChild(body);
+      issueList.appendChild(item);
+    });
+
+    if (!issueList.children.length) {
+      el.innerHTML = '<p class="ew-loading">아직 오늘의 데일리 브리핑이 준비되지 않았습니다.</p>';
+      return;
+    }
+    el.appendChild(issueList);
+  }
+
+  function loadBriefing() {
+    fetch(DAILY_REPORTS_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var edition = pickLatestBriefingEdition(data && data.reports);
+        document.getElementById("db2-updated").textContent =
+          edition ? edition.label + " 기준 (" + edition.data.generated_at + " 생성)" : "";
+        renderBriefingReport(edition);
+        loaded.briefing = true;
+      })
+      .catch(function (err) {
+        document.getElementById("db2-content").innerHTML =
+          '<p class="ew-loading">데이터를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+        console.error("데일리 브리핑 위젯 로드 실패:", err);
       });
   }
 
