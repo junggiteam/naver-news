@@ -41,6 +41,14 @@ jobs:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
         run: python run_scheduled.py
 
+      # 임시 검증 스텝 - 1단계(시황/투자/기업) 카테고리 리포트 실제 생성
+      # 샘플 확인용. 승인 전이라 정식 스케줄(run_scheduled.py)에는 아직
+      # 편입하지 않음. 확인 끝나면 이 스텝은 제거 예정.
+      - name: (임시) daily_reports 샘플 생성
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python daily_reports.py
+
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"

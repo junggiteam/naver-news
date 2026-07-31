@@ -208,3 +208,53 @@ def generate_dart_summary(filings):
     for i, filing in enumerate(filings):
         filing["ai_explanation"] = explanations.get(i + 1, "")
     return filings
+
+
+# CLAUDE.md "데이터 소스 승인 기준" 4번 원칙(저작권)을 카테고리 리포트
+# 프롬프트에 그대로 반영. 모든 카테고리 리포트에 공통 적용.
+CATEGORY_REPORT_GUIDE = (
+    "너는 여러 언론사·공시·지표 자료의 팩트를 종합해 새로운 관점의 자체\n"
+    "리포트를 쓰는 기자다.\n"
+    "- 특정 기사 하나의 문장이나 구성을 그대로 따라가지 마라. 여러 자료에서\n"
+    "  나온 사실관계만 뽑아 네 방식대로 재구성하라.\n"
+    "- 원문 문장을 그대로 옮기지 말고 전부 너의 표현으로 다시 써라.\n"
+    "- 제공된 자료에 없는 수치나 사건을 지어내지 마라. 추측을 사실처럼\n"
+    "  단정하지 마라.\n"
+)
+
+
+def generate_category_report(category_label, material_block):
+    """오늘의 카테고리별 자료(material_block)를 종합해 제목+본문 리포트를
+    생성. 자료가 없거나 실패하면 None."""
+    if not material_block or not material_block.strip():
+        return None
+
+    prompt = (
+        f"{CATEGORY_REPORT_GUIDE}\n"
+        f"아래는 오늘의 '{category_label}' 관련 자료다. 이 자료들을 종합해서\n"
+        "오늘자 이슈 리포트를 작성하라.\n\n"
+        "출력은 정확히 아래 두 줄 형식으로만, 그 외 설명은 쓰지 마라:\n"
+        "제목: (25자 이내, 기사 제목처럼)\n"
+        "본문: (400~600자, 문단 구분 없이 이어서. 자료에 있는 사실 위주로\n"
+        "오늘 흐름을 정리)\n\n"
+        f"[자료]\n{material_block}"
+    )
+    text = _call_gemini(prompt, timeout=90)
+    if not text:
+        return None
+
+    title = ""
+    body = ""
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("제목:"):
+            title = stripped[len("제목:"):].strip()
+        elif stripped.startswith("본문:"):
+            body = stripped[len("본문:"):].strip()
+        elif body:
+            # 본문이 여러 줄로 나뉘어 온 경우 이어붙임
+            body += " " + stripped
+
+    if not title or not body:
+        return None
+    return {"title": title, "body": body}
