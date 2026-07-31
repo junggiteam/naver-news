@@ -41,13 +41,6 @@ jobs:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
         run: python run_scheduled.py
 
-      # 임시 검증 스텝 - 과거 기록 비교 표현 금지 범위 확대(유형 전체) 반영 확인용.
-      # 확인 끝나면 스텝/파일 모두 제거.
-      - name: (임시) 확대된 과장 표현 금지 재검증
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python _verify_market_report.py
-
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
