@@ -41,6 +41,13 @@ jobs:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
         run: python run_scheduled.py
 
+      # 임시 검증 스텝 - 이례적 등락률 맥락 설명 지침 반영 후 시황 샘플만
+      # 재확인용. 확인 끝나면 스텝/파일 모두 제거.
+      - name: (임시) 시황 리포트 재검증
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python _verify_market_report.py
+
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
