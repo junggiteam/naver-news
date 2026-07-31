@@ -14,6 +14,7 @@ import scraper_calendar
 import ai_briefing
 import dashboard
 import daily_reports
+import record_verification
 
 KST = timezone(timedelta(hours=9))
 MARKER_FILE = os.path.join("data", ".last_run.json")
@@ -62,6 +63,49 @@ TAB_BRIEFING_TARGETS = {
 }
 
 
+def _load_json_safe(path):
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        return {}
+
+
+def _tab_briefing_with_check(titles, label, verified_facts):
+    """금지 표현(record_verification.BANNED_SUPERLATIVE_WORDS) 포함 시
+    1회 자동 재생성, 그래도 걸리면 이번 회차는 생략(빈 리스트). verified_facts가
+    있으면(코드로 실제 검증된 근거가 있으면) 스캔 자체를 생략한다."""
+    lines = ai_briefing.generate_tab_briefing(titles, label, verified_facts=verified_facts)
+    if verified_facts:
+        return lines
+    joined = " ".join(lines)
+    if record_verification.contains_banned_expression(joined):
+        print(f"[{label}] 브리핑 금지 표현 감지 - 1회 재생성 시도")
+        lines = ai_briefing.generate_tab_briefing(titles, label)
+        joined = " ".join(lines)
+        if record_verification.contains_banned_expression(joined):
+            print(f"[{label}] 브리핑 재생성 후에도 금지 표현 감지 - 이번 회차는 생략")
+            return []
+    return lines
+
+
+def _stock_commentary_with_check(indices, titles, verified_facts):
+    """generate_stock_commentary 버전의 금지 표현 검증/재생성/생략.
+    _tab_briefing_with_check와 동일한 정책."""
+    commentary = ai_briefing.generate_stock_commentary(indices, titles, verified_facts=verified_facts)
+    if verified_facts:
+        return commentary
+    if commentary and record_verification.contains_banned_expression(commentary):
+        print("[stock] 시황 코멘트 금지 표현 감지 - 1회 재생성 시도")
+        commentary = ai_briefing.generate_stock_commentary(indices, titles)
+        if commentary and record_verification.contains_banned_expression(commentary):
+            print("[stock] 시황 코멘트 재생성 후에도 금지 표현 감지 - 이번 회차는 생략")
+            return None
+    return commentary
+
+
 def _augment_with_ai(name):
     """크롤링 직후 해당 카테고리 데이터 파일에 AI 브리핑/코멘트를 추가.
     AI 호출이 실패해도 예외를 밖으로 던지지 않는다 - 크롤링 성공 자체는
@@ -72,13 +116,15 @@ def _augment_with_ai(name):
             with open(path, encoding="utf-8") as f:
                 data = json.load(f)
             titles = [item["title"] for item in data.get("news", [])]
-            data["ai_briefing"] = ai_briefing.generate_tab_briefing(titles, label)
+            stock_indices = _load_json_safe("data/stock_news.json").get("indices", [])
+            verified_facts = record_verification.build_verified_facts_for_indices(stock_indices)
+            data["ai_briefing"] = _tab_briefing_with_check(titles, label, verified_facts)
             if name == "economy":
                 data["daily_term"] = ai_briefing.generate_daily_economic_term(titles)
                 print(f"[economy] 오늘의 경제 용어 {'생성됨: ' + data['daily_term']['term'] if data['daily_term'] else '생략됨(키 없음/호출 실패)'}")
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"[{name}] AI 브리핑 {'생성됨' if data['ai_briefing'] else '생략됨(키 없음/호출 실패)'}")
+            print(f"[{name}] AI 브리핑 {'생성됨' if data['ai_briefing'] else '생략됨(키 없음/호출 실패/금지 표현 재생성 실패)'}")
 
         elif name == "stock":
             path = "data/stock_news.json"
@@ -89,12 +135,13 @@ def _augment_with_ai(name):
                 for cat in data.get("news_categories", [])
                 for item in cat.get("items", [])
             ]
-            data["ai_commentary"] = ai_briefing.generate_stock_commentary(
-                data.get("indices", []), titles
+            verified_facts = record_verification.build_verified_facts_for_indices(data.get("indices", []))
+            data["ai_commentary"] = _stock_commentary_with_check(
+                data.get("indices", []), titles, verified_facts
             )
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"[stock] AI 시황 코멘트 {'생성됨' if data['ai_commentary'] else '생략됨(변동폭 작음/키 없음/호출 실패)'}")
+            print(f"[stock] AI 시황 코멘트 {'생성됨' if data['ai_commentary'] else '생략됨(변동폭 작음/키 없음/호출 실패/금지 표현 재생성 실패)'}")
 
         elif name == "dart":
             path = "data/dart_filings.json"
@@ -192,6 +239,16 @@ def _record_stock_history():
         print(f"[stock] 지수 이력 기록 실패(스파크라인용, 본체 크롤링엔 영향 없음): {e}")
 
 
+def _record_daily_close_snapshot():
+    """장 마감 근처(daily_close_snapshot 슬롯)에 오늘 종가를
+    daily_close_archive.json에 무기한 누적 기록 - 최상급 표현("역대",
+    "최고" 등) 검증용 장기 데이터. stock_index_history.json(30시간
+    롤링 스냅샷)과는 별개 파일이라 서로 영향 없음."""
+    with open("data/stock_news.json", encoding="utf-8") as f:
+        data = json.load(f)
+    record_verification.record_daily_close(data.get("indices", []))
+
+
 def _augment_with_market_movers():
     """급등락 TOP5, 업종별 등락, IPO 일정을 stock_news.json에 덧붙임.
     실패해도 예외를 밖으로 던지지 않음 - 크롤링 본체와 무관해야 함."""
@@ -265,6 +322,12 @@ REPORT_SLOTS = {
     },
     "daily_report_evening": {
         "target": "18:30", "window_minutes": 15, "func": daily_reports.build_evening_reports,
+    },
+    # 장 마감(15:30) 근처 종가를 daily_close_archive.json에 기록. window는
+    # 다른 슬롯과 동일하게 ±15분 - cron-job.org가 15분 간격으로만 깨우므로
+    # 그보다 좁은 윈도우(예: 5분)를 쓰면 실행 시각과 어긋나 아예 못 걸릴 수 있음.
+    "daily_close_snapshot": {
+        "target": "15:37", "window_minutes": 15, "func": _record_daily_close_snapshot,
     },
 }
 

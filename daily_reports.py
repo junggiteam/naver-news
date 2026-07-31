@@ -20,6 +20,7 @@ import json
 from datetime import datetime, timezone, timedelta
 
 import ai_briefing
+import record_verification
 
 KST = timezone(timedelta(hours=9))
 CATEGORIES = ["시황", "투자", "기업"]
@@ -173,24 +174,36 @@ def _build_investment_material_morning(stock_data):
     return "\n".join(lines)
 
 
-# CLAUDE.md 6번 원칙 - 과거 전체 기록과 비교하는 느낌을 주는 미검증 표현
-# 목록. 프롬프트 지침만으로는 100% 지켜지지 않는 경우가 실제로 확인돼서
-# (예: "기록적인 반등"), 생성 후 후처리 검증으로 한 번 더 걸러낸다.
-BANNED_SUPERLATIVE_WORDS = ["역대", "최고", "최대", "사상 처음", "기록적"]
-
-
 def _contains_banned_expression(report):
     if not report:
         return False
     text = f"{report.get('title', '')} {report.get('body', '')}"
-    return any(word in text for word in BANNED_SUPERLATIVE_WORDS)
+    return record_verification.contains_banned_expression(text)
 
 
-def _generate_checked_report(category, material, report_type):
-    """금지 표현(BANNED_SUPERLATIVE_WORDS) 포함 시 1회 자동 재생성.
-    재생성해도 또 걸리면 해당 카테고리는 이번 판에서 생략(None) - 전체
-    발행을 막지 않고 그 카테고리만 스킵한다."""
-    report = ai_briefing.generate_category_report(category, material, report_type=report_type)
+def _build_verified_facts(report_type, stock_data):
+    """시황 카테고리에 한해, record_verification 기준으로 오늘 지수가
+    실제 최고/최저/최대변동인지 검증. 저녁판(당일 마감 수치)에서만
+    의미가 있음 - 오전판은 "오늘 오전 현재"가 아직 확정치가 아니라서
+    검증 대상으로 삼지 않는다. 검증 가능한 지표가 없으면 빈 리스트
+    (=기존처럼 최상급 표현 금지)."""
+    if report_type != "evening":
+        return []
+    return record_verification.build_verified_facts_for_indices(stock_data.get("indices", []))
+
+
+def _generate_checked_report(category, material, report_type, verified_facts=None):
+    """금지 표현(record_verification.BANNED_SUPERLATIVE_WORDS) 포함 시
+    1회 자동 재생성. 재생성해도 또 걸리면 해당 카테고리는 이번 판에서
+    생략(None) - 전체 발행을 막지 않고 그 카테고리만 스킵한다.
+    verified_facts가 있으면(=코드로 실제 검증된 최상급 표현 근거가
+    있으면) 후처리 금지어 스캔 자체를 생략한다 - 이 경우 최상급 표현이
+    나오는 게 오히려 정상이기 때문."""
+    report = ai_briefing.generate_category_report(
+        category, material, report_type=report_type, verified_facts=verified_facts
+    )
+    if verified_facts:
+        return report
     if _contains_banned_expression(report):
         print(f"[daily_reports:{report_type}] {category} 금지 표현 감지 - 1회 재생성 시도")
         report = ai_briefing.generate_category_report(category, material, report_type=report_type)
@@ -200,13 +213,17 @@ def _generate_checked_report(category, material, report_type):
     return report
 
 
-def _generate_reports(materials, report_type):
+def _generate_reports(materials, report_type, stock_data=None):
     reports = {}
     for category in CATEGORIES:
         material = materials[category]
-        report = _generate_checked_report(category, material, report_type)
+        verified_facts = _build_verified_facts(report_type, stock_data) if category == "시황" and stock_data else None
+        report = _generate_checked_report(category, material, report_type, verified_facts=verified_facts)
         reports[category] = report
-        status = "생성됨" if report else "생략됨(재료 없음/키 없음/호출 실패/금지 표현 재생성 실패)"
+        if verified_facts:
+            status = "생성됨(검증된 사실 근거로 최상급 표현 허용됨)" if report else "생략됨(호출 실패)"
+        else:
+            status = "생성됨" if report else "생략됨(재료 없음/키 없음/호출 실패/금지 표현 재생성 실패)"
         print(f"[daily_reports:{report_type}] {category} {status}")
     return reports
 
@@ -275,7 +292,7 @@ def build_morning_reports():
         "투자": _build_investment_material_morning(stock_data),
         "기업": _build_corporate_material(stock_data, dart_data),
     }
-    reports = _generate_reports(materials, "morning")
+    reports = _generate_reports(materials, "morning", stock_data=stock_data)
     return _save_edition("morning", "전일 마감 + 오늘 오전 이슈", reports)
 
 
@@ -290,7 +307,7 @@ def build_evening_reports():
         "투자": _build_investment_material(stock_data),
         "기업": _build_corporate_material(stock_data, dart_data),
     }
-    reports = _generate_reports(materials, "evening")
+    reports = _generate_reports(materials, "evening", stock_data=stock_data)
     return _save_edition("evening", "당일 마감", reports)
 
 

@@ -54,7 +54,35 @@ def _call_gemini(prompt, timeout=60):
         return None
 
 
-def generate_tab_briefing(titles, label):
+# CLAUDE.md "수치 인용 원칙" - 과거 전체 기록과 비교하는 느낌을 주는
+# 최상급 표현은 실제 비교 데이터가 있을 때만 허용. daily_reports.py의
+# 카테고리 리포트뿐 아니라 이 파일의 대시보드용 브리핑/코멘트에도 공통
+# 적용한다 (record_verification 모듈과 짝을 이룸).
+SUPERLATIVE_GUIDE = (
+    "과거 전체 기록과 비교하는 느낌을 주는 표현(\"역대\", \"최고\", \"최대\",\n"
+    "\"사상 처음\", \"기록적\" 등 이 유형에 속하는 모든 표현, 목록에 없는\n"
+    "비슷한 표현도 마찬가지)은 실제로 비교 가능한 과거 데이터가 있어서 그\n"
+    "비교가 사실로 확인된 경우에만 써라. 그런 근거가 없으면 이런 유형의\n"
+    "표현 자체를 쓰지 마라.\n"
+)
+
+
+def _verified_facts_block(verified_facts):
+    """record_verification이 코드로 직접 계산해 확인한 사실을 프롬프트에
+    넣을 블록으로 변환. 없으면 빈 문자열(=최상급 표현 여전히 금지)."""
+    if not verified_facts:
+        return ""
+    verified_lines = "\n".join(verified_facts)
+    return (
+        "\n[검증된 사실 - 코드로 직접 계산해 확인됨]\n"
+        f"{verified_lines}\n"
+        "위 검증된 사실에 명시된 지표·기간에 한해서만 최상급 표현을 써도\n"
+        "된다. 그 외에는 절대 쓰지 마라 - 검증되지 않은 추측성 최상급\n"
+        "표현은 금지다.\n"
+    )
+
+
+def generate_tab_briefing(titles, label, verified_facts=None):
     """탭별 '오늘의 브리핑' 3줄 생성. 실패/데이터없음 시 빈 리스트 반환."""
     if not titles:
         return []
@@ -64,6 +92,8 @@ def generate_tab_briefing(titles, label):
         f"아래는 오늘 수집된 {label} 뉴스 제목 목록이다.\n"
         "이 중 가장 중요한 흐름 3가지를 각각 한 줄(40자 이내)로 요약하라.\n"
         "과장하지 말고 사실 위주로, 기사 제목에 없는 내용은 추측하지 마라.\n"
+        f"{SUPERLATIVE_GUIDE}"
+        f"{_verified_facts_block(verified_facts)}"
         "출력은 순수 텍스트로 줄바꿈 구분된 3줄만, 번호나 설명, 따옴표 없이.\n\n"
         f"[기사 제목 목록]\n{titles_block}"
     )
@@ -148,7 +178,7 @@ def _extract_signed_percent(index_entry):
     return -value if index_entry.get("direction") == "down" else value
 
 
-def generate_stock_commentary(indices, titles):
+def generate_stock_commentary(indices, titles, verified_facts=None):
     """코스피/코스닥 등락률이 임계치 이상일 때만 시황 코멘트를 생성.
     평소(변동 적음)에는 None을 반환해 API 호출 자체를 아낀다."""
     kospi = next((i for i in indices if i.get("name") == "코스피"), None)
@@ -165,6 +195,8 @@ def generate_stock_commentary(indices, titles):
         f"오늘 코스피는 {kospi_pct:+.2f}%, 코스닥은 {kosdaq_pct:+.2f}% 움직였다.\n"
         "아래 관련 뉴스 제목을 참고해서, 이 움직임의 배경을 2~3문장으로\n"
         "담백하게 설명하라. 투자 조언이나 전망은 하지 말고 사실 설명만.\n"
+        f"{SUPERLATIVE_GUIDE}"
+        f"{_verified_facts_block(verified_facts)}"
         "따옴표나 번호 없이 문장만 출력하라.\n\n"
         f"[관련 뉴스 제목]\n{titles_block}"
     )
@@ -235,7 +267,9 @@ CATEGORY_REPORT_GUIDE = (
     "  비슷한 표현도 마찬가지) 비교할 과거 기록이 [자료]에 실제로 함께\n"
     "  주어진 경우에만 써라. 오늘 수치가 아무리 크더라도 그것만으로 이런\n"
     "  단정적 표현을 쓰지 마라. 비교 대상 과거 기록이 자료에 없으면 이런\n"
-    "  유형의 표현 자체를 쓰지 마라.\n"
+    "  유형의 표현 자체를 쓰지 마라. 다만 아래 [검증된 사실] 섹션이 별도로\n"
+    "  주어진 경우에는, 그 안에 명시된 지표·기간에 한해서만 이런 표현을\n"
+    "  써도 된다.\n"
 )
 
 # 오전판(조간) 전용 추가 지침: 당일 장이 아직 진행 중인 시점에 발행되므로,
@@ -262,10 +296,13 @@ EVENING_REPORT_GUIDE = (
 )
 
 
-def generate_category_report(category_label, material_block, report_type="evening"):
+def generate_category_report(category_label, material_block, report_type="evening", verified_facts=None):
     """오늘의 카테고리별 자료(material_block)를 종합해 제목+본문 리포트를
     생성. report_type은 "morning"(조간, 전일마감+오늘오전 이슈 중심) 또는
-    "evening"(마감판, 당일 마감 수치 중심). 자료가 없거나 실패하면 None."""
+    "evening"(마감판, 당일 마감 수치 중심). verified_facts는
+    record_verification이 코드로 직접 계산해 확인한 사실 문장 리스트 -
+    있으면 그 근거 안에서만 최상급 표현 사용을 허용한다. 자료가 없거나
+    실패하면 None."""
     if not material_block or not material_block.strip():
         return None
 
@@ -274,6 +311,7 @@ def generate_category_report(category_label, material_block, report_type="evenin
     prompt = (
         f"{CATEGORY_REPORT_GUIDE}\n"
         f"{edition_guide}\n"
+        f"{_verified_facts_block(verified_facts)}\n"
         f"아래는 오늘의 '{category_label}' 관련 자료다. 이 자료들을 종합해서\n"
         "오늘자 이슈 리포트를 작성하라.\n\n"
         "출력은 정확히 아래 두 줄 형식으로만, 그 외 설명은 쓰지 마라:\n"
