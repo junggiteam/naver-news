@@ -238,15 +238,42 @@ CATEGORY_REPORT_GUIDE = (
     "  유형의 표현 자체를 쓰지 마라.\n"
 )
 
+# 오전판(조간) 전용 추가 지침: 당일 장이 아직 진행 중인 시점에 발행되므로,
+# 장중 수치를 마치 하루 최종 등락률처럼 단정하는 문장을 막기 위함.
+MORNING_REPORT_GUIDE = (
+    "\n[오전판 발행 유의사항]\n"
+    "- 이 리포트는 당일 장이 아직 진행 중인 오전에 발행되는 조간판이다.\n"
+    "- \"오늘 코스피 OO% 상승 마감\"처럼 당일 장 마감 등락률로 오해될 수 있는\n"
+    "  단정적 문장을 쓰지 마라. 그날 마감 결과는 아직 나오지 않았다.\n"
+    "- [자료]의 수치가 '전일 마감' 데이터인지 '오늘 오전 현재' 데이터인지\n"
+    "  구분해서 명시하라. '오늘 오전 현재' 수치를 언급할 때는 반드시 \"오전\n"
+    "  기준\", \"오전 현재\" 같은 시점 한정 표현을 붙여, 그것이 하루 최종\n"
+    "  수치가 아니라는 것을 분명히 하라.\n"
+    "- 본문 구성은 먼저 전일 마감 상황을 간단히 정리한 뒤, 이어서 오늘 오전에\n"
+    "  나온 주요 뉴스·공시 이슈를 정리하는 순서로 써라.\n"
+)
 
-def generate_category_report(category_label, material_block):
+# 저녁판(마감) 전용 추가 지침: 당일 장이 끝난 뒤 발행되므로 마감 수치를
+# 다뤄도 되지만, 그 시점이 마감 직후라는 걸 분명히 한다.
+EVENING_REPORT_GUIDE = (
+    "\n[저녁판 발행 유의사항]\n"
+    "- 이 리포트는 당일 장 마감 이후 발행되는 마감판이다. [자료]의 수치는\n"
+    "  당일 마감(또는 마감에 가까운) 기준 수치로 다뤄도 된다.\n"
+)
+
+
+def generate_category_report(category_label, material_block, report_type="evening"):
     """오늘의 카테고리별 자료(material_block)를 종합해 제목+본문 리포트를
-    생성. 자료가 없거나 실패하면 None."""
+    생성. report_type은 "morning"(조간, 전일마감+오늘오전 이슈 중심) 또는
+    "evening"(마감판, 당일 마감 수치 중심). 자료가 없거나 실패하면 None."""
     if not material_block or not material_block.strip():
         return None
 
+    edition_guide = MORNING_REPORT_GUIDE if report_type == "morning" else EVENING_REPORT_GUIDE
+
     prompt = (
         f"{CATEGORY_REPORT_GUIDE}\n"
+        f"{edition_guide}\n"
         f"아래는 오늘의 '{category_label}' 관련 자료다. 이 자료들을 종합해서\n"
         "오늘자 이슈 리포트를 작성하라.\n\n"
         "출력은 정확히 아래 두 줄 형식으로만, 그 외 설명은 쓰지 마라:\n"
