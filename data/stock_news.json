@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01 12:33:10",
+  "updated_at": "2026-08-01 13:02:52",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,573,000",
-      "change_percent": "▲0.24%",
+      "value": "90,471,000",
+      "change_percent": "▲0.12%",
       "direction": "up",
-      "as_of": "2026-08-01 12:33:08"
+      "as_of": "2026-08-01 13:02:44"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "매일경제",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "\"얼마나 빠졌나 묻지 마라\"…폭락장에서 봐야 할 '이것' [이주영의 시장을 꿰뚫는 기술]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005316275&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260801&page=1",
+          "upload_time": "2026-08-01 12:48",
+          "published_at": "2026-08-01T12:48:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 2,
           "title": "“하락이 하락 불렀다, 이것 풀리면 주가 제자리”…삼전닉스 반토막의 진짜 원인 [여의도란도란]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715274&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260801&page=1",
           "upload_time": "2026-08-01 09:48",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "엔씨, ‘아이온’ IP 앞세워 하반기 기대감 키운다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715268&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260801&page=1",
           "upload_time": "2026-08-01 09:13",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "[IPO챗] 8월 첫주 공모주 청약 2곳, 수요예측 4곳",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016228062&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260801&page=1",
           "upload_time": "2026-08-01 09:00",
@@ -123,19 +131,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 4,
+          "rank": 5,
           "title": "아마존, 실적 훈풍에 급등…뉴욕증시 상승마감",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891191&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260801&page=1",
           "upload_time": "2026-08-01 08:49",
           "published_at": "2026-08-01T08:49:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "반도체 오르자 전력주도 반등…효성중공업·LS ELECTRIC 20%대↑ [코주부]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647523&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260801&page=1",
-          "upload_time": "2026-08-01 07:30",
-          "published_at": "2026-08-01T07:30:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 증시에서 아마존 등 주요 기술주가 실적 호조에 힘입어 상승세를 보이면서 국내 반도체 및 관련 종목들의 투자 심리가 개선되었습니다. 이러한 흐름 속에 코스피와 코스닥 지수는 각각 17.91%와 11.63% 상승하며 최근 1일간 데이터 기준으로 최고치와 최대 등락폭을 기록했습니다.",
+  "ai_commentary": "미국 증시에서 아마존 등 기술주가 호실적을 바탕으로 강세를 보이며 투자 심리가 개선된 것이 국내 증시 상승의 주된 요인으로 작용했다. 이러한 흐름 속에 코스피와 코스닥 지수는 최근 1일 데이터 기준 최고치 및 최대 등락폭을 기록하며 마감했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
