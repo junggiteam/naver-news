@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01 21:18:00",
+  "updated_at": "2026-08-01 21:47:29",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,780,000",
-      "change_percent": "▲0.46%",
+      "value": "90,751,000",
+      "change_percent": "▲0.43%",
       "direction": "up",
-      "as_of": "2026-08-01 21:17:58"
+      "as_of": "2026-08-01 21:47:15"
     }
   ],
   "news_categories": [
@@ -143,8 +143,16 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "이제 ‘진짜’들만 남는다…‘1조원대 매물’ KDB생명 새 주인은 [M&A복덕방]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715348&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
+          "upload_time": "2026-08-01 21:34",
+          "published_at": "2026-08-01T21:34:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
           "title": "삼전닉스만 믿었다가 '눈물'…급락장서 뜨는 투자법 뭐길래 [투자톡]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005316285&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
           "upload_time": "2026-08-01 14:48",
@@ -152,7 +160,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 3,
           "title": "\"삼성전자, SK하이닉스 추월하고 1위\"…파격 전망 나왔다 [강경주의 테크X]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005316282&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
           "upload_time": "2026-08-01 14:01",
@@ -160,7 +168,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "\"18% 폭등, 돈 복사의 날\" 환호 속 \"이건 대국민 카지노\" 탈출 결심한 개미들",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555867&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
           "upload_time": "2026-08-01 14:00",
@@ -168,19 +176,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "24시간 거래되는 SK하이닉스 주식, 국내 증시 영향은 [주末머니]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797554&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
           "upload_time": "2026-08-01 11:30",
           "published_at": "2026-08-01T11:30:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 5,
-          "title": "보완책 효과 있었나…단일종목 레버리지 거래량 '뚝' [노정동의 어쩌다 투자자]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005316266&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
-          "upload_time": "2026-08-01 10:31",
-          "published_at": "2026-08-01T10:31:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "중복상장 규제 개선으로 인한 코리아 디스카운트 해소 기대감과 미국 기술주의 강세가 국내 증시에 영향을 미쳤다. 이날 코스피와 코스닥 지수는 각각 17.91%와 11.63% 상승하며 최근 1일간 데이터 기준 최대 등락폭을 기록했다.",
+  "ai_commentary": "오늘 코스피와 코스닥 지수는 중복상장 규제 완화 및 주요 기술주 중심의 뉴욕 증시 강세 등 대내외적인 요인이 복합적으로 작용하며 상승했다. 코스피와 코스닥 지수는 오늘 하루 동안 각각 17.91%와 11.63%의 변동을 보이며 최근 1일 데이터 기준 최대 등락폭을 기록했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
