@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01 10:03:14",
+  "updated_at": "2026-08-01 10:18:15",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,404,000",
-      "change_percent": "▲0.05%",
+      "value": "90,500,000",
+      "change_percent": "▲0.15%",
       "direction": "up",
-      "as_of": "2026-08-01 10:03:12"
+      "as_of": "2026-08-01 10:18:09"
     }
   ],
   "news_categories": [
@@ -145,7 +145,7 @@
         {
           "press_name": "아시아경제",
           "rank": 1,
-          "title": "[주末머니]'AI 승부수' 통했다…역대 최대 매출 달성한 이 기업",
+          "title": "\"PER 7배짜리 AI 소프트웨어주 실화냐\"…역대 최대 매출 찍은 한컴 근황[주末머니]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797538&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
           "upload_time": "2026-08-01 09:56",
           "published_at": "2026-08-01T09:56:00+09:00"
@@ -153,7 +153,7 @@
         {
           "press_name": "아시아경제",
           "rank": 2,
-          "title": "'롤러코스터' 삼전닉스 대신 투자할 주식은 [주末머니]",
+          "title": "\"지수 폭락에 속지 마세요\"…\"반도체 흔들릴 때 여기로 갈아타세요\"[주末머니]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797536&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260801&page=1",
           "upload_time": "2026-08-01 09:48",
           "published_at": "2026-08-01T09:48:00+09:00"
@@ -323,8 +323,16 @@
       "category": "환율",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "日정부 엔화 환율 개입 규모 60조원 안팎 추정",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016228114&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260801&page=1",
+          "upload_time": "2026-08-01 10:03",
+          "published_at": "2026-08-01T10:03:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
           "title": "서울 아파트 공급 절벽…준공 52% 급감",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647542&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260801&page=1",
           "upload_time": "2026-08-01 09:42",
@@ -332,7 +340,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 3,
           "title": "한·미·일 ‘삼각 공조설’ 에…환율 장중 1410원대로 급락",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647407&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260801&page=1",
           "upload_time": "2026-07-31 17:44",
@@ -340,7 +348,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "외국인 주식 7조 순매수…환율 13.4원 내린 1,424원(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016227190&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260801&page=1",
           "upload_time": "2026-07-31 15:43",
@@ -348,19 +356,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "원·달러 환율 13.4원 내린 1424.0원(오후 3시30분)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797406&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260801&page=1",
           "upload_time": "2026-07-31 15:36",
           "published_at": "2026-07-31T15:36:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "외국인 증권자금 몰리자…2분기 외환거래 역대 최대",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647291&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260801&page=1",
-          "upload_time": "2026-07-31 12:00",
-          "published_at": "2026-07-31T12:00:00+09:00"
         }
       ]
     }
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 증시에서 아마존 등 기술주가 호실적을 바탕으로 강세를 보인 영향이 국내 시장으로 이어졌다. 이에 따라 반도체와 전력 설비 등 주요 업종의 주가가 반등하며 코스피와 코스닥 지수 및 등락폭은 최근 1일간 데이터 기준 최고치와 최대치를 각각 기록했다.",
+  "ai_commentary": "아마존을 비롯한 미국 주요 기술주의 실적 호조와 이에 따른 나스닥 상승세가 국내 증시에도 긍정적인 영향을 미쳤다. 반도체 관련주를 중심으로 전력 설비주 등 실적 개선 기대감이 높은 종목들이 강세를 보이며 오늘 코스피와 코스닥 지수 및 등락폭은 최근 1일간 데이터 기준으로 최고치와 최대치를 기록했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
