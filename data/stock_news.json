@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02 21:30:54",
+  "updated_at": "2026-08-02 22:00:51",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,706,000",
-      "change_percent": "▲0.16%",
+      "value": "90,586,000",
+      "change_percent": "▲0.03%",
       "direction": "up",
-      "as_of": "2026-08-02 21:30:52"
+      "as_of": "2026-08-02 22:00:48"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "[부음] 조태원(대신증권 고객솔루션부장)씨 장모상",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715631&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
+          "upload_time": "2026-08-02 21:47",
+          "published_at": "2026-08-02T21:47:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
           "title": "[단독] SK팜테코, 비만약 원료공장 준공…삼성과 펩타이드 CDMO서 격돌",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647796&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 19:58",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "단일 레버리지 ETF 여파?…거래소 ETF 상장심사 '병목'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016229500&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 19:33",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 4,
           "title": "“삼전닉스 고점 언제냐고요?…영업이익률 정점 알면 보입니다”",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715610&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 18:41",
@@ -123,17 +131,9 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "코스피 변동성, AI실적·美고용지표 분수령 [주간 증시 전망]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005556079&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
-          "upload_time": "2026-08-02 18:22",
-          "published_at": "2026-08-02T18:22:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "휴머노이드·AI SW 반등… 태양광·신재생에너지 10%대 하락 [ETF 스퀘어]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005556078&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 18:22",
           "published_at": "2026-08-02T18:22:00+09:00"
         }
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국발 고용 지표와 AI 기업 실적을 둘러싼 불확실성으로 시장 변동성이 커진 가운데, 레버리지 ETF에 대한 규제 논의와 투자 자금의 이동이 지수 움직임에 영향을 미쳤다. 반도체와 AI 관련주 등 주요 섹터의 등락이 엇갈리면서 코스피와 코스닥 지수가 큰 폭으로 변동했다.",
+  "ai_commentary": "미국 증시의 높은 변동성과 AI 기업 실적 및 고용 지표에 대한 시장의 경계감이 지속되는 가운데, 투자자들 사이에서는 레버리지 ETF 투자와 관련한 위험성에 대한 우려가 확산되고 있다. 국내 증시는 이러한 대외 변수와 함께 레버리지 상품 규제 움직임 및 시장 안정화 조치 논의 등 투자 환경 변화의 영향을 받으며 등락을 보였다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
