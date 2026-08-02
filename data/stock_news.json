@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02 13:38:27",
+  "updated_at": "2026-08-02 14:05:06",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,273,000",
-      "change_percent": "▲0.79%",
+      "value": "91,305,000",
+      "change_percent": "▲0.83%",
       "direction": "up",
-      "as_of": "2026-08-02 13:38:22"
+      "as_of": "2026-08-02 14:05:04"
     }
   ],
   "news_categories": [
@@ -98,8 +98,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "머니투데이",
           "rank": 1,
+          "title": "\"역대급 변동성 지나 막바지 구간\"…美 반도체 실적·금리 주시할 때",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005394429&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
+          "upload_time": "2026-08-02 13:54",
+          "published_at": "2026-08-02T13:54:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 2,
+          "title": "[뉴스초점] 오르락내리락 '롤러코스피'…변동성 언제까지?",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891520&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
+          "upload_time": "2026-08-02 13:49",
+          "published_at": "2026-08-02T13:49:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 3,
           "title": "증시 긴급조치권 추진…레버리지 배율 조정하나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891510&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 13:16",
@@ -107,7 +123,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 4,
           "title": "[프리즘] \"만스피 믿고 들어갔는데\"…녹아내린 계좌에 속타는 개미들",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891499&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 13:11",
@@ -115,27 +131,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 3,
+          "rank": 5,
           "title": "[프리즘] 전례 없이 널뛰는 코스피…레버리지 규제 통할까",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891498&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 13:09",
           "published_at": "2026-08-02T13:09:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 4,
-          "title": "휴머노이드 ETF 4% 오를 때 태양광 19% 급락…테마 순환매 [ETF스퀘어]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555975&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
-          "upload_time": "2026-08-02 12:55",
-          "published_at": "2026-08-02T12:55:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "코스피 변동성 경고등…AI 실적·美 고용지표가 분수령 [주간증시전망]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555963&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
-          "upload_time": "2026-08-02 12:24",
-          "published_at": "2026-08-02T12:24:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "정부의 레버리지 규제 강화와 증시 긴급조치권 검토 소식이 시장 변동성을 키우는 가운데, 최근 지속된 상장사들의 주가 하락과 투자자들의 이탈이 지수 흐름에 영향을 미쳤다. 환율 급락과 주요 테마주 중심의 순환매 현상이 이어지며 코스피와 코스닥 지수가 큰 폭으로 등락했다.",
+  "ai_commentary": "정부의 증시 긴급조치권 검토와 레버리지 배율 조정 등 시장 변동성 완화를 위한 정책적 논의가 이어지는 가운데 반도체 실적과 금리 상황이 시장에 영향을 미쳤다. 환율의 급격한 하락과 투자자들의 심리적 불안이 맞물리며 지수의 등락폭이 확대되는 흐름을 보였다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
