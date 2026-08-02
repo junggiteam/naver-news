@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02 18:30:45",
+  "updated_at": "2026-08-02 19:00:52",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,787,000",
-      "change_percent": "▲0.25%",
+      "value": "90,748,000",
+      "change_percent": "▲0.21%",
       "direction": "up",
-      "as_of": "2026-08-02 18:30:43"
+      "as_of": "2026-08-02 19:00:48"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "파이낸셜뉴스",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "“삼전닉스 고점 언제냐고요?…영업이익률 정점 알면 보입니다”",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715610&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
+          "upload_time": "2026-08-02 18:41",
+          "published_at": "2026-08-02T18:41:00+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 2,
           "title": "코스피 변동성, AI실적·美고용지표 분수령 [주간 증시 전망]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005556079&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 18:22",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "휴머노이드·AI SW 반등… 태양광·신재생에너지 10%대 하락 [ETF 스퀘어]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005556078&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 18:22",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "4월 지수로 돌아간 코스피… 외국인 매수에 반등 달렸다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005556075&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 18:19",
@@ -123,19 +131,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 5,
           "title": "국민연금도 국장에 털렸다…한달새 118조 증발·삼전닉스만 88조",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715602&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 18:06",
           "published_at": "2026-08-02T18:06:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "넥스트레이드, 거래소 거래시간 확대 맞춰 대량매매 오후 8시까지 연장",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647745&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
-          "upload_time": "2026-08-02 17:56",
-          "published_at": "2026-08-02T17:56:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "최근 국내 증시는 반도체 등 주요 종목의 급락과 외국인 투자자의 대규모 매도세로 인해 큰 폭의 변동성을 보였다. 이에 정부는 증시 안정을 위해 레버리지 상품의 배율 조정 등 긴급 조치를 추진하며 시장 대응에 나섰다.",
+  "ai_commentary": "외국인의 순매수세가 유입되면서 코스피와 코스닥 지수가 큰 폭으로 반등했다. 최근 인공지능 관련 실적과 미국 고용 지표에 대한 시장의 경계감이 작용하는 가운데 지수 변동성이 확대되는 흐름이 나타났다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
