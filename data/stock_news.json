@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 00:02:15",
+  "updated_at": "2026-08-03 00:32:50",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,508,000",
-      "change_percent": "▼0.05%",
-      "direction": "down",
-      "as_of": "2026-08-03 00:02:12"
+      "value": "90,575,000",
+      "change_percent": "▲0.02%",
+      "direction": "up",
+      "as_of": "2026-08-03 00:32:48"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "중앙일보",
           "rank": 1,
+          "title": "“낙폭 컸다고 반등 기대 어려워…5500~8000선 예상”",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0003541840&office_id=025&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260803&page=1",
+          "upload_time": "2026-08-03 00:11",
+          "published_at": "2026-08-03T00:11:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
           "title": "[단독] “유니콘 잡아라”…코스닥 ‘1부리그’ 직행 추진 [시그널]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647809&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260803&page=1",
           "upload_time": "2026-08-02 23:25",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 3,
           "title": "“코스피와 IPO 격차 줄여 시장 활성화”…AI·반도체가 직행 ‘1호’ 후보군 [시그널]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647808&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260803&page=1",
           "upload_time": "2026-08-02 23:24",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 4,
           "title": "[부음] 조태원(대신증권 고객솔루션부장)씨 장모상",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715631&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260803&page=1",
           "upload_time": "2026-08-02 21:47",
@@ -123,19 +131,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 4,
+          "rank": 5,
           "title": "[단독] SK팜테코, 비만약 원료공장 준공…삼성과 펩타이드 CDMO서 격돌",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647796&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260803&page=1",
           "upload_time": "2026-08-02 19:58",
           "published_at": "2026-08-02T19:58:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 5,
-          "title": "단일 레버리지 ETF 여파?…거래소 ETF 상장심사 '병목'",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016229500&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260803&page=1",
-          "upload_time": "2026-08-02 19:33",
-          "published_at": "2026-08-02T19:33:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "코스피와 코스닥 시장이 급등한 것은 거래소의 레버리지 ETF 상장 심사 규제 강화로 인해 투자 자금이 ETF에서 개별 종목 시장으로 이동할 것이라는 기대감이 반영된 결과이다. 아울러 하반기 IPO 시장의 활성화와 유망 기술 기업의 상장 추진 소식이 투자 심리에 영향을 미친 것으로 보인다.",
+  "ai_commentary": "정부의 증시 불안 대응을 위한 긴급조치권 추진과 코스닥 시장 활성화를 위한 제도 개선 방안이 논의되면서 투자 심리에 영향을 미쳤다. 또한 하반기 IPO 시장 회복 기대감과 함께 반도체 및 신사업 분야의 성장에 대한 관심이 시장 전반의 변동성을 키우는 요인으로 작용했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
