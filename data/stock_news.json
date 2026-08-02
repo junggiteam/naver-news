@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02 10:47:06",
+  "updated_at": "2026-08-02 11:15:43",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,711,000",
-      "change_percent": "▲0.17%",
+      "value": "91,279,000",
+      "change_percent": "▲0.80%",
       "direction": "up",
-      "as_of": "2026-08-02 10:47:00"
+      "as_of": "2026-08-02 11:15:40"
     }
   ],
   "news_categories": [
@@ -98,8 +98,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "매일경제",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "[부고] 조태원(대신증권 고객솔루션부장)씨 장모상",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647665&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
+          "upload_time": "2026-08-02 10:57",
+          "published_at": "2026-08-02T10:57:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "“상폐 막아달라” 주주들 회사로…코스닥 하루 한 곳꼴 ‘상폐 경고’[마켓시그널]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004647663&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
+          "upload_time": "2026-08-02 10:56",
+          "published_at": "2026-08-02T10:56:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 3,
           "title": "“오른 종목 찾기가 더 어려웠다”…7월 증시, 상장사 10곳 중 7곳 ‘마이너스’",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005715406&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 10:39",
@@ -107,7 +123,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 4,
           "title": "지난달 급락장 속 국내주식 10개 중 7개 녹았다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891445&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 10:10",
@@ -115,27 +131,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 3,
+          "rank": 5,
           "title": "20% 넘는 폭등에도…삼전닉스 주가, 목표가의 반토막",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891434&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
           "upload_time": "2026-08-02 09:35",
           "published_at": "2026-08-02T09:35:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스TV",
-          "rank": 4,
-          "title": "'코리아 디스카운트' 해소될까…내일부터 중복상장 규제",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0000891426&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
-          "upload_time": "2026-08-02 09:27",
-          "published_at": "2026-08-02T09:27:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "\"실적보다 광주공장\"...호남 반도체 수혜주로 떠오른 이곳, 증권가 '러브콜' [테마+]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555918&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260802&page=1",
-          "upload_time": "2026-08-02 09:10",
-          "published_at": "2026-08-02T09:10:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "최근 급락장과 환율 변동성 등 시장의 혼란이 지속되는 상황에서 반도체 및 특정 테마주에 대한 관심과 함께 중복상장 규제 완화와 같은 정책적 변화가 시장에 영향을 미쳤다. 이로 인해 주가 등락이 엇갈리는 가운데 전반적인 시장 지수가 큰 폭의 변동성을 보였다.",
+  "ai_commentary": "최근 환율이 큰 폭으로 하락하며 금융 시장의 변동성이 확대된 가운데, 삼성전자와 SK하이닉스 등 주요 대형주를 중심으로 주가가 급등세를 보였다. 앞선 7월 급락장에서 상장사 다수가 마이너스 수익률을 기록했던 시장 상황이 반등하며 지수 상승을 견인했다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
