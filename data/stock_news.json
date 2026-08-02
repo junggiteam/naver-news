@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02 16:30:53",
+  "updated_at": "2026-08-02 16:45:52",
   "indices": [
     {
       "name": "코스피",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,114,000",
+      "value": "91,118,000",
       "change_percent": "▲0.62%",
       "direction": "up",
-      "as_of": "2026-08-02 16:30:49"
+      "as_of": "2026-08-02 16:45:48"
     }
   ],
   "news_categories": [
@@ -143,8 +143,24 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "동행미디어 시대",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "2분기 부진 GS건설…주가 향방은 AI데이터센터에[주末머니]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005797710&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
+          "upload_time": "2026-08-02 16:40",
+          "published_at": "2026-08-02T16:40:00+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 2,
+          "title": "298만→132만원 반토막에도...\"470만닉스·65만전자\" 목표가 높였다",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005394462&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
+          "upload_time": "2026-08-02 16:26",
+          "published_at": "2026-08-02T16:26:00+09:00"
+        },
+        {
+          "press_name": "동행미디어 시대",
+          "rank": 3,
           "title": "삼전닉스 주주 웃을까…엔비디아 가격 인상설 '주목'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001154060&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
           "upload_time": "2026-08-02 16:06",
@@ -152,7 +168,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 2,
+          "rank": 4,
           "title": "뛰고 있는 심장, 숨쉬는 폐 보냅니다…의사가 만든 장기이송 회사",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005394439&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
           "upload_time": "2026-08-02 14:53",
@@ -160,27 +176,11 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "\"IPO 훈풍 다시 불까\"…7월 상장 도전 기업 증가",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555971&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
           "upload_time": "2026-08-02 12:52",
           "published_at": "2026-08-02T12:52:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 4,
-          "title": "코스닥 거래 2개월 만에 60% '뚝'…레버리지 규제에 자금 유입될까",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555970&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
-          "upload_time": "2026-08-02 12:50",
-          "published_at": "2026-08-02T12:50:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "[이런펀드어때요] 삼성운용 'KODEX 미국나스닥100데일리커버드콜OTM ETF'",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005555962&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260802&page=1",
-          "upload_time": "2026-08-02 12:23",
-          "published_at": "2026-08-02T12:23:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "일본 당국의 시장 개입으로 추정되는 엔화 강세 흐름에 따라 엔 캐리 트레이드 청산 우려가 커지며 국내 증시 변동성이 확대되었다. 환율이 금융위기 이후 가장 큰 폭으로 하락하는 등 외환 시장의 급격한 변화가 투자 심리에 영향을 미치며 지수 움직임으로 이어졌다.",
+  "ai_commentary": "일본 당국의 개입으로 추정되는 엔화 강세와 엔 캐리 자금 청산 우려가 시장의 불안 요인으로 작용하며 국내 증시 변동성이 확대되었습니다. 동시에 환율 하락과 주요 기업의 실적 부진 및 반도체 업종의 가격 변동성이 시장의 흐름에 영향을 미친 것으로 풀이됩니다.",
   "top_gainers": [
     {
       "name": "TIGER 200IT레버리지",
