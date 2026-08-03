@@ -120,7 +120,13 @@ def build_ma_signals():
             entry.update(extra)
             today_signals[category].append(entry)
 
-    today_str = datetime.now(KST).strftime("%Y-%m-%d")
+    now_kst = datetime.now(KST)
+    today_str = now_kst.strftime("%Y-%m-%d")
+    # 카테고리 키(MA_CATEGORIES)가 아닌 별도 키라서, MA_CATEGORIES만 순회하는
+    # 위젯/집계 로직(counts 계산 등)에는 영향 없음. dart_filings.json의
+    # updated_at을 참고하던 위젯 메타 텍스트("~ 기준")가 날짜만 있고 시:분이
+    # 없어진 문제를 해결하기 위해 추가.
+    today_signals["_updated_at"] = now_kst.strftime("%Y-%m-%d %H:%M:%S")
 
     raw_archive = _load_json(MA_ARCHIVE_FILE)
     # 구버전 평면 스키마({"date":..., "ma_signals":...}) 잔재 제거 - 날짜

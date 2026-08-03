@@ -227,10 +227,13 @@
     .then(function (maJson) {
       var maToday = (maJson && maJson[todayStr()]) || {};
       var items = buildTimeSortedList(maToday);
+      // dart_ma_signals.py가 오늘 날짜 키에 넣어주는 시:분:초 포함
+      // 타임스탬프(_updated_at)를 우선 쓰고, 없으면 날짜만 보여준다.
+      var metaText = (maToday._updated_at || todayStr()) + " 기준";
 
       if (!items.length) {
         track.innerHTML = '<span class="mth-loading">오늘 발생한 공시가 없습니다.</span>';
-        metaTextEl.textContent = todayStr() + " 기준";
+        metaTextEl.textContent = metaText;
         return;
       }
 
@@ -241,7 +244,7 @@
       var totalSeconds = items.length * DURATION_PER_ITEM_S;
       track.style.animationDuration = totalSeconds + "s";
 
-      metaTextEl.textContent = todayStr() + " 기준";
+      metaTextEl.textContent = metaText;
     })
     .catch(function (err) {
       track.innerHTML = '<span class="mth-loading">데이터를 불러오지 못했습니다.</span>';

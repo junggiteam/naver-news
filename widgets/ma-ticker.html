@@ -281,7 +281,10 @@
     .then(function (res) { return res.json(); })
     .then(function (maJson) {
       var maToday = (maJson && maJson[todayStr()]) || {};
-      metaTextEl.textContent = todayStr() + " 기준";
+      // dart_ma_signals.py가 오늘 날짜 키를 저장할 때 넣어주는 시:분:초
+      // 포함 타임스탬프(_updated_at)를 우선 쓰고, 없으면(예: 이 필드가
+      // 생기기 전 옛날 데이터) 날짜만이라도 보여준다.
+      metaTextEl.textContent = (maToday._updated_at || todayStr()) + " 기준";
       renderRows(buildTimeSortedList(maToday));
     })
     .catch(function (err) {
