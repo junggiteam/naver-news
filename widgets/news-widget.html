@@ -212,14 +212,6 @@
       <p class="sw-loading">불러오는 중입니다...</p>
     </div>
 
-    <h3 class="db-section-title" style="margin-top:28px;">다가오는 경제 일정</h3>
-    <div class="pw-calendar-list pw-2col" id="pw-calendar-list">
-      <p class="ew-loading">불러오는 중입니다...</p>
-    </div>
-    <div class="pw-more-wrap">
-      <button class="nrw-more-btn" id="pw-calendar-more-btn" style="display:none;">더보기</button>
-    </div>
-
     <h3 class="db-section-title" style="margin-top:28px;">CEO 캘린더</h3>
     <div class="pw-cal-widget" id="pw-cal-widget">
       <div class="pw-cal-toolbar">
@@ -247,14 +239,12 @@
       </div>
     </div>
 
-    <div class="pw-cal-modal-backdrop" id="pw-cal-modal-backdrop" hidden>
-      <div class="pw-cal-modal" role="dialog" aria-modal="true">
-        <div class="pw-cal-modal-header">
-          <span class="pw-cal-modal-date" id="pw-cal-modal-date"></span>
-          <button class="pw-cal-modal-close" id="pw-cal-modal-close" type="button" aria-label="닫기">×</button>
-        </div>
-        <div class="pw-cal-modal-body" id="pw-cal-modal-body"></div>
-      </div>
+    <h3 class="db-section-title" style="margin-top:28px;">다가오는 경제 일정</h3>
+    <div class="pw-calendar-list pw-2col" id="pw-calendar-list">
+      <p class="ew-loading">불러오는 중입니다...</p>
+    </div>
+    <div class="pw-more-wrap">
+      <button class="nrw-more-btn" id="pw-calendar-more-btn" style="display:none;">더보기</button>
     </div>
 
     <h3 class="db-section-title" style="margin-top:28px;">주요 공시 (DART)</h3>
@@ -1760,11 +1750,8 @@
     background: var(--nw-surface);
     text-align: left;
     font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    cursor: default;
   }
-  .pw-cal-cell:hover { border-color: var(--nw-primary); box-shadow: var(--nw-shadow-sm); }
-  .pw-cal-cell:disabled { cursor: default; }
   .pw-cal-cell.pw-cal-outside { opacity: 0.35; }
   .pw-cal-cell.pw-cal-today { border-color: var(--nw-primary); box-shadow: 0 0 0 1px var(--nw-primary) inset; }
   .pw-cal-cell.pw-cal-holiday { background: rgba(233, 67, 83, 0.06); }
@@ -1773,38 +1760,43 @@
     display: block;
     margin-bottom: 4px;
     color: var(--nw-title-color);
-    font-size: 12.5px;
+    font-size: 14px;
     font-weight: 700;
   }
   .pw-cal-cell.pw-cal-outside .pw-cal-cell-date { color: var(--nw-text-muted); }
 
-  .pw-cal-pill-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .pw-cal-pill {
+  /* 공휴일: 배경 박스 대신 날짜 셀 안에 빨간 텍스트로 이름만 작게 표시 */
+  .pw-cal-holiday-name {
     display: block;
     overflow: hidden;
-    padding: 1px 5px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 10px;
+    margin-bottom: 3px;
+    color: var(--nw-up);
+    font-size: 11px;
     font-weight: 700;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .pw-cal-pill.tax { background: #3182F6; }
-  .pw-cal-pill.labor { background: #F5A623; }
-  .pw-cal-pill.ma { background: #8B5CF6; }
 
-  .pw-cal-pill-more {
-    display: block;
-    color: var(--nw-text-muted);
-    font-size: 10px;
-    font-weight: 700;
+  /* 세무/노무/M&A/경제일정 마감: 팝업 없이 카테고리별 색상 점으로만 표시.
+     상세 내용은 캘린더 아래 다가오는 마감/최근 공시 리스트에서 확인 */
+  .pw-cal-dot-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
   }
+
+  .pw-cal-dot {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+  .pw-cal-dot.tax { background: #3182F6; }
+  .pw-cal-dot.labor { background: #F5A623; }
+  .pw-cal-dot.ma { background: #8B5CF6; }
+  .pw-cal-dot.econ { background: #00A76F; }
 
   .pw-cal-upcoming-title {
     margin: 0 0 15px;
@@ -1831,10 +1823,10 @@
     background: var(--nw-surface);
     color: inherit;
     text-decoration: none;
-    cursor: pointer;
     transition: border-color 0.18s ease, box-shadow 0.18s ease;
   }
   .pw-cal-upcoming-item:hover { border-color: #d4dae1; box-shadow: var(--nw-shadow-sm); }
+  a.pw-cal-upcoming-item { cursor: pointer; }
 
   .pw-cal-dday {
     display: flex;
@@ -1871,112 +1863,6 @@
     font-weight: 700;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .pw-cal-modal-backdrop {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: rgba(17, 29, 53, 0.45);
-  }
-
-  .pw-cal-modal {
-    width: 100%;
-    max-width: 420px;
-    max-height: 80vh;
-    overflow-y: auto;
-    border-radius: 20px;
-    background: var(--nw-surface);
-    box-shadow: var(--nw-shadow-md);
-  }
-
-  .pw-cal-modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 22px;
-    border-bottom: 1px solid var(--nw-line-soft);
-  }
-
-  .pw-cal-modal-date {
-    color: var(--nw-navy);
-    font-size: 17px;
-    font-weight: 800;
-  }
-
-  .pw-cal-modal-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    border: none;
-    border-radius: 8px;
-    background: var(--nw-surface-soft);
-    color: var(--nw-text-sub);
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  .pw-cal-modal-close:hover { color: var(--nw-primary); }
-
-  .pw-cal-modal-body {
-    display: grid;
-    gap: 14px;
-    padding: 18px 22px 22px;
-  }
-
-  .pw-cal-modal-item-badge {
-    display: inline-flex;
-    align-items: center;
-    height: 22px;
-    margin: 0 0 8px;
-    padding: 0 10px;
-    border-radius: 999px;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 800;
-  }
-  .pw-cal-modal-item-badge.tax { background: #3182F6; }
-  .pw-cal-modal-item-badge.labor { background: #F5A623; }
-  .pw-cal-modal-item-badge.holiday { background: var(--nw-up); }
-  .pw-cal-modal-item-badge.ma { background: #8B5CF6; }
-
-  .pw-cal-modal-item-link {
-    display: inline-flex;
-    align-items: center;
-    color: var(--nw-primary);
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .pw-cal-modal-item-link:hover { text-decoration: underline; }
-
-  .pw-cal-modal-item-title {
-    margin: 0 0 6px;
-    color: var(--nw-title-color);
-    font-size: 15px;
-    font-weight: 800;
-  }
-
-  .pw-cal-modal-item-detail {
-    margin: 0 0 6px;
-    color: var(--nw-body-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.6;
-  }
-
-  .pw-cal-modal-item-scope {
-    margin: 0;
-    color: var(--nw-text-muted);
-    font-size: 12px;
-    font-weight: 500;
   }
 
   /* =========================================================
@@ -2273,8 +2159,9 @@
     .pw-2col { grid-template-columns: 1fr; }
 
     .pw-cal-cell { min-height: 54px; padding: 4px 3px; }
-    .pw-cal-cell-date { font-size: 11px; }
-    .pw-cal-pill { font-size: 8.5px; padding: 1px 4px; }
+    .pw-cal-cell-date { font-size: 12.5px; }
+    .pw-cal-holiday-name { font-size: 9.5px; }
+    .pw-cal-dot { width: 6px; height: 6px; }
     .pw-cal-month-label { font-size: 15px; min-width: 84px; }
 
     /* 모바일 뉴스 피드: 이미지 좌측 + 본문 우측 1열 */
@@ -3542,7 +3429,7 @@
      대시보드 최초 로딩 속도에 전혀 영향 없게 하기 위한 지연 로딩(lazy
      load) - CLAUDE.md 레이아웃 확정 사항 참고.
      ========================================================= */
-  var PW_CAL_TYPE_LABELS = { tax: "세무", labor: "노무", holiday: "공휴일" };
+  var PW_CAL_TYPE_LABELS = { tax: "세무", labor: "노무", holiday: "공휴일", econ: "경제일정" };
   var PW_CAL_MA_CATEGORY_LABELS = {
     "합병_분할": "합병·분할",
     "지분인수": "지분인수",
@@ -3574,6 +3461,15 @@
 
   function pwCalEventsOnDate(dateStr) {
     return pwCalEvents.concat(pwCalMaEvents).filter(function (e) { return e.date === dateStr; });
+  }
+
+  // "다가오는 경제 일정"(한국은행 금통위, FOMC 등) 리스트용 데이터를 캘린더
+  // 셀에도 함께 표시하기 위해 pwCalEvents와 같은 형태로 변환. 세무/노무/M&A와
+  // 달리 필터 탭 대상이 아니라 공휴일처럼 항상 표시된다.
+  function pwCalTransformEconEvents(events) {
+    return (events || []).map(function (ev) {
+      return { date: ev.date, type: "econ", title: ev.event, country: ev.country };
+    });
   }
 
   function pwCalFormatRceptDt(rceptDt) {
@@ -3637,88 +3533,6 @@
     return "D+" + Math.abs(diffDays);
   }
 
-  function pwCalOpenModal(dateStr) {
-    var backdrop = document.getElementById("pw-cal-modal-backdrop");
-    var dateLabel = document.getElementById("pw-cal-modal-date");
-    var body = document.getElementById("pw-cal-modal-body");
-
-    var dateObj = new Date(dateStr + "T00:00:00");
-    var weekday = ["일", "월", "화", "수", "목", "금", "토"][dateObj.getDay()];
-    dateLabel.textContent = dateStr + " (" + weekday + ")";
-
-    var dayEvents = pwCalEventsOnDate(dateStr);
-    body.innerHTML = "";
-    if (!dayEvents.length) {
-      body.innerHTML = '<p class="ew-loading">해당 날짜에 일정이 없습니다.</p>';
-    } else {
-      dayEvents.forEach(function (e) {
-        var box = document.createElement("div");
-
-        if (e.type === "ma") {
-          var maBadge = document.createElement("span");
-          maBadge.className = "pw-cal-modal-item-badge ma";
-          maBadge.textContent = "M&A · " + (PW_CAL_MA_CATEGORY_LABELS[e.category] || e.category);
-          box.appendChild(maBadge);
-
-          var maTitle = document.createElement("p");
-          maTitle.className = "pw-cal-modal-item-title";
-          maTitle.textContent = e.corp_name;
-          box.appendChild(maTitle);
-
-          var maDetail = document.createElement("p");
-          maDetail.className = "pw-cal-modal-item-detail";
-          maDetail.textContent = e.report_nm + (e.action ? " (" + e.action + ")" : "");
-          box.appendChild(maDetail);
-
-          if (e.source_url) {
-            var maLink = document.createElement("a");
-            maLink.className = "pw-cal-modal-item-link";
-            maLink.href = e.source_url;
-            maLink.target = "_blank";
-            maLink.rel = "noopener noreferrer";
-            maLink.textContent = "DART 원문 보기 →";
-            box.appendChild(maLink);
-          }
-
-          body.appendChild(box);
-          return;
-        }
-
-        var badge = document.createElement("span");
-        badge.className = "pw-cal-modal-item-badge " + e.type;
-        badge.textContent = PW_CAL_TYPE_LABELS[e.type] || e.type;
-        box.appendChild(badge);
-
-        var title = document.createElement("p");
-        title.className = "pw-cal-modal-item-title";
-        title.textContent = e.title;
-        box.appendChild(title);
-
-        if (e.detail) {
-          var detail = document.createElement("p");
-          detail.className = "pw-cal-modal-item-detail";
-          detail.textContent = e.detail;
-          box.appendChild(detail);
-        }
-
-        if (e.scope) {
-          var scope = document.createElement("p");
-          scope.className = "pw-cal-modal-item-scope";
-          scope.textContent = e.scope;
-          box.appendChild(scope);
-        }
-
-        body.appendChild(box);
-      });
-    }
-
-    backdrop.hidden = false;
-  }
-
-  function pwCalCloseModal() {
-    document.getElementById("pw-cal-modal-backdrop").hidden = true;
-  }
-
   function pwCalRenderGrid() {
     var grid = document.getElementById("pw-cal-grid");
     var label = document.getElementById("pw-cal-month-label");
@@ -3751,45 +3565,56 @@
 
     cells.forEach(function (c) {
       var dateStr = pwCalFormatDate(c.y, c.m, c.d);
-      var cell = document.createElement("button");
-      cell.type = "button";
+      var cell = document.createElement("div");
       cell.className = "pw-cal-cell" +
         (c.outside ? " pw-cal-outside" : "") +
         (dateStr === todayInfo.dateStr ? " pw-cal-today" : "");
 
       var dayEvents = pwCalEventsOnDate(dateStr);
-      var hasHoliday = dayEvents.some(function (e) { return e.type === "holiday"; });
-      if (hasHoliday) cell.classList.add("pw-cal-holiday");
+      var holidayEvents = dayEvents.filter(function (e) { return e.type === "holiday"; });
+      var econEvents = dayEvents.filter(function (e) { return e.type === "econ"; });
+      // 세무/노무/M&A는 필터 탭에 따라 점 표시 여부가 갈리고, 공휴일/경제일정은
+      // 필터와 무관하게 항상 표시(공휴일 배경 표시와 동일한 원칙)
+      var dotEvents = dayEvents.filter(function (e) { return pwCalMatchesFilter(e.type); });
+      if (holidayEvents.length) cell.classList.add("pw-cal-holiday");
 
       var dateEl = document.createElement("span");
       dateEl.className = "pw-cal-cell-date";
       dateEl.textContent = String(c.d);
       cell.appendChild(dateEl);
 
-      var pillEvents = dayEvents.filter(function (e) { return pwCalMatchesFilter(e.type); });
-      if (pillEvents.length) {
-        var pillWrap = document.createElement("div");
-        pillWrap.className = "pw-cal-pill-wrap";
-        pillEvents.slice(0, 2).forEach(function (e) {
-          var pill = document.createElement("span");
-          pill.className = "pw-cal-pill " + e.type;
-          pill.textContent = e.type === "ma" ? e.corp_name : e.title;
-          pillWrap.appendChild(pill);
-        });
-        if (pillEvents.length > 2) {
-          var more = document.createElement("span");
-          more.className = "pw-cal-pill-more";
-          more.textContent = "+" + (pillEvents.length - 2);
-          pillWrap.appendChild(more);
-        }
-        cell.appendChild(pillWrap);
+      if (holidayEvents.length) {
+        var holidayName = document.createElement("span");
+        holidayName.className = "pw-cal-holiday-name";
+        holidayName.textContent = holidayEvents.map(function (e) { return e.title; }).join(", ");
+        cell.appendChild(holidayName);
       }
 
-      if (dayEvents.length) {
-        cell.addEventListener("click", function () { pwCalOpenModal(dateStr); });
-      } else {
-        cell.disabled = true;
+      var dotTypes = [];
+      dotEvents.forEach(function (e) { if (dotTypes.indexOf(e.type) === -1) dotTypes.push(e.type); });
+      if (econEvents.length && dotTypes.indexOf("econ") === -1) dotTypes.push("econ");
+
+      if (dotTypes.length) {
+        var dotRow = document.createElement("div");
+        dotRow.className = "pw-cal-dot-row";
+        dotTypes.forEach(function (t) {
+          var dot = document.createElement("span");
+          dot.className = "pw-cal-dot " + t;
+          dotRow.appendChild(dot);
+        });
+        cell.appendChild(dotRow);
       }
+
+      // 팝업 없이도 무슨 일정인지 알 수 있게 네이티브 툴팁(title 속성)으로
+      // 보조 - 자세한 내용은 캘린더 아래 리스트에서 확인하는 게 기본 경로
+      var titleParts = [];
+      holidayEvents.forEach(function (e) { titleParts.push(e.title + " (공휴일)"); });
+      dotEvents.forEach(function (e) {
+        var label = e.type === "ma" ? (e.corp_name || e.title) : e.title;
+        titleParts.push(label + " (" + (PW_CAL_TYPE_LABELS[e.type] || e.type) + ")");
+      });
+      econEvents.forEach(function (e) { titleParts.push(e.title + " (경제일정)"); });
+      if (titleParts.length) cell.title = titleParts.join("\n");
 
       grid.appendChild(cell);
     });
@@ -3815,7 +3640,6 @@
     upcoming.forEach(function (e) {
       var item = document.createElement("div");
       item.className = "pw-cal-upcoming-item";
-      item.addEventListener("click", function () { pwCalOpenModal(e.date); });
 
       var label = pwCalDdayLabel(e.date, todayStr);
       var dday = document.createElement("span");
@@ -3917,8 +3741,8 @@
     }
   }
 
-  function pwCalInit(events) {
-    pwCalEvents = events || [];
+  function pwCalInit(events, econEvents) {
+    pwCalEvents = (events || []).concat(pwCalTransformEconEvents(econEvents));
     var today = pwCalToday();
     pwCalViewYear = today.y;
     pwCalViewMonth = today.m;
@@ -3965,11 +3789,6 @@
           pwCalRenderGrid();
           pwCalRenderUpcoming();
         });
-      });
-
-      document.getElementById("pw-cal-modal-close").addEventListener("click", pwCalCloseModal);
-      document.getElementById("pw-cal-modal-backdrop").addEventListener("click", function (ev) {
-        if (ev.target === this) pwCalCloseModal();
       });
     }
 
@@ -4078,7 +3897,7 @@
           data.updated_at ? data.updated_at + " 기준" : "";
         renderCalendar(data.economic_calendar);
         renderMacroIndices(data.macro_indicators);
-        pwCalInit(data.tax_labor_events);
+        pwCalInit(data.tax_labor_events, data.economic_calendar);
         renderDartFilings(data.dart_filings);
         renderSupportPrograms("pw-support-list", "pw-support-more-btn", data.support_programs);
         renderSupportPrograms("pw-soso-list", "pw-soso-more-btn", data.soso_support_programs);
