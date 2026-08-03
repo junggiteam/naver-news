@@ -3664,11 +3664,23 @@
   // 무기한 누적 아카이브다(dart_filings.json 자체가 "오늘 것만" 담는 파일이라,
   // 매일 신규 M&A 공시가 0건이면 위젯이 텅 비지 않도록 날짜별로 계속 쌓아둔다).
   // 그리드/모달용으로는 전체 날짜를 평탄화해서 쓴다.
+  //
+  // 각 날짜 객체 안 키를 전부 카테고리로 간주하고 순회하면 안 된다 -
+  // dart_ma_signals.py가 오늘 날짜 키에 "_updated_at"(문자열) 메타 키를
+  // 같이 넣어주는데, 그걸 카테고리인 줄 알고 (dayCategories["_updated_at"]
+  // || []).forEach(...)를 호출하면 문자열엔 forEach가 없어 TypeError가
+  // 나고, 이게 pwCalLoadMaSignals()의 .catch()에서 조용히 삼켜지면서
+  // pwCalMaEvents가 계속 빈 배열로 남는 버그가 있었다(2026-08 발견).
+  // 그래서 PW_CAL_MA_CATEGORY_LABELS에 정의된 알려진 카테고리만 명시적으로
+  // 순회한다 - ma-ticker.html/ma-ticker-mobile.html의 CATEGORIES 배열과
+  // 같은 원칙. 앞으로 비슷한 메타 키가 추가돼도 이 화이트리스트 밖이라
+  // 자동으로 안전하게 무시된다.
   function pwCalTransformMaSignals(archive) {
     var events = [];
+    var knownCategories = Object.keys(PW_CAL_MA_CATEGORY_LABELS);
     Object.keys(archive || {}).forEach(function (dateKey) {
       var dayCategories = archive[dateKey] || {};
-      Object.keys(dayCategories).forEach(function (category) {
+      knownCategories.forEach(function (category) {
         (dayCategories[category] || []).forEach(function (item) {
           var dateStr = pwCalFormatRceptDt(item.rcept_dt) || dateKey;
           events.push({
