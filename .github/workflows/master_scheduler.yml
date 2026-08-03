@@ -42,6 +42,9 @@ jobs:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python run_scheduled.py
 
+      - name: "[임시검증] dart_ma_signals.json 구스키마->날짜별 아카이브 마이그레이션 실검증"
+        run: python -c "import dart_ma_signals; dart_ma_signals.build_ma_signals()"
+
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
