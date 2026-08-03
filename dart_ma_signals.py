@@ -33,6 +33,15 @@
 
 5) 자기주식: "자기주식취득결정"/"자기주식처분결정" 그대로 사용, 취득/처분
    여부를 action 필드로 구분.
+
+저장 구조 (날짜별 무기한 누적 - daily_reports_archive.json과 동일한 패턴):
+dart_filings.json 자체가 매일 "오늘의 주요사항보고"만 담아 덮어쓰는 파일이라,
+여기서 매번 최신 결과만 저장하면 오늘 신규 M&A 공시가 0건인 날엔 위젯의
+"최근 공시" 목록이 통째로 비어버리는 문제가 있었다. 그래서
+data/dart_ma_signals.json을 {"YYYY-MM-DD": {카테고리: [...]}} 형태의
+날짜별 아카이브로 바꾸고, 매 실행마다 오늘 날짜 키만 갱신(다른 날짜는
+보존)한다. 용량 제한은 두지 않는다(daily_reports_archive.json과 동일한
+방침 - 나중에 커지면 그때 정리).
 """
 
 import os
@@ -82,11 +91,22 @@ def _load_json(path):
         return {}
 
 
+MA_ARCHIVE_FILE = os.path.join("data", "dart_ma_signals.json")
+
+
+def _is_date_key(key):
+    try:
+        datetime.strptime(key, "%Y-%m-%d")
+        return True
+    except (TypeError, ValueError):
+        return False
+
+
 def build_ma_signals():
     filings_data = _load_json("data/dart_filings.json")
     filings = filings_data.get("filings") or []
 
-    ma_signals = {cat: [] for cat in MA_CATEGORIES}
+    today_signals = {cat: [] for cat in MA_CATEGORIES}
 
     for item in filings:
         report_nm = item.get("report_nm", "")
@@ -98,20 +118,25 @@ def build_ma_signals():
                 "source_url": item.get("link", ""),
             }
             entry.update(extra)
-            ma_signals[category].append(entry)
+            today_signals[category].append(entry)
 
     today_str = datetime.now(KST).strftime("%Y-%m-%d")
-    output = {"date": today_str, "ma_signals": ma_signals}
+
+    raw_archive = _load_json(MA_ARCHIVE_FILE)
+    # 구버전 평면 스키마({"date":..., "ma_signals":...}) 잔재 제거 - 날짜
+    # 형식이 아닌 키는 전부 버린다 (daily_reports.py에서 겪은 것과 동일한
+    # 스키마 오염 문제를 여기서도 예방)
+    archive = {k: v for k, v in raw_archive.items() if _is_date_key(k)}
+    archive[today_str] = today_signals
 
     os.makedirs("data", exist_ok=True)
-    file_path = os.path.join("data", "dart_ma_signals.json")
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    with open(MA_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive, f, ensure_ascii=False, indent=2)
 
-    counts = {cat: len(ma_signals[cat]) for cat in MA_CATEGORIES}
+    counts = {cat: len(today_signals[cat]) for cat in MA_CATEGORIES}
     total = sum(counts.values())
-    print(f"[dart_ma] 오늘 주요사항보고 {len(filings)}건 중 M&A 시그널 {total}건 분류: {counts}")
-    return output
+    print(f"[dart_ma] {today_str} 주요사항보고 {len(filings)}건 중 M&A 시그널 {total}건 분류 및 아카이브 저장: {counts}")
+    return archive
 
 
 def main():

@@ -3582,21 +3582,27 @@
     return s.slice(0, 4) + "-" + s.slice(4, 6) + "-" + s.slice(6, 8);
   }
 
-  function pwCalTransformMaSignals(maSignals) {
+  // dart_ma_signals.json은 {"YYYY-MM-DD": {카테고리: [...]}} 형태의 날짜별
+  // 무기한 누적 아카이브다(dart_filings.json 자체가 "오늘 것만" 담는 파일이라,
+  // 매일 신규 M&A 공시가 0건이면 위젯이 텅 비지 않도록 날짜별로 계속 쌓아둔다).
+  // 그리드/모달용으로는 전체 날짜를 평탄화해서 쓴다.
+  function pwCalTransformMaSignals(archive) {
     var events = [];
-    Object.keys(maSignals || {}).forEach(function (category) {
-      (maSignals[category] || []).forEach(function (item) {
-        var dateStr = pwCalFormatRceptDt(item.rcept_dt);
-        if (!dateStr) return;
-        events.push({
-          date: dateStr,
-          type: "ma",
-          category: category,
-          title: (item.corp_name || "") + " · " + (item.report_nm || ""),
-          corp_name: item.corp_name || "",
-          report_nm: item.report_nm || "",
-          source_url: item.source_url || "",
-          action: item.action || ""
+    Object.keys(archive || {}).forEach(function (dateKey) {
+      var dayCategories = archive[dateKey] || {};
+      Object.keys(dayCategories).forEach(function (category) {
+        (dayCategories[category] || []).forEach(function (item) {
+          var dateStr = pwCalFormatRceptDt(item.rcept_dt) || dateKey;
+          events.push({
+            date: dateStr,
+            type: "ma",
+            category: category,
+            title: (item.corp_name || "") + " · " + (item.report_nm || ""),
+            corp_name: item.corp_name || "",
+            report_nm: item.report_nm || "",
+            source_url: item.source_url || "",
+            action: item.action || ""
+          });
         });
       });
     });
@@ -3610,7 +3616,7 @@
     fetch(DART_MA_URL + "?t=" + Date.now())
       .then(function (res) { return res.json(); })
       .then(function (data) {
-        pwCalMaEvents = pwCalTransformMaSignals(data.ma_signals);
+        pwCalMaEvents = pwCalTransformMaSignals(data);
         pwCalMaLoaded = true;
         pwCalMaLoading = false;
         callback();
@@ -3835,6 +3841,12 @@
     });
   }
 
+  // 카테고리 하나가 그날 유독 많으면(예: 자기주식 공시 몰림) 다른 카테고리가
+  // 전체 최신순 목록에서 밀려날 수 있어, 날짜 전체를 뒤섞어 top-8을 뽑는 대신
+  // "카테고리별 최신 N건"을 먼저 확보한 뒤 합쳐서 보여준다 - 활동이 뜸한
+  // 카테고리도 항상 최근 이력을 보여줄 수 있게 하기 위함.
+  var PW_CAL_MA_RECENT_PER_CATEGORY = 5;
+
   function pwCalRenderRecentFilings() {
     var el = document.getElementById("pw-cal-upcoming-list");
     el.innerHTML = "";
@@ -3844,10 +3856,20 @@
       return;
     }
 
-    var recent = pwCalMaEvents
-      .slice()
-      .sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); })
-      .slice(0, 8);
+    var byCategory = {};
+    pwCalMaEvents.forEach(function (e) {
+      if (!byCategory[e.category]) byCategory[e.category] = [];
+      byCategory[e.category].push(e);
+    });
+
+    var recent = [];
+    Object.keys(byCategory).forEach(function (category) {
+      var sorted = byCategory[category].sort(function (a, b) {
+        return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+      });
+      recent = recent.concat(sorted.slice(0, PW_CAL_MA_RECENT_PER_CATEGORY));
+    });
+    recent.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
 
     if (!recent.length) {
       el.innerHTML = '<p class="ew-loading">최근 발생한 M&amp;A 공시가 없습니다.</p>';
