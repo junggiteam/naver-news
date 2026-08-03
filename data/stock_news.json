@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 22:01:07",
+  "updated_at": "2026-08-03 22:30:51",
   "indices": [
     {
       "name": "코스피",
@@ -45,10 +45,10 @@
     },
     {
       "name": "국내금(원/돈)",
-      "value": "696,942.67",
-      "change_percent": "▼0.84%",
+      "value": "694,475.02",
+      "change_percent": "▼1.19%",
       "direction": "down",
-      "as_of": "2026.08.03 21:59"
+      "as_of": "2026.08.03 22:29"
     },
     {
       "name": "휘발유(원/리터)",
@@ -59,24 +59,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,427.90",
-      "change_percent": "▼0.84%",
+      "value": "1,428.20",
+      "change_percent": "▼0.82%",
       "direction": "down",
-      "as_of": "2026.08.03 21:00"
+      "as_of": "2026.08.03 21:01"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "910.63",
-      "change_percent": "▼0.50%",
+      "value": "912.62",
+      "change_percent": "▼0.28%",
       "direction": "down",
-      "as_of": "2026.08.03 21:00"
+      "as_of": "2026.08.03 21:01"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,646.23",
-      "change_percent": "▼1.02%",
+      "value": "1,646.64",
+      "change_percent": "▼1.00%",
       "direction": "down",
-      "as_of": "2026.08.03 21:00"
+      "as_of": "2026.08.03 21:01"
     },
     {
       "name": "국고채(3년)",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "89,399,000",
-      "change_percent": "▼1.64%",
+      "value": "89,455,000",
+      "change_percent": "▼1.58%",
       "direction": "down",
-      "as_of": "2026-08-03 22:01:06"
+      "as_of": "2026-08-03 22:30:49"
     }
   ],
   "news_categories": [
@@ -188,8 +188,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제TV",
           "rank": 1,
+          "title": "단숨에 시총 1위 올라서더니…삼전닉스 쫓는 속도 높인다",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001261014&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
+          "upload_time": "2026-08-03 21:56",
+          "published_at": "2026-08-03T21:56:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "[포토]폭락-폭등 ‘널뛰기’ 증시",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343227&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 15:59",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 3,
           "title": "[포토]코스피 5% 급락·코스닥은 사이드카",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343224&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 15:58",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "[포토]코스피, 대장주 투심 약화에 하락 마감",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343223&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 15:57",
@@ -213,19 +221,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "[포토]삼전·하닉 급락에 코스피 5%↓",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343209&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 15:51",
           "published_at": "2026-08-03T15:51:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 5,
-          "title": "국내 복귀계좌 '80% 양도세 감면' 시한 종료…6천억원 대상",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016231203&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
-          "upload_time": "2026-08-03 15:46",
-          "published_at": "2026-08-03T15:46:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 기준금리 인상 우려와 대형주 투자 심리 약화가 겹치며 코스피가 하락 마감하여 최근 3일 중 가장 낮은 수치를 기록했다. 반면 코스닥은 장중 변동성 확대로 서킷브레이커 등이 발동되었으나 반등하며 최근 3일 기준 가장 높은 수치로 거래를 마쳤다.",
+  "ai_commentary": "코스피는 삼성전자를 비롯한 대장주의 투자심리 약화와 외국인 매도세가 이어지며 최근 3일간 가장 낮은 수치를 기록했다. 반면 코스닥은 시장 변동성 확대에 따른 사이드카 발동 등 혼란스러운 장세 속에서 최근 3일간 가장 높은 수치로 마감했다.",
   "top_gainers": [
     {
       "name": "티웨이홀딩스",
