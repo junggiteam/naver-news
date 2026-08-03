@@ -4,12 +4,24 @@
 시드 데이터 + 일반 규정 기반 자동 생성 규칙을 함께 사용한다. 노무 일정은
 공식 오픈 API가 없어 전액 규정 기반 자동 생성이다.
 
-TAX_SCHEDULE_SEED을 수동 갱신하는 이유: scraper_calendar.py의 BOK_SCHEDULE와
-동일한 이유다. data.go.kr의 '국세청_세무일정' 파일데이터는 로그인 후
-활용신청을 거쳐 발급되는 다운로드 링크로 제공되고 고정 REST 엔드포인트가
-아니라, 매 배포마다 자동 재검증하기가 마땅치 않다. 반면 이 데이터는 국세청이
-연 1회 정도 갱신하는 성격이라, 새로 게시될 때 아래 SEED에 그 달 분량을
-새로 추가/교체하는 것으로 충분하다. SEED에 없는 달은 자동으로
+TAX_SCHEDULE_SEED을 수동 갱신하는 이유: 2026-08 재조사 결과, data.go.kr의
+'국세청_세무일정' 데이터셋(ID 15101035)에는 파일데이터(CSV)와 별개로
+오픈API(XML/JSON) 탭 + 활용신청 버튼이 실제로 존재한다(예전에 여기 적혀
+있던 "고정 REST 엔드포인트가 아니다"라는 설명은 부정확했음 - 정정).
+다만 활용신청은 로그인한 계정에서만 진행할 수 있고, 승인 후 마이페이지에
+뜨는 정확한 엔드포인트/파라미터는 익명 조회로 확인이 안 돼 아직 연동하지
+않았다. 확인된 사실: 무료, 갱신 주기는 연 1회(2026년판 등록일 2026-01-14,
+차기 등록 예정일 2027-01-15) - 즉 지금처럼 SEED를 연 1회 수동 갱신하는
+방식과 실질적인 데이터 신선도 차이는 크지 않고, API 연동의 이점은 주로
+"매년 수동으로 다시 입력할 필요가 없어진다"는 유지보수 편의성이다. 사용자가
+data.go.kr에서 로그인 -> 오픈API 활용신청 -> 승인 후 엔드포인트를
+확인해주면, 기존에 등록된 DATA_GO_KR_SERVICE_KEY(같은 포털 계정의 일반
+인증키)를 그대로 재사용해 연동하는 후속 작업으로 이어갈 수 있다.
+
+SEED가 비어 있거나 실제 국세청 원본과 대조하지 않은 달은 절대 "국세청
+게시 원본 반영"이라고 표기하지 말 것(CLAUDE.md 수치 인용 원칙) - 대신
+build_fallback_tax_events()의 법정 고정 기한 규칙(법인세법·소득세법 등,
+매년 반복되는 안정적인 날짜)으로 채운다. SEED에 없는 달은 자동으로
 build_fallback_tax_events()가 채운다 - 화면이 절대 비지 않는다.
 
 공휴일 API 서비스키 발급 방법 (DATA_GO_KR_SERVICE_KEY):
@@ -194,6 +206,18 @@ def build_fallback_tax_events(year, month, holidays):
     if month == 6:
         add(deadline(year, 6, 30, holidays), "성실신고확인대상 종합소득세",
             "성실신고확인대상자의 종합소득세 신고·납부 기한입니다.")
+    if month == 8:
+        add(deadline(year, 8, 31, holidays), "법인세 중간예납",
+            "12월 말 결산법인이 해당 사업연도 상반기분에 대해 납부하는 중간예납 세액의 신고·납부 기한입니다.")
+    if month == 11:
+        add(deadline(year, 11, 30, holidays), "종합소득세 중간예납",
+            "개인사업자가 전년도 종합소득세를 기준으로 고지받는 중간예납 세액의 납부 기한입니다.")
+    if month in (1, 7):
+        prev_half_label = "7~12월" if month == 1 else "1~6월"
+        add(deadline(year, month, 10, holidays), "원천세(반기납) 신고·납부",
+            f"반기별 납부 특례를 적용받는 소규모 사업자의 {prev_half_label}분 원천세 신고·납부 기한입니다.")
+        add(month_end(year, month, holidays), "간이지급명세서(근로소득) 제출",
+            f"{prev_half_label} 지급분 간이지급명세서(근로소득) 제출 기한입니다.")
 
     return events
 
@@ -232,11 +256,6 @@ def build_labor_events(year, holidays):
 # 4) 종합
 # ---------------------------------------------------------------------------
 
-def shifted_month(year, month, delta):
-    total = (year * 12 + (month - 1)) + delta
-    return total // 12, total % 12 + 1
-
-
 def build_calendar():
     now_kst = datetime.now(KST)
     today = now_kst.date()
@@ -254,10 +273,14 @@ def build_calendar():
             seen.add(uid)
             events.append(ev)
 
-    for delta in (-1, 0, 1):
-        y, m = shifted_month(today.year, today.month, delta)
-        seed = build_seed_tax_events(y, m, holidays)
-        dedupe_add(seed if seed is not None else build_fallback_tax_events(y, m, holidays))
+    # 노무 일정과 동일하게 앞뒤 1개 연도 전체(3개 연도, 36개월)를 생성한다.
+    # 예전엔 오늘 기준 ±1개월만 생성해서, 캘린더에서 다른 달(예: 법인세
+    # 중간예납이 있는 8월에서 정기신고가 있는 3월)로 이동해도 데이터 자체가
+    # 없어 아무것도 안 보이는 문제가 있었다.
+    for y in (today.year - 1, today.year, today.year + 1):
+        for m in range(1, 13):
+            seed = build_seed_tax_events(y, m, holidays)
+            dedupe_add(seed if seed is not None else build_fallback_tax_events(y, m, holidays))
 
     for y in {today.year - 1, today.year, today.year + 1}:
         dedupe_add(build_labor_events(y, holidays))

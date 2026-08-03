@@ -222,17 +222,23 @@
         </div>
         <button class="pw-cal-today-btn" id="pw-cal-today" type="button">오늘</button>
       </div>
-      <div class="pw-cal-filter-tabs" id="pw-cal-filter-tabs">
+      <div class="pw-cal-filter-tabs">
         <button class="pw-cal-filter-btn active" data-filter="all" type="button">전체</button>
         <button class="pw-cal-filter-btn" data-filter="tax" type="button">세무</button>
         <button class="pw-cal-filter-btn" data-filter="labor" type="button">노무</button>
-        <button class="pw-cal-filter-btn" data-filter="econ" type="button">경제</button>
         <button class="pw-cal-filter-btn" data-filter="ma" type="button">M&amp;A</button>
+      </div>
+      <div class="pw-cal-ma-subfilter" hidden>
+        <button class="pw-cal-subfilter-btn active" data-subfilter="all" type="button">전체</button>
+        <button class="pw-cal-subfilter-btn" data-subfilter="합병_분할" type="button">합병·분할</button>
+        <button class="pw-cal-subfilter-btn" data-subfilter="지분인수" type="button">지분인수</button>
+        <button class="pw-cal-subfilter-btn" data-subfilter="주식교환_이전" type="button">주식교환·이전</button>
+        <button class="pw-cal-subfilter-btn" data-subfilter="경영권이동_최대주주변경" type="button">경영권이동</button>
+        <button class="pw-cal-subfilter-btn" data-subfilter="자기주식" type="button">자기주식</button>
       </div>
       <div class="pw-cal-legend">
         <span class="pw-cal-legend-item"><span class="pw-cal-dot tax"></span>세무일정</span>
         <span class="pw-cal-legend-item"><span class="pw-cal-dot labor"></span>노무일정</span>
-        <span class="pw-cal-legend-item"><span class="pw-cal-dot econ"></span>경제일정</span>
         <span class="pw-cal-legend-item"><span class="pw-cal-dot ma"></span>M&amp;A</span>
         <span class="pw-cal-legend-item"><span class="pw-cal-dot holiday"></span>공휴일</span>
       </div>
@@ -241,19 +247,32 @@
       </div>
       <div class="pw-cal-grid" id="pw-cal-grid"></div>
 
-      <h4 class="pw-cal-upcoming-title" id="pw-cal-upcoming-title">다가오는 마감</h4>
-      <div class="pw-cal-upcoming-list" id="pw-cal-upcoming-list">
+      <div class="pw-cal-detail-header" id="pw-cal-detail-header">
+        <h4 class="pw-cal-upcoming-title" id="pw-cal-upcoming-title">세부 사항</h4>
+        <div class="pw-cal-filter-tabs">
+          <button class="pw-cal-filter-btn active" data-filter="all" type="button">전체</button>
+          <button class="pw-cal-filter-btn" data-filter="tax" type="button">세무</button>
+          <button class="pw-cal-filter-btn" data-filter="labor" type="button">노무</button>
+          <button class="pw-cal-filter-btn" data-filter="ma" type="button">M&amp;A</button>
+        </div>
+        <div class="pw-cal-ma-subfilter" hidden>
+          <button class="pw-cal-subfilter-btn active" data-subfilter="all" type="button">전체</button>
+          <button class="pw-cal-subfilter-btn" data-subfilter="합병_분할" type="button">합병·분할</button>
+          <button class="pw-cal-subfilter-btn" data-subfilter="지분인수" type="button">지분인수</button>
+          <button class="pw-cal-subfilter-btn" data-subfilter="주식교환_이전" type="button">주식교환·이전</button>
+          <button class="pw-cal-subfilter-btn" data-subfilter="경영권이동_최대주주변경" type="button">경영권이동</button>
+          <button class="pw-cal-subfilter-btn" data-subfilter="자기주식" type="button">자기주식</button>
+        </div>
+        <p class="pw-cal-date-filter-banner" id="pw-cal-date-filter-banner" hidden>
+          <span id="pw-cal-date-filter-text"></span>
+          <button type="button" id="pw-cal-date-filter-clear">전체 보기</button>
+        </p>
+      </div>
+      <div class="pw-cal-upcoming-list pw-2col" id="pw-cal-upcoming-list">
         <p class="ew-loading">불러오는 중입니다...</p>
       </div>
-    </div>
-
-    <div class="pw-cal-modal-backdrop" id="pw-cal-modal-backdrop" hidden>
-      <div class="pw-cal-modal" role="dialog" aria-modal="true">
-        <div class="pw-cal-modal-header">
-          <span class="pw-cal-modal-date" id="pw-cal-modal-date"></span>
-          <button class="pw-cal-modal-close" id="pw-cal-modal-close" type="button" aria-label="닫기">×</button>
-        </div>
-        <div class="pw-cal-modal-body" id="pw-cal-modal-body"></div>
+      <div class="pw-more-wrap">
+        <button class="nrw-more-btn" id="pw-cal-upcoming-more-btn" style="display:none;">더보기</button>
       </div>
     </div>
 
@@ -1739,6 +1758,68 @@
     color: var(--nw-primary);
   }
 
+  /* M&A 탭 선택 시에만 노출되는 카테고리 서브 필터 칩 - 상단 캘린더와
+     "세부 사항" 헤더 두 군데에 동일한 마크업(class만 공유, id 없음)이
+     있고, JS에서 data-subfilter 값이 같은 버튼을 한 번에 갱신해서 항상
+     동기 상태를 유지한다 */
+  .pw-cal-ma-subfilter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: -6px 0 14px;
+  }
+
+  .pw-cal-subfilter-btn {
+    height: 26px;
+    padding: 0 11px;
+    border: 1px solid var(--nw-line);
+    border-radius: 999px;
+    background: var(--nw-surface);
+    color: var(--nw-text-sub);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  }
+  .pw-cal-subfilter-btn.active {
+    border-color: #8B5CF6;
+    background: rgba(139, 92, 246, 0.1);
+    color: #8B5CF6;
+  }
+
+  /* "세부 사항" 헤더 - 제목 + (상단과 동일한) 필터 탭/서브 필터 +
+     날짜 선택 배너를 한 블록으로 묶는다 */
+  .pw-cal-detail-header { margin-bottom: 16px; }
+  .pw-cal-detail-header .pw-cal-filter-tabs,
+  .pw-cal-detail-header .pw-cal-ma-subfilter { margin-top: 12px; }
+
+  .pw-cal-date-filter-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 0;
+    padding: 9px 14px;
+    border: 1px solid var(--nw-primary);
+    border-radius: 10px;
+    background: var(--nw-primary-soft);
+    color: var(--nw-primary);
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+  #pw-cal-date-filter-clear {
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--nw-primary);
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   /* 색상 범례 - 날짜 셀 점/태그 색상과 1:1로 대응 */
   .pw-cal-legend {
     display: flex;
@@ -1791,6 +1872,8 @@
   .pw-cal-cell.pw-cal-holiday { background: rgba(233, 67, 83, 0.06); }
   .pw-cal-cell.pw-cal-clickable { cursor: pointer; transition: border-color 0.15s ease; }
   .pw-cal-cell.pw-cal-clickable:hover { border-color: var(--nw-primary); }
+  /* "세부 사항"이 이 날짜로 좁혀진 상태 - 캘린더와 리스트의 연결을 눈에 보이게 */
+  .pw-cal-cell.pw-cal-selected { border-color: var(--nw-primary); background: var(--nw-primary-soft); }
 
   .pw-cal-cell-date {
     display: block;
@@ -1824,14 +1907,13 @@
   .pw-cal-dot.tax { background: #3182F6; }
   .pw-cal-dot.labor { background: #F5A623; }
   .pw-cal-dot.ma { background: #8B5CF6; }
-  .pw-cal-dot.econ { background: #00A76F; }
   .pw-cal-dot.holiday { background: var(--nw-up); }
 
-  /* 세무/노무/M&A/경제일정 마감: 항목이 적은 날은 텍스트 태그로 바로
-     인라인 표시(팝업 없음). 셀 공간을 초과할 만큼 많은 날에만
-     "+N개 모두 보기" 트리거가 나타나고, 그걸 클릭했을 때만 그 날짜
-     전체 일정을 모아 보여주는 팝업이 뜬다 - CLAUDE.md 레이아웃 확정
-     사항의 "오버플로우 예외" 규칙 참고 */
+  /* 세무/노무/M&A 마감: 항목이 적은 날은 텍스트 태그로 바로 인라인
+     표시(팝업 없음). 셀 공간을 초과할 만큼 많은 날에는 "+N개" 표시만
+     추가되고(정보용 텍스트, 클릭 대상 아님), 그 날짜 셀 전체를 클릭하면
+     팝업 대신 아래 "세부 사항" 섹션이 그 날짜로 필터링된다 - CLAUDE.md
+     레이아웃 확정 사항 참고 */
   .pw-cal-tag-row {
     display: flex;
     flex-direction: column;
@@ -1852,22 +1934,14 @@
   .pw-cal-tag.tax { background: #3182F6; }
   .pw-cal-tag.labor { background: #F5A623; }
   .pw-cal-tag.ma { background: #8B5CF6; }
-  .pw-cal-tag.econ { background: #00A76F; }
 
   .pw-cal-more-trigger {
     display: block;
     margin: 1px 0 0;
-    padding: 0;
-    border: none;
-    background: none;
-    color: var(--nw-primary);
-    font-family: inherit;
+    color: var(--nw-text-muted);
     font-size: 10px;
     font-weight: 700;
-    text-align: left;
-    cursor: pointer;
   }
-  .pw-cal-more-trigger:hover { text-decoration: underline; }
 
   .pw-cal-upcoming-title {
     margin: 0 0 15px;
@@ -1886,7 +1960,7 @@
 
   .pw-cal-upcoming-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     padding: 16px 18px;
     border: 1px solid var(--nw-line);
@@ -1898,11 +1972,6 @@
   }
   .pw-cal-upcoming-item:hover { border-color: #d4dae1; box-shadow: var(--nw-shadow-sm); }
   a.pw-cal-upcoming-item { cursor: pointer; }
-  /* 날짜 셀 클릭 -> 아래 리스트의 같은 날짜 항목을 잠깐 강조(시각적 연결) */
-  .pw-cal-upcoming-item.pw-cal-highlight {
-    border-color: var(--nw-primary);
-    box-shadow: 0 0 0 2px var(--nw-primary-soft);
-  }
 
   .pw-cal-dday {
     display: flex;
@@ -1919,7 +1988,6 @@
   }
   .pw-cal-dday.tax { background: #3182F6; }
   .pw-cal-dday.labor { background: #F5A623; }
-  .pw-cal-dday.econ { background: #00A76F; }
   .pw-cal-dday.ma { background: #8B5CF6; }
   .pw-cal-dday.today { background: #F04452; }
 
@@ -1933,127 +2001,33 @@
   }
 
   /* 항목 실제 제목(공시/일정명) 콘텐츠이므로 타이포그래피 표준 제목
-     변수를 그대로 사용 - 한 줄 말줄임(ellipsis)이라 폰트가 커져도
-     .pw-calendar-name 같은 줄바꿈 붕괴 위험이 없음 */
+     변수를 그대로 사용. 예전엔 모달에서 전체 텍스트를 봤지만 이제
+     모달이 없어졌으므로(설명까지 이 카드 안에서 전부 보여줘야 함) 더
+     이상 한 줄로 말줄임하지 않고 자연스럽게 줄바꿈한다. */
   .pw-cal-upcoming-name {
     margin: 0;
-    overflow: hidden;
     color: var(--nw-title-color);
     font-size: var(--nw-title-size);
     font-weight: var(--nw-title-weight);
     letter-spacing: var(--nw-title-ls);
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.4;
   }
 
-  /* "+N개 모두 보기"를 눌렀을 때만 뜨는 팝업 - 일반 날짜 클릭으로는
-     절대 뜨지 않는다(오버플로우 예외 전용). CLAUDE.md 레이아웃 확정
-     사항 참고 */
-  .pw-cal-modal-backdrop {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: rgba(17, 29, 53, 0.45);
-  }
-
-  .pw-cal-modal {
-    width: 100%;
-    max-width: 420px;
-    max-height: 80vh;
-    overflow-y: auto;
-    border-radius: 20px;
-    background: var(--nw-surface);
-    box-shadow: var(--nw-shadow-md);
-  }
-
-  .pw-cal-modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 22px;
-    border-bottom: 1px solid var(--nw-line-soft);
-  }
-
-  .pw-cal-modal-date {
-    color: var(--nw-navy);
-    font-size: 17px;
-    font-weight: 800;
-  }
-
-  .pw-cal-modal-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    border: none;
-    border-radius: 8px;
-    background: var(--nw-surface-soft);
-    color: var(--nw-text-sub);
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  .pw-cal-modal-close:hover { color: var(--nw-primary); }
-
-  .pw-cal-modal-body {
-    display: grid;
-    gap: 14px;
-    padding: 18px 22px 22px;
-  }
-
-  .pw-cal-modal-item-badge {
-    display: inline-flex;
-    align-items: center;
-    height: 22px;
-    margin: 0 0 8px;
-    padding: 0 10px;
-    border-radius: 999px;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 800;
-  }
-  .pw-cal-modal-item-badge.tax { background: #3182F6; }
-  .pw-cal-modal-item-badge.labor { background: #F5A623; }
-  .pw-cal-modal-item-badge.econ { background: #00A76F; }
-  .pw-cal-modal-item-badge.holiday { background: var(--nw-up); }
-  .pw-cal-modal-item-badge.ma { background: #8B5CF6; }
-
-  .pw-cal-modal-item-link {
-    display: inline-flex;
-    align-items: center;
-    color: var(--nw-primary);
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .pw-cal-modal-item-link:hover { text-decoration: underline; }
-
-  .pw-cal-modal-item-title {
-    margin: 0 0 6px;
-    color: var(--nw-title-color);
-    font-size: 15px;
-    font-weight: 800;
-  }
-
-  .pw-cal-modal-item-detail {
-    margin: 0 0 6px;
+  /* 예전에 모달 안에서만 보이던 상세 설명/출처 안내 - 이제 카드 안에
+     바로 흡수해서 보여준다 */
+  .pw-cal-upcoming-detail {
+    margin: 6px 0 0;
     color: var(--nw-body-color);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.55;
   }
-
-  .pw-cal-modal-item-scope {
-    margin: 0;
+  .pw-cal-upcoming-scope {
+    margin: 6px 0 0;
     color: var(--nw-text-muted);
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 500;
+    line-height: 1.5;
   }
 
   /* =========================================================
@@ -3623,8 +3597,11 @@
      순간에만 data/dart_ma_signals.json을 fetch해서 메모리에 캐싱한다.
      대시보드 최초 로딩 속도에 전혀 영향 없게 하기 위한 지연 로딩(lazy
      load) - CLAUDE.md 레이아웃 확정 사항 참고.
+     경제일정(FOMC/금통위)은 캘린더에 섞지 않는다 - 항목 수가 적어서
+     "다가오는 경제 일정"(별도 섹션, renderCalendar) 하나로 충분하다는
+     판단. 캘린더 필터는 전체/세무/노무/M&A 4개만 존재.
      ========================================================= */
-  var PW_CAL_TYPE_LABELS = { tax: "세무", labor: "노무", holiday: "공휴일", econ: "경제일정" };
+  var PW_CAL_TYPE_LABELS = { tax: "세무", labor: "노무", holiday: "공휴일" };
   var PW_CAL_MA_CATEGORY_LABELS = {
     "합병_분할": "합병·분할",
     "지분인수": "지분인수",
@@ -3637,6 +3614,8 @@
   var pwCalMaLoaded = false;
   var pwCalMaLoading = false;
   var pwCalFilter = "all";
+  var pwCalMaCategoryFilter = "all"; // M&A 탭에서만 쓰이는 카테고리 서브 필터
+  var pwCalSelectedDate = null; // 날짜 셀을 클릭해 "세부 사항"을 그 날짜로 좁힌 상태
   var pwCalViewYear = null;
   var pwCalViewMonth = null; // 1~12
   var pwCalInitialized = false;
@@ -3649,22 +3628,30 @@
     return { y: d.getFullYear(), m: d.getMonth() + 1, dateStr: pwCalFormatDate(d.getFullYear(), d.getMonth() + 1, d.getDate()) };
   }
 
+  // 현재 캘린더가 보여주는 달의 [1일, 말일] 날짜 문자열. "세부 사항"을
+  // 날짜 미선택 상태에서 이 범위로 스코프하는 데 쓴다.
+  function pwCalMonthRange() {
+    var lastDay = new Date(pwCalViewYear, pwCalViewMonth, 0).getDate();
+    return {
+      start: pwCalFormatDate(pwCalViewYear, pwCalViewMonth, 1),
+      end: pwCalFormatDate(pwCalViewYear, pwCalViewMonth, lastDay)
+    };
+  }
+
   function pwCalMatchesFilter(type) {
-    if (pwCalFilter === "all") return type === "tax" || type === "labor" || type === "econ" || type === "ma";
+    if (pwCalFilter === "all") return type === "tax" || type === "labor" || type === "ma";
     return type === pwCalFilter;
+  }
+
+  // M&A 탭에서만 의미 있는 카테고리 서브 필터(전체/합병분할/지분인수/...).
+  // M&A가 아닌 이벤트는 서브 필터와 무관하게 항상 통과.
+  function pwCalPassesSubfilter(e) {
+    if (e.type !== "ma") return true;
+    return pwCalMaCategoryFilter === "all" || e.category === pwCalMaCategoryFilter;
   }
 
   function pwCalEventsOnDate(dateStr) {
     return pwCalEvents.concat(pwCalMaEvents).filter(function (e) { return e.date === dateStr; });
-  }
-
-  // "다가오는 경제 일정"(한국은행 금통위, FOMC 등) 리스트용 데이터를 캘린더
-  // 셀에도 함께 표시하기 위해 pwCalEvents와 같은 형태로 변환. "경제" 필터
-  // 탭으로 세무/노무/M&A와 동일하게 필터링 가능(공휴일만 필터 무관 항상 표시).
-  function pwCalTransformEconEvents(events) {
-    return (events || []).map(function (ev) {
-      return { date: ev.date, type: "econ", title: ev.event, country: ev.country };
-    });
   }
 
   function pwCalFormatRceptDt(rceptDt) {
@@ -3728,106 +3715,19 @@
     return "D+" + Math.abs(diffDays);
   }
 
-  // 날짜 셀 하나에 보여줄 태그 최대 개수. 이보다 많으면 "+N개 모두 보기"
-  // 트리거로 나머지를 접고, N은 항상 실제로 안 보이는 개수와 정확히 일치해야
-  // 한다 - CLAUDE.md 레이아웃 확정 사항의 오버플로우 예외 규칙 참고.
+  // 날짜 셀 하나에 보여줄 태그 최대 개수. 이보다 많으면 "+N개" 텍스트만
+  // 덧붙인다(클릭 대상 아님, 정보 표시용) - N은 항상 실제로 안 보이는
+  // 개수와 정확히 일치해야 한다.
   var PW_CAL_MAX_TAGS = 2;
 
-  // "+N개 모두 보기"를 눌렀을 때만 호출된다 - 일반 셀 클릭으로는 열리지 않음.
-  function pwCalOpenDayModal(dateStr, matchEvents, holidayEvents) {
-    var backdrop = document.getElementById("pw-cal-modal-backdrop");
-    var dateLabel = document.getElementById("pw-cal-modal-date");
-    var body = document.getElementById("pw-cal-modal-body");
-
-    var dateObj = new Date(dateStr + "T00:00:00");
-    var weekday = ["일", "월", "화", "수", "목", "금", "토"][dateObj.getDay()];
-    dateLabel.textContent = dateStr + " (" + weekday + ")";
-
-    var allEvents = (holidayEvents || []).concat(matchEvents || []);
-    body.innerHTML = "";
-    if (!allEvents.length) {
-      body.innerHTML = '<p class="ew-loading">해당 날짜에 일정이 없습니다.</p>';
-    } else {
-      allEvents.forEach(function (e) {
-        var box = document.createElement("div");
-
-        if (e.type === "ma") {
-          var maBadge = document.createElement("span");
-          maBadge.className = "pw-cal-modal-item-badge ma";
-          maBadge.textContent = "M&A · " + (PW_CAL_MA_CATEGORY_LABELS[e.category] || e.category);
-          box.appendChild(maBadge);
-
-          var maTitle = document.createElement("p");
-          maTitle.className = "pw-cal-modal-item-title";
-          maTitle.textContent = e.corp_name;
-          box.appendChild(maTitle);
-
-          var maDetail = document.createElement("p");
-          maDetail.className = "pw-cal-modal-item-detail";
-          maDetail.textContent = e.report_nm + (e.action ? " (" + e.action + ")" : "");
-          box.appendChild(maDetail);
-
-          if (e.source_url) {
-            var maLink = document.createElement("a");
-            maLink.className = "pw-cal-modal-item-link";
-            maLink.href = e.source_url;
-            maLink.target = "_blank";
-            maLink.rel = "noopener noreferrer";
-            maLink.textContent = "DART 원문 보기 →";
-            box.appendChild(maLink);
-          }
-
-          body.appendChild(box);
-          return;
-        }
-
-        var badge = document.createElement("span");
-        badge.className = "pw-cal-modal-item-badge " + e.type;
-        badge.textContent = PW_CAL_TYPE_LABELS[e.type] || e.type;
-        box.appendChild(badge);
-
-        var title = document.createElement("p");
-        title.className = "pw-cal-modal-item-title";
-        title.textContent = e.title;
-        box.appendChild(title);
-
-        if (e.detail) {
-          var detail = document.createElement("p");
-          detail.className = "pw-cal-modal-item-detail";
-          detail.textContent = e.detail;
-          box.appendChild(detail);
-        }
-
-        if (e.scope) {
-          var scope = document.createElement("p");
-          scope.className = "pw-cal-modal-item-scope";
-          scope.textContent = e.scope;
-          box.appendChild(scope);
-        }
-
-        body.appendChild(box);
-      });
-    }
-
-    backdrop.hidden = false;
-  }
-
-  function pwCalCloseModal() {
-    document.getElementById("pw-cal-modal-backdrop").hidden = true;
-  }
-
-  // 날짜 셀 클릭 시, 아래 다가오는 마감/최근 공시 리스트에 같은 날짜
-  // 항목이 이미 렌더돼 있으면 그쪽으로 스크롤하고 잠깐 테두리를 강조한다.
-  // 팝업이 아니라 이미 있는 리스트를 가리키기만 하는 보조 동작이라, 매칭되는
-  // 항목이 없으면(과거 날짜, 현재 필터의 리스트에 없는 타입 등) 조용히 무시한다.
-  function pwCalHighlightListItem(dateStr) {
-    var items = document.querySelectorAll('.pw-cal-upcoming-item[data-date="' + dateStr + '"]');
-    if (!items.length) return;
-    items.forEach(function (item) {
-      item.classList.add("pw-cal-highlight");
-      item.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(function () { item.classList.remove("pw-cal-highlight"); }, 1600);
-    });
+  // 날짜 셀 클릭 시 팝업 대신 아래 "세부 사항"을 그 날짜로 좁힌다(다시
+  // 같은 날짜를 클릭하면 해제). 모달은 완전히 제거됐다 - CLAUDE.md
+  // 레이아웃 확정 사항 참고.
+  function pwCalSelectDate(dateStr) {
+    pwCalSelectedDate = (pwCalSelectedDate === dateStr) ? null : dateStr;
+    pwCalRenderUpcoming();
+    var header = document.getElementById("pw-cal-detail-header");
+    if (header) header.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function pwCalRenderGrid() {
@@ -3869,10 +3769,13 @@
 
       var dayEvents = pwCalEventsOnDate(dateStr);
       var holidayEvents = dayEvents.filter(function (e) { return e.type === "holiday"; });
-      // 세무/노무/경제/M&A는 필터 탭에 따라 표시 여부가 갈리고, 공휴일은
-      // 필터와 무관하게 항상 표시(배경 표시와 동일한 원칙)
-      var matchEvents = dayEvents.filter(function (e) { return pwCalMatchesFilter(e.type); });
+      // 세무/노무/M&A는 필터 탭(+ M&A는 서브 필터)에 따라 표시 여부가
+      // 갈리고, 공휴일은 필터와 무관하게 항상 표시(배경 표시와 동일한 원칙)
+      var matchEvents = dayEvents.filter(function (e) {
+        return pwCalMatchesFilter(e.type) && pwCalPassesSubfilter(e);
+      });
       if (holidayEvents.length) cell.classList.add("pw-cal-holiday");
+      if (dateStr === pwCalSelectedDate) cell.classList.add("pw-cal-selected");
 
       var dateEl = document.createElement("span");
       dateEl.className = "pw-cal-cell-date";
@@ -3886,9 +3789,10 @@
         cell.appendChild(holidayName);
       }
 
-      // 항목이 적은 날: 태그로 바로 인라인 표시, 팝업 없음.
-      // 셀에 다 안 들어갈 만큼 많은 날에만 "+N개 모두 보기"가 나타나고,
-      // 그걸 눌렀을 때만 그 날짜 전체 일정 팝업이 뜬다.
+      // 항목이 적은 날: 태그로 바로 인라인 표시, 팝업 없음. 셀에 다 안
+      // 들어갈 만큼 많은 날에는 "+N개" 텍스트만 덧붙인다(클릭 대상
+      // 아님) - 날짜 셀 전체를 클릭하면 아래 "세부 사항"이 그 날짜
+      // 전체 항목으로 좁혀진다.
       if (matchEvents.length) {
         var tagRow = document.createElement("div");
         tagRow.className = "pw-cal-tag-row";
@@ -3899,22 +3803,16 @@
           tagRow.appendChild(tag);
         });
         if (matchEvents.length > PW_CAL_MAX_TAGS) {
-          var remaining = matchEvents.length - PW_CAL_MAX_TAGS;
-          var moreBtn = document.createElement("button");
-          moreBtn.type = "button";
-          moreBtn.className = "pw-cal-more-trigger";
-          moreBtn.textContent = "+" + remaining + "개 모두 보기";
-          moreBtn.addEventListener("click", function (ev) {
-            ev.stopPropagation();
-            pwCalOpenDayModal(dateStr, matchEvents, holidayEvents);
-          });
-          tagRow.appendChild(moreBtn);
+          var more = document.createElement("span");
+          more.className = "pw-cal-more-trigger";
+          more.textContent = "+" + (matchEvents.length - PW_CAL_MAX_TAGS) + "개";
+          tagRow.appendChild(more);
         }
         cell.appendChild(tagRow);
       }
 
       // 팝업 없이도 무슨 일정인지 알 수 있게 네이티브 툴팁(title 속성)으로
-      // 보조 - 자세한 내용은 캘린더 아래 리스트에서 확인하는 게 기본 경로
+      // 보조 - 자세한 내용은 캘린더 아래 "세부 사항"에서 확인하는 게 기본 경로
       var titleParts = [];
       holidayEvents.forEach(function (e) { titleParts.push(e.title + " (공휴일)"); });
       matchEvents.forEach(function (e) {
@@ -3923,143 +3821,165 @@
       });
       if (titleParts.length) cell.title = titleParts.join("\n");
 
-      // 날짜 셀 클릭(오버플로우 트리거 제외) -> 아래 "다가오는 마감/최근
-      // 공시" 리스트에 같은 날짜 항목이 있으면 스크롤 + 잠깐 강조.
-      // 팝업이 아니라 이미 렌더된 리스트를 가리키기만 하는 동작이다.
+      // 날짜 셀 클릭 -> 팝업 대신 아래 "세부 사항"을 그 날짜로 좁힌다.
       if (dayEvents.length) {
         cell.classList.add("pw-cal-clickable");
-        cell.addEventListener("click", function () { pwCalHighlightListItem(dateStr); });
+        cell.addEventListener("click", function () { pwCalSelectDate(dateStr); });
       }
 
       grid.appendChild(cell);
     });
   }
 
-  function pwCalRenderDeadlines() {
-    var el = document.getElementById("pw-cal-upcoming-list");
-    el.innerHTML = "";
-    var todayStr = pwCalToday().dateStr;
+  function buildDeadlineItem(e, todayStr) {
+    var item = document.createElement("div");
+    item.className = "pw-cal-upcoming-item";
+    item.setAttribute("data-date", e.date);
 
-    var upcoming = pwCalEvents
-      .filter(function (e) {
-        return (e.type === "tax" || e.type === "labor" || e.type === "econ") && pwCalMatchesFilter(e.type) && e.date >= todayStr;
-      })
-      .sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); })
-      .slice(0, 8);
+    var label = pwCalDdayLabel(e.date, todayStr);
+    var dday = document.createElement("span");
+    dday.className = "pw-cal-dday " + (label === "D-DAY" ? "today" : e.type);
+    dday.textContent = label;
+    item.appendChild(dday);
 
-    if (!upcoming.length) {
-      el.innerHTML = '<p class="ew-loading">다가오는 일정이 없습니다.</p>';
-      return;
+    var body = document.createElement("div");
+    body.className = "pw-cal-upcoming-body";
+
+    var dateP = document.createElement("p");
+    dateP.className = "pw-cal-upcoming-date";
+    dateP.textContent = e.date + " · " + (PW_CAL_TYPE_LABELS[e.type] || e.type);
+    body.appendChild(dateP);
+
+    var nameP = document.createElement("p");
+    nameP.className = "pw-cal-upcoming-name";
+    nameP.textContent = e.title;
+    body.appendChild(nameP);
+
+    // 예전엔 모달에서만 보이던 설명/출처 안내 - 이제 카드 안에서 바로 확인
+    if (e.detail) {
+      var detailP = document.createElement("p");
+      detailP.className = "pw-cal-upcoming-detail";
+      detailP.textContent = e.detail;
+      body.appendChild(detailP);
+    }
+    if (e.scope) {
+      var scopeP = document.createElement("p");
+      scopeP.className = "pw-cal-upcoming-scope";
+      scopeP.textContent = e.scope;
+      body.appendChild(scopeP);
     }
 
-    upcoming.forEach(function (e) {
-      var item = document.createElement("div");
-      item.className = "pw-cal-upcoming-item";
-      item.setAttribute("data-date", e.date);
-
-      var label = pwCalDdayLabel(e.date, todayStr);
-      var dday = document.createElement("span");
-      dday.className = "pw-cal-dday " + (label === "D-DAY" ? "today" : e.type);
-      dday.textContent = label;
-      item.appendChild(dday);
-
-      var body = document.createElement("div");
-      body.className = "pw-cal-upcoming-body";
-
-      var dateP = document.createElement("p");
-      dateP.className = "pw-cal-upcoming-date";
-      dateP.textContent = e.date + " · " + (PW_CAL_TYPE_LABELS[e.type] || e.type);
-      body.appendChild(dateP);
-
-      var nameP = document.createElement("p");
-      nameP.className = "pw-cal-upcoming-name";
-      nameP.textContent = e.title;
-      body.appendChild(nameP);
-
-      item.appendChild(body);
-      el.appendChild(item);
-    });
+    item.appendChild(body);
+    return item;
   }
 
-  // 카테고리 하나가 그날 유독 많으면(예: 자기주식 공시 몰림) 다른 카테고리가
-  // 전체 최신순 목록에서 밀려날 수 있어, 날짜 전체를 뒤섞어 top-8을 뽑는 대신
-  // "카테고리별 최신 N건"을 먼저 확보한 뒤 합쳐서 보여준다 - 활동이 뜸한
-  // 카테고리도 항상 최근 이력을 보여줄 수 있게 하기 위함.
-  var PW_CAL_MA_RECENT_PER_CATEGORY = 5;
+  // 날짜 미선택 시 "세부 사항"은 캘린더가 지금 보여주는 달 전체를
+  // 기준으로 필터링한다(예전처럼 "오늘 이후 다음 8건"이 아님) - 그래야
+  // 캘린더에서 다른 달로 이동했을 때 그 달의 세무/노무 항목이 실제로
+  // 보인다. 날짜를 선택했으면 그 날짜만.
+  function pwCalRenderDeadlines() {
+    var todayStr = pwCalToday().dateStr;
+    var range = pwCalMonthRange();
 
+    var items = pwCalEvents
+      .filter(function (e) {
+        if (!(e.type === "tax" || e.type === "labor")) return false;
+        if (!pwCalMatchesFilter(e.type)) return false;
+        if (pwCalSelectedDate) return e.date === pwCalSelectedDate;
+        return e.date >= range.start && e.date <= range.end;
+      })
+      .sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
+
+    renderPwList("pw-cal-upcoming-list", "pw-cal-upcoming-more-btn", items,
+      function (e) { return buildDeadlineItem(e, todayStr); },
+      pwCalSelectedDate ? "이 날짜에 해당하는 일정이 없습니다." : "이 달에 해당하는 일정이 없습니다.");
+  }
+
+  function buildMaItem(e) {
+    var item = document.createElement("a");
+    item.className = "pw-cal-upcoming-item";
+    item.setAttribute("data-date", e.date);
+    item.href = e.source_url || "#";
+    item.target = "_blank";
+    item.rel = "noopener noreferrer";
+
+    var catBadge = document.createElement("span");
+    catBadge.className = "pw-cal-dday ma";
+    catBadge.textContent = PW_CAL_MA_CATEGORY_LABELS[e.category] || e.category;
+    item.appendChild(catBadge);
+
+    var body = document.createElement("div");
+    body.className = "pw-cal-upcoming-body";
+
+    var dateP = document.createElement("p");
+    dateP.className = "pw-cal-upcoming-date";
+    dateP.textContent = e.date;
+    body.appendChild(dateP);
+
+    var nameP = document.createElement("p");
+    nameP.className = "pw-cal-upcoming-name";
+    nameP.textContent = e.title;
+    body.appendChild(nameP);
+
+    if (e.action) {
+      var detailP = document.createElement("p");
+      detailP.className = "pw-cal-upcoming-detail";
+      detailP.textContent = "구분: " + e.action;
+      body.appendChild(detailP);
+    }
+
+    item.appendChild(body);
+    return item;
+  }
+
+  // M&A도 세무/노무와 동일하게 달 스코프(또는 선택 날짜)로 좁힌다. 예전엔
+  // 아카이브 전체에서 "카테고리별 최신 5건"을 뽑는 방식이었지만, 이제 한
+  // 달 단위로만 보므로 그 안에서 항목이 많아지면 renderPwList의 공용
+  // 더보기 패턴으로 처리한다(다른 정책·캘린더 섹션과 동일).
   function pwCalRenderRecentFilings() {
-    var el = document.getElementById("pw-cal-upcoming-list");
-    el.innerHTML = "";
-
     if (pwCalMaLoading) {
-      el.innerHTML = '<p class="ew-loading">불러오는 중입니다...</p>';
+      document.getElementById("pw-cal-upcoming-list").innerHTML = '<p class="ew-loading">불러오는 중입니다...</p>';
+      var maMoreBtn = document.getElementById("pw-cal-upcoming-more-btn");
+      if (maMoreBtn) maMoreBtn.style.display = "none";
       return;
     }
 
-    var byCategory = {};
-    pwCalMaEvents.forEach(function (e) {
-      if (!byCategory[e.category]) byCategory[e.category] = [];
-      byCategory[e.category].push(e);
-    });
+    var range = pwCalMonthRange();
+    var items = pwCalMaEvents
+      .filter(function (e) {
+        if (!pwCalPassesSubfilter(e)) return false;
+        if (pwCalSelectedDate) return e.date === pwCalSelectedDate;
+        return e.date >= range.start && e.date <= range.end;
+      })
+      .sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
 
-    var recent = [];
-    Object.keys(byCategory).forEach(function (category) {
-      var sorted = byCategory[category].sort(function (a, b) {
-        return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
-      });
-      recent = recent.concat(sorted.slice(0, PW_CAL_MA_RECENT_PER_CATEGORY));
-    });
-    recent.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+    renderPwList("pw-cal-upcoming-list", "pw-cal-upcoming-more-btn", items, buildMaItem,
+      pwCalSelectedDate ? "이 날짜에 해당하는 공시가 없습니다." : "이 달에 발생한 M&A 공시가 없습니다.");
+  }
 
-    if (!recent.length) {
-      el.innerHTML = '<p class="ew-loading">최근 발생한 M&amp;A 공시가 없습니다.</p>';
-      return;
+  function pwCalUpdateDateFilterBanner() {
+    var banner = document.getElementById("pw-cal-date-filter-banner");
+    var text = document.getElementById("pw-cal-date-filter-text");
+    if (pwCalSelectedDate) {
+      text.textContent = pwCalSelectedDate + " 항목만 표시 중";
+      banner.hidden = false;
+    } else {
+      banner.hidden = true;
     }
-
-    recent.forEach(function (e) {
-      var item = document.createElement("a");
-      item.className = "pw-cal-upcoming-item";
-      item.setAttribute("data-date", e.date);
-      item.href = e.source_url || "#";
-      item.target = "_blank";
-      item.rel = "noopener noreferrer";
-
-      var catBadge = document.createElement("span");
-      catBadge.className = "pw-cal-dday ma";
-      catBadge.textContent = PW_CAL_MA_CATEGORY_LABELS[e.category] || e.category;
-      item.appendChild(catBadge);
-
-      var body = document.createElement("div");
-      body.className = "pw-cal-upcoming-body";
-
-      var dateP = document.createElement("p");
-      dateP.className = "pw-cal-upcoming-date";
-      dateP.textContent = e.date;
-      body.appendChild(dateP);
-
-      var nameP = document.createElement("p");
-      nameP.className = "pw-cal-upcoming-name";
-      nameP.textContent = e.title;
-      body.appendChild(nameP);
-
-      item.appendChild(body);
-      el.appendChild(item);
-    });
   }
 
   function pwCalRenderUpcoming() {
-    var titleEl = document.getElementById("pw-cal-upcoming-title");
+    document.getElementById("pw-cal-upcoming-title").textContent = "세부 사항";
+    pwCalUpdateDateFilterBanner();
     if (pwCalFilter === "ma") {
-      titleEl.textContent = "최근 공시";
       pwCalRenderRecentFilings();
     } else {
-      titleEl.textContent = "다가오는 마감";
       pwCalRenderDeadlines();
     }
   }
 
-  function pwCalInit(events, econEvents) {
-    pwCalEvents = (events || []).concat(pwCalTransformEconEvents(econEvents));
+  function pwCalInit(events) {
+    pwCalEvents = events || [];
     var today = pwCalToday();
     pwCalViewYear = today.y;
     pwCalViewMonth = today.m;
@@ -4070,26 +3990,46 @@
       document.getElementById("pw-cal-prev").addEventListener("click", function () {
         pwCalViewMonth--;
         if (pwCalViewMonth < 1) { pwCalViewMonth = 12; pwCalViewYear--; }
+        pwCalSelectedDate = null;
         pwCalRenderGrid();
+        pwCalRenderUpcoming();
       });
       document.getElementById("pw-cal-next").addEventListener("click", function () {
         pwCalViewMonth++;
         if (pwCalViewMonth > 12) { pwCalViewMonth = 1; pwCalViewYear++; }
+        pwCalSelectedDate = null;
         pwCalRenderGrid();
+        pwCalRenderUpcoming();
       });
       document.getElementById("pw-cal-today").addEventListener("click", function () {
         var t = pwCalToday();
         pwCalViewYear = t.y;
         pwCalViewMonth = t.m;
+        pwCalSelectedDate = null;
         pwCalRenderGrid();
+        pwCalRenderUpcoming();
       });
 
+      // 상단 캘린더 필터 탭 + "세부 사항" 헤더의 미러링된 탭을 class만으로
+      // 함께 관리한다(id로 두 그룹을 따로 관리하지 않음) - 한쪽을 눌러도
+      // data-filter 값이 같은 모든 버튼이 함께 active 처리돼 항상 동기 상태.
       var filterBtns = document.querySelectorAll(".pw-cal-filter-btn");
+      var subfilterBtns = document.querySelectorAll(".pw-cal-subfilter-btn");
+      var maSubfilterWraps = document.querySelectorAll(".pw-cal-ma-subfilter");
+
+      function syncMaSubfilterVisibility() {
+        maSubfilterWraps.forEach(function (wrap) { wrap.hidden = pwCalFilter !== "ma"; });
+      }
+
       filterBtns.forEach(function (btn) {
         btn.addEventListener("click", function () {
-          filterBtns.forEach(function (b) { b.classList.remove("active"); });
-          btn.classList.add("active");
-          pwCalFilter = btn.getAttribute("data-filter");
+          var filter = btn.getAttribute("data-filter");
+          if (filter === pwCalFilter) return;
+          pwCalFilter = filter;
+          pwCalMaCategoryFilter = "all";
+          filterBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-filter") === filter); });
+          subfilterBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-subfilter") === "all"); });
+          syncMaSubfilterVisibility();
 
           if (pwCalFilter === "ma" && !pwCalMaLoaded) {
             // M&A 필터를 처음 클릭하는 이 순간에만 dart_ma_signals.json을 fetch.
@@ -4108,9 +4048,20 @@
         });
       });
 
-      document.getElementById("pw-cal-modal-close").addEventListener("click", pwCalCloseModal);
-      document.getElementById("pw-cal-modal-backdrop").addEventListener("click", function (ev) {
-        if (ev.target === this) pwCalCloseModal();
+      subfilterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var sub = btn.getAttribute("data-subfilter");
+          if (sub === pwCalMaCategoryFilter) return;
+          pwCalMaCategoryFilter = sub;
+          subfilterBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-subfilter") === sub); });
+          pwCalRenderGrid();
+          pwCalRenderUpcoming();
+        });
+      });
+
+      document.getElementById("pw-cal-date-filter-clear").addEventListener("click", function () {
+        pwCalSelectedDate = null;
+        pwCalRenderUpcoming();
       });
     }
 
@@ -4219,7 +4170,7 @@
           data.updated_at ? data.updated_at + " 기준" : "";
         renderCalendar(data.economic_calendar);
         renderMacroIndices(data.macro_indicators);
-        pwCalInit(data.tax_labor_events, data.economic_calendar);
+        pwCalInit(data.tax_labor_events);
         renderDartFilings(data.dart_filings);
         renderSupportPrograms("pw-support-list", "pw-support-more-btn", data.support_programs);
         renderSupportPrograms("pw-soso-list", "pw-soso-more-btn", data.soso_support_programs);
