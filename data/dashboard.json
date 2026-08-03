@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 08:31:00",
+  "updated_at": "2026-08-03 09:01:07",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -563,95 +563,157 @@
       "country": "US"
     }
   ],
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "유니온",
+      "price": "2780.0",
+      "change_percent": "+5.90%",
+      "pct": 5.9
+    },
+    {
+      "name": "RISE 미국양자컴퓨팅",
+      "price": "18425.0",
+      "change_percent": "+4.63%",
+      "pct": 4.63
+    },
+    {
+      "name": "삼성전기",
+      "price": "1186000.0",
+      "change_percent": "+3.85%",
+      "pct": 3.85
+    },
+    {
+      "name": "대한방직",
+      "price": "6250.0",
+      "change_percent": "+3.82%",
+      "pct": 3.82
+    },
+    {
+      "name": "금호전기",
+      "price": "4265.0",
+      "change_percent": "+3.65%",
+      "pct": 3.65
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "상상인증권",
+      "price": "613.0",
+      "change_percent": "-5.69%",
+      "pct": 5.69
+    },
+    {
+      "name": "SK하이닉스",
+      "price": "1629000.0",
+      "change_percent": "-5.18%",
+      "pct": 5.18
+    },
+    {
+      "name": "DB하이텍",
+      "price": "78800.0",
+      "change_percent": "-5.17%",
+      "pct": 5.17
+    },
+    {
+      "name": "유유제약2우B",
+      "price": "7020.0",
+      "change_percent": "-5.14%",
+      "pct": 5.14
+    },
+    {
+      "name": "ACE AI반도체TOP3+",
+      "price": "53300.0",
+      "change_percent": "-4.68%",
+      "pct": 4.68
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+2.07%",
+      "pct": 2.07
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.32%",
+      "pct": 0.32
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "항공사",
+      "change_value": "+0.19%",
+      "pct": 0.19
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "디스플레이장비및부품",
+      "change_value": "+0.09%",
+      "pct": 0.09
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "부동산",
+      "change_value": "+0.08%",
+      "pct": 0.08
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
       "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+2.07%",
+      "pct": 2.07
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.32%",
+      "pct": 0.32
+    },
+    {
+      "name": "항공사",
+      "change_value": "+0.19%",
+      "pct": 0.19
+    },
+    {
+      "name": "디스플레이장비및부품",
+      "change_value": "+0.09%",
+      "pct": 0.09
+    },
+    {
+      "name": "부동산",
+      "change_value": "+0.08%",
+      "pct": 0.08
+    },
+    {
+      "name": "판매업체",
+      "change_value": "+0.08%",
+      "pct": 0.08
+    },
+    {
+      "name": "카드",
+      "change_value": "-0.85%",
+      "pct": -0.85
+    },
+    {
+      "name": "통신장비",
+      "change_value": "-1.06%",
+      "pct": -1.06
+    },
+    {
+      "name": "자동차",
+      "change_value": "-1.11%",
+      "pct": -1.11
+    },
+    {
+      "name": "건축자재",
+      "change_value": "-1.65%",
+      "pct": -1.65
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "-1.84%",
+      "pct": -1.84
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "-4.98%",
+      "pct": -4.98
     }
   ],
   "article_counts": {
