@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>M&amp;A 공시</title>
+<title>주요 공시</title>
 <style>
   html, body {
     margin: 0;
@@ -15,16 +15,7 @@
 <body>
 <div id="mt-strip">
   <div class="mt-header">
-    <span class="mt-label">M&amp;A 공시</span>
-  </div>
-
-  <div class="mt-tabs" id="mt-tabs">
-    <button class="mt-tab active" type="button" data-tab="filings">주요공시</button>
-    <button class="mt-tab" type="button" data-tab="합병_분할">합병·분할</button>
-    <button class="mt-tab" type="button" data-tab="지분인수">지분인수</button>
-    <button class="mt-tab" type="button" data-tab="주식교환_이전">주식교환·이전</button>
-    <button class="mt-tab" type="button" data-tab="경영권이동_최대주주변경">경영권이동</button>
-    <button class="mt-tab" type="button" data-tab="자기주식">자기주식</button>
+    <span class="mt-label">주요 공시</span>
   </div>
 
   <div class="mt-marquee-viewport">
@@ -66,39 +57,9 @@
     letter-spacing: 0.3px;
   }
 
-  /* 탭 6개가 300px 폭에 한 줄로 다 안 들어가서 flex-wrap으로 2줄
-     자동 줄바꿈 처리(가로 스크롤 대신) - 카드 폭을 넓히는 대안도
-     실측 비교해봤으나, 행 콘텐츠(회사명+공시유형) 사이에 불필요한
-     여백만 커져서 이 방식을 선택했다. */
-  .mt-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin: 0 0 10px;
-  }
-
-  .mt-tab {
-    flex: 0 0 auto;
-    padding: 5px 10px;
-    border: 1px solid #dcdcdc;
-    border-radius: 999px;
-    background: #fff;
-    color: #555;
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 700;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-  .mt-tab.active {
-    background: #142c67;
-    border-color: #142c67;
-    color: #fff;
-  }
-
   /* 3줄만 보이는 창, 항목이 그보다 많을 때만 아래->위로 흐름 */
   .mt-marquee-viewport {
-    height: 102px; /* 34px x 3줄 */
+    height: 138px; /* 46px x 3줄 (뱃지+2줄 텍스트라 한 줄 높이가 커짐) */
     overflow: hidden;
     position: relative;
   }
@@ -118,36 +79,57 @@
 
   .mt-empty { font-size: 13px; color: #aaa; padding: 8px 0; }
 
+  /* 왼쪽 카테고리 뱃지 + 오른쪽 회사명/공시내용 2줄 */
   .mt-row {
-    height: 34px;
+    height: 46px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 8px;
     color: inherit;
     text-decoration: none;
   }
-  .mt-row:hover .mt-row-name,
-  .mt-row:hover .mt-row-label { color: #142c67; }
+  .mt-row:hover .mt-row-name { color: #142c67; }
+
+  .mt-row-badge {
+    flex: 0 0 auto;
+    width: 62px;
+    padding: 3px 2px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .mt-row-badge.cat-filings { background: #142c67; }
+  .mt-row-badge.cat-merge { background: #8B5CF6; }
+  .mt-row-badge.cat-equity { background: #3182F6; }
+  .mt-row-badge.cat-swap { background: #0EA5A5; }
+  .mt-row-badge.cat-control { background: #E9435C; }
+  .mt-row-badge.cat-treasury { background: #F5A623; }
+
+  .mt-row-body {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
   .mt-row-name {
-    font-size: 13px;
-    color: #333;
-    font-weight: 600;
-    flex-shrink: 0;
-    max-width: 42%;
+    display: block;
     overflow: hidden;
+    color: #222;
+    font-size: 13px;
+    font-weight: 700;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .mt-row-label {
-    font-size: 12px;
-    color: #666;
-    font-weight: 600;
-    min-width: 0;
+  .mt-row-desc {
+    display: block;
+    margin-top: 2px;
     overflow: hidden;
+    color: #777;
+    font-size: 11.5px;
+    font-weight: 500;
     text-overflow: ellipsis;
     white-space: nowrap;
-    text-align: right;
   }
 
   .mt-meta {
@@ -176,6 +158,18 @@
   var CACHE_BUCKET_MS = 3 * 60 * 60 * 1000;
   function cacheBuster() { return Math.floor(Date.now() / CACHE_BUCKET_MS); }
 
+  // 카테고리 순서(합치는 순서)와 뱃지 라벨/색상 클래스를 한 곳에서 관리.
+  // "filings"는 dart_filings.json(오늘자 전체 주요사항보고), 나머지는
+  // dart_ma_signals.json의 오늘 날짜 키 안 카테고리들.
+  var CATEGORIES = [
+    { key: "filings", label: "주요공시", badgeClass: "cat-filings" },
+    { key: "합병_분할", label: "합병·분할", badgeClass: "cat-merge" },
+    { key: "지분인수", label: "지분인수", badgeClass: "cat-equity" },
+    { key: "주식교환_이전", label: "주식교환·이전", badgeClass: "cat-swap" },
+    { key: "경영권이동_최대주주변경", label: "경영권이동", badgeClass: "cat-control" },
+    { key: "자기주식", label: "자기주식", badgeClass: "cat-treasury" }
+  ];
+
   function pad2(n) { return n < 10 ? "0" + n : String(n); }
   function todayStr() {
     var d = new Date();
@@ -191,75 +185,97 @@
     return m ? m[1] : s;
   }
 
+  // DART는 rcept_dt(접수일자)를 날짜 단위(YYYYMMDD)로만 주고 시각 정보가
+  // 없어서, 오늘 하루 안에서의 "최신순"은 rcept_dt만으로는 가릴 수 없다.
+  // 대신 원문 링크(link/source_url)에 박혀 있는 접수번호(rcpNo, DART가
+  // 그날 접수 순서대로 매기는 일련번호, 예: 20260803000139)를 꺼내
+  // 정렬 키로 쓴다 - 저장된 필드는 아니지만 URL에서 항상 뽑아낼 수 있다.
+  function extractRceptNo(url) {
+    var m = (url || "").match(/rcpNo=(\d+)/);
+    return m ? m[1] : "";
+  }
+
   var track = document.getElementById("mt-marquee-track");
-  var viewport = track.parentElement;
   var metaTextEl = document.getElementById("mt-meta-text");
 
-  function buildRow(nameText, labelText, href) {
+  function buildRow(item) {
     var a = document.createElement("a");
     a.className = "mt-row";
-    a.href = href || "#";
+    a.href = item.url || "#";
     a.target = "_blank";
     a.rel = "noopener noreferrer";
 
+    var badge = document.createElement("span");
+    badge.className = "mt-row-badge " + item.badgeClass;
+    badge.textContent = item.categoryLabel;
+    a.appendChild(badge);
+
+    var body = document.createElement("span");
+    body.className = "mt-row-body";
+
     var nameEl = document.createElement("span");
     nameEl.className = "mt-row-name";
-    nameEl.textContent = nameText;
+    nameEl.textContent = item.corp_name;
+    body.appendChild(nameEl);
 
-    var labelEl = document.createElement("span");
-    labelEl.className = "mt-row-label";
-    labelEl.textContent = labelText;
+    var descEl = document.createElement("span");
+    descEl.className = "mt-row-desc";
+    descEl.textContent = item.desc;
+    body.appendChild(descEl);
 
-    a.appendChild(nameEl);
-    a.appendChild(labelEl);
+    a.appendChild(body);
     return a;
   }
 
-  function buildFilingRow(f) {
-    return buildRow(f.corp_name || "", shortenReportName(f.report_nm), f.link);
-  }
-
-  function buildMaRow(e) {
-    return buildRow(e.corp_name || "", e.action || shortenReportName(e.report_nm), e.source_url);
-  }
-
   // 항목이 보이는 줄 수(3줄)보다 많을 때만 리스트를 두 번 이어붙이고
-  // 애니메이션을 켠다 - 오늘 0~2건인 카테고리 탭이 흔한데, 그럴 때 억지로
-  // 무한 스크롤을 걸면 어색하다.
-  function renderRows(items, buildItemFn, emptyMessage) {
+  // 애니메이션을 켠다 - 오늘 항목이 3개 이하인 날 억지로 무한 스크롤을
+  // 걸면 어색하다.
+  function renderRows(items) {
     track.innerHTML = "";
     track.classList.remove("mt-scrolling");
     track.style.animationDuration = "";
 
-    if (!items || !items.length) {
-      track.innerHTML = '<p class="mt-empty">' + emptyMessage + "</p>";
+    if (!items.length) {
+      track.innerHTML = '<p class="mt-empty">오늘 발생한 공시가 없습니다.</p>';
       return;
     }
 
     if (items.length > VISIBLE_ROWS) {
-      items.concat(items).forEach(function (it) { track.appendChild(buildItemFn(it)); });
+      items.concat(items).forEach(function (it) { track.appendChild(buildRow(it)); });
       track.classList.add("mt-scrolling");
       track.style.animationDuration = (items.length * DURATION_PER_ROW_S) + "s";
     } else {
-      items.forEach(function (it) { track.appendChild(buildItemFn(it)); });
+      items.forEach(function (it) { track.appendChild(buildRow(it)); });
     }
   }
 
-  var filingsData = [];
-  var maToday = {};
-  var activeTab = "filings";
-
-  function renderTab(key) {
-    activeTab = key;
-    document.querySelectorAll(".mt-tab").forEach(function (btn) {
-      btn.classList.toggle("active", btn.getAttribute("data-tab") === key);
+  // 카테고리 구분 없이 오늘 접수번호(rcpNo) 기준 최신순으로 전부 섞는다.
+  // (카테고리별로 묶는 대안도 실측 비교했으나, 카테고리 대부분이 하루
+  // 0~2건이라 묶어도 "섹션"처럼 보이지 않고 그냥 순서만 바뀔 뿐이었다 -
+  // 뱃지가 이미 각 행의 카테고리를 알려주므로, "방금 뭐가 새로 떴는지"가
+  // 더 잘 보이는 시간순을 채택했다.)
+  function buildTimeSortedList(filingsData, maToday) {
+    var list = [];
+    CATEGORIES.forEach(function (cat) {
+      var rawItems = cat.key === "filings" ? filingsData : (maToday[cat.key] || []);
+      rawItems.forEach(function (raw) {
+        list.push(toRow(raw, cat));
+      });
     });
+    list.sort(function (a, b) { return b.rceptNo.localeCompare(a.rceptNo); });
+    return list;
+  }
 
-    if (key === "filings") {
-      renderRows(filingsData, buildFilingRow, "오늘 등록된 주요 공시가 없습니다.");
-    } else {
-      renderRows(maToday[key] || [], buildMaRow, "오늘 발생한 공시가 없습니다.");
-    }
+  function toRow(raw, cat) {
+    var url = cat.key === "filings" ? raw.link : raw.source_url;
+    return {
+      corp_name: raw.corp_name || "",
+      desc: raw.action || shortenReportName(raw.report_nm),
+      url: url,
+      rceptNo: extractRceptNo(url) || (raw.rcept_dt || ""),
+      categoryLabel: cat.label,
+      badgeClass: cat.badgeClass
+    };
   }
 
   Promise.all([
@@ -269,19 +285,16 @@
     var filingsJson = results[0];
     var maJson = results[1];
 
-    filingsData = (filingsJson && filingsJson.filings) || [];
-    maToday = (maJson && maJson[todayStr()]) || {};
+    var filingsData = (filingsJson && filingsJson.filings) || [];
+    var maToday = (maJson && maJson[todayStr()]) || {};
 
     metaTextEl.textContent = (filingsJson && filingsJson.updated_at ? filingsJson.updated_at : todayStr()) + " 기준";
 
-    document.querySelectorAll(".mt-tab").forEach(function (btn) {
-      btn.addEventListener("click", function () { renderTab(btn.getAttribute("data-tab")); });
-    });
-
-    renderTab(activeTab);
+    var list = buildTimeSortedList(filingsData, maToday);
+    renderRows(list);
   }).catch(function (err) {
     track.innerHTML = '<p class="mt-empty">데이터를 불러오지 못했습니다.</p>';
-    console.error("M&A 티커 로드 실패:", err);
+    console.error("주요 공시 티커 로드 실패:", err);
   });
 })();
 </script>
