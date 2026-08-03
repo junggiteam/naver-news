@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04 05:30:49",
+  "updated_at": "2026-08-04 05:45:51",
   "indices": [
     {
       "name": "코스피",
@@ -27,14 +27,14 @@
       "value": "53,178.41",
       "change_percent": "▲1.32%",
       "direction": "up",
-      "as_of": "2026-08-04 05:30:24"
+      "as_of": "2026-08-04 05:35:01"
     },
     {
       "name": "나스닥",
       "value": "25,913.90",
       "change_percent": "▲2.13%",
       "direction": "up",
-      "as_of": "2026-08-04 05:30:24"
+      "as_of": "2026-08-04 05:31:25"
     },
     {
       "name": "S&P500",
@@ -66,15 +66,15 @@
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "910.22",
-      "change_percent": "▼0.55%",
+      "value": "910.31",
+      "change_percent": "▼0.54%",
       "direction": "down",
       "as_of": "2026.08.03 21:05"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,646.19",
-      "change_percent": "▼1.02%",
+      "value": "1,646.55",
+      "change_percent": "▼1.00%",
       "direction": "down",
       "as_of": "2026.08.03 21:05"
     },
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,950,000",
-      "change_percent": "▲0.07%",
-      "direction": "up",
-      "as_of": "2026-08-04 05:30:41"
+      "value": "90,884,000",
+      "change_percent": "▼0.01%",
+      "direction": "down",
+      "as_of": "2026-08-04 05:45:36"
     }
   ],
   "news_categories": [
@@ -98,8 +98,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "한은, 수출 앞둔 국산 금 사들인다…13년 만에 실물 매입 [Pick코노미]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648196&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260804&page=1",
+          "upload_time": "2026-08-04 05:30",
+          "published_at": "2026-08-04T05:30:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
           "title": "뉴욕증시, 美이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016231750&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260804&page=1",
           "upload_time": "2026-08-04 05:10",
@@ -107,7 +115,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 3,
           "title": "美 479종 분산, 韓은 투톱 16종…'극단적 수급 쏠림'이 충격 키웠다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343576&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260804&page=1",
           "upload_time": "2026-08-04 05:04",
@@ -115,7 +123,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "미장 레버리지 투자 4배 폭증...레버리지 규제 풍선효과 우려",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343575&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260804&page=1",
           "upload_time": "2026-08-04 05:02",
@@ -123,19 +131,11 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 4,
+          "rank": 5,
           "title": "9년 족쇄 풀렸다… 삼성증권, '발행어음 인가' 눈앞",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005395100&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260804&page=1",
           "upload_time": "2026-08-04 04:02",
           "published_at": "2026-08-04T04:02:00+09:00"
-        },
-        {
-          "press_name": "머니투데이",
-          "rank": 5,
-          "title": "모간스탠리는 \"9000피 간다\"는데...지금 사? 말아? 증권가 전망은",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005395099&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260804&page=1",
-          "upload_time": "2026-08-04 04:01",
-          "published_at": "2026-08-04T04:01:00+09:00"
         }
       ]
     },
@@ -188,8 +188,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "[뉴욕증시]美·이란 대화 재개, 빅테크 ↑…다우, 최고치 경신",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005798315&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260804&page=1",
+          "upload_time": "2026-08-04 05:36",
+          "published_at": "2026-08-04T05:36:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "[속보]다우 사상최고·나스닥 2%↑…유가 급락에 안도랠리",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343580&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260804&page=1",
           "upload_time": "2026-08-04 05:13",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "뉴욕증시, 美이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016231750&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260804&page=1",
           "upload_time": "2026-08-04 05:10",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 4,
           "title": "[속보]뉴욕증시 일제히 상승 마감…다우 최고치 경신",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005798314&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260804&page=1",
           "upload_time": "2026-08-04 05:06",
@@ -213,19 +221,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "트럼프 이란에 \"합의 서명할 마지막 기회\"…불응 땐 공습 시사",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005798313&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260804&page=1",
           "upload_time": "2026-08-04 05:03",
           "published_at": "2026-08-04T05:03:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "[美특징주]이베이, 웰스파고 투자의견 하향에 주가 5% 약세",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343571&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260804&page=1",
-          "upload_time": "2026-08-04 04:59",
-          "published_at": "2026-08-04T04:59:00+09:00"
         }
       ]
     },
@@ -323,8 +323,16 @@
       "category": "환율",
       "items": [
         {
-          "press_name": "연합뉴스",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "한은, 수출 앞둔 국산 금 사들인다…13년 만에 실물 매입 [Pick코노미]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648196&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260804&page=1",
+          "upload_time": "2026-08-04 05:30",
+          "published_at": "2026-08-04T05:30:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
           "title": "트럼프의 엔화부양 배경은…'美국채금리·대미투자 관리' 셈법",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016231743&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260804&page=1",
           "upload_time": "2026-08-04 04:28",
@@ -332,7 +340,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 3,
           "title": "비과세·감면 115개 ‘손질’… 5년 간 세수효과 13.3조 [2026 세제개편안]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648124&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260804&page=1",
           "upload_time": "2026-08-03 18:07",
@@ -340,7 +348,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 4,
           "title": "20억 넘으면 종부세…비거주 땐 4배 뛴다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648119&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260804&page=1",
           "upload_time": "2026-08-03 18:06",
@@ -348,19 +356,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "\"한 번 사면 되팔기 힘든 금\" 뚜렷한 단점에도…한은, 13년 만의 매입 재개 이유는",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005798277&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260804&page=1",
           "upload_time": "2026-08-03 18:03",
           "published_at": "2026-08-03T18:03:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 5,
-          "title": "한은, 13년 만에 실물 금 산다…\"금값 떨어져 부담 완화\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016231542&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260804&page=1",
-          "upload_time": "2026-08-03 18:00",
-          "published_at": "2026-08-03T18:00:00+09:00"
         }
       ]
     }
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "국내 증시는 미국 증시의 상승 마감에도 불구하고 특정 종목으로의 수급 쏠림 현상이 심화되며 코스피가 큰 폭으로 하락했습니다. 반면 코스닥 지수는 최근 4일간 데이터 기준으로 최고치를 기록하며 대조적인 움직임을 보였습니다.",
+  "ai_commentary": "국내 증시는 특정 종목에 집중된 극단적인 수급 쏠림 현상이 시장의 충격을 키우며 코스피 하락을 유도했다. 반면 코스닥은 최근 4일간 데이터 기준으로 최고치를 기록하며 상승 마감했다.",
   "top_gainers": [
     {
       "name": "티웨이홀딩스",
