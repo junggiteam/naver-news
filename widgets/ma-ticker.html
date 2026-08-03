@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>주요 공시</title>
+<title>DART 공시</title>
 <style>
   html, body {
     margin: 0;
@@ -15,7 +15,7 @@
 <body>
 <div id="mt-strip">
   <div class="mt-header">
-    <span class="mt-label">주요 공시</span>
+    <span class="mt-label">DART 공시</span>
   </div>
 
   <div class="mt-marquee-viewport">
@@ -47,7 +47,7 @@
   .mt-header {
     margin: -14px -18px 10px -18px;
     padding: 12px 18px;
-    background: #142c67;
+    background: #397fe7;
     border-radius: 10px 10px 0 0;
   }
   .mt-label {
@@ -88,7 +88,7 @@
     color: inherit;
     text-decoration: none;
   }
-  .mt-row:hover .mt-row-name { color: #142c67; }
+  .mt-row:hover .mt-row-name { color: #397fe7; }
 
   .mt-row-badge {
     flex: 0 0 auto;
@@ -101,7 +101,6 @@
     line-height: 1.25;
     text-align: center;
   }
-  .mt-row-badge.cat-filings { background: #142c67; }
   .mt-row-badge.cat-merge { background: #8B5CF6; }
   .mt-row-badge.cat-equity { background: #3182F6; }
   .mt-row-badge.cat-swap { background: #0EA5A5; }
@@ -146,7 +145,6 @@
 
 <script>
 (function () {
-  var DART_FILINGS_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dart_filings.json";
   var DART_MA_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dart_ma_signals.json";
   var DURATION_PER_ROW_S = 1.1; // 한 줄이 흘러가는 데 걸리는 시간(초) - 작을수록 빠름
   var VISIBLE_ROWS = 3;
@@ -161,10 +159,10 @@
   function cacheBuster() { return Math.floor(Date.now() / CACHE_BUCKET_MS); }
 
   // 카테고리 순서(합치는 순서)와 뱃지 라벨/색상 클래스를 한 곳에서 관리.
-  // "filings"는 dart_filings.json(오늘자 전체 주요사항보고), 나머지는
-  // dart_ma_signals.json의 오늘 날짜 키 안 카테고리들.
+  // dart_ma_signals.json의 오늘 날짜 키 안 5개 카테고리만 다룬다(일반
+  // 주요사항보고 전체를 보여주는 "주요공시"는 이 위젯의 M&A 큐레이션
+  // 취지에 안 맞아 제외 - 2026-08).
   var CATEGORIES = [
-    { key: "filings", label: "주요공시", badgeClass: "cat-filings" },
     { key: "합병_분할", label: "합병·분할", badgeClass: "cat-merge" },
     { key: "지분인수", label: "지분인수", badgeClass: "cat-equity" },
     { key: "주식교환_이전", label: "주식교환·이전", badgeClass: "cat-swap" },
@@ -256,11 +254,10 @@
   // 0~2건이라 묶어도 "섹션"처럼 보이지 않고 그냥 순서만 바뀔 뿐이었다 -
   // 뱃지가 이미 각 행의 카테고리를 알려주므로, "방금 뭐가 새로 떴는지"가
   // 더 잘 보이는 시간순을 채택했다.)
-  function buildTimeSortedList(filingsData, maToday) {
+  function buildTimeSortedList(maToday) {
     var list = [];
     CATEGORIES.forEach(function (cat) {
-      var rawItems = cat.key === "filings" ? filingsData : (maToday[cat.key] || []);
-      rawItems.forEach(function (raw) {
+      (maToday[cat.key] || []).forEach(function (raw) {
         list.push(toRow(raw, cat));
       });
     });
@@ -269,7 +266,7 @@
   }
 
   function toRow(raw, cat) {
-    var url = cat.key === "filings" ? raw.link : raw.source_url;
+    var url = raw.source_url;
     return {
       corp_name: raw.corp_name || "",
       desc: raw.action || shortenReportName(raw.report_nm),
@@ -280,24 +277,17 @@
     };
   }
 
-  Promise.all([
-    fetch(DART_FILINGS_URL + "?t=" + cacheBuster()).then(function (res) { return res.json(); }).catch(function () { return null; }),
-    fetch(DART_MA_URL + "?t=" + cacheBuster()).then(function (res) { return res.json(); }).catch(function () { return null; })
-  ]).then(function (results) {
-    var filingsJson = results[0];
-    var maJson = results[1];
-
-    var filingsData = (filingsJson && filingsJson.filings) || [];
-    var maToday = (maJson && maJson[todayStr()]) || {};
-
-    metaTextEl.textContent = (filingsJson && filingsJson.updated_at ? filingsJson.updated_at : todayStr()) + " 기준";
-
-    var list = buildTimeSortedList(filingsData, maToday);
-    renderRows(list);
-  }).catch(function (err) {
-    track.innerHTML = '<p class="mt-empty">데이터를 불러오지 못했습니다.</p>';
-    console.error("주요 공시 티커 로드 실패:", err);
-  });
+  fetch(DART_MA_URL + "?t=" + cacheBuster())
+    .then(function (res) { return res.json(); })
+    .then(function (maJson) {
+      var maToday = (maJson && maJson[todayStr()]) || {};
+      metaTextEl.textContent = todayStr() + " 기준";
+      renderRows(buildTimeSortedList(maToday));
+    })
+    .catch(function (err) {
+      track.innerHTML = '<p class="mt-empty">데이터를 불러오지 못했습니다.</p>';
+      console.error("DART 공시 티커 로드 실패:", err);
+    });
 })();
 </script>
 </body></html>
