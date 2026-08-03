@@ -11,10 +11,12 @@ import scraper_dart
 import scraper_ecos
 import scraper_bizinfo
 import scraper_calendar
+import scraper_tax_calendar
 import ai_briefing
 import dashboard
 import daily_reports
 import record_verification
+import dart_ma_signals
 
 KST = timezone(timedelta(hours=9))
 MARKER_FILE = os.path.join("data", ".last_run.json")
@@ -41,6 +43,8 @@ CRAWLER_INTERVALS = {
     # 경제 캘린더(FOMC/금통위)는 몇 달 전에 이미 확정된 일정이라 자주
     # 확인할 필요가 없음. 매일 한 번이면 충분.
     "calendar": timedelta(hours=24),
+    # 세무·노무·공휴일 캘린더도 하루 단위로 바뀌는 성격이 아니라 24시간 주기.
+    "tax_calendar": timedelta(hours=24),
 }
 
 CRAWLER_FUNCS = {
@@ -52,6 +56,7 @@ CRAWLER_FUNCS = {
     "ecos": scraper_ecos.main,
     "bizinfo": scraper_bizinfo.main,
     "calendar": scraper_calendar.main,
+    "tax_calendar": scraper_tax_calendar.main,
 }
 
 
@@ -193,6 +198,18 @@ def _augment_keyword_tags():
         print(f"[keyword_tags] {'생성됨: ' + ', '.join(tags) if tags else '생략됨(키 없음/호출 실패)'}")
     except Exception as e:
         print(f"[keyword_tags] 생성 중 오류(크롤링 결과 자체는 정상 저장됨): {e}")
+
+
+def _augment_dart_ma_signals():
+    """DART 크롤러 성공 직후 dart_filings.json을 M&A 5개 카테고리로 재분류.
+    DART API를 추가로 호출하지 않고 이미 저장된 데이터만 재가공하므로
+    실패해도 dart_filings.json 저장 자체와는 무관하게 예외를 삼킨다.
+    결과(dart_ma_signals.json)는 dashboard.json에 합치지 않고 완전히
+    독립된 파일로 유지한다 - 다른 탭 로딩 속도에 영향 없게 하기 위함."""
+    try:
+        dart_ma_signals.build_ma_signals()
+    except Exception as e:
+        print(f"[dart_ma] M&A 시그널 분류 중 오류(dart_filings.json 저장 자체엔 영향 없음): {e}")
 
 
 STOCK_HISTORY_FILE = os.path.join("data", "stock_index_history.json")
@@ -378,6 +395,8 @@ def run_scheduled(now_kst=None):
                 _augment_with_market_movers()
             if name == "economy":
                 _augment_keyword_tags()
+            if name == "dart":
+                _augment_dart_ma_signals()
             marker[name] = now_kst.isoformat()
             marker_changed = True
             print(f"[{name}] 실행 완료")

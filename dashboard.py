@@ -219,6 +219,7 @@ def build_dashboard():
     macro_data = _load_json("data/macro_indicators.json")
     support_data = _load_json("data/support_programs.json")
     calendar_data = _load_json("data/economic_calendar.json")
+    tax_labor_data = _load_json("data/tax_labor_calendar.json")
 
     today_str = datetime.now(KST).strftime("%Y-%m-%d")
     counts = _article_counts()
@@ -235,6 +236,8 @@ def build_dashboard():
         "support_programs": support_data.get("programs") or [],
         "soso_support_programs": support_data.get("soso_programs") or [],
         "economic_calendar": calendar_data.get("events") or [],
+        "tax_labor_events": tax_labor_data.get("events") or [],
+        "tax_labor_source_status": tax_labor_data.get("source_status") or {},
         "top_gainers": stock_data.get("top_gainers") or [],
         "top_losers": stock_data.get("top_losers") or [],
         "sector_performance": all_sectors[:5],

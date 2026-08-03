@@ -92,13 +92,28 @@
 - **정책·캘린더 탭 섹션 순서와 배치**:
   1. 거시경제 지표(`#pw-macro-indices`) - 탭 최상단에 배치
   2. 다가오는 경제 일정(`#pw-calendar-list`)
-  3. 주요 공시 DART(`#pw-dart-list`)
-  4. 정부지원사업(`#pw-support-list`)
-  5. 소상공인 정책자금(`#pw-soso-list`)
+  3. 세무·노무 일정 캘린더(`#pw-cal-widget`)
+  4. 주요 공시 DART(`#pw-dart-list`)
+  5. 정부지원사업(`#pw-support-list`)
+  6. 소상공인 정책자금(`#pw-soso-list`)
 
-  2~5번 섹션은 `.pw-2col` 클래스로 PC에서 2열, 모바일(`max-width:760px`)에서
+  2, 4~6번 섹션은 `.pw-2col` 클래스로 PC에서 2열, 모바일(`max-width:760px`)에서
   1열로 전환된다. 각 섹션은 기본 6개(`PW_INITIAL_COUNT`)만 노출하고, 6개를
   넘으면 하단에 "더보기" 버튼(`renderPwList` 공통 헬퍼, `.nrw-more-btn`
   스타일 재사용)이 나타나 전체를 펼쳐볼 수 있다 - 항목이 많아도 스크롤이
-  과도하게 길어지지 않게 하기 위함. 거시경제 지표(`.pw-macro-grid`)는
-  더보기 대상이 아니다(고정 개수 요약 카드).
+  과도하게 길어지지 않게 하기 위함. 거시경제 지표(`.pw-macro-grid`)와
+  세무·노무 일정 캘린더는 더보기 대상이 아니다(거시경제 지표는 고정 개수
+  요약 카드, 세무·노무 캘린더는 자체 월별 그리드 + "다가오는 마감" 8개
+  고정 노출 방식이라 이 패턴을 쓰지 않음).
+- **세무·노무 일정 캘린더(`#pw-cal-widget`, 3번 섹션)**: 클래스명은
+  `pw-cal-` 접두사로 통일해 기존 `pw-calendar-*`(2번 "다가오는 경제 일정")
+  클래스와 절대 겹치지 않게 했다 - 이름이 비슷해 보여도 서로 다른
+  컴포넌트이므로 혼동하지 말 것. 데이터는 `dashboard.json`의
+  `tax_labor_events`/`tax_labor_source_status`를 그대로 쓰고(`scraper_tax_calendar.py`가
+  생성), 색상·폰트는 새 값을 만들지 않고 기존 `--nw-*` 변수(`--nw-line`,
+  `--nw-surface`, `--nw-navy`, `--nw-text-sub`, `--nw-title-color`,
+  `--nw-body-color`, `--nw-shadow-sm` 등)를 그대로 재사용한다. 세무(파란
+  `#3182F6`)/노무(주황 `#F5A623`) pill과 공휴일 셀 배경(연한 빨강)만
+  이 컴포넌트 전용 고정 색상이고, 이 두 색은 CEO 리포트 탭의 카테고리
+  뱃지 팔레트(`CEO_BADGE_COLORS`)와는 별개로 하드코딩된 값이니 나중에
+  전역 색상 체계를 바꿀 때 같이 확인할 것.
