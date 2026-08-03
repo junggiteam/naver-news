@@ -151,11 +151,13 @@
   var DURATION_PER_ROW_S = 1.1; // 한 줄이 흘러가는 데 걸리는 시간(초) - 작을수록 빠름
   var VISIBLE_ROWS = 3;
 
-  // 캐시 버스터를 요청마다 달라지는 Date.now()(ms) 대신 3시간 단위로
-  // 반올림한 값으로 고정한다 - index-ticker.html과 동일한 이유(데이터가
-  // DART 크롤러 주기로만 갱신되므로, 그 이상 촘촘한 무효화는 CDN 캐시
-  // 히트만 방해한다).
-  var CACHE_BUCKET_MS = 3 * 60 * 60 * 1000;
+  // 캐시 버스터를 요청마다 달라지는 Date.now()(ms) 대신 1시간 단위로
+  // 반올림한 값으로 고정한다 - 데이터 원본(dart_filings.json/
+  // dart_ma_signals.json)이 DART 크롤러 주기(1시간, run_scheduled.py의
+  // CRAWLER_INTERVALS["dart"])로만 갱신되므로, 그 이상 촘촘한 무효화는
+  // CDN 캐시 히트만 방해한다. (2026-08: DART 크롤러 주기를 3시간에서
+  // 1시간으로 단축하면서 이 값도 함께 조정)
+  var CACHE_BUCKET_MS = 1 * 60 * 60 * 1000;
   function cacheBuster() { return Math.floor(Date.now() / CACHE_BUCKET_MS); }
 
   // 카테고리 순서(합치는 순서)와 뱃지 라벨/색상 클래스를 한 곳에서 관리.

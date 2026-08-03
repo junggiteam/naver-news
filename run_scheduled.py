@@ -35,9 +35,14 @@ CRAWLER_INTERVALS = {
     # 단점이 아니라 오히려 이득이라 굳이 분리하지 않음.
     "stock": timedelta(minutes=15),
     "realestate": timedelta(hours=3),
-    # DART 공시/ECOS 거시지표는 하루 내내 빈번히 바뀌는 데이터가 아니라
-    # 나머지 뉴스 탭과 같은 3시간 주기로 충분함.
-    "dart": timedelta(hours=3),
+    # DART 공시는 widgets/ma-ticker.html("당일 브리핑" 성격의 티커 위젯)이
+    # 참고하므로 체감 신선도를 위해 1시간 주기로 단축(2026-08 변경, 기존
+    # 3시간). 무료 API 한도(일 20,000건) 대비 하루 호출량이 24회 x
+    # (보통 1페이지) 수준이라 여유가 충분하고, GitHub Actions는 이 저장소가
+    # public repo라 표준 러너 무제한이라 실행 빈도 증가도 문제 없음.
+    # ECOS 거시지표는 하루 내내 빈번히 바뀌는 데이터가 아니라 여전히
+    # 3시간 주기로 충분함.
+    "dart": timedelta(hours=1),
     "ecos": timedelta(hours=3),
     "bizinfo": timedelta(hours=3),
     # 경제 캘린더(FOMC/금통위)는 몇 달 전에 이미 확정된 일정이라 자주
