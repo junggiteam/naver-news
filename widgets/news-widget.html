@@ -1923,11 +1923,11 @@
   .pw-cal-tag {
     display: block;
     overflow: hidden;
-    padding: 1px 5px;
+    padding: 2px 6px;
     border-radius: 5px;
     color: #fff;
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 11.5px;
+    font-weight: 600;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
@@ -1939,8 +1939,8 @@
     display: block;
     margin: 1px 0 0;
     color: var(--nw-text-muted);
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 11.5px;
+    font-weight: 600;
   }
 
   .pw-cal-upcoming-title {
@@ -1996,7 +1996,7 @@
   .pw-cal-upcoming-date {
     margin: 0 0 2px;
     color: var(--nw-text-muted);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
   }
 
@@ -2018,14 +2018,14 @@
   .pw-cal-upcoming-detail {
     margin: 6px 0 0;
     color: var(--nw-body-color);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.55;
   }
   .pw-cal-upcoming-scope {
     margin: 6px 0 0;
     color: var(--nw-text-muted);
-    font-size: 11.5px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
   }
@@ -2326,8 +2326,8 @@
     .pw-cal-cell { min-height: 54px; padding: 4px 3px; }
     .pw-cal-cell-date { font-size: 12.5px; }
     .pw-cal-holiday-name { font-size: 9.5px; }
-    .pw-cal-tag { font-size: 8.5px; padding: 1px 4px; }
-    .pw-cal-more-trigger { font-size: 8.5px; }
+    .pw-cal-tag { font-size: 9.5px; padding: 1.5px 5px; }
+    .pw-cal-more-trigger { font-size: 9.5px; }
     .pw-cal-dot { width: 7px; height: 7px; }
     .pw-cal-legend { gap: 8px 12px; }
     .pw-cal-legend-item { font-size: 11px; }
@@ -3822,7 +3822,11 @@
       if (titleParts.length) cell.title = titleParts.join("\n");
 
       // 날짜 셀 클릭 -> 팝업 대신 아래 "세부 사항"을 그 날짜로 좁힌다.
-      if (dayEvents.length) {
+      // matchEvents 기준으로만 클릭 가능하게 한다 - 공휴일만 있고 세무/
+      // 노무/M&A가 하나도 없는 날은 "세부 사항"에 매칭되는 항목이 없으니
+      // 클릭해도 반응하지 않아야 한다(dayEvents 기준으로 하면 공휴일만
+      // 있어도 스크롤이 발생하는 버그가 있었음).
+      if (matchEvents.length) {
         cell.classList.add("pw-cal-clickable");
         cell.addEventListener("click", function () { pwCalSelectDate(dateStr); });
       }
