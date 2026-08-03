@@ -128,6 +128,13 @@
 (function () {
   var STOCK_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_news.json";
   var DURATION_PER_ROW_S = 1.1; // 한 줄이 흘러가는 데 걸리는 시간(초) - 작을수록 빠름
+  // 캐시 버스터를 요청마다 달라지는 Date.now()(ms) 대신 3시간 단위로
+  // 반올림한 값으로 고정한다. 데이터 자체가 DART 크롤러 주기(약 3시간)
+  // 로만 갱신되므로, 같은 3시간 구간 안의 모든 방문자가 동일한 URL을
+  // 요청하게 돼 CDN(raw.githubusercontent.com)이 캐시를 공유할 수 있다 -
+  // 트래픽이 몰려도 origin 요청 수가 크게 줄어든다.
+  var CACHE_BUCKET_MS = 3 * 60 * 60 * 1000;
+  function cacheBuster() { return Math.floor(Date.now() / CACHE_BUCKET_MS); }
 
   var track = document.getElementById("is-marquee-track");
   var metaTextEl = document.getElementById("is-meta-text");
@@ -152,7 +159,7 @@
     return row;
   }
 
-  fetch(STOCK_URL + "?t=" + Date.now())
+  fetch(STOCK_URL + "?t=" + cacheBuster())
     .then(function (res) { return res.json(); })
     .then(function (data) {
       var indices = data.indices || [];
