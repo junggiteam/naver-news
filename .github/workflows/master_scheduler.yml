@@ -42,11 +42,6 @@ jobs:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python run_scheduled.py
 
-      - name: (임시) DATA_GO_KR_SERVICE_KEY 실검증 - 확인 끝나면 제거
-        env:
-          DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: python -c "import scraper_tax_calendar; scraper_tax_calendar.main()"
-
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
