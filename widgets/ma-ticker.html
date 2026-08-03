@@ -66,18 +66,16 @@
     letter-spacing: 0.3px;
   }
 
-  /* 탭 6개가 300px 폭에 다 안 들어가므로 가로 스크롤 pill 스트립으로 처리 */
+  /* 탭 6개가 300px 폭에 한 줄로 다 안 들어가서 flex-wrap으로 2줄
+     자동 줄바꿈 처리(가로 스크롤 대신) - 카드 폭을 넓히는 대안도
+     실측 비교해봤으나, 행 콘텐츠(회사명+공시유형) 사이에 불필요한
+     여백만 커져서 이 방식을 선택했다. */
   .mt-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     margin: 0 0 10px;
-    padding-bottom: 2px;
-    scrollbar-width: thin;
   }
-  .mt-tabs::-webkit-scrollbar { height: 3px; }
-  .mt-tabs::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
 
   .mt-tab {
     flex: 0 0 auto;
