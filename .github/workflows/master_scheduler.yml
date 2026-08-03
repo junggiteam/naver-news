@@ -42,6 +42,12 @@ jobs:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python run_scheduled.py
 
+      - name: "[임시] dart_ma_signals.json 2026-01-01 소급 백필 (1회성, 체크포인트 방식이라 여러 번 실행될 수 있음)"
+        timeout-minutes: 15
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python dart_ma_backfill.py
+
       - name: 깃허브에 데이터 저장 (Push, 충돌 시 재시도)
         run: |
           git config --local user.email "junggiteam@gmail.com"
