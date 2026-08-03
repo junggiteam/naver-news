@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-03 09:01:07",
+  "updated_at": "2026-08-03 09:31:06",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6595.45,
-    "kosdaq_value": 719.76
+    "label": "하락",
+    "emoji": "🟠",
+    "kospi_change": -5.12,
+    "kosdaq_change": -0.75,
+    "kospi_value": 6257.68,
+    "kosdaq_value": 714.34
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "빌라 착공 물량이 5년 전보다 크게 줄어드는 등 주택 공급 양극화 심화"
+    },
+    {
+      "category": "증권",
+      "text": "삼성전자와 SK하이닉스 등 시가총액 상위 종목에 대한 차익 실현 매물이 출회되면서 코스피 지수가 하락세를 보였다. 이러한 영향으로 코스피와 코스피200 지수는 최근 3일간 데이터 기준으로 최저치를 기록하며 장을 마감했다."
     }
   ],
   "daily_term": {
@@ -565,155 +569,155 @@
   ],
   "top_gainers": [
     {
-      "name": "유니온",
-      "price": "2780.0",
-      "change_percent": "+5.90%",
-      "pct": 5.9
+      "name": "티웨이홀딩스",
+      "price": "1248.0",
+      "change_percent": "+30.00%",
+      "pct": 30.0
     },
     {
-      "name": "RISE 미국양자컴퓨팅",
-      "price": "18425.0",
-      "change_percent": "+4.63%",
-      "pct": 4.63
+      "name": "비비안",
+      "price": "6590.0",
+      "change_percent": "+29.98%",
+      "pct": 29.98
     },
     {
-      "name": "삼성전기",
-      "price": "1186000.0",
-      "change_percent": "+3.85%",
-      "pct": 3.85
+      "name": "아센디오",
+      "price": "842.0",
+      "change_percent": "+29.94%",
+      "pct": 29.94
     },
     {
-      "name": "대한방직",
-      "price": "6250.0",
-      "change_percent": "+3.82%",
-      "pct": 3.82
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "9525.0",
+      "change_percent": "+23.78%",
+      "pct": 23.78
     },
     {
-      "name": "금호전기",
-      "price": "4265.0",
-      "change_percent": "+3.65%",
-      "pct": 3.65
+      "name": "TIGER 200선물인버스2X",
+      "price": "107.0",
+      "change_percent": "+22.99%",
+      "pct": 22.99
     }
   ],
   "top_losers": [
     {
-      "name": "상상인증권",
-      "price": "613.0",
-      "change_percent": "-5.69%",
-      "pct": 5.69
+      "name": "F&F",
+      "price": "63300.0",
+      "change_percent": "-21.37%",
+      "pct": 21.37
     },
     {
-      "name": "SK하이닉스",
-      "price": "1629000.0",
-      "change_percent": "-5.18%",
-      "pct": 5.18
+      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
+      "price": "10005.0",
+      "change_percent": "-17.42%",
+      "pct": 17.42
     },
     {
-      "name": "DB하이텍",
-      "price": "78800.0",
-      "change_percent": "-5.17%",
-      "pct": 5.17
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "7940.0",
+      "change_percent": "-17.29%",
+      "pct": 17.29
     },
     {
-      "name": "유유제약2우B",
-      "price": "7020.0",
-      "change_percent": "-5.14%",
-      "pct": 5.14
+      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
+      "price": "9145.0",
+      "change_percent": "-17.28%",
+      "pct": 17.28
     },
     {
-      "name": "ACE AI반도체TOP3+",
-      "price": "53300.0",
-      "change_percent": "-4.68%",
-      "pct": 4.68
+      "name": "ACE 삼성전자단일종목레버리지",
+      "price": "9765.0",
+      "change_percent": "-17.25%",
+      "pct": 17.25
     }
   ],
   "sector_performance": [
     {
       "name": "전자장비와기기",
-      "change_value": "+2.07%",
-      "pct": 2.07
-    },
-    {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.32%",
-      "pct": 0.32
+      "change_value": "+3.77%",
+      "pct": 3.77
     },
     {
       "name": "항공사",
-      "change_value": "+0.19%",
-      "pct": 0.19
+      "change_value": "+2.55%",
+      "pct": 2.55
     },
     {
-      "name": "디스플레이장비및부품",
-      "change_value": "+0.09%",
-      "pct": 0.09
+      "name": "무선통신서비스",
+      "change_value": "+2.03%",
+      "pct": 2.03
     },
     {
-      "name": "부동산",
-      "change_value": "+0.08%",
-      "pct": 0.08
+      "name": "가정용품",
+      "change_value": "+1.83%",
+      "pct": 1.83
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "+1.77%",
+      "pct": 1.77
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자장비와기기",
-      "change_value": "+2.07%",
-      "pct": 2.07
-    },
-    {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.32%",
-      "pct": 0.32
+      "change_value": "+3.77%",
+      "pct": 3.77
     },
     {
       "name": "항공사",
-      "change_value": "+0.19%",
-      "pct": 0.19
+      "change_value": "+2.55%",
+      "pct": 2.55
     },
     {
-      "name": "디스플레이장비및부품",
-      "change_value": "+0.09%",
-      "pct": 0.09
+      "name": "무선통신서비스",
+      "change_value": "+2.03%",
+      "pct": 2.03
     },
     {
-      "name": "부동산",
-      "change_value": "+0.08%",
-      "pct": 0.08
+      "name": "가정용품",
+      "change_value": "+1.83%",
+      "pct": 1.83
     },
     {
-      "name": "판매업체",
-      "change_value": "+0.08%",
-      "pct": 0.08
+      "name": "자동차부품",
+      "change_value": "+1.77%",
+      "pct": 1.77
     },
     {
-      "name": "카드",
-      "change_value": "-0.85%",
-      "pct": -0.85
+      "name": "화장품",
+      "change_value": "+1.73%",
+      "pct": 1.73
     },
     {
-      "name": "통신장비",
-      "change_value": "-1.06%",
-      "pct": -1.06
+      "name": "화학",
+      "change_value": "-3.81%",
+      "pct": -3.81
     },
     {
-      "name": "자동차",
-      "change_value": "-1.11%",
-      "pct": -1.11
+      "name": "증권",
+      "change_value": "-4.12%",
+      "pct": -4.12
     },
     {
-      "name": "건축자재",
-      "change_value": "-1.65%",
-      "pct": -1.65
+      "name": "전기제품",
+      "change_value": "-4.54%",
+      "pct": -4.54
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "-1.84%",
-      "pct": -1.84
+      "name": "석유와가스",
+      "change_value": "-5.28%",
+      "pct": -5.28
+    },
+    {
+      "name": "생명보험",
+      "change_value": "-6.34%",
+      "pct": -6.34
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-4.98%",
-      "pct": -4.98
+      "change_value": "-7.91%",
+      "pct": -7.91
     }
   ],
   "article_counts": {
