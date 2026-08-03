@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 16:15:38",
+  "updated_at": "2026-08-03 16:31:27",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스를 비롯한 대장주의 투자 심리가 악화하면서 코스피는 최근 3일 중 가장 낮은 수치를 기록하며 마감했다. 반면 코스닥은 최근 3일 중 가장 높은 수치를 기록하며 상승세로 장을 마쳤다."
+      "text": "삼성전자와 SK하이닉스를 비롯한 시가총액 상위 종목의 주가가 급락하면서 코스피는 최근 3일 중 가장 낮은 수치를 기록했다. 반면 코스닥은 기관 투자자의 매수세가 유입되면서 최근 3일 중 가장 높은 수치로 마감했다."
     }
   ],
   "daily_term": {
@@ -84,12 +84,44 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "우리금융지주",
+      "report_nm": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
+      "rcept_dt": "20260803",
+      "rcept_no": "20260803000313",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000313",
+      "ai_explanation": "자본 확충을 위해 특정 조건에서 주식으로 전환되거나 상각될 수 있는 채권을 발행한다는 뜻입니다."
+    },
+    {
+      "corp_name": "한울반도체",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260803",
+      "rcept_no": "20260803000258",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000258",
+      "ai_explanation": "운영 자금 등을 조달하기 위해 기존 주주나 제3자에게 신주를 발행하여 자금을 모은다는 뜻입니다."
+    },
+    {
+      "corp_name": "인지소프트",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260803",
+      "rcept_no": "20260803000270",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000270",
+      "ai_explanation": "주가 안정 및 주주 가치 제고 등을 목적으로 회사 자금을 사용해 자사 주식을 매입한다는 뜻입니다."
+    },
+    {
+      "corp_name": "카스",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260803",
+      "rcept_no": "20260803000239",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000239",
+      "ai_explanation": "주가 안정 및 주주 가치 제고 등을 목적으로 회사 자금을 사용해 자사 주식을 매입한다는 뜻입니다."
+    },
+    {
       "corp_name": "HLB제약",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260803",
       "rcept_no": "20260803000211",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000211",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "운영 자금 등을 조달하기 위해 기존 주주나 제3자에게 신주를 발행하여 자금을 모은다는 뜻입니다."
     },
     {
       "corp_name": "메타랩스",
@@ -97,7 +129,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000182",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000182",
-      "ai_explanation": "경영 효율성 증대나 사업 확장을 위해 다른 회사와 합병하기로 결정한 것입니다."
+      "ai_explanation": "기업 경쟁력 강화나 경영 효율화를 위해 다른 기업과 합치기로 결정했다는 뜻입니다."
     },
     {
       "corp_name": "두산",
@@ -105,7 +137,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000139",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000139",
-      "ai_explanation": "타 회사의 지분을 사들이기로 한 기존 계획의 첨부 서류를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "사업 확장이나 경쟁력 강화를 위해 다른 회사의 주식을 매입하여 자회사로 편입한다는 뜻입니다."
     },
     {
       "corp_name": "현대퓨처넷",
@@ -113,7 +145,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000128",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000128",
-      "ai_explanation": "주가 안정 및 주주 가치 제고를 목적으로 회사가 직접 자사 주식을 사들이기로 한 것입니다."
+      "ai_explanation": "주가 안정 및 주주 가치 제고 등을 목적으로 회사 자금을 사용해 자사 주식을 매입한다는 뜻입니다."
     },
     {
       "corp_name": "한창산업",
@@ -121,7 +153,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000103",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000103",
-      "ai_explanation": "금융기관에 자금을 맡겨 자사 주식을 대신 매입하도록 신탁 계약을 체결한 것입니다."
+      "ai_explanation": "주가 안정을 위해 금융기관에 자금을 맡겨 자사주를 대신 매입하도록 계약했다는 뜻입니다."
     },
     {
       "corp_name": "롯데관광개발",
@@ -129,7 +161,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000003",
-      "ai_explanation": "만기 전에 회사가 발행했던 전환사채를 미리 되사들여 소각하거나 보유하려는 것입니다."
+      "ai_explanation": "발행했던 전환사채를 만기 전에 미리 되사들여 부채 부담을 줄이겠다는 뜻입니다."
     },
     {
       "corp_name": "SK",
@@ -137,7 +169,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000002",
-      "ai_explanation": "자금 조달을 위해 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하기로 한 것입니다."
+      "ai_explanation": "투자 유치 등을 위해 일정 기간 후 주식으로 전환할 권리가 부여된 채권을 발행한다는 뜻입니다."
     },
     {
       "corp_name": "KG모빌리티",
@@ -145,7 +177,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260803000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000001",
-      "ai_explanation": "자금 조달을 위해 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하기로 한 것입니다."
+      "ai_explanation": "투자 유치 등을 위해 일정 기간 후 주식으로 전환할 권리가 부여된 채권을 발행한다는 뜻입니다."
     },
     {
       "corp_name": "본느",
@@ -153,7 +185,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260731000816",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000816",
-      "ai_explanation": "자금 조달을 위해 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하기로 한 것입니다."
+      "ai_explanation": "투자 유치 등을 위해 일정 기간 후 주식으로 전환할 권리가 부여된 채권을 발행한다는 뜻입니다."
     },
     {
       "corp_name": "본느",
@@ -161,7 +193,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260731000813",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000813",
-      "ai_explanation": "자금 조달을 위해 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하기로 한 것입니다."
+      "ai_explanation": "투자 유치 등을 위해 일정 기간 후 주식으로 전환할 권리가 부여된 채권을 발행한다는 뜻입니다."
     },
     {
       "corp_name": "본느",
@@ -169,7 +201,7 @@
       "rcept_dt": "20260803",
       "rcept_no": "20260731000812",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000812",
-      "ai_explanation": "자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정하기로 결정한 것입니다."
+      "ai_explanation": "운영 자금 등을 조달하기 위해 기존 주주나 제3자에게 신주를 발행하여 자금을 모은다는 뜻입니다."
     }
   ],
   "macro_indicators": [
