@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 23:00:59",
+  "updated_at": "2026-08-03 23:30:53",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "53,065.52",
-      "change_percent": "▲1.11%",
+      "value": "53,191.24",
+      "change_percent": "▲1.35%",
       "direction": "up",
-      "as_of": "2026-08-03 23:00:07"
+      "as_of": "2026-08-03 23:30:04"
     },
     {
       "name": "나스닥",
-      "value": "25,614.36",
-      "change_percent": "▲0.95%",
+      "value": "25,687.99",
+      "change_percent": "▲1.24%",
       "direction": "up",
-      "as_of": "2026-08-03 23:00:07"
+      "as_of": "2026-08-03 23:30:04"
     },
     {
       "name": "S&P500",
-      "value": "7,542.20",
-      "change_percent": "▲0.70%",
+      "value": "7,566.18",
+      "change_percent": "▲1.02%",
       "direction": "up",
-      "as_of": "2026-08-03 23:00:07"
+      "as_of": "2026-08-03 23:30:04"
     },
     {
       "name": "국내금(원/돈)",
-      "value": "694,188.22",
-      "change_percent": "▼1.23%",
+      "value": "694,589.96",
+      "change_percent": "▼1.17%",
       "direction": "down",
-      "as_of": "2026.08.03 22:59"
+      "as_of": "2026.08.03 23:24"
     },
     {
       "name": "휘발유(원/리터)",
@@ -59,24 +59,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,427.40",
-      "change_percent": "▼0.87%",
+      "value": "1,428.10",
+      "change_percent": "▼0.83%",
       "direction": "down",
-      "as_of": "2026.08.03 21:01"
+      "as_of": "2026.08.03 21:02"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "912.02",
-      "change_percent": "▼0.35%",
+      "value": "912.32",
+      "change_percent": "▼0.32%",
       "direction": "down",
-      "as_of": "2026.08.03 21:01"
+      "as_of": "2026.08.03 21:02"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,644.72",
-      "change_percent": "▼1.11%",
+      "value": "1,644.89",
+      "change_percent": "▼1.10%",
       "direction": "down",
-      "as_of": "2026.08.03 21:01"
+      "as_of": "2026.08.03 21:02"
     },
     {
       "name": "국고채(3년)",
@@ -87,10 +87,10 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,050,000",
-      "change_percent": "▼0.92%",
+      "value": "90,719,000",
+      "change_percent": "▼0.19%",
       "direction": "down",
-      "as_of": "2026-08-03 23:00:58"
+      "as_of": "2026-08-03 23:30:51"
     }
   ],
   "news_categories": [
@@ -188,8 +188,24 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "[뉴욕증시]美-이란 대화 재개…일제히 상승",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005798306&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
+          "upload_time": "2026-08-03 23:10",
+          "published_at": "2026-08-03T23:10:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "AWS가 증명한 AI 투자…아마존, 시총 3조 달러 클럽 입성",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343545&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
+          "upload_time": "2026-08-03 23:07",
+          "published_at": "2026-08-03T23:07:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
           "title": "NXP 세미콘덕터, 경쟁사 대비 AI 매출 저조…목표주가·투자의견 '하향'-UBS",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343540&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 22:44",
@@ -197,7 +213,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 2,
+          "rank": 4,
           "title": "단숨에 시총 1위 올라서더니…삼전닉스 쫓는 속도 높인다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001261014&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 21:56",
@@ -205,27 +221,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 5,
           "title": "[포토]폭락-폭등 ‘널뛰기’ 증시",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343227&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
           "upload_time": "2026-08-03 15:59",
           "published_at": "2026-08-03T15:59:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 4,
-          "title": "[포토]코스피 5% 급락·코스닥은 사이드카",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343224&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
-          "upload_time": "2026-08-03 15:58",
-          "published_at": "2026-08-03T15:58:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "[포토]코스피, 대장주 투심 약화에 하락 마감",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006343223&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260803&page=1",
-          "upload_time": "2026-08-03 15:57",
-          "published_at": "2026-08-03T15:57:00+09:00"
         }
       ]
     },
@@ -369,7 +369,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "대장주를 중심으로 한 외국인의 매도세와 빚을 내 투자한 물량의 강제 청산이 겹치면서 코스피는 최근 3일간 가장 낮은 수치를 기록하며 하락 마감했다. 반면 코스닥은 시장 변동성 확대에 따른 사이드카 발동 등 혼조세 속에서도 최근 3일간 가장 높은 수치를 기록하며 상승세를 보였다.",
+  "ai_commentary": "미국 기준금리 인상 명분 강화와 외국인의 삼성전자 대규모 매도세가 이어지며 코스피는 최근 3일간 데이터 기준 최저치를 기록하며 5.12% 하락했다. 반면 코스닥은 시장 내 변동성 속에서도 최근 3일간 데이터 기준 최고치를 나타내며 2.44% 상승 마감했다. 빚투 물량의 강제 청산과 사이드카 발동 등 시장의 불안정한 흐름이 코스피와 코스닥의 상반된 움직임에 영향을 미쳤다.",
   "top_gainers": [
     {
       "name": "티웨이홀딩스",
