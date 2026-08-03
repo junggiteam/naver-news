@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-04 08:01:11",
+  "updated_at": "2026-08-04 08:31:03",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -5.12,
-    "kosdaq_change": 2.44,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6257.45,
     "kosdaq_value": 737.35
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "규제와 거래 감소 여파로 공인중개업소 12분기 연속 감소"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시가 중동 긴장 완화와 빅테크 기업들의 실적 호조에 힘입어 상승 마감했으나, 국내 시장은 지수별로 차별화된 흐름을 보였다. 코스피는 하락 마감한 반면, 코스닥은 최근 4일간 데이터 기준으로 최고치를 기록하며 상승세로 마감했다."
     }
   ],
   "daily_term": {
@@ -1697,157 +1693,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "티웨이홀딩스",
-      "price": "1248.0",
-      "change_percent": "+30.00%",
-      "pct": 30.0
-    },
-    {
-      "name": "비비안",
-      "price": "6590.0",
-      "change_percent": "+29.98%",
-      "pct": 29.98
-    },
-    {
-      "name": "아센디오",
-      "price": "842.0",
-      "change_percent": "+29.94%",
-      "pct": 29.94
-    },
-    {
-      "name": "마스턴프리미어리츠",
-      "price": "840.0",
-      "change_percent": "+24.08%",
-      "pct": 24.08
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9515.0",
-      "change_percent": "+23.65%",
-      "pct": 23.65
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "F&F",
-      "price": "61800.0",
-      "change_percent": "-23.23%",
-      "pct": 23.23
-    },
-    {
-      "name": "ACE 삼성전자단일종목레버리지",
-      "price": "9640.0",
-      "change_percent": "-18.31%",
-      "pct": 18.31
-    },
-    {
-      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "9940.0",
-      "change_percent": "-17.95%",
-      "pct": 17.95
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "9125.0",
-      "change_percent": "-17.46%",
-      "pct": 17.46
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "7690.0",
-      "change_percent": "-16.95%",
-      "pct": 16.95
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "생물공학",
-      "change_value": "+6.51%",
-      "pct": 6.51
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "통신장비",
-      "change_value": "+4.73%",
-      "pct": 4.73
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "판매업체",
-      "change_value": "+4.38%",
-      "pct": 4.38
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "+4.36%",
-      "pct": 4.36
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+3.88%",
-      "pct": 3.88
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "생물공학",
-      "change_value": "+6.51%",
-      "pct": 6.51
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "통신장비",
-      "change_value": "+4.73%",
-      "pct": 4.73
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "판매업체",
-      "change_value": "+4.38%",
-      "pct": 4.38
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "+4.36%",
-      "pct": 4.36
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+3.88%",
-      "pct": 3.88
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+3.54%",
-      "pct": 3.54
-    },
-    {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "-3.38%",
-      "pct": -3.38
-    },
-    {
-      "name": "가스유틸리티",
-      "change_value": "-3.90%",
-      "pct": -3.9
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-4.72%",
-      "pct": -4.72
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "-5.37%",
-      "pct": -5.37
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-7.23%",
-      "pct": -7.23
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "-7.99%",
-      "pct": -7.99
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
