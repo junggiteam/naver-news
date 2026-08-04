@@ -384,11 +384,17 @@ def find_due_crawlers(now_kst, marker):
 # CRAWLER_INTERVALS/CRAWLER_FUNCS 체계와는 완전히 별도 로직이라 기존
 # 크롤러 스케줄에는 영향이 없다.
 REPORT_SLOTS = {
+    # target은 정시(12:00/18:00)보다 3분 앞당긴 11:57/17:57 - 다른 크롤러/
+    # 리포트 슬롯과 정시에 몰려 겹치거나 지연되는 걸 피하려는 의도적인
+    # 오프셋이다. 위젯(news-widget.html)에 보이는 "오전판 12:00·저녁판
+    # 18:00 업데이트" 문구는 사람이 보기 좋은 반올림 값이고, 실제 실행
+    # 시각은 여기 11:57/17:57이라는 점에 유의 - 표시값과 실제 실행값이
+    # 다른 게 정상이며 버그가 아니다.
     "daily_report_morning": {
-        "target": "12:06", "window_minutes": 15, "func": daily_reports.build_morning_reports,
+        "target": "11:57", "window_minutes": 15, "func": daily_reports.build_morning_reports,
     },
     "daily_report_evening": {
-        "target": "18:30", "window_minutes": 15, "func": daily_reports.build_evening_reports,
+        "target": "17:57", "window_minutes": 15, "func": daily_reports.build_evening_reports,
     },
     # 장 마감(15:30) 근처 종가를 daily_close_archive.json에 기록. window는
     # 다른 슬롯과 동일하게 ±15분 - cron-job.org가 15분 간격으로만 깨우므로

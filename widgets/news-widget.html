@@ -324,14 +324,12 @@
     </div>
 
     <div class="cr-subtab-panel" data-subtab-panel="briefing">
-      <p class="ew-updated" id="db2-updated">업데이트 시간 불러오는 중...</p>
       <div id="db2-content">
         <p class="ew-loading">불러오는 중입니다...</p>
       </div>
     </div>
 
     <div class="cr-subtab-panel" data-subtab-panel="dart" hidden>
-      <p class="cr-dart-meta" id="cr-dart-meta"></p>
       <div id="cr-dart-content">
         <p class="ew-loading">불러오는 중입니다...</p>
       </div>
@@ -2069,12 +2067,6 @@
     color: var(--nw-primary);
   }
 
-  .cr-dart-meta {
-    margin: 0 0 16px;
-    color: var(--nw-text-muted);
-    font-size: 12px;
-    font-weight: 500;
-  }
   .cr-dart-article p {
     margin: 0 0 20px;
     color: var(--nw-body-color);
@@ -4343,6 +4335,23 @@
     }
   }
 
+  /* CEO 리포트 3개 서브탭(briefing/dart/sowhat)의 기준시간 텍스트를
+     ew-header의 cr-updated 하나로 통합 표시한다. 서브탭별로 따로 있던
+     db2-updated/cr-dart-meta 엘리먼트는 없앴고, 각 로드 함수가 만든
+     텍스트를 crUpdatedCache에 저장해뒀다가 "지금 활성화된 서브탭"일
+     때만 cr-updated에 반영한다 - 이미 로딩된 서브탭으로 전환하면
+     캐시된 텍스트로 즉시 갈아끼우고, 아직 로딩 전이면 "불러오는
+     중..."을 보여주다가 로딩 완료 시 자동 갱신된다. */
+  var crUpdatedCache = { briefing: null, dart: null, sowhat: null };
+  var crActiveSubtab = "briefing";
+
+  function setCrUpdatedText(subtabKey, text) {
+    crUpdatedCache[subtabKey] = text;
+    if (crActiveSubtab === subtabKey) {
+      document.getElementById("cr-updated").textContent = text;
+    }
+  }
+
   function loadCeo() {
     fetch(CEO_REPORT_URL + "?t=" + Date.now())
       .then(function (res) { return res.json(); })
@@ -4353,8 +4362,7 @@
           if (!b) return a;
           return a.date > b.date ? a : b;
         }, null);
-        document.getElementById("cr-updated").textContent =
-          latest && latest.date ? latest.date + " 기준 (평일 오전 11~12시 업데이트)" : "";
+        setCrUpdatedText("sowhat", latest && latest.date ? latest.date + " 기준 (평일 오전 11~12시 업데이트)" : "");
         renderCeoReport(latest);
         loaded.ceo = true;
       })
@@ -4373,17 +4381,16 @@
   var crDartLoading = false;
 
   function renderCrDartArticle(data) {
-    var metaEl = document.getElementById("cr-dart-meta");
     var contentEl = document.getElementById("cr-dart-content");
 
     if (!data || !data.article) {
-      metaEl.textContent = "";
+      setCrUpdatedText("dart", "");
       contentEl.innerHTML = '<p class="ew-loading">오늘의 DART 브리핑이 아직 준비되지 않았습니다.</p>';
       return;
     }
 
-    metaEl.textContent = (data.date || "") + " 기준 (평일 낮 12:10 업데이트) · 공시 " +
-      (data.source_filing_count != null ? data.source_filing_count : 0) + "건 반영";
+    setCrUpdatedText("dart", (data.date || "") + " 기준 (평일 낮 12:10 업데이트) · 공시 " +
+      (data.source_filing_count != null ? data.source_filing_count : 0) + "건 반영");
 
     var article = document.createElement("div");
     article.className = "cr-dart-article";
@@ -4435,6 +4442,11 @@
         subtabBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-subtab") === key); });
         subtabPanels.forEach(function (p) { p.hidden = p.getAttribute("data-subtab-panel") !== key; });
         if (footerEl && FOOTER_TEXT[key]) footerEl.textContent = FOOTER_TEXT[key];
+
+        crActiveSubtab = key;
+        document.getElementById("cr-updated").textContent =
+          crUpdatedCache[key] !== null ? crUpdatedCache[key] : "업데이트 시간 불러오는 중...";
+
         if (key === "briefing" && !loaded.briefing) loadBriefing();
         if (key === "dart") loadCrDartBriefing(function () {});
         if (key === "sowhat" && !loaded.ceo) loadCeo();
@@ -4513,8 +4525,7 @@
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var edition = pickLatestBriefingEdition(data && data.reports);
-        document.getElementById("db2-updated").textContent =
-          edition ? edition.label + " 기준 (" + edition.data.generated_at + " 생성) · 오전판 12:06·저녁판 18:30 업데이트" : "";
+        setCrUpdatedText("briefing", edition ? edition.label + " 기준 (" + edition.data.generated_at + " 생성) · 오전판 12:00·저녁판 18:00 업데이트" : "");
         renderBriefingReport(edition);
         loaded.briefing = true;
       })

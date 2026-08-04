@@ -1,8 +1,9 @@
 """이미 수집된 데이터(지수/뉴스/공시/거시지표)를 종합해 카테고리별 자체
 이슈 리포트를 생성한다. 새로운 크롤링은 하지 않는다.
 
-1단계: 시황/투자/기업 3개 카테고리만 지원.
-(IPO/M&A/금융/승계/tax/재테크는 재료 부족·안정성 문제로 보류)
+2단계: 시황/투자/기업/금융/TAX/부동산 6개 카테고리 지원.
+(IPO/승계/재테크는 실시간 데이터 소스가 없어서 보류, M&A는 DART 브리핑
+탭과 내용이 중복돼 이번에도 제외)
 
 오전판(morning)/저녁판(evening) 두 판을 구분해서 생성한다:
 - 오전판: 전일 마감 리캡 + 오늘 오전 이슈 중심. 당일 장중 수치를 마감
@@ -23,7 +24,8 @@ import ai_briefing
 import record_verification
 
 KST = timezone(timedelta(hours=9))
-CATEGORIES = ["시황", "투자", "기업"]
+CATEGORIES = ["시황", "투자", "기업", "금융", "TAX", "부동산"]
+TAX_NEWS_KEYWORDS = ["세금", "세제", "상속세", "증여세", "양도세", "법인세", "종합소득세", "부가가치세"]
 REPORTS_FILE = os.path.join("data", "daily_reports.json")
 
 
@@ -126,6 +128,68 @@ def _build_corporate_material(stock_data, dart_data):
         lines.extend(f"- {t}" for t in titles)
 
     return "\n".join(lines)
+
+
+# ---------- 신규 카테고리(금융/TAX/부동산) - 오전판/저녁판 공용 ----------
+# 가격 데이터처럼 "전일 마감 vs 당일 마감" 구분이 의미 있는 성격이 아니라
+# (뉴스 제목 취합, 일정표 성격) 오전판/저녁판 구분 없이 같은 재료를 쓴다.
+
+def _build_finance_material(stock_data):
+    """금융: 환율/채권·선물/해외증시 뉴스 제목."""
+    sections = []
+    for category_name, label in (
+        ("환율", "[환율]"),
+        ("채권·선물", "[채권·선물]"),
+        ("해외증시", "[해외증시]"),
+    ):
+        titles = _stock_category_titles(stock_data, category_name)
+        if titles:
+            sections.append("\n".join([label] + [f"- {t}" for t in titles]))
+
+    return "\n\n".join(sections)
+
+
+def _build_tax_material(tax_data, economy_data):
+    """TAX: 오늘부터 향후 14일 이내 세무 일정 + 세금 관련 뉴스 제목."""
+    sections = []
+
+    today = datetime.now(KST).date()
+    horizon = today + timedelta(days=14)
+    upcoming = []
+    for e in tax_data.get("events", []):
+        if e.get("type") != "tax":
+            continue
+        try:
+            event_date = datetime.strptime(e.get("date", ""), "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if today <= event_date <= horizon:
+            upcoming.append(e)
+    upcoming.sort(key=lambda e: e["date"])
+
+    if upcoming:
+        lines = ["[다가오는 세무 일정]"]
+        for e in upcoming:
+            entry = f"- {e.get('date')} {e.get('title', '')}"
+            if e.get("detail"):
+                entry += f" ({e['detail']})"
+            lines.append(entry)
+        sections.append("\n".join(lines))
+
+    news = economy_data.get("news", [])
+    matched_titles = [n["title"] for n in news if any(k in n.get("title", "") for k in TAX_NEWS_KEYWORDS)]
+    if matched_titles:
+        sections.append("\n".join(["[관련 뉴스 제목]"] + [f"- {t}" for t in matched_titles]))
+
+    return "\n\n".join(sections)
+
+
+def _build_realestate_material(realestate_data):
+    """부동산: 뉴스 제목 상위 10개."""
+    titles = [n["title"] for n in realestate_data.get("news", [])[:10]]
+    if not titles:
+        return ""
+    return "\n".join(["[부동산 뉴스 제목]"] + [f"- {t}" for t in titles])
 
 
 # ---------- 오전판(조간) 자료 구성 - 전일 마감 + 오늘 오전 이슈 ----------
@@ -284,6 +348,9 @@ def build_morning_reports():
     stock_data = _load_json("data/stock_news.json")
     history = _load_json("data/stock_index_history.json")
     dart_data = _load_json("data/dart_filings.json")
+    economy_data = _load_json("data/economy_news.json")
+    realestate_data = _load_json("data/realestate_news.json")
+    tax_data = _load_json("data/tax_labor_calendar.json")
     if not isinstance(history, list):
         history = []
 
@@ -291,6 +358,9 @@ def build_morning_reports():
         "시황": _build_market_material_morning(stock_data, history),
         "투자": _build_investment_material_morning(stock_data),
         "기업": _build_corporate_material(stock_data, dart_data),
+        "금융": _build_finance_material(stock_data),
+        "TAX": _build_tax_material(tax_data, economy_data),
+        "부동산": _build_realestate_material(realestate_data),
     }
     reports = _generate_reports(materials, "morning", stock_data=stock_data)
     return _save_edition("morning", "전일 마감 + 오늘 오전 이슈", reports)
@@ -301,11 +371,17 @@ def build_evening_reports():
     stock_data = _load_json("data/stock_news.json")
     macro_data = _load_json("data/macro_indicators.json")
     dart_data = _load_json("data/dart_filings.json")
+    economy_data = _load_json("data/economy_news.json")
+    realestate_data = _load_json("data/realestate_news.json")
+    tax_data = _load_json("data/tax_labor_calendar.json")
 
     materials = {
         "시황": _build_market_material(stock_data, macro_data),
         "투자": _build_investment_material(stock_data),
         "기업": _build_corporate_material(stock_data, dart_data),
+        "금융": _build_finance_material(stock_data),
+        "TAX": _build_tax_material(tax_data, economy_data),
+        "부동산": _build_realestate_material(realestate_data),
     }
     reports = _generate_reports(materials, "evening", stock_data=stock_data)
     return _save_edition("evening", "당일 마감", reports)
