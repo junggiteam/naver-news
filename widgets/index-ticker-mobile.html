@@ -95,6 +95,21 @@
     font-weight: 600;
     color: #333;
   }
+  /* 지표 이름 앞 원형 배지 - 순수 CSS(색상+기호/숫자), 외부 아이콘 이미지
+     없음. 크기는 부모 폰트 크기(em) 기준 자동 스케일. */
+  .idx-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;
+    height: 1.6em;
+    margin-right: 4px;
+    border-radius: 50%;
+    font-size: 0.62em;
+    font-weight: 800;
+    line-height: 1;
+    vertical-align: middle;
+  }
   .ish-value {
     font-size: 14px;
     font-weight: 800;
@@ -142,13 +157,43 @@
     return "-";
   }
 
+  // 지표 이름 -> 원형 배지(기호/숫자 + 배경색). index-ticker.html과 동일한
+  // 매핑을 유지한다(공용 JS 모듈이 없는 정적 위젯 구조라 파일별로 각자
+  // 들고 있음 - 이 배지 팔레트를 바꿀 땐 index-ticker.html/
+  // index-ticker-mobile.html/news-widget.html 세 곳을 함께 확인할 것).
+  var INDEX_BADGES = [
+    ["나스닥100", "100", "#3182F6", "#fff"],
+    ["나스닥", "N", "#3182F6", "#fff"],
+    ["다우존스", "30", "#142c67", "#fff"],
+    ["S&P500", "500", "#142c67", "#fff"],
+    ["이더리움", "Ξ", "#627EEA", "#fff"],
+    ["비트코인", "₿", "#F7931A", "#fff"],
+    ["국내금", "", "#D4AF37", "#fff"],
+    ["휘발유", "", "#8B5E3C", "#fff"],
+    ["WTI", "", "#2B2B2B", "#fff"],
+    ["EUR/USD", "€", "#E4EAF5", "#142c67"],
+    ["원/유로", "€", "#E4EAF5", "#142c67"],
+    ["원/엔", "¥", "#E4EAF5", "#142c67"],
+    ["원/달러", "$", "#E4EAF5", "#142c67"]
+  ];
+
+  function badgeHtml(name) {
+    for (var i = 0; i < INDEX_BADGES.length; i++) {
+      if (name.indexOf(INDEX_BADGES[i][0]) !== -1) {
+        var symbol = INDEX_BADGES[i][1], bg = INDEX_BADGES[i][2], color = INDEX_BADGES[i][3];
+        return '<span class="idx-badge" style="background:' + bg + ';color:' + color + ';">' + symbol + '</span>';
+      }
+    }
+    return "";
+  }
+
   function buildItem(idx) {
     var cleanPercent = (idx.change_percent || "").replace(/^[▲▼△▽+\-\s]+/, "").trim();
     var dirClass = idx.direction === "up" ? "up" : idx.direction === "down" ? "down" : "flat";
     var el = document.createElement("span");
     el.className = "ish-item";
     el.innerHTML =
-      '<span class="ish-name">' + idx.name + '</span>' +
+      '<span class="ish-name">' + badgeHtml(idx.name) + idx.name + '</span>' +
       '<span class="ish-value">' + idx.value + '</span>' +
       '<span class="ish-change ' + dirClass + '">' + arrow(idx.direction) + ' ' + cleanPercent + '</span>';
     return el;

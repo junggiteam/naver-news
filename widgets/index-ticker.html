@@ -91,6 +91,21 @@
     font-weight: 600;
     flex-shrink: 0;
   }
+  /* 지표 이름 앞 원형 배지 - 외부 아이콘 이미지 없이 순수 CSS로(색상+
+     기호/숫자). 크기는 부모 폰트 크기(em)에 맞춰 자동 스케일. */
+  .idx-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;
+    height: 1.6em;
+    margin-right: 4px;
+    border-radius: 50%;
+    font-size: 0.62em;
+    font-weight: 800;
+    line-height: 1;
+    vertical-align: middle;
+  }
   .is-row-right {
     display: flex;
     align-items: baseline;
@@ -149,13 +164,43 @@
     return "-";
   }
 
+  // 지표 이름 -> 원형 배지(기호/숫자 + 배경색). 더 구체적인 키워드를
+  // 먼저 검사한다("나스닥100"이 "나스닥"의 부분 문자열이라 순서가
+  // 바뀌면 나스닥100도 "나스닥" 규칙에 걸려버림). 매칭되는 항목이 없으면
+  // (코스피/코스닥/코스피200, 국고채 등) 배지를 붙이지 않는다.
+  var INDEX_BADGES = [
+    ["나스닥100", "100", "#3182F6", "#fff"],
+    ["나스닥", "N", "#3182F6", "#fff"],
+    ["다우존스", "30", "#142c67", "#fff"],
+    ["S&P500", "500", "#142c67", "#fff"],
+    ["이더리움", "Ξ", "#627EEA", "#fff"],
+    ["비트코인", "₿", "#F7931A", "#fff"],
+    ["국내금", "", "#D4AF37", "#fff"],
+    ["휘발유", "", "#8B5E3C", "#fff"],
+    ["WTI", "", "#2B2B2B", "#fff"],
+    ["EUR/USD", "€", "#E4EAF5", "#142c67"],
+    ["원/유로", "€", "#E4EAF5", "#142c67"],
+    ["원/엔", "¥", "#E4EAF5", "#142c67"],
+    ["원/달러", "$", "#E4EAF5", "#142c67"]
+  ];
+
+  function badgeHtml(name) {
+    for (var i = 0; i < INDEX_BADGES.length; i++) {
+      if (name.indexOf(INDEX_BADGES[i][0]) !== -1) {
+        var symbol = INDEX_BADGES[i][1], bg = INDEX_BADGES[i][2], color = INDEX_BADGES[i][3];
+        return '<span class="idx-badge" style="background:' + bg + ';color:' + color + ';">' + symbol + '</span>';
+      }
+    }
+    return "";
+  }
+
   function buildRow(idx) {
     var cleanPercent = (idx.change_percent || "").replace(/^[▲▼△▽+\-\s]+/, "").trim();
     var dirClass = idx.direction === "up" ? "up" : idx.direction === "down" ? "down" : "flat";
     var row = document.createElement("div");
     row.className = "is-row";
     row.innerHTML =
-      '<span class="is-row-name">' + idx.name + '</span>' +
+      '<span class="is-row-name">' + badgeHtml(idx.name) + idx.name + '</span>' +
       '<span class="is-row-right">' +
         '<span class="is-row-value">' + idx.value + '</span>' +
         '<span class="is-row-change ' + dirClass + '">' + arrow(idx.direction) + ' ' + cleanPercent + '</span>' +

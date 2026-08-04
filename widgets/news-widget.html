@@ -1360,6 +1360,24 @@
     white-space: nowrap;
   }
 
+  /* 증권/주식 탭 지표 카드 전용 원형 배지(색상+기호/숫자, 외부 아이콘
+     이미지 없음) - renderIndices()에서만 붙이므로 #pw-macro-indices(거시
+     경제 지표, renderMacroIndices() 별도 함수)에는 영향 없다. 크기는
+     .sw-index-name 폰트 크기 기준 em 스케일. */
+  .idx-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;
+    height: 1.6em;
+    margin-right: 3px;
+    border-radius: 50%;
+    font-size: 0.62em;
+    font-weight: 800;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
   .sw-index-value {
     margin: 0 0 4px;
     overflow: hidden;
@@ -3386,6 +3404,38 @@
     return "-";
   }
 
+  // 지표 이름 -> 원형 배지(기호/숫자 + 배경색). index-ticker.html/
+  // index-ticker-mobile.html과 동일한 매핑을 유지한다(공용 JS 모듈이
+  // 없는 정적 위젯 구조라 파일별로 각자 들고 있음 - 이 배지 팔레트를
+  // 바꿀 땐 세 파일을 함께 확인할 것). 더 구체적인 키워드를 먼저
+  // 검사한다("나스닥100"이 "나스닥"의 부분 문자열이라 순서가 바뀌면
+  // 나스닥100도 "나스닥" 규칙에 걸려버림). 매칭 없으면(코스피/코스닥/
+  // 코스피200, 국고채 등) 배지를 붙이지 않는다.
+  var INDEX_BADGES = [
+    ["나스닥100", "100", "#3182F6", "#fff"],
+    ["나스닥", "N", "#3182F6", "#fff"],
+    ["다우존스", "30", "#142c67", "#fff"],
+    ["S&P500", "500", "#142c67", "#fff"],
+    ["이더리움", "Ξ", "#627EEA", "#fff"],
+    ["비트코인", "₿", "#F7931A", "#fff"],
+    ["국내금", "", "#D4AF37", "#fff"],
+    ["휘발유", "", "#8B5E3C", "#fff"],
+    ["WTI", "", "#2B2B2B", "#fff"],
+    ["EUR/USD", "€", "#E4EAF5", "#142c67"],
+    ["원/유로", "€", "#E4EAF5", "#142c67"],
+    ["원/엔", "¥", "#E4EAF5", "#142c67"],
+    ["원/달러", "$", "#E4EAF5", "#142c67"]
+  ];
+
+  function findIndexBadge(name) {
+    for (var i = 0; i < INDEX_BADGES.length; i++) {
+      if (name.indexOf(INDEX_BADGES[i][0]) !== -1) {
+        return { symbol: INDEX_BADGES[i][1], bg: INDEX_BADGES[i][2], color: INDEX_BADGES[i][3] };
+      }
+    }
+    return null;
+  }
+
   function renderIndices(indices) {
     indicesEl.innerHTML = "";
     indices.forEach(function (idx) {
@@ -3394,7 +3444,16 @@
 
       var name = document.createElement("p");
       name.className = "sw-index-name";
-      name.textContent = idx.name;
+      var badge = findIndexBadge(idx.name);
+      if (badge) {
+        var badgeEl = document.createElement("span");
+        badgeEl.className = "idx-badge";
+        badgeEl.style.background = badge.bg;
+        badgeEl.style.color = badge.color;
+        badgeEl.textContent = badge.symbol;
+        name.appendChild(badgeEl);
+      }
+      name.appendChild(document.createTextNode(idx.name));
       card.appendChild(name);
 
       var value = document.createElement("p");

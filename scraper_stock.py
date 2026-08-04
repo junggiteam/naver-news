@@ -137,6 +137,7 @@ def crawl_world_indices():
     targets = [
         ("DJI@DJI", "다우존스"),
         ("NAS@IXIC", "나스닥"),
+        ("NAS@NDX", "나스닥100"),
         ("SPI@SPX", "S&P500"),
     ]
 
@@ -230,6 +231,30 @@ def crawl_bitcoin():
 
     return {
         "name": "비트코인(원/코인)",
+        "value": f"{ticker['trade_price']:,.0f}",
+        "change_percent": change_percent,
+        "direction": direction,
+        "as_of": as_of
+    }
+
+
+def crawl_ethereum():
+    """이더리움(원/코인): 업비트 공개 API - crawl_bitcoin()과 동일한 구조"""
+    response = requests.get("https://api.upbit.com/v1/ticker?markets=KRW-ETH", timeout=10)
+    response.raise_for_status()
+    ticker = response.json()[0]
+
+    change_percent, direction = build_change_percent(ticker['signed_change_rate'] * 100)
+
+    date_part = ticker.get('trade_date_kst', '')
+    time_part = ticker.get('trade_time_kst', '')
+    as_of = ""
+    if len(date_part) == 8 and len(time_part) == 6:
+        as_of = (f"{date_part[0:4]}-{date_part[4:6]}-{date_part[6:8]} "
+                 f"{time_part[0:2]}:{time_part[2:4]}:{time_part[4:6]}")
+
+    return {
+        "name": "이더리움(원/코인)",
         "value": f"{ticker['trade_price']:,.0f}",
         "change_percent": change_percent,
         "direction": direction,
@@ -377,6 +402,21 @@ def crawl_stock_data():
         debug_notes.append(f"원/유로 환율(marketindexCd=FX_EURKRW) -> 예외: {e}")
 
     try:
+        eur_usd = crawl_detail_price(
+            "https://finance.naver.com/marketindex/worldExchangeDetail.naver?marketindexCd=FX_EURUSD",
+            "EUR/USD",
+            debug_notes
+        )
+        if eur_usd:
+            eur_usd.pop("_soup", None)
+            indices.append(eur_usd)
+        else:
+            print("EUR/USD 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"EUR/USD 수집 실패: {e}")
+        debug_notes.append(f"EUR/USD(marketindexCd=FX_EURUSD) -> 예외: {e}")
+
+    try:
         wti = crawl_detail_price(
             "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_WTI",
             "WTI(국제유가)",
@@ -424,6 +464,12 @@ def crawl_stock_data():
         indices.append(bitcoin)
     except Exception as e:
         print(f"비트코인 수집 실패: {e}")
+
+    try:
+        ethereum = crawl_ethereum()
+        indices.append(ethereum)
+    except Exception as e:
+        print(f"이더리움 수집 실패: {e}")
 
     kst_timezone = timezone(timedelta(hours=9))
     now_kst_dt = datetime.now(kst_timezone)
