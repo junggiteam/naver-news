@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-05 08:15:41",
+  "updated_at": "2026-08-05 08:31:12",
   "market_mood": {
-    "label": "급등",
-    "emoji": "🟢",
-    "kospi_change": 1.62,
-    "kosdaq_change": 5.88,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6358.95,
     "kosdaq_value": 780.72
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "정부의 그린벨트 해제 검토 등 주택 공급 확대 정책 추진 본격화"
-    },
-    {
-      "category": "증권",
-      "text": "최근 바이오 및 건설 관련주들이 실적 기대감과 정책적 호재에 힘입어 강세를 보이며 지수 상승을 견인했다. 전날 뉴욕증시가 상승 마감한 데 이어 국내 시장에서도 반도체를 비롯한 주요 종목들에 매수세가 유입되면서 코스피와 코스닥 지수가 동반 상승했다."
     }
   ],
   "daily_term": {
@@ -2489,157 +2485,95 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "SHD",
-      "price": "6830.0",
-      "change_percent": "+29.85%",
-      "pct": 29.85
-    },
-    {
-      "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "133260.0",
-      "change_percent": "+26.24%",
-      "pct": 26.24
-    },
-    {
-      "name": "하나 레버리지 K방산TOP10 ETN",
-      "price": "12500.0",
-      "change_percent": "+20.37%",
-      "pct": 20.37
-    },
-    {
-      "name": "KODEX 방산TOP10레버리지",
-      "price": "6680.0",
-      "change_percent": "+20.14%",
-      "pct": 20.14
-    },
-    {
-      "name": "SK이터닉스",
-      "price": "55800.0",
-      "change_percent": "+19.87%",
-      "pct": 19.87
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "8505.0",
-      "change_percent": "-20.55%",
-      "pct": 20.55
-    },
-    {
-      "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "7785.0",
-      "change_percent": "-18.48%",
-      "pct": 18.48
-    },
-    {
-      "name": "N2 인버스 2X 코스닥150 선물 ETN",
-      "price": "7530.0",
-      "change_percent": "-14.19%",
-      "pct": 14.19
-    },
-    {
-      "name": "신한 인버스 2X 코스닥 150 선물 ETN",
-      "price": "2120.0",
-      "change_percent": "-13.82%",
-      "pct": 13.82
-    },
-    {
-      "name": "한투 인버스2X코스닥150선물 ETN",
-      "price": "2100.0",
-      "change_percent": "-13.76%",
-      "pct": 13.76
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "건강관리기술",
-      "change_value": "+11.06%",
-      "pct": 11.06
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+10.30%",
-      "pct": 10.3
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생물공학",
-      "change_value": "+9.64%",
-      "pct": 9.64
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+9.38%",
-      "pct": 9.38
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+9.35%",
-      "pct": 9.35
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "건강관리기술",
-      "change_value": "+11.06%",
-      "pct": 11.06
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+10.30%",
-      "pct": 10.3
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "생물공학",
-      "change_value": "+9.64%",
-      "pct": 9.64
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+9.38%",
-      "pct": 9.38
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+9.35%",
-      "pct": 9.35
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+8.79%",
-      "pct": 8.79
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "자동차부품",
-      "change_value": "-0.02%",
-      "pct": -0.02
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "자동차",
-      "change_value": "-0.04%",
-      "pct": -0.04
-    },
-    {
-      "name": "은행",
-      "change_value": "-0.09%",
-      "pct": -0.09
-    },
-    {
-      "name": "운송인프라",
-      "change_value": "-0.41%",
-      "pct": -0.41
-    },
-    {
-      "name": "카드",
-      "change_value": "-0.85%",
-      "pct": -0.85
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-2.79%",
-      "pct": -2.79
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
