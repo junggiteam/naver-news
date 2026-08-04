@@ -338,8 +338,15 @@ def _augment_with_market_movers():
 
 def _build_dart_ma_article(marker):
     """평일 12:00~17:10 사이 매시간 체크 시(_dart_ma_article_due() 통과
-    시)마다 호출돼, 오늘 DART 주요사항보고서 전체를 취합해 기사 형식으로
-    정리한다. 오늘 공시가 없으면(주요사항보고 0건) 생략 - 쓸 자료가 없다.
+    시)마다 호출돼, 오늘 M&A 시그널(dart_ma_signals.json - 정책·캘린더
+    M&A 탭이 쓰는 것과 동일한 소스)을 취합해 기사 형식으로 정리한다.
+    dart_filings.json 전체(오늘의 모든 주요사항보고, M&A 아닌 것도 포함)를
+    쓰던 예전 방식은 이미 M&A 기준으로 도는 dart_report_detail.py의
+    상세정보 조회와 기준이 어긋나서(상세정보는 M&A만 채워지는데 기사에
+    나열되는 회사 목록은 훨씬 넓은 전체 기준) 정책·캘린더 M&A 탭과
+    회사/건수가 안 맞는 문제가 있었다(2026-08 발견) - dart_ma_signals.json
+    하나로 통일해 이 갭을 닫는다. 오늘 M&A 시그널이 하나도 없으면 생략 -
+    쓸 자료가 없다.
 
     marker 딕셔너리를 직접 받아 그 자리에서 갱신한다("dart_ma_article_
     filing_ids" 키) - 별도로 load_marker()/save_marker()를 호출하지
@@ -347,17 +354,37 @@ def _build_dart_ma_article(marker):
     패턴을 따르는 것으로, 여기서 파일을 따로 읽고 쓰면 run_scheduled()가
     마지막에 자기 사본을 저장하는 시점에 이 함수가 미리 반영해둔 변경이
     덮어써질 위험이 있다."""
-    filings_data = _load_json_safe("data/dart_filings.json")
-    filings = filings_data.get("filings") or []
+    # dart_filings.json 자체는 "dart" 크롤러 주기(1시간)로만 갱신되지만,
+    # dart_ma_signals.json은 그 결과를 재분류만 하는 가벼운 로컬 연산이라
+    # 여기서 한 번 더 최신화해서 쓴다(추가 네트워크 호출 없음).
+    dart_ma_signals.build_ma_signals()
+
+    today_str = get_now_kst().strftime("%Y-%m-%d")
+    ma_archive = _load_json_safe("data/dart_ma_signals.json")
+    today_signals = ma_archive.get(today_str) or {}
+    # dart_ma_signals.json의 entry 자체엔 "category"가 없다 - 어느
+    # 카테고리 리스트에 들어있는지로만 구분되므로, 여기서 평탄화하면서
+    # 명시적으로 붙여준다(ai_briefing.generate_dart_ma_article()이 회사별
+    # 소제목을 더 정확히 묶는 데 참고). 원본 dict를 직접 건드리지 않도록
+    # 얕은 복사 후 추가.
+    filings = []
+    for category in dart_ma_signals.MA_CATEGORIES:
+        for item in today_signals.get(category) or []:
+            item_with_category = dict(item)
+            item_with_category["category"] = category
+            filings.append(item_with_category)
+
     if not filings:
-        print("[dart_ma_article] 오늘 주요사항보고 없음 - 기사 생성 생략")
+        print("[dart_ma_article] 오늘 M&A 시그널 없음 - 기사 생성 생략")
         return
 
-    # 마지막 생성 이후 새로 올라온 공시가 없으면(rcept_no 목록이 그대로면)
-    # AI 호출 없이 스킵 - 같은 내용으로 매시간 재생성하는 낭비를 막는다.
+    # 마지막 생성 이후 새로 올라온 M&A 공시가 없으면(rcept_no 목록이
+    # 그대로면) AI 호출 없이 스킵 - M&A 아닌 새 공시가 올라와도 여기엔
+    # 안 잡히므로 불필요한 재생성이 없고, M&A 관련 공시가 새로 올라오면
+    # 정확히 감지된다.
     current_filing_ids = sorted(f.get("rcept_no", "") for f in filings)
     if current_filing_ids == marker.get("dart_ma_article_filing_ids"):
-        print("[dart_ma_article] 새 공시 없음 - 재생성 스킵")
+        print("[dart_ma_article] 새 M&A 공시 없음 - 재생성 스킵")
         return
 
     details = dart_report_detail.build_details()

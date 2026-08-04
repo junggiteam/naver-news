@@ -379,17 +379,30 @@ DART_MA_ARTICLE_GUIDE = (
 
 
 def generate_dart_ma_article(filings, details):
-    """오늘 dart_filings.json 전체(filings) + dart_filings_detail.json
+    """오늘 M&A 시그널(filings - dart_ma_signals.json에서 이미 분류된
+    것만. "오늘 전체 주요사항보고서"가 아니라 정책·캘린더 M&A 탭이 보여
+    주는 것과 정확히 같은 좁은 기준 - run_scheduled.py의
+    _build_dart_ma_article() 참고) + dart_filings_detail.json
     (rcept_no -> {"category", "raw_detail"})을 합쳐서 회사별 소제목이
-    있는 기사 하나를 생성. 자료가 없거나 호출 실패 시 None."""
+    있는 기사 하나를 생성. 자료가 없거나 호출 실패 시 None.
+
+    filings의 각 항목엔 dart_ma_signals.json 원본 필드(corp_name/
+    corp_code/report_nm/rcept_dt/rcept_no/source_url) 외에 호출부에서
+    붙여준 "category"(합병_분할/지분인수/영업양수도/주식교환_이전/
+    경영권이동_최대주주변경/자기주식)와, 카테고리에 따라 "action"(양수/
+    양도/취득/처분 등)이 있을 수 있다 - 둘 다 material_lines에 넣어
+    Gemini가 회사별로 소제목을 묶을 때 참고하게 한다."""
     if not filings:
         return None
 
-    material_lines = [f"오늘 제출된 주요사항보고서 총 {len(filings)}건.\n"]
+    material_lines = [f"오늘 제출된 M&A 관련 주요사항보고서 총 {len(filings)}건.\n"]
     for f in filings:
         rcept_no = f.get("rcept_no", "")
         entry = (details or {}).get(rcept_no)
-        material_lines.append(f"[{f.get('corp_name', '')}] {f.get('report_nm', '')}")
+        category = f.get("category", "")
+        action = f.get("action", "")
+        tag = f"{category}·{action}" if action else category
+        material_lines.append(f"[{f.get('corp_name', '')}] {f.get('report_nm', '')} (M&A 유형: {tag})")
         if entry:
             raw = entry.get("raw_detail") or {}
             for key, value in raw.items():
@@ -405,10 +418,14 @@ def generate_dart_ma_article(filings, details):
     prompt = (
         f"{CATEGORY_REPORT_GUIDE}\n"
         f"{DART_MA_ARTICLE_GUIDE}\n"
-        "아래는 오늘 DART(금융감독원 전자공시시스템)에 제출된 주요사항\n"
-        "보고서 전체 자료다. [기사 구조] 지침에 따라 기사를 작성하라.\n"
-        "일부 항목의 필드명이 무엇을 뜻하는지 애매하면 그 필드는 기사에\n"
-        "쓰지 말고 넘어가라 - 확실히 이해되는 금액·비율·날짜 등만 반영하라.\n\n"
+        "아래는 오늘 DART(금융감독원 전자공시시스템)에 제출된 M&A 관련\n"
+        "(합병·분할, 지분인수, 영업양수도, 주식교환·이전, 경영권이동,\n"
+        "자기주식) 주요사항보고서 자료다 - 오늘 제출된 주요사항보고서\n"
+        "전체가 아니라 이 M&A 관련 항목만 추린 자료이니, 기사에서 오늘\n"
+        "DART 공시 전체를 다루는 것처럼 쓰지 말 것. [기사 구조] 지침에\n"
+        "따라 기사를 작성하라. 일부 항목의 필드명이 무엇을 뜻하는지\n"
+        "애매하면 그 필드는 기사에 쓰지 말고 넘어가라 - 확실히 이해되는\n"
+        "금액·비율·날짜 등만 반영하라.\n\n"
         f"[자료]\n{material_block}"
     )
     return _call_gemini(prompt, timeout=120)
