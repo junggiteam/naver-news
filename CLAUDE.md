@@ -154,8 +154,14 @@
     따로 관리하지 않는다. 이 패턴을 깨고 두 그룹을 독립된 상태로
     만들지 말 것(동기화가 깨짐).
   - **M&A 탭에는 카테고리 서브 필터 칩**(`.pw-cal-ma-subfilter`, 전체/
-    합병·분할/지분인수/주식교환·이전/경영권이동/자기주식, 라벨은 기존
-    `PW_CAL_MA_CATEGORY_LABELS` 재사용)이 있다. `pwCalFilter === "ma"`
+    합병·분할/지분인수/영업양수도/주식교환·이전/경영권이동/자기주식,
+    라벨은 기존 `PW_CAL_MA_CATEGORY_LABELS` 재사용)이 있다(영업양수도는
+    2026-08 `dart_ma_signals.MA_CATEGORIES` 확장과 함께 추가 - 새
+    카테고리를 추가할 땐 `dart_ma_signals.py`의 `MA_CATEGORIES`/
+    `MA_CATEGORY_ENDPOINTS`뿐 아니라 이 위젯의 `PW_CAL_MA_CATEGORY_LABELS`와
+    서브 필터 버튼 마크업(최상단 + "세부 사항" 헤더 두 곳 모두)도 같이
+    추가해야 화면에 실제로 나타난다 - 안 하면 `pwCalTransformMaSignals()`의
+    화이트리스트에 걸려 조용히 무시된다). `pwCalFilter === "ma"`
     일 때만 보이고(`hidden` 토글), `pwCalMaCategoryFilter` 상태로
     캘린더 셀과 "세부 사항" 둘 다 동시에 좁힌다. 최상단 필터 탭을 바꾸면
     `pwCalMaCategoryFilter`는 항상 `"all"`로 리셋된다.
