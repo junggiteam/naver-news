@@ -17,6 +17,7 @@
 
   <!-- ===== 오늘 한눈에(대시보드) 탭 ===== -->
   <div class="nw-panel" id="panel-dashboard">
+    <p class="db-updated" id="db-updated"></p>
     <!-- 1행: 오늘의 이슈 - 종합/경제/부동산 각 대표 기사, 3열 동일폭 -->
     <h3 class="db-section-title db-issue-title">오늘의 이슈</h3>
     <div class="db-hero-row" id="db-hero-row">
@@ -125,7 +126,6 @@
       </div>
     </div>
 
-    <p class="db-updated" id="db-updated"></p>
     <div class="nw-footer">뉴스 콘텐츠 출처 : 네이버</div>
   </div>
 
@@ -3478,8 +3478,7 @@
       .then(function (res) { return res.json(); })
       .then(function (data) {
         swUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
-        document.getElementById("sw-index-label").textContent =
-          data.updated_at ? "주요 경제 지표 (" + data.updated_at + " 기준)" : "주요 경제 지표";
+        document.getElementById("sw-index-label").textContent = "주요 경제 지표";
         renderIndices(data.indices || []);
         renderCommentary(
           document.getElementById("sw-commentary-box"),
