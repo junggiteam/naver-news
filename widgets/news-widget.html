@@ -8,7 +8,6 @@
       <button class="nw-tab" data-tab="economy">기업/경제</button>
       <button class="nw-tab" data-tab="stock">증권/주식</button>
       <button class="nw-tab" data-tab="realestate">부동산</button>
-      <button class="nw-tab" data-tab="briefing">데일리 브리핑</button>
       <button class="nw-tab" data-tab="ceo">CEO 리포트</button>
       <button class="nw-tab" data-tab="policy">정책·캘린더</button>
     </div>
@@ -319,12 +318,14 @@
     </div>
 
     <div class="cr-subtab-tabs">
-      <button class="cr-subtab-btn active" data-subtab="sowhat" type="button">쏘왓레터 리포트</button>
+      <button class="cr-subtab-btn active" data-subtab="briefing" type="button">데일리 브리핑</button>
       <button class="cr-subtab-btn" data-subtab="dart" type="button">DART 브리핑</button>
+      <button class="cr-subtab-btn" data-subtab="sowhat" type="button">쏘왓레터 리포트</button>
     </div>
 
-    <div class="cr-subtab-panel" data-subtab-panel="sowhat">
-      <div id="cr-content">
+    <div class="cr-subtab-panel" data-subtab-panel="briefing">
+      <p class="ew-updated" id="db2-updated">업데이트 시간 불러오는 중...</p>
+      <div id="db2-content">
         <p class="ew-loading">불러오는 중입니다...</p>
       </div>
     </div>
@@ -336,21 +337,13 @@
       </div>
     </div>
 
-    <div class="nw-footer" id="cr-footer">CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)</div>
-  </div>
-
-  <!-- ===== 데일리 브리핑 탭 (신규, 시황/투자/기업 오전판·저녁판) ===== -->
-  <div class="nw-panel" id="panel-briefing" hidden>
-    <div class="ew-header">
-      <h2 class="ew-title">데일리 브리핑</h2>
-      <p class="ew-updated" id="db2-updated">업데이트 시간 불러오는 중...</p>
+    <div class="cr-subtab-panel" data-subtab-panel="sowhat" hidden>
+      <div id="cr-content">
+        <p class="ew-loading">불러오는 중입니다...</p>
+      </div>
     </div>
 
-    <div id="db2-content">
-      <p class="ew-loading">불러오는 중입니다...</p>
-    </div>
-
-    <div class="nw-footer">데일리 브리핑은 자체 수집 데이터를 종합해 생성됩니다.</div>
+    <div class="nw-footer" id="cr-footer">데일리 브리핑은 자체 수집 데이터를 종합해 생성됩니다.</div>
   </div>
 </div>
 
@@ -3075,8 +3068,7 @@
     stock: document.getElementById("panel-stock"),
     realestate: document.getElementById("panel-realestate"),
     policy: document.getElementById("panel-policy"),
-    ceo: document.getElementById("panel-ceo"),
-    briefing: document.getElementById("panel-briefing")
+    ceo: document.getElementById("panel-ceo")
   };
 
   function activateTab(key) {
@@ -3094,8 +3086,7 @@
     if (key === "economy" && !loaded.economy) loadEconomy();
     if (key === "realestate" && !loaded.realestate) loadRealestate();
     if (key === "policy" && !loaded.policy) loadPolicy();
-    if (key === "ceo" && !loaded.ceo) loadCeo();
-    if (key === "briefing" && !loaded.briefing) loadBriefing();
+    if (key === "ceo" && !loaded.briefing) loadBriefing();
   }
 
   tabs.forEach(function (tab) {
@@ -4363,7 +4354,7 @@
           return a.date > b.date ? a : b;
         }, null);
         document.getElementById("cr-updated").textContent =
-          latest && latest.date ? latest.date + " 기준" : "";
+          latest && latest.date ? latest.date + " 기준 (평일 오전 11~12시 업데이트)" : "";
         renderCeoReport(latest);
         loaded.ceo = true;
       })
@@ -4391,8 +4382,8 @@
       return;
     }
 
-    metaEl.textContent = "생성 시각: " + (data.generated_at || "") +
-      " · 오늘 공시 " + (data.source_filing_count != null ? data.source_filing_count : 0) + "건 반영";
+    metaEl.textContent = (data.date || "") + " 기준 (평일 낮 12:10 업데이트) · 공시 " +
+      (data.source_filing_count != null ? data.source_filing_count : 0) + "건 반영";
 
     var article = document.createElement("div");
     article.className = "cr-dart-article";
@@ -4433,8 +4424,9 @@
     var subtabPanels = document.querySelectorAll(".cr-subtab-panel");
     var footerEl = document.getElementById("cr-footer");
     var FOOTER_TEXT = {
-      sowhat: "CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)",
-      dart: "DART 브리핑 출처 : 금융감독원 전자공시시스템(DART)"
+      briefing: "데일리 브리핑은 자체 수집 데이터를 종합해 생성됩니다.",
+      dart: "DART 브리핑 출처 : 금융감독원 전자공시시스템(DART)",
+      sowhat: "CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)"
     };
 
     subtabBtns.forEach(function (btn) {
@@ -4443,7 +4435,9 @@
         subtabBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-subtab") === key); });
         subtabPanels.forEach(function (p) { p.hidden = p.getAttribute("data-subtab-panel") !== key; });
         if (footerEl && FOOTER_TEXT[key]) footerEl.textContent = FOOTER_TEXT[key];
+        if (key === "briefing" && !loaded.briefing) loadBriefing();
         if (key === "dart") loadCrDartBriefing(function () {});
+        if (key === "sowhat" && !loaded.ceo) loadCeo();
       });
     });
   })();
@@ -4453,10 +4447,6 @@
      오전판/저녁판. CEO 리포트와는 완전히 별개 시스템)
      ========================================================= */
   var BRIEFING_CATEGORIES = ["시황", "투자", "기업"];
-
-  function todayKstDateStr() {
-    return new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" });
-  }
 
   function pickLatestBriefingEdition(reports) {
     var editions = [
@@ -4473,9 +4463,8 @@
     var el = document.getElementById("db2-content");
     el.innerHTML = "";
 
-    var isToday = edition && edition.data.generated_at.slice(0, 10) === todayKstDateStr();
-    if (!edition || !isToday) {
-      el.innerHTML = '<p class="ew-loading">아직 오늘의 데일리 브리핑이 준비되지 않았습니다.</p>';
+    if (!edition) {
+      el.innerHTML = '<p class="ew-loading">아직 데일리 브리핑이 준비되지 않았습니다.</p>';
       return;
     }
 
@@ -4525,7 +4514,7 @@
       .then(function (data) {
         var edition = pickLatestBriefingEdition(data && data.reports);
         document.getElementById("db2-updated").textContent =
-          edition ? edition.label + " 기준 (" + edition.data.generated_at + " 생성)" : "";
+          edition ? edition.label + " 기준 (" + edition.data.generated_at + " 생성) · 오전판 12:06·저녁판 18:30 업데이트" : "";
         renderBriefingReport(edition);
         loaded.briefing = true;
       })
