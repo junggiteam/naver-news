@@ -3779,6 +3779,7 @@
   // 레이아웃 확정 사항 참고.
   function pwCalSelectDate(dateStr) {
     pwCalSelectedDate = (pwCalSelectedDate === dateStr) ? null : dateStr;
+    pwCalRenderGrid();
     pwCalRenderUpcoming();
     var header = document.getElementById("pw-cal-detail-header");
     if (header) header.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -4089,18 +4090,9 @@
           subfilterBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-subfilter") === "all"); });
           syncMaSubfilterVisibility();
 
-          if (pwCalFilter === "ma" && !pwCalMaLoaded) {
-            // M&A 필터를 처음 클릭하는 이 순간에만 dart_ma_signals.json을 fetch.
-            // 대시보드 최초 로딩(다른 모든 탭 전환)에는 전혀 관여하지 않는다.
-            pwCalRenderGrid();
-            pwCalRenderUpcoming();
-            pwCalLoadMaSignals(function () {
-              pwCalRenderGrid();
-              pwCalRenderUpcoming();
-            });
-            return;
-          }
-
+          // M&A 데이터는 이제 loadPolicy()에서 정책·캘린더 탭 진입 시
+          // 이미 로딩돼 있으므로(위 pwCalLoadMaSignals 참고) 필터 클릭
+          // 시점에 별도로 지연 로딩할 필요가 없다.
           pwCalRenderGrid();
           pwCalRenderUpcoming();
         });
@@ -4229,6 +4221,15 @@
         renderCalendar(data.economic_calendar);
         renderMacroIndices(data.macro_indicators);
         pwCalInit(data.tax_labor_events);
+        // M&A(DART 시그널)는 "전체" 필터에서도 처음부터 보여야 하므로
+        // 정책·캘린더 탭 최초 진입 시 세무/노무와 함께 항상 불러온다 -
+        // 예전처럼 "M&A" 필터를 사람이 처음 클릭할 때만 지연 로딩하면
+        // "전체" 필터로 들어왔을 때 M&A 이벤트가 캘린더에 안 보이는
+        // 버그가 있었다.
+        pwCalLoadMaSignals(function () {
+          pwCalRenderGrid();
+          pwCalRenderUpcoming();
+        });
         renderDartFilings(data.dart_filings);
         renderSupportPrograms("pw-support-list", "pw-support-more-btn", data.support_programs);
         renderSupportPrograms("pw-soso-list", "pw-soso-more-btn", data.soso_support_programs);

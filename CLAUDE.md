@@ -166,16 +166,20 @@
   - **데이터 소스가 두 갈래로 분리돼 있다는 점이 이 위젯에서 가장
     중요한 설계 원칙이다.** 세무/노무/공휴일은 `dashboard.json`의
     `tax_labor_events`/`tax_labor_source_status`를 대시보드 최초 로딩
-    시점에 이미 fetch된 걸 그대로 쓴다. 반면 M&A(DART 시그널)는
-    `data/dart_ma_signals.json`을 **"M&A" 필터 탭을 사람이 처음
-    클릭하는 그 순간에만** `pwCalLoadMaSignals()`로 지연 로딩(lazy
-    fetch)한다 - 전체/세무/노무 탭만 쓰는 사용자는 이 fetch가 평생
-    한 번도 안 일어날 수 있다. 한 번 로드되면 `pwCalMaLoaded` 플래그로
-    메모리에 캐싱해서 다시 요청하지 않는다. `dart_ma_signals.json`은
-    `dashboard.py`(`dashboard.json`)에 **절대 합치지 않는다** -
-    대시보드 최초 로딩 속도(모든 탭 전환)에 DART M&A 데이터가 조금이라도
-    영향을 주지 않게 하기 위함이며, 이 원칙을 깨고 dashboard.json에
-    합치는 리팩터링은 하지 말 것.
+    시점에 이미 fetch된 걸 그대로 쓴다. M&A(DART 시그널)는 별도 파일
+    `data/dart_ma_signals.json`을 `pwCalLoadMaSignals()`로 fetch하되,
+    **정책·캘린더 탭에 처음 진입할 때(`loadPolicy()` 안에서 세무/노무
+    데이터 로딩과 함께) 항상 호출**한다 - 예전엔 "M&A" 필터 탭을 사람이
+    처음 클릭하는 순간에만 지연 로딩했지만, 그러면 "전체" 필터로 처음
+    들어왔을 때 M&A 이벤트가 캘린더에 안 보이는 버그가 있어서
+    (2026-08 발견) 정책·캘린더 탭 진입 시점으로 앞당겼다. 한 번 로드되면
+    `pwCalMaLoaded` 플래그로 메모리에 캐싱해서 다시 요청하지 않는다.
+    `dart_ma_signals.json`은 `dashboard.py`(`dashboard.json`)에 **절대
+    합치지 않는다** - 대시보드 최초 로딩 속도(정책·캘린더 탭 외의 다른
+    모든 탭 전환)에 DART M&A 데이터가 조금이라도 영향을 주지 않게 하기
+    위함이며, 이 원칙을 깨고 dashboard.json에 합치는 리팩터링은 하지
+    말 것. (지연 로딩 자체를 없앤 것이지, 두 데이터 소스를 하나의
+    파일/요청으로 합친 게 아니라는 점에 유의 - 이 둘은 서로 다른 얘기다.)
   - "세부 사항" 렌더링도 필터에 따라 완전히 다른 로직으로 갈린다:
     전체/세무/노무는 `pwCalRenderDeadlines()`(D-day 배지, 오름차순),
     M&A는 `pwCalRenderRecentFilings()`(카테고리 배지, 날짜 내림차순,
