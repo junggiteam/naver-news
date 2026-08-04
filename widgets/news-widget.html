@@ -1373,34 +1373,47 @@
     white-space: nowrap;
   }
 
-  /* 증권/주식 탭 지표 카드 전용 원형 배지(색상+기호/숫자/이모지, 외부
-     아이콘 이미지 요청 없이 순수 CSS로만 구현 - 외부 이미지는 CDN 장애나
-     삭제 시 깨진 이미지로 보일 위험이 있어 의도적으로 배제) -
-     renderIndices()에서만 붙이므로 #pw-macro-indices(거시경제 지표,
-     renderMacroIndices() 별도 함수)에는 영향 없다. em 체이닝 대신
-     명시적 px로 고정해 부모 폰트 크기와 무관하게 항상 일관된 크기로
-     보이게 한다. */
+  /* 증권/주식 탭 지표 카드 전용 원형 배지(색상 CSS 배지 + 실제 아이콘
+     이미지 혼용, widgets/assets/icons/) - renderIndices()에서만
+     붙이므로 #pw-macro-indices(거시경제 지표, renderMacroIndices()
+     별도 함수)에는 영향 없다. 크기는 .sw-index-name 폰트(13px) 기준으로
+     "이름 텍스트보다 아이콘이 커 보이지 않게" 맞춘 값(16px) - 예전엔
+     18px까지 키웠다가 이름 텍스트 대비 과하다는 피드백을 받아 다시
+     줄였다. em 체이닝은 안 쓰고 명시적 px로 고정해 부모 폰트 크기와
+     무관하게 항상 일관된 크기로 보이게 한다. */
   .idx-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     flex: 0 0 auto;
     border-radius: 50%;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 800;
     line-height: 1;
   }
-  /* 이모지(국기/금메달/주유소/은행 등)는 텍스트보다 커야 원 안에 꽉
-     차 보여서 기본 폰트 크기보다 크게 잡는다. */
+  /* 이미지 아이콘(국기/금/석유/EUR-USD)도 CSS 배지와 같은 지름으로
+     맞춰서 줄에서 크기가 들쭉날쭉해 보이지 않게 한다. 원본이 전부
+     정사각형이라 원형으로 잘라도(object-fit:cover) 왜곡 없음. */
+  .idx-badge-img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--nw-line);
+  }
+  /* 이모지(은행 등)는 텍스트보다 커야 원 안에 꽉 차 보여서 기본
+     폰트 크기보다 크게 잡는다. */
   .idx-badge-emoji {
-    font-size: 11px;
+    font-size: 9.5px;
   }
   /* 세 자리 숫자(100/200/500)는 원이 작아 기본 크기로는 안 들어가서
      더 작게. */
   .idx-badge-number {
-    font-size: 7px;
+    font-size: 6.5px;
     letter-spacing: -0.03em;
   }
 
@@ -3448,40 +3461,45 @@
     return "-";
   }
 
-  // 지표 이름 -> 원형 배지(기호/숫자/이모지 + 배경색[ + 테두리색]).
-  // 외부 아이콘 이미지는 쓰지 않는다(CDN 장애·삭제 시 깨진 이미지로
-  // 보이는 걸 막기 위한 의도적 설계 - 순수 CSS/유니코드 문자만 사용).
-  // 배열 순서: [매칭 키워드, 표시 문자, 배경색(그라디언트 가능), 글자색,
-  // 배지 변형("emoji"/"number"/""), 테두리색(선택)]. 더 구체적인
-  // 키워드를 먼저 검사한다("나스닥100"이 "나스닥"의, "코스피200"이
-  // "코스피"의 부분 문자열이라 순서가 바뀌면 일반 규칙에 먼저 걸림).
+  // widgets/assets/icons/의 실제 아이콘 이미지(국기/금/석유/EUR-USD) -
+  // GitHub Pages 기준 절대 경로. index-ticker.html/index-ticker-mobile.html
+  // 도 동일한 경로를 쓴다.
+  var ICON_BASE_URL = "https://junggiteam.github.io/naver-news/widgets/assets/icons/";
+
+  // 지표 이름 -> 배지. 배열 순서: [매칭 키워드, 종류("image"/"number"/
+  // "emoji"/""), 표시값(이미지면 파일명, 아니면 기호/숫자), 배경색
+  // (그라디언트 가능, 이미지는 안 씀), 글자색(이미지는 안 씀), 테두리색
+  // (선택)]. 더 구체적인 키워드를 먼저 검사한다("나스닥100"이 "나스닥"의,
+  // "코스피200"이 "코스피"의 부분 문자열이라 순서가 바뀌면 일반 규칙에
+  // 먼저 걸림).
   var INDEX_BADGES = [
-    ["나스닥100", "100", "#eef4ff", "#1d4ed8", "number", "#d8e5ff"],
-    ["나스닥", "🇺🇸", "#ffffff", "#142c67", "emoji", "var(--nw-line)"],
-    ["다우존스", "🇺🇸", "#ffffff", "#142c67", "emoji", "var(--nw-line)"],
-    ["S&P500", "500", "linear-gradient(135deg, #f87171, #dc2626)", "#fff", "number", ""],
-    ["이더리움", "◆", "linear-gradient(135deg, #9da8ff, #5966d9 55%, #393aa1)", "#eef2ff", "", ""],
-    ["비트코인", "₿", "linear-gradient(135deg, #ffb249, #f7931a 60%, #d97706)", "#fff", "", ""],
-    ["코스피200", "200", "#eef4ff", "#1d4ed8", "number", "#d8e5ff"],
-    ["코스피", "🇰🇷", "#ffffff", "#142c67", "emoji", "var(--nw-line)"],
-    ["코스닥", "🇰🇷", "#ffffff", "#142c67", "emoji", "var(--nw-line)"],
-    ["국내금", "🥇", "#D4AF37", "#fff", "emoji", ""],
-    ["휘발유", "⛽", "#8B5E3C", "#fff", "emoji", ""],
-    ["국고채", "🏦", "#4A5568", "#fff", "emoji", ""],
-    ["WTI", "", "#2B2B2B", "#fff", "", ""],
-    // 통화쌍은 "원화가 아닌 쪽" 기호로 표시한다("원/유로 환율" ->
-    // 유로 표시가 맞다 - 원/엔·원/달러와 같은 원칙, ₩ 기호는 쓰지 않음).
-    ["EUR/USD", "€", "#eef6ff", "#2563eb", "", "#dbeafe"],
-    ["원/유로", "€", "#eef6ff", "#2563eb", "", "#dbeafe"],
-    ["원/엔", "¥", "#eef6ff", "#2563eb", "", "#dbeafe"],
-    ["원/달러", "$", "#eef6ff", "#2563eb", "", "#dbeafe"]
+    ["나스닥100", "number", "100", "#eef4ff", "#1d4ed8", "#d8e5ff"],
+    ["나스닥", "image", "usa-flag.png", "", "", ""],
+    ["다우존스", "image", "usa-flag.png", "", "", ""],
+    ["S&P500", "number", "500", "linear-gradient(135deg, #f87171, #dc2626)", "#fff", ""],
+    ["이더리움", "", "◆", "linear-gradient(135deg, #9da8ff, #5966d9 55%, #393aa1)", "#eef2ff", ""],
+    ["비트코인", "", "₿", "linear-gradient(135deg, #ffb249, #f7931a 60%, #d97706)", "#fff", ""],
+    ["코스피200", "number", "200", "#eef4ff", "#1d4ed8", "#d8e5ff"],
+    ["코스피", "image", "kor-flag.png", "", "", ""],
+    ["코스닥", "image", "kor-flag.png", "", "", ""],
+    ["국내금", "image", "gold.png", "", "", ""],
+    ["휘발유", "image", "oil.png", "", "", ""],
+    ["국고채", "emoji", "🏦", "#4A5568", "#fff", ""],
+    ["WTI", "", "", "#2B2B2B", "#fff", ""],
+    // EUR/USD는 두 통화가 함께 있는 조합 아이콘, 원/유로·원/엔·원/달러는
+    // "원화가 아닌 쪽" 기호로 표시(원/엔 -> ¥, 원/달러 -> $ 원칙과 동일
+    // 하게 원/유로 -> €. ₩는 쓰지 않는다 - 2026-08 확정).
+    ["EUR/USD", "image", "eurusd-icon.png", "", "", ""],
+    ["원/유로", "", "€", "#eef6ff", "#2563eb", "#dbeafe"],
+    ["원/엔", "", "¥", "#eef6ff", "#2563eb", "#dbeafe"],
+    ["원/달러", "", "$", "#eef6ff", "#2563eb", "#dbeafe"]
   ];
 
   function findIndexBadge(name) {
     for (var i = 0; i < INDEX_BADGES.length; i++) {
       var b = INDEX_BADGES[i];
       if (name.indexOf(b[0]) !== -1) {
-        return { symbol: b[1], bg: b[2], color: b[3], variant: b[4], border: b[5] };
+        return { kind: b[1], value: b[2], bg: b[3], color: b[4], border: b[5] };
       }
     }
     return null;
@@ -3491,13 +3509,21 @@
     var name = document.createElement("p");
     name.className = "sw-index-name";
     if (badge) {
-      var badgeEl = document.createElement("span");
-      badgeEl.className = "idx-badge" + (badge.variant ? " idx-badge-" + badge.variant : "");
-      badgeEl.style.background = badge.bg;
-      badgeEl.style.color = badge.color;
-      if (badge.border) badgeEl.style.border = "1px solid " + badge.border;
-      badgeEl.textContent = badge.symbol;
-      name.appendChild(badgeEl);
+      if (badge.kind === "image") {
+        var imgEl = document.createElement("img");
+        imgEl.className = "idx-badge-img";
+        imgEl.src = ICON_BASE_URL + badge.value;
+        imgEl.alt = "";
+        name.appendChild(imgEl);
+      } else {
+        var badgeEl = document.createElement("span");
+        badgeEl.className = "idx-badge" + (badge.kind ? " idx-badge-" + badge.kind : "");
+        badgeEl.style.background = badge.bg;
+        badgeEl.style.color = badge.color;
+        if (badge.border) badgeEl.style.border = "1px solid " + badge.border;
+        badgeEl.textContent = badge.value;
+        name.appendChild(badgeEl);
+      }
     }
     var nameText = document.createElement("span");
     nameText.className = "sw-index-name-text";
