@@ -318,11 +318,25 @@
       <p class="ew-updated" id="cr-updated">업데이트 시간 불러오는 중...</p>
     </div>
 
-    <div id="cr-content">
-      <p class="ew-loading">불러오는 중입니다...</p>
+    <div class="cr-subtab-tabs">
+      <button class="cr-subtab-btn active" data-subtab="sowhat" type="button">쏘왓레터 리포트</button>
+      <button class="cr-subtab-btn" data-subtab="dart" type="button">DART 브리핑</button>
     </div>
 
-    <div class="nw-footer">CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)</div>
+    <div class="cr-subtab-panel" data-subtab-panel="sowhat">
+      <div id="cr-content">
+        <p class="ew-loading">불러오는 중입니다...</p>
+      </div>
+    </div>
+
+    <div class="cr-subtab-panel" data-subtab-panel="dart" hidden>
+      <p class="cr-dart-meta" id="cr-dart-meta"></p>
+      <div id="cr-dart-content">
+        <p class="ew-loading">불러오는 중입니다...</p>
+      </div>
+    </div>
+
+    <div class="nw-footer" id="cr-footer">CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)</div>
   </div>
 
   <!-- ===== 데일리 브리핑 탭 (신규, 시황/투자/기업 오전판·저녁판) ===== -->
@@ -2033,6 +2047,51 @@
   /* =========================================================
      CEO 리포트 (신규, CEO NOTE 뉴스레터 연동)
      ========================================================= */
+
+  /* CEO 리포트 탭 안의 서브탭(쏘왓레터 리포트 / DART 브리핑) -
+     pw-cal-filter-btn 패턴(버튼 그룹 + data 속성 + class만으로 active
+     토글)을 그대로 따르되, pw-cal-* 클래스와 겹치지 않도록 cr-subtab-
+     접두어를 쓴다. 색상/폰트는 기존 --nw-* 변수 재사용, 새 색상 없음. */
+  .cr-subtab-tabs {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 20px;
+  }
+  .cr-subtab-btn {
+    height: 34px;
+    padding: 0 16px;
+    border: 1px solid var(--nw-line);
+    border-radius: 999px;
+    background: var(--nw-surface);
+    color: var(--nw-text-sub);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  }
+  .cr-subtab-btn.active {
+    border-color: var(--nw-primary);
+    background: var(--nw-primary-soft);
+    color: var(--nw-primary);
+  }
+
+  .cr-dart-meta {
+    margin: 0 0 16px;
+    color: var(--nw-text-muted);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .cr-dart-article p {
+    margin: 0 0 20px;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
+  }
+  .cr-dart-article p:last-child { margin-bottom: 0; }
+
   .cr-headline {
     display: inline-flex;
     align-items: center;
@@ -2652,6 +2711,7 @@
   var CEO_REPORT_URL = "https://script.google.com/macros/s/AKfycbw1IAnWQKm5Idxs__nxWGN0sd9AfU8OGXmcNO4if8cp8ATv0D6ZYUtflvFooy56Na2qIg/exec";
   var DAILY_REPORTS_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/daily_reports.json";
   var DART_MA_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dart_ma_signals.json";
+  var DART_MA_ARTICLE_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dart_ma_daily_article.json";
   var INITIAL_COUNT = 9;
 
   var loaded = { dashboard: false, ranking: false, stock: false, economy: false, realestate: false, policy: false, ceo: false, briefing: false };
@@ -4314,6 +4374,80 @@
         console.error("CEO 리포트 위젯 로드 실패:", err);
       });
   }
+
+  /* DART 브리핑 서브탭 - pwCalLoadMaSignals()와 동일하게 "DART 브리핑"
+     서브탭을 사람이 처음 클릭하는 순간에만 dart_ma_daily_article.json을
+     지연 로딩하고, 이후엔 crDartLoaded 플래그로 캐싱해 다시 요청하지
+     않는다. "쏘왓레터 리포트"의 기존 즉시 로딩(loadCeo)과는 무관. */
+  var crDartLoaded = false;
+  var crDartLoading = false;
+
+  function renderCrDartArticle(data) {
+    var metaEl = document.getElementById("cr-dart-meta");
+    var contentEl = document.getElementById("cr-dart-content");
+
+    if (!data || !data.article) {
+      metaEl.textContent = "";
+      contentEl.innerHTML = '<p class="ew-loading">오늘의 DART 브리핑이 아직 준비되지 않았습니다.</p>';
+      return;
+    }
+
+    metaEl.textContent = "생성 시각: " + (data.generated_at || "") +
+      " · 오늘 공시 " + (data.source_filing_count != null ? data.source_filing_count : 0) + "건 반영";
+
+    var article = document.createElement("div");
+    article.className = "cr-dart-article";
+    data.article.split(/\n\s*\n/).forEach(function (para) {
+      var trimmed = para.trim();
+      if (!trimmed) return;
+      var p = document.createElement("p");
+      p.textContent = trimmed;
+      article.appendChild(p);
+    });
+    contentEl.innerHTML = "";
+    contentEl.appendChild(article);
+  }
+
+  function loadCrDartBriefing(callback) {
+    if (crDartLoaded) { callback(); return; }
+    if (crDartLoading) return;
+    crDartLoading = true;
+    fetch(DART_MA_ARTICLE_URL + "?t=" + Date.now())
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        renderCrDartArticle(data);
+        crDartLoaded = true;
+        crDartLoading = false;
+        callback();
+      })
+      .catch(function (err) {
+        document.getElementById("cr-dart-content").innerHTML =
+          '<p class="ew-loading">오늘의 DART 브리핑이 아직 준비되지 않았습니다.</p>';
+        console.error("DART 브리핑 로드 실패:", err);
+        crDartLoading = false;
+        callback();
+      });
+  }
+
+  (function initCrSubtabs() {
+    var subtabBtns = document.querySelectorAll(".cr-subtab-btn");
+    var subtabPanels = document.querySelectorAll(".cr-subtab-panel");
+    var footerEl = document.getElementById("cr-footer");
+    var FOOTER_TEXT = {
+      sowhat: "CEO 리포트 출처 : CEO NOTE 뉴스레터(쏘왓레터)",
+      dart: "DART 브리핑 출처 : 금융감독원 전자공시시스템(DART)"
+    };
+
+    subtabBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var key = btn.getAttribute("data-subtab");
+        subtabBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-subtab") === key); });
+        subtabPanels.forEach(function (p) { p.hidden = p.getAttribute("data-subtab-panel") !== key; });
+        if (footerEl && FOOTER_TEXT[key]) footerEl.textContent = FOOTER_TEXT[key];
+        if (key === "dart") loadCrDartBriefing(function () {});
+      });
+    });
+  })();
 
   /* =========================================================
      데일리 브리핑 (신규, daily_reports.json - 시황/투자/기업
