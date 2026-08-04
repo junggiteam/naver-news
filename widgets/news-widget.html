@@ -1411,18 +1411,25 @@
     font-size: 9.5px;
   }
   /* 세 자리 숫자(100/200/500)는 원이 작아 기본 크기로는 안 들어가서
-     더 작게. padding-top은 숫자 글리프가 원 중심보다 살짝 위로 쏠려
-     보이는 미세한 세로 오차 보정(2026-08, 실제 렌더링 좌표 측정 후
-     결정 - 텍스트 중심이 배지 중심보다 0.25~0.5px 위였음). position:
-     relative + top은 배지 박스 전체(원+글자)를 같이 밀어버려서 내부
-     정렬엔 아무 효과가 없다(실측으로 확인된 함정) - box-sizing:
-     border-box가 전역 적용돼 있어 padding-top을 쓰면 원의 바깥 지름은
-     그대로 두고 flex 중앙 정렬 기준선만 안쪽에서 미세하게 내릴 수
-     있다. */
+     더 작게. 숫자 글리프가 원 중심보다 살짝 위로 쏠려 보이는 미세한
+     세로 오차는 과거 padding-top으로 보정했었으나(2026-08 초), 텍스트
+     baseline이 CSS 정수 픽셀 단위로 스냅되는 렌더링 특성 때문에
+     0.5~2px 사이의 어떤 padding-top 값을 줘도 전부 똑같이 렌더링되는
+     것을 고배율 스크린샷 실측(Playwright + 픽셀 단위 잉크 위치 분석)
+     으로 확인했다 - 그래서 세밀 보정이 아예 불가능했던 것. 텍스트만
+     감싸는 내부 span(.idx-badge-number-ink)에 transform: translateY()
+     를 쓰면 레이아웃이 아니라 합성(compositing) 단계에서 적용돼
+     스냅 없이 연속적으로 움직인다(실측 확인) - 이걸로 전환.
+     transform을 배지 자체(.idx-badge-number)에 걸면 원과 글자가 같이
+     움직여 내부 정렬에 아무 효과가 없으므로(예전 position:relative+top
+     함정과 동일한 원리) 반드시 내부 wrap에만 걸어야 한다. */
   .idx-badge-number {
-    padding-top: 0.5px;
     font-size: 6.5px;
     letter-spacing: -0.03em;
+  }
+  .idx-badge-number-ink {
+    display: inline-block;
+    transform: translateY(0.27px);
   }
 
   .sw-index-value {
@@ -3529,7 +3536,14 @@
         badgeEl.style.background = badge.bg;
         badgeEl.style.color = badge.color;
         if (badge.border) badgeEl.style.border = "1px solid " + badge.border;
-        badgeEl.textContent = badge.value;
+        if (badge.kind === "number") {
+          var inkEl = document.createElement("span");
+          inkEl.className = "idx-badge-number-ink";
+          inkEl.textContent = badge.value;
+          badgeEl.appendChild(inkEl);
+        } else {
+          badgeEl.textContent = badge.value;
+        }
         name.appendChild(badgeEl);
       }
     }
