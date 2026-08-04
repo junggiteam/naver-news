@@ -4016,6 +4016,40 @@
       pwCalSelectedDate ? "이 날짜에 해당하는 공시가 없습니다." : "이 달에 발생한 M&A 공시가 없습니다.");
   }
 
+  // "전체" 필터 전용 - pwCalRenderDeadlines()(세무/노무만)와
+  // pwCalRenderRecentFilings()(M&A만)를 각각 쓰면 "전체"에서 M&A가
+  // 구조적으로 절대 안 나오는 버그가 있었다(그리드는 이미 전체에서 M&A를
+  // 보여주도록 고쳐졌는데 세부 사항 리스트만 안 맞춰져 있었음). 세무/노무
+  // + M&A(서브 필터 통과분)를 합쳐서 날짜(선택 시 그 날짜만, 아니면 이번
+  // 달 범위) 기준으로 내림차순 정렬해 하나의 리스트로 보여준다. 아이템
+  // 렌더링은 타입별로 기존 빌더(buildDeadlineItem/buildMaItem)를 그대로
+  // 재사용한다.
+  function pwCalRenderAllUpcoming() {
+    if (pwCalMaLoading) {
+      document.getElementById("pw-cal-upcoming-list").innerHTML = '<p class="ew-loading">불러오는 중입니다...</p>';
+      var moreBtn = document.getElementById("pw-cal-upcoming-more-btn");
+      if (moreBtn) moreBtn.style.display = "none";
+      return;
+    }
+
+    var todayStr = pwCalToday().dateStr;
+    var range = pwCalMonthRange();
+
+    var taxLaborItems = pwCalEvents.filter(function (e) { return e.type === "tax" || e.type === "labor"; });
+    var maItems = pwCalMaEvents.filter(function (e) { return pwCalPassesSubfilter(e); });
+
+    var items = taxLaborItems.concat(maItems)
+      .filter(function (e) {
+        if (pwCalSelectedDate) return e.date === pwCalSelectedDate;
+        return e.date >= range.start && e.date <= range.end;
+      })
+      .sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+
+    renderPwList("pw-cal-upcoming-list", "pw-cal-upcoming-more-btn", items,
+      function (e) { return e.type === "ma" ? buildMaItem(e) : buildDeadlineItem(e, todayStr); },
+      pwCalSelectedDate ? "이 날짜에 해당하는 일정이 없습니다." : "이 달에 해당하는 일정이 없습니다.");
+  }
+
   function pwCalUpdateDateFilterBanner() {
     var banner = document.getElementById("pw-cal-date-filter-banner");
     var text = document.getElementById("pw-cal-date-filter-text");
@@ -4032,8 +4066,10 @@
     pwCalUpdateDateFilterBanner();
     if (pwCalFilter === "ma") {
       pwCalRenderRecentFilings();
-    } else {
+    } else if (pwCalFilter === "tax" || pwCalFilter === "labor") {
       pwCalRenderDeadlines();
+    } else {
+      pwCalRenderAllUpcoming();
     }
   }
 
