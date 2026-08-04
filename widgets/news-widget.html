@@ -1411,8 +1411,16 @@
     font-size: 9.5px;
   }
   /* 세 자리 숫자(100/200/500)는 원이 작아 기본 크기로는 안 들어가서
-     더 작게. */
+     더 작게. padding-top은 숫자 글리프가 원 중심보다 살짝 위로 쏠려
+     보이는 미세한 세로 오차 보정(2026-08, 실제 렌더링 좌표 측정 후
+     결정 - 텍스트 중심이 배지 중심보다 0.25~0.5px 위였음). position:
+     relative + top은 배지 박스 전체(원+글자)를 같이 밀어버려서 내부
+     정렬엔 아무 효과가 없다(실측으로 확인된 함정) - box-sizing:
+     border-box가 전역 적용돼 있어 padding-top을 쓰면 원의 바깥 지름은
+     그대로 두고 flex 중앙 정렬 기준선만 안쪽에서 미세하게 내릴 수
+     있다. */
   .idx-badge-number {
+    padding-top: 0.5px;
     font-size: 6.5px;
     letter-spacing: -0.03em;
   }
