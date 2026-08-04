@@ -90,7 +90,17 @@
   }
   .ish-item:last-child { border-right: none; }
 
+  /* flex + align-items:center로 배지/이미지를 이름 텍스트와 정확히
+     세로 중앙 정렬한다 - vertical-align:middle만 믿으면 배지가 텍스트
+     기준선보다 살짝 아래로 쏠려 보이는 버그가 있었다(2026-08 발견,
+     news-widget.html의 .sw-index-name은 처음부터 flex라 이 문제가
+     없었음). gap으로 간격을 주므로 배지 쪽 margin-right는 제거.
+     .ish-item 자체의 align-items:baseline(이름/값/등락률 세 요소 간
+     정렬)과는 별개 - 이건 .ish-name 내부(배지+텍스트)만의 정렬이다. */
   .ish-name {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -107,12 +117,11 @@
     justify-content: center;
     width: 17px;
     height: 17px;
-    margin-right: 4px;
+    flex: 0 0 auto;
     border-radius: 50%;
     font-size: 8.5px;
     font-weight: 800;
     line-height: 1;
-    vertical-align: middle;
   }
   /* 이미지 아이콘(국기/금/석유/EUR-USD)도 CSS 배지와 같은 지름으로
      맞춘다. 원본이 전부 정사각형이라 원형으로 잘라도(object-fit:cover)
@@ -121,11 +130,10 @@
     display: inline-block;
     width: 17px;
     height: 17px;
-    margin-right: 4px;
+    flex: 0 0 auto;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #dcdcdc;
-    vertical-align: middle;
   }
   /* 이모지(은행 등)는 텍스트보다 커야 원 안에 꽉 차 보여서, 기본
      폰트 크기보다 크게 잡는다. */
@@ -209,7 +217,7 @@
     ["코스닥", "image", "kor-flag.png", "", "", ""],
     ["국내금", "image", "gold.png", "", "", ""],
     ["휘발유", "image", "oil.png", "", "", ""],
-    ["국고채", "emoji", "🏦", "#4A5568", "#fff", ""],
+    ["국고채", "emoji", "🏦", "#eef6ff", "#2563eb", "#dbeafe"],
     ["WTI", "", "", "#2B2B2B", "#fff", ""],
     ["EUR/USD", "image", "eurusd-icon.png", "", "", ""],
     ["원/유로", "", "€", "#eef6ff", "#2563eb", "#dbeafe"],
