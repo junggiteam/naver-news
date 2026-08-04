@@ -92,6 +92,7 @@ def crawl_dart_filings():
         rcept_no = item.get("rcept_no", "")
         filings.append({
             "corp_name": item.get("corp_name", ""),
+            "corp_code": item.get("corp_code", ""),
             "report_nm": item.get("report_nm", "").strip(),
             "rcept_dt": item.get("rcept_dt", ""),
             "rcept_no": rcept_no,

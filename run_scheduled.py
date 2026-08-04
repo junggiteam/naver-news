@@ -17,6 +17,7 @@ import dashboard
 import daily_reports
 import record_verification
 import dart_ma_signals
+import dart_report_detail
 
 KST = timezone(timedelta(hours=9))
 MARKER_FILE = os.path.join("data", ".last_run.json")
@@ -114,6 +115,20 @@ def _stock_commentary_with_check(indices, titles, verified_facts):
             print("[stock] 시황 코멘트 재생성 후에도 금지 표현 감지 - 이번 회차는 생략")
             return None
     return commentary
+
+
+def _dart_ma_article_with_check(filings, details):
+    """generate_dart_ma_article() 버전의 금지 표현 검증/재생성/생략.
+    _tab_briefing_with_check와 동일한 정책이지만 반환 타입이 문자열이라
+    별도로 만든다(리스트 대상 함수를 그대로 재사용할 수 없음)."""
+    article = ai_briefing.generate_dart_ma_article(filings, details)
+    if article and record_verification.contains_banned_expression(article):
+        print("[dart_ma_article] 금지 표현 감지 - 1회 재생성 시도")
+        article = ai_briefing.generate_dart_ma_article(filings, details)
+        if article and record_verification.contains_banned_expression(article):
+            print("[dart_ma_article] 재생성 후에도 금지 표현 감지 - 이번 회차는 생략")
+            return None
+    return article
 
 
 def _augment_with_ai(name):
@@ -289,6 +304,36 @@ def _augment_with_market_movers():
         print(f"[market_movers] 후처리 중 오류(본체 크롤링엔 영향 없음): {e}")
 
 
+def _build_dart_ma_article():
+    """평일 낮 12:10대(dart_ma_daily_article 슬롯)에 오늘 DART
+    주요사항보고서 전체를 취합해 기사 형식으로 정리. 오늘 공시가
+    없으면(주요사항보고 0건) 생략 - 쓸 자료가 없다."""
+    filings_data = _load_json_safe("data/dart_filings.json")
+    filings = filings_data.get("filings") or []
+    if not filings:
+        print("[dart_ma_article] 오늘 주요사항보고 없음 - 기사 생성 생략")
+        return
+
+    details = dart_report_detail.build_details()
+
+    article = _dart_ma_article_with_check(filings, details)
+    if not article:
+        print("[dart_ma_article] 기사 생성 생략(키 없음/호출 실패/금지 표현 재생성 실패)")
+        return
+
+    now_kst = get_now_kst()
+    output = {
+        "date": now_kst.strftime("%Y-%m-%d"),
+        "generated_at": now_kst.strftime("%Y-%m-%d %H:%M:%S"),
+        "article": article,
+        "source_filing_count": len(filings),
+    }
+    os.makedirs("data", exist_ok=True)
+    with open("data/dart_ma_daily_article.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+    print(f"[dart_ma_article] 기사 생성 완료({len(filings)}건 반영) -> data/dart_ma_daily_article.json")
+
+
 def get_now_kst():
     """실제 현재 시각(KST)을 반환. 테스트에서는 SCHEDULED_NOW_OVERRIDE 환경변수
     (ISO 8601, 예: 2026-07-24T07:03:00+09:00)로 임의 시각을 흉내낼 수 있다."""
@@ -351,6 +396,12 @@ REPORT_SLOTS = {
     "daily_close_snapshot": {
         "target": "15:37", "window_minutes": 15, "func": _record_daily_close_snapshot,
     },
+    # DART 주요사항보고서 취합 기사 - 평일에만 발행한다(주말은 공시
+    # 자체가 없어서 쓸 자료가 없음). dart 크롤러가 1시간 주기로 도니
+    # 그 직후(12시대) 최신 데이터로 쓰도록 12:10에 배치.
+    "dart_ma_daily_article": {
+        "target": "12:10", "window_minutes": 15, "func": _build_dart_ma_article, "weekdays_only": True,
+    },
 }
 
 
@@ -362,10 +413,14 @@ def _is_in_time_window(now_kst, target_hhmm, window_minutes):
 
 def find_due_report_slots(now_kst, marker):
     """목표 시각(±윈도우) 안에 들어왔고 오늘 아직 실행하지 않은 리포트
-    슬롯 이름 목록을 반환."""
+    슬롯 이름 목록을 반환. weekdays_only=True인 슬롯은 주말(토=5,일=6)에
+    건너뛴다 - 이 키가 없는 기존 슬롯들은 cfg.get(...)이 기본 False라
+    영향 없음."""
     today_str = now_kst.strftime("%Y-%m-%d")
     due_slots = []
     for slot_name, cfg in REPORT_SLOTS.items():
+        if cfg.get("weekdays_only") and now_kst.weekday() >= 5:
+            continue
         last_run_str = marker.get(slot_name)
         last_run_date = last_run_str.split("T")[0] if last_run_str else None
         if last_run_date == today_str:

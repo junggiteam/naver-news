@@ -339,3 +339,76 @@ def generate_category_report(category_label, material_block, report_type="evenin
     if not title or not body:
         return None
     return {"title": title, "body": body}
+
+
+# 평일 낮 12시대에 그날 올라온 DART 주요사항보고서 전체를 취합한 기사.
+# CATEGORY_REPORT_GUIDE(저작권/숫자 인용/최상급 표현 원칙)를 그대로
+# 베이스로 깔고, 이 기사 특유의 구조·톤 규칙을 추가한다.
+DART_MA_ARTICLE_GUIDE = (
+    "\n[기사 구조]\n"
+    "1. 헤드라인: 오늘 공시 중 가장 규모가 크거나 주목도 높은 건을\n"
+    "   중심으로, 다른 몇 건을 \"~까지\" 식으로 붙여서 쓴다.\n"
+    "2. 부제 2줄: 첫 줄은 \"O월O일 다트 공시 총정리\" 형식, 둘째 줄은\n"
+    "   헤드라인에 못 넣은 나머지 회사들을 성격별로 묶은 한 줄.\n"
+    "3. 리드 문단: \"[날짜] 금융감독원 전자공시시스템 다트(DART)에는\n"
+    "   [오늘 제출된 모든 건을 회사명+핵심내용으로 나열], 모두 N건의\n"
+    "   주요사항보고서가 제출됐다\" 형식으로 오늘자 전체를 한 문단에 개관.\n"
+    "4. 본문: 회사 단위로(또는 성격이 비슷한 여러 회사를 묶어서) 소제목을\n"
+    "   나누고, 그 아래 문단에서 금액·비율·날짜·이자율·방법·목적 등\n"
+    "   [자료]에 실제로 있는 값만 나열하라. 한 회사가 같은 날 여러 건\n"
+    "   공시했으면 인접한 문단으로 묶어라. 소제목 하나에 여러 회사가\n"
+    "   들어가도 된다(예: 자기주식취득 여러 건을 한 소제목으로).\n"
+    "5. 마무리 문단: 오늘 공시들을 비교·종합하라(규모가 가장 큰 게\n"
+    "   무엇인지, 나머지는 대체로 어떤 성격인지). 단, 이 문단을 포함해\n"
+    "   기사 전체에서 \"지켜볼 부분이다\", \"우려된다\", \"주목된다\" 같이\n"
+    "   필자의 주관적 평가나 전망을 담은 꼬리표는 절대 쓰지 마라. 사실을\n"
+    "   서술하는 것으로 문장을 끝내라 - 예를 들어 \"OO는 조달방법을 아직\n"
+    "   확정하지 않았다고 공시에 명시했다\"까지만 쓰고, 그 뒤에 \"이 점은\n"
+    "   지켜볼 부분이다\" 같은 해석을 덧붙이지 마라.\n"
+    "6. [자료]에 상세정보가 없는(회사명+공시제목만 있는) 건은 리드\n"
+    "   문단에 간단히 포함시키는 정도로만 다루고, 별도 소제목 문단을\n"
+    "   만들지 마라.\n"
+    "7. [자료]에 없는 회사 개요·실적·평판 등은 절대 지어내지 마라. 공시\n"
+    "   자체에 없는 배경지식(예: 대표이사 이름, 매출 실적)은 [자료]에\n"
+    "   그 값이 명시돼 있을 때만 언급하고, 없으면 그 문장 자체를 쓰지\n"
+    "   마라.\n"
+    "8. 출력은 헤드라인부터 마무리 문단까지 포함한 완성된 기사 텍스트\n"
+    "   하나만 내놓아라 - \"제목:\", \"본문:\" 같은 라벨이나 그 밖의\n"
+    "   설명은 붙이지 마라.\n"
+)
+
+
+def generate_dart_ma_article(filings, details):
+    """오늘 dart_filings.json 전체(filings) + dart_filings_detail.json
+    (rcept_no -> {"category", "raw_detail"})을 합쳐서 회사별 소제목이
+    있는 기사 하나를 생성. 자료가 없거나 호출 실패 시 None."""
+    if not filings:
+        return None
+
+    material_lines = [f"오늘 제출된 주요사항보고서 총 {len(filings)}건.\n"]
+    for f in filings:
+        rcept_no = f.get("rcept_no", "")
+        entry = (details or {}).get(rcept_no)
+        material_lines.append(f"[{f.get('corp_name', '')}] {f.get('report_nm', '')}")
+        if entry:
+            raw = entry.get("raw_detail") or {}
+            for key, value in raw.items():
+                if not value or key in ("rcept_no",):
+                    continue
+                material_lines.append(f"  - {key}: {value}")
+        else:
+            material_lines.append("  (상세정보 없음 - 공시제목만 확인됨)")
+        material_lines.append("")
+
+    material_block = "\n".join(material_lines)
+
+    prompt = (
+        f"{CATEGORY_REPORT_GUIDE}\n"
+        f"{DART_MA_ARTICLE_GUIDE}\n"
+        "아래는 오늘 DART(금융감독원 전자공시시스템)에 제출된 주요사항\n"
+        "보고서 전체 자료다. [기사 구조] 지침에 따라 기사를 작성하라.\n"
+        "일부 항목의 필드명이 무엇을 뜻하는지 애매하면 그 필드는 기사에\n"
+        "쓰지 말고 넘어가라 - 확실히 이해되는 금액·비율·날짜 등만 반영하라.\n\n"
+        f"[자료]\n{material_block}"
+    )
+    return _call_gemini(prompt, timeout=120)
