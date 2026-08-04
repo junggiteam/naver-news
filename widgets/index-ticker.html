@@ -86,25 +86,31 @@
     gap: 8px;
   }
   .is-row-name {
-    font-size: 13px;
+    font-size: 14px;
     color: #333;
     font-weight: 600;
     flex-shrink: 0;
   }
   /* 지표 이름 앞 원형 배지 - 외부 아이콘 이미지 없이 순수 CSS로(색상+
-     기호/숫자). 크기는 부모 폰트 크기(em)에 맞춰 자동 스케일. */
+     기호/숫자/이모지). em 체이닝 대신 명시적 px로 고정해 부모 폰트
+     크기와 무관하게 항상 일관된 크기로 보이게 한다. */
   .idx-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.6em;
-    height: 1.6em;
+    width: 22px;
+    height: 22px;
     margin-right: 4px;
     border-radius: 50%;
-    font-size: 0.62em;
+    font-size: 10px;
     font-weight: 800;
     line-height: 1;
     vertical-align: middle;
+  }
+  /* 이모지(국기/금메달/주유소/은행 등)는 텍스트보다 커야 원 안에 꽉
+     차 보여서, 기본 폰트 크기보다 2px 더 키운다. */
+  .idx-badge-emoji {
+    font-size: 12px;
   }
   .is-row-right {
     display: flex;
@@ -113,13 +119,13 @@
     min-width: 0;
   }
   .is-row-value {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: #191919;
     white-space: nowrap;
   }
   .is-row-change {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     white-space: nowrap;
   }
@@ -164,31 +170,39 @@
     return "-";
   }
 
-  // 지표 이름 -> 원형 배지(기호/숫자 + 배경색). 더 구체적인 키워드를
-  // 먼저 검사한다("나스닥100"이 "나스닥"의 부분 문자열이라 순서가
-  // 바뀌면 나스닥100도 "나스닥" 규칙에 걸려버림). 매칭되는 항목이 없으면
-  // (코스피/코스닥/코스피200, 국고채 등) 배지를 붙이지 않는다.
+  // 지표 이름 -> 원형 배지(기호/숫자/이모지 + 배경색[ + 테두리색]).
+  // 배열 순서: [매칭 키워드, 표시 문자, 배경색, 글자색, 이모지 여부,
+  // 테두리색(선택)]. 더 구체적인 키워드를 먼저 검사한다("나스닥100"이
+  // "나스닥"의, "코스피200"이 "코스피"의 부분 문자열이라 순서가 바뀌면
+  // 일반 규칙에 먼저 걸려버림). 매칭되는 항목이 없으면 배지를 안 붙인다.
   var INDEX_BADGES = [
-    ["나스닥100", "100", "#3182F6", "#fff"],
-    ["나스닥", "N", "#3182F6", "#fff"],
-    ["다우존스", "30", "#142c67", "#fff"],
-    ["S&P500", "500", "#142c67", "#fff"],
-    ["이더리움", "Ξ", "#627EEA", "#fff"],
-    ["비트코인", "₿", "#F7931A", "#fff"],
-    ["국내금", "", "#D4AF37", "#fff"],
-    ["휘발유", "", "#8B5E3C", "#fff"],
-    ["WTI", "", "#2B2B2B", "#fff"],
-    ["EUR/USD", "€", "#E4EAF5", "#142c67"],
-    ["원/유로", "€", "#E4EAF5", "#142c67"],
-    ["원/엔", "¥", "#E4EAF5", "#142c67"],
-    ["원/달러", "$", "#E4EAF5", "#142c67"]
+    ["나스닥100", "100", "#3182F6", "#fff", false],
+    ["나스닥", "🇺🇸", "#3182F6", "#fff", true],
+    ["다우존스", "30", "#142c67", "#fff", false],
+    ["S&P500", "500", "#142c67", "#fff", false],
+    ["이더리움", "Ξ", "#627EEA", "#fff", false],
+    ["비트코인", "₿", "#F7931A", "#fff", false],
+    ["코스피200", "200", "#142c67", "#fff", false],
+    ["코스피", "🇰🇷", "#ffffff", "#142c67", true, "#dcdcdc"],
+    ["코스닥", "🇰🇷", "#ffffff", "#142c67", true, "#dcdcdc"],
+    ["국내금", "🥇", "#D4AF37", "#fff", true],
+    ["휘발유", "⛽", "#8B5E3C", "#fff", true],
+    ["국고채", "🏦", "#4A5568", "#fff", true],
+    ["WTI", "", "#2B2B2B", "#fff", false],
+    ["EUR/USD", "€", "#E4EAF5", "#142c67", false],
+    ["원/유로", "€", "#E4EAF5", "#142c67", false],
+    ["원/엔", "¥", "#E4EAF5", "#142c67", false],
+    ["원/달러", "$", "#E4EAF5", "#142c67", false]
   ];
 
   function badgeHtml(name) {
     for (var i = 0; i < INDEX_BADGES.length; i++) {
-      if (name.indexOf(INDEX_BADGES[i][0]) !== -1) {
-        var symbol = INDEX_BADGES[i][1], bg = INDEX_BADGES[i][2], color = INDEX_BADGES[i][3];
-        return '<span class="idx-badge" style="background:' + bg + ';color:' + color + ';">' + symbol + '</span>';
+      var b = INDEX_BADGES[i];
+      if (name.indexOf(b[0]) !== -1) {
+        var symbol = b[1], bg = b[2], color = b[3], isEmoji = b[4], border = b[5];
+        var cls = "idx-badge" + (isEmoji ? " idx-badge-emoji" : "");
+        var style = "background:" + bg + ";color:" + color + ";" + (border ? "border:1px solid " + border + ";" : "");
+        return '<span class="' + cls + '" style="' + style + '">' + symbol + '</span>';
       }
     }
     return "";

@@ -131,6 +131,38 @@ def _dart_ma_article_with_check(filings, details):
     return article
 
 
+# DART 브리핑 재생성 체크 시간대/주기. REPORT_SLOTS의 "하루 1번, 날짜
+# 단위 중복 방지" 방식과 달리, 이 슬롯은 낮 시간대 안에서 매시간 반복
+# 체크한다 - 오후 늦게 올라오는 공시도 그날 안에 반영하기 위함.
+DART_MA_ARTICLE_WINDOW_START = "12:00"
+DART_MA_ARTICLE_WINDOW_END = "17:10"
+DART_MA_ARTICLE_INTERVAL = timedelta(hours=1)
+
+
+def _dart_ma_article_due(now_kst, marker):
+    """평일만, 12:00~17:10 시간대 안에서만, 마지막 "체크"(실제 재생성
+    여부와 무관 - 스킵된 체크도 포함) 이후 DART_MA_ARTICLE_INTERVAL 이상
+    지났을 때만 True. marker["dart_ma_article_last_run"]에는 날짜만이
+    아니라 시:분까지 포함한 전체 ISO 타임스탬프를 저장해 "1시간 경과"를
+    정확히 비교한다 - REPORT_SLOTS의 날짜 단위(오늘 이미 실행했는지)
+    중복 방지와는 다른 방식이라 별도 로직으로 둔다."""
+    if now_kst.weekday() >= 5:
+        return False
+
+    start_hour, start_minute = map(int, DART_MA_ARTICLE_WINDOW_START.split(":"))
+    end_hour, end_minute = map(int, DART_MA_ARTICLE_WINDOW_END.split(":"))
+    start = now_kst.replace(hour=start_hour, minute=start_minute, second=0, microsecond=0)
+    end = now_kst.replace(hour=end_hour, minute=end_minute, second=0, microsecond=0)
+    if not (start <= now_kst <= end):
+        return False
+
+    last_run_str = marker.get("dart_ma_article_last_run")
+    if not last_run_str:
+        return True
+    last_run = datetime.fromisoformat(last_run_str)
+    return (now_kst - last_run) >= DART_MA_ARTICLE_INTERVAL
+
+
 def _augment_with_ai(name):
     """크롤링 직후 해당 카테고리 데이터 파일에 AI 브리핑/코멘트를 추가.
     AI 호출이 실패해도 예외를 밖으로 던지지 않는다 - 크롤링 성공 자체는
@@ -304,14 +336,28 @@ def _augment_with_market_movers():
         print(f"[market_movers] 후처리 중 오류(본체 크롤링엔 영향 없음): {e}")
 
 
-def _build_dart_ma_article():
-    """평일 낮 12:10대(dart_ma_daily_article 슬롯)에 오늘 DART
-    주요사항보고서 전체를 취합해 기사 형식으로 정리. 오늘 공시가
-    없으면(주요사항보고 0건) 생략 - 쓸 자료가 없다."""
+def _build_dart_ma_article(marker):
+    """평일 12:00~17:10 사이 매시간 체크 시(_dart_ma_article_due() 통과
+    시)마다 호출돼, 오늘 DART 주요사항보고서 전체를 취합해 기사 형식으로
+    정리한다. 오늘 공시가 없으면(주요사항보고 0건) 생략 - 쓸 자료가 없다.
+
+    marker 딕셔너리를 직접 받아 그 자리에서 갱신한다("dart_ma_article_
+    filing_ids" 키) - 별도로 load_marker()/save_marker()를 호출하지
+    않는다. run_scheduled()가 마커 파일 입출력을 단일하게 책임지는 기존
+    패턴을 따르는 것으로, 여기서 파일을 따로 읽고 쓰면 run_scheduled()가
+    마지막에 자기 사본을 저장하는 시점에 이 함수가 미리 반영해둔 변경이
+    덮어써질 위험이 있다."""
     filings_data = _load_json_safe("data/dart_filings.json")
     filings = filings_data.get("filings") or []
     if not filings:
         print("[dart_ma_article] 오늘 주요사항보고 없음 - 기사 생성 생략")
+        return
+
+    # 마지막 생성 이후 새로 올라온 공시가 없으면(rcept_no 목록이 그대로면)
+    # AI 호출 없이 스킵 - 같은 내용으로 매시간 재생성하는 낭비를 막는다.
+    current_filing_ids = sorted(f.get("rcept_no", "") for f in filings)
+    if current_filing_ids == marker.get("dart_ma_article_filing_ids"):
+        print("[dart_ma_article] 새 공시 없음 - 재생성 스킵")
         return
 
     details = dart_report_detail.build_details()
@@ -332,6 +378,8 @@ def _build_dart_ma_article():
     with open("data/dart_ma_daily_article.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"[dart_ma_article] 기사 생성 완료({len(filings)}건 반영) -> data/dart_ma_daily_article.json")
+
+    marker["dart_ma_article_filing_ids"] = current_filing_ids
 
 
 def get_now_kst():
@@ -402,13 +450,12 @@ REPORT_SLOTS = {
     "daily_close_snapshot": {
         "target": "15:37", "window_minutes": 15, "func": _record_daily_close_snapshot,
     },
-    # DART 주요사항보고서 취합 기사 - 평일에만 발행한다(주말은 공시
-    # 자체가 없어서 쓸 자료가 없음). dart 크롤러가 1시간 주기로 도니
-    # 그 직후(12시대) 최신 데이터로 쓰도록 12:10에 배치.
-    "dart_ma_daily_article": {
-        "target": "12:10", "window_minutes": 15, "func": _build_dart_ma_article, "weekdays_only": True,
-    },
 }
+# DART 주요사항보고서 취합 기사는 위 REPORT_SLOTS(하루 1번, 날짜 단위
+# 중복 방지)와 다른 별도 체계를 쓴다 - 평일 12:00~17:10 사이 매시간
+# 반복 체크(_dart_ma_article_due/_build_dart_ma_article, run_scheduled()
+# 안에서 REPORT_SLOTS 루프와 별개로 처리). 오후 늦게 올라오는 공시도
+# 그날 안에 반영하기 위함.
 
 
 def _is_in_time_window(now_kst, target_hhmm, window_minutes):
@@ -443,8 +490,9 @@ def run_scheduled(now_kst=None):
     marker = load_marker()
     due = find_due_crawlers(now_kst, marker)
     due_slots = find_due_report_slots(now_kst, marker)
+    dart_ma_article_due = _dart_ma_article_due(now_kst, marker)
 
-    if not due and not due_slots:
+    if not due and not due_slots and not dart_ma_article_due:
         print(f"[{now_kst.isoformat()}] 지금은 실행 대상 없음")
         return
 
@@ -479,6 +527,22 @@ def run_scheduled(now_kst=None):
             print(f"[{slot_name}] 실행 완료")
         except Exception as e:
             print(f"[{slot_name}] 실행 중 오류 발생, 마커 갱신 안 함 - 다음 주기에 재시도: {e}")
+
+    if dart_ma_article_due:
+        print("[dart_ma_article] 체크 시각 도달(평일 12:00~17:10, 마지막 체크로부터 1시간 경과) - 실행")
+        try:
+            _build_dart_ma_article(marker)
+            # 스킵되든(새 공시 없음) 실제 재생성되든 상관없이 "체크"
+            # 자체는 완료된 것으로 보고 last_run을 갱신한다 - 그래야
+            # 다음 체크가 1시간 뒤로 정상적으로 넘어가고, 10분마다 계속
+            # 재시도하는 낭비가 없다. filing_ids는 _build_dart_ma_article()
+            # 안에서 실제 재생성 성공 시에만 별도로 갱신됨(체크 주기
+            # 유지 vs 변경 감지, 서로 다른 목적이라 키를 분리).
+            marker["dart_ma_article_last_run"] = now_kst.isoformat()
+            marker_changed = True
+            print("[dart_ma_article] 체크 완료")
+        except Exception as e:
+            print(f"[dart_ma_article] 실행 중 오류 발생, 마커(dart_ma_article_last_run) 갱신 안 함 - 다음 체크 때 재시도: {e}")
 
     if marker_changed:
         try:
