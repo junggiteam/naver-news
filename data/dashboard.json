@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04 11:45:52",
+  "updated_at": "2026-08-04 12:01:23",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": -0.79,
+    "kospi_change": -0.67,
     "kosdaq_change": 4.84,
-    "kospi_value": 6208.19,
+    "kospi_value": 6215.67,
     "kosdaq_value": 773.06
   },
   "heroes": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스 등 대형주로의 쏠림 현상이 완화되는 가운데 바이오 업종이 강세를 보이면서 코스닥 지수는 최근 4일간 데이터 기준 최고치를 기록했다. 반면 코스피와 코스피200은 같은 기간 데이터 기준 최저치로 마감하며 지수 간 엇갈린 흐름을 보였다."
+      "text": "반도체 대형주의 약세가 이어진 코스피는 최근 4일간 데이터 기준으로 최저치를 기록하며 하락 마감했다. 반면 코스닥은 매수 사이드카가 발동하는 등 강세를 보이며 최근 4일간 데이터 기준으로 최고치를 나타냈다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "지어소프트",
+      "corp_code": "00389110",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260804",
+      "rcept_no": "20260804000111",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000111",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 매입하기로 결정함."
+    },
+    {
       "corp_name": "라온시큐어",
       "corp_code": "00255433",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20260804",
       "rcept_no": "20260804000052",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000052",
-      "ai_explanation": "회사가 신탁 방식으로 맡겼던 자기주식 취득 계약을 중도에 해지한다는 의미입니다."
+      "ai_explanation": "증권사와 맺었던 자사주 매입 신탁 계약을 종료하기로 결정함."
     },
     {
       "corp_name": "코스리거글로벌",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260804",
       "rcept_no": "20260803000494",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000494",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 의미입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유하기로 결정함."
     },
     {
       "corp_name": "리메드",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260804",
       "rcept_no": "20260803000487",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000487",
-      "ai_explanation": "회사가 주가 안정을 위해 신탁 방식으로 자기주식을 사들이기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 증권사에 자금을 맡겨 자사 주식을 매입하도록 신탁 계약을 체결함."
     }
   ],
   "macro_indicators": [
@@ -2461,9 +2470,9 @@
   "top_gainers": [
     {
       "name": "에이엔피",
-      "price": "410.0",
-      "change_percent": "+24.62%",
-      "pct": 24.62
+      "price": "416.0",
+      "change_percent": "+26.44%",
+      "pct": 26.44
     },
     {
       "name": "SK이터닉스",
@@ -2473,142 +2482,142 @@
     },
     {
       "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "127550.0",
-      "change_percent": "+20.83%",
-      "pct": 20.83
+      "price": "129820.0",
+      "change_percent": "+22.98%",
+      "pct": 22.98
     },
     {
       "name": "티웨이홀딩스",
-      "price": "1498.0",
-      "change_percent": "+20.03%",
-      "pct": 20.03
+      "price": "1485.0",
+      "change_percent": "+18.99%",
+      "pct": 18.99
     },
     {
       "name": "KODEX 방산TOP10레버리지",
-      "price": "6535.0",
-      "change_percent": "+17.54%",
-      "pct": 17.54
+      "price": "6610.0",
+      "change_percent": "+18.88%",
+      "pct": 18.88
     }
   ],
   "top_losers": [
     {
       "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "8795.0",
-      "change_percent": "-17.84%",
-      "pct": 17.84
+      "price": "8665.0",
+      "change_percent": "-19.06%",
+      "pct": 19.06
     },
     {
       "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "8020.0",
-      "change_percent": "-16.02%",
-      "pct": 16.02
+      "price": "7870.0",
+      "change_percent": "-17.59%",
+      "pct": 17.59
     },
     {
-      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
-      "price": "2130.0",
-      "change_percent": "-12.88%",
-      "pct": 12.88
+      "name": "하나 인버스 2X 코스닥150 선물 ETN",
+      "price": "2125.0",
+      "change_percent": "-13.44%",
+      "pct": 13.44
     },
     {
       "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-      "price": "2125.0",
-      "change_percent": "-12.73%",
-      "pct": 12.73
+      "price": "2135.0",
+      "change_percent": "-12.32%",
+      "pct": 12.32
     },
     {
-      "name": "한투 인버스2X코스닥150선물 ETN",
-      "price": "2140.0",
-      "change_percent": "-12.11%",
-      "pct": 12.11
+      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
+      "price": "2150.0",
+      "change_percent": "-12.07%",
+      "pct": 12.07
     }
   ],
   "sector_performance": [
     {
-      "name": "건강관리기술",
-      "change_value": "+10.05%",
-      "pct": 10.05
-    },
-    {
-      "name": "에너지장비및서비스",
-      "change_value": "+9.55%",
-      "pct": 9.55
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+9.32%",
-      "pct": 9.32
+      "name": "문구류",
+      "change_value": "+14.32%",
+      "pct": 14.32
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+9.14%",
-      "pct": 9.14
+      "change_value": "+9.75%",
+      "pct": 9.75
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+8.91%",
-      "pct": 8.91
+      "name": "에너지장비및서비스",
+      "change_value": "+9.63%",
+      "pct": 9.63
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "+9.54%",
+      "pct": 9.54
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+9.48%",
+      "pct": 9.48
     }
   ],
   "sector_heatmap": [
     {
-      "name": "건강관리기술",
-      "change_value": "+10.05%",
-      "pct": 10.05
-    },
-    {
-      "name": "에너지장비및서비스",
-      "change_value": "+9.55%",
-      "pct": 9.55
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+9.32%",
-      "pct": 9.32
+      "name": "문구류",
+      "change_value": "+14.32%",
+      "pct": 14.32
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+9.14%",
-      "pct": 9.14
+      "change_value": "+9.75%",
+      "pct": 9.75
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "+9.63%",
+      "pct": 9.63
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "+9.54%",
+      "pct": 9.54
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+9.48%",
+      "pct": 9.48
     },
     {
       "name": "무선통신서비스",
-      "change_value": "+8.91%",
-      "pct": 8.91
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "+7.48%",
-      "pct": 7.48
-    },
-    {
-      "name": "손해보험",
-      "change_value": "-1.57%",
-      "pct": -1.57
-    },
-    {
-      "name": "자동차부품",
-      "change_value": "-1.62%",
-      "pct": -1.62
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "-1.67%",
-      "pct": -1.67
+      "change_value": "+9.41%",
+      "pct": 9.41
     },
     {
       "name": "자동차",
-      "change_value": "-1.69%",
-      "pct": -1.69
+      "change_value": "-1.39%",
+      "pct": -1.39
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "-1.63%",
+      "pct": -1.63
+    },
+    {
+      "name": "손해보험",
+      "change_value": "-1.71%",
+      "pct": -1.71
     },
     {
       "name": "복합기업",
-      "change_value": "-2.14%",
-      "pct": -2.14
+      "change_value": "-1.85%",
+      "pct": -1.85
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "-2.00%",
+      "pct": -2.0
     },
     {
       "name": "생명보험",
-      "change_value": "-4.28%",
-      "pct": -4.28
+      "change_value": "-4.11%",
+      "pct": -4.11
     }
   ],
   "article_counts": {
