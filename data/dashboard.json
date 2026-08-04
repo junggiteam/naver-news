@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-05 08:35:49",
+  "updated_at": "2026-08-05 08:45:59",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
     "kospi_change": 0.0,
     "kosdaq_change": 0.0,
-    "kospi_value": null,
-    "kosdaq_value": null
+    "kospi_value": 6358.95,
+    "kosdaq_value": 780.72
   },
   "heroes": {
     "종합": {
@@ -2487,13 +2487,100 @@
   },
   "top_gainers": [],
   "top_losers": [],
-  "sector_performance": [],
-  "sector_heatmap": [],
+  "sector_performance": [
+    {
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    }
+  ],
   "article_counts": {
     "종합": 407,
     "경제": 30,
     "부동산": 30,
-    "증권": 0
+    "증권": 30
   },
   "article_count_trend": {
     "종합": {
@@ -2515,9 +2602,9 @@
       "surge": false
     },
     "증권": {
-      "today": 0,
+      "today": 30,
       "yesterday": 30,
-      "change_pct": -100.0,
+      "change_pct": 0.0,
       "surge": false
     }
   }
