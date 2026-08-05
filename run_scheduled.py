@@ -37,13 +37,17 @@ CRAWLER_INTERVALS = {
     "stock": timedelta(minutes=15),
     "realestate": timedelta(hours=3),
     # DART 공시는 widgets/ma-ticker.html("당일 브리핑" 성격의 티커 위젯)이
-    # 참고하므로 체감 신선도를 위해 1시간 주기로 단축(2026-08 변경, 기존
-    # 3시간). 무료 API 한도(일 20,000건) 대비 하루 호출량이 24회 x
-    # (보통 1페이지) 수준이라 여유가 충분하고, GitHub Actions는 이 저장소가
-    # public repo라 표준 러너 무제한이라 실행 빈도 증가도 문제 없음.
-    # ECOS 거시지표는 하루 내내 빈번히 바뀌는 데이터가 아니라 여전히
-    # 3시간 주기로 충분함.
-    "dart": timedelta(hours=1),
+    # 참고하므로 체감 신선도를 위해 마스터 스케줄러 주기(15분)와 동일하게
+    # 맞춘다(2026-08 변경, 기존 1시간 - 1시간 주기에서도 "새로고침해도
+    # 반영 안 됨" 체감 문의가 있어 다른 크롤러들과 동일한 최대 빈도로
+    # 재단축). CLAUDE.md 원칙상 마스터 스케줄러 주기보다 촘촘하게 만들지
+    # 않는 것이 상한선이므로 15분이 이 데이터에서 가능한 최대 신선도.
+    # 무료 API 한도(일 20,000건) 대비 하루 호출량이 96회(15분 x 24시간)
+    # x (보통 1페이지) 수준이라 여유가 충분하고, GitHub Actions는 이
+    # 저장소가 public repo라 표준 러너 무제한이라 실행 빈도 증가도 문제
+    # 없음. ECOS 거시지표는 하루 내내 빈번히 바뀌는 데이터가 아니라
+    # 여전히 3시간 주기로 충분함.
+    "dart": timedelta(minutes=15),
     "ecos": timedelta(hours=3),
     "bizinfo": timedelta(hours=3),
     # 경제 캘린더(FOMC/금통위)는 몇 달 전에 이미 확정된 일정이라 자주
@@ -354,7 +358,7 @@ def _build_dart_ma_article(marker):
     패턴을 따르는 것으로, 여기서 파일을 따로 읽고 쓰면 run_scheduled()가
     마지막에 자기 사본을 저장하는 시점에 이 함수가 미리 반영해둔 변경이
     덮어써질 위험이 있다."""
-    # dart_filings.json 자체는 "dart" 크롤러 주기(1시간)로만 갱신되지만,
+    # dart_filings.json 자체는 "dart" 크롤러 주기(15분)로만 갱신되지만,
     # dart_ma_signals.json은 그 결과를 재분류만 하는 가벼운 로컬 연산이라
     # 여기서 한 번 더 최신화해서 쓴다(추가 네트워크 호출 없음).
     dart_ma_signals.build_ma_signals()

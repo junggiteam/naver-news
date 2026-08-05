@@ -134,12 +134,14 @@
   var DART_MA_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/dart_ma_signals.json";
   var DURATION_PER_ITEM_S = 2.2; // 항목 하나가 지나가는 데 걸리는 시간(초) - index-ticker-mobile.html과 동일 속도
 
-  // 캐시 버스터를 요청마다 달라지는 Date.now()(ms)가 아니라 1시간 단위로
-  // 반올림한 값으로 고정한다 - ma-ticker.html(PC)과 동일한 이유(데이터가
-  // DART 크롤러 주기(1시간)로만 갱신되므로, 그 이상 촘촘한 무효화는 CDN
-  // 캐시 히트만 방해한다). index-ticker-mobile.html은 15분 주기인
+  // 캐시 버스터를 요청마다 달라지는 Date.now()(ms)가 아니라 데이터 원본
+  // 갱신 주기 단위로 반올림한 값으로 고정한다 - ma-ticker.html(PC)과
+  // 동일한 이유/동일한 값으로 유지할 것(2026-08: DART 크롤러 주기를
+  // 15분으로 단축하면서 1시간 -> 15분으로 함께 조정. run_scheduled.py의
+  // CRAWLER_INTERVALS["dart"]를 바꾸면 이 값과 ma-ticker.html의 동일
+  // 상수도 반드시 같이 맞출 것). index-ticker-mobile.html은 15분 주기인
   // stock_news.json을 보므로 이 값과는 별개(그쪽은 Date.now() 그대로 둠).
-  var CACHE_BUCKET_MS = 1 * 60 * 60 * 1000;
+  var CACHE_BUCKET_MS = 15 * 60 * 1000;
   function cacheBuster() { return Math.floor(Date.now() / CACHE_BUCKET_MS); }
 
   // 카테고리 목록/뱃지 색상은 ma-ticker.html(PC)과 동일 - dart_ma_signals.json의
