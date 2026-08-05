@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-05 09:31:07",
+  "updated_at": "2026-08-05 10:01:16",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 4.75,
-    "kosdaq_change": 2.73,
-    "kospi_value": 6661.2,
-    "kosdaq_value": 802.01
+    "kospi_change": 3.94,
+    "kosdaq_change": 2.77,
+    "kospi_value": 6609.58,
+    "kosdaq_value": 802.33
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 증시가 인공지능 관련 실적 호조에 힘입어 급등하면서 국내 증시 투자 심리도 개선되어 코스피와 코스닥 지수가 최근 5일간 최고치를 기록했다. 반도체 관련주를 비롯한 대형주들이 강세를 보였고, 시장 급등으로 인해 코스피 시장에 매수 사이드카가 발동되기도 했다."
+      "text": "뉴욕증시가 AI 관련 실적 호조에 힘입어 상승 마감한 영향이 국내 증시에도 긍정적으로 작용하며 코스피와 코스닥 지수가 최근 5일간 데이터 기준 최고치를 기록했다. 특히 삼성전자와 SK하이닉스 등 반도체 대형주들이 AI 랠리에 힘입어 동반 강세를 보이며 지수 상승을 견인했다."
     }
   ],
   "daily_term": {
@@ -2491,48 +2491,42 @@
   },
   "top_gainers": [
     {
-      "name": "SHD",
-      "price": "8230.0",
-      "change_percent": "+20.50%",
-      "pct": 20.5
-    },
-    {
       "name": "대원전선",
       "price": "16140.0",
       "change_percent": "+17.04%",
       "pct": 17.04
     },
     {
+      "name": "한화솔루션",
+      "price": "31100.0",
+      "change_percent": "+16.04%",
+      "pct": 16.04
+    },
+    {
       "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "18695.0",
-      "change_percent": "+16.81%",
-      "pct": 16.81
+      "price": "18460.0",
+      "change_percent": "+15.34%",
+      "pct": 15.34
     },
     {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "10610.0",
-      "change_percent": "+15.08%",
-      "pct": 15.08
+      "name": "LG이노텍",
+      "price": "602000.0",
+      "change_percent": "+14.67%",
+      "pct": 14.67
     },
     {
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "9130.0",
-      "change_percent": "+15.06%",
-      "pct": 15.06
+      "name": "코리아써키트",
+      "price": "55200.0",
+      "change_percent": "+14.52%",
+      "pct": 14.52
     }
   ],
   "top_losers": [
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "5000.0",
-      "change_percent": "-16.94%",
-      "pct": 16.94
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7985.0",
-      "change_percent": "-14.37%",
-      "pct": 14.37
+      "price": "5070.0",
+      "change_percent": "-15.78%",
+      "pct": 15.78
     },
     {
       "name": "신한 블룸버그 레버리지 WTI원유선물 ETN B",
@@ -2547,99 +2541,105 @@
       "pct": 13.94
     },
     {
+      "name": "KB S&P 레버리지 WTI원유 선물 ETN B",
+      "price": "35215.0",
+      "change_percent": "-13.74%",
+      "pct": 13.74
+    },
+    {
       "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
-      "price": "34930.0",
-      "change_percent": "-13.59%",
-      "pct": 13.59
+      "price": "34895.0",
+      "change_percent": "-13.68%",
+      "pct": 13.68
     }
   ],
   "sector_performance": [
     {
       "name": "전자장비와기기",
-      "change_value": "+10.58%",
-      "pct": 10.58
+      "change_value": "+9.48%",
+      "pct": 9.48
     },
     {
       "name": "통신장비",
-      "change_value": "+9.33%",
-      "pct": 9.33
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+7.90%",
-      "pct": 7.9
+      "change_value": "+8.46%",
+      "pct": 8.46
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+6.40%",
-      "pct": 6.4
+      "change_value": "+7.39%",
+      "pct": 7.39
+    },
+    {
+      "name": "전기장비",
+      "change_value": "+7.37%",
+      "pct": 7.37
     },
     {
       "name": "항공사",
-      "change_value": "+5.98%",
-      "pct": 5.98
+      "change_value": "+5.06%",
+      "pct": 5.06
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자장비와기기",
-      "change_value": "+10.58%",
-      "pct": 10.58
+      "change_value": "+9.48%",
+      "pct": 9.48
     },
     {
       "name": "통신장비",
-      "change_value": "+9.33%",
-      "pct": 9.33
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+7.90%",
-      "pct": 7.9
+      "change_value": "+8.46%",
+      "pct": 8.46
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+6.40%",
-      "pct": 6.4
+      "change_value": "+7.39%",
+      "pct": 7.39
+    },
+    {
+      "name": "전기장비",
+      "change_value": "+7.37%",
+      "pct": 7.37
     },
     {
       "name": "항공사",
-      "change_value": "+5.98%",
-      "pct": 5.98
+      "change_value": "+5.06%",
+      "pct": 5.06
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+5.82%",
-      "pct": 5.82
+      "name": "무선통신서비스",
+      "change_value": "+5.02%",
+      "pct": 5.02
     },
     {
-      "name": "운송인프라",
-      "change_value": "+0.13%",
-      "pct": 0.13
+      "name": "게임엔터테인먼트",
+      "change_value": "-0.25%",
+      "pct": -0.25
     },
     {
-      "name": "가구",
-      "change_value": "+0.13%",
-      "pct": 0.13
-    },
-    {
-      "name": "광고",
-      "change_value": "+0.12%",
-      "pct": 0.12
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-0.02%",
-      "pct": -0.02
-    },
-    {
-      "name": "기타금융",
-      "change_value": "-0.30%",
-      "pct": -0.3
+      "name": "가정용기기와용품",
+      "change_value": "-0.29%",
+      "pct": -0.29
     },
     {
       "name": "담배",
       "change_value": "-0.40%",
       "pct": -0.4
+    },
+    {
+      "name": "백화점과일반상점",
+      "change_value": "-0.44%",
+      "pct": -0.44
+    },
+    {
+      "name": "기타금융",
+      "change_value": "-0.52%",
+      "pct": -0.52
+    },
+    {
+      "name": "화장품",
+      "change_value": "-0.78%",
+      "pct": -0.78
     }
   ],
   "article_counts": {
