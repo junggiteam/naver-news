@@ -1898,10 +1898,15 @@
     font-weight: 600;
   }
 
+  /* 요일 헤더 행이 그리드와 시각적으로 구분되지 않는다는 피드백(2026-08)
+     - 그레이톤 배경 바를 둘러서 날짜 그리드와 확실히 구분되게 한다. */
   .pw-cal-weekdays {
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
     margin-bottom: 6px;
+    padding: 7px 0;
+    border-radius: 8px;
+    background: #f2f3f5;
   }
   .pw-cal-weekdays span {
     text-align: center;
@@ -1932,7 +1937,6 @@
   .pw-cal-cell.pw-cal-outside { opacity: 0.35; }
   /* 오늘 셀 강조는 프라이머리 색 대신 검정으로(요청에 따라 확정) */
   .pw-cal-cell.pw-cal-today { border-color: #000; box-shadow: 0 0 0 1px #000 inset; }
-  .pw-cal-cell.pw-cal-holiday { background: rgba(233, 67, 83, 0.06); }
   .pw-cal-cell.pw-cal-clickable { cursor: pointer; transition: border-color 0.15s ease; }
   .pw-cal-cell.pw-cal-clickable:hover { border-color: var(--nw-primary); }
   /* :hover 의사클래스가 명시도상 .pw-cal-selected보다 높아서(3개 대 2개)
@@ -1945,11 +1949,14 @@
   .pw-cal-cell.pw-cal-selected { border-color: #000; background: rgba(0, 0, 0, 0.04); }
 
   /* 주말 칸은 은은한 파스텔 배경으로 주 단위 경계를 구분한다(요일별
-     톤 - 토요일은 옅은 블루, 일요일은 옅은 레드 계열로 아래 날짜 숫자
-     색상과 톤을 맞춤). 공휴일 배경(.pw-cal-holiday)이 더 우선하도록
-     이 규칙들을 먼저 선언하고 holiday 규칙이 이후에 오도록 유지할 것. */
+     톤 - 토요일은 옅은 블루, 일요일은 레드 계열로 아래 날짜 숫자 색상과
+     톤을 맞춤). 공휴일(.pw-cal-holiday)은 토요일이어도 일요일과 동일하게
+     레드로 취급해야 하므로, 이 규칙들 "뒤에" 선언해 명시도가 같을 때
+     holiday가 항상 이기게 한다 - 순서를 sat/sun보다 앞으로 옮기면 토요일
+     공휴일의 배경이 다시 파랗게 나오는 회귀가 생긴다(2026-08 발견 수정). */
   .pw-cal-cell.pw-cal-sat { background: #f4f7fc; }
-  .pw-cal-cell.pw-cal-sun { background: #fdf5f5; }
+  .pw-cal-cell.pw-cal-sun { background: rgba(233, 67, 83, 0.09); }
+  .pw-cal-cell.pw-cal-holiday { background: rgba(233, 67, 83, 0.09); }
 
   .pw-cal-cell-date {
     display: block;
@@ -4180,17 +4187,22 @@
     dateP.textContent = e.date;
     body.appendChild(dateP);
 
+    // 제목 끝의 괄호(예: "...주요사항보고서(자기주식처분결정)")를 별도
+    // 줄로 떼어 보여준다. 구분값을 title에서 그대로 재사용하는 구조라
+    // e.action을 다시 "구분: ..."으로 덧붙이면 같은 정보가 중복 표시돼
+    // 그 줄은 없앴다(요청에 따라, 2026-08). 괄호가 없는 보고서명(예:
+    // 경영권이동_최대주주변경류)은 줄바꿈 없이 그대로 한 줄로 표시.
     var nameP = document.createElement("p");
     nameP.className = "pw-cal-upcoming-name";
-    nameP.textContent = e.title;
-    body.appendChild(nameP);
-
-    if (e.action) {
-      var detailP = document.createElement("p");
-      detailP.className = "pw-cal-upcoming-detail";
-      detailP.textContent = "구분: " + e.action;
-      body.appendChild(detailP);
+    var titleMatch = (e.title || "").match(/^(.+?)\s*(\([^()]*\))\s*$/);
+    if (titleMatch) {
+      nameP.appendChild(document.createTextNode(titleMatch[1]));
+      nameP.appendChild(document.createElement("br"));
+      nameP.appendChild(document.createTextNode(titleMatch[2]));
+    } else {
+      nameP.textContent = e.title;
     }
+    body.appendChild(nameP);
 
     item.appendChild(body);
     return item;

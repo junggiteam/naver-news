@@ -172,13 +172,25 @@ MAJOR_PRESS = [
 ]
 
 
+# "오늘의 이슈" 대표 카드 선정 시 배제할 일반 부고성 기사 키워드. 대기업
+# 총수급 부고조차 아닌 일반 부고(예: 지역 언론사 임직원 모친상 등)가 대표
+# 이슈로 뽑히는 사고가 있어(2026-08) 아예 후보군에서 제외한다 - 뉴스랭킹
+# 탭 등 다른 목록에는 영향 없음(대표 카드 선정 함수에만 적용).
+OBITUARY_KEYWORDS = ["부고", "별세", "타계", "모친상", "부친상", "빈소", "발인", "장례식장"]
+
+
+def _is_obituary(title):
+    return any(kw in title for kw in OBITUARY_KEYWORDS)
+
+
 def _pick_major_or_first(items):
-    """메이저 언론사 기사를 우선순위대로 찾고, 없으면 그냥 첫 기사."""
+    """메이저 언론사 기사를 우선순위대로 찾고, 없으면 그냥 첫 기사(부고성 기사는 후보에서 제외)."""
+    candidates = [item for item in items if not _is_obituary(item.get("title", ""))]
     for press in MAJOR_PRESS:
-        for item in items:
+        for item in candidates:
             if item.get("press_name") == press:
                 return item
-    return items[0] if items else None
+    return candidates[0] if candidates else None
 
 
 def _build_hero_for_category(path):
