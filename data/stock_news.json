@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06 05:01:07",
+  "updated_at": "2026-08-06 05:30:59",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "54,465.53",
-      "change_percent": "▲0.70%",
+      "value": "54,349.12",
+      "change_percent": "▲0.49%",
       "direction": "up",
-      "as_of": "2026-08-06 05:00:57"
+      "as_of": "2026-08-06 05:30:00"
     },
     {
       "name": "나스닥",
-      "value": "26,426.94",
-      "change_percent": "▼0.59%",
+      "value": "26,363.44",
+      "change_percent": "▼0.83%",
       "direction": "down",
-      "as_of": "2026-08-06 05:00:57"
+      "as_of": "2026-08-06 05:30:00"
     },
     {
       "name": "나스닥100",
-      "value": "29,586.40",
-      "change_percent": "▼0.49%",
+      "value": "29,487.79",
+      "change_percent": "▼0.83%",
       "direction": "down",
-      "as_of": "2026-08-06 05:00:57"
+      "as_of": "2026-08-06 05:30:00"
     },
     {
       "name": "S&P500",
-      "value": "7,737.98",
-      "change_percent": "▲0.02%",
-      "direction": "up",
-      "as_of": "2026-08-06 05:00:57"
+      "value": "7,723.55",
+      "change_percent": "▼0.17%",
+      "direction": "down",
+      "as_of": "2026-08-06 05:30:00"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,423.60",
-      "change_percent": "▼0.52%",
+      "value": "1,423.30",
+      "change_percent": "▼0.54%",
       "direction": "down",
-      "as_of": "2026.08.05 21:06"
+      "as_of": "2026.08.05 21:07"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "902.58",
-      "change_percent": "▼0.50%",
+      "value": "901.90",
+      "change_percent": "▼0.57%",
       "direction": "down",
-      "as_of": "2026.08.05 21:06"
+      "as_of": "2026.08.05 21:07"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,644.40",
-      "change_percent": "▼0.35%",
+      "value": "1,643.94",
+      "change_percent": "▼0.38%",
       "direction": "down",
-      "as_of": "2026.08.05 21:06"
+      "as_of": "2026.08.05 21:07"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,901,000",
-      "change_percent": "▲0.69%",
+      "value": "92,033,000",
+      "change_percent": "▲0.83%",
       "direction": "up",
-      "as_of": "2026-08-06 05:01:04"
+      "as_of": "2026-08-06 05:30:42"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,717,000",
-      "change_percent": "▲2.14%",
+      "value": "2,720,000",
+      "change_percent": "▲2.26%",
       "direction": "up",
-      "as_of": "2026-08-06 05:01:06"
+      "as_of": "2026-08-06 05:30:58"
     }
   ],
   "news_categories": [
@@ -216,8 +216,32 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "뉴욕증시, 호르무즈 재개방 기대속 혼조 마감…나스닥 0.8%↓",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016236233&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
+          "upload_time": "2026-08-06 05:17",
+          "published_at": "2026-08-06T05:17:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "[속보]뉴욕증시 혼조 마감…다우 최고치 경신",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005799445&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
+          "upload_time": "2026-08-06 05:15",
+          "published_at": "2026-08-06T05:15:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
+          "title": "[속보]뉴욕증시 숨고르기…엔비디아 덕에 다우만 0.5%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006345445&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
+          "upload_time": "2026-08-06 05:13",
+          "published_at": "2026-08-06T05:13:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 4,
           "title": "이란 외무부 \"호르무즈 새 항로 합의\"…이란에 선박 통제권 넘기나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005799444&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
           "upload_time": "2026-08-06 04:29",
@@ -225,35 +249,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 5,
           "title": "스타 연구진이 떠난다? 구글 AI 수뇌부 전격 개편, 무슨 일",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006345430&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
           "upload_time": "2026-08-06 04:05",
           "published_at": "2026-08-06T04:05:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 3,
-          "title": "[속보]이란 대통령 \"현재 최고지도자와 소통 매우 어렵다\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005799443&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
-          "upload_time": "2026-08-06 03:59",
-          "published_at": "2026-08-06T03:59:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 4,
-          "title": "디즈니 영업이익 전년比 21% ↑…놀이공원·'토이스토리 5' 실적 견인",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005799442&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
-          "upload_time": "2026-08-06 03:47",
-          "published_at": "2026-08-06T03:47:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "‘하루만에 22% 폭락’ 끔찍했던 그날…“최악 폭락장 또 올 수도” 섬뜩 경고",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648980&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260806&page=1",
-          "upload_time": "2026-08-06 00:04",
-          "published_at": "2026-08-06T00:04:00+09:00"
         }
       ]
     },
@@ -351,8 +351,16 @@
       "category": "환율",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "중국 비판해도 돈 앞에선…아르헨, 위안화 스와프 5년 연장",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016236231&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260806&page=1",
+          "upload_time": "2026-08-06 05:09",
+          "published_at": "2026-08-06T05:09:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
           "title": "“엔저 못 막는다”…中, 美日 환율공조에 회의적인 배경은 [김혜란의 FX]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648957&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260806&page=1",
           "upload_time": "2026-08-05 20:28",
@@ -360,7 +368,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 3,
           "title": "박홍근 “내년 세입 500조 상회…미래대응기금으로 추경 대응”",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648861&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260806&page=1",
           "upload_time": "2026-08-05 17:11",
@@ -368,7 +376,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "환율, 美재무 개입 시사·외국인 순매수에 8.0원 내린 1,424.5원",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016235642&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260806&page=1",
           "upload_time": "2026-08-05 16:11",
@@ -376,19 +384,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "원·달러 환율, 8원 내린 1424.5원(오후 3시30분)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005799341&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260806&page=1",
           "upload_time": "2026-08-05 15:58",
           "published_at": "2026-08-05T15:58:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "3월 환율 상승폭 33% NDF 영향…야간 기여 4배 [Pick코노미]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004648609&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260806&page=1",
-          "upload_time": "2026-08-05 06:01",
-          "published_at": "2026-08-05T06:01:00+09:00"
         }
       ]
     }
@@ -397,7 +397,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "외국인의 대규모 매수세가 유입되면서 반도체 관련주를 중심으로 투자 심리가 회복되어 지수가 상승했다. 모건스탠리가 한국의 올해 성장률 전망치를 상향 조정한 점 또한 시장 전반에 긍정적인 영향을 미쳤다.",
+  "ai_commentary": "반도체 업종을 중심으로 투자 심리가 개선된 가운데 외국인 투자자의 대규모 매수세가 유입되면서 지수가 상승했다. 모건스탠리가 한국의 올해 경제성장률 전망치를 상향 조정한 점 또한 시장 전반에 긍정적인 영향을 미쳤다.",
   "top_gainers": [
     {
       "name": "광전자",
