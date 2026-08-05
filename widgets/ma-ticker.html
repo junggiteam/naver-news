@@ -44,8 +44,17 @@
   }
   #mt-strip * { box-sizing: border-box; }
 
+  /* 중요: 이 위젯은 Imweb에 고정 높이 iframe(desktop 260px)으로 삽입되고,
+     iframe 높이는 Imweb 쪽에서 수동으로 바꾸지 않는 것을 전제로 한다.
+     #mt-strip의 전체 렌더 높이가 260px를 넘으면 iframe 안에서 하단이
+     그냥 잘려 보인다(스크롤바 없음) - 2026-08에 .mt-row/뷰포트를 무심코
+     키웠다가(56px) 총높이 276px로 넘쳐서 실제로 잘리는 사고가 있었다.
+     이 블록 안의 padding/margin/height 값을 바꿀 때는 반드시 #mt-strip의
+     getBoundingClientRect().height를 260px 이하로 유지하는지 실측
+     확인할 것(현재 256px, 여유 4px) - ma-ticker-mobile.html도 동일하게
+     135px 제약이 있다(현재 128.5px). */
   .mt-header {
-    margin: -14px -18px 10px -18px;
+    margin: -14px -18px 6px -18px;
     padding: 12px 18px;
     background: #397fe7;
     border-radius: 10px 10px 0 0;
@@ -59,7 +68,7 @@
 
   /* 3줄만 보이는 창, 항목이 그보다 많을 때만 아래->위로 흐름 */
   .mt-marquee-viewport {
-    height: 168px; /* 56px x 3줄 (뱃지+2줄 텍스트라 한 줄 높이가 커짐) */
+    height: 156px; /* 52px x 3줄 (뱃지+2줄 텍스트라 한 줄 높이가 커짐) */
     overflow: hidden;
     position: relative;
   }
@@ -81,7 +90,7 @@
 
   /* 왼쪽 카테고리 뱃지 + 오른쪽 회사명/공시내용 2줄 */
   .mt-row {
-    height: 56px;
+    height: 52px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -141,8 +150,8 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-top: 10px;
-    padding-top: 9px;
+    margin-top: 8px;
+    padding-top: 7px;
     border-top: 1px solid #eee;
     font-size: 11px;
     color: #aaa;
