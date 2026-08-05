@@ -72,6 +72,13 @@
   .mth-track {
     display: inline-flex;
     align-items: center;
+  }
+  /* 항목이 2건 이상일 때만 롤링(ma-ticker.html(PC)의 .mt-scrolling과
+     동일 패턴, 2026-08) - 이 클래스가 없던 예전엔 애니메이션이 .mth-track
+     에 항상 걸려 있어서 1건일 때도 리스트가 계속 옆으로 흘러가는(사실상
+     같은 항목이 제자리에서 미세하게 왔다갔다하는 것처럼 보이는) 버그가
+     있었다. */
+  .mth-track.mth-scrolling {
     animation: mth-scroll-left linear infinite;
   }
 
@@ -272,11 +279,22 @@
       }
 
       track.innerHTML = "";
-      // 무한루프처럼 보이게 리스트를 두 번 이어붙임(index-ticker-mobile.html과 동일 기법)
-      items.concat(items).forEach(function (item) { track.appendChild(buildItem(item)); });
+      track.classList.remove("mth-scrolling");
+      track.style.animationDuration = "";
 
-      var totalSeconds = items.length * DURATION_PER_ITEM_S;
-      track.style.animationDuration = totalSeconds + "s";
+      // 항목이 2건 이상일 때만 롤링한다(ma-ticker.html(PC)의 VISIBLE_ROWS
+      // 조건부 처리와 동일 패턴) - 1건뿐이면 복제/애니메이션 없이 그대로
+      // 고정 표시. 예전엔 이 조건 없이 무조건 두 배로 이어붙이고
+      // 애니메이션을 걸어서, 1건일 때도 같은 항목이 옆으로 흐르는 것처럼
+      // 보이는 버그가 있었다.
+      if (items.length > 1) {
+        // 무한루프처럼 보이게 리스트를 두 번 이어붙임(index-ticker-mobile.html과 동일 기법)
+        items.concat(items).forEach(function (item) { track.appendChild(buildItem(item)); });
+        track.classList.add("mth-scrolling");
+        track.style.animationDuration = (items.length * DURATION_PER_ITEM_S) + "s";
+      } else {
+        items.forEach(function (item) { track.appendChild(buildItem(item)); });
+      }
 
       metaTextEl.textContent = metaText;
     })
