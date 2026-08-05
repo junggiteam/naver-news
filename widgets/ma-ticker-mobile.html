@@ -201,6 +201,35 @@
     return list;
   }
 
+  function dayHasData(dayData) {
+    return !!dayData && CATEGORIES.some(function (cat) { return (dayData[cat.key] || []).length > 0; });
+  }
+
+  // dart_ma_signals.json은 날짜별 무기한 아카이브({"YYYY-MM-DD": {...}})라
+  // 과거 데이터가 계속 남아있는데, 예전엔 오늘 날짜 키만 조회해서 오늘
+  // 아직 공시가 안 뜬 시간대엔 데이터가 있는데도 "오늘 발생한 공시가
+  // 없습니다"로 끝나버렸다(2026-08 발견, ma-ticker.html(PC)과 동일한
+  // 버그). 오늘 키가 없거나 5개 카테고리가 전부 빈 경우, 날짜 키를
+  // 내림차순 정렬해서 데이터가 있는 가장 최근 날짜를 찾아 대신 보여준다.
+  function pickMaDayData(maJson) {
+    var today = todayStr();
+    var todayData = maJson[today];
+    if (dayHasData(todayData)) {
+      return { date: today, data: todayData, isToday: true };
+    }
+    var dateKeys = Object.keys(maJson || {})
+      .filter(function (k) { return /^\d{4}-\d{2}-\d{2}$/.test(k); })
+      .sort()
+      .reverse();
+    for (var i = 0; i < dateKeys.length; i++) {
+      var dayData = maJson[dateKeys[i]];
+      if (dayHasData(dayData)) {
+        return { date: dateKeys[i], data: dayData, isToday: dateKeys[i] === today };
+      }
+    }
+    return { date: today, data: todayData || {}, isToday: true };
+  }
+
   function buildItem(item) {
     var a = document.createElement("a");
     a.className = "mth-item";
@@ -225,11 +254,14 @@
   fetch(DART_MA_URL + "?t=" + cacheBuster())
     .then(function (res) { return res.json(); })
     .then(function (maJson) {
-      var maToday = (maJson && maJson[todayStr()]) || {};
-      var items = buildTimeSortedList(maToday);
-      // dart_ma_signals.py가 오늘 날짜 키에 넣어주는 시:분:초 포함
-      // 타임스탬프(_updated_at)를 우선 쓰고, 없으면 날짜만 보여준다.
-      var metaText = (maToday._updated_at || todayStr()) + " 기준";
+      var picked = pickMaDayData(maJson || {});
+      var items = buildTimeSortedList(picked.data);
+      // dart_ma_signals.py가 날짜 키에 넣어주는 시:분:초 포함 타임스탬프
+      // (_updated_at)를 우선 쓰고, 없으면 날짜만 보여준다. 오늘 데이터가
+      // 아니면(주말/공휴일 등으로 며칠 전 것일 수도 있음) "오늘 것"으로
+      // 착각되지 않게 안내를 덧붙인다.
+      var metaText = (picked.data._updated_at || picked.date) + " 기준";
+      if (!picked.isToday) metaText += " · 최근 영업일";
 
       if (!items.length) {
         track.innerHTML = '<span class="mth-loading">오늘 발생한 공시가 없습니다.</span>';
