@@ -285,9 +285,6 @@
     </div>
 
     <h3 class="db-section-title" style="margin-top:28px;">주요 공시 (DART)</h3>
-    <p class="pw-cal-date-filter-banner" id="pw-dart-stale-banner" hidden>
-      <span id="pw-dart-stale-banner-text"></span>
-    </p>
     <div class="pw-dart-list pw-2col" id="pw-dart-list">
       <p class="ew-loading">불러오는 중입니다...</p>
     </div>
@@ -4423,16 +4420,7 @@
     return a;
   }
 
-  function renderDartFilings(filings, staleLabel) {
-    var banner = document.getElementById("pw-dart-stale-banner");
-    if (banner) {
-      if (staleLabel) {
-        document.getElementById("pw-dart-stale-banner-text").textContent = staleLabel;
-        banner.hidden = false;
-      } else {
-        banner.hidden = true;
-      }
-    }
+  function renderDartFilings(filings) {
     renderPwList("pw-dart-list", "pw-dart-more-btn", filings, buildDartItem, "오늘 등록된 주요 공시가 없습니다.");
   }
 
@@ -4483,7 +4471,7 @@
           pwCalRenderGrid();
           pwCalRenderUpcoming();
         });
-        renderDartFilings(data.dart_filings, data.dart_filing_label);
+        renderDartFilings(data.dart_filings);
         renderSupportPrograms("pw-support-list", "pw-support-more-btn", data.support_programs);
         renderSupportPrograms("pw-soso-list", "pw-soso-more-btn", data.soso_support_programs);
         loaded.policy = true;

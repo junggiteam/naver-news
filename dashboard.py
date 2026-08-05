@@ -236,20 +236,6 @@ def build_dashboard():
     today_str = datetime.now(KST).strftime("%Y-%m-%d")
     counts = _article_counts()
 
-    # scraper_dart.py는 오늘자 주요사항보고 공시가 하나도 없으면 파일을
-    # 덮어쓰지 않고 가장 최근 영업일 데이터를 그대로 남겨둔다(2026-08).
-    # filing_date가 오늘과 다르면 "며칠 전(주말/공휴일이 껴서 하루 이상
-    # 차이날 수도 있음) 데이터"라는 뜻이므로, 위젯이 그대로 보여줄 안내
-    # 라벨을 여기서 만들어 둔다 - "전일"로 고정 문구를 쓰면 연휴 다음날
-    # 아침처럼 실제로는 2~3일 전 데이터인 경우 부정확해지므로 "최근
-    # 영업일"이라는 항상-정확한 표현을 쓴다.
-    dart_filing_date = dart_data.get("filing_date") or ""
-    dart_filing_label = (
-        f"최근 영업일({dart_filing_date}) 공시"
-        if dart_filing_date and dart_filing_date != today_str
-        else None
-    )
-
     dashboard = {
         "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "market_mood": _market_mood(indices),
@@ -258,7 +244,6 @@ def build_dashboard():
         "daily_term": economy_data.get("daily_term"),
         "keyword_tags": keyword_data.get("tags") or [],
         "dart_filings": dart_data.get("filings") or [],
-        "dart_filing_label": dart_filing_label,
         "macro_indicators": macro_data.get("indicators") or [],
         "support_programs": support_data.get("programs") or [],
         "soso_support_programs": support_data.get("soso_programs") or [],
