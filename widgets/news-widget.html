@@ -219,7 +219,6 @@
           <span class="pw-cal-month-label" id="pw-cal-month-label"></span>
           <button class="pw-cal-nav-btn" id="pw-cal-next" type="button" aria-label="다음 달">›</button>
         </div>
-        <button class="pw-cal-today-btn" id="pw-cal-today" type="button">오늘</button>
       </div>
       <div class="pw-cal-filter-tabs">
         <button class="pw-cal-filter-btn active" data-filter="all" type="button">전체</button>
@@ -248,7 +247,7 @@
       <div class="pw-cal-grid" id="pw-cal-grid"></div>
 
       <div class="pw-cal-detail-header" id="pw-cal-detail-header">
-        <h4 class="pw-cal-upcoming-title" id="pw-cal-upcoming-title">세부 사항</h4>
+        <h4 class="pw-cal-upcoming-title" id="pw-cal-upcoming-title">이달의 주요 일정</h4>
         <div class="pw-cal-filter-tabs">
           <button class="pw-cal-filter-btn active" data-filter="all" type="button">전체</button>
           <button class="pw-cal-filter-btn" data-filter="tax" type="button">세무</button>
@@ -1426,6 +1425,7 @@
   .idx-badge-number {
     font-size: 6.5px;
     letter-spacing: -0.03em;
+    white-space: nowrap;
   }
   .idx-badge-number-ink {
     display: inline-block;
@@ -1795,21 +1795,6 @@
     font-weight: 800;
   }
 
-  .pw-cal-today-btn {
-    height: 32px;
-    padding: 0 14px;
-    border: 1px solid var(--nw-line);
-    border-radius: 999px;
-    background: var(--nw-surface);
-    color: var(--nw-text-sub);
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: border-color 0.18s ease, color 0.18s ease;
-  }
-  .pw-cal-today-btn:hover { border-color: var(--nw-primary); color: var(--nw-primary); }
-
   .pw-cal-filter-tabs {
     display: flex;
     gap: 8px;
@@ -1945,12 +1930,26 @@
     cursor: default;
   }
   .pw-cal-cell.pw-cal-outside { opacity: 0.35; }
-  .pw-cal-cell.pw-cal-today { border-color: var(--nw-primary); box-shadow: 0 0 0 1px var(--nw-primary) inset; }
+  /* 오늘 셀 강조는 프라이머리 색 대신 검정으로(요청에 따라 확정) */
+  .pw-cal-cell.pw-cal-today { border-color: #000; box-shadow: 0 0 0 1px #000 inset; }
   .pw-cal-cell.pw-cal-holiday { background: rgba(233, 67, 83, 0.06); }
   .pw-cal-cell.pw-cal-clickable { cursor: pointer; transition: border-color 0.15s ease; }
   .pw-cal-cell.pw-cal-clickable:hover { border-color: var(--nw-primary); }
-  /* "세부 사항"이 이 날짜로 좁혀진 상태 - 캘린더와 리스트의 연결을 눈에 보이게 */
-  .pw-cal-cell.pw-cal-selected { border-color: var(--nw-primary); background: var(--nw-primary-soft); }
+  /* :hover 의사클래스가 명시도상 .pw-cal-selected보다 높아서(3개 대 2개)
+     선택된 셀에 마우스를 올리면 검정 테두리가 프라이머리 파란색으로
+     되돌아가는 문제가 있었다 - 선택 상태가 hover보다 항상 우선하도록 명시. */
+  .pw-cal-cell.pw-cal-clickable.pw-cal-selected:hover { border-color: #000; }
+  /* "이달의 주요 일정"이 이 날짜로 좁혀진 상태 - 캘린더와 리스트의 연결을
+     눈에 보이게. 선택 강조도 검정 테두리 + 거의 투명한 연한 그레이 배경으로
+     통일(요청에 따라 프라이머리 파란 배경에서 변경) */
+  .pw-cal-cell.pw-cal-selected { border-color: #000; background: rgba(0, 0, 0, 0.04); }
+
+  /* 주말 칸은 은은한 파스텔 배경으로 주 단위 경계를 구분한다(요일별
+     톤 - 토요일은 옅은 블루, 일요일은 옅은 레드 계열로 아래 날짜 숫자
+     색상과 톤을 맞춤). 공휴일 배경(.pw-cal-holiday)이 더 우선하도록
+     이 규칙들을 먼저 선언하고 holiday 규칙이 이후에 오도록 유지할 것. */
+  .pw-cal-cell.pw-cal-sat { background: #f4f7fc; }
+  .pw-cal-cell.pw-cal-sun { background: #fdf5f5; }
 
   .pw-cal-cell-date {
     display: block;
@@ -1959,15 +1958,38 @@
     font-size: 14px;
     font-weight: 700;
   }
+  /* 요일/공휴일 색상 규칙 - 공휴일은 토요일이어도 일요일과 동일하게
+     레드로 취급하므로 이 규칙을 토요일 규칙보다 뒤에 둬서 우선하게 한다.
+     "밖의 달" 칸은 이 색상들보다 항상 무채색 우선(기존 동작 유지). */
+  .pw-cal-cell.pw-cal-sat .pw-cal-cell-date { color: #2563eb; }
+  .pw-cal-cell.pw-cal-sun .pw-cal-cell-date,
+  .pw-cal-cell.pw-cal-holiday .pw-cal-cell-date { color: var(--nw-up); }
   .pw-cal-cell.pw-cal-outside .pw-cal-cell-date { color: var(--nw-text-muted); }
 
-  /* 공휴일: 배경 박스 대신 날짜 셀 안에 빨간 텍스트로 이름만 작게 표시 */
+  /* 날짜 셀 우측 상단 - TODAY 표시 + 공휴일 이름을 위에서 아래로 쌓아
+     보여준다(둘 다 있는 날도 겹치지 않게). */
+  .pw-cal-cell-corner {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+    max-width: 58%;
+  }
+  .pw-cal-today-tag {
+    color: #000;
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
   .pw-cal-holiday-name {
-    display: block;
     overflow: hidden;
-    margin-bottom: 3px;
+    max-width: 100%;
     color: var(--nw-up);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -3983,10 +4005,13 @@
 
     cells.forEach(function (c) {
       var dateStr = pwCalFormatDate(c.y, c.m, c.d);
+      var isToday = dateStr === todayInfo.dateStr;
+      var dow = new Date(c.y, c.m - 1, c.d).getDay(); // 0=일요일, 6=토요일
       var cell = document.createElement("div");
       cell.className = "pw-cal-cell" +
         (c.outside ? " pw-cal-outside" : "") +
-        (dateStr === todayInfo.dateStr ? " pw-cal-today" : "");
+        (isToday ? " pw-cal-today" : "") +
+        (dow === 0 ? " pw-cal-sun" : dow === 6 ? " pw-cal-sat" : "");
 
       var dayEvents = pwCalEventsOnDate(dateStr);
       var holidayEvents = dayEvents.filter(function (e) { return e.type === "holiday"; });
@@ -4003,11 +4028,25 @@
       dateEl.textContent = String(c.d);
       cell.appendChild(dateEl);
 
-      if (holidayEvents.length) {
-        var holidayName = document.createElement("span");
-        holidayName.className = "pw-cal-holiday-name";
-        holidayName.textContent = holidayEvents.map(function (e) { return e.title; }).join(", ");
-        cell.appendChild(holidayName);
+      // 우측 상단 코너 - TODAY 표시와 공휴일 이름을 세로로 쌓아서 표시
+      // (둘 다 있는 날도 겹치지 않게, CLAUDE.md 레이아웃 원칙에 맞춰
+      // 팝업 없이 셀 안에서 바로 확인 가능하게 유지)
+      if (isToday || holidayEvents.length) {
+        var corner = document.createElement("div");
+        corner.className = "pw-cal-cell-corner";
+        if (isToday) {
+          var todayTag = document.createElement("span");
+          todayTag.className = "pw-cal-today-tag";
+          todayTag.textContent = "TODAY";
+          corner.appendChild(todayTag);
+        }
+        if (holidayEvents.length) {
+          var holidayName = document.createElement("span");
+          holidayName.className = "pw-cal-holiday-name";
+          holidayName.textContent = holidayEvents.map(function (e) { return e.title; }).join(", ");
+          corner.appendChild(holidayName);
+        }
+        cell.appendChild(corner);
       }
 
       // 항목이 적은 날: 태그로 바로 인라인 표시, 팝업 없음. 셀에 다 안
@@ -4176,7 +4215,7 @@
         if (pwCalSelectedDate) return e.date === pwCalSelectedDate;
         return e.date >= range.start && e.date <= range.end;
       })
-      .sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+      .sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
 
     renderPwList("pw-cal-upcoming-list", "pw-cal-upcoming-more-btn", items, buildMaItem,
       pwCalSelectedDate ? "이 날짜에 해당하는 공시가 없습니다." : "이 달에 발생한 M&A 공시가 없습니다.");
@@ -4209,7 +4248,7 @@
         if (pwCalSelectedDate) return e.date === pwCalSelectedDate;
         return e.date >= range.start && e.date <= range.end;
       })
-      .sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+      .sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
 
     renderPwList("pw-cal-upcoming-list", "pw-cal-upcoming-more-btn", items,
       function (e) { return e.type === "ma" ? buildMaItem(e) : buildDeadlineItem(e, todayStr); },
@@ -4228,7 +4267,7 @@
   }
 
   function pwCalRenderUpcoming() {
-    document.getElementById("pw-cal-upcoming-title").textContent = "세부 사항";
+    document.getElementById("pw-cal-upcoming-title").textContent = "이달의 주요 일정";
     pwCalUpdateDateFilterBanner();
     if (pwCalFilter === "ma") {
       pwCalRenderRecentFilings();
@@ -4262,15 +4301,6 @@
         pwCalRenderGrid();
         pwCalRenderUpcoming();
       });
-      document.getElementById("pw-cal-today").addEventListener("click", function () {
-        var t = pwCalToday();
-        pwCalViewYear = t.y;
-        pwCalViewMonth = t.m;
-        pwCalSelectedDate = null;
-        pwCalRenderGrid();
-        pwCalRenderUpcoming();
-      });
-
       // 상단 캘린더 필터 탭 + "세부 사항" 헤더의 미러링된 탭을 class만으로
       // 함께 관리한다(id로 두 그룹을 따로 관리하지 않음) - 한쪽을 눌러도
       // data-filter 값이 같은 모든 버튼이 함께 active 처리돼 항상 동기 상태.

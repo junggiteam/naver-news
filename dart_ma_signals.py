@@ -86,22 +86,22 @@ MA_CATEGORIES = ["합병_분할", "지분인수", "영업양수도", "주식교�
 # 이 카테고리를 매핑이 없으니 자연스럽게 건너뛴다(에러 아님).
 MA_CATEGORY_ENDPOINTS = {
     "합병_분할": {
-        "분할합병": "cmpDvmgDecsn",
-        "합병": "cmpMgDecsn",
-        "분할": "cmpDvDecsn",
+        "회사분할합병결정": "cmpDvmgDecsn",
+        "회사합병결정": "cmpMgDecsn",
+        "회사분할결정": "cmpDvDecsn",
     },
     "지분인수": {
-        "양수": "otcprStkInvscrInhDecsn",
-        "양도": "otcprStkInvscrTrfDecsn",
+        "타법인주식및출자증권양수결정": "otcprStkInvscrInhDecsn",
+        "타법인주식및출자증권양도결정": "otcprStkInvscrTrfDecsn",
     },
     "영업양수도": {
-        "양수": "bsnInhDecsn",
-        "양도": "bsnTrfDecsn",
+        "영업양수결정": "bsnInhDecsn",
+        "영업양도결정": "bsnTrfDecsn",
     },
     "주식교환_이전": "stkExtrDecsn",
     "자기주식": {
-        "취득": "tsstkAqDecsn",
-        "처분": "tsstkDpDecsn",
+        "자기주식취득결정": "tsstkAqDecsn",
+        "자기주식처분결정": "tsstkDpDecsn",
     },
 }
 
@@ -115,21 +115,21 @@ def classify_report(report_nm):
     # 반드시 먼저 검사해야 한다 - 순서를 바꾸면 분할합병 공시가 그냥
     # "합병"으로 잘못 분류돼 엉뚱한 엔드포인트(cmpMgDecsn)를 부르게 된다.
     if "분할합병결정" in name:
-        matches.append(("합병_분할", {"action": "분할합병"}))
+        matches.append(("합병_분할", {"action": "회사분할합병결정"}))
     elif "합병결정" in name:
-        matches.append(("합병_분할", {"action": "합병"}))
+        matches.append(("합병_분할", {"action": "회사합병결정"}))
     elif "분할결정" in name:
-        matches.append(("합병_분할", {"action": "분할"}))
+        matches.append(("합병_분할", {"action": "회사분할결정"}))
 
     if "타법인주식및출자증권양수결정" in name or "타법인주식및출자증권취득결정" in name:
-        matches.append(("지분인수", {"action": "양수"}))
+        matches.append(("지분인수", {"action": "타법인주식및출자증권양수결정"}))
     elif "타법인주식및출자증권양도결정" in name:
-        matches.append(("지분인수", {"action": "양도"}))
+        matches.append(("지분인수", {"action": "타법인주식및출자증권양도결정"}))
 
     if "영업양수결정" in name:
-        matches.append(("영업양수도", {"action": "양수"}))
+        matches.append(("영업양수도", {"action": "영업양수결정"}))
     elif "영업양도결정" in name:
-        matches.append(("영업양수도", {"action": "양도"}))
+        matches.append(("영업양수도", {"action": "영업양도결정"}))
 
     if ("주식의포괄적교환" in name or "포괄적교환" in name or "이전결정" in name) and \
        ("교환" in name or "포괄적" in name):
@@ -143,9 +143,9 @@ def classify_report(report_nm):
         matches.append(("경영권이동_최대주주변경", {}))
 
     if "자기주식취득결정" in name:
-        matches.append(("자기주식", {"action": "취득"}))
+        matches.append(("자기주식", {"action": "자기주식취득결정"}))
     elif "자기주식처분결정" in name:
-        matches.append(("자기주식", {"action": "처분"}))
+        matches.append(("자기주식", {"action": "자기주식처분결정"}))
 
     return matches
 
