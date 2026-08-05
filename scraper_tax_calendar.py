@@ -32,6 +32,8 @@ build_fallback_tax_events()가 채운다 - 화면이 절대 비지 않는다.
 
 import os
 import json
+import time
+import random
 import calendar as pycalendar
 from datetime import date, datetime, timedelta, timezone
 import requests
@@ -43,10 +45,40 @@ HOLIDAY_API_URL = "https://apis.data.go.kr/B090041/openapi/service/SpcdeInfoServ
 
 SUPPORTED_YEAR_SPAN = 1  # 오늘 기준 전/후 1년(=holiday API 호출 최소화)
 
+# scraper_dart.py의 fetch_with_retry()와 동일한 재시도 정책. GitHub
+# Actions 러너에서 apis.data.go.kr 연결이 타임아웃되는 사례가 실제 로그로
+# 확인됐는데(2026-08), 매번 100% 재현되는 영구 차단인지 간헐적인지 코드
+# 레벨에서는 확정할 수 없으므로, 일단 다른 API 크롤러들과 동일한 재시도
+# 여유를 주고 실제 운영에서 재현되는지 지켜본다.
+HOLIDAY_MAX_RETRIES = 3
+HOLIDAY_RETRY_WAIT_RANGE = (15, 20)  # 재시도 사이 대기 시간(초)
+
 
 # ---------------------------------------------------------------------------
 # 1) 공휴일 (한국천문연구원 특일정보 API, 매번 실시간 조회)
 # ---------------------------------------------------------------------------
+
+def _fetch_holiday_page(params, label):
+    """scraper_dart.py의 fetch_with_retry()와 동일한 재시도 로직 -
+    타임아웃/5xx 등 비정상 응답 시 최대 HOLIDAY_MAX_RETRIES회까지
+    재시도하고, 모두 실패하면 None을 반환."""
+    for attempt in range(1, HOLIDAY_MAX_RETRIES + 1):
+        try:
+            response = requests.get(HOLIDAY_API_URL, params=params, timeout=15)
+            if response.status_code == 200:
+                return response.json()
+            print(f"[{label}] 응답이 비정상입니다 (상태 코드 {response.status_code}) - {attempt}/{HOLIDAY_MAX_RETRIES}회 시도")
+        except requests.exceptions.RequestException as e:
+            print(f"[{label}] 요청 중 오류가 발생했습니다: {e} - {attempt}/{HOLIDAY_MAX_RETRIES}회 시도")
+
+        if attempt < HOLIDAY_MAX_RETRIES:
+            wait_seconds = random.uniform(*HOLIDAY_RETRY_WAIT_RANGE)
+            print(f"[{label}] {wait_seconds:.1f}초 대기 후 재시도합니다...")
+            time.sleep(wait_seconds)
+
+    print(f"[{label}] {HOLIDAY_MAX_RETRIES}회 재시도 후 실패")
+    return None
+
 
 def fetch_holidays_for_month(year, month):
     """해당 연/월의 관공서 공휴일(대체공휴일·임시공휴일 포함)을
@@ -60,12 +92,8 @@ def fetch_holidays_for_month(year, month):
         "numOfRows": "100",
         "_type": "json",
     }
-    try:
-        response = requests.get(HOLIDAY_API_URL, params=params, timeout=15)
-        response.raise_for_status()
-        data = response.json()
-    except Exception as e:
-        print(f"[tax_calendar] 특일정보 API 호출 실패({year}-{month:02d}): {e}")
+    data = _fetch_holiday_page(params, f"tax_calendar 특일정보 API ({year}-{month:02d})")
+    if data is None:
         return {}
 
     try:
