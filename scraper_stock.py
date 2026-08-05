@@ -402,6 +402,21 @@ def crawl_stock_data():
         debug_notes.append(f"원/유로 환율(marketindexCd=FX_EURKRW) -> 예외: {e}")
 
     try:
+        usd_jpy = crawl_detail_price(
+            "https://finance.naver.com/marketindex/worldExchangeDetail.naver?marketindexCd=FX_USDJPY",
+            "USD/JPY",
+            debug_notes
+        )
+        if usd_jpy:
+            usd_jpy.pop("_soup", None)
+            indices.append(usd_jpy)
+        else:
+            print("USD/JPY 데이터를 찾지 못했습니다.")
+    except Exception as e:
+        print(f"USD/JPY 수집 실패: {e}")
+        debug_notes.append(f"USD/JPY(marketindexCd=FX_USDJPY) -> 예외: {e}")
+
+    try:
         eur_usd = crawl_detail_price(
             "https://finance.naver.com/marketindex/worldExchangeDetail.naver?marketindexCd=FX_EURUSD",
             "EUR/USD",
