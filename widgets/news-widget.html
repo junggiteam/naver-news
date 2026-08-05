@@ -2060,7 +2060,7 @@
 
   .pw-cal-upcoming-list {
     display: grid;
-    gap: 10px;
+    gap: 14px;
     margin: 0 0 8px;
   }
 
@@ -4194,7 +4194,7 @@
     // 경영권이동_최대주주변경류)은 줄바꿈 없이 그대로 한 줄로 표시.
     var nameP = document.createElement("p");
     nameP.className = "pw-cal-upcoming-name";
-    var titleMatch = (e.title || "").match(/^(.+?)\s*(\([^()]*\))\s*$/);
+    var titleMatch = (e.title || "").match(/^(.+?)\s*\(([^()]*)\)\s*$/);
     if (titleMatch) {
       nameP.appendChild(document.createTextNode(titleMatch[1]));
       nameP.appendChild(document.createElement("br"));
