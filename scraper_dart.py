@@ -87,6 +87,23 @@ def crawl_dart_filings():
             filings_raw.extend(page_list)
             print(f"[dart] {page_no}페이지 수신={len(page_list)}건 (누적 {len(filings_raw)}건)")
 
+    if not filings_raw:
+        # 오늘(bgn_de=end_de=today) 주요사항보고 공시가 아직 하나도 없는
+        # 정상 상황(평일 이른 시간대, 주말, 공휴일 등) - 파일을 빈 배열로
+        # 덮어써서 위젯에 "오늘 등록된 주요 공시가 없습니다"만 보이게
+        # 하는 대신, 가장 최근에 실제로 공시가 있었던 영업일 데이터
+        # (기존 파일)를 그대로 남겨둔다(요청에 따라, 2026-08). 재조회로
+        # 과거 날짜를 추가 탐색하지 않는 이유: (1) API 호출이 늘어나고
+        # (2) 넓은 날짜 범위로 조회하면 여러 날짜의 공시가 섞여 들어와
+        # "가장 최근 영업일 하루치"만 걸러내는 추가 로직이 필요해진다.
+        # 오늘 첫 공시가 올라오면 다음 실행에서 자연스럽게 아래 정상
+        # 경로로 오늘자 데이터로 교체된다 - 여기서는 파일에 손대지 않고
+        # 종료. 주말/공휴일이 며칠 이어져도(요청사항 4) 매번 이 분기에서
+        # 파일을 유지만 하므로 별도 처리 없이 자동으로 대응된다 - 위젯은
+        # filing_date(아래) 값으로 "얼마나 오래된 데이터인지"를 판단한다.
+        print("오늘 등록된 주요사항보고 공시가 아직 없습니다 - 기존 파일(최근 영업일 데이터) 유지")
+        return
+
     filings = []
     for item in filings_raw:
         rcept_no = item.get("rcept_no", "")
@@ -100,7 +117,15 @@ def crawl_dart_filings():
         })
 
     now_kst = datetime.now(kst_timezone).strftime("%Y-%m-%d %H:%M:%S")
-    output = {"updated_at": now_kst, "filings": filings}
+    # filing_date: 이 filings가 실제로 해당하는 날짜(=조회한 today, 항상
+    # 오늘 것만 저장하므로 updated_at의 "저장 시각"과는 별개 개념). 파일이
+    # 며칠째 안 갱신됐을 때 위젯이 "이 데이터가 며칠 전 것인지"를 오늘
+    # 날짜와 비교해 판단하는 기준값으로 쓰인다.
+    output = {
+        "updated_at": now_kst,
+        "filing_date": f"{today[0:4]}-{today[4:6]}-{today[6:8]}",
+        "filings": filings,
+    }
 
     os.makedirs("data", exist_ok=True)
     file_path = os.path.join("data", "dart_filings.json")
