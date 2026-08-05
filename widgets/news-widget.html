@@ -2488,6 +2488,17 @@
 
     .pw-cal-cell { min-height: 54px; padding: 4px 3px; }
     .pw-cal-cell-date { font-size: 12.5px; }
+    /* 모바일 좁은 셀에서는 TODAY/공휴일명(.pw-cal-cell-corner)을 데스크톱처럼
+       우측 상단에 절대 위치로 겹쳐 놓으면 날짜 숫자와 바짝 붙어 보인다
+       ("5TODAY", "15광복절" 식으로). absolute를 풀어 날짜 숫자 다음 줄로
+       자연스럽게 흐르게(normal flow) 바꾼다 - JS는 이미 dateEl 다음에
+       corner를 append하므로 순서 변경 없이 CSS만으로 세로 분리된다. */
+    .pw-cal-cell-corner {
+      position: static;
+      align-items: flex-start;
+      max-width: 100%;
+      margin-top: 2px;
+    }
     .pw-cal-holiday-name { font-size: 9.5px; }
     .pw-cal-tag { font-size: 9.5px; padding: 1.5px 5px; }
     .pw-cal-more-trigger { font-size: 9.5px; }
