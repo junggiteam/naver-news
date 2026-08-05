@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05 16:01:15",
+  "updated_at": "2026-08-05 16:31:16",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스를 비롯한 반도체 대형주들이 강세를 보이며 지수 상승을 견인했다. 코스피와 코스닥 지수는 모두 최근 5일간 데이터 기준으로 최고치를 기록하며 동반 상승했다."
+      "text": "삼성전자와 SK하이닉스 등 대형 반도체 종목이 강세를 보이며 코스피와 코스닥 지수 모두 최근 5일간 최고치를 기록했다. 반등 국면에서 기관 투자자의 매수세가 유입된 점이 지수 상승의 주요 배경으로 작용했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,49 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "에스티오",
+      "corp_code": "00612188",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260805",
+      "rcept_no": "20260805000410",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000410",
+      "ai_explanation": "회사가 신탁기관을 통해 자사주를 매입하기로 결정했다는 공시입니다."
+    },
+    {
+      "corp_name": "쿠콘",
+      "corp_code": "01311055",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260805",
+      "rcept_no": "20260805000373",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000373",
+      "ai_explanation": "회사가 신탁기관을 통해 자사주를 매입하기로 결정했다는 공시입니다."
+    },
+    {
+      "corp_name": "대양금속",
+      "corp_code": "00111111",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260805",
+      "rcept_no": "20260805000397",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000397",
+      "ai_explanation": "이전에 공시한 전환사채 발행 계획의 세부 내용을 수정한다는 공시입니다."
+    },
+    {
+      "corp_name": "대양금속",
+      "corp_code": "00111111",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260805",
+      "rcept_no": "20260805000401",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000401",
+      "ai_explanation": "이전에 공시한 전환사채 발행 계획의 세부 내용을 수정한다는 공시입니다."
+    },
+    {
       "corp_name": "빛과전자",
       "corp_code": "00367482",
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20260805",
       "rcept_no": "20260805000361",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000361",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 결정입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들인다는 공시입니다."
     },
     {
       "corp_name": "아이큐어",
@@ -100,7 +136,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000304",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000304",
-      "ai_explanation": "기존에 공시했던 유상증자(주식 발행을 통한 자금 조달) 관련 내용을 수정한다는 뜻입니다."
+      "ai_explanation": "이전에 공시한 유상증자 발행 계획의 세부 내용을 수정한다는 공시입니다."
     },
     {
       "corp_name": "유티아이",
@@ -109,7 +145,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000307",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000307",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하겠다는 공식적인 결정입니다."
+      "ai_explanation": "회사가 신규 자금 조달을 위해 주주 등으로부터 자본을 확충한다는 공시입니다."
     },
     {
       "corp_name": "주성코퍼레이션",
@@ -118,7 +154,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000297",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000297",
-      "ai_explanation": "회사의 영업 부문을 다른 회사에 넘기기로 한 내용을 정정하는 공시입니다."
+      "ai_explanation": "이전에 공시한 타사의 영업부문 인수 계획 내용을 수정한다는 공시입니다."
     },
     {
       "corp_name": "주성코퍼레이션",
@@ -127,7 +163,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000276",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000276",
-      "ai_explanation": "기존에 공시했던 유상증자(자금 조달) 관련 내용을 수정한다는 뜻입니다."
+      "ai_explanation": "이전에 공시한 유상증자 발행 계획의 세부 내용을 수정한다는 공시입니다."
     },
     {
       "corp_name": "APS이노베이션",
@@ -136,7 +172,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000257",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000257",
-      "ai_explanation": "다른 회사의 주식을 매입하여 경영권 참여나 사업 확장을 하겠다는 결정입니다."
+      "ai_explanation": "다른 회사의 주식을 취득하여 경영권 참여나 사업 확장을 한다는 공시입니다."
     },
     {
       "corp_name": "주성코퍼레이션",
@@ -145,7 +181,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000262",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000262",
-      "ai_explanation": "기존에 공시했던 전환사채 발행(빚을 주식으로 바꿀 수 있는 채권) 관련 내용을 수정하는 공시입니다."
+      "ai_explanation": "이전에 공시한 전환사채 발행 계획의 세부 내용을 수정한다는 공시입니다."
     },
     {
       "corp_name": "현대홈쇼핑",
@@ -154,7 +190,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000215",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000215",
-      "ai_explanation": "회사를 쪼개어 별도의 법인으로 나누기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사의 사업 부문을 분리하여 별도의 법인으로 나누기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "현대홈쇼핑",
@@ -163,7 +199,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000212",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000212",
-      "ai_explanation": "회사를 분할하기로 한 구체적인 계획과 내용을 알리는 보고서입니다."
+      "ai_explanation": "회사의 사업 부문을 분리하여 별도의 법인으로 나누기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "부산양곡터미널",
@@ -172,7 +208,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000097",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000097",
-      "ai_explanation": "회사가 업무용 부동산이나 설비 등 대규모 유형자산을 사기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사가 업무용 부동산이나 설비 등 대규모 자산을 매입하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "아이스크림에듀",
@@ -181,7 +217,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260805000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000001",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 다시 사들이기로 했다는 결정입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들인다는 공시입니다."
     },
     {
       "corp_name": "진원생명과학",
@@ -190,7 +226,7 @@
       "rcept_dt": "20260805",
       "rcept_no": "20260804000549",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000549",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하겠다는 공식적인 결정입니다."
+      "ai_explanation": "회사가 신규 자금 조달을 위해 주주 등으로부터 자본을 확충한다는 공시입니다."
     }
   ],
   "macro_indicators": [
