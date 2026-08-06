@@ -62,6 +62,7 @@ data/dart_ma_signals.json을 {"YYYY-MM-DD": {카테고리: [...]}} 형태의
 """
 
 import os
+import re
 import json
 from datetime import datetime, timezone, timedelta
 
@@ -171,6 +172,34 @@ def _is_date_key(key):
         return False
 
 
+# DART가 같은 법인행위(분할/합병/자기주식 등)를 짧은이름("회사분할결정")과
+# "주요사항보고서(회사분할결정)" 두 개 접수번호로 따로 반환하는 경우가
+# 있다(2026-08, 현대홈쇼핑 사례로 발견). 둘 다 있을 때만 진짜 중복이고,
+# 어느 한쪽만 단독으로 있는 건(과거 데이터 검증 결과 670건) 절대 지우면
+# 안 된다 - 그래서 "쌍이 있을 때만" 제외하는 조건부 dedup으로 짠다.
+def _dedupe_juyo_when_paired(items):
+    """같은 (corp_name, 정규화된 report_nm)에 짧은이름과
+    '주요사항보고서(...)' 버전이 둘 다 있을 때만 주요사항보고서 쪽을 제외.
+    단독으로만 존재하는 건(어느 쪽이든) 그대로 둔다."""
+    def norm(name):
+        return re.sub(r"^주요사항보고서\(|\)$", "", name or "").strip()
+
+    groups = {}
+    for it in items:
+        key = (it.get("corp_name"), norm(it.get("report_nm")))
+        groups.setdefault(key, []).append(it)
+
+    result = []
+    for group in groups.values():
+        has_plain = any(not (i.get("report_nm") or "").startswith("주요사항보고서") for i in group)
+        has_juyo = any((i.get("report_nm") or "").startswith("주요사항보고서") for i in group)
+        if has_plain and has_juyo:
+            result.extend(i for i in group if not (i.get("report_nm") or "").startswith("주요사항보고서"))
+        else:
+            result.extend(group)
+    return result
+
+
 def build_ma_signals():
     filings_data = _load_json("data/dart_filings.json")
     filings = filings_data.get("filings") or []
@@ -190,6 +219,9 @@ def build_ma_signals():
             }
             entry.update(extra)
             today_signals[category].append(entry)
+
+    for cat in MA_CATEGORIES:
+        today_signals[cat] = _dedupe_juyo_when_paired(today_signals[cat])
 
     now_kst = datetime.now(KST)
     today_str = now_kst.strftime("%Y-%m-%d")
