@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-06 13:31:11",
+  "updated_at": "2026-08-06 14:01:14",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -4.33,
-    "kosdaq_change": 0.4,
-    "kospi_value": 6312.44,
-    "kosdaq_value": 802.81
+    "kospi_change": -4.14,
+    "kosdaq_change": 1.43,
+    "kospi_value": 6325.25,
+    "kosdaq_value": 811.03
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "코스피는 반도체 관련 종목의 약세와 매도 사이드카 발동이 겹치며 4.33% 하락했다. 반면 코스닥은 개인 투자자의 순매수세가 유입되면서 최근 6일간 데이터 기준으로 최고치인 0.40% 상승을 기록했다."
+      "text": "코스피는 반도체 관련 종목들의 낙폭이 확대되면서 장중 매도 사이드카가 발동하는 등 4.14% 하락 마감했다. 반면 코스닥은 개인 투자자의 매수세가 유입되면서 1.43% 상승했으며, 이는 최근 6일간 데이터 기준으로 최고치에 해당한다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "티엘비",
+      "corp_code": "00920379",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260806",
+      "rcept_no": "20260806000214",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000214",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 신탁을 통해 자사주를 매입하기로 결정함."
+    },
+    {
+      "corp_name": "유티아이",
+      "corp_code": "00961774",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260806",
+      "rcept_no": "20260806000192",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000192",
+      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 주식을 새로 발행하여 자본금을 늘리는 계획을 수정함."
+    },
+    {
       "corp_name": "바이오솔루션",
       "corp_code": "00560982",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260806",
       "rcept_no": "20260805000524",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000524",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건이나 내용을 수정하여 다시 공시함."
+      "ai_explanation": "회사가 자금 조달을 위해 발행하는 전환사채(주식 전환 권리가 있는 채권) 관련 내용을 수정함."
     }
   ],
   "macro_indicators": [
@@ -2949,142 +2967,142 @@
     },
     {
       "name": "SK디앤디",
-      "price": "5680.0",
-      "change_percent": "+24.15%",
-      "pct": 24.15
+      "price": "5740.0",
+      "change_percent": "+25.46%",
+      "pct": 25.46
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9910.0",
-      "change_percent": "+19.11%",
-      "pct": 19.11
+      "price": "9945.0",
+      "change_percent": "+19.53%",
+      "pct": 19.53
     },
     {
       "name": "고려아연",
-      "price": "1277000.0",
-      "change_percent": "+16.62%",
-      "pct": 16.62
+      "price": "1271000.0",
+      "change_percent": "+16.07%",
+      "pct": 16.07
     }
   ],
   "top_losers": [
     {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "7120.0",
-      "change_percent": "-19.46%",
-      "pct": 19.46
-    },
-    {
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "7270.0",
-      "change_percent": "-18.95%",
-      "pct": 18.95
-    },
-    {
       "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "7000.0",
-      "change_percent": "-18.93%",
-      "pct": 18.93
+      "price": "6905.0",
+      "change_percent": "-20.03%",
+      "pct": 20.03
     },
     {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "7025.0",
-      "change_percent": "-18.88%",
-      "pct": 18.88
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "8300.0",
+      "change_percent": "-19.85%",
+      "pct": 19.85
+    },
+    {
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "price": "7085.0",
+      "change_percent": "-19.85%",
+      "pct": 19.85
     },
     {
       "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "8350.0",
-      "change_percent": "-18.73%",
-      "pct": 18.73
+      "price": "8240.0",
+      "change_percent": "-19.81%",
+      "pct": 19.81
+    },
+    {
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "7110.0",
+      "change_percent": "-19.57%",
+      "pct": 19.57
     }
   ],
   "sector_performance": [
     {
       "name": "비철금속",
-      "change_value": "+13.53%",
-      "pct": 13.53
-    },
-    {
-      "name": "화장품",
-      "change_value": "+4.52%",
-      "pct": 4.52
+      "change_value": "+13.24%",
+      "pct": 13.24
     },
     {
       "name": "생물공학",
-      "change_value": "+3.53%",
-      "pct": 3.53
+      "change_value": "+6.33%",
+      "pct": 6.33
     },
     {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "+2.88%",
-      "pct": 2.88
+      "name": "화장품",
+      "change_value": "+6.21%",
+      "pct": 6.21
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+4.75%",
+      "pct": 4.75
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+2.86%",
-      "pct": 2.86
+      "change_value": "+4.38%",
+      "pct": 4.38
     }
   ],
   "sector_heatmap": [
     {
       "name": "비철금속",
-      "change_value": "+13.53%",
-      "pct": 13.53
-    },
-    {
-      "name": "화장품",
-      "change_value": "+4.52%",
-      "pct": 4.52
+      "change_value": "+13.24%",
+      "pct": 13.24
     },
     {
       "name": "생물공학",
-      "change_value": "+3.53%",
-      "pct": 3.53
+      "change_value": "+6.33%",
+      "pct": 6.33
     },
     {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "+2.88%",
-      "pct": 2.88
+      "name": "화장품",
+      "change_value": "+6.21%",
+      "pct": 6.21
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+4.75%",
+      "pct": 4.75
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+2.86%",
-      "pct": 2.86
+      "change_value": "+4.38%",
+      "pct": 4.38
     },
     {
-      "name": "광고",
-      "change_value": "+2.72%",
-      "pct": 2.72
+      "name": "건강관리업체및서비스",
+      "change_value": "+4.06%",
+      "pct": 4.06
     },
     {
       "name": "복합기업",
-      "change_value": "-3.14%",
-      "pct": -3.14
+      "change_value": "-2.91%",
+      "pct": -2.91
     },
     {
       "name": "전기장비",
-      "change_value": "-3.31%",
-      "pct": -3.31
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-3.85%",
-      "pct": -3.85
+      "change_value": "-3.22%",
+      "pct": -3.22
     },
     {
       "name": "건강관리기술",
-      "change_value": "-4.86%",
-      "pct": -4.86
+      "change_value": "-3.62%",
+      "pct": -3.62
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "-3.84%",
+      "pct": -3.84
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-6.33%",
-      "pct": -6.33
+      "change_value": "-5.64%",
+      "pct": -5.64
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-7.11%",
-      "pct": -7.11
+      "change_value": "-7.50%",
+      "pct": -7.5
     }
   ],
   "article_counts": {
