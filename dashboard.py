@@ -183,9 +183,14 @@ def _is_obituary(title):
     return any(kw in title for kw in OBITUARY_KEYWORDS)
 
 
-def _pick_major_or_first(items):
-    """메이저 언론사 기사를 우선순위대로 찾고, 없으면 그냥 첫 기사(부고성 기사는 후보에서 제외)."""
-    candidates = [item for item in items if not _is_obituary(item.get("title", ""))]
+def _pick_major_or_first(items, exclude_links=None):
+    """메이저 언론사 기사를 우선순위대로 찾고, 없으면 그냥 첫 기사(부고성
+    기사와 exclude_links에 있는 링크는 후보에서 제외)."""
+    exclude_links = exclude_links or set()
+    candidates = [
+        item for item in items
+        if not _is_obituary(item.get("title", "")) and item.get("link") not in exclude_links
+    ]
     for press in MAJOR_PRESS:
         for item in candidates:
             if item.get("press_name") == press:
@@ -193,10 +198,10 @@ def _pick_major_or_first(items):
     return candidates[0] if candidates else None
 
 
-def _build_hero_for_category(path):
+def _build_hero_for_category(path, exclude_links=None):
     data = _load_json(path)
     news_list = data.get("news") or []
-    top = _pick_major_or_first(news_list)
+    top = _pick_major_or_first(news_list, exclude_links)
     if not top:
         return None
     return {
@@ -208,11 +213,29 @@ def _build_hero_for_category(path):
 
 
 def _build_heroes():
-    """종합/경제/부동산 각각의 대표(메이저 언론사 우선) 이슈 카드."""
+    """종합/경제/부동산 각각의 대표(메이저 언론사 우선) 이슈 카드.
+
+    같은 기사가 두 소스 파일(예: ranking_news.json과 economy_news.json)에
+    동시에 들어있고 둘 다에서 대표로 뽑히면 카드에 똑같은 기사가 두 번
+    뜨는 문제가 있었다(2026-08, 간헐적 재현). 종합->경제->부동산 순서로
+    뽑으면서 앞서 뽑힌 기사의 link를 누적해 다음 카테고리에서는 후보에서
+    제외한다."""
+    exclude_links = set()
+
+    hero_종합 = _build_hero_for_category("data/ranking_news.json", exclude_links)
+    if hero_종합:
+        exclude_links.add(hero_종합["link"])
+
+    hero_경제 = _build_hero_for_category("data/economy_news.json", exclude_links)
+    if hero_경제:
+        exclude_links.add(hero_경제["link"])
+
+    hero_부동산 = _build_hero_for_category("data/realestate_news.json", exclude_links)
+
     return {
-        "종합": _build_hero_for_category("data/ranking_news.json"),
-        "경제": _build_hero_for_category("data/economy_news.json"),
-        "부동산": _build_hero_for_category("data/realestate_news.json"),
+        "종합": hero_종합,
+        "경제": hero_경제,
+        "부동산": hero_부동산,
     }
 
 
