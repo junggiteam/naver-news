@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06 19:00:58",
+  "updated_at": "2026-08-06 19:30:55",
   "indices": [
     {
       "name": "코스피",
@@ -52,10 +52,10 @@
     },
     {
       "name": "국내금(원/돈)",
-      "value": "733,981.08",
-      "change_percent": "▲0.73%",
+      "value": "732,478.91",
+      "change_percent": "▲0.52%",
       "direction": "up",
-      "as_of": "2026.08.06 18:54"
+      "as_of": "2026.08.06 19:29"
     },
     {
       "name": "휘발유(원/리터)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,424.70",
-      "change_percent": "▲0.08%",
+      "value": "1,423.80",
+      "change_percent": "▲0.02%",
       "direction": "up",
-      "as_of": "2026.08.06 18:55"
+      "as_of": "2026.08.06 19:26"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "902.64",
-      "change_percent": "▲0.04%",
-      "direction": "up",
-      "as_of": "2026.08.06 18:59"
+      "value": "901.82",
+      "change_percent": "▼0.06%",
+      "direction": "down",
+      "as_of": "2026.08.06 19:26"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,644.24",
-      "change_percent": "▼0.02%",
+      "value": "1,643.07",
+      "change_percent": "▼0.09%",
       "direction": "down",
-      "as_of": "2026.08.06 18:59"
+      "as_of": "2026.08.06 19:26"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,809,000",
-      "change_percent": "▲0.09%",
-      "direction": "up",
-      "as_of": "2026-08-06 19:00:48"
+      "value": "91,700,000",
+      "change_percent": "▼0.03%",
+      "direction": "down",
+      "as_of": "2026-08-06 19:30:37"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,705,000",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-08-06 19:00:55"
+      "value": "2,703,000",
+      "change_percent": "▼0.07%",
+      "direction": "down",
+      "as_of": "2026-08-06 19:30:48"
     }
   ],
   "news_categories": [
@@ -126,8 +126,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "한달만에 거래액 14조 → 7500억…삼전닉스 레버리지 싸늘히 식었다",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005717769&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
+          "upload_time": "2026-08-06 19:17",
+          "published_at": "2026-08-06T19:17:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "포스코퓨처엠, LFP 시장 뚫었다…양극재 19만톤 장기공급",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004649343&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
+          "upload_time": "2026-08-06 19:01",
+          "published_at": "2026-08-06T19:01:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 3,
           "title": "반도체주 투매에…코스피 4.58% 급락",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000893145&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
           "upload_time": "2026-08-06 18:27",
@@ -135,7 +151,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 4,
           "title": "한투증권, 상반기 영업익 2.2조…반년 만에 지난해 실적 육박",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000893140&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
           "upload_time": "2026-08-06 18:18",
@@ -143,27 +159,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 5,
           "title": "맥빠진 밸류업…상장사 85% 주가하락",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005717731&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
           "upload_time": "2026-08-06 18:15",
           "published_at": "2026-08-06T18:15:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 4,
-          "title": "흔들린 현대차그룹주…시총순위·ETF도 후진",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004649320&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
-          "upload_time": "2026-08-06 18:14",
-          "published_at": "2026-08-06T18:14:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 5,
-          "title": "삼닉 레버리지 쏠림완화 속 … 증시 투자열기까지 식었다",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005717722&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260806&page=1",
-          "upload_time": "2026-08-06 18:12",
-          "published_at": "2026-08-06T18:12:00+09:00"
         }
       ]
     },
@@ -171,8 +171,32 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "파이낸셜뉴스",
+          "press_name": "동행미디어 시대",
           "rank": 1,
+          "title": "판매량 7% 늘 때 이익 46% 뛰었다…KT&G 해외담배의 힘",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001154606&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
+          "upload_time": "2026-08-06 19:05",
+          "published_at": "2026-08-06T19:05:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
+          "title": "쿠팡, 과징금에 탈팡 여파로 주가 40% 밀려…반전 카드는 [종목+]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005318246&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
+          "upload_time": "2026-08-06 19:01",
+          "published_at": "2026-08-06T19:01:00+09:00"
+        },
+        {
+          "press_name": "동행미디어 시대",
+          "rank": 3,
+          "title": "포스코퓨처엠, LFP 양극재 19만톤 장기 공급 합의",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001154605&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
+          "upload_time": "2026-08-06 19:00",
+          "published_at": "2026-08-06T19:00:00+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 4,
           "title": "RIA 깨고 서학개미들 유턴.. 출시 넉달만에 순유출 전환",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558338&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
           "upload_time": "2026-08-06 18:25",
@@ -180,33 +204,9 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 2,
+          "rank": 5,
           "title": "한투證 상반기 영업익 2조 돌파",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558321&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
-          "upload_time": "2026-08-06 18:19",
-          "published_at": "2026-08-06T18:19:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 3,
-          "title": "11주 거래에 SK하닉 하한가… NXT 프리마켓 또 가격왜곡",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558320&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
-          "upload_time": "2026-08-06 18:19",
-          "published_at": "2026-08-06T18:19:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 4,
-          "title": "반도체로 돈 번 삼전닉스 주주환원 늘린다",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558319&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
-          "upload_time": "2026-08-06 18:19",
-          "published_at": "2026-08-06T18:19:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "신한운용 TDF 수탁고 2조 돌파… 올 6000억 유입",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558318&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260806&page=1",
           "upload_time": "2026-08-06 18:19",
           "published_at": "2026-08-06T18:19:00+09:00"
         }
@@ -397,7 +397,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "반도체 관련 종목에 대한 매도세가 집중되면서 코스피 지수는 최근 6일간 데이터 기준으로 최저치를 기록하며 4.58% 하락했다. 반면 코스닥 지수는 같은 기간 데이터 기준으로 최고치를 나타내며 0.26% 상승 마감했다. 밸류업 프로그램에 대한 기대감 약화와 투자 심리 위축이 시장 전반에 영향을 미쳤다.",
+  "ai_commentary": "삼성전자와 SK하이닉스 등 대형 반도체 종목에 대한 투자 심리가 위축되면서 코스피 지수는 하락세를 보이며 최근 6일간 코스피200 기준 최저치를 기록했다. 반면 이차전지 소재 기업인 포스코퓨처엠의 대규모 공급 계약 소식 등이 반영된 코스닥 시장은 상승하며 최근 6일간 최고치를 나타냈다.",
   "top_gainers": [
     {
       "name": "유니켐",
