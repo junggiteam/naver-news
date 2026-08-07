@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-07 14:31:28",
+  "updated_at": "2026-08-07 15:01:13",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.58,
+    "kospi_change": -0.86,
     "kosdaq_change": -1.1,
-    "kospi_value": 6259.8,
-    "kosdaq_value": 792.85
+    "kospi_value": 6242.0,
+    "kosdaq_value": 792.82
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "이렘",
+      "corp_code": "00116426",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260807",
+      "rcept_no": "20260807000388",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000388",
+      "ai_explanation": "회사가 채권자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하기로 결정함."
+    },
+    {
       "corp_name": "상지건설",
       "corp_code": "00232007",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260807",
       "rcept_no": "20260807000339",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000339",
-      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정함."
+      "ai_explanation": "기존에 공시한 유상증자(자금 조달을 위한 신주 발행) 관련 기재 내용을 수정함."
     },
     {
       "corp_name": "아이스크림미디어",
@@ -96,7 +105,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000317",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000317",
-      "ai_explanation": "주가 안정 등을 목적으로 신탁 계약을 통해 자사주를 취득함."
+      "ai_explanation": "자사주 매입을 위해 금융기관과 신탁 계약을 체결하여 간접적으로 주식을 취득하기로 함."
     },
     {
       "corp_name": "상지건설",
@@ -105,7 +114,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000306",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000306",
-      "ai_explanation": "기존에 공시한 유상증자 결정 관련 첨부 서류를 정정함."
+      "ai_explanation": "기존에 공시한 유상증자 보고서에 첨부된 문서를 정정함."
     },
     {
       "corp_name": "뉴키즈온",
@@ -114,7 +123,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000274",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000274",
-      "ai_explanation": "주가 안정 등을 목적으로 신탁 계약을 통해 자사주를 취득함."
+      "ai_explanation": "자사주 매입을 위해 금융기관과 신탁 계약을 체결하여 간접적으로 주식을 취득하기로 함."
     },
     {
       "corp_name": "현대지에프홀딩스",
@@ -123,7 +132,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000241",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000241",
-      "ai_explanation": "회사가 직접 자사주를 매입하기로 결정함."
+      "ai_explanation": "회사가 직접 자사의 주식을 시장에서 매입하기로 결정함."
     },
     {
       "corp_name": "행복모아",
@@ -132,7 +141,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000231",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000231",
-      "ai_explanation": "자본금을 늘리기 위해 새로 주식을 발행하기로 결정함."
+      "ai_explanation": "회사가 자본금을 늘리기 위해 주주 등을 대상으로 신주를 발행하여 자금을 조달함."
     },
     {
       "corp_name": "애드포러스",
@@ -141,7 +150,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000220",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000220",
-      "ai_explanation": "주가 안정 등을 목적으로 신탁 계약을 통해 자사주를 취득함."
+      "ai_explanation": "자사주 매입을 위해 금융기관과 신탁 계약을 체결하여 간접적으로 주식을 취득하기로 함."
     },
     {
       "corp_name": "충남내포1피에프브이",
@@ -150,7 +159,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000197",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000197",
-      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮춤."
+      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 줄이거나 액면가를 낮추는 결정을 함."
     },
     {
       "corp_name": "여수에코에너지",
@@ -159,7 +168,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000159",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000159",
-      "ai_explanation": "건물, 기계 등 대규모 자산 매입을 결정함."
+      "ai_explanation": "사업 운영에 필요한 토지, 건물, 기계장치 등 비유동자산을 매입하기로 결정함."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -168,7 +177,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000005",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000005",
-      "ai_explanation": "발행했던 전환사채를 만기 전에 회사 자금으로 되사들임."
+      "ai_explanation": "만기 전에 회사가 발행했던 전환사채를 다시 사들이기로 결정함."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -177,7 +186,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000004",
-      "ai_explanation": "자본금을 늘리기 위해 새로 주식을 발행하기로 결정함."
+      "ai_explanation": "회사가 자본금을 늘리기 위해 주주 등을 대상으로 신주를 발행하여 자금을 조달함."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -186,7 +195,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000003",
-      "ai_explanation": "과거 공시한 전환사채 발행 조건 등의 내용을 수정함."
+      "ai_explanation": "기존에 공시한 전환사채 발행 관련 기재 내용을 수정함."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -195,7 +204,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000001",
-      "ai_explanation": "과거 공시한 전환사채 발행 조건 등의 내용을 수정함."
+      "ai_explanation": "기존에 공시한 전환사채 발행 관련 기재 내용을 다시 수정함."
     },
     {
       "corp_name": "벡트",
@@ -204,7 +213,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260806000547",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000547",
-      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정함."
+      "ai_explanation": "기존에 공시한 유상증자 관련 기재 내용을 수정함."
     },
     {
       "corp_name": "큐로홀딩스",
@@ -213,7 +222,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260806000551",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000551",
-      "ai_explanation": "자본금을 늘리기 위해 새로 주식을 발행하기로 결정함."
+      "ai_explanation": "회사가 자본금을 늘리기 위해 주주 등을 대상으로 신주를 발행하여 자금을 조달함."
     }
   ],
   "macro_indicators": [
@@ -2620,149 +2629,149 @@
       "pct": 29.91
     },
     {
+      "name": "혜인",
+      "price": "5910.0",
+      "change_percent": "+29.89%",
+      "pct": 29.89
+    },
+    {
       "name": "유니켐",
       "price": "5910.0",
       "change_percent": "+29.89%",
       "pct": 29.89
     },
     {
-      "name": "혜인",
-      "price": "5840.0",
-      "change_percent": "+28.35%",
-      "pct": 28.35
+      "name": "BGF리테일",
+      "price": "152900.0",
+      "change_percent": "+14.53%",
+      "pct": 14.53
     },
     {
       "name": "프리티",
-      "price": "1036.0",
-      "change_percent": "+18.94%",
-      "pct": 18.94
-    },
-    {
-      "name": "광전자",
-      "price": "7950.0",
-      "change_percent": "+17.08%",
-      "pct": 17.08
+      "price": "995.0",
+      "change_percent": "+14.24%",
+      "pct": 14.24
     }
   ],
   "top_losers": [
     {
       "name": "롯데쇼핑",
-      "price": "99900.0",
-      "change_percent": "-12.75%",
-      "pct": 12.75
+      "price": "99300.0",
+      "change_percent": "-13.28%",
+      "pct": 13.28
     },
     {
       "name": "SK디앤디",
-      "price": "5240.0",
-      "change_percent": "-11.78%",
-      "pct": 11.78
+      "price": "5230.0",
+      "change_percent": "-11.95%",
+      "pct": 11.95
     },
     {
-      "name": "고려아연",
-      "price": "1099000.0",
-      "change_percent": "-10.94%",
-      "pct": 10.94
+      "name": "SOL SK하이닉스단일종목레버리지",
+      "price": "6105.0",
+      "change_percent": "-11.65%",
+      "pct": 11.65
     },
     {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "6300.0",
-      "change_percent": "-10.76%",
-      "pct": 10.76
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "price": "6235.0",
+      "change_percent": "-11.37%",
+      "pct": 11.37
     },
     {
       "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "6430.0",
-      "change_percent": "-10.51%",
-      "pct": 10.51
+      "price": "6370.0",
+      "change_percent": "-11.34%",
+      "pct": 11.34
     }
   ],
   "sector_performance": [
     {
       "name": "전자제품",
-      "change_value": "+4.39%",
-      "pct": 4.39
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+4.20%",
-      "pct": 4.2
+      "change_value": "+5.11%",
+      "pct": 5.11
     },
     {
       "name": "전기제품",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "change_value": "+4.64%",
+      "pct": 4.64
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.27%",
-      "pct": 3.27
+      "change_value": "+4.11%",
+      "pct": 4.11
     },
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+2.88%",
-      "pct": 2.88
+      "name": "담배",
+      "change_value": "+3.34%",
+      "pct": 3.34
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+3.34%",
+      "pct": 3.34
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자제품",
-      "change_value": "+4.39%",
-      "pct": 4.39
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+4.20%",
-      "pct": 4.2
+      "change_value": "+5.11%",
+      "pct": 5.11
     },
     {
       "name": "전기제품",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "change_value": "+4.64%",
+      "pct": 4.64
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.27%",
-      "pct": 3.27
+      "change_value": "+4.11%",
+      "pct": 4.11
+    },
+    {
+      "name": "담배",
+      "change_value": "+3.34%",
+      "pct": 3.34
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+3.34%",
+      "pct": 3.34
     },
     {
       "name": "게임엔터테인먼트",
-      "change_value": "+2.88%",
-      "pct": 2.88
-    },
-    {
-      "name": "화학",
-      "change_value": "+2.48%",
-      "pct": 2.48
-    },
-    {
-      "name": "증권",
-      "change_value": "-2.55%",
-      "pct": -2.55
+      "change_value": "+3.24%",
+      "pct": 3.24
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-2.98%",
-      "pct": -2.98
+      "change_value": "-2.53%",
+      "pct": -2.53
+    },
+    {
+      "name": "증권",
+      "change_value": "-2.83%",
+      "pct": -2.83
     },
     {
       "name": "양방향미디어와서비스",
-      "change_value": "-3.36%",
-      "pct": -3.36
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-3.66%",
-      "pct": -3.66
+      "change_value": "-3.46%",
+      "pct": -3.46
     },
     {
       "name": "항공사",
-      "change_value": "-3.98%",
-      "pct": -3.98
+      "change_value": "-3.68%",
+      "pct": -3.68
+    },
+    {
+      "name": "생명보험",
+      "change_value": "-3.96%",
+      "pct": -3.96
     },
     {
       "name": "비철금속",
-      "change_value": "-7.71%",
-      "pct": -7.71
+      "change_value": "-7.50%",
+      "pct": -7.5
     }
   ],
   "article_counts": {
