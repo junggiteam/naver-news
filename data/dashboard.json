@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-07 08:31:51",
+  "updated_at": "2026-08-07 09:01:34",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6296.38,
-    "kosdaq_value": 801.67
+    "kospi_change": 0.89,
+    "kosdaq_change": 0.6,
+    "kospi_value": 6352.61,
+    "kosdaq_value": 806.47
   },
   "heroes": {
     "종합": {
@@ -87,7 +87,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000005",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000005",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 소각하거나 보유하는 결정입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 소각하거나 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000004",
-      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 신주를 발행하여 자본을 확충하는 결정입니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 기존 주주나 제3자를 대상으로 신주를 발행하겠다는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000003",
-      "ai_explanation": "과거 공시한 전환사채 발행 내용 중 일부 정보를 수정하거나 보완하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 계획에서 금액, 대상자, 일정 등 주요 내용을 수정한 것입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -114,7 +114,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260807000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000001",
-      "ai_explanation": "과거 공시한 전환사채 발행 내용 중 일부 정보를 수정하거나 보완하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 계획에서 금액, 대상자, 일정 등 주요 내용을 수정한 것입니다."
     },
     {
       "corp_name": "핑거",
@@ -123,7 +123,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260806000555",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000555",
-      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 추진하는 결정입니다."
+      "ai_explanation": "사업 확장이나 투자 목적으로 다른 회사의 지분을 취득하거나 출자하겠다는 결정입니다."
     },
     {
       "corp_name": "벡트",
@@ -132,7 +132,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260806000547",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000547",
-      "ai_explanation": "과거 공시한 유상증자 내용 중 일부 정보를 수정하거나 보완하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 계획에서 발행 가액이나 일정 등 주요 내용을 수정한 것입니다."
     },
     {
       "corp_name": "큐로홀딩스",
@@ -141,7 +141,7 @@
       "rcept_dt": "20260807",
       "rcept_no": "20260806000551",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000551",
-      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 신주를 발행하여 자본을 확충하는 결정입니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 기존 주주나 제3자를 대상으로 신주를 발행하겠다는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2995,95 +2995,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "SK이터닉스",
+      "price": "57900.0",
+      "change_percent": "+5.27%",
+      "pct": 5.27
+    },
+    {
+      "name": "SOL 전고체배터리&실리콘음극재",
+      "price": "13815.0",
+      "change_percent": "+4.50%",
+      "pct": 4.5
+    },
+    {
+      "name": "코스모신소재",
+      "price": "37500.0",
+      "change_percent": "+4.46%",
+      "pct": 4.46
+    },
+    {
+      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
+      "price": "9535.0",
+      "change_percent": "+4.15%",
+      "pct": 4.15
+    },
+    {
+      "name": "RISE 배터리 리사이클링",
+      "price": "10085.0",
+      "change_percent": "+3.81%",
+      "pct": 3.81
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "삼성 블룸버그 인버스2X WTI원유선물 ETN B",
+      "price": "3150.0",
+      "change_percent": "-7.08%",
+      "pct": 7.08
+    },
+    {
+      "name": "진흥기업우B",
+      "price": "1324.0",
+      "change_percent": "-2.72%",
+      "pct": 2.72
+    },
+    {
+      "name": "SHD",
+      "price": "6770.0",
+      "change_percent": "-2.31%",
+      "pct": 2.31
+    },
+    {
+      "name": "한투 인버스2X코스닥150선물 ETN",
+      "price": "1971.0",
+      "change_percent": "-2.18%",
+      "pct": 2.18
+    },
+    {
+      "name": "SOL 미국양자컴퓨팅TOP10",
+      "price": "25825.0",
+      "change_percent": "-1.88%",
+      "pct": 1.88
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "에너지장비및서비스",
+      "change_value": "+5.20%",
+      "pct": 5.2
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+4.62%",
+      "pct": 4.62
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "철강",
+      "change_value": "+1.76%",
+      "pct": 1.76
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전기제품",
+      "change_value": "+1.61%",
+      "pct": 1.61
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+1.54%",
+      "pct": 1.54
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "에너지장비및서비스",
+      "change_value": "+5.20%",
+      "pct": 5.2
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+4.62%",
+      "pct": 4.62
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "철강",
+      "change_value": "+1.76%",
+      "pct": 1.76
     },
     {
       "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+1.61%",
+      "pct": 1.61
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+1.54%",
+      "pct": 1.54
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+1.22%",
+      "pct": 1.22
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-1.16%",
+      "pct": -1.16
+    },
+    {
+      "name": "다각화된통신서비스",
+      "change_value": "-1.29%",
+      "pct": -1.29
+    },
+    {
+      "name": "손해보험",
+      "change_value": "-1.55%",
+      "pct": -1.55
+    },
+    {
+      "name": "생명보험",
+      "change_value": "-2.75%",
+      "pct": -2.75
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "-2.95%",
+      "pct": -2.95
+    },
+    {
+      "name": "비철금속",
+      "change_value": "-2.96%",
+      "pct": -2.96
     }
   ],
   "article_counts": {
