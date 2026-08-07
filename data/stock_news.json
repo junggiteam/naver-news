@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-08-07 17:00:56",
+  "updated_at": "2026-08-07 17:30:54",
   "indices": [
     {
       "name": "코스피",
       "value": "6,258.77",
       "change_percent": "▼0.60%",
       "direction": "down",
-      "as_of": "2026-08-07 17:00:00"
+      "as_of": "2026-08-07 17:30:00"
     },
     {
       "name": "코스닥",
       "value": "798.81",
       "change_percent": "▼0.36%",
       "direction": "down",
-      "as_of": "2026-08-07 17:00:00"
+      "as_of": "2026-08-07 17:30:00"
     },
     {
       "name": "코스피200",
       "value": "974.73",
       "change_percent": "▼0.83%",
       "direction": "down",
-      "as_of": "2026-08-07 17:00:00"
+      "as_of": "2026-08-07 17:30:00"
     },
     {
       "name": "다우존스",
@@ -52,10 +52,10 @@
     },
     {
       "name": "국내금(원/돈)",
-      "value": "733,760.13",
-      "change_percent": "▲0.62%",
+      "value": "733,698.48",
+      "change_percent": "▲0.61%",
       "direction": "up",
-      "as_of": "2026.08.07 16:58"
+      "as_of": "2026.08.07 17:29"
     },
     {
       "name": "휘발유(원/리터)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,418.70",
-      "change_percent": "▼0.41%",
+      "value": "1,417.40",
+      "change_percent": "▼0.50%",
       "direction": "down",
-      "as_of": "2026.08.07 16:58"
+      "as_of": "2026.08.07 17:28"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "895.36",
-      "change_percent": "▼0.41%",
+      "value": "894.57",
+      "change_percent": "▼0.49%",
       "direction": "down",
-      "as_of": "2026.08.07 16:58"
+      "as_of": "2026.08.07 17:28"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,634.70",
-      "change_percent": "▼0.39%",
+      "value": "1,632.84",
+      "change_percent": "▼0.51%",
       "direction": "down",
-      "as_of": "2026.08.07 16:58"
+      "as_of": "2026.08.07 17:28"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,919,000",
-      "change_percent": "▼0.36%",
+      "value": "90,998,000",
+      "change_percent": "▼0.27%",
       "direction": "down",
-      "as_of": "2026-08-07 17:00:48"
+      "as_of": "2026-08-07 17:30:45"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,689,000",
-      "change_percent": "▼0.52%",
+      "value": "2,692,000",
+      "change_percent": "▼0.41%",
       "direction": "down",
-      "as_of": "2026-08-07 17:00:49"
+      "as_of": "2026-08-07 17:30:47"
     }
   ],
   "news_categories": [
@@ -126,8 +126,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "워런 버핏 \"美증시 도박판…교회에 카지노 붙은 꼴\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005318512&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260807&page=1",
+          "upload_time": "2026-08-07 16:57",
+          "published_at": "2026-08-07T16:57:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "드론이 드론 잡는다…니어스랩, 코스닥행 과제는 적자 탈출",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006346950&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260807&page=1",
           "upload_time": "2026-08-07 16:33",
@@ -135,7 +143,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 2,
+          "rank": 3,
           "title": "코스피 소폭 하락…SK 하이닉스 5% 가까이 급락",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001261579&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260807&page=1",
           "upload_time": "2026-08-07 16:28",
@@ -143,7 +151,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "코스피 이틀째 내려 6250선…SK하닉 5% 가까이 급락 [fn마감시황]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558704&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260807&page=1",
           "upload_time": "2026-08-07 16:26",
@@ -151,17 +159,9 @@
         },
         {
           "press_name": "뉴스1",
-          "rank": 4,
+          "rank": 5,
           "title": "환율 1410원대…유가·금리 압박 이긴 수출업체 '고점 매도'(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0009102963&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260807&page=1",
-          "upload_time": "2026-08-07 16:21",
-          "published_at": "2026-08-07T16:21:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "씨젠, 2분기 영업익 216억…비호흡기 제품 성장에 586% 급증",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004649612&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260807&page=1",
           "upload_time": "2026-08-07 16:21",
           "published_at": "2026-08-07T16:21:00+09:00"
         }
@@ -171,8 +171,16 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "동행미디어 시대",
           "rank": 1,
+          "title": "진에어, 2분기 영업손실 731억원…고유가로 적자 확대",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001154711&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260807&page=1",
+          "upload_time": "2026-08-07 17:09",
+          "published_at": "2026-08-07T17:09:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
           "title": "\"단일종목 레버리지 규제 '풍선효과'…반도체·해외 상장 ETF로\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005318509&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260807&page=1",
           "upload_time": "2026-08-07 16:48",
@@ -180,7 +188,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "변동성 장세에 MMF로 뭉칫돈…우리운용, 순자산 30조 돌파 ‘업계 1위’",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718078&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260807&page=1",
           "upload_time": "2026-08-07 16:43",
@@ -188,7 +196,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 3,
+          "rank": 4,
           "title": "美 태양광 원료 '관세 장벽'에 반색…관련주 급등",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001261584&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260807&page=1",
           "upload_time": "2026-08-07 16:37",
@@ -196,17 +204,9 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "\"11주 거래로 하한가?\" 넥스트레이드, 결국 프리마켓 상·하한가 주문 막는다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558709&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260807&page=1",
-          "upload_time": "2026-08-07 16:32",
-          "published_at": "2026-08-07T16:32:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "8월도 '팔자' 외국인, 이것 순매수 했는데…\"신사업 본격화 기대\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558707&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260807&page=1",
           "upload_time": "2026-08-07 16:32",
           "published_at": "2026-08-07T16:32:00+09:00"
         }
@@ -351,8 +351,16 @@
       "category": "환율",
       "items": [
         {
-          "press_name": "연합뉴스",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "1410원대로 내려간 환율…달러 유입 영향 (상보)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005800372&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260807&page=1",
+          "upload_time": "2026-08-07 16:52",
+          "published_at": "2026-08-07T16:52:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
           "title": "환율, 이틀째 1,410원대…달러 유입 등에 수급 개선",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016239532&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260807&page=1",
           "upload_time": "2026-08-07 16:10",
@@ -360,7 +368,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "\"美, 엔화방어 위해 유로화 팔고 ECB에 사후통보만…관행 깨져\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016239462&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260807&page=1",
           "upload_time": "2026-08-07 15:44",
@@ -368,7 +376,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "IMF 카츠 \"일본은행, 통화정책 정상화 지속 예상\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016239391&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260807&page=1",
           "upload_time": "2026-08-07 15:21",
@@ -376,19 +384,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 4,
+          "rank": 5,
           "title": "\"美 개입에 1300원대도 가시권\"…환율 열달 만에 최저치 '뚝' [분석+]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005318305&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260807&page=1",
           "upload_time": "2026-08-07 06:31",
           "published_at": "2026-08-07T06:31:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 5,
-          "title": "WSJ \"美 엔화부양 개입, 시장에 의도치 않은 '유동성' 부작용\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016238353&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=429&date=20260807&page=1",
-          "upload_time": "2026-08-07 01:22",
-          "published_at": "2026-08-07T01:22:00+09:00"
         }
       ]
     }
