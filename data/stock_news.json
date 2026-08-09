@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09 17:26:10",
+  "updated_at": "2026-08-09 17:45:45",
   "indices": [
     {
       "name": "코스피",
@@ -59,9 +59,9 @@
     },
     {
       "name": "휘발유(원/리터)",
-      "value": "1,864.93",
-      "change_percent": "▲0.00%",
-      "direction": "up",
+      "value": "1,864.88",
+      "change_percent": "▼0.01%",
+      "direction": "down",
       "as_of": "2026.08.09"
     },
     {
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "91,256,000",
-      "change_percent": "▼0.10%",
+      "value": "91,148,000",
+      "change_percent": "▼0.22%",
       "direction": "down",
-      "as_of": "2026-08-09 17:26:06"
+      "as_of": "2026-08-09 17:45:32"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,701,000",
-      "change_percent": "▲0.26%",
+      "value": "2,694,000",
+      "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-08-09 17:26:07"
+      "as_of": "2026-08-09 17:45:42"
     }
   ],
   "news_categories": [
@@ -126,8 +126,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "[여명] ‘투자 부적격 국가’라는 오명",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004649950&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
+          "upload_time": "2026-08-09 17:35",
+          "published_at": "2026-08-09T17:35:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 2,
+          "title": "현대차 주가 약세에도 …'배당 안전판' 우선주는 선방",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718574&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
+          "upload_time": "2026-08-09 17:30",
+          "published_at": "2026-08-09T17:30:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 3,
           "title": "증시 조정 영향?…청년·고령층 마통 연체율 높아",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000893971&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
           "upload_time": "2026-08-09 15:44",
@@ -135,7 +151,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 4,
           "title": "54조 털린 개미 '피눈물'…\"한국 증시 최악은 지났다\" 반전 전망",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005318798&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
           "upload_time": "2026-08-09 14:56",
@@ -143,25 +159,9 @@
         },
         {
           "press_name": "뉴스1",
-          "rank": 3,
+          "rank": 5,
           "title": "환율 변동성 16년 만에 최대",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0009104223&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
-          "upload_time": "2026-08-09 14:09",
-          "published_at": "2026-08-09T14:09:00+09:00"
-        },
-        {
-          "press_name": "뉴스1",
-          "rank": 4,
-          "title": "요동치는 원·달러 환율",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0009104222&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
-          "upload_time": "2026-08-09 14:09",
-          "published_at": "2026-08-09T14:09:00+09:00"
-        },
-        {
-          "press_name": "뉴스1",
-          "rank": 5,
-          "title": "환율 변동성 금융위기 후 최고",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0009104221&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260809&page=1",
           "upload_time": "2026-08-09 14:09",
           "published_at": "2026-08-09T14:09:00+09:00"
         }
@@ -171,8 +171,16 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "70년 국밥배당까지 끊겼다…주가 80% 폭락한 거인 [오찬종의 매일뉴욕]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718603&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260809&page=1",
+          "upload_time": "2026-08-09 17:43",
+          "published_at": "2026-08-09T17:43:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
           "title": "[주末머니]USDC 유통량 20%↑…스테이블코인 대장주 자리잡은 이 기업",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005800611&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260809&page=1",
           "upload_time": "2026-08-09 16:13",
@@ -180,7 +188,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "삼전닉스 시총 비중 49%로 뚝…'비반도체' 믿어도 될까?",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558984&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260809&page=1",
           "upload_time": "2026-08-09 15:50",
@@ -188,7 +196,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "출렁인 증시에도 화장품株 강세…실적·수출이 받쳤다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558983&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260809&page=1",
           "upload_time": "2026-08-09 15:50",
@@ -196,19 +204,11 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "워런 버핏처럼 투자한다…'RISE 버크셔포트폴리오TOP10 ETF' [이런펀드 어때요?]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005558982&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260809&page=1",
           "upload_time": "2026-08-09 15:49",
           "published_at": "2026-08-09T15:49:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 5,
-          "title": "\"AI 다음 대세라더니 물렸다\"…줄폭락에 개미들 '눈물' [분석+]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005318791&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260809&page=1",
-          "upload_time": "2026-08-09 13:43",
-          "published_at": "2026-08-09T13:43:00+09:00"
         }
       ]
     },
@@ -218,6 +218,14 @@
         {
           "press_name": "매일경제",
           "rank": 1,
+          "title": "70년 국밥배당까지 끊겼다…주가 80% 폭락한 거인 [오찬종의 매일뉴욕]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718603&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260809&page=1",
+          "upload_time": "2026-08-09 17:43",
+          "published_at": "2026-08-09T17:43:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 2,
           "title": "[미국 주식 돋보기] AI서버 투자 붐…美 HPE 올 주가 120%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718549&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260809&page=1",
           "upload_time": "2026-08-09 17:15",
@@ -225,7 +233,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "버핏 떠난 버크셔, 3년만에 주식 순매수",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718548&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260809&page=1",
           "upload_time": "2026-08-09 17:15",
@@ -233,7 +241,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 4,
           "title": "고점서 반토막 난 코닝 … 트럼프 규제에 힘받나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005718547&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260809&page=1",
           "upload_time": "2026-08-09 17:15",
@@ -241,19 +249,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "블룸버그 \"韓 레버리지 청산 마무리…증시 변동성 진정\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006348288&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260809&page=1",
           "upload_time": "2026-08-09 17:14",
           "published_at": "2026-08-09T17:14:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 5,
-          "title": "“올해만 430% 올랐다”…월가가 M7 버리고 택한 ‘P7’, 돈 쓸어 담는다는데",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004649916&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260809&page=1",
-          "upload_time": "2026-08-09 14:42",
-          "published_at": "2026-08-09T14:42:00+09:00"
         }
       ]
     },
