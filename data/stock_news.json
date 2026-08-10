@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11 02:01:04",
+  "updated_at": "2026-08-11 02:30:56",
   "indices": [
     {
       "name": "코스피",
@@ -24,36 +24,36 @@
     },
     {
       "name": "다우존스",
-      "value": "53,904.19",
-      "change_percent": "▼0.25%",
+      "value": "53,914.27",
+      "change_percent": "▼0.23%",
       "direction": "down",
-      "as_of": "2026-08-11 02:00:06"
+      "as_of": "2026-08-11 02:30:02"
     },
     {
       "name": "나스닥",
-      "value": "26,554.73",
-      "change_percent": "▼0.51%",
+      "value": "26,610.37",
+      "change_percent": "▼0.30%",
       "direction": "down",
-      "as_of": "2026-08-11 02:00:06"
+      "as_of": "2026-08-11 02:30:02"
     },
     {
       "name": "나스닥100",
-      "value": "29,627.86",
-      "change_percent": "▼0.32%",
+      "value": "29,690.64",
+      "change_percent": "▼0.11%",
       "direction": "down",
-      "as_of": "2026-08-11 02:00:06"
+      "as_of": "2026-08-11 02:30:02"
     },
     {
       "name": "S&P500",
-      "value": "7,748.81",
-      "change_percent": "▼0.11%",
+      "value": "7,754.66",
+      "change_percent": "▼0.04%",
       "direction": "down",
-      "as_of": "2026-08-11 02:00:06"
+      "as_of": "2026-08-11 02:30:02"
     },
     {
       "name": "국내금(원/돈)",
-      "value": "744,381.78",
-      "change_percent": "▲0.88%",
+      "value": "744,804.11",
+      "change_percent": "▲0.93%",
       "direction": "up",
       "as_of": "2026.08.10 23:59"
     },
@@ -66,22 +66,22 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,416.80",
-      "change_percent": "▲0.41%",
+      "value": "1,418.50",
+      "change_percent": "▲0.53%",
       "direction": "up",
       "as_of": "2026.08.10 21:02"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "891.01",
-      "change_percent": "▼0.41%",
+      "value": "891.45",
+      "change_percent": "▼0.36%",
       "direction": "down",
       "as_of": "2026.08.10 21:02"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,636.12",
-      "change_percent": "▲0.25%",
+      "value": "1,637.29",
+      "change_percent": "▲0.33%",
       "direction": "up",
       "as_of": "2026.08.10 21:02"
     },
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,191,000",
-      "change_percent": "▼1.03%",
+      "value": "90,205,000",
+      "change_percent": "▼1.02%",
       "direction": "down",
-      "as_of": "2026-08-11 02:01:03"
+      "as_of": "2026-08-11 02:30:51"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,642,000",
-      "change_percent": "▼1.49%",
+      "value": "2,645,000",
+      "change_percent": "▼1.38%",
       "direction": "down",
-      "as_of": "2026-08-11 02:01:03"
+      "as_of": "2026-08-11 02:30:47"
     }
   ],
   "news_categories": [
@@ -234,7 +234,7 @@
         {
           "press_name": "아시아경제",
           "rank": 3,
-          "title": "TSMC, 7월 매출 전월 대비 40% 증가",
+          "title": "TSMC, 7월 매출 전월 대비 44.7% 증가",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005801197&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260811&page=1",
           "upload_time": "2026-08-10 23:59",
           "published_at": "2026-08-10T23:59:00+09:00"
@@ -397,7 +397,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "코스피는 반도체 관련 종목의 흐름이 주춤하며 완만한 상승세를 보인 반면, 코스닥은 수급이 성장주로 집중되면서 큰 폭으로 올랐다. 삼성전자와 SK하이닉스 등 대형 반도체주에서 빠져나온 자금이 코스닥 시장으로 유입된 것이 지수 상승의 주요 배경으로 작용했다.",
+  "ai_commentary": null,
   "top_gainers": [
     {
       "name": "서흥",
