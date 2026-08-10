@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10 23:31:12",
+  "updated_at": "2026-08-11 00:01:19",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "코스피는 반도체 관련 수급이 주춤하며 완만한 상승세를 보인 반면, 코스닥은 성장주로 자금이 집중되면서 최근 10일간 데이터 기준 최고치인 6.97%의 급등세를 기록했다. 이는 반도체 대형주에서 빠져나온 투자 자금이 코스닥 시장으로 유입된 결과로 풀이된다."
+      "text": "반도체 업종에서 빠져나온 투자 자금이 성장주로 이동하면서 코스닥 지수가 큰 폭으로 상승했다. 반면 코스피는 반도체 관련 종목이 약세를 보이며 상대적으로 낮은 상승률을 기록했다."
     }
   ],
   "daily_term": {
@@ -85,247 +85,31 @@
   ],
   "dart_filings": [
     {
-      "corp_name": "에이프로젠",
-      "corp_code": "00152385",
-      "report_nm": "주요사항보고서(전환사채권발행결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000727",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000727",
-      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달한다는 결정입니다."
-    },
-    {
-      "corp_name": "삼보산업",
-      "corp_code": "00125822",
-      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000728",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000728",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "에이프로젠",
-      "corp_code": "00152385",
-      "report_nm": "주요사항보고서(전환사채권발행결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000708",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000708",
-      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달한다는 결정입니다."
-    },
-    {
-      "corp_name": "그래피",
-      "corp_code": "01565054",
-      "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000702",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000702",
-      "ai_explanation": "사업 확장 등을 목적으로 다른 회사의 지분을 사들이기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "농업회사법인농협우리사료",
-      "corp_code": "01873290",
-      "report_nm": "[기재정정]유상증자결정",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000709",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000709",
-      "ai_explanation": "기존에 공시한 주주 대상 주식 발행(유상증자) 계획을 수정하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "씨제이이엔엠스튜디오스",
-      "corp_code": "01674750",
-      "report_nm": "감자결정",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000692",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000692",
-      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "HD건설기계",
-      "corp_code": "01205842",
-      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000659",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000659",
-      "ai_explanation": "회사 주식을 사들이기 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "농업회사법인농협우리사료",
-      "corp_code": "01873290",
-      "report_nm": "유상증자결정",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000665",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000665",
-      "ai_explanation": "주주들로부터 자금을 조달하기 위해 신주를 발행하여 유상증자를 진행한다는 결정입니다."
-    },
-    {
-      "corp_name": "송우인포텍",
-      "corp_code": "01831708",
+      "corp_name": "아틀라스링크",
+      "corp_code": "01309795",
       "report_nm": "주요사항보고서(유형자산양수결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000648",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000648",
-      "ai_explanation": "사업장, 건물 등 부동산이나 설비와 같은 유형의 자산을 새로 사들이기로 결정한 것입니다."
+      "rcept_dt": "20260811",
+      "rcept_no": "20260810000747",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000747",
+      "ai_explanation": "회사가 건물, 토지 등 업무용 부동산이나 설비 자산을 사들이기로 결정했음을 의미합니다."
     },
     {
-      "corp_name": "HRS",
-      "corp_code": "00230911",
-      "report_nm": "주요사항보고서(유형자산양도결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000642",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000642",
-      "ai_explanation": "보유 중인 부동산이나 설비 등 유형 자산을 다른 곳에 팔기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "엑시온그룹",
-      "corp_code": "00426068",
-      "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000580",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000580",
-      "ai_explanation": "과거 공시한 유형자산 매입 계획에서 기재된 내용을 수정하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "HRS",
-      "corp_code": "00230911",
-      "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000553",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000553",
-      "ai_explanation": "과거 공시한 유형자산 매입 계획에서 기재된 내용을 수정하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "케이앤에이치특수가스",
-      "corp_code": "01808445",
-      "report_nm": "회사합병결정",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000586",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000586",
-      "ai_explanation": "경영 효율화 등을 목적으로 다른 회사와 하나로 합치기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "HLB글로벌",
-      "corp_code": "00169048",
-      "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000559",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000559",
-      "ai_explanation": "이미 공시된 회사 합병 결정 내용의 관련 첨부 서류를 정정하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "금호석유화학",
-      "corp_code": "00106368",
-      "report_nm": "주요사항보고서(회사합병결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000482",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000482",
-      "ai_explanation": "경영 효율화 등을 목적으로 다른 회사와 하나로 합치기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "교촌에프앤비",
-      "corp_code": "00453284",
-      "report_nm": "주요사항보고서(자기주식처분결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000497",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000497",
-      "ai_explanation": "회사가 보유하고 있던 자기 회사 주식을 시장에 내다 팔기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "인카금융서비스",
-      "corp_code": "01013694",
-      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000474",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000474",
-      "ai_explanation": "회사 주식을 사들이기 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "에이치엘클레무브",
-      "corp_code": "00820024",
-      "report_nm": "타인을위한채무보증결정",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000426",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000426",
-      "ai_explanation": "다른 회사가 빌린 돈을 갚지 못할 경우 대신 갚아주기로 보증을 서는 결정입니다."
-    },
-    {
-      "corp_name": "삼영",
-      "corp_code": "00127255",
-      "report_nm": "주요사항보고서(유형자산양수결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000324",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000324",
-      "ai_explanation": "사업장, 건물 등 부동산이나 설비와 같은 유형의 자산을 새로 사들이기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "그래디언트",
-      "corp_code": "00244561",
-      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000292",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000292",
-      "ai_explanation": "회사 주가를 방어하거나 주주 가치를 높이기 위해 신탁 방식으로 자사주를 매입하는 계약입니다."
-    },
-    {
-      "corp_name": "조이웍스앤코",
-      "corp_code": "01335453",
+      "corp_name": "에이전트AI",
+      "corp_code": "00367695",
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000282",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000282",
-      "ai_explanation": "발행했던 전환사채를 만기 전에 회사 자금으로 미리 되사들이기로 결정한 것입니다."
+      "rcept_dt": "20260811",
+      "rcept_no": "20260810000743",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000743",
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 부채 부담을 줄이기로 결정했음을 의미합니다."
     },
     {
-      "corp_name": "OCI",
-      "corp_code": "01760738",
-      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000278",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000278",
-      "ai_explanation": "회사 주식을 사들이기 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "OCI홀딩스",
-      "corp_code": "00148896",
-      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000268",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000268",
-      "ai_explanation": "회사 주식을 사들이기 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
-    },
-    {
-      "corp_name": "모비데이즈",
-      "corp_code": "01493535",
-      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000244",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000244",
-      "ai_explanation": "회사 주가를 방어하거나 주주 가치를 높이기 위해 신탁 방식으로 자사주를 매입하는 계약입니다."
-    },
-    {
-      "corp_name": "진원생명과학",
-      "corp_code": "00118521",
-      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000223",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000223",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "시선AI",
-      "corp_code": "01315042",
-      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260810000220",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000220",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완하여 다시 알리는 것입니다."
-    },
-    {
-      "corp_name": "엠엑스로보틱스",
-      "corp_code": "00137915",
-      "report_nm": "주요사항보고서(유상증자결정)",
-      "rcept_dt": "20260810",
-      "rcept_no": "20260807000794",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000794",
-      "ai_explanation": "주주들로부터 자금을 조달하기 위해 신주를 발행하여 유상증자를 진행한다는 결정입니다."
+      "corp_name": "아틀라스링크",
+      "corp_code": "01309795",
+      "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+      "rcept_dt": "20260811",
+      "rcept_no": "20260810000736",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000736",
+      "ai_explanation": "회사가 다른 회사의 지분을 사들여 경영권 확보나 사업 확장을 추진하기로 결정했음을 의미합니다."
     }
   ],
   "macro_indicators": [
@@ -3291,8 +3075,8 @@
   "article_count_trend": {
     "종합": {
       "today": 400,
-      "yesterday": 392,
-      "change_pct": 2.0,
+      "yesterday": 400,
+      "change_pct": 0.0,
       "surge": false
     },
     "경제": {
