@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-10 11:46:27",
+  "updated_at": "2026-08-10 12:01:09",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 0.6,
-    "kosdaq_change": 6.31,
-    "kospi_value": 6296.55,
-    "kosdaq_value": 849.21
+    "kospi_change": 0.71,
+    "kosdaq_change": 6.13,
+    "kospi_value": 6303.17,
+    "kosdaq_value": 847.76
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "코스피는 반도체 관련 종목들의 강세와 대형주 중심의 투자 수요가 유입되며 0.60% 상승 마감했다. 코스닥은 대형주에서 이동한 자금이 유입되면서 매수 사이드카가 발동하는 등 변동성을 보였으며, 최근 10일간 데이터 기준으로 최고치를 기록했다."
+      "text": "코스피가 0.71% 상승한 가운데 코스닥 지수는 최근 10일간 데이터 기준 최고치인 6.13%의 급등세를 보이며 매수 사이드카가 발동되었다. 시장의 자금이 대형주 위주에서 코스닥으로 이동하며 변동성이 확대된 것이 이번 지수 상승의 주요 배경으로 풀이된다."
     }
   ],
   "daily_term": {
@@ -91,7 +91,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260807000794",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000794",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하거나 특정인에게 주식을 배정하기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하고 운영자금 등을 조달하기로 결정했다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2958,9 +2958,15 @@
   "top_gainers": [
     {
       "name": "서흥",
-      "price": "27900.0",
-      "change_percent": "+17.97%",
-      "pct": 17.97
+      "price": "28150.0",
+      "change_percent": "+19.03%",
+      "pct": 19.03
+    },
+    {
+      "name": "N2 레버리지 코스닥150 선물 ETN",
+      "price": "18990.0",
+      "change_percent": "+17.80%",
+      "pct": 17.8
     },
     {
       "name": "하나 레버리지 코스닥150 선물 ETN",
@@ -2970,15 +2976,9 @@
     },
     {
       "name": "산일전기",
-      "price": "184300.0",
-      "change_percent": "+17.16%",
-      "pct": 17.16
-    },
-    {
-      "name": "N2 레버리지 코스닥150 선물 ETN",
-      "price": "18885.0",
-      "change_percent": "+17.15%",
-      "pct": 17.15
+      "price": "183900.0",
+      "change_percent": "+16.91%",
+      "pct": 16.91
     },
     {
       "name": "메리츠 솔랙티브 레버리지 금 선물 ETN(H)",
@@ -2990,9 +2990,9 @@
   "top_losers": [
     {
       "name": "하나 인버스 2X 코스닥150 선물 ETN",
-      "price": "1701.0",
-      "change_percent": "-18.22%",
-      "pct": 18.22
+      "price": "1711.0",
+      "change_percent": "-17.74%",
+      "pct": 17.74
     },
     {
       "name": "한투 인버스2X코스닥150선물 ETN",
@@ -3001,111 +3001,111 @@
       "pct": 16.75
     },
     {
-      "name": "N2 인버스 2X 코스닥150 선물 ETN",
-      "price": "6080.0",
-      "change_percent": "-16.37%",
-      "pct": 16.37
+      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
+      "price": "1688.0",
+      "change_percent": "-16.23%",
+      "pct": 16.23
     },
     {
-      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
-      "price": "1695.0",
-      "change_percent": "-15.88%",
-      "pct": 15.88
+      "name": "N2 인버스 2X 코스닥150 선물 ETN",
+      "price": "6130.0",
+      "change_percent": "-15.68%",
+      "pct": 15.68
     },
     {
       "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-      "price": "1686.0",
-      "change_percent": "-15.66%",
-      "pct": 15.66
+      "price": "1697.0",
+      "change_percent": "-15.11%",
+      "pct": 15.11
     }
   ],
   "sector_performance": [
     {
       "name": "생물공학",
-      "change_value": "+10.56%",
-      "pct": 10.56
+      "change_value": "+10.05%",
+      "pct": 10.05
     },
     {
       "name": "비철금속",
-      "change_value": "+9.73%",
-      "pct": 9.73
+      "change_value": "+9.39%",
+      "pct": 9.39
     },
     {
       "name": "통신장비",
-      "change_value": "+7.58%",
-      "pct": 7.58
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+6.51%",
-      "pct": 6.51
+      "change_value": "+7.62%",
+      "pct": 7.62
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+6.36%",
-      "pct": 6.36
+      "change_value": "+6.67%",
+      "pct": 6.67
+    },
+    {
+      "name": "창업투자",
+      "change_value": "+6.22%",
+      "pct": 6.22
     }
   ],
   "sector_heatmap": [
     {
       "name": "생물공학",
-      "change_value": "+10.56%",
-      "pct": 10.56
+      "change_value": "+10.05%",
+      "pct": 10.05
     },
     {
       "name": "비철금속",
-      "change_value": "+9.73%",
-      "pct": 9.73
+      "change_value": "+9.39%",
+      "pct": 9.39
     },
     {
       "name": "통신장비",
-      "change_value": "+7.58%",
-      "pct": 7.58
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+6.51%",
-      "pct": 6.51
+      "change_value": "+7.62%",
+      "pct": 7.62
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+6.36%",
-      "pct": 6.36
+      "change_value": "+6.67%",
+      "pct": 6.67
+    },
+    {
+      "name": "창업투자",
+      "change_value": "+6.22%",
+      "pct": 6.22
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+6.03%",
-      "pct": 6.03
+      "change_value": "+6.04%",
+      "pct": 6.04
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "-1.99%",
-      "pct": -1.99
+      "change_value": "-2.06%",
+      "pct": -2.06
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-1.99%",
-      "pct": -1.99
+      "change_value": "-2.11%",
+      "pct": -2.11
     },
     {
       "name": "담배",
-      "change_value": "-2.60%",
-      "pct": -2.6
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "-3.09%",
-      "pct": -3.09
+      "change_value": "-2.75%",
+      "pct": -2.75
     },
     {
       "name": "은행",
-      "change_value": "-3.25%",
-      "pct": -3.25
+      "change_value": "-3.08%",
+      "pct": -3.08
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-3.31%",
-      "pct": -3.31
+      "change_value": "-3.11%",
+      "pct": -3.11
+    },
+    {
+      "name": "항공화물운송과물류",
+      "change_value": "-3.18%",
+      "pct": -3.18
     }
   ],
   "article_counts": {
