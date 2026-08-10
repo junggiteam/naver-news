@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-10 14:31:06",
+  "updated_at": "2026-08-10 15:01:16",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 0.63,
-    "kosdaq_change": 6.17,
-    "kospi_value": 6298.34,
-    "kosdaq_value": 848.13
+    "kospi_change": 0.53,
+    "kosdaq_change": 6.4,
+    "kospi_value": 6292.19,
+    "kosdaq_value": 849.95
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "SK하이닉스의 투자 확정 공시 영향으로 반도체 장비 관련주가 급등하며 코스피와 코스닥 지수 상승을 견인했다. 특히 코스닥 지수는 최근 10일간 데이터 기준 최고치를 기록하며 마감했다."
+      "text": "외국인 투자자들이 삼성전자와 SK하이닉스 등 대형주 중심의 코스피를 벗어나 코스닥 시장으로 눈을 돌리며 지수 상승을 견인했다. 이에 따라 코스닥 지수는 최근 10일간 데이터 기준으로 최고치를 기록했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "삼영",
+      "corp_code": "00127255",
+      "report_nm": "주요사항보고서(유형자산양수결정)",
+      "rcept_dt": "20260810",
+      "rcept_no": "20260810000324",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000324",
+      "ai_explanation": "회사 운영에 필요한 건물이나 토지 등 유형자산을 매입하기로 결정했다는 공시입니다."
+    },
+    {
       "corp_name": "그래디언트",
       "corp_code": "00244561",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20260810",
       "rcept_no": "20260810000292",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000292",
-      "ai_explanation": "회사가 증권사를 통해 자사주를 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "주가 안정과 주주 가치 제고를 위해 금융기관에 자금을 맡겨 자사주를 사들이기로 한 공시입니다."
     },
     {
       "corp_name": "조이웍스앤코",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000282",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000282",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 의미입니다."
+      "ai_explanation": "발행했던 전환사채를 만기 전에 미리 되사들여 부채 부담을 줄이기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "OCI",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000278",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000278",
-      "ai_explanation": "증권사를 통해 진행하던 자사주 매입 신탁 계약을 중단한다는 의미입니다."
+      "ai_explanation": "금융기관에 맡겼던 자사주 매입 신탁 계약을 중도에 해지하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "OCI홀딩스",
@@ -118,7 +127,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000268",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000268",
-      "ai_explanation": "증권사를 통해 진행하던 자사주 매입 신탁 계약을 중단한다는 의미입니다."
+      "ai_explanation": "금융기관에 맡겼던 자사주 매입 신탁 계약을 중도에 해지하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "모비데이즈",
@@ -127,7 +136,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000244",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000244",
-      "ai_explanation": "회사가 증권사를 통해 자사주를 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "주가 안정과 주주 가치 제고를 위해 금융기관에 자금을 맡겨 자사주를 사들이기로 한 공시입니다."
     },
     {
       "corp_name": "진원생명과학",
@@ -136,7 +145,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000223",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000223",
-      "ai_explanation": "과거 발표한 유상증자 내용 중 일부를 수정하거나 보완했다는 의미입니다."
+      "ai_explanation": "기존에 공시했던 유상증자(자금 조달 목적의 주식 발행) 내용을 일부 수정했다는 공시입니다."
     },
     {
       "corp_name": "시선AI",
@@ -145,7 +154,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000220",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000220",
-      "ai_explanation": "과거 발표한 유상증자 내용 중 일부를 수정하거나 보완했다는 의미입니다."
+      "ai_explanation": "기존에 공시했던 유상증자(자금 조달 목적의 주식 발행) 내용을 일부 수정했다는 공시입니다."
     },
     {
       "corp_name": "엠엑스로보틱스",
@@ -154,7 +163,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260807000794",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000794",
-      "ai_explanation": "신주를 발행하여 자금을 조달하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사의 운영 자금 등을 마련하기 위해 새로 주식을 발행하여 자금을 조달하기로 결정한 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -3020,16 +3029,10 @@
   },
   "top_gainers": [
     {
-      "name": "대동",
-      "price": "8180.0",
-      "change_percent": "+21.55%",
-      "pct": 21.55
-    },
-    {
       "name": "서흥",
-      "price": "28300.0",
-      "change_percent": "+19.66%",
-      "pct": 19.66
+      "price": "28500.0",
+      "change_percent": "+20.51%",
+      "pct": 20.51
     },
     {
       "name": "하나 레버리지 코스닥150 선물 ETN",
@@ -3039,136 +3042,142 @@
     },
     {
       "name": "N2 레버리지 코스닥150 선물 ETN",
-      "price": "18930.0",
-      "change_percent": "+17.43%",
-      "pct": 17.43
+      "price": "18905.0",
+      "change_percent": "+17.28%",
+      "pct": 17.28
     },
     {
       "name": "메리츠 솔랙티브 레버리지 금 선물 ETN(H)",
       "price": "22970.0",
       "change_percent": "+16.69%",
       "pct": 16.69
+    },
+    {
+      "name": "KIWOOM 코스닥150선물레버리지",
+      "price": "3870.0",
+      "change_percent": "+15.87%",
+      "pct": 15.87
     }
   ],
   "top_losers": [
     {
       "name": "하나 인버스 2X 코스닥150 선물 ETN",
-      "price": "1717.0",
-      "change_percent": "-17.45%",
-      "pct": 17.45
-    },
-    {
-      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
-      "price": "1697.0",
-      "change_percent": "-15.78%",
-      "pct": 15.78
-    },
-    {
-      "name": "N2 인버스 2X 코스닥150 선물 ETN",
-      "price": "6130.0",
-      "change_percent": "-15.68%",
-      "pct": 15.68
+      "price": "1706.0",
+      "change_percent": "-17.98%",
+      "pct": 17.98
     },
     {
       "name": "한투 인버스2X코스닥150선물 ETN",
-      "price": "1712.0",
-      "change_percent": "-15.67%",
-      "pct": 15.67
+      "price": "1697.0",
+      "change_percent": "-16.40%",
+      "pct": 16.4
     },
     {
-      "name": "미래에셋 인버스 2X 코스닥150 선물 ETN",
-      "price": "1691.0",
-      "change_percent": "-14.94%",
-      "pct": 14.94
+      "name": "N2 인버스 2X 코스닥150 선물 ETN",
+      "price": "6110.0",
+      "change_percent": "-15.96%",
+      "pct": 15.96
+    },
+    {
+      "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
+      "price": "1688.0",
+      "change_percent": "-15.56%",
+      "pct": 15.56
+    },
+    {
+      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
+      "price": "1702.0",
+      "change_percent": "-15.53%",
+      "pct": 15.53
     }
   ],
   "sector_performance": [
     {
       "name": "복합유틸리티",
-      "change_value": "+10.70%",
-      "pct": 10.7
+      "change_value": "+12.09%",
+      "pct": 12.09
     },
     {
       "name": "비철금속",
-      "change_value": "+9.30%",
-      "pct": 9.3
+      "change_value": "+9.62%",
+      "pct": 9.62
     },
     {
       "name": "생물공학",
-      "change_value": "+8.44%",
-      "pct": 8.44
+      "change_value": "+8.69%",
+      "pct": 8.69
     },
     {
       "name": "통신장비",
-      "change_value": "+7.12%",
-      "pct": 7.12
+      "change_value": "+7.60%",
+      "pct": 7.6
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+6.67%",
-      "pct": 6.67
+      "change_value": "+6.95%",
+      "pct": 6.95
     }
   ],
   "sector_heatmap": [
     {
       "name": "복합유틸리티",
-      "change_value": "+10.70%",
-      "pct": 10.7
+      "change_value": "+12.09%",
+      "pct": 12.09
     },
     {
       "name": "비철금속",
-      "change_value": "+9.30%",
-      "pct": 9.3
+      "change_value": "+9.62%",
+      "pct": 9.62
     },
     {
       "name": "생물공학",
-      "change_value": "+8.44%",
-      "pct": 8.44
+      "change_value": "+8.69%",
+      "pct": 8.69
     },
     {
       "name": "통신장비",
-      "change_value": "+7.12%",
-      "pct": 7.12
+      "change_value": "+7.60%",
+      "pct": 7.6
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+6.67%",
-      "pct": 6.67
+      "change_value": "+6.95%",
+      "pct": 6.95
     },
     {
-      "name": "창업투자",
-      "change_value": "+6.46%",
-      "pct": 6.46
+      "name": "건강관리기술",
+      "change_value": "+6.36%",
+      "pct": 6.36
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-1.72%",
-      "pct": -1.72
-    },
-    {
-      "name": "담배",
-      "change_value": "-1.75%",
-      "pct": -1.75
+      "name": "다각화된통신서비스",
+      "change_value": "-1.48%",
+      "pct": -1.48
     },
     {
       "name": "해운사",
-      "change_value": "-1.98%",
-      "pct": -1.98
+      "change_value": "-1.86%",
+      "pct": -1.86
     },
     {
-      "name": "은행",
-      "change_value": "-2.46%",
-      "pct": -2.46
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-1.90%",
+      "pct": -1.9
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "-2.70%",
-      "pct": -2.7
+      "change_value": "-2.21%",
+      "pct": -2.21
+    },
+    {
+      "name": "은행",
+      "change_value": "-2.52%",
+      "pct": -2.52
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-3.07%",
-      "pct": -3.07
+      "change_value": "-2.84%",
+      "pct": -2.84
     }
   ],
   "article_counts": {
