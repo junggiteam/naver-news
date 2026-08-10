@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10 17:01:15",
+  "updated_at": "2026-08-10 17:31:10",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "코스닥 지수는 최근 10일간의 데이터와 비교했을 때 최고치를 기록하며 6.97% 상승했고, 코스피는 0.65% 오르며 장을 마감했다. 증시 내 레버리지 상장지수펀드(ETF)로의 자금 유입이 확대되는 가운데, 주요 기업들의 실적 개선과 신사업 추진 소식이 시장 전반에 영향을 미쳤다."
+      "text": "오늘 코스피는 보합권에서 움직였으나, 코스닥은 바이오와 소부장 관련주가 강세를 보이면서 상승 마감했다. 특히 코스닥 지수는 최근 10일간의 데이터 기준으로 최고치를 기록했다. 일부 투자 자금이 코스닥 레버리지 ETF로 유입되는 등 시장 내 수급 개선 흐름이 나타났다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,40 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "씨제이이엔엠스튜디오스",
+      "corp_code": "01674750",
+      "report_nm": "감자결정",
+      "rcept_dt": "20260810",
+      "rcept_no": "20260810000692",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000692",
+      "ai_explanation": "자본금을 줄여 주식 수를 감소시키거나 결손금을 보전하는 결정입니다."
+    },
+    {
+      "corp_name": "HD건설기계",
+      "corp_code": "01205842",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+      "rcept_dt": "20260810",
+      "rcept_no": "20260810000659",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000659",
+      "ai_explanation": "금융기관에 맡겼던 자기주식 취득 신탁 계약을 중도에 해지하는 것입니다."
+    },
+    {
+      "corp_name": "농업회사법인농협우리사료",
+      "corp_code": "01873290",
+      "report_nm": "유상증자결정",
+      "rcept_dt": "20260810",
+      "rcept_no": "20260810000665",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000665",
+      "ai_explanation": "신주를 발행해 자본금을 늘리고 회사의 자금을 조달하는 결정입니다."
+    },
+    {
       "corp_name": "송우인포텍",
       "corp_code": "01831708",
       "report_nm": "주요사항보고서(유형자산양수결정)",
       "rcept_dt": "20260810",
       "rcept_no": "20260810000648",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000648",
-      "ai_explanation": "건물, 토지 등 회사 운영에 필요한 자산을 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "건물이나 토지 등 회사의 유형자산을 새로 매입하는 것입니다."
     },
     {
       "corp_name": "HRS",
@@ -99,7 +126,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000642",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000642",
-      "ai_explanation": "건물, 토지 등 보유하고 있던 유형자산을 팔기로 결정했음을 의미합니다."
+      "ai_explanation": "보유 중인 건물이나 토지 등 유형자산을 외부에 매각하는 것입니다."
     },
     {
       "corp_name": "엑시온그룹",
@@ -108,7 +135,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000580",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000580",
-      "ai_explanation": "이전에 공시한 유형자산 매입 내용 중 일부를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "이전에 공시한 유형자산 매입 내용의 기재 사항을 정정하는 것입니다."
     },
     {
       "corp_name": "HRS",
@@ -117,7 +144,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000553",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000553",
-      "ai_explanation": "이전에 공시한 유형자산 매입 내용 중 일부를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "이전에 공시한 유형자산 매입 내용의 기재 사항을 정정하는 것입니다."
     },
     {
       "corp_name": "케이앤에이치특수가스",
@@ -126,7 +153,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000586",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000586",
-      "ai_explanation": "다른 회사와 합쳐 하나의 회사가 되기로 결정했음을 의미합니다."
+      "ai_explanation": "다른 회사와 기업 결합을 통해 하나의 회사로 합치는 결정입니다."
     },
     {
       "corp_name": "HLB글로벌",
@@ -135,7 +162,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000559",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000559",
-      "ai_explanation": "이전에 공시한 회사 합병 내용의 첨부 서류를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "이전에 공시한 회사 합병 내용의 첨부 서류를 정정하는 것입니다."
     },
     {
       "corp_name": "금호석유화학",
@@ -144,7 +171,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000482",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000482",
-      "ai_explanation": "다른 회사와 합쳐 하나의 회사가 되기로 결정했음을 의미합니다."
+      "ai_explanation": "다른 회사와 기업 결합을 통해 하나의 회사로 합치는 결정입니다."
     },
     {
       "corp_name": "교촌에프앤비",
@@ -153,7 +180,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000497",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000497",
-      "ai_explanation": "회사가 보유하고 있던 자사주를 시장 등에 팔기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 보유 중인 자기주식을 시장에 내다 파는 결정입니다."
     },
     {
       "corp_name": "인카금융서비스",
@@ -162,7 +189,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000474",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000474",
-      "ai_explanation": "증권사와 맺었던 자사주 매입 신탁 계약을 중간에 해지하기로 결정했음을 의미합니다."
+      "ai_explanation": "금융기관에 맡겼던 자기주식 취득 신탁 계약을 중도에 해지하는 것입니다."
     },
     {
       "corp_name": "에이치엘클레무브",
@@ -171,7 +198,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000426",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000426",
-      "ai_explanation": "회사가 아닌 타인의 채무에 대해 회사가 대신 갚겠다고 보증을 서는 것입니다."
+      "ai_explanation": "타 회사의 채무를 보증해주어 회사가 대신 변제할 책임을 지는 것입니다."
     },
     {
       "corp_name": "삼영",
@@ -180,7 +207,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000324",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000324",
-      "ai_explanation": "건물, 토지 등 회사 운영에 필요한 자산을 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "건물이나 토지 등 회사의 유형자산을 새로 매입하는 것입니다."
     },
     {
       "corp_name": "그래디언트",
@@ -189,7 +216,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000292",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000292",
-      "ai_explanation": "증권사와 신탁 계약을 체결하여 회사가 자사주를 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "자기주식 취득을 위해 금융기관과 신탁 계약을 새로 체결하는 것입니다."
     },
     {
       "corp_name": "조이웍스앤코",
@@ -198,7 +225,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000282",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000282",
-      "ai_explanation": "발행했던 전환사채를 만기 전에 회사가 다시 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "발행했던 전환사채를 만기 전에 회사가 다시 사들이는 것입니다."
     },
     {
       "corp_name": "OCI",
@@ -207,7 +234,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000278",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000278",
-      "ai_explanation": "증권사와 맺었던 자사주 매입 신탁 계약을 중간에 해지하기로 결정했음을 의미합니다."
+      "ai_explanation": "금융기관에 맡겼던 자기주식 취득 신탁 계약을 중도에 해지하는 것입니다."
     },
     {
       "corp_name": "OCI홀딩스",
@@ -216,7 +243,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000268",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000268",
-      "ai_explanation": "증권사와 맺었던 자사주 매입 신탁 계약을 중간에 해지하기로 결정했음을 의미합니다."
+      "ai_explanation": "금융기관에 맡겼던 자기주식 취득 신탁 계약을 중도에 해지하는 것입니다."
     },
     {
       "corp_name": "모비데이즈",
@@ -225,7 +252,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000244",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000244",
-      "ai_explanation": "증권사와 신탁 계약을 체결하여 회사가 자사주를 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "자기주식 취득을 위해 금융기관과 신탁 계약을 새로 체결하는 것입니다."
     },
     {
       "corp_name": "진원생명과학",
@@ -234,7 +261,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000223",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000223",
-      "ai_explanation": "이전에 공시한 유상증자 내용 중 일부를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "이전에 공시한 유상증자 내용의 기재 사항을 정정하는 것입니다."
     },
     {
       "corp_name": "시선AI",
@@ -243,7 +270,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260810000220",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000220",
-      "ai_explanation": "이전에 공시한 유상증자 내용 중 일부를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "이전에 공시한 유상증자 내용의 기재 사항을 정정하는 것입니다."
     },
     {
       "corp_name": "엠엑스로보틱스",
@@ -252,7 +279,7 @@
       "rcept_dt": "20260810",
       "rcept_no": "20260807000794",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000794",
-      "ai_explanation": "신주를 발행하여 자금을 조달하기로 결정했음을 의미합니다."
+      "ai_explanation": "신주를 발행해 자본금을 늘리고 회사의 자금을 조달하는 결정입니다."
     }
   ],
   "macro_indicators": [
