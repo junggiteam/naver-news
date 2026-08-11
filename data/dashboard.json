@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11 08:31:08",
+  "updated_at": "2026-08-11 09:01:14",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000740",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000740",
-      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 주주 등으로부터 추가로 자금을 받는 유상증자 내용을 정정함."
+      "ai_explanation": "회사가 운영자금 등을 마련하기 위해 신주를 발행해 주주나 제3자에게 자금을 조달하는 결정입니다."
     },
     {
       "corp_name": "아틀라스링크",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000747",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000747",
-      "ai_explanation": "회사가 사업 운영 등을 위해 건물, 토지 등 유형자산을 매입하기로 결정함."
+      "ai_explanation": "회사가 사업 운영에 필요한 토지, 건물 등의 부동산이나 시설물을 매입하기로 결정한 것입니다."
     },
     {
       "corp_name": "에이전트AI",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000743",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000743",
-      "ai_explanation": "회사가 과거 발행한 전환사채를 만기 전 미리 되사서 소각하거나 보유하기로 결정함."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 부채 부담을 줄이거나 소각하는 결정입니다."
     },
     {
       "corp_name": "아틀라스링크",
@@ -114,7 +114,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000736",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000736",
-      "ai_explanation": "회사가 사업 확장이나 투자 목적으로 다른 회사의 지분을 인수하기로 결정함."
+      "ai_explanation": "회사가 사업 확장이나 투자를 목적으로 다른 회사의 지분을 사들이기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2918,95 +2918,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "진흥기업우B",
+      "price": "1360.0",
+      "change_percent": "+5.84%",
+      "pct": 5.84
+    },
+    {
+      "name": "흥국화재우",
+      "price": "5630.0",
+      "change_percent": "+5.04%",
+      "pct": 5.04
+    },
+    {
+      "name": "태원물산",
+      "price": "2770.0",
+      "change_percent": "+4.92%",
+      "pct": 4.92
+    },
+    {
+      "name": "동양우",
+      "price": "9000.0",
+      "change_percent": "+4.65%",
+      "pct": 4.65
+    },
+    {
+      "name": "현대건설",
+      "price": "114800.0",
+      "change_percent": "+3.80%",
+      "pct": 3.8
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "진흥기업2우B",
+      "price": "2750.0",
+      "change_percent": "-6.30%",
+      "pct": 6.3
+    },
+    {
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "6000.0",
+      "change_percent": "-5.14%",
+      "pct": 5.14
+    },
+    {
+      "name": "한화솔루션",
+      "price": "33650.0",
+      "change_percent": "-4.54%",
+      "pct": 4.54
+    },
+    {
+      "name": "OCI홀딩스",
+      "price": "272000.0",
+      "change_percent": "-4.39%",
+      "pct": 4.39
+    },
+    {
+      "name": "상상인증권",
+      "price": "1155.0",
+      "change_percent": "-4.15%",
+      "pct": 4.15
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "비철금속",
+      "change_value": "+2.00%",
+      "pct": 2.0
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "건설",
+      "change_value": "+0.92%",
+      "pct": 0.92
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "해운사",
+      "change_value": "+0.85%",
+      "pct": 0.85
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "기타금융",
+      "change_value": "+0.81%",
+      "pct": 0.81
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "가구",
+      "change_value": "+0.45%",
+      "pct": 0.45
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "비철금속",
+      "change_value": "+2.00%",
+      "pct": 2.0
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "건설",
+      "change_value": "+0.92%",
+      "pct": 0.92
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "해운사",
+      "change_value": "+0.85%",
+      "pct": 0.85
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "기타금융",
+      "change_value": "+0.81%",
+      "pct": 0.81
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "가구",
+      "change_value": "+0.45%",
+      "pct": 0.45
     },
     {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.34%",
+      "pct": 0.34
     },
     {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "-1.22%",
+      "pct": -1.22
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "-1.52%",
+      "pct": -1.52
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "에너지장비및서비스",
+      "change_value": "-1.76%",
+      "pct": -1.76
     },
     {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "통신장비",
+      "change_value": "-1.96%",
+      "pct": -1.96
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-2.74%",
+      "pct": -2.74
     },
     {
       "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "-3.20%",
+      "pct": -3.2
     }
   ],
   "article_counts": {
