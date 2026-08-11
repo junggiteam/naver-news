@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-11 12:31:10",
+  "updated_at": "2026-08-11 12:46:11",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 1.45,
-    "kosdaq_change": -0.46,
-    "kospi_value": 6391.1,
-    "kosdaq_value": 850.55
+    "kospi_change": 1.23,
+    "kosdaq_change": -0.86,
+    "kospi_value": 6377.43,
+    "kosdaq_value": 847.16
   },
   "heroes": {
     "종합": {
@@ -87,7 +87,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260811000164",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000164",
-      "ai_explanation": "다른 회사의 주식이나 지분을 사들이기로 결정한 사항을 정정하는 공시입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들이기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "하스",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260811000158",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000158",
-      "ai_explanation": "주가 안정이나 주주 가치 제고를 위해 신탁 방식으로 자사주를 사들이는 것입니다."
+      "ai_explanation": "주가 안정이나 주주 가치 제고를 위해 자사주를 사들이기로 했다는 공시입니다."
     },
     {
       "corp_name": "에스비씨피에프브이",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260811000132",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000132",
-      "ai_explanation": "무상으로 자산이나 재산을 다른 대상에게 넘기기로 결정한 사항입니다."
+      "ai_explanation": "보유하고 있는 자산이나 주식 등을 무상으로 넘겨주기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "펀진",
@@ -114,7 +114,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260811000122",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000122",
-      "ai_explanation": "회사가 주식을 새로 발행해 자금을 조달하기로 한 결정 내용을 정정한 공시입니다."
+      "ai_explanation": "자금 조달을 목적으로 새로 주식을 발행해 투자자에게 배정하기로 했다는 공시입니다."
     },
     {
       "corp_name": "서한",
@@ -123,7 +123,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260811000009",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000009",
-      "ai_explanation": "신주를 인수할 권리가 부여된 사채를 발행하기로 한 결정 내용을 정정한 공시입니다."
+      "ai_explanation": "신주를 인수할 권리가 부여된 회사채를 발행해 자금을 조달하겠다는 공시입니다."
     },
     {
       "corp_name": "펀진",
@@ -132,7 +132,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000740",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000740",
-      "ai_explanation": "유상증자 결정 내용 중 기재된 항목을 수정하여 다시 알리는 공시입니다."
+      "ai_explanation": "기존 유상증자 결정 내용 중 일부를 수정하거나 보완했다는 공시입니다."
     },
     {
       "corp_name": "아틀라스링크",
@@ -141,7 +141,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000747",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000747",
-      "ai_explanation": "건물이나 토지 등 회사의 사업에 필요한 대규모 유형자산을 사들이는 것입니다."
+      "ai_explanation": "영업을 위해 필요한 토지나 건물 등 유형자산을 사들이기로 했다는 공시입니다."
     },
     {
       "corp_name": "에이전트AI",
@@ -150,7 +150,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000743",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000743",
-      "ai_explanation": "발행했던 전환사채를 만기 전 미리 되사들여 소각하거나 보유하려는 것입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 공시입니다."
     },
     {
       "corp_name": "아틀라스링크",
@@ -159,7 +159,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000736",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000736",
-      "ai_explanation": "다른 회사의 경영권 확보나 투자 목적으로 주식 및 지분을 사들이는 것입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들이기로 결정했다는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2529,136 +2529,136 @@
     },
     {
       "name": "혜인",
-      "price": "7610.0",
-      "change_percent": "+28.33%",
-      "pct": 28.33
+      "price": "7600.0",
+      "change_percent": "+28.16%",
+      "pct": 28.16
     },
     {
       "name": "한국화장품제조",
-      "price": "10780.0",
-      "change_percent": "+19.51%",
-      "pct": 19.51
+      "price": "10690.0",
+      "change_percent": "+18.51%",
+      "pct": 18.51
     }
   ],
   "top_losers": [
     {
       "name": "에이엔피",
-      "price": "315.0",
-      "change_percent": "-15.78%",
-      "pct": 15.78
+      "price": "314.0",
+      "change_percent": "-16.04%",
+      "pct": 16.04
     },
     {
       "name": "KODEX 방산TOP10레버리지",
-      "price": "7170.0",
-      "change_percent": "-12.19%",
-      "pct": 12.19
-    },
-    {
-      "name": "하나 레버리지 K방산TOP10 ETN",
-      "price": "13350.0",
-      "change_percent": "-11.94%",
-      "pct": 11.94
+      "price": "7055.0",
+      "change_percent": "-13.59%",
+      "pct": 13.59
     },
     {
       "name": "키움 레버리지 K방산 TOP5 ETN",
-      "price": "16115.0",
-      "change_percent": "-11.84%",
-      "pct": 11.84
+      "price": "15865.0",
+      "change_percent": "-13.21%",
+      "pct": 13.21
     },
     {
       "name": "PLUS K방산레버리지",
-      "price": "6720.0",
-      "change_percent": "-11.52%",
-      "pct": 11.52
+      "price": "6605.0",
+      "change_percent": "-13.03%",
+      "pct": 13.03
+    },
+    {
+      "name": "하나 레버리지 K방산TOP10 ETN",
+      "price": "13200.0",
+      "change_percent": "-12.93%",
+      "pct": 12.93
     }
   ],
   "sector_performance": [
     {
       "name": "도로와철도운송",
-      "change_value": "+3.60%",
-      "pct": 3.6
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+3.29%",
-      "pct": 3.29
+      "change_value": "+3.63%",
+      "pct": 3.63
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+3.19%",
-      "pct": 3.19
+      "change_value": "+3.15%",
+      "pct": 3.15
+    },
+    {
+      "name": "가정용기기와용품",
+      "change_value": "+2.96%",
+      "pct": 2.96
     },
     {
       "name": "문구류",
-      "change_value": "+3.03%",
-      "pct": 3.03
+      "change_value": "+2.78%",
+      "pct": 2.78
     },
     {
       "name": "포장재",
-      "change_value": "+2.95%",
-      "pct": 2.95
+      "change_value": "+2.62%",
+      "pct": 2.62
     }
   ],
   "sector_heatmap": [
     {
       "name": "도로와철도운송",
-      "change_value": "+3.60%",
-      "pct": 3.6
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+3.29%",
-      "pct": 3.29
+      "change_value": "+3.63%",
+      "pct": 3.63
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+3.19%",
-      "pct": 3.19
+      "change_value": "+3.15%",
+      "pct": 3.15
+    },
+    {
+      "name": "가정용기기와용품",
+      "change_value": "+2.96%",
+      "pct": 2.96
     },
     {
       "name": "문구류",
-      "change_value": "+3.03%",
-      "pct": 3.03
+      "change_value": "+2.78%",
+      "pct": 2.78
     },
     {
       "name": "포장재",
-      "change_value": "+2.95%",
-      "pct": 2.95
+      "change_value": "+2.62%",
+      "pct": 2.62
     },
     {
       "name": "IT서비스",
-      "change_value": "+2.89%",
-      "pct": 2.89
+      "change_value": "+2.37%",
+      "pct": 2.37
     },
     {
       "name": "조선",
-      "change_value": "-2.14%",
-      "pct": -2.14
+      "change_value": "-2.65%",
+      "pct": -2.65
     },
     {
-      "name": "통신장비",
-      "change_value": "-2.33%",
-      "pct": -2.33
+      "name": "전기제품",
+      "change_value": "-2.67%",
+      "pct": -2.67
     },
     {
       "name": "전자제품",
-      "change_value": "-2.76%",
-      "pct": -2.76
+      "change_value": "-3.16%",
+      "pct": -3.16
     },
     {
       "name": "생물공학",
-      "change_value": "-4.26%",
-      "pct": -4.26
+      "change_value": "-4.66%",
+      "pct": -4.66
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-4.55%",
-      "pct": -4.55
+      "change_value": "-4.67%",
+      "pct": -4.67
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-5.60%",
-      "pct": -5.6
+      "change_value": "-6.26%",
+      "pct": -6.26
     }
   ],
   "article_counts": {
