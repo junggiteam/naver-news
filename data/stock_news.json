@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 00:15:52",
+  "updated_at": "2026-08-12 00:45:46",
   "indices": [
     {
       "name": "코스피",
@@ -24,36 +24,36 @@
     },
     {
       "name": "다우존스",
-      "value": "53,985.88",
-      "change_percent": "▲0.02%",
-      "direction": "up",
-      "as_of": "2026-08-12 00:15:04"
+      "value": "53,960.55",
+      "change_percent": "▼0.03%",
+      "direction": "down",
+      "as_of": "2026-08-12 00:45:10"
     },
     {
       "name": "나스닥",
-      "value": "26,610.06",
-      "change_percent": "▲0.02%",
-      "direction": "up",
-      "as_of": "2026-08-12 00:15:04"
+      "value": "26,549.79",
+      "change_percent": "▼0.21%",
+      "direction": "down",
+      "as_of": "2026-08-12 00:45:10"
     },
     {
       "name": "나스닥100",
-      "value": "29,668.12",
-      "change_percent": "▲0.16%",
-      "direction": "up",
-      "as_of": "2026-08-12 00:15:04"
+      "value": "29,599.17",
+      "change_percent": "▼0.08%",
+      "direction": "down",
+      "as_of": "2026-08-12 00:45:10"
     },
     {
       "name": "S&P500",
-      "value": "7,758.19",
-      "change_percent": "▲0.07%",
-      "direction": "up",
-      "as_of": "2026-08-12 00:15:04"
+      "value": "7,742.29",
+      "change_percent": "▼0.14%",
+      "direction": "down",
+      "as_of": "2026-08-12 00:45:10"
     },
     {
       "name": "국내금(원/돈)",
-      "value": "748,287.67",
-      "change_percent": "▼0.40%",
+      "value": "745,439.21",
+      "change_percent": "▼0.78%",
       "direction": "down",
       "as_of": "2026.08.11 23:59"
     },
@@ -66,38 +66,38 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,412.90",
-      "change_percent": "▼0.46%",
+      "value": "1,413.70",
+      "change_percent": "▼0.41%",
       "direction": "down",
       "as_of": "2026.08.11 21:03"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "887.33",
+      "value": "887.36",
       "change_percent": "▼0.42%",
       "direction": "down",
       "as_of": "2026.08.11 21:03"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,630.56",
-      "change_percent": "▼0.49%",
+      "value": "1,631.06",
+      "change_percent": "▼0.46%",
       "direction": "down",
       "as_of": "2026.08.11 21:03"
     },
     {
       "name": "USD/JPY",
-      "value": "158.9600",
-      "change_percent": "▲0.74%",
+      "value": "159.2400",
+      "change_percent": "▲0.18%",
       "direction": "up",
-      "as_of": "2026.08.10"
+      "as_of": "2026.08.11"
     },
     {
       "name": "EUR/USD",
-      "value": "1.1550",
-      "change_percent": "▼0.09%",
+      "value": "1.1541",
+      "change_percent": "▼0.08%",
       "direction": "down",
-      "as_of": "2026.08.10"
+      "as_of": "2026.08.11"
     },
     {
       "name": "국고채(3년)",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "89,861,000",
-      "change_percent": "▼0.51%",
+      "value": "89,601,000",
+      "change_percent": "▼0.80%",
       "direction": "down",
-      "as_of": "2026-08-12 00:15:51"
+      "as_of": "2026-08-12 00:45:45"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,639,000",
-      "change_percent": "▼0.30%",
+      "value": "2,620,000",
+      "change_percent": "▼1.02%",
       "direction": "down",
-      "as_of": "2026-08-12 00:15:48"
+      "as_of": "2026-08-12 00:45:39"
     }
   ],
   "news_categories": [
@@ -861,6 +861,6 @@
   ],
   "ipo_calendar": [],
   "_movers_debug": [
-    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(70, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
+    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(69, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
   ]
 }
