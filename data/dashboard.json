@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-11 10:01:30",
+  "updated_at": "2026-08-11 10:31:05",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.73,
-    "kosdaq_change": 1.8,
-    "kospi_value": 6253.48,
-    "kosdaq_value": 869.86
+    "kospi_change": 0.31,
+    "kosdaq_change": 0.06,
+    "kospi_value": 6318.99,
+    "kosdaq_value": 854.94
   },
   "heroes": {
     "종합": {
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "공공임대 종부세 부담 증가 및 부동산 세제 정책 비판 지속"
-    },
-    {
-      "category": "증권",
-      "text": "코스피는 삼성전자와 SK하이닉스 등 대형 반도체주의 약세와 유가 급등에 따른 투자 심리 위축이 겹치며 최근 11일간 최저치를 기록했다. 반면 코스닥은 개인 투자자의 순매수세가 유입되면서 상승 전환해 최근 11일간 최고치를 나타냈다."
     }
   ],
   "daily_term": {
@@ -91,7 +87,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260811000009",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000009",
-      "ai_explanation": "회사가 신주를 인수할 권리가 부여된 채권을 발행하기로 한 결정을 정정하는 공시입니다."
+      "ai_explanation": "회사가 신주를 인수할 권리가 부여된 채권을 발행하여 자금을 조달한다는 의미입니다."
     },
     {
       "corp_name": "펀진",
@@ -100,7 +96,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000740",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000740",
-      "ai_explanation": "회사가 주주 등으로부터 자금을 조달하기 위해 신주를 발행하기로 한 결정을 정정하는 공시입니다."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 주식을 새로 발행하여 투자자에게 판매한다는 의미입니다."
     },
     {
       "corp_name": "아틀라스링크",
@@ -109,7 +105,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000747",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000747",
-      "ai_explanation": "회사가 건물이나 토지 등 고정 자산을 매입하기로 결정했음을 알리는 공시입니다."
+      "ai_explanation": "회사가 건물, 토지 등 사업에 필요한 대규모 자산을 매입하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "에이전트AI",
@@ -118,7 +114,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000743",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000743",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 다시 사들여 소각하거나 보유하기로 한 공시입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 부채를 줄이겠다는 의미입니다."
     },
     {
       "corp_name": "아틀라스링크",
@@ -127,7 +123,7 @@
       "rcept_dt": "20260811",
       "rcept_no": "20260810000736",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000736",
-      "ai_explanation": "회사가 타 기업의 지분을 사들여 자회사로 편입하거나 투자하기로 결정했음을 알리는 공시입니다."
+      "ai_explanation": "회사가 사업 확장이나 투자를 위해 다른 회사의 주식이나 지분을 인수한다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2933,6 +2929,12 @@
   },
   "top_gainers": [
     {
+      "name": "금호건설",
+      "price": "11490.0",
+      "change_percent": "+29.98%",
+      "pct": 29.98
+    },
+    {
       "name": "금호전기",
       "price": "4080.0",
       "change_percent": "+29.94%",
@@ -2945,143 +2947,137 @@
       "pct": 28.4
     },
     {
-      "name": "금호건설",
-      "price": "11230.0",
-      "change_percent": "+27.04%",
-      "pct": 27.04
-    },
-    {
       "name": "혜인",
-      "price": "7020.0",
-      "change_percent": "+18.38%",
-      "pct": 18.38
+      "price": "7450.0",
+      "change_percent": "+25.63%",
+      "pct": 25.63
     },
     {
-      "name": "NHN",
-      "price": "47700.0",
-      "change_percent": "+14.25%",
-      "pct": 14.25
+      "name": "비에이치",
+      "price": "17910.0",
+      "change_percent": "+15.47%",
+      "pct": 15.47
     }
   ],
   "top_losers": [
     {
       "name": "에이엔피",
-      "price": "312.0",
-      "change_percent": "-16.58%",
-      "pct": 16.58
+      "price": "314.0",
+      "change_percent": "-16.04%",
+      "pct": 16.04
     },
     {
       "name": "삼성 블룸버그 인버스2X WTI원유선물 ETN B",
-      "price": "2800.0",
-      "change_percent": "-10.83%",
-      "pct": 10.83
-    },
-    {
-      "name": "하나 S&P 인버스 2X WTI원유 선물 ETN B",
       "price": "2790.0",
-      "change_percent": "-10.72%",
-      "pct": 10.72
+      "change_percent": "-11.15%",
+      "pct": 11.15
     },
     {
       "name": "신한 블룸버그 인버스2X WTI원유선물 ETN B",
-      "price": "2805.0",
-      "change_percent": "-10.53%",
-      "pct": 10.53
+      "price": "2800.0",
+      "change_percent": "-10.69%",
+      "pct": 10.69
     },
     {
-      "name": "KODEX 미국AI광통신네트워크",
-      "price": "11565.0",
-      "change_percent": "-10.49%",
-      "pct": 10.49
+      "name": "하나 S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "2795.0",
+      "change_percent": "-10.56%",
+      "pct": 10.56
+    },
+    {
+      "name": "메리츠 인버스 2X WTI원유 선물 ETN(H)",
+      "price": "2980.0",
+      "change_percent": "-10.51%",
+      "pct": 10.51
     }
   ],
   "sector_performance": [
     {
-      "name": "가정용기기와용품",
-      "change_value": "+3.61%",
-      "pct": 3.61
-    },
-    {
       "name": "손해보험",
-      "change_value": "+3.43%",
-      "pct": 3.43
+      "change_value": "+3.22%",
+      "pct": 3.22
     },
     {
-      "name": "비철금속",
+      "name": "가정용기기와용품",
+      "change_value": "+3.04%",
+      "pct": 3.04
+    },
+    {
+      "name": "IT서비스",
       "change_value": "+2.81%",
       "pct": 2.81
     },
     {
-      "name": "창업투자",
-      "change_value": "+2.54%",
-      "pct": 2.54
+      "name": "제약",
+      "change_value": "+1.85%",
+      "pct": 1.85
     },
     {
-      "name": "IT서비스",
-      "change_value": "+2.52%",
-      "pct": 2.52
+      "name": "문구류",
+      "change_value": "+1.73%",
+      "pct": 1.73
     }
   ],
   "sector_heatmap": [
     {
-      "name": "가정용기기와용품",
-      "change_value": "+3.61%",
-      "pct": 3.61
-    },
-    {
       "name": "손해보험",
-      "change_value": "+3.43%",
-      "pct": 3.43
+      "change_value": "+3.22%",
+      "pct": 3.22
     },
     {
-      "name": "비철금속",
+      "name": "가정용기기와용품",
+      "change_value": "+3.04%",
+      "pct": 3.04
+    },
+    {
+      "name": "IT서비스",
       "change_value": "+2.81%",
       "pct": 2.81
     },
     {
-      "name": "창업투자",
-      "change_value": "+2.54%",
-      "pct": 2.54
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "+2.52%",
-      "pct": 2.52
-    },
-    {
       "name": "제약",
-      "change_value": "+2.39%",
-      "pct": 2.39
+      "change_value": "+1.85%",
+      "pct": 1.85
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-1.36%",
-      "pct": -1.36
+      "name": "문구류",
+      "change_value": "+1.73%",
+      "pct": 1.73
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "-1.37%",
-      "pct": -1.37
+      "name": "포장재",
+      "change_value": "+1.71%",
+      "pct": 1.71
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "-2.77%",
-      "pct": -2.77
+      "name": "통신장비",
+      "change_value": "-2.30%",
+      "pct": -2.3
     },
     {
       "name": "전기장비",
-      "change_value": "-2.96%",
-      "pct": -2.96
+      "change_value": "-2.32%",
+      "pct": -2.32
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-3.30%",
-      "pct": -3.3
+      "change_value": "-2.62%",
+      "pct": -2.62
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-2.62%",
+      "pct": -2.62
     },
     {
       "name": "전자제품",
-      "change_value": "-3.36%",
-      "pct": -3.36
+      "change_value": "-3.57%",
+      "pct": -3.57
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "-3.60%",
+      "pct": -3.6
     }
   ],
   "article_counts": {
