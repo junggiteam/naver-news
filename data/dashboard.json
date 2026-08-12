@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-12 13:31:14",
+  "updated_at": "2026-08-12 14:01:20",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 4.21,
-    "kosdaq_change": -0.01,
-    "kospi_value": 6612.88,
-    "kosdaq_value": 857.72
+    "kospi_change": 3.88,
+    "kosdaq_change": 0.1,
+    "kospi_value": 6591.47,
+    "kosdaq_value": 858.68
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스를 비롯한 반도체 종목이 외국인 매수세에 힘입어 7%대 강세를 보이면서 코스피 지수가 4.21% 상승했다. 반면 코스닥 지수는 반도체 중심의 대형주 장세 속에서 보합권인 -0.01%를 기록하며 엇갈린 흐름을 보였다."
+      "text": "삼성전자와 SK하이닉스가 7%대 급등하며 코스피 지수가 큰 폭으로 상승했고, 장중 매수 사이드카가 발동되기도 했다. 코스닥은 최근 12일간 데이터 기준 최고치를 기록하며 소폭 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "씨앤씨인터내셔널",
+      "corp_code": "01226410",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260812",
+      "rcept_no": "20260812000327",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000327",
+      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하기로 결정했다는 공시입니다."
+    },
+    {
+      "corp_name": "천일오토모빌",
+      "corp_code": "00805539",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260812",
+      "rcept_no": "20260812000349",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000349",
+      "ai_explanation": "회사가 새로운 주식을 발행하여 자본금을 늘리기로 결정했다는 공시입니다."
+    },
+    {
       "corp_name": "부산양곡터미널",
       "corp_code": "01893665",
       "report_nm": "비유동자산취득결정",
       "rcept_dt": "20260812",
       "rcept_no": "20260812000282",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000282",
-      "ai_explanation": "회사 운영을 위해 건물, 토지, 설비 등 장기적 가치가 있는 자산을 매입하기로 결정함."
+      "ai_explanation": "회사가 건물, 토지, 설비 등 장기 보유 목적의 자산을 매입하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "네오위즈",
@@ -100,7 +118,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000035",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000035",
-      "ai_explanation": "주가 안정 및 주주 가치 제고를 목적으로 신탁 계약을 통해 자사주를 사들이기로 결정함."
+      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "여수에코에너지",
@@ -109,7 +127,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000011",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000011",
-      "ai_explanation": "회사 운영을 위해 건물, 토지, 설비 등 장기적 가치가 있는 자산을 매입하기로 결정함."
+      "ai_explanation": "회사가 건물, 토지, 설비 등 장기 보유 목적의 자산을 매입하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "여수에코에너지",
@@ -118,7 +136,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000010",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000010",
-      "ai_explanation": "회사 운영을 위해 건물, 토지, 설비 등 장기적 가치가 있는 자산을 매입하기로 결정함."
+      "ai_explanation": "회사가 건물, 토지, 설비 등 장기 보유 목적의 자산을 매입하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "여수에코에너지",
@@ -127,7 +145,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000008",
-      "ai_explanation": "회사 운영을 위해 건물, 토지, 설비 등 장기적 가치가 있는 자산을 매입하기로 결정함."
+      "ai_explanation": "회사가 건물, 토지, 설비 등 장기 보유 목적의 자산을 매입하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "모아데이타",
@@ -136,7 +154,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000001",
-      "ai_explanation": "과거 결정한 만기 전 자사 전환사채 취득 건의 내용을 수정하여 다시 공시함."
+      "ai_explanation": "기존에 발행한 전환사채를 만기 전에 미리 되사기로 한 결정을 정정한다는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2960,137 +2978,137 @@
       "pct": 29.84
     },
     {
-      "name": "미래아이앤지",
-      "price": "1376.0",
-      "change_percent": "+23.85%",
-      "pct": 23.85
+      "name": "한국콜마",
+      "price": "135500.0",
+      "change_percent": "+25.58%",
+      "pct": 25.58
     },
     {
-      "name": "한국콜마",
-      "price": "133600.0",
-      "change_percent": "+23.82%",
-      "pct": 23.82
+      "name": "미래아이앤지",
+      "price": "1330.0",
+      "change_percent": "+19.71%",
+      "pct": 19.71
     }
   ],
   "top_losers": [
     {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "10415.0",
-      "change_percent": "-14.84%",
-      "pct": 14.84
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9495.0",
-      "change_percent": "-13.52%",
-      "pct": 13.52
-    },
-    {
-      "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3790.0",
-      "change_percent": "-12.67%",
-      "pct": 12.67
+      "price": "10525.0",
+      "change_percent": "-13.94%",
+      "pct": 13.94
     },
     {
       "name": "경동나비엔",
-      "price": "68500.0",
-      "change_percent": "-11.04%",
-      "pct": 11.04
+      "price": "67400.0",
+      "change_percent": "-12.47%",
+      "pct": 12.47
     },
     {
-      "name": "KIWOOM 200선물인버스2X",
-      "price": "85.0",
-      "change_percent": "-10.53%",
-      "pct": 10.53
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "9685.0",
+      "change_percent": "-11.79%",
+      "pct": 11.79
+    },
+    {
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "3860.0",
+      "change_percent": "-11.06%",
+      "pct": 11.06
+    },
+    {
+      "name": "대교",
+      "price": "1035.0",
+      "change_percent": "-10.00%",
+      "pct": 10.0
     }
   ],
   "sector_performance": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+12.22%",
-      "pct": 12.22
+      "change_value": "+12.94%",
+      "pct": 12.94
     },
     {
       "name": "전자제품",
-      "change_value": "+12.09%",
-      "pct": 12.09
+      "change_value": "+11.03%",
+      "pct": 11.03
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+6.79%",
-      "pct": 6.79
+      "change_value": "+6.15%",
+      "pct": 6.15
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+5.59%",
+      "pct": 5.59
     },
     {
       "name": "생명보험",
-      "change_value": "+6.18%",
-      "pct": 6.18
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+5.03%",
-      "pct": 5.03
+      "change_value": "+5.53%",
+      "pct": 5.53
     }
   ],
   "sector_heatmap": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+12.22%",
-      "pct": 12.22
+      "change_value": "+12.94%",
+      "pct": 12.94
     },
     {
       "name": "전자제품",
-      "change_value": "+12.09%",
-      "pct": 12.09
+      "change_value": "+11.03%",
+      "pct": 11.03
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+6.79%",
-      "pct": 6.79
+      "change_value": "+6.15%",
+      "pct": 6.15
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+5.59%",
+      "pct": 5.59
     },
     {
       "name": "생명보험",
-      "change_value": "+6.18%",
-      "pct": 6.18
+      "change_value": "+5.53%",
+      "pct": 5.53
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+5.03%",
-      "pct": 5.03
+      "name": "화장품",
+      "change_value": "+4.55%",
+      "pct": 4.55
     },
     {
-      "name": "전기장비",
-      "change_value": "+3.92%",
-      "pct": 3.92
-    },
-    {
-      "name": "가정용기기와용품",
+      "name": "도로와철도운송",
       "change_value": "-2.19%",
       "pct": -2.19
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "-2.61%",
-      "pct": -2.61
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "-2.84%",
-      "pct": -2.84
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "-3.11%",
-      "pct": -3.11
+      "name": "문구류",
+      "change_value": "-2.70%",
+      "pct": -2.7
     },
     {
       "name": "제약",
-      "change_value": "-3.15%",
-      "pct": -3.15
+      "change_value": "-2.83%",
+      "pct": -2.83
+    },
+    {
+      "name": "백화점과일반상점",
+      "change_value": "-3.04%",
+      "pct": -3.04
+    },
+    {
+      "name": "게임엔터테인먼트",
+      "change_value": "-3.06%",
+      "pct": -3.06
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "-3.85%",
-      "pct": -3.85
+      "change_value": "-3.81%",
+      "pct": -3.81
     }
   ],
   "article_counts": {
