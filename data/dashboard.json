@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-12 09:01:19",
+  "updated_at": "2026-08-12 09:31:24",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6345.53,
-    "kosdaq_value": 857.84
+    "kospi_change": 2.45,
+    "kosdaq_change": -2.01,
+    "kospi_value": 6501.29,
+    "kosdaq_value": 840.64
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "신축 아파트 하자 논란과 대학가 월세 부담 증가"
+    },
+    {
+      "category": "증권",
+      "text": "삼성전자와 SK하이닉스 등 대형 반도체주가 강세를 보이며 코스피 상승을 견인했으나 코스닥은 기술주 전반의 약세 영향으로 하락 마감했다. 뉴욕 증시의 불확실성과 물가 지표 발표를 앞둔 경계감이 시장에 혼재된 가운데 업종별 실적과 개별 이슈에 따라 종목 간 차별화된 흐름이 나타났다."
     }
   ],
   "daily_term": {
@@ -96,7 +100,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000011",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000011",
-      "ai_explanation": "회사가 사업 운영을 위한 토지, 건물, 기계장치 등 장기적 사용 자산을 매입하기로 결정함."
+      "ai_explanation": "사업 운영에 필요한 건물, 기계장치 등 장기간 사용할 자산을 새로 매입하기로 결정함."
     },
     {
       "corp_name": "여수에코에너지",
@@ -105,7 +109,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000010",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000010",
-      "ai_explanation": "회사가 사업 운영을 위한 토지, 건물, 기계장치 등 장기적 사용 자산을 매입하기로 결정함."
+      "ai_explanation": "사업 운영에 필요한 건물, 기계장치 등 장기간 사용할 자산을 새로 매입하기로 결정함."
     },
     {
       "corp_name": "여수에코에너지",
@@ -114,7 +118,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000008",
-      "ai_explanation": "회사가 사업 운영을 위한 토지, 건물, 기계장치 등 장기적 사용 자산을 매입하기로 결정함."
+      "ai_explanation": "사업 운영에 필요한 건물, 기계장치 등 장기간 사용할 자산을 새로 매입하기로 결정함."
     },
     {
       "corp_name": "모아데이타",
@@ -123,7 +127,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000001",
-      "ai_explanation": "회사가 만기 전 발행한 전환사채를 미리 되사들여 부채를 상환하거나 재매각하기로 결정함."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 매입하여 소각하거나 보유하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2475,154 +2479,154 @@
   "top_gainers": [
     {
       "name": "금호전기",
-      "price": "4650.0",
-      "change_percent": "+13.97%",
-      "pct": 13.97
+      "price": "5300.0",
+      "change_percent": "+29.90%",
+      "pct": 29.9
     },
     {
-      "name": "JW중외제약우",
-      "price": "24000.0",
-      "change_percent": "+9.09%",
-      "pct": 9.09
+      "name": "미래아이앤지",
+      "price": "1384.0",
+      "change_percent": "+24.57%",
+      "pct": 24.57
     },
     {
-      "name": "SGC에너지",
-      "price": "59400.0",
-      "change_percent": "+5.69%",
-      "pct": 5.69
+      "name": "금호건설",
+      "price": "14100.0",
+      "change_percent": "+22.72%",
+      "pct": 22.72
     },
     {
-      "name": "현대건설",
-      "price": "116000.0",
-      "change_percent": "+3.29%",
-      "pct": 3.29
+      "name": "일진전기",
+      "price": "72400.0",
+      "change_percent": "+17.15%",
+      "pct": 17.15
     },
     {
-      "name": "흥국화재우",
-      "price": "5800.0",
-      "change_percent": "+3.20%",
-      "pct": 3.2
+      "name": "한국콜마",
+      "price": "125500.0",
+      "change_percent": "+16.31%",
+      "pct": 16.31
     }
   ],
   "top_losers": [
     {
-      "name": "보해양조",
-      "price": "1443.0",
-      "change_percent": "-3.54%",
-      "pct": 3.54
+      "name": "경동나비엔",
+      "price": "66500.0",
+      "change_percent": "-13.64%",
+      "pct": 13.64
     },
     {
-      "name": "남광토건",
-      "price": "7980.0",
-      "change_percent": "-2.80%",
-      "pct": 2.8
+      "name": "유니켐",
+      "price": "4760.0",
+      "change_percent": "-8.11%",
+      "pct": 8.11
     },
     {
-      "name": "현대해상",
-      "price": "43050.0",
-      "change_percent": "-2.27%",
-      "pct": 2.27
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "price": "11295.0",
+      "change_percent": "-7.65%",
+      "pct": 7.65
     },
     {
-      "name": "전방",
-      "price": "30800.0",
-      "change_percent": "-2.07%",
-      "pct": 2.07
+      "name": "대교",
+      "price": "1077.0",
+      "change_percent": "-6.35%",
+      "pct": 6.35
     },
     {
-      "name": "디와이에이",
-      "price": "815.0",
-      "change_percent": "-1.81%",
-      "pct": 1.81
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "4065.0",
+      "change_percent": "-6.34%",
+      "pct": 6.34
     }
   ],
   "sector_performance": [
     {
-      "name": "석유와가스",
-      "change_value": "+2.93%",
-      "pct": 2.93
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+7.74%",
+      "pct": 7.74
     },
     {
       "name": "전자제품",
-      "change_value": "+2.77%",
-      "pct": 2.77
+      "change_value": "+7.04%",
+      "pct": 7.04
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+2.17%",
-      "pct": 2.17
+      "name": "생명보험",
+      "change_value": "+4.56%",
+      "pct": 4.56
     },
     {
-      "name": "전기장비",
-      "change_value": "+1.68%",
-      "pct": 1.68
+      "name": "반도체와반도체장비",
+      "change_value": "+3.47%",
+      "pct": 3.47
     },
     {
-      "name": "손해보험",
-      "change_value": "+1.21%",
-      "pct": 1.21
+      "name": "복합기업",
+      "change_value": "+3.18%",
+      "pct": 3.18
     }
   ],
   "sector_heatmap": [
     {
-      "name": "석유와가스",
-      "change_value": "+2.93%",
-      "pct": 2.93
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+7.74%",
+      "pct": 7.74
     },
     {
       "name": "전자제품",
-      "change_value": "+2.77%",
-      "pct": 2.77
+      "change_value": "+7.04%",
+      "pct": 7.04
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+2.17%",
-      "pct": 2.17
+      "name": "생명보험",
+      "change_value": "+4.56%",
+      "pct": 4.56
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+3.47%",
+      "pct": 3.47
+    },
+    {
+      "name": "복합기업",
+      "change_value": "+3.18%",
+      "pct": 3.18
     },
     {
       "name": "전기장비",
-      "change_value": "+1.68%",
-      "pct": 1.68
+      "change_value": "+3.08%",
+      "pct": 3.08
     },
     {
-      "name": "손해보험",
-      "change_value": "+1.21%",
-      "pct": 1.21
+      "name": "건강관리장비와용품",
+      "change_value": "-3.27%",
+      "pct": -3.27
     },
     {
-      "name": "건설",
-      "change_value": "+1.10%",
-      "pct": 1.1
+      "name": "게임엔터테인먼트",
+      "change_value": "-3.29%",
+      "pct": -3.29
     },
     {
-      "name": "창업투자",
-      "change_value": "-0.19%",
-      "pct": -0.19
+      "name": "건강관리기술",
+      "change_value": "-3.41%",
+      "pct": -3.41
     },
     {
-      "name": "가정용품",
-      "change_value": "-0.21%",
-      "pct": -0.21
+      "name": "생물공학",
+      "change_value": "-3.85%",
+      "pct": -3.85
     },
     {
-      "name": "철강",
-      "change_value": "-0.22%",
-      "pct": -0.22
+      "name": "생명과학도구및서비스",
+      "change_value": "-3.86%",
+      "pct": -3.86
     },
     {
-      "name": "광고",
-      "change_value": "-0.26%",
-      "pct": -0.26
-    },
-    {
-      "name": "조선",
-      "change_value": "-0.28%",
-      "pct": -0.28
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "-0.34%",
-      "pct": -0.34
+      "name": "도로와철도운송",
+      "change_value": "-3.88%",
+      "pct": -3.88
     }
   ],
   "article_counts": {
