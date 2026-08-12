@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13 05:00:59",
+  "updated_at": "2026-08-13 05:30:51",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "53,813.78",
-      "change_percent": "▲0.04%",
-      "direction": "up",
-      "as_of": "2026-08-13 05:00:51"
+      "value": "53,770.27",
+      "change_percent": "▼0.04%",
+      "direction": "down",
+      "as_of": "2026-08-13 05:30:19"
     },
     {
       "name": "나스닥",
-      "value": "26,580.01",
-      "change_percent": "▲0.51%",
+      "value": "26,588.49",
+      "change_percent": "▲0.54%",
       "direction": "up",
-      "as_of": "2026-08-13 05:00:51"
+      "as_of": "2026-08-13 05:30:19"
     },
     {
       "name": "나스닥100",
-      "value": "29,740.01",
-      "change_percent": "▲0.73%",
+      "value": "29,742.60",
+      "change_percent": "▲0.74%",
       "direction": "up",
-      "as_of": "2026-08-13 05:00:51"
+      "as_of": "2026-08-13 05:30:19"
     },
     {
       "name": "S&P500",
-      "value": "7,747.51",
-      "change_percent": "▲0.25%",
+      "value": "7,748.50",
+      "change_percent": "▲0.26%",
       "direction": "up",
-      "as_of": "2026-08-13 05:00:51"
+      "as_of": "2026-08-13 05:30:13"
     },
     {
       "name": "국내금(원/돈)",
@@ -73,15 +73,15 @@
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "889.63",
-      "change_percent": "▲0.30%",
+      "value": "889.68",
+      "change_percent": "▲0.31%",
       "direction": "up",
       "as_of": "2026.08.12 21:07"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,634.83",
-      "change_percent": "▲0.23%",
+      "value": "1,635.11",
+      "change_percent": "▲0.25%",
       "direction": "up",
       "as_of": "2026.08.12 21:07"
     },
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "89,668,000",
-      "change_percent": "▲0.03%",
+      "value": "89,746,000",
+      "change_percent": "▲0.12%",
       "direction": "up",
-      "as_of": "2026-08-13 05:00:58"
+      "as_of": "2026-08-13 05:30:31"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,655,000",
-      "change_percent": "▲0.15%",
+      "value": "2,661,000",
+      "change_percent": "▲0.38%",
       "direction": "up",
-      "as_of": "2026-08-13 05:00:51"
+      "as_of": "2026-08-13 05:30:29"
     }
   ],
   "news_categories": [
@@ -171,8 +171,16 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "동행미디어 시대",
           "rank": 1,
+          "title": "[기자노트]신세계 정유경의 십년마일검",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001155208&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260813&page=1",
+          "upload_time": "2026-08-13 05:00",
+          "published_at": "2026-08-13T05:00:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
           "title": "SK하이닉스, 인디애나팹 27일 착공식…최태원·젠슨 황 만나나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005320284&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260813&page=1",
           "upload_time": "2026-08-12 21:21",
@@ -180,7 +188,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "맥쿼리PE, 화장품 ODM 화성코스메틱 인수한다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005720315&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260813&page=1",
           "upload_time": "2026-08-12 21:15",
@@ -188,7 +196,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "모간스탠리 코리아, 10년 넘게 '전 직원 봉사'…광화문부터 어린이병원까지",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005560828&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260813&page=1",
           "upload_time": "2026-08-12 19:41",
@@ -196,19 +204,11 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 4,
+          "rank": 5,
           "title": "한국거래소, 2026 코스닥 라이징스타 18곳 선정",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005399266&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260813&page=1",
           "upload_time": "2026-08-12 19:38",
           "published_at": "2026-08-12T19:38:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "\"22.8% 뛰었다\" 한국콜마, 2분기 영업익 첫 1000억 돌파…'소외株'의 반격 [주주클럽]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005560823&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260813&page=1",
-          "upload_time": "2026-08-12 19:00",
-          "published_at": "2026-08-12T19:00:00+09:00"
         }
       ]
     },
@@ -216,44 +216,44 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "이데일리",
           "rank": 1,
-          "title": "트럼프 'SNS 미리보기' 피소…\"수익 활용은 위헌\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802350&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-13 04:40",
-          "published_at": "2026-08-13T04:40:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 2,
-          "title": "트럼프 \"호르무즈 완전 장악\"…실제 선박은 이란 항로로",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802349&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-13 04:29",
-          "published_at": "2026-08-13T04:29:00+09:00"
+          "title": "[美특징주]아마존닷컴, 실적 급등 후 상승 모멘텀 부재…주가 약세",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006350654&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 05:16",
+          "published_at": "2026-08-13T05:16:00+09:00"
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
-          "title": "[美특징주]시스코시스템즈, 4Q 실적 발표 앞두고 AI 인프라 수요 기대…주가 2%↑",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006350632&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-13 02:50",
-          "published_at": "2026-08-13T02:50:00+09:00"
+          "rank": 2,
+          "title": "[美특징주]스페이스X, 공매도 비중 34%→11% 급감…숏커버에 주가 9% 급등",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006350653&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 05:16",
+          "published_at": "2026-08-13T05:16:00+09:00"
         },
         {
-          "press_name": "아시아경제",
+          "press_name": "연합뉴스",
+          "rank": 3,
+          "title": "뉴욕증시, 인플레 둔화 속 혼조 마감…S&P500지수 0.3%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016248223&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 05:12",
+          "published_at": "2026-08-13T05:12:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
           "rank": 4,
-          "title": "보스턴 연은 총재 \"물가 너무 높아\"…9월 금리인상 가능성 열어",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802345&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-13 00:04",
-          "published_at": "2026-08-13T00:04:00+09:00"
+          "title": "[속보]CPI 안도·AI 실적 훈풍에…나스닥 0.5%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006350651&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 05:11",
+          "published_at": "2026-08-13T05:11:00+09:00"
         },
         {
           "press_name": "아시아경제",
           "rank": 5,
-          "title": "美 7월 CPI 3.4%…Fed 금리동결에 힘 실리나",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802342&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-12 23:47",
-          "published_at": "2026-08-12T23:47:00+09:00"
+          "title": "[속보]뉴욕증시, 7월 물가 둔화세 확인 후 혼조 마감",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802351&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 05:07",
+          "published_at": "2026-08-13T05:07:00+09:00"
         }
       ]
     },
@@ -397,7 +397,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "삼성전자와 SK하이닉스 등 반도체 대형주가 강세를 보이며 코스피 지수 상승을 견인했다. 반면 동전주 및 시총 미달 상장사 36곳이 관리종목으로 지정되면서 시장 전반의 종목별 차별화 움직임이 나타났다.",
+  "ai_commentary": "코스피는 반도체 대형주인 삼성전자와 SK하이닉스가 강세를 보인 데 힘입어 상승 마감했다. 한편 코스닥은 상장폐지 요건 강화에 따른 관리종목 지정 등 시장 내 재평가 작업이 진행되며 보합권에 머물렀다.",
   "top_gainers": [
     {
       "name": "금호건설",
