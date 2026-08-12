@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-12 10:01:27",
+  "updated_at": "2026-08-12 10:31:27",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 1.95,
-    "kosdaq_change": -0.36,
-    "kospi_value": 6469.33,
-    "kosdaq_value": 854.71
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 2.92,
+    "kosdaq_change": 0.03,
+    "kospi_value": 6530.98,
+    "kosdaq_value": 858.14
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 반도체주 상승의 영향으로 삼성전자와 SK하이닉스 등 대형주가 강세를 보이면서 코스피 지수는 상승 마감했다. 반면 코스닥 시장에서는 일부 종목의 실적 부진에 따른 급락세가 나타나며 지수 하락을 견인했다."
+      "text": "미국 반도체 기업의 주가 상승세가 국내 시장으로 이어지며 대형주 중심의 코스피가 큰 폭으로 올랐다. 반면 코스닥은 특정 기업의 개별 실적 호재에도 불구하고 별다른 등락 없이 보합권에 머물렀다."
     }
   ],
   "daily_term": {
@@ -91,7 +91,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000035",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000035",
-      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 신탁기관을 통해 자사주를 매입하기로 결정함."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 신탁을 통해 자사주를 매입하기로 결정함."
     },
     {
       "corp_name": "여수에코에너지",
@@ -100,7 +100,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000011",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000011",
-      "ai_explanation": "사업 운영에 필요한 토지, 건물, 기계장치 등 가치가 장기간 지속되는 자산을 매입함."
+      "ai_explanation": "회사가 사업 운영을 위해 토지, 건물, 기계장치 등 장기적 사용 자산을 매입하기로 결정함."
     },
     {
       "corp_name": "여수에코에너지",
@@ -109,7 +109,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000010",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000010",
-      "ai_explanation": "사업 운영에 필요한 토지, 건물, 기계장치 등 가치가 장기간 지속되는 자산을 매입함."
+      "ai_explanation": "회사가 사업 운영을 위해 토지, 건물, 기계장치 등 장기적 사용 자산을 매입하기로 결정함."
     },
     {
       "corp_name": "여수에코에너지",
@@ -118,7 +118,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000008",
-      "ai_explanation": "사업 운영에 필요한 토지, 건물, 기계장치 등 가치가 장기간 지속되는 자산을 매입함."
+      "ai_explanation": "회사가 사업 운영을 위해 토지, 건물, 기계장치 등 장기적 사용 자산을 매입하기로 결정함."
     },
     {
       "corp_name": "모아데이타",
@@ -127,7 +127,7 @@
       "rcept_dt": "20260812",
       "rcept_no": "20260812000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000001",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 매입하여 소각하거나 보유하기로 결정함."
+      "ai_explanation": "회사가 만기 전에 발행했던 전환사채를 다시 사들여 소각하거나 보유하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2476,126 +2476,157 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
+  "top_gainers": [
+    {
+      "name": "금호전기",
+      "price": "5300.0",
+      "change_percent": "+29.90%",
+      "pct": 29.9
+    },
+    {
+      "name": "금호건설",
+      "price": "14420.0",
+      "change_percent": "+25.50%",
+      "pct": 25.5
+    },
+    {
+      "name": "한국콜마",
+      "price": "132900.0",
+      "change_percent": "+23.17%",
+      "pct": 23.17
+    },
+    {
+      "name": "금호건설우",
+      "price": "26450.0",
+      "change_percent": "+20.50%",
+      "pct": 20.5
+    },
+    {
+      "name": "미래아이앤지",
+      "price": "1334.0",
+      "change_percent": "+20.07%",
+      "pct": 20.07
+    }
+  ],
   "top_losers": [
     {
       "name": "경동나비엔",
-      "price": "66700.0",
-      "change_percent": "-13.38%",
-      "pct": 13.38
-    },
-    {
-      "name": "대교",
-      "price": "1060.0",
-      "change_percent": "-7.83%",
-      "pct": 7.83
-    },
-    {
-      "name": "시프트업",
-      "price": "31400.0",
-      "change_percent": "-6.69%",
-      "pct": 6.69
+      "price": "67100.0",
+      "change_percent": "-12.86%",
+      "pct": 12.86
     },
     {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "11455.0",
-      "change_percent": "-6.34%",
-      "pct": 6.34
+      "price": "11065.0",
+      "change_percent": "-9.53%",
+      "pct": 9.53
     },
     {
-      "name": "STX그린로지스",
-      "price": "2835.0",
-      "change_percent": "-6.28%",
-      "pct": 6.28
+      "name": "대교",
+      "price": "1048.0",
+      "change_percent": "-8.87%",
+      "pct": 8.87
+    },
+    {
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "4002.0",
+      "change_percent": "-7.79%",
+      "pct": 7.79
+    },
+    {
+      "name": "신세계",
+      "price": "396000.0",
+      "change_percent": "-7.58%",
+      "pct": 7.58
     }
   ],
   "sector_performance": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+12.63%",
-      "pct": 12.63
+      "change_value": "+11.97%",
+      "pct": 11.97
     },
     {
       "name": "전자제품",
-      "change_value": "+9.18%",
-      "pct": 9.18
+      "change_value": "+11.56%",
+      "pct": 11.56
     },
     {
       "name": "화장품",
-      "change_value": "+6.23%",
-      "pct": 6.23
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+4.45%",
-      "pct": 4.45
+      "change_value": "+6.08%",
+      "pct": 6.08
     },
     {
       "name": "생명보험",
-      "change_value": "+3.95%",
-      "pct": 3.95
+      "change_value": "+4.70%",
+      "pct": 4.7
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+4.00%",
+      "pct": 4.0
     }
   ],
   "sector_heatmap": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+12.63%",
-      "pct": 12.63
+      "change_value": "+11.97%",
+      "pct": 11.97
     },
     {
       "name": "전자제품",
-      "change_value": "+9.18%",
-      "pct": 9.18
+      "change_value": "+11.56%",
+      "pct": 11.56
     },
     {
       "name": "화장품",
-      "change_value": "+6.23%",
-      "pct": 6.23
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+4.45%",
-      "pct": 4.45
+      "change_value": "+6.08%",
+      "pct": 6.08
     },
     {
       "name": "생명보험",
-      "change_value": "+3.95%",
-      "pct": 3.95
+      "change_value": "+4.70%",
+      "pct": 4.7
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "+2.80%",
-      "pct": 2.8
+      "name": "반도체와반도체장비",
+      "change_value": "+4.00%",
+      "pct": 4.0
     },
     {
-      "name": "기타금융",
+      "name": "복합기업",
+      "change_value": "+3.77%",
+      "pct": 3.77
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-1.50%",
+      "pct": -1.5
+    },
+    {
+      "name": "백화점과일반상점",
       "change_value": "-2.17%",
       "pct": -2.17
     },
     {
-      "name": "건강관리기술",
-      "change_value": "-2.39%",
-      "pct": -2.39
-    },
-    {
       "name": "게임엔터테인먼트",
-      "change_value": "-2.89%",
-      "pct": -2.89
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-3.23%",
-      "pct": -3.23
+      "change_value": "-2.52%",
+      "pct": -2.52
     },
     {
       "name": "도로와철도운송",
-      "change_value": "-3.82%",
-      "pct": -3.82
+      "change_value": "-2.94%",
+      "pct": -2.94
+    },
+    {
+      "name": "생명과학도구및서비스",
+      "change_value": "-2.96%",
+      "pct": -2.96
     },
     {
       "name": "문구류",
-      "change_value": "-4.20%",
-      "pct": -4.2
+      "change_value": "-4.92%",
+      "pct": -4.92
     }
   ],
   "article_counts": {
