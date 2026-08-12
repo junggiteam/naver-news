@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13 04:30:53",
+  "updated_at": "2026-08-13 05:00:59",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "53,817.46",
-      "change_percent": "▲0.05%",
+      "value": "53,813.78",
+      "change_percent": "▲0.04%",
       "direction": "up",
-      "as_of": "2026-08-13 04:30:36"
+      "as_of": "2026-08-13 05:00:51"
     },
     {
       "name": "나스닥",
-      "value": "26,619.65",
-      "change_percent": "▲0.66%",
+      "value": "26,580.01",
+      "change_percent": "▲0.51%",
       "direction": "up",
-      "as_of": "2026-08-13 04:30:36"
+      "as_of": "2026-08-13 05:00:51"
     },
     {
       "name": "나스닥100",
-      "value": "29,786.63",
-      "change_percent": "▲0.88%",
+      "value": "29,740.01",
+      "change_percent": "▲0.73%",
       "direction": "up",
-      "as_of": "2026-08-13 04:30:36"
+      "as_of": "2026-08-13 05:00:51"
     },
     {
       "name": "S&P500",
-      "value": "7,752.90",
-      "change_percent": "▲0.32%",
+      "value": "7,747.51",
+      "change_percent": "▲0.25%",
       "direction": "up",
-      "as_of": "2026-08-13 04:30:36"
+      "as_of": "2026-08-13 05:00:51"
     },
     {
       "name": "국내금(원/돈)",
@@ -73,15 +73,15 @@
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "889.79",
-      "change_percent": "▲0.32%",
+      "value": "889.63",
+      "change_percent": "▲0.30%",
       "direction": "up",
       "as_of": "2026.08.12 21:07"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,635.11",
-      "change_percent": "▲0.25%",
+      "value": "1,634.83",
+      "change_percent": "▲0.23%",
       "direction": "up",
       "as_of": "2026.08.12 21:07"
     },
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "89,480,000",
-      "change_percent": "▼0.18%",
-      "direction": "down",
-      "as_of": "2026-08-13 04:30:50"
+      "value": "89,668,000",
+      "change_percent": "▲0.03%",
+      "direction": "up",
+      "as_of": "2026-08-13 05:00:58"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,662,000",
-      "change_percent": "▲0.41%",
+      "value": "2,655,000",
+      "change_percent": "▲0.15%",
       "direction": "up",
-      "as_of": "2026-08-13 04:30:11"
+      "as_of": "2026-08-13 05:00:51"
     }
   ],
   "news_categories": [
@@ -216,8 +216,24 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "트럼프 'SNS 미리보기' 피소…\"수익 활용은 위헌\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802350&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 04:40",
+          "published_at": "2026-08-13T04:40:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "트럼프 \"호르무즈 완전 장악\"…실제 선박은 이란 항로로",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802349&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
+          "upload_time": "2026-08-13 04:29",
+          "published_at": "2026-08-13T04:29:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
           "title": "[美특징주]시스코시스템즈, 4Q 실적 발표 앞두고 AI 인프라 수요 기대…주가 2%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006350632&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
           "upload_time": "2026-08-13 02:50",
@@ -225,7 +241,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 4,
           "title": "보스턴 연은 총재 \"물가 너무 높아\"…9월 금리인상 가능성 열어",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802345&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
           "upload_time": "2026-08-13 00:04",
@@ -233,27 +249,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 5,
           "title": "美 7월 CPI 3.4%…Fed 금리동결에 힘 실리나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802342&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
           "upload_time": "2026-08-12 23:47",
           "published_at": "2026-08-12T23:47:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 4,
-          "title": "[뉴욕증시]CPI 둔화세에 S&P500·나스닥 ↑",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005802341&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-12 23:31",
-          "published_at": "2026-08-12T23:31:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "[실적리뷰]루멘텀, 호실적에도 투자의견 하향…동종업계 밸류 적용-BofA",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006350612&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260813&page=1",
-          "upload_time": "2026-08-12 22:41",
-          "published_at": "2026-08-12T22:41:00+09:00"
         }
       ]
     },
@@ -397,7 +397,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "미국 소비자물가지수 둔화에 따른 금리 동결 기대감으로 뉴욕 증시가 상승하며 코스피와 코스닥에도 긍정적인 영향을 미쳤다. 특히 삼성전자와 SK하이닉스 등 반도체 대형주가 강세를 보이며 코스피의 상승 폭을 견인했다. 한편 동전주와 시가총액 미달 기업들이 관리종목으로 지정되는 등 일부 기업의 상장폐지 우려도 함께 부각되었다.",
+  "ai_commentary": "삼성전자와 SK하이닉스 등 반도체 대형주가 강세를 보이며 코스피 지수 상승을 견인했다. 반면 동전주 및 시총 미달 상장사 36곳이 관리종목으로 지정되면서 시장 전반의 종목별 차별화 움직임이 나타났다.",
   "top_gainers": [
     {
       "name": "금호건설",
