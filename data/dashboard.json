@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-14 08:01:15",
+  "updated_at": "2026-08-14 08:31:06",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 3.56,
-    "kosdaq_change": 0.29,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6813.34,
     "kosdaq_value": 861.37
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "12월부터 무순위 청약 제도 개편 및 비아파트 공급 지원책 마련"
-    },
-    {
-      "category": "증권",
-      "text": "미국 생산자물가지수 상승 폭 둔화로 금리 인하 기대감이 커지며 뉴욕 증시가 상승한 영향이 국내 시장에도 긍정적으로 작용했다. 반도체 관련 종목을 중심으로 매수세가 유입되면서 코스피와 코스닥 지수 모두 최근 14일간 기준 최고치를 기록했다."
     }
   ],
   "daily_term": {
@@ -90,7 +86,7 @@
       "rcept_dt": "20260814",
       "rcept_no": "20260813001793",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001793",
-      "ai_explanation": "회사가 다른 회사와 합쳐지거나 흡수되어 하나의 회사가 되기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 다른 회사와 합병하거나 피합병되는 계약을 체결했음을 알리는 공시입니다."
     },
     {
       "corp_name": "모아데이타",
@@ -99,7 +95,7 @@
       "rcept_dt": "20260814",
       "rcept_no": "20260813001788",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001788",
-      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 새로 주식을 발행하여 자본을 늘리겠다는 공시입니다."
+      "ai_explanation": "회사가 운영 자금이나 사업 확장을 위해 새로 주식을 발행하여 자본금을 늘리는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2518,157 +2514,95 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "금호전기",
-      "price": "6890.0",
-      "change_percent": "+30.00%",
-      "pct": 30.0
-    },
-    {
-      "name": "미래산업",
-      "price": "10230.0",
-      "change_percent": "+19.37%",
-      "pct": 19.37
-    },
-    {
-      "name": "삼화콘덴서",
-      "price": "103300.0",
-      "change_percent": "+17.39%",
-      "pct": 17.39
-    },
-    {
-      "name": "TIGER 200IT레버리지",
-      "price": "339000.0",
-      "change_percent": "+13.44%",
-      "pct": 13.44
-    },
-    {
-      "name": "삼성전기",
-      "price": "1503000.0",
-      "change_percent": "+12.58%",
-      "pct": 12.58
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "금호건설우",
-      "price": "24500.0",
-      "change_percent": "-14.04%",
-      "pct": 14.04
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "8540.0",
-      "change_percent": "-12.95%",
-      "pct": 12.95
-    },
-    {
-      "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3425.0",
-      "change_percent": "-10.92%",
-      "pct": 10.92
-    },
-    {
-      "name": "에이블씨엔씨",
-      "price": "12070.0",
-      "change_percent": "-10.13%",
-      "pct": 10.13
-    },
-    {
-      "name": "달바글로벌",
-      "price": "236000.0",
-      "change_percent": "-9.92%",
-      "pct": 9.92
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "전자장비와기기",
-      "change_value": "+9.28%",
-      "pct": 9.28
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "창업투자",
-      "change_value": "+5.91%",
-      "pct": 5.91
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+5.15%",
-      "pct": 5.15
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+3.71%",
-      "pct": 3.71
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "전자장비와기기",
-      "change_value": "+9.28%",
-      "pct": 9.28
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "창업투자",
-      "change_value": "+5.91%",
-      "pct": 5.91
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+5.15%",
-      "pct": 5.15
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+3.71%",
-      "pct": 3.71
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+3.30%",
-      "pct": 3.3
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "운송인프라",
-      "change_value": "-2.21%",
-      "pct": -2.21
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-2.66%",
-      "pct": -2.66
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "-3.20%",
-      "pct": -3.2
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "문구류",
-      "change_value": "-4.29%",
-      "pct": -4.29
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-4.88%",
-      "pct": -4.88
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-8.17%",
-      "pct": -8.17
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
