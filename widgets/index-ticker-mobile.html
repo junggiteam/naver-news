@@ -8,6 +8,7 @@
   html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background: transparent;
   }
 </style>
@@ -184,12 +185,58 @@
     font-size: 11px;
     color: #aaa;
   }
+
+  /* 상단 남색 롤링 티커바(theme=dark)용 - 헤더/카드 껍데기 없이
+     한 줄 가로 스크롤 티커 + 우측 고정 타임스탬프로 전환. */
+  #idx-strip-h.theme-dark {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    max-width: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .theme-dark .ish-header { display: none; }
+
+  .theme-dark .ish-viewport {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .theme-dark .ish-name  { color: #fff; }
+  .theme-dark .ish-value { color: #fff; }
+  .theme-dark .ish-item  { border-right-color: rgba(255,255,255,0.25); }
+
+  /* 남색 배경에서 기본 등락률 색(빨강 #c0392b/파랑 #2a5db0)의 대비가
+     너무 낮아(실측 대비율 각각 2.43:1, 2.08:1로 WCAG AA 4.5:1 미달)
+     밝은 톤으로 교체 - Playwright로 상승/하락 두 색 모두 실측 후 확정. */
+  .theme-dark .ish-change.up   { color: #ff6b6b; }
+  .theme-dark .ish-change.down { color: #7fb2ff; }
+
+  .theme-dark .ish-meta {
+    flex: 0 0 auto;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 14px;
+    border-top: none;
+    border-left: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.75);
+    white-space: nowrap;
+  }
 </style>
 
 <script>
 (function () {
   var STOCK_URL = "https://raw.githubusercontent.com/junggiteam/naver-news/main/data/stock_news.json";
   var DURATION_PER_ITEM_S = 2.2; // 항목 하나가 지나가는 데 걸리는 시간(초) - 작을수록 빠름
+
+  if (new URLSearchParams(location.search).get("theme") === "dark") {
+    document.getElementById("idx-strip-h").classList.add("theme-dark");
+  }
 
   var track = document.getElementById("ish-track");
   var metaTextEl = document.getElementById("ish-meta-text");
