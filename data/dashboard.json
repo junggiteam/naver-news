@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-13 10:01:22",
+  "updated_at": "2026-08-13 10:31:11",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 3.74,
-    "kosdaq_change": 1.4,
-    "kospi_value": 6825.37,
-    "kosdaq_value": 870.91
+    "kospi_change": 3.57,
+    "kosdaq_change": 0.79,
+    "kospi_value": 6813.71,
+    "kosdaq_value": 865.7
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 소비자물가지수 둔화에 따른 안도감과 AI·반도체 관련주 중심의 강세가 국내 증시에도 훈풍으로 작용하며 코스피와 코스닥 지수가 나란히 최근 13일간 최고치를 기록했다. 삼성전자와 SK하이닉스 등 대형 반도체주의 동반 상승과 주요 기업들의 실적 개선 소식이 지수 상승을 견인했다."
+      "text": "미국 소비자물가지수 상승 폭이 둔화하며 인플레이션 우려가 완화된 가운데, 인공지능 분야에 대한 기대감이 더해지며 국내 증시가 동반 상승했다. 코스피와 코스닥 지수 모두 최근 13일간 데이터 기준 최고치를 기록하며 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "에스폴리텍",
+      "corp_code": "00340272",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260813",
+      "rcept_no": "20260813000189",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000189",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 매입하기로 결정함."
+    },
+    {
       "corp_name": "젬백스",
       "corp_code": "00492894",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260813",
       "rcept_no": "20260812000890",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000890",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 수정하여 다시 알리는 공시입니다."
+      "ai_explanation": "회사가 자본 확충 등을 위해 주식을 새로 발행하여 자금을 조달하는 계획을 수정함."
     },
     {
       "corp_name": "젬백스",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260813",
       "rcept_no": "20260812000888",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000888",
-      "ai_explanation": "건물, 토지 등 회사의 사업에 필요한 대규모 자산을 매입하기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사가 영업 활동이나 투자 목적으로 토지, 건물 등 대규모 자산을 매입하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2943,148 +2952,148 @@
     },
     {
       "name": "삼화콘덴서",
-      "price": "104600.0",
-      "change_percent": "+18.86%",
-      "pct": 18.86
-    },
-    {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "7890.0",
-      "change_percent": "+16.11%",
-      "pct": 16.11
+      "price": "106400.0",
+      "change_percent": "+20.91%",
+      "pct": 20.91
     },
     {
       "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "8315.0",
-      "change_percent": "+15.01%",
-      "pct": 15.01
+      "price": "8450.0",
+      "change_percent": "+16.87%",
+      "pct": 16.87
     },
     {
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "7965.0",
-      "change_percent": "+14.69%",
-      "pct": 14.69
+      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
+      "price": "7880.0",
+      "change_percent": "+15.97%",
+      "pct": 15.97
+    },
+    {
+      "name": "미래산업",
+      "price": "9910.0",
+      "change_percent": "+15.64%",
+      "pct": 15.64
     }
   ],
   "top_losers": [
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "8430.0",
-      "change_percent": "-14.07%",
-      "pct": 14.07
+      "price": "8435.0",
+      "change_percent": "-14.02%",
+      "pct": 14.02
     },
     {
       "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3405.0",
-      "change_percent": "-11.44%",
-      "pct": 11.44
+      "price": "3450.0",
+      "change_percent": "-10.27%",
+      "pct": 10.27
     },
     {
-      "name": "하나 인버스 2X 반도체 ETN",
-      "price": "2680.0",
-      "change_percent": "-9.00%",
-      "pct": 9.0
+      "name": "KB 인버스 2X KOSPI 200 선물 ETN B",
+      "price": "25460.0",
+      "change_percent": "-8.93%",
+      "pct": 8.93
+    },
+    {
+      "name": "미래아이앤지",
+      "price": "1291.0",
+      "change_percent": "-8.89%",
+      "pct": 8.89
     },
     {
       "name": "PLUS 200선물인버스2X",
       "price": "164.0",
       "change_percent": "-8.89%",
       "pct": 8.89
-    },
-    {
-      "name": "RISE 200선물인버스2X",
-      "price": "84.0",
-      "change_percent": "-8.70%",
-      "pct": 8.7
     }
   ],
   "sector_performance": [
     {
       "name": "전자장비와기기",
-      "change_value": "+9.33%",
-      "pct": 9.33
+      "change_value": "+9.39%",
+      "pct": 9.39
     },
     {
       "name": "창업투자",
-      "change_value": "+8.18%",
-      "pct": 8.18
+      "change_value": "+7.11%",
+      "pct": 7.11
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+5.06%",
-      "pct": 5.06
+      "change_value": "+5.15%",
+      "pct": 5.15
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+3.61%",
-      "pct": 3.61
+      "change_value": "+3.15%",
+      "pct": 3.15
     },
     {
-      "name": "생명보험",
-      "change_value": "+3.43%",
-      "pct": 3.43
+      "name": "전기장비",
+      "change_value": "+3.05%",
+      "pct": 3.05
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자장비와기기",
-      "change_value": "+9.33%",
-      "pct": 9.33
+      "change_value": "+9.39%",
+      "pct": 9.39
     },
     {
       "name": "창업투자",
-      "change_value": "+8.18%",
-      "pct": 8.18
+      "change_value": "+7.11%",
+      "pct": 7.11
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+5.06%",
-      "pct": 5.06
+      "change_value": "+5.15%",
+      "pct": 5.15
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+3.61%",
-      "pct": 3.61
+      "change_value": "+3.15%",
+      "pct": 3.15
     },
     {
-      "name": "생명보험",
-      "change_value": "+3.43%",
-      "pct": 3.43
+      "name": "전기장비",
+      "change_value": "+3.05%",
+      "pct": 3.05
     },
     {
       "name": "통신장비",
-      "change_value": "+3.17%",
-      "pct": 3.17
+      "change_value": "+2.93%",
+      "pct": 2.93
     },
     {
-      "name": "건강관리기술",
-      "change_value": "-1.60%",
-      "pct": -1.6
+      "name": "방송과엔터테인먼트",
+      "change_value": "-2.31%",
+      "pct": -2.31
     },
     {
       "name": "가구",
-      "change_value": "-1.63%",
-      "pct": -1.63
+      "change_value": "-2.35%",
+      "pct": -2.35
     },
     {
-      "name": "운송인프라",
-      "change_value": "-1.66%",
-      "pct": -1.66
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "-3.19%",
-      "pct": -3.19
+      "name": "도로와철도운송",
+      "change_value": "-2.52%",
+      "pct": -2.52
     },
     {
       "name": "문구류",
-      "change_value": "-3.33%",
-      "pct": -3.33
+      "change_value": "-3.86%",
+      "pct": -3.86
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-4.05%",
+      "pct": -4.05
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-4.85%",
-      "pct": -4.85
+      "change_value": "-5.73%",
+      "pct": -5.73
     }
   ],
   "article_counts": {
