@@ -162,6 +162,13 @@
     display: inline-block;
     transform: translateY(-0.08px);
   }
+  /* "국내금(원/돈)"처럼 이름에 괄호 단위가 붙는 항목은 괄호 부분만
+     작게 - buildItem()의 nameHtml()에서 분리해 렌더링. */
+  .ish-name-unit {
+    font-size: 11px;
+    opacity: 0.75;
+    margin-left: 1px;
+  }
   .ish-value {
     font-size: 15px;
     font-weight: 800;
@@ -211,6 +218,14 @@
   .theme-dark .ish-name  { color: #fff; }
   .theme-dark .ish-value { color: #fff; }
   .theme-dark .ish-item  { border-right-color: rgba(255,255,255,0.25); }
+  /* 이미지 아이콘의 흰 테두리가 남색 배경에서 어색해 제거하고, 투명
+     배경 PNG(gold.png/oil.png)가 남색 위에서 잘 안 보이는 문제를
+     완화하기 위해 밝은 배경을 깐다 - 이미지 배지 공용 클래스라 다른
+     이미지 아이콘(국기 등)에도 같이 적용됨. */
+  .theme-dark .idx-badge-img {
+    border: none;
+    background: #eef6ff;
+  }
 
   /* 남색 배경에서 기본 등락률 색(빨강 #c0392b/파랑 #2a5db0)의 대비가
      너무 낮아(실측 대비율 각각 2.43:1, 2.08:1로 WCAG AA 4.5:1 미달)
@@ -306,13 +321,22 @@
     return "";
   }
 
+  // "이름(괄호)" 패턴이면 괄호 부분만 분리해서 더 작은 폰트
+  // (.ish-name-unit)로 렌더링한다("국내금(원/돈)" -> "국내금" + 작은
+  // "(원/돈)"). 괄호가 없는 이름은 그대로 반환.
+  function nameHtml(name) {
+    var m = name.match(/^(.+?)(\([^)]+\))$/);
+    if (!m) return name;
+    return m[1] + '<span class="ish-name-unit">' + m[2] + '</span>';
+  }
+
   function buildItem(idx) {
     var cleanPercent = (idx.change_percent || "").replace(/^[▲▼△▽+\-\s]+/, "").trim();
     var dirClass = idx.direction === "up" ? "up" : idx.direction === "down" ? "down" : "flat";
     var el = document.createElement("span");
     el.className = "ish-item";
     el.innerHTML =
-      '<span class="ish-name">' + badgeHtml(idx.name) + idx.name + '</span>' +
+      '<span class="ish-name">' + badgeHtml(idx.name) + nameHtml(idx.name) + '</span>' +
       '<span class="ish-value">' + idx.value + '</span>' +
       '<span class="ish-change ' + dirClass + '">' + arrow(idx.direction) + ' ' + cleanPercent + '</span>';
     return el;
