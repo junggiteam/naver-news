@@ -246,6 +246,13 @@
     color: rgba(255,255,255,0.75);
     white-space: nowrap;
   }
+
+  /* PC 화면 안에서 브라우저 창 폭만 줄어들 때(모바일 전환 아님) 우측
+     타임스탬프가 잘려서 안 보이는 문제 - 공간이 부족해지면 날짜 부분을
+     먼저 생략해서 "시간 기준"만이라도 항상 보이게 함. */
+  @media (max-width: 700px) {
+    .theme-dark .ish-meta-date { display: none; }
+  }
 </style>
 
 <script>
@@ -363,7 +370,11 @@
       var totalSeconds = indices.length * DURATION_PER_ITEM_S;
       track.style.animationDuration = totalSeconds + "s";
 
-      metaTextEl.textContent = data.updated_at ? data.updated_at + " 기준" : "";
+      var updated = data.updated_at || "";
+      var sp = updated.split(" ");
+      metaTextEl.innerHTML = sp.length === 2
+        ? '<span class="ish-meta-date">' + sp[0] + ' </span>' + sp[1] + ' 기준'
+        : (updated ? updated + " 기준" : "");
     })
     .catch(function (err) {
       track.innerHTML = '<span class="ish-loading">지표를 불러오지 못했습니다.</span>';
