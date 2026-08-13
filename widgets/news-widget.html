@@ -2264,13 +2264,18 @@
     font-weight: var(--nw-body-weight);
     letter-spacing: var(--nw-body-ls);
     line-height: var(--nw-body-lh);
+    white-space: pre-line;
   }
 
   /* 데일리 브리핑 본문 전용 - justify는 한글에서 단어 간격이 불균등하게
      벌어지는 문제가 있어 좌측 정렬로 되돌림 (word-break keep-all은
-     #news-widget 전역 설정을 그대로 따름) */
+     #news-widget 전역 설정을 그대로 따름). white-space: pre-line은
+     report.body의 문단 구분(빈 줄)을 화면에서도 문단으로 살리기 위함 -
+     .cr-issue-insight에서 이미 상속되지만 이 클래스의 목적을 명시하기
+     위해 중복 선언. */
   .db2-report-text {
     text-align: left;
+    white-space: pre-line;
   }
 
   .cr-sowhat-box {

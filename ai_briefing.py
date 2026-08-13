@@ -270,6 +270,13 @@ CATEGORY_REPORT_GUIDE = (
     "  유형의 표현 자체를 쓰지 마라. 다만 아래 [검증된 사실] 섹션이 별도로\n"
     "  주어진 경우에는, 그 안에 명시된 지표·기간에 한해서만 이런 표현을\n"
     "  써도 된다.\n"
+    "- 각 문장은 가능하면 [자료]에 있는 구체적인 수치·기업명·기관명을\n"
+    "  포함해서 써라. 정보가 없는데 문장을 채우려고 \"~라는 분석이 나온다\",\n"
+    "  \"~로 평가된다\" 같은 내용 없는 연결어를 쓰지 마라 - 그럴 바엔 그\n"
+    "  소재는 아예 언급하지 말고 넘어가라.\n"
+    "- 서로 관련 없는 여러 소재를 하나의 문장이나 문단에 억지로 엮지 마라.\n"
+    "  소재가 자연스러운 소주제로 나뉘면, 문단을 나눠(빈 줄로 구분) 소주제별로\n"
+    "  정리해서 써도 된다.\n"
 )
 
 # 오전판(조간) 전용 추가 지침: 당일 장이 아직 진행 중인 시점에 발행되므로,
@@ -295,6 +302,17 @@ EVENING_REPORT_GUIDE = (
     "  당일 마감(또는 마감에 가까운) 기준 수치로 다뤄도 된다.\n"
 )
 
+# 기업 카테고리 전용 추가 지침: DART 공시는 daily_reports._build_corporate_material
+# 단계에서 이미 재료에서 제외됐으므로(DART 브리핑 서브탭과의 중복 방지),
+# 여기서는 뉴스 제목을 폭넓게 다루도록 지시한다.
+CORPORATE_REPORT_GUIDE = (
+    "\n[기업 카테고리 전용 유의사항]\n"
+    "- 오늘 [자료]에 있는 기업 관련 뉴스를 중요도·화제성 순으로 가능한 한\n"
+    "  빠짐없이 다뤄라 - 한두 건만 골라 깊게 쓰고 나머지를 생략하지 마라.\n"
+    "- 이 리포트는 공시를 다루지 않는다(공시는 별도 DART 브리핑에서 다룬다).\n"
+    "  자료에 공시 관련 내용이 없다는 전제로 작성하라.\n"
+)
+
 
 def generate_category_report(category_label, material_block, report_type="evening", verified_facts=None):
     """오늘의 카테고리별 자료(material_block)를 종합해 제목+본문 리포트를
@@ -307,17 +325,19 @@ def generate_category_report(category_label, material_block, report_type="evenin
         return None
 
     edition_guide = MORNING_REPORT_GUIDE if report_type == "morning" else EVENING_REPORT_GUIDE
+    category_guide = CORPORATE_REPORT_GUIDE if category_label == "기업" else ""
 
     prompt = (
         f"{CATEGORY_REPORT_GUIDE}\n"
         f"{edition_guide}\n"
+        f"{category_guide}\n"
         f"{_verified_facts_block(verified_facts)}\n"
         f"아래는 오늘의 '{category_label}' 관련 자료다. 이 자료들을 종합해서\n"
         "오늘자 이슈 리포트를 작성하라.\n\n"
         "출력은 정확히 아래 두 줄 형식으로만, 그 외 설명은 쓰지 마라:\n"
         "제목: (25자 이내, 기사 제목처럼)\n"
-        "본문: (400~600자, 문단 구분 없이 이어서. 자료에 있는 사실 위주로\n"
-        "오늘 흐름을 정리)\n\n"
+        "본문: (600~900자, 소주제가 여러 개면 문단을 나눠 써도 된다. 문단\n"
+        "구분은 빈 줄로. 자료에 있는 사실 위주로 오늘 흐름을 정리)\n\n"
         f"[자료]\n{material_block}"
     )
     text = _call_gemini(prompt, timeout=90)
@@ -325,16 +345,36 @@ def generate_category_report(category_label, material_block, report_type="evenin
         return None
 
     title = ""
-    body = ""
+    body_lines = []
+    body_started = False
     for line in text.splitlines():
         stripped = line.strip()
         if stripped.startswith("제목:"):
             title = stripped[len("제목:"):].strip()
-        elif stripped.startswith("본문:"):
-            body = stripped[len("본문:"):].strip()
-        elif body:
-            # 본문이 여러 줄로 나뉘어 온 경우 이어붙임
-            body += " " + stripped
+            continue
+        if stripped.startswith("본문:"):
+            body_started = True
+            first = stripped[len("본문:"):].strip()
+            if first:
+                body_lines.append(first)
+            continue
+        if body_started:
+            body_lines.append(stripped)
+
+    # 빈 줄(문단 구분)은 그대로 살리고, 문단 안에서 줄바꿈된 문장은
+    # 공백으로 이어붙여 문단 단위로 재구성한다.
+    paragraphs = []
+    current = []
+    for line in body_lines:
+        if line == "":
+            if current:
+                paragraphs.append(" ".join(current))
+                current = []
+        else:
+            current.append(line)
+    if current:
+        paragraphs.append(" ".join(current))
+    body = "\n\n".join(paragraphs)
 
     if not title or not body:
         return None

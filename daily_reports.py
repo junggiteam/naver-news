@@ -76,7 +76,7 @@ def _build_market_material(stock_data, macro_data):
             value_str = f"{ind.get('value')}{unit}" if unit and len(unit) <= 2 else f"{ind.get('value')} ({unit})" if unit else str(ind.get("value"))
             lines.append(f"- {ind.get('name')}: {value_str} ({ind.get('cycle', '')})")
 
-    titles = _stock_category_titles(stock_data, "시황·전망")
+    titles = _stock_category_titles(stock_data, "시황·전망", limit=10)
     if titles:
         lines.append("\n[관련 뉴스 제목]")
         lines.extend(f"- {t}" for t in titles)
@@ -106,28 +106,15 @@ def _build_investment_material(stock_data):
     return "\n".join(lines)
 
 
-def _build_corporate_material(stock_data, dart_data):
-    """기업: DART 주요사항보고(+AI 설명) + 기업·종목분석 뉴스 제목.
-    오전판/저녁판 공통 - DART는 항상 "오늘" 날짜로 조회하고, 공시/사건
-    중심이라 시점 구분이 가격 데이터만큼 중요하지 않음."""
-    lines = []
-
-    filings = dart_data.get("filings", [])[:10]
-    if filings:
-        lines.append("[오늘의 주요 공시]")
-        for f in filings:
-            desc = f.get("ai_explanation", "")
-            entry = f"- {f.get('corp_name')} | {f.get('report_nm')}"
-            if desc:
-                entry += f" -> {desc}"
-            lines.append(entry)
-
-    titles = _stock_category_titles(stock_data, "기업·종목분석")
-    if titles:
-        lines.append("\n[관련 뉴스 제목]")
-        lines.extend(f"- {t}" for t in titles)
-
-    return "\n".join(lines)
+def _build_corporate_material(stock_data):
+    """기업: 기업·종목분석 뉴스 제목만 사용. DART 공시는 "DART 브리핑"
+    서브탭 및 "정책·캘린더" 탭에서 이미 전체/M&A 상세로 다루고 있어
+    중복이므로 이 카테고리 재료에서는 제외한다.
+    오전판/저녁판 공통."""
+    titles = _stock_category_titles(stock_data, "기업·종목분석", limit=20)
+    if not titles:
+        return ""
+    return "\n".join(["[관련 뉴스 제목]"] + [f"- {t}" for t in titles])
 
 
 # ---------- 신규 카테고리(금융/TAX/부동산) - 오전판/저녁판 공용 ----------
@@ -347,7 +334,6 @@ def build_morning_reports():
     """오전판(조간): 전일 마감 리캡 + 오늘 오전 이슈."""
     stock_data = _load_json("data/stock_news.json")
     history = _load_json("data/stock_index_history.json")
-    dart_data = _load_json("data/dart_filings.json")
     economy_data = _load_json("data/economy_news.json")
     realestate_data = _load_json("data/realestate_news.json")
     tax_data = _load_json("data/tax_labor_calendar.json")
@@ -357,7 +343,7 @@ def build_morning_reports():
     materials = {
         "시황": _build_market_material_morning(stock_data, history),
         "투자": _build_investment_material_morning(stock_data),
-        "기업": _build_corporate_material(stock_data, dart_data),
+        "기업": _build_corporate_material(stock_data),
         "금융": _build_finance_material(stock_data),
         "TAX": _build_tax_material(tax_data, economy_data),
         "부동산": _build_realestate_material(realestate_data),
@@ -370,7 +356,6 @@ def build_evening_reports():
     """저녁판(마감): 당일 마감(또는 마감에 가까운) 수치 중심."""
     stock_data = _load_json("data/stock_news.json")
     macro_data = _load_json("data/macro_indicators.json")
-    dart_data = _load_json("data/dart_filings.json")
     economy_data = _load_json("data/economy_news.json")
     realestate_data = _load_json("data/realestate_news.json")
     tax_data = _load_json("data/tax_labor_calendar.json")
@@ -378,7 +363,7 @@ def build_evening_reports():
     materials = {
         "시황": _build_market_material(stock_data, macro_data),
         "투자": _build_investment_material(stock_data),
-        "기업": _build_corporate_material(stock_data, dart_data),
+        "기업": _build_corporate_material(stock_data),
         "금융": _build_finance_material(stock_data),
         "TAX": _build_tax_material(tax_data, economy_data),
         "부동산": _build_realestate_material(realestate_data),
