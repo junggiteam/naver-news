@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14 08:31:06",
+  "updated_at": "2026-08-14 09:01:15",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -80,13 +80,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "삼양씨앤씨",
+      "corp_code": "01315291",
+      "report_nm": "회사합병결정",
+      "rcept_dt": "20260814",
+      "rcept_no": "20260814000093",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000093",
+      "ai_explanation": "두 회사가 하나로 합쳐지거나 다른 회사를 흡수하여 경영을 통합하는 결정을 의미합니다."
+    },
+    {
       "corp_name": "에스케이렌터카",
       "corp_code": "00201450",
       "report_nm": "주요사항보고서(회사합병결정)",
       "rcept_dt": "20260814",
       "rcept_no": "20260813001793",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001793",
-      "ai_explanation": "회사가 다른 회사와 합병하거나 피합병되는 계약을 체결했음을 알리는 공시입니다."
+      "ai_explanation": "회사가 다른 회사와 합병하기로 결정하여 그 상세 내용을 공시하는 절차입니다."
     },
     {
       "corp_name": "모아데이타",
@@ -95,7 +104,7 @@
       "rcept_dt": "20260814",
       "rcept_no": "20260813001788",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001788",
-      "ai_explanation": "회사가 운영 자금이나 사업 확장을 위해 새로 주식을 발행하여 자본금을 늘리는 공시입니다."
+      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 주식을 새로 발행하여 기존 또는 신규 주주에게 파는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2514,95 +2523,157 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "흥국화재우",
+      "price": "5780.0",
+      "change_percent": "+6.06%",
+      "pct": 6.06
+    },
+    {
+      "name": "SK하이닉스",
+      "price": "1687000.0",
+      "change_percent": "+5.90%",
+      "pct": 5.9
+    },
+    {
+      "name": "현대건설",
+      "price": "120300.0",
+      "change_percent": "+5.80%",
+      "pct": 5.8
+    },
+    {
+      "name": "KODEX 삼성전자단일종목레버리지",
+      "price": "13590.0",
+      "change_percent": "+5.80%",
+      "pct": 5.8
+    },
+    {
+      "name": "이화산업",
+      "price": "13280.0",
+      "change_percent": "+5.65%",
+      "pct": 5.65
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "태원물산",
+      "price": "2345.0",
+      "change_percent": "-9.46%",
+      "pct": 9.46
+    },
+    {
+      "name": "SUN&L",
+      "price": "1639.0",
+      "change_percent": "-4.54%",
+      "pct": 4.54
+    },
+    {
+      "name": "세아베스틸지주",
+      "price": "42650.0",
+      "change_percent": "-2.07%",
+      "pct": 2.07
+    },
+    {
+      "name": "한국화장품제조",
+      "price": "11260.0",
+      "change_percent": "-2.00%",
+      "pct": 2.0
+    },
+    {
+      "name": "한국앤컴퍼니",
+      "price": "25500.0",
+      "change_percent": "-1.92%",
+      "pct": 1.92
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+4.68%",
+      "pct": 4.68
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+4.28%",
+      "pct": 4.28
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+3.40%",
+      "pct": 3.4
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+1.87%",
+      "pct": 1.87
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "건설",
+      "change_value": "+1.72%",
+      "pct": 1.72
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+4.68%",
+      "pct": 4.68
     },
     {
       "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+4.28%",
+      "pct": 4.28
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+3.40%",
+      "pct": 3.4
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "+1.87%",
+      "pct": 1.87
+    },
+    {
+      "name": "건설",
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+1.52%",
+      "pct": 1.52
+    },
+    {
+      "name": "창업투자",
+      "change_value": "-0.15%",
+      "pct": -0.15
+    },
+    {
+      "name": "화장품",
+      "change_value": "-0.22%",
+      "pct": -0.22
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "-0.24%",
+      "pct": -0.24
+    },
+    {
+      "name": "가정용기기와용품",
+      "change_value": "-0.35%",
+      "pct": -0.35
+    },
+    {
+      "name": "가구",
+      "change_value": "-0.39%",
+      "pct": -0.39
+    },
+    {
+      "name": "은행",
+      "change_value": "-0.40%",
+      "pct": -0.4
     }
   ],
   "article_counts": {
