@@ -273,7 +273,14 @@ NEWS_CATEGORIES = [
 
 
 def crawl_news_category(category_name, section_id3, now_kst):
-    """finance.naver.com/news/ 카테고리별(시황·전망 등) 뉴스 1~5위"""
+    """finance.naver.com/news/ 카테고리별(시황·전망 등) 뉴스 1~15위
+
+    페이지에는 ul.realtimeNewsList 아래 li.newsList가 두 개(top 박스 + 일반
+    박스) 있고, 각각 최대 10개씩 서로 다른 기사를 담고 있어(실측 확인, 중복
+    없음) 카테고리당 최대 20개까지 존재한다. 예전엔 li.newsList.top 하나만
+    보고 그중 5개만 잘랐는데, top이 "상위 5개"가 아니라 그냥 첫 번째 박스라
+    불필요하게 재료를 버리고 있었다.
+    """
     url = (
         "https://finance.naver.com/news/news_list.naver"
         f"?mode=LSS3D&section_id=101&section_id2=258&section_id3={section_id3}"
@@ -284,10 +291,9 @@ def crawl_news_category(category_name, section_id3, now_kst):
     soup = BeautifulSoup(html, 'lxml')
 
     items = []
-    top_list = soup.select_one('ul.realtimeNewsList li.newsList.top')
-    subjects = top_list.select('.articleSubject') if top_list else []
+    subjects = soup.select('ul.realtimeNewsList li.newsList .articleSubject')
 
-    for rank, subject in enumerate(subjects[:5], start=1):
+    for rank, subject in enumerate(subjects[:15], start=1):
         title_elem = subject.select_one('a')
         if not title_elem:
             continue
