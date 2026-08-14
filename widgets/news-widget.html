@@ -2278,6 +2278,117 @@
     white-space: pre-line;
   }
 
+  /* =========================================================
+     데일리 브리핑 캐러셀(스와이프) - 쏘왓레터 리포트(#cr-content,
+     .cr-issue-*)와는 별개의 카드 마크업(.db2-card-*)을 쓴다. 클래스명을
+     공유하면 여기서 만드는 가로 스크롤 카드 레이아웃이 쏘왓레터의 세로
+     리스트 레이아웃까지 덮어써서 깨뜨리기 때문 - 타이포그래피 값만
+     --nw-title-*/--nw-body-* 변수로 동일하게 맞추고 구조는 분리했다.
+     ========================================================= */
+  .db2-carousel-wrap {
+    position: relative;
+    margin: 0 0 12px;
+  }
+
+  .db2-carousel-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 2px 2px 4px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .db2-carousel-track::-webkit-scrollbar { display: none; }
+
+  .db2-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid var(--nw-line);
+    border-radius: 18px;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+  }
+
+  /* 아이콘 전용 컨테이너 - 지금은 인라인 SVG를 담지만, 나중에 실제
+     사진/일러스트(img 태그)로 바꿔도 이 컨테이너 크기/여백 규칙은
+     그대로 재사용할 수 있도록 카드의 다른 요소와 분리해뒀다. */
+  .db2-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0 0 12px;
+    border-radius: 12px;
+  }
+
+  .db2-card-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .db2-card-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    margin: 0 0 8px;
+    padding: 0 10px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .db2-card-title {
+    margin: 0 0 6px;
+    color: var(--nw-title-color);
+    font-size: var(--nw-title-size);
+    font-weight: var(--nw-title-weight);
+    line-height: var(--nw-title-lh);
+    letter-spacing: var(--nw-title-ls);
+  }
+
+  .db2-card-text {
+    margin: 0;
+    text-align: left;
+    color: var(--nw-body-color);
+    font-size: var(--nw-body-size);
+    font-weight: var(--nw-body-weight);
+    letter-spacing: var(--nw-body-ls);
+    line-height: var(--nw-body-lh);
+    white-space: pre-line;
+  }
+
+  .db2-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--nw-line);
+    border-radius: 50%;
+    background: var(--nw-surface);
+    box-shadow: var(--nw-shadow-sm);
+    color: var(--nw-navy);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .db2-carousel-arrow:hover { box-shadow: var(--nw-shadow-md); }
+
+  .db2-carousel-prev { left: -14px; }
+  .db2-carousel-next { right: -14px; }
+
   .cr-sowhat-box {
     position: relative;
     margin: 0 0 8px;
@@ -2721,6 +2832,18 @@
 
     .cr-sowhat-box {
       padding: 14px 11px 14px 16px;
+    }
+
+    .db2-card {
+      padding: 16px 14px;
+    }
+  }
+
+  /* 데일리 브리핑 캐러셀 화살표는 PC 전용 - 모바일(760px 이하)에서는
+     터치 스와이프가 기본 조작이라 화살표를 숨긴다. */
+  @media (max-width: 760px) {
+    .db2-carousel-arrow {
+      display: none;
     }
   }
 
@@ -4763,10 +4886,63 @@
   })();
 
   /* =========================================================
-     데일리 브리핑 (신규, daily_reports.json - 시황/투자/기업
-     오전판/저녁판. CEO 리포트와는 완전히 별개 시스템)
+     데일리 브리핑 (신규, daily_reports.json - 시황/투자/기업/금융/TAX/
+     부동산 6개 카테고리 오전판/저녁판. CEO 리포트와는 완전히 별개 시스템)
      ========================================================= */
-  var BRIEFING_CATEGORIES = ["시황", "투자", "기업"];
+  var BRIEFING_CATEGORIES = ["시황", "투자", "기업", "금융", "TAX", "부동산"];
+
+  /* 6개 카테고리가 캐러셀 한 화면에 나란히 넘어가며 보이는 구조라 색이
+     겹치면 바로 눈에 띈다 - getCeoCategoryColor()의 index%4 순환 배정
+     (쏘왓레터 탭의 가변 9개 카테고리용, #cr-content 전용) 대신 6개 각각을
+     고정 색상에 매핑한다. 4개는 기존 CEO_BADGE_COLORS와 동일한 값을
+     재사용하고(시황/투자/기업/TAX), 금융은 CEO 캘린더 M&A 태그에 이미
+     쓰이는 보라(#8B5CF6)를 재사용, 부동산만 이 6색 안에서 유일하게 새로
+     추가한 색(#0D9488)이다. */
+  var BRIEFING_CATEGORY_COLORS = {
+    "시황": "#3182F6",
+    "투자": "#00C471",
+    "기업": "#F5A623",
+    "금융": "#8B5CF6",
+    "TAX": "#F04452",
+    "부동산": "#0D9488"
+  };
+
+  function getBriefingCategoryColor(category) {
+    return BRIEFING_CATEGORY_COLORS[category] || "#4e5968";
+  }
+
+  /* 카테고리별 심플 라인 아이콘(24x24, stroke=currentColor - 색은 아이콘을
+     감싸는 .db2-card-icon의 color로 지정). 지금은 인라인 SVG 문자열이지만,
+     나중에 실제 사진/일러스트로 바꿀 때는 이 맵의 값만 <img> 마크업으로
+     교체하면 되고 카드 쪽 렌더링 로직(.db2-card-icon 컨테이너)은 그대로
+     둬도 된다 - 아이콘 내용과 배치 컨테이너를 분리해둔 이유. */
+  var BRIEFING_CATEGORY_ICONS = {
+    "시황": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<line x1="6" y1="4" x2="6" y2="9"/><rect x="4" y="9" width="4" height="7" rx="1"/><line x1="6" y1="16" x2="6" y2="20"/>' +
+      '<line x1="12" y1="7" x2="12" y2="10"/><rect x="10" y="10" width="4" height="5" rx="1"/><line x1="12" y1="15" x2="12" y2="19"/>' +
+      '<line x1="18" y1="3" x2="18" y2="8"/><rect x="16" y="8" width="4" height="8" rx="1"/><line x1="18" y1="16" x2="18" y2="21"/>' +
+      '</svg>',
+    "투자": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<polyline points="4,17 10,11 14,15 20,7"/><polyline points="14,7 20,7 20,13"/>' +
+      '</svg>',
+    "기업": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<rect x="5" y="3" width="10" height="18"/><rect x="15" y="9" width="5" height="12"/>' +
+      '<line x1="8" y1="7" x2="8" y2="7.01"/><line x1="12" y1="7" x2="12" y2="7.01"/>' +
+      '<line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/>' +
+      '<line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/>' +
+      '</svg>',
+    "금융": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<circle cx="12" cy="12" r="9"/><path d="M9 9h6M8 12h8M10 15h4"/>' +
+      '</svg>',
+    "TAX": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/>' +
+      '<line x1="9.5" y1="11" x2="14.5" y2="11"/><line x1="9.5" y1="14" x2="14.5" y2="14"/><line x1="9.5" y1="17" x2="12.5" y2="17"/>' +
+      '</svg>',
+    "부동산": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/>' +
+      '<line x1="10" y1="20" x2="10" y2="14"/><line x1="14" y1="14" x2="14" y2="20"/><line x1="10" y1="14" x2="14" y2="14"/>' +
+      '</svg>'
+  };
 
   function pickLatestBriefingEdition(reports) {
     var editions = [
@@ -4788,44 +4964,74 @@
       return;
     }
 
-    var issueList = document.createElement("div");
-    issueList.className = "cr-issue-list";
+    var track = document.createElement("div");
+    track.className = "db2-carousel-track";
 
     BRIEFING_CATEGORIES.forEach(function (category) {
       var report = edition.data[category];
       if (!report || !report.title) return;
 
-      var item = document.createElement("div");
-      item.className = "cr-issue-item";
+      var color = getBriefingCategoryColor(category);
 
-      var body = document.createElement("div");
-      body.className = "cr-issue-body";
+      var card = document.createElement("div");
+      card.className = "db2-card";
+
+      var iconWrap = document.createElement("div");
+      iconWrap.className = "db2-card-icon";
+      iconWrap.style.background = color + "1A";
+      iconWrap.style.color = color;
+      iconWrap.innerHTML = BRIEFING_CATEGORY_ICONS[category] || "";
+      card.appendChild(iconWrap);
 
       var badge = document.createElement("span");
-      badge.className = "cr-issue-badge";
+      badge.className = "db2-card-badge";
       badge.textContent = category;
-      badge.style.background = getCeoCategoryColor(category);
-      body.appendChild(badge);
+      badge.style.background = color;
+      card.appendChild(badge);
 
       var title = document.createElement("p");
-      title.className = "cr-issue-title";
+      title.className = "db2-card-title";
       title.textContent = report.title;
-      body.appendChild(title);
+      card.appendChild(title);
 
       var text = document.createElement("p");
-      text.className = "cr-issue-insight db2-report-text";
+      text.className = "db2-card-text";
       text.textContent = report.body || "";
-      body.appendChild(text);
+      card.appendChild(text);
 
-      item.appendChild(body);
-      issueList.appendChild(item);
+      track.appendChild(card);
     });
 
-    if (!issueList.children.length) {
+    if (!track.children.length) {
       el.innerHTML = '<p class="ew-loading">아직 오늘의 데일리 브리핑이 준비되지 않았습니다.</p>';
       return;
     }
-    el.appendChild(issueList);
+
+    var wrap = document.createElement("div");
+    wrap.className = "db2-carousel-wrap";
+    wrap.appendChild(track);
+
+    var prevBtn = document.createElement("button");
+    prevBtn.type = "button";
+    prevBtn.className = "db2-carousel-arrow db2-carousel-prev";
+    prevBtn.setAttribute("aria-label", "이전 카테고리");
+    prevBtn.textContent = "‹";
+    prevBtn.addEventListener("click", function () {
+      track.scrollBy({ left: -track.clientWidth, behavior: "smooth" });
+    });
+    wrap.appendChild(prevBtn);
+
+    var nextBtn = document.createElement("button");
+    nextBtn.type = "button";
+    nextBtn.className = "db2-carousel-arrow db2-carousel-next";
+    nextBtn.setAttribute("aria-label", "다음 카테고리");
+    nextBtn.textContent = "›";
+    nextBtn.addEventListener("click", function () {
+      track.scrollBy({ left: track.clientWidth, behavior: "smooth" });
+    });
+    wrap.appendChild(nextBtn);
+
+    el.appendChild(wrap);
   }
 
   function loadBriefing() {
