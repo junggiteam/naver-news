@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-14 10:17:17",
+  "updated_at": "2026-08-14 10:31:07",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 1.35,
-    "kosdaq_change": -0.78,
-    "kospi_value": 6905.22,
-    "kosdaq_value": 854.69
+    "kospi_change": 1.11,
+    "kosdaq_change": -1.02,
+    "kospi_value": 6889.24,
+    "kosdaq_value": 852.59
   },
   "heroes": {
     "종합": {
@@ -69,13 +69,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "아센디오",
+      "corp_code": "00145437",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260814",
+      "rcept_no": "20260814000511",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000511",
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하고 운영 자금 등을 조달하기로 결정한 공시입니다."
+    },
+    {
+      "corp_name": "제이아이테크",
+      "corp_code": "01367586",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260814",
+      "rcept_no": "20260814000465",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000465",
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하고 운영 자금 등을 조달하기로 결정한 공시입니다."
+    },
+    {
       "corp_name": "삼양씨앤씨",
       "corp_code": "01315291",
       "report_nm": "회사합병결정",
       "rcept_dt": "20260814",
       "rcept_no": "20260814000093",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000093",
-      "ai_explanation": "두 회사가 하나로 합쳐져 경영 효율성과 시너지를 높이기로 결정했음을 의미합니다."
+      "ai_explanation": "두 개 이상의 회사가 하나의 회사로 합쳐지거나 다른 회사를 흡수하기로 결정한 공시입니다."
     },
     {
       "corp_name": "에스케이렌터카",
@@ -84,7 +102,7 @@
       "rcept_dt": "20260814",
       "rcept_no": "20260813001793",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001793",
-      "ai_explanation": "회사가 다른 법인과 합병을 진행하여 조직을 통합하거나 사업을 재편하기로 결정했습니다."
+      "ai_explanation": "두 개 이상의 회사가 하나의 회사로 합쳐지거나 다른 회사를 흡수하기로 결정한 공시입니다."
     },
     {
       "corp_name": "모아데이타",
@@ -93,7 +111,7 @@
       "rcept_dt": "20260814",
       "rcept_no": "20260813001788",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001788",
-      "ai_explanation": "회사가 운영 자금 조달 등을 목적으로 주식을 새로 발행하여 자본금을 늘리기로 결정했습니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하고 운영 자금 등을 조달하기로 결정한 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2521,148 +2539,148 @@
     },
     {
       "name": "디아이씨",
-      "price": "6510.0",
-      "change_percent": "+24.00%",
-      "pct": 24.0
+      "price": "6460.0",
+      "change_percent": "+23.05%",
+      "pct": 23.05
     },
     {
       "name": "더본코리아",
-      "price": "16560.0",
-      "change_percent": "+17.53%",
-      "pct": 17.53
-    },
-    {
-      "name": "미원화학",
-      "price": "12090.0",
-      "change_percent": "+15.58%",
-      "pct": 15.58
+      "price": "16660.0",
+      "change_percent": "+18.24%",
+      "pct": 18.24
     },
     {
       "name": "SK케미칼",
-      "price": "49750.0",
-      "change_percent": "+13.45%",
-      "pct": 13.45
+      "price": "50000.0",
+      "change_percent": "+14.03%",
+      "pct": 14.03
+    },
+    {
+      "name": "미원화학",
+      "price": "11730.0",
+      "change_percent": "+12.14%",
+      "pct": 12.14
     }
   ],
   "top_losers": [
     {
       "name": "태원물산",
-      "price": "1980.0",
-      "change_percent": "-23.55%",
-      "pct": 23.55
+      "price": "1993.0",
+      "change_percent": "-23.05%",
+      "pct": 23.05
     },
     {
       "name": "대원화성",
-      "price": "2045.0",
-      "change_percent": "-22.54%",
-      "pct": 22.54
+      "price": "2065.0",
+      "change_percent": "-21.78%",
+      "pct": 21.78
     },
     {
       "name": "일신석재",
-      "price": "550.0",
-      "change_percent": "-17.17%",
-      "pct": 17.17
-    },
-    {
-      "name": "SUN&L",
-      "price": "1431.0",
-      "change_percent": "-16.66%",
-      "pct": 16.66
+      "price": "539.0",
+      "change_percent": "-18.83%",
+      "pct": 18.83
     },
     {
       "name": "대영포장",
-      "price": "608.0",
-      "change_percent": "-14.49%",
-      "pct": 14.49
+      "price": "603.0",
+      "change_percent": "-15.19%",
+      "pct": 15.19
+    },
+    {
+      "name": "SUN&L",
+      "price": "1480.0",
+      "change_percent": "-13.80%",
+      "pct": 13.8
     }
   ],
   "sector_performance": [
     {
       "name": "무선통신서비스",
-      "change_value": "+7.11%",
-      "pct": 7.11
+      "change_value": "+7.40%",
+      "pct": 7.4
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+5.32%",
-      "pct": 5.32
+      "change_value": "+6.41%",
+      "pct": 6.41
     },
     {
       "name": "자동차",
-      "change_value": "+4.99%",
-      "pct": 4.99
+      "change_value": "+4.51%",
+      "pct": 4.51
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.46%",
-      "pct": 3.46
+      "change_value": "+3.42%",
+      "pct": 3.42
     },
     {
-      "name": "자동차부품",
-      "change_value": "+2.80%",
-      "pct": 2.8
+      "name": "생명보험",
+      "change_value": "+3.10%",
+      "pct": 3.1
     }
   ],
   "sector_heatmap": [
     {
       "name": "무선통신서비스",
-      "change_value": "+7.11%",
-      "pct": 7.11
+      "change_value": "+7.40%",
+      "pct": 7.4
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+5.32%",
-      "pct": 5.32
+      "change_value": "+6.41%",
+      "pct": 6.41
     },
     {
       "name": "자동차",
-      "change_value": "+4.99%",
-      "pct": 4.99
+      "change_value": "+4.51%",
+      "pct": 4.51
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.46%",
-      "pct": 3.46
+      "change_value": "+3.42%",
+      "pct": 3.42
+    },
+    {
+      "name": "생명보험",
+      "change_value": "+3.10%",
+      "pct": 3.1
     },
     {
       "name": "자동차부품",
-      "change_value": "+2.80%",
-      "pct": 2.8
+      "change_value": "+2.47%",
+      "pct": 2.47
     },
     {
-      "name": "문구류",
-      "change_value": "+2.75%",
-      "pct": 2.75
-    },
-    {
-      "name": "창업투자",
-      "change_value": "-1.69%",
-      "pct": -1.69
-    },
-    {
-      "name": "에너지장비및서비스",
-      "change_value": "-1.84%",
-      "pct": -1.84
+      "name": "건강관리기술",
+      "change_value": "-1.83%",
+      "pct": -1.83
     },
     {
       "name": "통신장비",
-      "change_value": "-2.16%",
-      "pct": -2.16
+      "change_value": "-1.89%",
+      "pct": -1.89
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "-1.92%",
+      "pct": -1.92
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-2.80%",
-      "pct": -2.8
-    },
-    {
-      "name": "전기장비",
-      "change_value": "-3.17%",
-      "pct": -3.17
+      "change_value": "-2.33%",
+      "pct": -2.33
     },
     {
       "name": "비철금속",
-      "change_value": "-3.18%",
-      "pct": -3.18
+      "change_value": "-3.36%",
+      "pct": -3.36
+    },
+    {
+      "name": "전기장비",
+      "change_value": "-3.75%",
+      "pct": -3.75
     }
   ],
   "article_counts": {
