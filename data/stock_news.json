@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18 00:15:49",
+  "updated_at": "2026-08-18 00:30:51",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "53,507.52",
-      "change_percent": "▼0.42%",
+      "value": "53,532.42",
+      "change_percent": "▼0.37%",
       "direction": "down",
-      "as_of": "2026-08-18 00:15:12"
+      "as_of": "2026-08-18 00:30:28"
     },
     {
       "name": "나스닥",
-      "value": "26,752.73",
-      "change_percent": "▲0.09%",
+      "value": "26,766.44",
+      "change_percent": "▲0.14%",
       "direction": "up",
-      "as_of": "2026-08-18 00:15:12"
+      "as_of": "2026-08-18 00:30:28"
     },
     {
       "name": "나스닥100",
-      "value": "30,157.35",
-      "change_percent": "▲0.37%",
+      "value": "30,174.85",
+      "change_percent": "▲0.43%",
       "direction": "up",
-      "as_of": "2026-08-18 00:15:12"
+      "as_of": "2026-08-18 00:30:28"
     },
     {
       "name": "S&P500",
-      "value": "7,775.24",
-      "change_percent": "▼0.14%",
+      "value": "7,778.60",
+      "change_percent": "▼0.09%",
       "direction": "down",
-      "as_of": "2026-08-18 00:15:12"
+      "as_of": "2026-08-18 00:30:28"
     },
     {
       "name": "국내금(원/돈)",
@@ -73,31 +73,31 @@
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "888.34",
-      "change_percent": "▼0.24%",
+      "value": "887.98",
+      "change_percent": "▼0.28%",
       "direction": "down",
       "as_of": "2026.08.14 21:07"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,639.70",
-      "change_percent": "▲0.13%",
+      "value": "1,639.28",
+      "change_percent": "▲0.10%",
       "direction": "up",
       "as_of": "2026.08.14 21:07"
     },
     {
       "name": "USD/JPY",
-      "value": "159.2900",
-      "change_percent": "▲0.16%",
-      "direction": "up",
-      "as_of": "2026.08.15"
+      "value": "159.2800",
+      "change_percent": "▼0.01%",
+      "direction": "down",
+      "as_of": "2026.08.17"
     },
     {
       "name": "EUR/USD",
-      "value": "1.1563",
-      "change_percent": "▼0.14%",
-      "direction": "down",
-      "as_of": "2026.08.15"
+      "value": "1.1587",
+      "change_percent": "▲0.21%",
+      "direction": "up",
+      "as_of": "2026.08.17"
     },
     {
       "name": "국고채(3년)",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "90,110,000",
-      "change_percent": "▲1.06%",
+      "value": "90,300,000",
+      "change_percent": "▲1.27%",
       "direction": "up",
-      "as_of": "2026-08-18 00:15:47"
+      "as_of": "2026-08-18 00:30:44"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,688,000",
-      "change_percent": "▲1.09%",
+      "value": "2,692,000",
+      "change_percent": "▲1.24%",
       "direction": "up",
-      "as_of": "2026-08-18 00:15:46"
+      "as_of": "2026-08-18 00:30:47"
     }
   ],
   "news_categories": [
@@ -877,7 +877,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "오늘 코스피는 반도체 관련주의 반등에 힘입어 큰 폭으로 상승했으며, 코스닥은 개별 종목 위주의 장세가 이어지며 소폭 상승 마감했다. 시장 전반에서는 순환매 흐름이 지속되는 가운데 반도체주를 중심으로 한 투자 심리 회복이 지수 상승을 이끌었다.",
+  "ai_commentary": "반도체 관련 종목들이 반등하며 지수 상승을 이끌었고 순환매 장세가 이어지면서 투자 심리가 개선되었다. 개별 기업들의 수주 효과와 해외 진출 소식이 더해지며 코스피는 큰 폭으로 올랐으나 코스닥은 상대적으로 낮은 상승률을 보였다.",
   "top_gainers": [
     {
       "name": "SHD",
@@ -1341,6 +1341,6 @@
   ],
   "ipo_calendar": [],
   "_movers_debug": [
-    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(69, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
+    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(68, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
   ]
 }
