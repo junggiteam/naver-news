@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-19 07:55:16",
+  "updated_at": "2026-08-19 08:15:50",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -1.55,
-    "kosdaq_change": -3.52,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6869.83,
     "kosdaq_value": 834.2
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "김포 일대가 토지거래허가구역으로 지정되고 강남은 매물이 증가하고 있다."
-    },
-    {
-      "category": "증권",
-      "text": "미국 국채 금리 급등과 그에 따른 글로벌 증시의 하락세가 국내 시장의 투자 심리에 부정적인 영향을 미쳤다. 특히 미국 반도체 지수의 큰 폭 하락과 외국인 투자자의 매수세 중단이 겹치며 코스피와 코스닥 지수 모두 하락했다."
     }
   ],
   "daily_term": {
@@ -100,7 +96,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000326",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000326",
-      "ai_explanation": "회사가 다른 기업의 영업 부문 등을 사들여 사업을 확장하겠다는 결정입니다."
+      "ai_explanation": "회사가 다른 기업의 영업 부문이나 사업 일체를 인수하겠다는 결정입니다."
     },
     {
       "corp_name": "KS인더스트리",
@@ -109,7 +105,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000321",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000321",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사겠다는 결정입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 다시 사들여 소각하거나 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "에이전트AI",
@@ -118,7 +114,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000324",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000324",
-      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완한다는 내용입니다."
+      "ai_explanation": "기존에 공시했던 유상증자 결정 내용을 수정하거나 변경하겠다는 알림입니다."
     }
   ],
   "macro_indicators": [
@@ -3022,157 +3018,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "KR모터스",
-      "price": "1587.0",
-      "change_percent": "+29.98%",
-      "pct": 29.98
-    },
-    {
-      "name": "SHD",
-      "price": "12630.0",
-      "change_percent": "+29.94%",
-      "pct": 29.94
-    },
-    {
-      "name": "삼성공조",
-      "price": "15110.0",
-      "change_percent": "+29.92%",
-      "pct": 29.92
-    },
-    {
-      "name": "STX그린로지스",
-      "price": "3670.0",
-      "change_percent": "+29.91%",
-      "pct": 29.91
-    },
-    {
-      "name": "인디에프",
-      "price": "2395.0",
-      "change_percent": "+29.81%",
-      "pct": 29.81
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "CJ씨푸드1우",
-      "price": "6670.0",
-      "change_percent": "-17.04%",
-      "pct": 17.04
-    },
-    {
-      "name": "코스맥스비티아이",
-      "price": "22750.0",
-      "change_percent": "-16.36%",
-      "pct": 16.36
-    },
-    {
-      "name": "케이카",
-      "price": "6590.0",
-      "change_percent": "-15.08%",
-      "pct": 15.08
-    },
-    {
-      "name": "이수화학",
-      "price": "13570.0",
-      "change_percent": "-13.29%",
-      "pct": 13.29
-    },
-    {
-      "name": "티에이치엔",
-      "price": "5760.0",
-      "change_percent": "-11.66%",
-      "pct": 11.66
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "해운사",
-      "change_value": "+6.14%",
-      "pct": 6.14
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+2.97%",
-      "pct": 2.97
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명보험",
-      "change_value": "+2.81%",
-      "pct": 2.81
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "+2.32%",
-      "pct": 2.32
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "+1.87%",
-      "pct": 1.87
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "해운사",
-      "change_value": "+6.14%",
-      "pct": 6.14
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+2.97%",
-      "pct": 2.97
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명보험",
-      "change_value": "+2.81%",
-      "pct": 2.81
-    },
-    {
-      "name": "손해보험",
-      "change_value": "+2.32%",
-      "pct": 2.32
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "+1.87%",
-      "pct": 1.87
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "+1.67%",
-      "pct": 1.67
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-5.41%",
-      "pct": -5.41
-    },
-    {
-      "name": "레저용장비와제품",
-      "change_value": "-5.57%",
-      "pct": -5.57
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "-6.02%",
-      "pct": -6.02
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "-6.20%",
-      "pct": -6.2
-    },
-    {
-      "name": "건강관리기술",
-      "change_value": "-6.53%",
-      "pct": -6.53
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-8.21%",
-      "pct": -8.21
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
