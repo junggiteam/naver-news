@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18 16:31:17",
+  "updated_at": "2026-08-18 17:01:16",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 국채 금리 상승과 경기 둔화 우려가 복합적으로 작용하면서 투자 심리가 위축돼 코스피와 코스닥 지수가 6거래일 만에 하락세로 돌아섰다. 기관 투자자들의 매도세가 이어지는 가운데 유가와 금리 상승에 대한 부담이 시장 전반의 약세를 이끌었다."
+      "text": "국제 유가 상승과 금리 불안 등 매크로 환경에 대한 우려가 부각되면서 코스피와 코스닥 지수가 동반 하락했다. 기관 투자자의 매도세가 확대된 가운데 시장 전반의 변동성이 커지며 지수가 약세로 마감했다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,49 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "라인게임즈",
+      "corp_code": "00984119",
+      "report_nm": "유상증자결정",
+      "rcept_dt": "20260818",
+      "rcept_no": "20260818000264",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000264",
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하겠다는 결정입니다."
+    },
+    {
+      "corp_name": "아이큐어",
+      "corp_code": "00554352",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260818",
+      "rcept_no": "20260818000254",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000254",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용을 변경하거나 수정하는 것입니다."
+    },
+    {
+      "corp_name": "THE E&M",
+      "corp_code": "00519252",
+      "report_nm": "[기재정정]주요사항보고서(자기전환사채매도결정)",
+      "rcept_dt": "20260818",
+      "rcept_no": "20260818000240",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000240",
+      "ai_explanation": "회사가 보유 중인 전환사채를 제3자에게 매도하기로 한 내용을 수정하는 것입니다."
+    },
+    {
+      "corp_name": "코퍼스코리아",
+      "corp_code": "01364297",
+      "report_nm": "주요사항보고서(소송등의제기)",
+      "rcept_dt": "20260818",
+      "rcept_no": "20260818000229",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000229",
+      "ai_explanation": "회사와 관련된 법적 분쟁이나 소송이 제기되었음을 알리는 공시입니다."
+    },
+    {
       "corp_name": "엑스페릭스",
       "corp_code": "01231786",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260818",
       "rcept_no": "20260818000218",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000218",
-      "ai_explanation": "회사가 발행할 전환사채의 주요 조건을 정정하여 알리는 공시입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 조건을 변경하거나 수정하는 것입니다."
     },
     {
       "corp_name": "피플바이오",
@@ -99,7 +135,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000196",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000196",
-      "ai_explanation": "회사가 건물이나 토지 등을 매입하기로 한 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 건물이나 토지 등 자산 취득 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "한국전자홀딩스",
@@ -108,7 +144,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000202",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000202",
-      "ai_explanation": "회사가 보유 중인 자사주를 시장에 매각하기로 한 계획을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 보유 자사주를 시장에 내놓거나 매각하기로 한 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "케스피온",
@@ -117,7 +153,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000149",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000149",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하기로 결정한 공시입니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하겠다는 결정입니다."
     },
     {
       "corp_name": "실리콘투",
@@ -126,7 +162,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000126",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000126",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하기로 결정한 공시입니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하겠다는 결정입니다."
     },
     {
       "corp_name": "머큐리",
@@ -135,7 +171,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000132",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000132",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등의 자산을 매각하기로 한 공시입니다."
+      "ai_explanation": "회사가 보유한 건물이나 토지 등 유형자산을 매각하기로 한 결정입니다."
     },
     {
       "corp_name": "이오플로우",
@@ -144,7 +180,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000125",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000125",
-      "ai_explanation": "회사가 자본으로 분류되는 채권 발행 결정을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 자본성 채무증권 발행 관련 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "이오플로우",
@@ -153,7 +189,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000107",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000107",
-      "ai_explanation": "회사가 자본으로 분류되는 채권 발행을 새로 결정한 공시입니다."
+      "ai_explanation": "회사가 자본으로 인정받는 형태의 채무증권을 새로 발행하기로 한 결정입니다."
     },
     {
       "corp_name": "코오롱제약",
@@ -162,7 +198,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000101",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000101",
-      "ai_explanation": "회사의 사업부를 분할하기로 한 이전 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 회사 분할 계획의 상세 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "한국카본",
@@ -171,7 +207,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000021",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000021",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 한 이전 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 회사 간 합병 결정 내용을 수정하거나 보완하는 것입니다."
     },
     {
       "corp_name": "한국카본",
@@ -180,7 +216,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000020",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000020",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 한 이전 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 회사 간 합병 결정 내용을 수정하거나 보완하는 것입니다."
     },
     {
       "corp_name": "한국카본",
@@ -189,7 +225,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000019",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000019",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 한 이전 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 회사 간 합병 결정 내용을 수정하거나 보완하는 것입니다."
     },
     {
       "corp_name": "한국카본",
@@ -198,7 +234,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000018",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000018",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 한 이전 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 회사 간 합병 결정 내용을 수정하거나 보완하는 것입니다."
     },
     {
       "corp_name": "KS인더스트리",
@@ -207,7 +243,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000002",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사기로 결정한 공시입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사들이기로 한 결정입니다."
     },
     {
       "corp_name": "DH오토넥스",
@@ -216,7 +252,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260814004306",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004306",
-      "ai_explanation": "타 법인의 주식을 매각하기로 했던 이전 결정 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 타 회사 주식 처분 관련 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "동구바이오제약",
@@ -225,7 +261,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260814004305",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004305",
-      "ai_explanation": "회사의 영업 정지 처분이나 결정 사항을 정정하여 알리는 공시입니다."
+      "ai_explanation": "기존에 공시한 영업정지 관련 내용을 수정하거나 보완하는 것입니다."
     },
     {
       "corp_name": "동구바이오제약",
@@ -234,7 +270,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260814004262",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004262",
-      "ai_explanation": "회사의 영업 정지 처분이나 결정 사항을 정정하여 알리는 공시입니다."
+      "ai_explanation": "기존에 공시한 영업정지 관련 내용을 수정하거나 보완하는 것입니다."
     }
   ],
   "macro_indicators": [
