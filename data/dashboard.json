@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-18 13:31:03",
+  "updated_at": "2026-08-18 14:01:11",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -0.39,
-    "kosdaq_change": -2.02,
-    "kospi_value": 6951.05,
-    "kosdaq_value": 847.16
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": -0.25,
+    "kosdaq_change": -1.64,
+    "kospi_value": 6960.47,
+    "kosdaq_value": 850.49
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스 등 주요 반도체 종목이 약세를 보이면서 코스피 지수가 장중 하락 전환해 7,000선을 내주었다. 코스닥 지수는 반도체 업종의 부진과 투자 심리 위축이 겹치며 상대적으로 큰 폭의 하락세를 나타냈다."
+      "text": "국제 유가와 금리 상승에 대한 부담감이 커지면서 코스피와 코스닥 지수 모두 하락세를 보였다. 삼성전자와 SK하이닉스를 비롯한 주요 반도체 종목이 약세를 보인 가운데 코스피는 6900선까지 물러났고 코스닥은 낙폭이 확대되며 마감했다."
     }
   ],
   "daily_term": {
@@ -75,11 +75,20 @@
     {
       "corp_name": "이오플로우",
       "corp_code": "01274310",
+      "report_nm": "[기재정정]주요사항보고서(자본으로인정되는채무증권발행결정)",
+      "rcept_dt": "20260818",
+      "rcept_no": "20260818000125",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000125",
+      "ai_explanation": "자본으로 인정받는 채무증권 발행 내용을 정정하여 공시함."
+    },
+    {
+      "corp_name": "이오플로우",
+      "corp_code": "01274310",
       "report_nm": "주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20260818",
       "rcept_no": "20260818000107",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000107",
-      "ai_explanation": "회사가 자본으로 인정받을 수 있는 형태의 채권을 발행하여 자금을 조달한다는 의미입니다."
+      "ai_explanation": "회계상 자본으로 분류되는 채무증권을 새로 발행하기로 결정함."
     },
     {
       "corp_name": "코오롱제약",
@@ -88,7 +97,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000101",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000101",
-      "ai_explanation": "회사를 나누는 분할 계획에 대해 기존에 공시한 내용을 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "회사 분할 계획의 일부 내용을 수정하여 다시 공시함."
     },
     {
       "corp_name": "한국카본",
@@ -97,7 +106,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000021",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000021",
-      "ai_explanation": "회사를 합병하기로 한 계획과 관련하여 첨부 서류 등을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "회사 합병 결정과 관련된 첨부 서류 내용을 수정함."
     },
     {
       "corp_name": "한국카본",
@@ -106,7 +115,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000020",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000020",
-      "ai_explanation": "회사를 합병하기로 한 계획과 관련하여 첨부 서류 등을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "회사 합병 결정과 관련된 첨부 서류 내용을 수정함."
     },
     {
       "corp_name": "한국카본",
@@ -115,7 +124,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000019",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000019",
-      "ai_explanation": "회사를 합병하기로 한 계획과 관련하여 첨부 서류 등을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "회사 합병 결정과 관련된 첨부 서류 내용을 수정함."
     },
     {
       "corp_name": "한국카본",
@@ -124,7 +133,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000018",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000018",
-      "ai_explanation": "회사를 합병하기로 한 계획과 관련하여 첨부 서류 등을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "회사 합병 결정과 관련된 첨부 서류 내용을 수정함."
     },
     {
       "corp_name": "KS인더스트리",
@@ -133,7 +142,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260818000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000002",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 다시 사들여 소각하거나 보유하겠다는 의미입니다."
+      "ai_explanation": "만기 전에 회사가 발행한 전환사채를 다시 사들이기로 결정함."
     },
     {
       "corp_name": "DH오토넥스",
@@ -142,7 +151,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260814004306",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004306",
-      "ai_explanation": "다른 회사의 주식을 매각하기로 한 결정에 대해 기존 공시 내용을 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "타법인 주식 양도와 관련된 결정 내용을 수정하여 공시함."
     },
     {
       "corp_name": "동구바이오제약",
@@ -151,7 +160,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260814004305",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004305",
-      "ai_explanation": "회사의 일부 사업이나 전체 영업을 중단하는 사유에 대해 기존 공시 내용을 수정하여 알리는 것입니다."
+      "ai_explanation": "회사의 영업정지 처분 관련 내용을 수정하여 다시 공시함."
     },
     {
       "corp_name": "동구바이오제약",
@@ -160,7 +169,7 @@
       "rcept_dt": "20260818",
       "rcept_no": "20260814004262",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004262",
-      "ai_explanation": "회사의 일부 사업이나 전체 영업을 중단하는 사유에 대해 기존 공시 내용을 수정하여 알리는 것입니다."
+      "ai_explanation": "회사의 영업정지 처분 관련 내용을 수정하여 다시 공시함."
     }
   ],
   "macro_indicators": [
@@ -3089,15 +3098,15 @@
   "top_losers": [
     {
       "name": "CJ씨푸드1우",
-      "price": "6810.0",
-      "change_percent": "-15.30%",
-      "pct": 15.3
+      "price": "6570.0",
+      "change_percent": "-18.28%",
+      "pct": 18.28
     },
     {
       "name": "케이카",
-      "price": "6600.0",
-      "change_percent": "-14.95%",
-      "pct": 14.95
+      "price": "6540.0",
+      "change_percent": "-15.72%",
+      "pct": 15.72
     },
     {
       "name": "코스맥스비티아이",
@@ -3106,80 +3115,75 @@
       "pct": 14.89
     },
     {
-      "name": "티에이치엔",
-      "price": "5750.0",
-      "change_percent": "-11.81%",
-      "pct": 11.81
+      "name": "이수화학",
+      "price": "13920.0",
+      "change_percent": "-11.05%",
+      "pct": 11.05
     },
     {
       "name": "시디즈",
-      "price": "18440.0",
-      "change_percent": "-10.92%",
-      "pct": 10.92
+      "price": "18435.0",
+      "change_percent": "-10.94%",
+      "pct": 10.94
     }
   ],
   "sector_performance": [
     {
       "name": "해운사",
-      "change_value": "+6.30%",
-      "pct": 6.3
+      "change_value": "+6.52%",
+      "pct": 6.52
     },
     {
       "name": "생명보험",
-      "change_value": "+3.23%",
-      "pct": 3.23
+      "change_value": "+3.18%",
+      "pct": 3.18
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.14%",
-      "pct": 3.14
+      "change_value": "+3.09%",
+      "pct": 3.09
     },
     {
       "name": "손해보험",
-      "change_value": "+1.85%",
-      "pct": 1.85
+      "change_value": "+2.16%",
+      "pct": 2.16
     },
     {
-      "name": "비철금속",
-      "change_value": "+1.62%",
-      "pct": 1.62
+      "name": "다각화된통신서비스",
+      "change_value": "+1.66%",
+      "pct": 1.66
     }
   ],
   "sector_heatmap": [
     {
       "name": "해운사",
-      "change_value": "+6.30%",
-      "pct": 6.3
+      "change_value": "+6.52%",
+      "pct": 6.52
     },
     {
       "name": "생명보험",
-      "change_value": "+3.23%",
-      "pct": 3.23
+      "change_value": "+3.18%",
+      "pct": 3.18
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.14%",
-      "pct": 3.14
+      "change_value": "+3.09%",
+      "pct": 3.09
     },
     {
       "name": "손해보험",
-      "change_value": "+1.85%",
-      "pct": 1.85
-    },
-    {
-      "name": "비철금속",
-      "change_value": "+1.62%",
-      "pct": 1.62
+      "change_value": "+2.16%",
+      "pct": 2.16
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.29%",
-      "pct": 1.29
+      "change_value": "+1.66%",
+      "pct": 1.66
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "-4.38%",
-      "pct": -4.38
+      "name": "비철금속",
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
       "name": "사무용전자제품",
@@ -3187,9 +3191,14 @@
       "pct": -4.4
     },
     {
+      "name": "다각화된소비자서비스",
+      "change_value": "-4.44%",
+      "pct": -4.44
+    },
+    {
       "name": "IT서비스",
-      "change_value": "-4.72%",
-      "pct": -4.72
+      "change_value": "-4.55%",
+      "pct": -4.55
     },
     {
       "name": "건강관리기술",
@@ -3198,13 +3207,13 @@
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "-5.11%",
-      "pct": -5.11
+      "change_value": "-5.10%",
+      "pct": -5.1
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-7.53%",
-      "pct": -7.53
+      "change_value": "-7.06%",
+      "pct": -7.06
     }
   ],
   "article_counts": {
