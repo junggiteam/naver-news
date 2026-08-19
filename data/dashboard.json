@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-20 08:01:10",
+  "updated_at": "2026-08-20 08:31:06",
   "market_mood": {
-    "label": "급락",
-    "emoji": "🔴",
-    "kospi_change": -5.8,
-    "kosdaq_change": -1.17,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6471.17,
     "kosdaq_value": 824.46
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "직주 근접과 대출 규제가 수도권 주택 시장의 주요 변수로 작용함"
-    },
-    {
-      "category": "증권",
-      "text": "미국 국채 금리 급등세가 시장에 직격탄을 주면서 투자 심리가 위축되어 코스피와 코스닥 지수가 모두 하락했다. 증시 하락세가 이어지며 거래량이 감소하는 등 투자자들의 관망세가 짙어진 영향이 반영되었다."
     }
   ],
   "daily_term": {
@@ -85,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "에이치엘로보틱스",
+      "corp_code": "01871797",
+      "report_nm": "유상증자결정",
+      "rcept_dt": "20260820",
+      "rcept_no": "20260820000002",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000002",
+      "ai_explanation": "회사가 주식을 새로 발행하여 자금을 조달하기로 결정했다는 공시입니다."
+    },
+    {
       "corp_name": "나노씨엠에스",
       "corp_code": "00660459",
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20260820",
       "rcept_no": "20260819000386",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000386",
-      "ai_explanation": "회사가 주주 등을 대상으로 신주를 발행하여 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "회사가 주식을 새로 발행하여 자금을 조달하기로 결정했다는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2520,157 +2525,95 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "에이엔피",
-      "price": "312.0",
-      "change_percent": "+30.00%",
-      "pct": 30.0
-    },
-    {
-      "name": "SHD",
-      "price": "16410.0",
-      "change_percent": "+29.93%",
-      "pct": 29.93
-    },
-    {
-      "name": "인디에프",
-      "price": "3110.0",
-      "change_percent": "+29.85%",
-      "pct": 29.85
-    },
-    {
-      "name": "KB 레버리지 반도체 TOP10 TR ETN",
-      "price": "27550.0",
-      "change_percent": "+26.72%",
-      "pct": 26.72
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9420.0",
-      "change_percent": "+18.57%",
-      "pct": 18.57
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "8035.0",
-      "change_percent": "-19.29%",
-      "pct": 19.29
-    },
-    {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "7140.0",
-      "change_percent": "-18.86%",
-      "pct": 18.86
-    },
-    {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "8065.0",
-      "change_percent": "-18.62%",
-      "pct": 18.62
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "6740.0",
-      "change_percent": "-18.60%",
-      "pct": 18.6
-    },
-    {
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "6875.0",
-      "change_percent": "-18.59%",
-      "pct": 18.59
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "레저용장비와제품",
-      "change_value": "+3.09%",
-      "pct": 3.09
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전문소매",
-      "change_value": "+2.83%",
-      "pct": 2.83
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "도로와철도운송",
-      "change_value": "+2.27%",
-      "pct": 2.27
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+1.82%",
-      "pct": 1.82
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건설",
-      "change_value": "+1.59%",
-      "pct": 1.59
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "레저용장비와제품",
-      "change_value": "+3.09%",
-      "pct": 3.09
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전문소매",
-      "change_value": "+2.83%",
-      "pct": 2.83
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "도로와철도운송",
-      "change_value": "+2.27%",
-      "pct": 2.27
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+1.82%",
-      "pct": 1.82
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건설",
-      "change_value": "+1.59%",
-      "pct": 1.59
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.44%",
-      "pct": 1.44
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-4.50%",
-      "pct": -4.5
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "복합기업",
-      "change_value": "-4.50%",
-      "pct": -4.5
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "비철금속",
-      "change_value": "-5.17%",
-      "pct": -5.17
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "문구류",
-      "change_value": "-8.12%",
-      "pct": -8.12
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "-8.42%",
-      "pct": -8.42
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명보험",
-      "change_value": "-9.50%",
-      "pct": -9.5
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
