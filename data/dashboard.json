@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-19 10:31:11",
+  "updated_at": "2026-08-19 11:01:18",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -4.02,
-    "kosdaq_change": 0.42,
-    "kospi_value": 6593.81,
-    "kosdaq_value": 837.67
+    "kospi_change": -4.75,
+    "kosdaq_change": -0.32,
+    "kospi_value": 6543.55,
+    "kosdaq_value": 831.5
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 국채 금리 급등에 따른 투자 심리 위축으로 코스피는 매도 사이드카가 발동되며 큰 폭으로 하락했다. 반면 코스닥은 개별 종목과 일부 테마주가 강세를 보이면서 상승 마감했다."
+      "text": "미국 국채 금리가 급등하면서 투자 심리가 위축돼 코스피와 코스닥 지수가 하락했다. 코스피는 외국인과 기관의 매도세가 이어지며 급락했고, 이로 인해 매도 사이드카가 발동됐다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "이씨에스",
+      "corp_code": "00400060",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260819",
+      "rcept_no": "20260819000069",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000069",
+      "ai_explanation": "주가 안정 및 주주 가치 제고를 목적으로 신탁 계약을 통해 자사주를 매입하기로 결정함."
+    },
+    {
       "corp_name": "여수에코에너지",
       "corp_code": "01857487",
       "report_nm": "비유동자산취득결정",
       "rcept_dt": "20260819",
       "rcept_no": "20260819000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000008",
-      "ai_explanation": "회사가 생산 활동 등을 위해 토지, 건물, 기계장치 등 장기 보유 자산을 매입하기로 결정함."
+      "ai_explanation": "건물, 기계장치 등 장기간 사용할 목적으로 회사의 자산을 새로 매입하기로 결정함."
     },
     {
       "corp_name": "에스에스알",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000327",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000327",
-      "ai_explanation": "회사가 자본 확충이나 운영 자금 조달을 위해 주주 또는 제3자에게 신주를 발행하여 자금을 조달함."
+      "ai_explanation": "자금 조달을 위해 신주를 발행하여 주주나 제3자에게 배정하기로 결정함."
     },
     {
       "corp_name": "에스에스알",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000326",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000326",
-      "ai_explanation": "회사가 타사의 사업 부문이나 영업권 전부 또는 일부를 돈을 주고 사들이기로 결정함."
+      "ai_explanation": "타 회사의 사업 부문이나 영업권 등을 사들여 사업 영역을 확장하기로 결정함."
     },
     {
       "corp_name": "KS인더스트리",
@@ -118,7 +127,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000321",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000321",
-      "ai_explanation": "회사가 과거 발행했던 자기 회사의 전환사채를 만기 전 미리 되사들여 소각하거나 보유함."
+      "ai_explanation": "발행했던 전환사채의 만기 전 상환을 위해 회사가 이를 다시 사들이기로 결정함."
     },
     {
       "corp_name": "에이전트AI",
@@ -127,7 +136,7 @@
       "rcept_dt": "20260819",
       "rcept_no": "20260818000324",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000324",
-      "ai_explanation": "기존에 공시했던 유상증자 결정 내용 중 일부를 정정하여 다시 공시함."
+      "ai_explanation": "기존에 공시했던 유상증자 결정 내용 중 일부 항목을 수정하여 다시 공시함."
     }
   ],
   "macro_indicators": [
@@ -3033,43 +3042,37 @@
   },
   "top_gainers": [
     {
+      "name": "에이엔피",
+      "price": "312.0",
+      "change_percent": "+30.00%",
+      "pct": 30.0
+    },
+    {
       "name": "인디에프",
       "price": "3110.0",
       "change_percent": "+29.85%",
       "pct": 29.85
     },
     {
-      "name": "에이엔피",
-      "price": "297.0",
-      "change_percent": "+23.75%",
-      "pct": 23.75
-    },
-    {
       "name": "SHD",
-      "price": "15100.0",
-      "change_percent": "+19.56%",
-      "pct": 19.56
+      "price": "15140.0",
+      "change_percent": "+19.87%",
+      "pct": 19.87
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9060.0",
-      "change_percent": "+14.03%",
-      "pct": 14.03
+      "price": "9070.0",
+      "change_percent": "+14.16%",
+      "pct": 14.16
     },
     {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "10580.0",
-      "change_percent": "+11.02%",
-      "pct": 11.02
+      "price": "10745.0",
+      "change_percent": "+12.75%",
+      "pct": 12.75
     }
   ],
   "top_losers": [
-    {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "7475.0",
-      "change_percent": "-15.06%",
-      "pct": 15.06
-    },
     {
       "name": "ACE SK하이닉스단일종목레버리지",
       "price": "7245.0",
@@ -3077,111 +3080,117 @@
       "pct": 14.51
     },
     {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "7095.0",
-      "change_percent": "-14.31%",
-      "pct": 14.31
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "8565.0",
-      "change_percent": "-13.96%",
-      "pct": 13.96
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "7535.0",
+      "change_percent": "-14.37%",
+      "pct": 14.37
     },
     {
       "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "7270.0",
-      "change_percent": "-13.91%",
-      "pct": 13.91
+      "price": "7240.0",
+      "change_percent": "-14.27%",
+      "pct": 14.27
+    },
+    {
+      "name": "SOL SK하이닉스단일종목레버리지",
+      "price": "7110.0",
+      "change_percent": "-14.13%",
+      "pct": 14.13
+    },
+    {
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "7375.0",
+      "change_percent": "-13.94%",
+      "pct": 13.94
     }
   ],
   "sector_performance": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+3.20%",
-      "pct": 3.2
-    },
-    {
       "name": "에너지장비및서비스",
-      "change_value": "+2.84%",
-      "pct": 2.84
+      "change_value": "+2.69%",
+      "pct": 2.69
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+2.68%",
-      "pct": 2.68
+      "name": "건설",
+      "change_value": "+1.98%",
+      "pct": 1.98
     },
     {
-      "name": "전기제품",
-      "change_value": "+1.68%",
-      "pct": 1.68
+      "name": "레저용장비와제품",
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+1.35%",
+      "pct": 1.35
     },
     {
       "name": "생물공학",
-      "change_value": "+1.31%",
-      "pct": 1.31
+      "change_value": "+1.07%",
+      "pct": 1.07
     }
   ],
   "sector_heatmap": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+3.20%",
-      "pct": 3.2
-    },
-    {
       "name": "에너지장비및서비스",
-      "change_value": "+2.84%",
-      "pct": 2.84
+      "change_value": "+2.69%",
+      "pct": 2.69
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+2.68%",
-      "pct": 2.68
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+1.68%",
-      "pct": 1.68
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+1.31%",
-      "pct": 1.31
+      "name": "건설",
+      "change_value": "+1.98%",
+      "pct": 1.98
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+0.97%",
-      "pct": 0.97
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+1.35%",
+      "pct": 1.35
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+1.07%",
+      "pct": 1.07
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.75%",
+      "pct": 0.75
+    },
+    {
+      "name": "자동차",
+      "change_value": "-3.96%",
+      "pct": -3.96
     },
     {
       "name": "복합기업",
-      "change_value": "-3.43%",
-      "pct": -3.43
+      "change_value": "-4.14%",
+      "pct": -4.14
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-3.46%",
-      "pct": -3.46
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "-3.81%",
-      "pct": -3.81
+      "name": "해운사",
+      "change_value": "-4.39%",
+      "pct": -4.39
     },
     {
       "name": "비철금속",
-      "change_value": "-4.16%",
-      "pct": -4.16
+      "change_value": "-4.86%",
+      "pct": -4.86
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-6.00%",
-      "pct": -6.0
+      "change_value": "-6.74%",
+      "pct": -6.74
     },
     {
       "name": "생명보험",
-      "change_value": "-6.39%",
-      "pct": -6.39
+      "change_value": "-7.67%",
+      "pct": -7.67
     }
   ],
   "article_counts": {
