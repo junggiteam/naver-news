@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 15:46:05",
+  "updated_at": "2026-08-20 16:01:27",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "오늘 코스피와 코스닥 지수는 각각 5.89%와 1.99% 상승하며 마감했다. 원/달러 환율은 오후 3시 30분 기준 전날보다 5.1원 하락한 1392.6원을 기록했다."
+      "text": "미국 금리 상승세가 진정된 점과 함께 SK하이닉스의 대규모 주주환원 정책 발표가 투자 심리에 긍정적인 영향을 미쳤다. 삼성전자와 SK하이닉스 등 대형 반도체주가 강세를 보였고 외국인이 2조 원 넘게 순매수하며 코스피와 코스닥 지수가 각각 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "PKC",
+      "corp_code": "00122472",
+      "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
+      "rcept_dt": "20260820",
+      "rcept_no": "20260820000285",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000285",
+      "ai_explanation": "회사 운영을 위해 건물이나 토지 등 유형자산을 매입하기로 결정했다는 공시입니다."
+    },
+    {
       "corp_name": "알파AI",
       "corp_code": "00220109",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260820",
       "rcept_no": "20260820000287",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000287",
-      "ai_explanation": "회사가 발행할 전환사채의 주요 내용을 기존 공시에서 정정하는 것입니다."
+      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 채권을 발행하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "알파AI",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000280",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000280",
-      "ai_explanation": "회사가 발행할 전환사채의 주요 내용을 기존 공시에서 정정하는 것입니다."
+      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 채권을 발행하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "한국정보인증",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000244",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000244",
-      "ai_explanation": "회사가 자사 주식을 매입하기 위해 신탁 기관과 계약을 체결하는 것입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 신탁 방식으로 매입하기로 했다는 공시입니다."
     },
     {
       "corp_name": "한국전기차충전서비스",
@@ -118,7 +127,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000259",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000259",
-      "ai_explanation": "두 회사가 하나로 합쳐지는 합병 절차를 결정했다는 의미입니다."
+      "ai_explanation": "효율적인 경영을 위해 다른 회사와 합병을 진행하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "현대엔지니어링",
@@ -127,7 +136,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000246",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000246",
-      "ai_explanation": "두 회사가 하나로 합쳐지는 합병 절차를 결정했다는 의미입니다."
+      "ai_explanation": "효율적인 경영을 위해 다른 회사와 합병을 진행하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "농업회사법인팜스코바이오인티",
@@ -136,7 +145,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000150",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000150",
-      "ai_explanation": "회사가 다른 회사의 특정 사업 부문을 사들이기로 결정한 것입니다."
+      "ai_explanation": "회사의 사업 확장을 위해 타사의 영업 부문을 인수하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "본느",
@@ -145,7 +154,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000134",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000134",
-      "ai_explanation": "기 공시된 전환사채 발행 관련 첨부 서류를 정정하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 첨부 서류를 수정했다는 공시입니다."
     },
     {
       "corp_name": "본느",
@@ -154,7 +163,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000114",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000114",
-      "ai_explanation": "기 공시된 전환사채 발행 관련 첨부 서류를 정정하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 첨부 서류를 수정했다는 공시입니다."
     },
     {
       "corp_name": "한탑",
@@ -163,7 +172,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000089",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000089",
-      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 새로 발행하여 투자자에게 파는 것입니다."
+      "ai_explanation": "회사가 운영자금 등을 마련하기 위해 신주를 발행하여 자본을 늘리기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "모트렉스",
@@ -172,7 +181,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000049",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000049",
-      "ai_explanation": "회사가 자사 주식을 매입하기 위해 신탁 기관과 계약을 체결하는 것입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 신탁 방식으로 매입하기로 했다는 공시입니다."
     },
     {
       "corp_name": "아이에스동서",
@@ -181,7 +190,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000015",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000015",
-      "ai_explanation": "회사가 자사 주식을 매입하기 위해 신탁 기관과 계약을 체결하는 것입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 신탁 방식으로 매입하기로 했다는 공시입니다."
     },
     {
       "corp_name": "에이치엘로보틱스",
@@ -190,7 +199,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260820000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000002",
-      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 새로 발행하여 투자자에게 파는 것입니다."
+      "ai_explanation": "회사가 운영자금 등을 마련하기 위해 신주를 발행하여 자본을 늘리기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "나노씨엠에스",
@@ -199,7 +208,7 @@
       "rcept_dt": "20260820",
       "rcept_no": "20260819000386",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000386",
-      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 새로 발행하여 투자자에게 파는 것입니다."
+      "ai_explanation": "회사가 운영자금 등을 마련하기 위해 신주를 발행하여 자본을 늘리기로 결정했다는 공시입니다."
     }
   ],
   "macro_indicators": [
