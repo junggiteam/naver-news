@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-21 08:01:19",
+  "updated_at": "2026-08-21 08:32:21",
   "market_mood": {
-    "label": "급등",
-    "emoji": "🟢",
-    "kospi_change": 5.89,
-    "kosdaq_change": 1.99,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6852.58,
     "kosdaq_value": 840.89
   },
@@ -52,10 +52,6 @@
     {
       "category": "부동산",
       "text": "강남·서초 아파트값 2주 연속 하락 및 부동산 시장 양극화 심화"
-    },
-    {
-      "category": "증권",
-      "text": "삼성전자와 SK하이닉스가 대규모 주주환원 정책을 발표하며 시가총액 상위 반도체 종목이 강세를 보인 것이 지수 상승을 견인했다. 동시에 미국 국채금리가 하락하며 시장의 투자 심리가 개선된 점도 코스피와 코스닥의 동반 상승에 영향을 미쳤다."
     }
   ],
   "daily_term": {
@@ -79,7 +75,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000009",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000009",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전 미리 되사들이겠다는 결정의 정정 공시입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전 미리 되사들이겠다는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -88,7 +84,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000008",
-      "ai_explanation": "회사가 운영자금 등을 확보하기 위해 주식을 새로 발행하여 자금을 조달하겠다는 정정 공시입니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 유상으로 매각한다는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -97,7 +93,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000007",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 바꿀 수 있는 채권인 전환사채를 발행하기로 한 정정 공시입니다."
+      "ai_explanation": "회사가 자금 조달을 목적으로 주식으로 전환할 수 있는 채권을 발행한다는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -106,7 +102,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000006",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000006",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 바꿀 수 있는 채권인 전환사채를 발행하기로 한 정정 공시입니다."
+      "ai_explanation": "회사가 자금 조달을 목적으로 주식으로 전환할 수 있는 채권을 발행한다는 결정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -115,7 +111,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260820000442",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000442",
-      "ai_explanation": "회사가 자금 조달을 목적으로 주식으로 전환 가능한 채권인 전환사채를 발행하기로 한 결정입니다."
+      "ai_explanation": "회사가 자금 조달을 목적으로 주식으로 전환할 수 있는 채권을 발행한다는 결정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -124,7 +120,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260820000443",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000443",
-      "ai_explanation": "회사가 자금 조달을 목적으로 주식으로 전환 가능한 채권인 전환사채를 발행하기로 한 결정입니다."
+      "ai_explanation": "회사가 자금 조달을 목적으로 주식으로 전환할 수 있는 채권을 발행한다는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2988,157 +2984,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "금호전기",
-      "price": "7460.0",
-      "change_percent": "+29.97%",
-      "pct": 29.97
-    },
-    {
-      "name": "SK증권우",
-      "price": "5260.0",
-      "change_percent": "+29.88%",
-      "pct": 29.88
-    },
-    {
-      "name": "SK증권",
-      "price": "2810.0",
-      "change_percent": "+29.79%",
-      "pct": 29.79
-    },
-    {
-      "name": "삼양바이오팜",
-      "price": "56200.0",
-      "change_percent": "+29.79%",
-      "pct": 29.79
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "10065.0",
-      "change_percent": "+25.26%",
-      "pct": 25.26
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7160.0",
-      "change_percent": "-23.99%",
-      "pct": 23.99
-    },
-    {
-      "name": "KB 레버리지 반도체 TOP10 TR ETN",
-      "price": "21500.0",
-      "change_percent": "-21.96%",
-      "pct": 21.96
-    },
-    {
-      "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3130.0",
-      "change_percent": "-17.96%",
-      "pct": 17.96
-    },
-    {
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "9020.0",
-      "change_percent": "-17.32%",
-      "pct": 17.32
-    },
-    {
-      "name": "하나 인버스 2X 반도체 ETN",
-      "price": "2500.0",
-      "change_percent": "-15.54%",
-      "pct": 15.54
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+10.51%",
-      "pct": 10.51
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명보험",
-      "change_value": "+7.57%",
-      "pct": 7.57
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "비철금속",
-      "change_value": "+6.35%",
-      "pct": 6.35
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생물공학",
-      "change_value": "+5.94%",
-      "pct": 5.94
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "+4.76%",
-      "pct": 4.76
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+10.51%",
-      "pct": 10.51
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명보험",
-      "change_value": "+7.57%",
-      "pct": 7.57
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "비철금속",
-      "change_value": "+6.35%",
-      "pct": 6.35
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "생물공학",
-      "change_value": "+5.94%",
-      "pct": 5.94
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "+4.76%",
-      "pct": 4.76
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "IT서비스",
-      "change_value": "+4.21%",
-      "pct": 4.21
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "-1.97%",
-      "pct": -1.97
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "담배",
-      "change_value": "-2.05%",
-      "pct": -2.05
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "해운사",
-      "change_value": "-2.42%",
-      "pct": -2.42
-    },
-    {
-      "name": "가구",
-      "change_value": "-2.64%",
-      "pct": -2.64
-    },
-    {
-      "name": "문구류",
-      "change_value": "-2.97%",
-      "pct": -2.97
-    },
-    {
-      "name": "은행",
-      "change_value": "-3.50%",
-      "pct": -3.5
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
