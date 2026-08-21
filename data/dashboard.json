@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-21 08:59:34",
+  "updated_at": "2026-08-21 09:16:02",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6852.58,
-    "kosdaq_value": 840.89
+    "label": "하락",
+    "emoji": "🟠",
+    "kospi_change": -0.32,
+    "kosdaq_change": -3.3,
+    "kospi_value": 6830.65,
+    "kosdaq_value": 813.16
   },
   "heroes": {
     "종합": {
@@ -52,6 +52,10 @@
     {
       "category": "경제",
       "text": "비트코인 가격이 7만 2천 달러를 돌파하며 가상자산 시장 급등세 지속"
+    },
+    {
+      "category": "증권",
+      "text": "금일 증시는 주요 종목의 실적 변동과 개별 기업의 배당 정책 및 사업 전략 변화에 대한 증권가의 분석이 잇따르며 코스피와 코스닥 모두 하락세로 장을 마감했다. 장 초반부터 나타난 지수 하락 흐름은 오후까지 이어지며 코스닥 시장이 코스피 대비 큰 폭의 하락세를 보였다."
     }
   ],
   "daily_term": {
@@ -84,7 +88,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000008",
-      "ai_explanation": "회사가 운영자금 등을 확보하기 위해 주식을 새로 발행하여 자본을 확충하겠다는 결정입니다."
+      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 주주 등으로부터 돈을 받고 신주를 발행하는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -93,7 +97,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000007",
-      "ai_explanation": "회사가 투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
+      "ai_explanation": "투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -102,7 +106,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000006",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000006",
-      "ai_explanation": "회사가 투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
+      "ai_explanation": "투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -111,7 +115,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260820000442",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000442",
-      "ai_explanation": "회사가 투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
+      "ai_explanation": "투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -120,7 +124,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260820000443",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000443",
-      "ai_explanation": "회사가 투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
+      "ai_explanation": "투자자로부터 자금을 빌리는 대신, 향후 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2984,95 +2988,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "한투 인버스2X유로스탁스50 ETN(H) B",
+      "price": "9840.0",
+      "change_percent": "+53.39%",
+      "pct": 53.39
+    },
+    {
+      "name": "금호전기",
+      "price": "9140.0",
+      "change_percent": "+22.52%",
+      "pct": 22.52
+    },
+    {
+      "name": "SK증권",
+      "price": "3350.0",
+      "change_percent": "+19.22%",
+      "pct": 19.22
+    },
+    {
+      "name": "더본코리아",
+      "price": "19660.0",
+      "change_percent": "+12.34%",
+      "pct": 12.34
+    },
+    {
+      "name": "에이엔피",
+      "price": "306.0",
+      "change_percent": "+11.68%",
+      "pct": 11.68
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "이월드",
+      "price": "426.0",
+      "change_percent": "-14.80%",
+      "pct": 14.8
+    },
+    {
+      "name": "하나 레버리지 K방산TOP10 ETN",
+      "price": "11885.0",
+      "change_percent": "-10.94%",
+      "pct": 10.94
+    },
+    {
+      "name": "PLUS K방산레버리지",
+      "price": "6030.0",
+      "change_percent": "-10.07%",
+      "pct": 10.07
+    },
+    {
+      "name": "KB 레버리지 KOSDAQ 150 선물 ETN",
+      "price": "23555.0",
+      "change_percent": "-9.84%",
+      "pct": 9.84
+    },
+    {
+      "name": "미래에셋생명",
+      "price": "24100.0",
+      "change_percent": "-9.40%",
+      "pct": 9.4
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "비철금속",
+      "change_value": "+2.39%",
+      "pct": 2.39
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+1.25%",
+      "pct": 1.25
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+1.22%",
+      "pct": 1.22
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "은행",
+      "change_value": "+0.34%",
+      "pct": 0.34
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "가정용품",
+      "change_value": "+0.18%",
+      "pct": 0.18
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "비철금속",
+      "change_value": "+2.39%",
+      "pct": 2.39
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+1.25%",
+      "pct": 1.25
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+1.22%",
+      "pct": 1.22
+    },
+    {
+      "name": "은행",
+      "change_value": "+0.34%",
+      "pct": 0.34
+    },
+    {
+      "name": "가정용품",
+      "change_value": "+0.18%",
+      "pct": 0.18
     },
     {
       "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "-0.06%",
+      "pct": -0.06
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "생명과학도구및서비스",
+      "change_value": "-4.16%",
+      "pct": -4.16
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "건강관리기술",
+      "change_value": "-4.22%",
+      "pct": -4.22
     },
     {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "문구류",
+      "change_value": "-4.59%",
+      "pct": -4.59
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "-4.72%",
+      "pct": -4.72
     },
     {
       "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "-5.09%",
+      "pct": -5.09
     },
     {
       "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "-5.63%",
+      "pct": -5.63
     }
   ],
   "article_counts": {
