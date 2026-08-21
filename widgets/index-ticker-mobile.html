@@ -47,7 +47,15 @@
     padding: 14px 18px 12px;
     border: 1px solid #dcdcdc;
     border-radius: 10px;
-    font-family: "Noto Sans KR", "Malgun Gothic", -apple-system, sans-serif;
+    /* "Noto Sans CJK KR"를 "Malgun Gothic"(윈도우 전용) 앞에 추가한다.
+       이게 대부분 안드로이드 기기에 실제로 설치돼 있는 시스템 한글 폰트
+       이름이라 명시적으로 매칭되고, 그 앞의 "Noto Sans KR"/"Malgun Gothic"은
+       안드로이드에는 없어 결국 못 찾고 마지막 sans-serif까지 밀려서
+       크롬이 자동으로 아무 대체 폰트를 골라주는 상태였다 - 그러면 한글
+       글자와 숫자/화살표(▲▼) 글자가 서로 다른 폰트에서 오게 돼 글자마다
+       줄 높이가 미묘하게 달라지는 원인이 될 수 있었다. 이름을 명시해서
+       매번 같은 폰트로 고정되게 한다. */
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "Malgun Gothic", -apple-system, sans-serif;
     box-sizing: border-box;
     background: #fff;
   }
@@ -150,9 +158,14 @@
     border: 1px solid #dcdcdc;
   }
   /* 이모지(은행 등)는 텍스트보다 커야 원 안에 꽉 차 보여서, 기본
-     폰트 크기보다 크게 잡는다. */
+     폰트 크기보다 크게 잡는다. 이모지 전용 컬러 폰트를 명시해서, 어떤
+     기기냐에 따라 브라우저가 이모지 대체 폰트를 다르게 고르는 걸
+     막는다(이 배지는 어차피 고정 크기 원 안에서 flex로 중앙 정렬돼
+     있어 지금 당장 깨져 보이진 않지만, 폰트가 기기마다 달라지는 요인을
+     하나 더 없애 두는 차원). */
   .idx-badge-emoji {
     font-size: 10.5px;
+    font-family: "Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
   }
   /* 세 자리 숫자(100/200/500)는 원이 작아 기본 크기로는 안 들어가서
      더 작게. 숫자 글리프가 원 중심보다 살짝 위로 쏠려 보이는 미세한

@@ -28,7 +28,14 @@ def fetch(url, label=""):
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
             if response.status_code == 200:
-                response.encoding = response.apparent_encoding or "euc-kr"
+                # requests는 응답 헤더의 Content-Type(charset=EUC-KR)을 이미
+                # 정확히 읽어서 response.encoding에 넣어준다(직접 확인함).
+                # 예전에는 apparent_encoding(chardet 통계적 추측, 이 페이지들
+                # 에서는 EUC-KR 대신 CP949로 추측함)으로 덮어썼는데, 지금까지는
+                # CP949가 EUC-KR 표준 한글 음절을 우연히 같은 방식으로 디코딩해
+                # 문제가 안 드러났을 뿐 - 언젠가 그 우연이 깨지면 이름이 깨질
+                # 수 있는 위험한 코드였다. 헤더가 이미 정확하므로 그냥 그대로
+                # 쓴다(scraper_stock.py의 fetch()도 encoding을 따로 안 건드림).
                 return response.text
             print(f"[{display_label}] 응답이 비정상입니다 (상태 코드 {response.status_code}) - {attempt}/{MAX_RETRIES}회 시도")
         except requests.exceptions.RequestException as e:
