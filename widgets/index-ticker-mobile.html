@@ -10,6 +10,13 @@
     padding: 0;
     height: 100%;
     background: transparent;
+    /* 모바일 크롬이 텍스트를 문단 성격에 따라 자동으로 확대(font
+       boosting)하는 기능을 끈다. 이 파일은 모바일 전용이라 PC에는
+       아예 로드되지 않으므로 PC 쪽 영향은 없음 - 이 자동 확대가
+       가로 티커 안의 이름/숫자/등락률 글자마다 서로 다르게 걸려서
+       줄 높이가 항목마다 들쭉날쭉해 보이는 원인 중 하나였다. */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 </style>
 </head>
@@ -105,6 +112,12 @@
     font-size: 14px;
     font-weight: 600;
     color: #333;
+    /* line-height를 브라우저 기본값("normal")에 맡기지 않고 1로
+       고정한다. 이름 텍스트(한글)와 등락률의 화살표(▲▼) 기호가
+       모바일 크롬에서 서로 다른 대체 폰트로 렌더링되면서 각자의
+       기본 줄 높이가 달라져, 같은 행 안에서도 항목마다 텍스트가
+       위아래로 들쭉날쭉하게 보이던 원인이었다. */
+    line-height: 1;
   }
   /* 지표 이름 앞 배지(색상 CSS 배지 + 실제 아이콘 이미지 혼용,
      widgets/assets/icons/). 크기는 .ish-name 폰트(14px) 기준으로
@@ -173,10 +186,18 @@
     font-size: 15px;
     font-weight: 800;
     color: #191919;
+    /* .ish-name과 동일한 이유(위 주석 참고) - 숫자 값도 줄 높이를
+       1로 고정해 같은 행의 다른 요소들과 세로 정렬 기준을 맞춘다. */
+    line-height: 1;
   }
   .ish-change {
     font-size: 13.5px;
     font-weight: 700;
+    /* ▲▼ 화살표 기호는 모바일 크롬에서 한글/숫자와 다른 대체 폰트로
+       렌더링되기 쉬워 기본 줄 높이가 유독 들쭉날쭉했던 지점이다.
+       line-height를 1로 고정해 기호가 포함된 이 요소도 같은 행의
+       이름/값과 세로로 정확히 맞춰지게 한다. */
+    line-height: 1;
   }
   .ish-change.up { color: #c0392b; }
   .ish-change.down { color: #2a5db0; }
