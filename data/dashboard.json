@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-21 10:01:13",
+  "updated_at": "2026-08-21 10:31:20",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -0.19,
-    "kosdaq_change": -4.47,
-    "kospi_value": 6839.54,
-    "kosdaq_value": 803.28
+    "kospi_change": 0.17,
+    "kosdaq_change": -4.91,
+    "kospi_value": 6864.32,
+    "kosdaq_value": 799.64
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 국채 금리 상승과 뉴욕 증시의 약세가 투자 심리에 부정적인 영향을 미치며 국내 증시가 동반 하락했다. 코스닥은 가상자산 관련주 등의 개별 종목 강세에도 불구하고 지수 전반의 약세 흐름을 피하지 못했다."
+      "text": "코스닥 지수가 4% 넘게 급락하며 16거래일 만에 매도 사이드카가 발동된 영향으로 큰 폭의 하락세를 보였다. 반면 코스피는 외국인의 지속적인 순매도세와 금리 인상 전망 등 대외적인 불안 요인 속에서도 보합권에서 등락을 거듭하며 마감했다."
     }
   ],
   "daily_term": {
@@ -73,13 +73,67 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "아이브이쥐",
+      "corp_code": "01966660",
+      "report_nm": "회사합병결정",
+      "rcept_dt": "20260821",
+      "rcept_no": "20260821000083",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000083",
+      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지는 결정을 의미합니다."
+    },
+    {
+      "corp_name": "카카오인베스트먼트",
+      "corp_code": "01227446",
+      "report_nm": "회사합병결정",
+      "rcept_dt": "20260821",
+      "rcept_no": "20260821000082",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000082",
+      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지는 결정을 의미합니다."
+    },
+    {
+      "corp_name": "카카오인베스트먼트",
+      "corp_code": "01227446",
+      "report_nm": "회사합병결정",
+      "rcept_dt": "20260821",
+      "rcept_no": "20260821000079",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000079",
+      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지는 결정을 의미합니다."
+    },
+    {
+      "corp_name": "카카오인베스트먼트",
+      "corp_code": "01227446",
+      "report_nm": "회사분할결정",
+      "rcept_dt": "20260821",
+      "rcept_no": "20260821000078",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000078",
+      "ai_explanation": "회사의 사업 부문을 나누어 별도의 회사로 만드는 결정을 의미합니다."
+    },
+    {
+      "corp_name": "카카오",
+      "corp_code": "00258801",
+      "report_nm": "주요사항보고서(회사합병결정)",
+      "rcept_dt": "20260821",
+      "rcept_no": "20260821000052",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000052",
+      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지는 결정을 의미합니다."
+    },
+    {
+      "corp_name": "카카오",
+      "corp_code": "00258801",
+      "report_nm": "주요사항보고서(회사분할결정)",
+      "rcept_dt": "20260821",
+      "rcept_no": "20260821000047",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000047",
+      "ai_explanation": "회사의 사업 부문을 나누어 별도의 회사로 만드는 결정을 의미합니다."
+    },
+    {
       "corp_name": "HLB테라퓨틱스",
       "corp_code": "00552859",
       "report_nm": "[기재정정]주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20260821",
       "rcept_no": "20260821000009",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000009",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전 미리 되사서 소각하거나 보유하겠다는 결정입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사들이는 결정을 정정합니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -88,7 +142,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000008",
-      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 신주를 발행하여 자본을 확충하겠다는 결정입니다."
+      "ai_explanation": "주주 등을 대상으로 신주를 발행하여 자금을 조달하는 결정을 정정합니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -97,7 +151,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000007",
-      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행하여 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권의 발행 결정을 정정합니다."
     },
     {
       "corp_name": "HLB테라퓨틱스",
@@ -106,7 +160,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260821000006",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000006",
-      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행하여 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권의 발행 결정을 정정합니다."
     },
     {
       "corp_name": "엔투텍",
@@ -115,7 +169,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260820000442",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000442",
-      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행하여 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권의 발행 결정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -124,7 +178,7 @@
       "rcept_dt": "20260821",
       "rcept_no": "20260820000443",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000443",
-      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행하여 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권의 발행 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2990,155 +3044,155 @@
   },
   "top_gainers": [
     {
-      "name": "금호전기",
-      "price": "9170.0",
-      "change_percent": "+22.92%",
-      "pct": 22.92
+      "name": "인디에프",
+      "price": "3590.0",
+      "change_percent": "+29.84%",
+      "pct": 29.84
     },
     {
       "name": "에이엔피",
-      "price": "326.0",
-      "change_percent": "+18.98%",
-      "pct": 18.98
+      "price": "328.0",
+      "change_percent": "+19.71%",
+      "pct": 19.71
     },
     {
-      "name": "SK증권",
-      "price": "3185.0",
-      "change_percent": "+13.35%",
-      "pct": 13.35
-    },
-    {
-      "name": "CJ씨푸드1우",
-      "price": "7500.0",
-      "change_percent": "+12.61%",
-      "pct": 12.61
+      "name": "금호전기",
+      "price": "8880.0",
+      "change_percent": "+19.03%",
+      "pct": 19.03
     },
     {
       "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "8405.0",
-      "change_percent": "+11.77%",
-      "pct": 11.77
+      "price": "8525.0",
+      "change_percent": "+13.36%",
+      "pct": 13.36
+    },
+    {
+      "name": "N2 인버스 2X 코스닥150 선물 ETN",
+      "price": "6820.0",
+      "change_percent": "+13.29%",
+      "pct": 13.29
     }
   ],
   "top_losers": [
     {
-      "name": "혜인",
-      "price": "9200.0",
-      "change_percent": "-15.21%",
-      "pct": 15.21
-    },
-    {
-      "name": "이월드",
-      "price": "426.0",
-      "change_percent": "-14.80%",
-      "pct": 14.8
-    },
-    {
       "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "123235.0",
-      "change_percent": "-12.89%",
-      "pct": 12.89
+      "price": "120850.0",
+      "change_percent": "-14.58%",
+      "pct": 14.58
     },
     {
-      "name": "키움 레버리지 K방산 TOP5 ETN",
-      "price": "14120.0",
-      "change_percent": "-12.68%",
-      "pct": 12.68
+      "name": "혜인",
+      "price": "9300.0",
+      "change_percent": "-14.29%",
+      "pct": 14.29
     },
     {
-      "name": "두산퓨얼셀",
-      "price": "35550.0",
-      "change_percent": "-12.55%",
-      "pct": 12.55
+      "name": "SHD",
+      "price": "12520.0",
+      "change_percent": "-13.89%",
+      "pct": 13.89
+    },
+    {
+      "name": "하나 레버리지 K방산TOP10 ETN",
+      "price": "11495.0",
+      "change_percent": "-13.86%",
+      "pct": 13.86
+    },
+    {
+      "name": "미래산업",
+      "price": "7380.0",
+      "change_percent": "-13.68%",
+      "pct": 13.68
     }
   ],
   "sector_performance": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.65%",
-      "pct": 1.65
+      "name": "무선통신서비스",
+      "change_value": "+2.61%",
+      "pct": 2.61
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+1.60%",
-      "pct": 1.6
+      "change_value": "+2.55%",
+      "pct": 2.55
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+2.46%",
+      "pct": 2.46
     },
     {
       "name": "은행",
-      "change_value": "+1.29%",
-      "pct": 1.29
+      "change_value": "+1.52%",
+      "pct": 1.52
     },
     {
-      "name": "석유와가스",
-      "change_value": "+1.06%",
-      "pct": 1.06
-    },
-    {
-      "name": "항공사",
-      "change_value": "+0.82%",
-      "pct": 0.82
+      "name": "생명보험",
+      "change_value": "+1.40%",
+      "pct": 1.4
     }
   ],
   "sector_heatmap": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.65%",
-      "pct": 1.65
+      "name": "무선통신서비스",
+      "change_value": "+2.61%",
+      "pct": 2.61
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+1.60%",
-      "pct": 1.6
+      "change_value": "+2.55%",
+      "pct": 2.55
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+2.46%",
+      "pct": 2.46
     },
     {
       "name": "은행",
-      "change_value": "+1.29%",
-      "pct": 1.29
+      "change_value": "+1.52%",
+      "pct": 1.52
     },
     {
-      "name": "석유와가스",
-      "change_value": "+1.06%",
-      "pct": 1.06
+      "name": "생명보험",
+      "change_value": "+1.40%",
+      "pct": 1.4
     },
     {
-      "name": "항공사",
-      "change_value": "+0.82%",
-      "pct": 0.82
+      "name": "손해보험",
+      "change_value": "+0.86%",
+      "pct": 0.86
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+0.50%",
-      "pct": 0.5
+      "name": "건강관리업체및서비스",
+      "change_value": "-5.62%",
+      "pct": -5.62
     },
     {
       "name": "건강관리기술",
-      "change_value": "-5.41%",
-      "pct": -5.41
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "-5.42%",
-      "pct": -5.42
+      "change_value": "-5.89%",
+      "pct": -5.89
     },
     {
       "name": "생물공학",
-      "change_value": "-5.42%",
-      "pct": -5.42
+      "change_value": "-6.05%",
+      "pct": -6.05
     },
     {
       "name": "문구류",
-      "change_value": "-6.18%",
-      "pct": -6.18
+      "change_value": "-6.12%",
+      "pct": -6.12
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-6.43%",
-      "pct": -6.43
+      "change_value": "-6.61%",
+      "pct": -6.61
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-7.21%",
-      "pct": -7.21
+      "change_value": "-7.63%",
+      "pct": -7.63
     }
   ],
   "article_counts": {
