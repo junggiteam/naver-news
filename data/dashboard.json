@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-24 07:55:45",
+  "updated_at": "2026-08-24 08:15:57",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": 0.88,
-    "kosdaq_change": -4.63,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6912.95,
     "kosdaq_value": 801.94
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "용산공원 개발 방안을 두고 국토부와 서울시간 갈등 지속"
-    },
-    {
-      "category": "증권",
-      "text": "반도체를 비롯한 대형주 중심의 투자 심리가 코스피 지수 상승을 견인했으나 코스닥은 특정 산업군 중심의 자금 쏠림과 ETF 시장의 양극화가 뚜렷해지며 하락세가 나타났다. 시장은 엔비디아 실적 발표와 잭슨홀 미팅을 앞두고 주요 대형주로 수급이 집중되는 흐름을 보였다."
     }
   ],
   "daily_term": {
@@ -2925,157 +2921,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "인디에프",
-      "price": "3270.0",
-      "change_percent": "+18.26%",
-      "pct": 18.26
-    },
-    {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "8515.0",
-      "change_percent": "+13.23%",
-      "pct": 13.23
-    },
-    {
-      "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "7875.0",
-      "change_percent": "+12.42%",
-      "pct": 12.42
-    },
-    {
-      "name": "금호전기",
-      "price": "8380.0",
-      "change_percent": "+12.33%",
-      "pct": 12.33
-    },
-    {
-      "name": "N2 인버스 2X 코스닥150 선물 ETN",
-      "price": "6755.0",
-      "change_percent": "+12.21%",
-      "pct": 12.21
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "SHD",
-      "price": "12170.0",
-      "change_percent": "-16.30%",
-      "pct": 16.3
-    },
-    {
-      "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "119800.0",
-      "change_percent": "-15.32%",
-      "pct": 15.32
-    },
-    {
-      "name": "하나 레버리지 K방산TOP10 ETN",
-      "price": "11560.0",
-      "change_percent": "-13.38%",
-      "pct": 13.38
-    },
-    {
-      "name": "키움 레버리지 K방산 TOP5 ETN",
-      "price": "14030.0",
-      "change_percent": "-13.23%",
-      "pct": 13.23
-    },
-    {
-      "name": "이월드",
-      "price": "434.0",
-      "change_percent": "-13.20%",
-      "pct": 13.2
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "생명보험",
-      "change_value": "+8.88%",
-      "pct": 8.88
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+4.80%",
-      "pct": 4.8
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "+3.55%",
-      "pct": 3.55
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+2.97%",
-      "pct": 2.97
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+2.95%",
-      "pct": 2.95
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "생명보험",
-      "change_value": "+8.88%",
-      "pct": 8.88
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+4.80%",
-      "pct": 4.8
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "+3.55%",
-      "pct": 3.55
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+2.97%",
-      "pct": 2.97
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+2.95%",
-      "pct": 2.95
-    },
-    {
-      "name": "항공사",
-      "change_value": "+2.69%",
-      "pct": 2.69
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "생물공학",
-      "change_value": "-5.62%",
-      "pct": -5.62
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "-5.76%",
-      "pct": -5.76
-    },
-    {
-      "name": "문구류",
-      "change_value": "-5.98%",
-      "pct": -5.98
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "-6.04%",
-      "pct": -6.04
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-6.90%",
-      "pct": -6.9
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "-7.07%",
-      "pct": -7.07
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
