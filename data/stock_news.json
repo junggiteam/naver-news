@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 08:30:48",
+  "updated_at": "2026-08-24 08:53:25",
   "indices": [
     {
       "name": "코스피",
@@ -52,10 +52,10 @@
     },
     {
       "name": "국내금(원/돈)",
-      "value": "775,123.46",
-      "change_percent": "▲2.04%",
-      "direction": "up",
-      "as_of": "2026.08.21 23:59"
+      "value": "772,777.5",
+      "change_percent": "▼0.30%",
+      "direction": "down",
+      "as_of": "2026.08.24 08:34"
     },
     {
       "name": "휘발유(원/리터)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,387.00",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026.08.24 08:27"
+      "value": "1,385.50",
+      "change_percent": "▼0.11%",
+      "direction": "down",
+      "as_of": "2026.08.24 08:49"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "872.49",
-      "change_percent": "▼0.01%",
+      "value": "871.47",
+      "change_percent": "▼0.13%",
       "direction": "down",
-      "as_of": "2026.08.24 08:27"
+      "as_of": "2026.08.24 08:49"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,619.46",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026.08.24 08:27"
+      "value": "1,617.85",
+      "change_percent": "▼0.10%",
+      "direction": "down",
+      "as_of": "2026.08.24 08:49"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "106,692,000",
-      "change_percent": "▲1.05%",
+      "value": "106,438,000",
+      "change_percent": "▲0.81%",
       "direction": "up",
-      "as_of": "2026-08-24 08:30:42"
+      "as_of": "2026-08-24 08:53:23"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,383,000",
-      "change_percent": "▲2.02%",
+      "value": "3,377,000",
+      "change_percent": "▲1.84%",
       "direction": "up",
-      "as_of": "2026-08-24 08:30:46"
+      "as_of": "2026-08-24 08:53:23"
     }
   ],
   "news_categories": [
@@ -126,8 +126,80 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "매일경제",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "역대급 주주환원 속 엇갈린 주가…프리마켓서 삼전 3.6%↓·하닉 1.9%↑ [마켓시그널]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654417&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:41",
+          "published_at": "2026-08-24T08:41:00+09:00"
+        },
+        {
+          "press_name": "뉴스1",
+          "rank": 2,
+          "title": "삼성증권 \"카카오, 인적분할로 지주사 할인율 부각…목표가 18% 하향\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0009128274&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:40",
+          "published_at": "2026-08-24T08:40:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 3,
+          "title": "디베이스먼트 트레이드 귀환…금·비트코인↑ [글로벌 머니플로우]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263311&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:40",
+          "published_at": "2026-08-24T08:40:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 4,
+          "title": "신한증권 \"디앤씨미디어, 어려운 웹툰 업황…목표주가↓\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016266004&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:38",
+          "published_at": "2026-08-24T08:38:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 5,
+          "title": "\"AI 데이터 센터 건설이 앤트로픽 IPO 변수가 된다\"...美 님비현상 극심-[굿모닝 글로벌 이슈]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263308&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:38",
+          "published_at": "2026-08-24T08:38:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 6,
+          "title": "美 증시, 국채금리 재상승에도 저가 매수세 반등-[글로벌 마감 시황]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263307&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:38",
+          "published_at": "2026-08-24T08:38:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 7,
+          "title": "둘로 쪼개지는 카카오… 증권가 “디스카운트 확대” [오늘 나온 보고서]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005724706&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:36",
+          "published_at": "2026-08-24T08:36:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 8,
+          "title": "NH증권 \"GS건설, 데이터센터 중심 신사업 강화 긍정…목표가↑\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016265990&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:31",
+          "published_at": "2026-08-24T08:31:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 9,
+          "title": "[마켓뷰] 삼전·닉스 주주환원 약발 이어질까…코스피 향방은",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016265985&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:26",
+          "published_at": "2026-08-24T08:26:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 10,
           "title": "코스피 2차 반등 이어질까…엔비디아·미 국채금리에 쏠린 눈",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005724701&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
           "upload_time": "2026-08-24 08:23",
@@ -135,7 +207,7 @@
         },
         {
           "press_name": "뉴스1",
-          "rank": 2,
+          "rank": 11,
           "title": "'최대 110조 주주환원' 삼성전자, 프리마켓서 3% 하락",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0009128236&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
           "upload_time": "2026-08-24 08:18",
@@ -143,7 +215,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 12,
           "title": "디지털헬스에 지갑 연 제약사…병원 영업망 타고 매출도 ‘쑥’",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654405&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
           "upload_time": "2026-08-24 07:49",
@@ -151,7 +223,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 13,
           "title": "비트코인 쫓다 자본금 '털썩' 부채비율 9435% '비트맥스'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356718&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
           "upload_time": "2026-08-24 07:17",
@@ -159,7 +231,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 14,
           "title": "엔비디아·잭슨홀에 달린 코스피…7000피 안착 시험대[주간 증시 전망]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654400&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
           "upload_time": "2026-08-24 07:06",
@@ -167,83 +239,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 6,
+          "rank": 15,
           "title": "알테오젠, 첫 생산공장 투자…ALT-B4부터 신약까지 자체 생산",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654398&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
           "upload_time": "2026-08-24 07:02",
           "published_at": "2026-08-24T07:02:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 7,
-          "title": "서학개미, 한 주간 ‘삼전닉스’ 라운드힐 ETF 1200억 담았다 [마켓시그널]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654384&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-24 06:31",
-          "published_at": "2026-08-24T06:31:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 8,
-          "title": "니어스랩·해치텍 신규 상장…스카이랩스 공모주청약 [이번주 증시캘린더]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654383&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-24 06:31",
-          "published_at": "2026-08-24T06:31:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 9,
-          "title": "불닭대박 예견한 투자고수…“비축해둔 현금, 이럴때 과감히 써라”",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005724672&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-24 06:07",
-          "published_at": "2026-08-24T06:07:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 10,
-          "title": "화장품 호실적·금값 강세에 관련 ETF ‘두각’ [이런국장 저런주식]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654370&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-24 06:01",
-          "published_at": "2026-08-24T06:01:00+09:00"
-        },
-        {
-          "press_name": "뉴스1",
-          "rank": 11,
-          "title": "거래 식었는데 'AI 슈퍼위크'…삼전닉스에 달린 '칠천피'",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0009128100&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-24 06:00",
-          "published_at": "2026-08-24T06:00:00+09:00"
-        },
-        {
-          "press_name": "중앙일보",
-          "rank": 12,
-          "title": "110조 내놨는데 부족?",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0003546192&office_id=025&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-24 00:02",
-          "published_at": "2026-08-24T00:02:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 13,
-          "title": "학습효과 없는 개미들 “삼전닉스 2배ETF 가즈아”…이틀만에 2조",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005724636&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-23 19:24",
-          "published_at": "2026-08-23T19:24:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 14,
-          "title": "엔비디아 실적 발표·잭슨홀 미팅에 주목 [주간 증시 전망]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005565112&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-23 18:20",
-          "published_at": "2026-08-23T18:20:00+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 15,
-          "title": "달러 약세에 금값 반등…금광ETF 한달새 40%↑",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004654302&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260824&page=1",
-          "upload_time": "2026-08-23 18:04",
-          "published_at": "2026-08-23T18:04:00+09:00"
         }
       ]
     },
@@ -251,124 +251,124 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제TV",
+          "press_name": "머니투데이",
           "rank": 1,
-          "title": "고금리 오는데 믿을 건 '역시'...\"주주환원도 매력\"",
+          "title": "카카오, 인적분할로 존속법인 할인율 부각…단기주가 하락 가능성-삼성",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005403573&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:51",
+          "published_at": "2026-08-24T08:51:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "DS증권 \"한화에어로, 美 포병체계 시장 진입 기반…목표가↑\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016266020&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:48",
+          "published_at": "2026-08-24T08:48:00+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 3,
+          "title": "카카오, 인적분할은 성장주 포석…AI 수익화 관건-교보증권",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005403565&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:44",
+          "published_at": "2026-08-24T08:44:00+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 4,
+          "title": "\"카카오, 인적 분할 후 AI 시너지 효과 우려… 목표가↓\"-키움",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005403562&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:42",
+          "published_at": "2026-08-24T08:42:00+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 5,
+          "title": "\"디앤씨미디어, 과매도 구간…'나혼렙' 알짜 제작사\"-신한",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005403561&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:41",
+          "published_at": "2026-08-24T08:41:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 6,
+          "title": "비트코인 현물 ETF 16억 달러 유입…로빈후드 13% 급등·S&P500 상승률 1위-[美 증시 특징주]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263312&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:40",
+          "published_at": "2026-08-24T08:40:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 7,
+          "title": "뉴욕증시 안도 랠리…빅테크 차세대 AI 투자·실적 모멘텀 부각 [ 美증시 특징주 ]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263310&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:39",
+          "published_at": "2026-08-24T08:39:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 8,
+          "title": "신한증권 \"디앤씨미디어, 어려운 웹툰 업황…목표주가↓\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016266004&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:38",
+          "published_at": "2026-08-24T08:38:00+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 9,
+          "title": "\"183만원 간다\"...한화에어로 'K9MH' 미국 진출",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005403558&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:38",
+          "published_at": "2026-08-24T08:38:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 10,
+          "title": "태웅로직스, 이투마스 경영권 인수 본계약 체결",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806244&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:36",
+          "published_at": "2026-08-24T08:36:00+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 11,
+          "title": "DS증권 \"삼성전자 100조 환원의 숨은 변수…우선주·삼성물산 주목\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005565235&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:31",
+          "published_at": "2026-08-24T08:31:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 12,
+          "title": "iM증권, 삼화콘덴서 목표가↑…\"MLCC 가격 인상 낙수효과\"",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016265989&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:30",
+          "published_at": "2026-08-24T08:30:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 13,
+          "title": "에이텀, 美 하빈저와 '대형 상용트럭용' 초슬림 ICCU 개발…북미 공략 본격화",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806237&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:30",
+          "published_at": "2026-08-24T08:30:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 14,
+          "title": "[속보] 고금리 오는데 믿을 건 '역시'...\"주주환원도 매력\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263305&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
           "upload_time": "2026-08-24 08:26",
           "published_at": "2026-08-24T08:26:00+09:00"
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 15,
           "title": "다이나믹솔루션, 엔비디아와 '차세대 BCI·AI칩' 기술 협력 논의…젠슨 황 장녀 방문",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806232&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
           "upload_time": "2026-08-24 08:26",
           "published_at": "2026-08-24T08:26:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 3,
-          "title": "\"한진, K-뷰티 물류 성장에도 택배 수익성 부담…목표가 하향\"-iM證",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005565231&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:24",
-          "published_at": "2026-08-24T08:24:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 4,
-          "title": "오리엔트정공, 전기차용 열계면소재 사업 진출",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806225&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:22",
-          "published_at": "2026-08-24T08:22:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 5,
-          "title": "40조 하이닉스, 110조 삼성전자…반도체株 '다음 카드' 는?",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005565230&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:19",
-          "published_at": "2026-08-24T08:19:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 6,
-          "title": "플래티어, 워크데이와 파트너십 체결…AI 전환 사업 확대",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806218&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:18",
-          "published_at": "2026-08-24T08:18:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 7,
-          "title": "SG, 포스코인터내셔널과 인도네시아 JV 설립",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806212&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:11",
-          "published_at": "2026-08-24T08:11:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 8,
-          "title": "전진건설로봇, 글로벌 인프라·재건 수요 기대-유진",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356750&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:08",
-          "published_at": "2026-08-24T08:08:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 9,
-          "title": "엘리스그룹, 증권신고서 제출…\"코스닥 상장 본격화\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806208&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:07",
-          "published_at": "2026-08-24T08:07:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 10,
-          "title": "삼성생명, 삼성전자 주주환원 수혜 기대…배당 확대 여부는 변수-한화",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356749&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:06",
-          "published_at": "2026-08-24T08:06:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 11,
-          "title": "'피지컬 AI 기반 자율비행 드론' 니어스랩, 코스닥 데뷔[오늘 상장]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356748&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:04",
-          "published_at": "2026-08-24T08:04:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 12,
-          "title": "삼성전자 주주환원에 우선주 수혜…삼성물산 배당 3배 뛴다",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356747&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:04",
-          "published_at": "2026-08-24T08:04:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 13,
-          "title": "\"11만원 간다며\"…카카오 분할 발표에 목표가 7만원",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356742&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:02",
-          "published_at": "2026-08-24T08:02:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 14,
-          "title": "\"카카오, 분할만으로 재평가 어려워…AI 사업 성과 필요\"-KB",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005323802&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:01",
-          "published_at": "2026-08-24T08:01:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 15,
-          "title": "\"183만원 간다\" 한화에어로 K9MH, 최강 美 뚫었다",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356738&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260824&page=1",
-          "upload_time": "2026-08-24 08:01",
-          "published_at": "2026-08-24T08:01:00+09:00"
         }
       ]
     },
@@ -501,8 +501,24 @@
       "category": "채권·선물",
       "items": [
         {
-          "press_name": "매일경제",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "RISE 데일리고정커버드콜 ETF 시리즈, 순자산 1.5조 돌파",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356782&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:43",
+          "published_at": "2026-08-24T08:43:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "한투운용, 삼전닉스에 삼성전기 더한 채권혼합형 ETF 상장",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356777&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
+          "upload_time": "2026-08-24 08:35",
+          "published_at": "2026-08-24T08:35:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 3,
           "title": "중소 증권사 회사채 러시… 내달 최대 1조 규모 발행",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005724580&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-23 17:41",
@@ -510,7 +526,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 4,
           "title": "SK하이닉스 40조 주주환원에…단일종목 레버리지 웃었다[펀드와치]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356359&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-23 11:32",
@@ -518,7 +534,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "국채금리 급등 '대증요법'으로 눌러보려다 '교육당한' 美재무",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016265290&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-23 10:38",
@@ -526,7 +542,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 6,
           "title": "롯데지주부터 삼양패키징까지…A급 수요예측 잇따라",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006356289&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-23 09:03",
@@ -534,7 +550,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 5,
+          "rank": 7,
           "title": "빠르게 늘어나는 퇴직연금…채권시장 새 수급처 될까",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016265069&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-23 06:35",
@@ -542,7 +558,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 6,
+          "rank": 8,
           "title": "비우량 채권시장 급격히 냉각…올해 BBB급 공모채 발행사 10곳뿐",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016265062&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-23 06:25",
@@ -550,7 +566,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 9,
           "title": "금·비트코인만 오르고 달러는 약세…베센트의 역설",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005724347&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-22 17:28",
@@ -558,7 +574,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 8,
+          "rank": 10,
           "title": "'숏 치다간 다친다'…美 으름장에도 금리는 더 뛰었다 [빈난새의 빈틈없이마켓]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005323486&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-22 09:51",
@@ -566,7 +582,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 9,
+          "rank": 11,
           "title": "국고채 금리 일제히 상승…다음주 금통위 경계감(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016264296&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-21 16:57",
@@ -574,7 +590,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 10,
+          "rank": 12,
           "title": "NH투자증권, ‘韓 퇴직연금 시장과 TDF 기능 재조명’ 리포트 발간",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006355775&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-21 16:39",
@@ -582,7 +598,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 11,
+          "rank": 13,
           "title": "KB금융, 신종자본증권 수요예측서 5천200억원 수요 확보",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016264250&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-21 16:34",
@@ -590,7 +606,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 12,
+          "rank": 14,
           "title": "6900피 지켜낸 코스피…삼전닉스 2~3%대 강세",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006355737&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-21 15:35",
@@ -598,27 +614,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 13,
+          "rank": 15,
           "title": "NH투자증권 \"디폴트옵션 적극투자형 3년 수익률 90.15%\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006355664&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
           "upload_time": "2026-08-21 14:04",
           "published_at": "2026-08-21T14:04:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 14,
-          "title": "[속보]코스닥 매도 사이드카 발동…지수 4.7% 하락",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006355544&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
-          "upload_time": "2026-08-21 10:08",
-          "published_at": "2026-08-21T10:08:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 15,
-          "title": "예탁원, 외국인 국채투자 '원스톱 파이낸싱' 첫 계약 체결",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016262871&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=404&date=20260824&page=1",
-          "upload_time": "2026-08-21 09:26",
-          "published_at": "2026-08-21T09:26:00+09:00"
         }
       ]
     },
