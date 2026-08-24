@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-24 11:01:14",
+  "updated_at": "2026-08-24 11:31:04",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -2.4,
-    "kosdaq_change": 1.16,
-    "kospi_value": 6747.15,
-    "kosdaq_value": 811.28
+    "kospi_change": -2.05,
+    "kosdaq_change": 2.13,
+    "kospi_value": 6771.29,
+    "kosdaq_value": 819.04
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자가 대규모 주주환원 정책 발표에도 불구하고 시장의 기대에 미치지 못했다는 평가와 함께 6%대 급락세를 보이면서 시가총액 비중이 높은 코스피 지수를 큰 폭으로 끌어내렸다. 반면 코스닥 시장은 이차전지 및 화장품 관련 종목들이 강세를 보이며 지수 상승을 견인했다."
+      "text": "코스피는 시가총액 비중이 큰 삼성전자가 대규모 주주환원 발표에도 불구하고 급락세를 보이면서 하락 마감했다. 반면 코스닥은 이차전지 등 일부 종목의 강세와 개별 기업들의 주가 흐름이 맞물리며 상승세로 거래를 마쳤다."
     }
   ],
   "daily_term": {
@@ -90,7 +90,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000017",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000017",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 결정한 내용을 정정하여 다시 보고하는 공시입니다."
+      "ai_explanation": "회사 간의 합병 결정 내용이 일부 수정되거나 추가 자료가 반영되었음을 알리는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2948,42 +2948,30 @@
       "pct": 29.93
     },
     {
+      "name": "한미약품",
+      "price": "536000.0",
+      "change_percent": "+29.00%",
+      "pct": 29.0
+    },
+    {
       "name": "키다리스튜디오",
-      "price": "4945.0",
-      "change_percent": "+23.01%",
-      "pct": 23.01
+      "price": "5070.0",
+      "change_percent": "+26.12%",
+      "pct": 26.12
     },
     {
       "name": "삼아알미늄",
-      "price": "56800.0",
-      "change_percent": "+17.96%",
-      "pct": 17.96
-    },
-    {
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "9470.0",
-      "change_percent": "+15.49%",
-      "pct": 15.49
+      "price": "57900.0",
+      "change_percent": "+20.25%",
+      "pct": 20.25
     }
   ],
   "top_losers": [
     {
       "name": "1Q 삼성전자선물단일종목레버리지",
-      "price": "11250.0",
-      "change_percent": "-15.70%",
-      "pct": 15.7
-    },
-    {
-      "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "10830.0",
-      "change_percent": "-15.69%",
-      "pct": 15.69
-    },
-    {
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "11890.0",
-      "change_percent": "-15.64%",
-      "pct": 15.64
+      "price": "11270.0",
+      "change_percent": "-15.55%",
+      "pct": 15.55
     },
     {
       "name": "효성화학",
@@ -2996,95 +2984,107 @@
       "price": "12000.0",
       "change_percent": "-15.19%",
       "pct": 15.19
+    },
+    {
+      "name": "KIWOOM 삼성전자선물단일종목레버리지",
+      "price": "10975.0",
+      "change_percent": "-15.19%",
+      "pct": 15.19
+    },
+    {
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "price": "10910.0",
+      "change_percent": "-15.06%",
+      "pct": 15.06
     }
   ],
   "sector_performance": [
     {
       "name": "비철금속",
-      "change_value": "+6.19%",
-      "pct": 6.19
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+5.37%",
-      "pct": 5.37
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+4.78%",
-      "pct": 4.78
+      "change_value": "+7.98%",
+      "pct": 7.98
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.60%",
-      "pct": 4.6
+      "change_value": "+7.09%",
+      "pct": 7.09
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+5.80%",
+      "pct": 5.8
+    },
+    {
+      "name": "철강",
+      "change_value": "+5.01%",
+      "pct": 5.01
     },
     {
       "name": "해운사",
-      "change_value": "+4.55%",
-      "pct": 4.55
+      "change_value": "+4.97%",
+      "pct": 4.97
     }
   ],
   "sector_heatmap": [
     {
       "name": "비철금속",
-      "change_value": "+6.19%",
-      "pct": 6.19
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+5.37%",
-      "pct": 5.37
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+4.78%",
-      "pct": 4.78
+      "change_value": "+7.98%",
+      "pct": 7.98
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.60%",
-      "pct": 4.6
+      "change_value": "+7.09%",
+      "pct": 7.09
     },
     {
-      "name": "해운사",
-      "change_value": "+4.55%",
-      "pct": 4.55
+      "name": "전기제품",
+      "change_value": "+5.80%",
+      "pct": 5.8
     },
     {
       "name": "철강",
-      "change_value": "+4.35%",
-      "pct": 4.35
+      "change_value": "+5.01%",
+      "pct": 5.01
+    },
+    {
+      "name": "해운사",
+      "change_value": "+4.97%",
+      "pct": 4.97
+    },
+    {
+      "name": "화학",
+      "change_value": "+4.94%",
+      "pct": 4.94
     },
     {
       "name": "건축자재",
-      "change_value": "-1.65%",
-      "pct": -1.65
+      "change_value": "-1.07%",
+      "pct": -1.07
     },
     {
       "name": "문구류",
-      "change_value": "-2.00%",
-      "pct": -2.0
+      "change_value": "-1.85%",
+      "pct": -1.85
     },
     {
       "name": "손해보험",
-      "change_value": "-2.97%",
-      "pct": -2.97
+      "change_value": "-2.69%",
+      "pct": -2.69
     },
     {
       "name": "복합기업",
-      "change_value": "-3.62%",
-      "pct": -3.62
+      "change_value": "-3.45%",
+      "pct": -3.45
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-4.49%",
-      "pct": -4.49
+      "change_value": "-4.30%",
+      "pct": -4.3
     },
     {
       "name": "생명보험",
-      "change_value": "-8.67%",
-      "pct": -8.67
+      "change_value": "-8.57%",
+      "pct": -8.57
     }
   ],
   "article_counts": {
