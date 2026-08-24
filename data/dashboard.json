@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-24 09:31:06",
+  "updated_at": "2026-08-24 10:01:08",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -1.89,
-    "kosdaq_change": 1.07,
-    "kospi_value": 6782.59,
-    "kosdaq_value": 810.51
+    "kospi_change": -0.94,
+    "kosdaq_change": 1.89,
+    "kospi_value": 6848.05,
+    "kosdaq_value": 817.12
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "코스피는 외국인과 기관의 동반 매도세와 삼성전자의 약세 흐름이 겹치며 하락 마감했다. 반면 코스닥은 특정 기업들의 개별 호재와 종목별 상승세에 힘입어 지수가 오름세로 장을 마쳤다."
+      "text": "삼성전자가 대규모 주주환원 정책 발표에도 불구하고 주가가 급락하며 시가총액 비중이 높은 코스피 지수를 끌어내렸다. 반면 코스닥 시장에서는 코로나19 재확산 우려에 따른 제약·바이오주와 일부 개별 이슈가 부각된 이차전지주가 강세를 보이며 지수 상승을 견인했다."
     }
   ],
   "daily_term": {
@@ -82,7 +82,17 @@
     "특례공급 불법",
     "주식시장 변동성"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "현대엔지니어링",
+      "corp_code": "00349927",
+      "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+      "rcept_dt": "20260824",
+      "rcept_no": "20260824000017",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000017",
+      "ai_explanation": "기존에 발표한 회사 합병 결정 공시 내용 중 일부를 정정하여 다시 제출하는 것입니다."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -2932,149 +2942,149 @@
       "pct": 29.98
     },
     {
-      "name": "신풍제약",
-      "price": "9990.0",
-      "change_percent": "+23.03%",
-      "pct": 23.03
-    },
-    {
       "name": "키다리스튜디오",
-      "price": "4930.0",
-      "change_percent": "+22.64%",
-      "pct": 22.64
+      "price": "5010.0",
+      "change_percent": "+24.63%",
+      "pct": 24.63
     },
     {
-      "name": "녹십자홀딩스2우",
-      "price": "19850.0",
-      "change_percent": "+20.30%",
-      "pct": 20.3
+      "name": "신풍제약",
+      "price": "9690.0",
+      "change_percent": "+19.33%",
+      "pct": 19.33
     },
     {
       "name": "삼아알미늄",
-      "price": "56300.0",
-      "change_percent": "+16.93%",
-      "pct": 16.93
+      "price": "56800.0",
+      "change_percent": "+17.96%",
+      "pct": 17.96
+    },
+    {
+      "name": "녹십자홀딩스2우",
+      "price": "19270.0",
+      "change_percent": "+16.79%",
+      "pct": 16.79
     }
   ],
   "top_losers": [
     {
-      "name": "1Q 삼성전자선물단일종목레버리지",
-      "price": "11400.0",
-      "change_percent": "-14.57%",
-      "pct": 14.57
+      "name": "PLUS 삼성전자단일종목레버리지",
+      "price": "12385.0",
+      "change_percent": "-12.47%",
+      "pct": 12.47
     },
     {
       "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "11025.0",
-      "change_percent": "-14.17%",
-      "pct": 14.17
-    },
-    {
-      "name": "KIWOOM 삼성전자선물단일종목레버리지",
-      "price": "11120.0",
-      "change_percent": "-14.06%",
-      "pct": 14.06
+      "price": "11245.0",
+      "change_percent": "-12.46%",
+      "pct": 12.46
     },
     {
       "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "12115.0",
-      "change_percent": "-14.05%",
-      "pct": 14.05
+      "price": "12340.0",
+      "change_percent": "-12.45%",
+      "pct": 12.45
     },
     {
-      "name": "PLUS 삼성전자단일종목레버리지",
-      "price": "12200.0",
-      "change_percent": "-13.78%",
-      "pct": 13.78
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "price": "11695.0",
+      "change_percent": "-12.36%",
+      "pct": 12.36
+    },
+    {
+      "name": "ACE 삼성전자단일종목레버리지",
+      "price": "11245.0",
+      "change_percent": "-12.22%",
+      "pct": 12.22
     }
   ],
   "sector_performance": [
     {
       "name": "비철금속",
-      "change_value": "+7.98%",
-      "pct": 7.98
-    },
-    {
-      "name": "해운사",
-      "change_value": "+6.12%",
-      "pct": 6.12
+      "change_value": "+7.30%",
+      "pct": 7.3
     },
     {
       "name": "창업투자",
-      "change_value": "+5.54%",
-      "pct": 5.54
+      "change_value": "+6.20%",
+      "pct": 6.2
     },
     {
       "name": "전기제품",
-      "change_value": "+5.17%",
-      "pct": 5.17
+      "change_value": "+5.45%",
+      "pct": 5.45
+    },
+    {
+      "name": "해운사",
+      "change_value": "+5.42%",
+      "pct": 5.42
     },
     {
       "name": "화학",
-      "change_value": "+4.17%",
-      "pct": 4.17
+      "change_value": "+4.81%",
+      "pct": 4.81
     }
   ],
   "sector_heatmap": [
     {
       "name": "비철금속",
-      "change_value": "+7.98%",
-      "pct": 7.98
-    },
-    {
-      "name": "해운사",
-      "change_value": "+6.12%",
-      "pct": 6.12
+      "change_value": "+7.30%",
+      "pct": 7.3
     },
     {
       "name": "창업투자",
-      "change_value": "+5.54%",
-      "pct": 5.54
+      "change_value": "+6.20%",
+      "pct": 6.2
     },
     {
       "name": "전기제품",
-      "change_value": "+5.17%",
-      "pct": 5.17
+      "change_value": "+5.45%",
+      "pct": 5.45
+    },
+    {
+      "name": "해운사",
+      "change_value": "+5.42%",
+      "pct": 5.42
     },
     {
       "name": "화학",
-      "change_value": "+4.17%",
-      "pct": 4.17
+      "change_value": "+4.81%",
+      "pct": 4.81
     },
     {
       "name": "철강",
-      "change_value": "+3.47%",
-      "pct": 3.47
+      "change_value": "+4.41%",
+      "pct": 4.41
+    },
+    {
+      "name": "은행",
+      "change_value": "-1.19%",
+      "pct": -1.19
+    },
+    {
+      "name": "문구류",
+      "change_value": "-1.92%",
+      "pct": -1.92
     },
     {
       "name": "손해보험",
-      "change_value": "-1.18%",
-      "pct": -1.18
-    },
-    {
-      "name": "건축자재",
-      "change_value": "-1.31%",
-      "pct": -1.31
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "-1.81%",
-      "pct": -1.81
-    },
-    {
-      "name": "복합기업",
-      "change_value": "-3.24%",
-      "pct": -3.24
+      "change_value": "-2.46%",
+      "pct": -2.46
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-3.92%",
-      "pct": -3.92
+      "change_value": "-2.47%",
+      "pct": -2.47
+    },
+    {
+      "name": "복합기업",
+      "change_value": "-2.88%",
+      "pct": -2.88
     },
     {
       "name": "생명보험",
-      "change_value": "-7.47%",
-      "pct": -7.47
+      "change_value": "-6.94%",
+      "pct": -6.94
     }
   ],
   "article_counts": {
