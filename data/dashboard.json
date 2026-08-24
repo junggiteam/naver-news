@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-25 08:01:10",
+  "updated_at": "2026-08-25 08:17:04",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -3.12,
-    "kosdaq_change": 1.42,
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6696.96,
     "kosdaq_value": 813.33
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "주식 시장 하락과 맞물려 부동산 가격 상승 기대감 주춤"
-    },
-    {
-      "category": "증권",
-      "text": "삼성전자를 비롯한 대형주에서 외국인 매도세가 이어지며 코스피는 하락세를 보였다. 반면 2차전지 관련 기업들의 개별 호재와 시장 수급 개선 기대감이 반영되면서 코스닥은 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -2945,157 +2941,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "신풍제약우",
-      "price": "15870.0",
-      "change_percent": "+29.98%",
-      "pct": 29.98
-    },
-    {
-      "name": "한미약품",
-      "price": "540000.0",
-      "change_percent": "+29.96%",
-      "pct": 29.96
-    },
-    {
-      "name": "신풍제약",
-      "price": "10550.0",
-      "change_percent": "+29.93%",
-      "pct": 29.93
-    },
-    {
-      "name": "키다리스튜디오",
-      "price": "5100.0",
-      "change_percent": "+26.87%",
-      "pct": 26.87
-    },
-    {
-      "name": "한미사이언스",
-      "price": "56500.0",
-      "change_percent": "+25.70%",
-      "pct": 25.7
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "효성화학",
-      "price": "61300.0",
-      "change_percent": "-18.38%",
-      "pct": 18.38
-    },
-    {
-      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "11025.0",
-      "change_percent": "-17.07%",
-      "pct": 17.07
-    },
-    {
-      "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "10660.0",
-      "change_percent": "-17.01%",
-      "pct": 17.01
-    },
-    {
-      "name": "1Q 삼성전자선물단일종목레버리지",
-      "price": "11080.0",
-      "change_percent": "-16.97%",
-      "pct": 16.97
-    },
-    {
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "11705.0",
-      "change_percent": "-16.96%",
-      "pct": 16.96
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "비철금속",
-      "change_value": "+7.84%",
-      "pct": 7.84
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전기제품",
-      "change_value": "+6.54%",
-      "pct": 6.54
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "해운사",
-      "change_value": "+5.83%",
-      "pct": 5.83
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+5.50%",
-      "pct": 5.5
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화학",
-      "change_value": "+5.28%",
-      "pct": 5.28
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "비철금속",
-      "change_value": "+7.84%",
-      "pct": 7.84
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기제품",
-      "change_value": "+6.54%",
-      "pct": 6.54
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "해운사",
-      "change_value": "+5.83%",
-      "pct": 5.83
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+5.50%",
-      "pct": 5.5
-    },
-    {
-      "name": "화학",
-      "change_value": "+5.28%",
-      "pct": 5.28
-    },
-    {
-      "name": "철강",
-      "change_value": "+4.63%",
-      "pct": 4.63
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-1.91%",
-      "pct": -1.91
-    },
-    {
-      "name": "문구류",
-      "change_value": "-2.00%",
-      "pct": -2.0
-    },
-    {
-      "name": "기타",
-      "change_value": "-2.70%",
-      "pct": -2.7
-    },
-    {
-      "name": "복합기업",
-      "change_value": "-2.85%",
-      "pct": -2.85
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "-6.09%",
-      "pct": -6.09
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-11.17%",
-      "pct": -11.17
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
