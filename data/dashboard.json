@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 15:46:06",
+  "updated_at": "2026-08-24 16:01:09",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스를 비롯한 반도체 대형주가 동반 하락하며 코스피 지수는 3.12% 하락 마감했다. 반면 코스닥 지수는 이러한 대형주 중심의 하락세와는 별개로 1.42% 상승하며 장을 마쳤다."
+      "text": "삼성전자와 SK하이닉스 등 시가총액 비중이 큰 반도체 관련주의 동반 하락이 코스피 지수의 하락세를 주도했다. 반면 코스닥 시장은 이러한 대형주 중심의 하락세와는 다르게 지수가 상승하며 대조적인 흐름을 보였다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "제놀루션",
+      "corp_code": "01062177",
+      "report_nm": "주요사항보고서(자기주식처분결정)",
+      "rcept_dt": "20260824",
+      "rcept_no": "20260824000179",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000179",
+      "ai_explanation": "회사가 보유하고 있던 자사주를 시장이나 특정인에게 매각하기로 결정함."
+    },
+    {
+      "corp_name": "그리드위즈",
+      "corp_code": "01299203",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260824",
+      "rcept_no": "20260824000168",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000168",
+      "ai_explanation": "회사가 자금을 조달하기 위해 주식으로 전환할 권리가 부여된 채권을 발행함."
+    },
+    {
       "corp_name": "그리드위즈",
       "corp_code": "01299203",
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260824",
       "rcept_no": "20260824000164",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000164",
-      "ai_explanation": "회사가 채권자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달합니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 주식으로 전환할 권리가 부여된 채권을 발행함."
     },
     {
       "corp_name": "씨피시스템",
@@ -100,7 +118,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000170",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000170",
-      "ai_explanation": "회사가 공장, 토지, 건물 등 업무에 필요한 고정 자산을 매입하기로 결정하였습니다."
+      "ai_explanation": "공장, 토지, 건물 등 회사의 영업에 필요한 자산을 매입하기로 결정함."
     },
     {
       "corp_name": "이건산업",
@@ -109,7 +127,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000155",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000155",
-      "ai_explanation": "주가 안정을 위해 신탁계약을 맺고 회사가 자기 회사의 주식을 직접 사들이기로 했습니다."
+      "ai_explanation": "주가 안정 및 주주 가치 제고를 위해 금융기관에 자금을 맡겨 자사주를 매입함."
     },
     {
       "corp_name": "어업회사법인에코아쿠아팜",
@@ -118,7 +136,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000137",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000137",
-      "ai_explanation": "회사가 신주를 발행하여 자본금을 늘리고 외부로부터 자금을 추가로 조달합니다."
+      "ai_explanation": "자본금을 늘리기 위해 회사가 새로 주식을 발행하여 주주들로부터 자금을 조달함."
     },
     {
       "corp_name": "제이에스링크",
@@ -127,7 +145,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000103",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000103",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 채무를 상환하거나 소각합니다."
+      "ai_explanation": "발행했던 전환사채를 만기 전에 회사 자금으로 미리 되사들여 소각하거나 보유함."
     },
     {
       "corp_name": "SJG세종",
@@ -136,7 +154,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000096",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000096",
-      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지거나 흡수되는 합병 절차를 진행합니다."
+      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지기로 한 계약 내용을 수정하여 공시함."
     },
     {
       "corp_name": "이노그리드",
@@ -145,7 +163,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000095",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000095",
-      "ai_explanation": "자본금 규모를 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등의 조치를 취합니다."
+      "ai_explanation": "누적 적자 보전이나 자본 구조 개선을 위해 발행 주식 수를 줄여 자본금을 감소시킴."
     },
     {
       "corp_name": "이노그리드",
@@ -154,7 +172,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000093",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000093",
-      "ai_explanation": "기존에 공시했던 신주 발행 및 자금 조달 계획의 내용을 일부 수정하였습니다."
+      "ai_explanation": "앞서 공시했던 유상증자 결정 내용 중 일부를 수정하거나 보완하여 공시함."
     },
     {
       "corp_name": "일진홀딩스",
@@ -163,7 +181,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000072",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000072",
-      "ai_explanation": "주가 안정을 위해 신탁계약을 맺고 회사가 자기 회사의 주식을 직접 사들이기로 했습니다."
+      "ai_explanation": "주가 안정 및 주주 가치 제고를 위해 금융기관에 자금을 맡겨 자사주를 매입함."
     },
     {
       "corp_name": "현대엔지니어링",
@@ -172,7 +190,7 @@
       "rcept_dt": "20260824",
       "rcept_no": "20260824000017",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000017",
-      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지거나 흡수되는 합병 절차의 내용을 일부 수정하였습니다."
+      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지기로 한 계약 내용을 수정하여 공시함."
     }
   ],
   "macro_indicators": [
