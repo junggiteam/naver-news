@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-24 12:31:02",
+  "updated_at": "2026-08-24 13:01:51",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -3.37,
-    "kosdaq_change": 1.2,
-    "kospi_value": 6679.79,
-    "kosdaq_value": 811.53
+    "kospi_change": -3.53,
+    "kosdaq_change": 0.85,
+    "kospi_value": 6668.95,
+    "kosdaq_value": 808.79
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "시가총액 비중이 큰 삼성전자가 주주환원책 발표에도 불구하고 큰 폭으로 하락하면서 코스피 지수에 하방 압력을 가했다. 반면 코스닥 시장은 삼성전자와 같은 특정 대형주 중심의 하락세에서 벗어나 개별 종목 위주의 순환매가 유입되며 상승세로 마감했다."
+      "text": "코스피는 시가총액 비중이 큰 삼성전자가 실망스러운 주주환원 정책의 여파로 7%대 급락하며 지수 하락을 주도했다. 반면 코스닥은 삼성그룹주 중심의 하락세 속에서도 이차전지를 비롯한 중소형주로 매수세가 유입되며 상대적으로 견조한 흐름을 보였다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "일진홀딩스",
+      "corp_code": "00146649",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260824",
+      "rcept_no": "20260824000072",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000072",
+      "ai_explanation": "회사가 신탁 계약을 통해 자사 주식을 매입하여 주가 안정과 주주 가치를 높이려는 결정입니다."
+    },
+    {
       "corp_name": "현대엔지니어링",
       "corp_code": "00349927",
       "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20260824",
       "rcept_no": "20260824000017",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000017",
-      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지거나 흡수되는 합병 절차를 진행함을 공식적으로 알리는 공시입니다."
+      "ai_explanation": "회사가 다른 회사와 합병하기로 결정하였으며, 기존 공시 내용 중 일부를 수정하여 보고하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2956,136 +2965,136 @@
     },
     {
       "name": "키다리스튜디오",
-      "price": "5050.0",
-      "change_percent": "+25.62%",
-      "pct": 25.62
+      "price": "4985.0",
+      "change_percent": "+24.00%",
+      "pct": 24.0
     },
     {
-      "name": "삼아알미늄",
-      "price": "57300.0",
-      "change_percent": "+19.00%",
-      "pct": 19.0
+      "name": "혜인",
+      "price": "11240.0",
+      "change_percent": "+18.69%",
+      "pct": 18.69
     }
   ],
   "top_losers": [
     {
       "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "10555.0",
-      "change_percent": "-17.83%",
-      "pct": 17.83
+      "price": "10410.0",
+      "change_percent": "-18.96%",
+      "pct": 18.96
     },
     {
       "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "11600.0",
-      "change_percent": "-17.70%",
-      "pct": 17.7
+      "price": "11440.0",
+      "change_percent": "-18.84%",
+      "pct": 18.84
     },
     {
       "name": "1Q 삼성전자선물단일종목레버리지",
-      "price": "11000.0",
-      "change_percent": "-17.57%",
-      "pct": 17.57
-    },
-    {
-      "name": "KIWOOM 삼성전자선물단일종목레버리지",
-      "price": "10700.0",
-      "change_percent": "-17.31%",
-      "pct": 17.31
+      "price": "10840.0",
+      "change_percent": "-18.77%",
+      "pct": 18.77
     },
     {
       "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "11010.0",
-      "change_percent": "-17.19%",
-      "pct": 17.19
+      "price": "10825.0",
+      "change_percent": "-18.58%",
+      "pct": 18.58
+    },
+    {
+      "name": "KIWOOM 삼성전자선물단일종목레버리지",
+      "price": "10545.0",
+      "change_percent": "-18.51%",
+      "pct": 18.51
     }
   ],
   "sector_performance": [
     {
       "name": "비철금속",
-      "change_value": "+7.19%",
-      "pct": 7.19
+      "change_value": "+6.63%",
+      "pct": 6.63
     },
     {
       "name": "전기제품",
-      "change_value": "+5.73%",
-      "pct": 5.73
-    },
-    {
-      "name": "생명과학도구및서비스",
       "change_value": "+5.25%",
       "pct": 5.25
     },
     {
-      "name": "철강",
-      "change_value": "+4.26%",
-      "pct": 4.26
+      "name": "생명과학도구및서비스",
+      "change_value": "+4.97%",
+      "pct": 4.97
     },
     {
       "name": "해운사",
-      "change_value": "+4.19%",
-      "pct": 4.19
+      "change_value": "+4.55%",
+      "pct": 4.55
+    },
+    {
+      "name": "철강",
+      "change_value": "+3.69%",
+      "pct": 3.69
     }
   ],
   "sector_heatmap": [
     {
       "name": "비철금속",
-      "change_value": "+7.19%",
-      "pct": 7.19
+      "change_value": "+6.63%",
+      "pct": 6.63
     },
     {
       "name": "전기제품",
-      "change_value": "+5.73%",
-      "pct": 5.73
-    },
-    {
-      "name": "생명과학도구및서비스",
       "change_value": "+5.25%",
       "pct": 5.25
     },
     {
-      "name": "철강",
-      "change_value": "+4.26%",
-      "pct": 4.26
+      "name": "생명과학도구및서비스",
+      "change_value": "+4.97%",
+      "pct": 4.97
     },
     {
       "name": "해운사",
-      "change_value": "+4.19%",
-      "pct": 4.19
+      "change_value": "+4.55%",
+      "pct": 4.55
+    },
+    {
+      "name": "철강",
+      "change_value": "+3.69%",
+      "pct": 3.69
     },
     {
       "name": "화학",
-      "change_value": "+4.17%",
-      "pct": 4.17
+      "change_value": "+3.62%",
+      "pct": 3.62
     },
     {
       "name": "석유와가스",
-      "change_value": "-2.35%",
-      "pct": -2.35
+      "change_value": "-2.48%",
+      "pct": -2.48
     },
     {
       "name": "손해보험",
-      "change_value": "-2.89%",
-      "pct": -2.89
+      "change_value": "-2.58%",
+      "pct": -2.58
     },
     {
       "name": "문구류",
-      "change_value": "-3.25%",
-      "pct": -3.25
+      "change_value": "-2.66%",
+      "pct": -2.66
     },
     {
       "name": "복합기업",
-      "change_value": "-3.96%",
-      "pct": -3.96
+      "change_value": "-3.83%",
+      "pct": -3.83
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-5.92%",
-      "pct": -5.92
+      "change_value": "-6.07%",
+      "pct": -6.07
     },
     {
       "name": "생명보험",
-      "change_value": "-9.88%",
-      "pct": -9.88
+      "change_value": "-9.75%",
+      "pct": -9.75
     }
   ],
   "article_counts": {
