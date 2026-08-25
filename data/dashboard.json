@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-25 14:31:12",
+  "updated_at": "2026-08-25 14:48:19",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.39,
-    "kosdaq_change": 1.19,
-    "kospi_value": 6723.18,
-    "kosdaq_value": 823.01
+    "kospi_change": 0.47,
+    "kosdaq_change": 0.96,
+    "kospi_value": 6728.37,
+    "kosdaq_value": 821.12
   },
   "heroes": {
     "종합": {
@@ -86,7 +86,7 @@
       "rcept_dt": "20260825",
       "rcept_no": "20260825000160",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000160",
-      "ai_explanation": "회사가 신탁 방식으로 진행하던 자사주 매입 계약을 중도에 종료한다는 뜻입니다."
+      "ai_explanation": "자사주를 취득하기 위해 맺었던 신탁 계약을 중도에 해지하는 결정을 의미합니다."
     },
     {
       "corp_name": "한솔교육",
@@ -95,7 +95,7 @@
       "rcept_dt": "20260825",
       "rcept_no": "20260825000165",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000165",
-      "ai_explanation": "회사의 특정 사업 부문을 분리하여 별도의 독립된 회사로 만드는 결정입니다."
+      "ai_explanation": "회사의 사업 부문을 분리하여 별도의 독립된 회사를 설립하거나 분할하는 결정을 의미합니다."
     },
     {
       "corp_name": "석문호수상태양광",
@@ -104,7 +104,7 @@
       "rcept_dt": "20260825",
       "rcept_no": "20260825000073",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000073",
-      "ai_explanation": "회사가 자사 자산을 담보로 제공하여 타인의 채무를 보증해주기로 결정한 것입니다."
+      "ai_explanation": "회사가 타인의 채무를 위해 자산 등을 담보로 제공하기로 결정했음을 의미합니다."
     }
   ],
   "macro_indicators": [
@@ -2983,21 +2983,21 @@
     },
     {
       "name": "한국화장품제조",
-      "price": "14550.0",
-      "change_percent": "+24.15%",
-      "pct": 24.15
+      "price": "14190.0",
+      "change_percent": "+21.08%",
+      "pct": 21.08
     },
     {
       "name": "한전기술",
-      "price": "108600.0",
-      "change_percent": "+20.27%",
-      "pct": 20.27
+      "price": "108000.0",
+      "change_percent": "+19.60%",
+      "pct": 19.6
     },
     {
       "name": "한화3우B",
-      "price": "34750.0",
-      "change_percent": "+18.00%",
-      "pct": 18.0
+      "price": "34200.0",
+      "change_percent": "+16.13%",
+      "pct": 16.13
     }
   ],
   "top_losers": [
@@ -3009,9 +3009,9 @@
     },
     {
       "name": "한미사이언스",
-      "price": "46150.0",
-      "change_percent": "-18.32%",
-      "pct": 18.32
+      "price": "46050.0",
+      "change_percent": "-18.50%",
+      "pct": 18.5
     },
     {
       "name": "신풍제약우",
@@ -3021,104 +3021,104 @@
     },
     {
       "name": "신풍제약",
-      "price": "9260.0",
-      "change_percent": "-12.23%",
-      "pct": 12.23
+      "price": "9240.0",
+      "change_percent": "-12.42%",
+      "pct": 12.42
     },
     {
       "name": "삼양바이오팜",
-      "price": "54700.0",
-      "change_percent": "-11.92%",
-      "pct": 11.92
+      "price": "54600.0",
+      "change_percent": "-12.08%",
+      "pct": 12.08
     }
   ],
   "sector_performance": [
     {
       "name": "건설",
-      "change_value": "+6.97%",
-      "pct": 6.97
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "+6.74%",
-      "pct": 6.74
+      "change_value": "+6.53%",
+      "pct": 6.53
     },
     {
       "name": "기계",
-      "change_value": "+6.14%",
-      "pct": 6.14
+      "change_value": "+6.40%",
+      "pct": 6.4
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "+6.02%",
+      "pct": 6.02
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "+6.06%",
-      "pct": 6.06
+      "change_value": "+5.60%",
+      "pct": 5.6
     },
     {
       "name": "비철금속",
-      "change_value": "+5.38%",
-      "pct": 5.38
+      "change_value": "+5.24%",
+      "pct": 5.24
     }
   ],
   "sector_heatmap": [
     {
       "name": "건설",
-      "change_value": "+6.97%",
-      "pct": 6.97
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "+6.74%",
-      "pct": 6.74
+      "change_value": "+6.53%",
+      "pct": 6.53
     },
     {
       "name": "기계",
-      "change_value": "+6.14%",
-      "pct": 6.14
+      "change_value": "+6.40%",
+      "pct": 6.4
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "+6.02%",
+      "pct": 6.02
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "+6.06%",
-      "pct": 6.06
+      "change_value": "+5.60%",
+      "pct": 5.6
     },
     {
       "name": "비철금속",
-      "change_value": "+5.38%",
-      "pct": 5.38
+      "change_value": "+5.24%",
+      "pct": 5.24
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+4.45%",
-      "pct": 4.45
-    },
-    {
-      "name": "화학",
-      "change_value": "-1.08%",
-      "pct": -1.08
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-1.28%",
-      "pct": -1.28
+      "change_value": "+4.13%",
+      "pct": 4.13
     },
     {
       "name": "사무용전자제품",
+      "change_value": "-1.21%",
+      "pct": -1.21
+    },
+    {
+      "name": "제약",
       "change_value": "-1.33%",
       "pct": -1.33
     },
     {
+      "name": "생명과학도구및서비스",
+      "change_value": "-1.47%",
+      "pct": -1.47
+    },
+    {
       "name": "전기제품",
-      "change_value": "-1.62%",
-      "pct": -1.62
+      "change_value": "-1.75%",
+      "pct": -1.75
     },
     {
       "name": "생물공학",
-      "change_value": "-1.95%",
-      "pct": -1.95
+      "change_value": "-2.54%",
+      "pct": -2.54
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-2.02%",
-      "pct": -2.02
+      "change_value": "-3.15%",
+      "pct": -3.15
     }
   ],
   "article_counts": {
