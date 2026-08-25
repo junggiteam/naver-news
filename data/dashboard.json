@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-25 10:01:07",
+  "updated_at": "2026-08-25 10:31:05",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -2.01,
-    "kosdaq_change": -1.71,
-    "kospi_value": 6562.68,
-    "kosdaq_value": 799.41
+    "kospi_change": -2.86,
+    "kosdaq_change": -2.72,
+    "kospi_value": 6505.17,
+    "kosdaq_value": 791.19
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 반도체 업황에 대한 우려가 커지면서 삼성전자와 SK하이닉스 등 주요 대형주가 동반 급락한 영향으로 국내 증시가 하락 마감했다. 반도체주의 약세가 지속되며 지수 하락을 주도했으나 개별 종목에서는 인적분할이나 신사업 투자 등 이슈가 있는 일부 기업들의 주가는 강세를 보였다."
+      "text": "삼성전자와 SK하이닉스 등 시가총액 비중이 높은 반도체 대형주의 동반 급락이 지수 하락을 주도했다. 달러 약세와 일부 종목의 개별 호재에도 불구하고 반도체 업종 전반에 나타난 매도세가 지수 낙폭을 키우는 결과로 이어졌다."
     }
   ],
   "daily_term": {
@@ -82,7 +82,17 @@
     "소비 심리 위축",
     "자산 시장 포모 현상"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "석문호수상태양광",
+      "corp_code": "01279102",
+      "report_nm": "타인을위한담보제공결정",
+      "rcept_dt": "20260825",
+      "rcept_no": "20260825000073",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000073",
+      "ai_explanation": "회사가 보유한 자산을 제3자의 채무를 위한 담보로 설정하여 자금 조달 등을 돕기로 결정함."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -2958,143 +2968,143 @@
       "pct": 29.96
     },
     {
-      "name": "한화3우B",
-      "price": "34800.0",
-      "change_percent": "+18.17%",
-      "pct": 18.17
+      "name": "금호에이치티",
+      "price": "8410.0",
+      "change_percent": "+27.81%",
+      "pct": 27.81
     },
     {
       "name": "한화",
-      "price": "118800.0",
-      "change_percent": "+18.09%",
-      "pct": 18.09
+      "price": "124100.0",
+      "change_percent": "+23.36%",
+      "pct": 23.36
     },
     {
-      "name": "한전기술",
-      "price": "103900.0",
-      "change_percent": "+15.06%",
-      "pct": 15.06
+      "name": "한화3우B",
+      "price": "34950.0",
+      "change_percent": "+18.68%",
+      "pct": 18.68
     }
   ],
   "top_losers": [
     {
       "name": "한미사이언스",
-      "price": "45600.0",
-      "change_percent": "-19.29%",
-      "pct": 19.29
+      "price": "46100.0",
+      "change_percent": "-18.41%",
+      "pct": 18.41
     },
     {
-      "name": "신풍제약우",
-      "price": "14000.0",
-      "change_percent": "-11.78%",
-      "pct": 11.78
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "8670.0",
+      "change_percent": "-12.56%",
+      "pct": 12.56
     },
     {
-      "name": "신풍제약",
-      "price": "9330.0",
-      "change_percent": "-11.56%",
-      "pct": 11.56
-    },
-    {
-      "name": "한미약품",
-      "price": "479000.0",
-      "change_percent": "-11.30%",
-      "pct": 11.3
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "price": "7350.0",
+      "change_percent": "-12.50%",
+      "pct": 12.5
     },
     {
       "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "7395.0",
-      "change_percent": "-10.25%",
-      "pct": 10.25
+      "price": "7225.0",
+      "change_percent": "-12.32%",
+      "pct": 12.32
+    },
+    {
+      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
+      "price": "7220.0",
+      "change_percent": "-12.27%",
+      "pct": 12.27
     }
   ],
   "sector_performance": [
     {
-      "name": "전기유틸리티",
-      "change_value": "+5.83%",
-      "pct": 5.83
-    },
-    {
       "name": "비철금속",
-      "change_value": "+3.69%",
-      "pct": 3.69
+      "change_value": "+4.58%",
+      "pct": 4.58
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+3.31%",
-      "pct": 3.31
+      "name": "전기유틸리티",
+      "change_value": "+4.14%",
+      "pct": 4.14
+    },
+    {
+      "name": "항공화물운송과물류",
+      "change_value": "+3.52%",
+      "pct": 3.52
     },
     {
       "name": "건설",
-      "change_value": "+3.21%",
-      "pct": 3.21
+      "change_value": "+3.13%",
+      "pct": 3.13
     },
     {
       "name": "화장품",
-      "change_value": "+2.86%",
-      "pct": 2.86
+      "change_value": "+1.97%",
+      "pct": 1.97
     }
   ],
   "sector_heatmap": [
     {
-      "name": "전기유틸리티",
-      "change_value": "+5.83%",
-      "pct": 5.83
-    },
-    {
       "name": "비철금속",
-      "change_value": "+3.69%",
-      "pct": 3.69
+      "change_value": "+4.58%",
+      "pct": 4.58
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+3.31%",
-      "pct": 3.31
-    },
-    {
-      "name": "건설",
-      "change_value": "+3.21%",
-      "pct": 3.21
-    },
-    {
-      "name": "화장품",
-      "change_value": "+2.86%",
-      "pct": 2.86
+      "name": "전기유틸리티",
+      "change_value": "+4.14%",
+      "pct": 4.14
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "+2.73%",
-      "pct": 2.73
+      "change_value": "+3.52%",
+      "pct": 3.52
+    },
+    {
+      "name": "건설",
+      "change_value": "+3.13%",
+      "pct": 3.13
+    },
+    {
+      "name": "화장품",
+      "change_value": "+1.97%",
+      "pct": 1.97
+    },
+    {
+      "name": "은행",
+      "change_value": "+1.77%",
+      "pct": 1.77
     },
     {
       "name": "IT서비스",
-      "change_value": "-2.84%",
-      "pct": -2.84
+      "change_value": "-3.71%",
+      "pct": -3.71
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "-2.98%",
-      "pct": -2.98
+      "change_value": "-4.10%",
+      "pct": -4.1
     },
     {
       "name": "건강관리기술",
-      "change_value": "-3.01%",
-      "pct": -3.01
+      "change_value": "-4.15%",
+      "pct": -4.15
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-3.28%",
-      "pct": -3.28
+      "change_value": "-4.36%",
+      "pct": -4.36
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-3.39%",
-      "pct": -3.39
+      "change_value": "-4.50%",
+      "pct": -4.5
     },
     {
       "name": "생물공학",
-      "change_value": "-3.81%",
-      "pct": -3.81
+      "change_value": "-5.30%",
+      "pct": -5.3
     }
   ],
   "article_counts": {
