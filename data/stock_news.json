@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26 05:00:51",
+  "updated_at": "2026-08-26 05:30:56",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "53,576.16",
+      "value": "53,577.40",
       "change_percent": "▲0.30%",
       "direction": "up",
-      "as_of": "2026-08-26 05:00:43"
+      "as_of": "2026-08-26 05:30:01"
     },
     {
       "name": "나스닥",
-      "value": "26,112.02",
-      "change_percent": "▲0.51%",
+      "value": "26,151.30",
+      "change_percent": "▲0.66%",
       "direction": "up",
-      "as_of": "2026-08-26 05:00:43"
+      "as_of": "2026-08-26 05:30:01"
     },
     {
       "name": "나스닥100",
-      "value": "29,164.60",
-      "change_percent": "▲0.49%",
+      "value": "29,209.23",
+      "change_percent": "▲0.64%",
       "direction": "up",
-      "as_of": "2026-08-26 05:00:43"
+      "as_of": "2026-08-26 05:30:01"
     },
     {
       "name": "S&P500",
-      "value": "7,672.83",
-      "change_percent": "▲0.26%",
+      "value": "7,677.28",
+      "change_percent": "▲0.32%",
       "direction": "up",
-      "as_of": "2026-08-26 05:00:43"
+      "as_of": "2026-08-26 05:30:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,382.90",
-      "change_percent": "▼0.08%",
-      "direction": "down",
-      "as_of": "2026.08.25 21:07"
+      "value": "1,384.00",
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026.08.25 21:08"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "869.19",
-      "change_percent": "▼0.06%",
-      "direction": "down",
-      "as_of": "2026.08.25 21:07"
+      "value": "869.70",
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026.08.25 21:08"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,614.98",
-      "change_percent": "▲0.05%",
+      "value": "1,616.30",
+      "change_percent": "▲0.13%",
       "direction": "up",
-      "as_of": "2026.08.25 21:07"
+      "as_of": "2026.08.25 21:08"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "109,500,000",
-      "change_percent": "▲0.78%",
+      "value": "109,401,000",
+      "change_percent": "▲0.69%",
       "direction": "up",
-      "as_of": "2026-08-26 05:00:45"
+      "as_of": "2026-08-26 05:30:49"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,415,000",
-      "change_percent": "▲0.03%",
-      "direction": "up",
-      "as_of": "2026-08-26 05:00:47"
+      "value": "3,413,000",
+      "change_percent": "▼0.03%",
+      "direction": "down",
+      "as_of": "2026-08-26 05:30:31"
     }
   ],
   "news_categories": [
@@ -251,8 +251,16 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "파이낸셜뉴스",
           "rank": 1,
+          "title": "\"-89%, 곡소리 난다\"...그마저도 상폐 공포 관리종목들, 병합해도 83%는 '도로 동전주' [상폐 칼바람 분다①]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566386&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
+          "upload_time": "2026-08-26 05:00",
+          "published_at": "2026-08-26T05:00:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
           "title": "\"14조 증자한다더니\"…마윈, 알리바바 주식 1000억어치 샀다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005324696&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 21:52",
@@ -260,7 +268,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "프로그램 순매도 16조… 코스피 낙폭 키웠다 [증시 덮친 프로그램 매물]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566324&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:37",
@@ -268,7 +276,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "구천피 이후 석달간 36조 '기계적 매도'… 금리·반도체가 관건 [증시 덮친 프로그램 매물]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566319&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:34",
@@ -276,7 +284,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "현대차證 리서치센터장에 장문수",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566300&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:21",
@@ -284,7 +292,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 6,
           "title": "삼전닉스에 美국채까지 담았다…미래에셋, 채권혼합 ETF 상장",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566299&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:21",
@@ -292,7 +300,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 7,
           "title": "스팩합병 기업, 코스닥 안착 어렵네… 3곳중 1곳 상폐 위기",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566298&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:21",
@@ -300,7 +308,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 7,
+          "rank": 8,
           "title": "공장 판 돈도 영업손익에 포함… 상장사 '셈법' 바뀐다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005566297&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:21",
@@ -308,7 +316,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 8,
+          "rank": 9,
           "title": "SK이노베이션, SKIET 흡수합병 발표에 애프터마켓서 3%대 하락 [마켓시그널]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004655094&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:12",
@@ -316,7 +324,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 9,
+          "rank": 10,
           "title": "괴리율 기준 강화했지만…ETF 가격왜곡 여전",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004655090&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:08",
@@ -324,7 +332,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 10,
+          "rank": 11,
           "title": "외인 매도 폭탄 받는 '뜻밖의' 큰손 떴다…'자사주 싹쓸이'로 증시 버팀목",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005404602&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 18:02",
@@ -332,7 +340,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 11,
+          "rank": 12,
           "title": "채용권까지 선넘은 현대차 임단협 '기술직 500명 신규'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001156357&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 17:56",
@@ -340,7 +348,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 12,
+          "rank": 13,
           "title": "[비트코인 지금]실적 악화 속 치킨게임 우려까지…가상자산업계 '빨간불'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807193&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 17:56",
@@ -348,7 +356,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 13,
+          "rank": 14,
           "title": "베라루빈 닻 올린 엔비디아…'마진 75%' 사수가 관건",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005324601&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 17:52",
@@ -356,19 +364,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 14,
+          "rank": 15,
           "title": "북미공략 성과…LG생건·아모레 다시 '뷰티 대장주' 노린다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005324595&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
           "upload_time": "2026-08-25 17:49",
           "published_at": "2026-08-25T17:49:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "원전주 일제히 강세…\"지금이 매수 타이밍\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005324592&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260826&page=1",
-          "upload_time": "2026-08-25 17:47",
-          "published_at": "2026-08-25T17:47:00+09:00"
         }
       ]
     },
@@ -378,6 +378,22 @@
         {
           "press_name": "아시아경제",
           "rank": 1,
+          "title": "[속보]뉴욕증시, 반도체주 반등에 상승 마감",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807246&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
+          "upload_time": "2026-08-26 05:07",
+          "published_at": "2026-08-26T05:07:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "[속보]기술주 반등에 뉴욕증시 상승…나스닥 0.53%↑",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006357961&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
+          "upload_time": "2026-08-26 05:06",
+          "published_at": "2026-08-26T05:06:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
           "title": "트럼프 관세에 캐나다 맞불…중간선거 겨냥 '정밀보복'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807245&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-26 03:40",
@@ -385,7 +401,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 4,
           "title": "스페이스X, 커서 인수로 AI 역량 강화…'비중확대' 유지-JP모간",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006357948&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-26 03:21",
@@ -393,7 +409,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 5,
           "title": "신규주택 판매 10% ↓…고금리·고물가에 소비심리도 위축",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807242&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-26 00:19",
@@ -401,7 +417,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 6,
           "title": "유엔 사무총장 \"美·러 초강대국 시대 한계…세계질서 변했다\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807241&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 23:24",
@@ -409,7 +425,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 5,
+          "rank": 7,
           "title": "[뉴욕증시]장기채 금리 ↓·반도체주 ↑…3대 지수 일제히 상승",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807240&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 23:01",
@@ -417,7 +433,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 6,
+          "rank": 8,
           "title": "\"이런 적, 4년래 처음인데\"…'24조 뭉칫돈' 넣은 개미들 초조한 대기",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263605&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 23:00",
@@ -425,7 +441,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 9,
           "title": "엔비디아 실적에 쏠린 눈 …\"반도체주 구세주 되나\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005725714&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 17:42",
@@ -433,7 +449,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 8,
+          "rank": 10,
           "title": "엔비디아 분기 매출 100% 급증 전망…기술주 반등할까",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006357789&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 16:14",
@@ -441,7 +457,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 9,
+          "rank": 11,
           "title": "\"美국채 바이백, 마지막 경고등을 가린 것\"…베선트 장관 멘토도 쓴소리",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807108&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 15:17",
@@ -449,7 +465,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 10,
+          "rank": 12,
           "title": "SEC, 시추에이셔널 어웨어니스와 거래 은행 소환장 보내",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005324445&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 14:37",
@@ -457,7 +473,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 11,
+          "rank": 13,
           "title": "\"퇴직금 절반 넣고, 일주일 만에 1000만원 날렸다\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006357678&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 14:12",
@@ -465,7 +481,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 12,
+          "rank": 14,
           "title": "브로드컴, AI 관련 대규모 자금조달에 신용위험 급등",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005324439&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 14:06",
@@ -473,27 +489,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 13,
+          "rank": 15,
           "title": "시진핑 7년만에 인도 가나…中·印, 관계 개선 속도",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807052&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
           "upload_time": "2026-08-25 13:09",
           "published_at": "2026-08-25T13:09:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 14,
-          "title": "머스크 \"AI 탑재 스페이스X 위성, 2027년 4분기 첫 발사\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005807001&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
-          "upload_time": "2026-08-25 11:15",
-          "published_at": "2026-08-25T11:15:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "피 한 방울로 알츠하이머 조기 진단…美 FDA 잇단 승인",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005806992&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260826&page=1",
-          "upload_time": "2026-08-25 11:11",
-          "published_at": "2026-08-25T11:11:00+09:00"
         }
       ]
     },
@@ -877,7 +877,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "코스피와 코스닥 지수는 하락세로 장을 시작했으나 장중 방향을 틀어 각각 0.68%와 1.70% 상승하며 마감했다. 최근 조정장에서 위축되었던 투자 심리가 화장품 등 특정 업종에 대한 관심과 함께 회복세를 보이며 지수 상승을 이끌었다.",
+  "ai_commentary": "코스피와 코스닥 지수는 하락세로 장을 시작했으나 장중 방향을 틀어 각각 0.68%와 1.70% 상승하며 마감했다. 최근 조정장에서 위축되었던 투자 심리가 반등세로 돌아서며 지수 상승을 이끌었다.",
   "top_gainers": [
     {
       "name": "이건산업",
