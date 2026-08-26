@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-26 13:21:14",
+  "updated_at": "2026-08-26 13:45:56",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 2.02,
-    "kosdaq_change": 0.02,
-    "kospi_value": 6878.67,
-    "kosdaq_value": 827.33
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 1.95,
+    "kosdaq_change": -0.01,
+    "kospi_value": 6874.51,
+    "kosdaq_value": 827.03
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 국채 금리와 국제 유가 하락이 투자 심리에 긍정적인 영향을 미치며 코스피 상승을 견인했다. 삼성전자와 SK하이닉스의 자사주 매입 발표가 대형주 위주의 지수 반등에 힘을 보태면서 코스피는 2.02% 상승했으나, 코스닥은 보합권 수준인 0.02% 상승에 그쳤다."
+      "text": "삼성전자와 SK하이닉스가 자사주 매입 계획을 밝히며 대형주 중심의 투자 심리가 개선된 것이 코스피 상승을 견인했다. 반면 미국 주요 경제 지표 발표를 앞둔 경계감과 일부 종목의 개별 악재 등이 겹치면서 코스닥 시장은 보합권에서 등락을 거듭하며 소폭 하락 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "씨피시스템",
+      "corp_code": "01601222",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260826",
+      "rcept_no": "20260826000286",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000286",
+      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 전환할 수 있는 권리를 부여하는 자금 조달 결정입니다."
+    },
+    {
       "corp_name": "에스비에스에이앤티",
       "corp_code": "00406055",
       "report_nm": "비유동자산취득결정",
       "rcept_dt": "20260826",
       "rcept_no": "20260826000268",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000268",
-      "ai_explanation": "회사 운영을 위해 건물, 기계장치 등 장기간 보유할 자산을 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "건물, 기계장치 등 업무용 대규모 자산을 매입하여 투자를 확대하겠다는 결정입니다."
     },
     {
       "corp_name": "케이드라이브",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260826",
       "rcept_no": "20260826000218",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000218",
-      "ai_explanation": "기존에 공시한 회사 합병 계획의 내용을 일부 수정하여 다시 알리는 것을 의미합니다."
+      "ai_explanation": "다른 회사와 합치기로 한 기존의 합병 계획 내용을 정정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "휴비츠",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260826",
       "rcept_no": "20260826000085",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000085",
-      "ai_explanation": "회사 합병 관련 서류 중 누락되거나 잘못된 첨부 파일을 수정하여 다시 제출함을 의미합니다."
+      "ai_explanation": "기존에 발표한 회사 합병 결정과 관련하여, 제출된 첨부 서류의 내용을 수정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2982,148 +2991,148 @@
     },
     {
       "name": "SK아이이테크놀로지",
-      "price": "19340.0",
-      "change_percent": "+25.91%",
-      "pct": 25.91
+      "price": "19760.0",
+      "change_percent": "+28.65%",
+      "pct": 28.65
     },
     {
       "name": "한미글로벌",
-      "price": "21500.0",
-      "change_percent": "+20.65%",
-      "pct": 20.65
+      "price": "21350.0",
+      "change_percent": "+19.81%",
+      "pct": 19.81
     },
     {
       "name": "전진건설로봇",
-      "price": "39300.0",
-      "change_percent": "+15.76%",
-      "pct": 15.76
+      "price": "39750.0",
+      "change_percent": "+17.08%",
+      "pct": 17.08
     },
     {
       "name": "SNT에너지",
-      "price": "32450.0",
-      "change_percent": "+15.69%",
-      "pct": 15.69
+      "price": "32475.0",
+      "change_percent": "+15.78%",
+      "pct": 15.78
     }
   ],
   "top_losers": [
     {
       "name": "대구백화점",
-      "price": "3425.0",
-      "change_percent": "-22.34%",
-      "pct": 22.34
+      "price": "3440.0",
+      "change_percent": "-22.00%",
+      "pct": 22.0
     },
     {
       "name": "한화머시너리앤서비스홀딩스3우B",
-      "price": "3435.0",
-      "change_percent": "-17.82%",
-      "pct": 17.82
+      "price": "3420.0",
+      "change_percent": "-18.18%",
+      "pct": 18.18
     },
     {
       "name": "금호에이치티",
-      "price": "7160.0",
-      "change_percent": "-16.26%",
-      "pct": 16.26
+      "price": "7270.0",
+      "change_percent": "-14.97%",
+      "pct": 14.97
     },
     {
       "name": "SK이노베이션",
-      "price": "109400.0",
-      "change_percent": "-12.48%",
-      "pct": 12.48
+      "price": "110000.0",
+      "change_percent": "-12.00%",
+      "pct": 12.0
     },
     {
-      "name": "팬오션",
-      "price": "5590.0",
-      "change_percent": "-12.38%",
-      "pct": 12.38
+      "name": "하나 S&P 레버리지 WTI원유 선물 ETN B",
+      "price": "39405.0",
+      "change_percent": "-11.21%",
+      "pct": 11.21
     }
   ],
   "sector_performance": [
     {
       "name": "전기유틸리티",
-      "change_value": "+9.46%",
-      "pct": 9.46
+      "change_value": "+9.09%",
+      "pct": 9.09
     },
     {
       "name": "생명보험",
-      "change_value": "+8.29%",
-      "pct": 8.29
+      "change_value": "+9.04%",
+      "pct": 9.04
     },
     {
       "name": "건설",
-      "change_value": "+6.09%",
-      "pct": 6.09
+      "change_value": "+6.12%",
+      "pct": 6.12
     },
     {
       "name": "항공사",
-      "change_value": "+5.29%",
-      "pct": 5.29
+      "change_value": "+4.77%",
+      "pct": 4.77
     },
     {
-      "name": "기계",
-      "change_value": "+4.24%",
-      "pct": 4.24
+      "name": "복합기업",
+      "change_value": "+4.30%",
+      "pct": 4.3
     }
   ],
   "sector_heatmap": [
     {
       "name": "전기유틸리티",
-      "change_value": "+9.46%",
-      "pct": 9.46
+      "change_value": "+9.09%",
+      "pct": 9.09
     },
     {
       "name": "생명보험",
-      "change_value": "+8.29%",
-      "pct": 8.29
+      "change_value": "+9.04%",
+      "pct": 9.04
     },
     {
       "name": "건설",
-      "change_value": "+6.09%",
-      "pct": 6.09
+      "change_value": "+6.12%",
+      "pct": 6.12
     },
     {
       "name": "항공사",
-      "change_value": "+5.29%",
-      "pct": 5.29
-    },
-    {
-      "name": "기계",
-      "change_value": "+4.24%",
-      "pct": 4.24
+      "change_value": "+4.77%",
+      "pct": 4.77
     },
     {
       "name": "복합기업",
-      "change_value": "+4.14%",
-      "pct": 4.14
+      "change_value": "+4.30%",
+      "pct": 4.3
     },
     {
-      "name": "문구류",
-      "change_value": "-1.39%",
-      "pct": -1.39
+      "name": "기계",
+      "change_value": "+4.10%",
+      "pct": 4.1
+    },
+    {
+      "name": "포장재",
+      "change_value": "-1.66%",
+      "pct": -1.66
     },
     {
       "name": "창업투자",
-      "change_value": "-1.82%",
-      "pct": -1.82
+      "change_value": "-1.84%",
+      "pct": -1.84
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "-2.41%",
-      "pct": -2.41
+      "change_value": "-2.62%",
+      "pct": -2.62
     },
     {
       "name": "비철금속",
-      "change_value": "-3.18%",
-      "pct": -3.18
+      "change_value": "-3.22%",
+      "pct": -3.22
     },
     {
       "name": "석유와가스",
-      "change_value": "-3.60%",
-      "pct": -3.6
+      "change_value": "-3.48%",
+      "pct": -3.48
     },
     {
       "name": "해운사",
-      "change_value": "-6.57%",
-      "pct": -6.57
+      "change_value": "-6.22%",
+      "pct": -6.22
     }
   ],
   "article_counts": {
