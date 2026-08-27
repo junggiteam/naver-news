@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 07:01:00",
+  "updated_at": "2026-08-28 07:30:52",
   "indices": [
     {
       "name": "코스피",
@@ -66,22 +66,22 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,382.50",
-      "change_percent": "▼0.25%",
-      "direction": "down",
-      "as_of": "2026.08.27 21:11"
-    },
-    {
-      "name": "원/엔 환율(100엔)",
-      "value": "867.40",
+      "value": "1,382.00",
       "change_percent": "▼0.29%",
       "direction": "down",
       "as_of": "2026.08.27 21:11"
     },
     {
+      "name": "원/엔 환율(100엔)",
+      "value": "867.11",
+      "change_percent": "▼0.32%",
+      "direction": "down",
+      "as_of": "2026.08.27 21:11"
+    },
+    {
       "name": "원/유로 환율",
-      "value": "1,610.82",
-      "change_percent": "▼0.27%",
+      "value": "1,610.51",
+      "change_percent": "▼0.29%",
       "direction": "down",
       "as_of": "2026.08.27 21:11"
     },
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "110,785,000",
-      "change_percent": "▲0.87%",
+      "value": "110,889,000",
+      "change_percent": "▲0.96%",
       "direction": "up",
-      "as_of": "2026-08-28 07:00:52"
+      "as_of": "2026-08-28 07:30:49"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,465,000",
-      "change_percent": "▼0.55%",
+      "value": "3,472,000",
+      "change_percent": "▼0.34%",
       "direction": "down",
-      "as_of": "2026-08-28 07:00:58"
+      "as_of": "2026-08-28 07:30:44"
     }
   ],
   "news_categories": [
@@ -126,8 +126,48 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "기등재 제네릭 약가 인하, 내년 4월로 연기",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004656063&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:02",
+          "published_at": "2026-08-28T07:02:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 2,
+          "title": "엔비디아 훈풍에 기술주 랠리…나스닥 1.57% ‘껑충’-[글로벌 마감 시황]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263942&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:00",
+          "published_at": "2026-08-28T07:00:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 3,
+          "title": "“휴가 다녀왔는데 왜 더 피곤하지?”…‘휴가 후유증’ 이기는 영양 관리법",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004656057&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:00",
+          "published_at": "2026-08-28T07:00:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 4,
+          "title": "트럼프, 반도체 관세 만지작...\"고강도 관세 검토\"-[굿모닝 글로벌 이슈]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263941&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:00",
+          "published_at": "2026-08-28T07:00:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 5,
+          "title": "국제유가, 2% 상승…협상 기대 약화 [글로벌 머니플로우]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263939&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
+          "upload_time": "2026-08-28 06:59",
+          "published_at": "2026-08-28T06:59:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 6,
           "title": "[글로벌증시] 엔비디아 훈풍에 뉴욕증시 환호…나스닥 1.57%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000900276&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 06:49",
@@ -135,7 +175,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 7,
           "title": "벤틀리, 브랜드 첫 전기차 ‘토르칼’ 출시 예고",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004656051&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 06:32",
@@ -143,7 +183,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 8,
           "title": "680마력의 힘, 세단 못잖은 쉼, 패밀리카로 찜 [온더로드]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004656050&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 06:32",
@@ -151,7 +191,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 9,
           "title": "“9월에도 조정이 올 듯합니다”…전망 내놓은 고수, 대처방안도 내놨다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726967&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 06:14",
@@ -159,7 +199,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 5,
+          "rank": 10,
           "title": "금리인상에 엔비디아 효과 '무색'… 칠천피 탈환 실패",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005405974&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 04:00",
@@ -167,7 +207,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 6,
+          "rank": 11,
           "title": "\"삼전닉스 손절? 앱 닫으세요\"…상투 잡은 개미, 투자 전략은[부꾸미]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005405957&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 03:30",
@@ -175,7 +215,7 @@
         },
         {
           "press_name": "중앙일보",
-          "rank": 7,
+          "rank": 12,
           "title": "고금리 버티려면…보·은·주 잡아라",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0003547360&office_id=025&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-28 00:02",
@@ -183,7 +223,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 8,
+          "rank": 13,
           "title": "\"그들을 감동시켰다\"…삼전닉스 개미들 환호한 '파격 전망' [분석+]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325733&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-27 22:01",
@@ -191,7 +231,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 9,
+          "rank": 14,
           "title": "“전력 아쉬워도 중국 장비는 쓰지마”...트럼프 명령에 K전력株 급등",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726942&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-27 21:36",
@@ -199,51 +239,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 10,
+          "rank": 15,
           "title": "코스피 7,000선 회복 시도…금리 인상에 상승폭 축소",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000900166&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
           "upload_time": "2026-08-27 21:01",
           "published_at": "2026-08-27T21:01:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 11,
-          "title": "다음달 개장 거래소 애프터마켓, '퇴근길 ETF 거래' 막힐 듯",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016275656&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
-          "upload_time": "2026-08-27 19:59",
-          "published_at": "2026-08-27T19:59:00+09:00"
-        },
-        {
-          "press_name": "중앙일보",
-          "rank": 12,
-          "title": "금리 오르면 웃는 주식 있다…고금리에도 고수익 종목 고르는 법",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0003547309&office_id=025&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
-          "upload_time": "2026-08-27 18:43",
-          "published_at": "2026-08-27T18:43:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 13,
-          "title": "\"향후 증시 조정땐 AI 생태계에 분산투자하라\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726887&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
-          "upload_time": "2026-08-27 18:07",
-          "published_at": "2026-08-27T18:07:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 14,
-          "title": "트럼프 사실상 中전력장비 수입 제한에 … K전력·전선주 급등",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726886&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
-          "upload_time": "2026-08-27 18:07",
-          "published_at": "2026-08-27T18:07:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "당국 '퇴근길 ETF거래' 일단 없던일로",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726885&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260828&page=1",
-          "upload_time": "2026-08-27 18:07",
-          "published_at": "2026-08-27T18:07:00+09:00"
         }
       ]
     },
@@ -253,6 +253,14 @@
         {
           "press_name": "한국경제TV",
           "rank": 1,
+          "title": "\"엔비디아 훈풍에 AI 밸류체인 화색\" [ 美증시 특징주 ]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263945&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:05",
+          "published_at": "2026-08-28T07:05:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 2,
           "title": "AI가 위협 아닌 성장동력으로…세일즈포스發 소프트웨어주 강세-[美증시 특징주]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001263938&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-28 06:59",
@@ -260,7 +268,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 3,
           "title": "\"엔비디아 차세대 수요 선제 대응\"…심텍, 증설 결정에 '급등' [종목+]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325768&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-28 06:31",
@@ -268,7 +276,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "현대차 \"가이던스 상향\" 자신감에도 주가 하락…증권가도 목표가 '하향'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005567625&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-28 06:01",
@@ -276,7 +284,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 4,
+          "rank": 5,
           "title": "변동장에 연금 지킨다… TDF ETF 뭉칫돈",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005405975&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-28 04:00",
@@ -284,7 +292,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 6,
           "title": "\"친숙한 투자 경험 제공… 자산형성 플랫폼으로 자리매김\" [인터뷰]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005567498&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:12",
@@ -292,7 +300,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 7,
           "title": "개미들 \"달러 싸졌을 때 담자\"... 환헤지 아닌 환노출 상품 주목",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005567497&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:12",
@@ -300,7 +308,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 7,
+          "rank": 8,
           "title": "KT&G·삼양식품 '실적 훈풍'이 주가 밀어올리나",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005567496&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:12",
@@ -308,7 +316,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 8,
+          "rank": 9,
           "title": "반짝 떴다 사라지는 ETF들… 올 22개 간판 내렸다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005567493&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:12",
@@ -316,7 +324,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 9,
+          "rank": 10,
           "title": "[글로벌 핫스톡]인튜이티브 머신스, ‘문샷’ 넘어 위성·통신으로 성장 궤도",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004655957&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:10",
@@ -324,7 +332,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 10,
+          "rank": 11,
           "title": "주택공급 확대 기대…활짝 웃는 시멘트株",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004655952&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:05",
@@ -332,7 +340,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 11,
+          "rank": 12,
           "title": "SK에코플랜트·SK에코엔지니어링 합병…반도체·AI 인프라 경쟁력 강화",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726873&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 18:04",
@@ -340,7 +348,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 12,
+          "rank": 13,
           "title": "美 중국산 규제 반사익…전력기기株 반등",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325617&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 17:43",
@@ -348,7 +356,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 13,
+          "rank": 14,
           "title": "SSG닷컴 쪼갠다…신세계그룹 계열분리 마무리 수순",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001156619&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 17:22",
@@ -356,19 +364,11 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 14,
+          "rank": 15,
           "title": "이마트·트레이더스 한곳에…서울 첫 스타필드 마켓 출격",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001156614&office_id=417&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
           "upload_time": "2026-08-27 17:09",
           "published_at": "2026-08-27T17:09:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "펄어비스 ‘붉은사막’, 인핸스드·할인 효과 통했나…스팀 인기 순위 반등",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005726717&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260828&page=1",
-          "upload_time": "2026-08-27 16:46",
-          "published_at": "2026-08-27T16:46:00+09:00"
         }
       ]
     },
@@ -376,8 +376,24 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "[뉴욕증시]엔비디아 '깜짝 실적'에 기술주 랠리…나스닥 1.57% 상승",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005808433&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:11",
+          "published_at": "2026-08-28T07:11:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
+          "title": "엔비디아 8.7% 급등…기술주 랠리에 나스닥 1.57%↑ [뉴욕증시 브리핑]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325776&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
+          "upload_time": "2026-08-28 07:04",
+          "published_at": "2026-08-28T07:04:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
           "title": "엔비디아가 되살린 AI낙관론에 뉴욕증시 상승…워시 입에 쏠린눈[월스트리트in]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006359395&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 06:44",
@@ -385,7 +401,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 4,
           "title": "엔비디아 8.7% 급등하며 기술주 랠리…나스닥 1.57%↑(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016275808&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 06:07",
@@ -393,7 +409,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 5,
           "title": "유니트리 폭락에도 中IPO 열풍···인피포스·유디어AI, 홍콩 상장 추진",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004656026&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 05:30",
@@ -401,7 +417,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 4,
+          "rank": 6,
           "title": "뉴욕증시, 엔비디아 호실적에 환호…나스닥 1.57%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016275780&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 05:20",
@@ -409,7 +425,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 7,
           "title": "[속보]엔비디아발 훈풍에 뉴욕증시 상승 마감…나스닥 1.5%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006359379&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 05:14",
@@ -417,7 +433,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 8,
           "title": "[현장]곽노정 \"반도체 강세 이어질 것\"…추가 투자 어디든 열려 있어",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005808422&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 02:16",
@@ -425,7 +441,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 7,
+          "rank": 9,
           "title": "SK하이닉스, 美 인디애나 HBM 공장 첫 삽…2029년 양산",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005808421&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 01:29",
@@ -433,7 +449,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 10,
           "title": "[르포]SK하이닉스가 짓는 미국 첫 HBM 공장 가보니…2029년부터 양산",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005808420&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-28 01:03",
@@ -441,7 +457,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 11,
           "title": "460% 폭등 후 반토막…\"거품\" vs \"성장통\" 中 로봇주 논쟁",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006359260&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-27 19:29",
@@ -449,7 +465,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 10,
+          "rank": 12,
           "title": "[글로벌 핫스톡]인튜이티브 머신스, ‘문샷’ 넘어 위성·통신으로 성장 궤도",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004655957&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-27 18:10",
@@ -457,7 +473,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 11,
+          "rank": 13,
           "title": "뱅가드, 40억달러에 핀테크 플랫폼 인수",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325603&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-27 17:36",
@@ -465,7 +481,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 12,
+          "rank": 14,
           "title": "순환매 흐름 속 亞 투자 기회에 주목[글로벌 view]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006359194&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-27 17:36",
@@ -473,27 +489,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 13,
+          "rank": 15,
           "title": "日은행 부총재 \"물가 상승 위험 더 경계\"…추가 금리인상 시사",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005808217&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
           "upload_time": "2026-08-27 14:27",
           "published_at": "2026-08-27T14:27:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 14,
-          "title": "뱅가드, AI 핀테크 기업 알트루이스트 40억달러에 인수",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325481&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
-          "upload_time": "2026-08-27 14:26",
-          "published_at": "2026-08-27T14:26:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "세일즈포스, 깜짝실적·앤트로픽 투자에 시간외 13% 폭등",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005325465&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260828&page=1",
-          "upload_time": "2026-08-27 14:01",
-          "published_at": "2026-08-27T14:01:00+09:00"
         }
       ]
     },
@@ -877,7 +877,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "뉴욕 증시에서 엔비디아가 인공지능 관련 호재로 큰 폭으로 상승하면서 국내 증시에도 긍정적인 투자 심리가 유입되었다. 또한 미국 정부의 중국산 전력 장비 수입 제한 정책에 따라 국내 전력 및 전선 관련 기업들에 매수세가 몰리며 지수 상승을 견인했다.",
+  "ai_commentary": "미국 나스닥 지수가 엔비디아의 강세에 힘입어 1.57% 상승하며 국내 증시의 투자 심리에도 긍정적인 영향을 미쳤다. 이에 더해 트럼프 전 대통령의 대중국 제재 관련 정책 기조로 인해 국내 전력 설비 관련 종목들이 동반 상승하며 코스피와 코스닥 지수의 오름세를 견인했다.",
   "top_gainers": [
     {
       "name": "가온전선",
