@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-27 12:01:23",
+  "updated_at": "2026-08-27 12:26:46",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 2.13,
-    "kosdaq_change": 0.98,
-    "kospi_value": 6952.92,
-    "kosdaq_value": 834.99
+    "kospi_change": 1.98,
+    "kosdaq_change": 1.49,
+    "kospi_value": 6942.76,
+    "kosdaq_value": 839.21
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 엔비디아의 실적 호조가 반도체 대형주인 삼성전자와 SK하이닉스의 주가 상승을 이끌며 코스피 지수 오름세를 견인했다. 다만 한국은행의 기준금리 인상 결정이 전해지면서 장중 상승 폭이 일부 축소되는 흐름을 보였다."
+      "text": "한국은행의 기준금리 인상 결정에도 불구하고 미국 엔비디아의 실적 호조가 투자 심리에 긍정적인 영향을 미치며 반도체주를 중심으로 지수가 상승했다. 이에 따라 삼성전자와 SK하이닉스 등 대형주가 강세를 보이며 코스피와 코스닥 지수 모두 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -90,7 +90,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000390",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000390",
-      "ai_explanation": "회사가 보유 중인 자사주를 시장이나 특정인에게 매각하기로 결정한 것입니다."
+      "ai_explanation": "회사가 보유 중인 자사주를 시장이나 특정인에게 매각하기로 결정함."
     },
     {
       "corp_name": "HLB이노베이션",
@@ -99,7 +99,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000249",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000249",
-      "ai_explanation": "타 기업의 주식이나 지분을 인수하기로 한 결정 사항을 정정하여 공시한 것입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들이기로 한 결정을 정정하여 공시함."
     },
     {
       "corp_name": "한스인테크",
@@ -108,7 +108,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000355",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000355",
-      "ai_explanation": "다른 회사와 합병하여 경영 효율성이나 사업 확장을 도모하기로 결정한 것입니다."
+      "ai_explanation": "다른 회사와 합병하여 경영 효율화 및 사업 확장을 추진하기로 결정함."
     },
     {
       "corp_name": "유니드글로벌상사",
@@ -117,7 +117,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000352",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000352",
-      "ai_explanation": "회사가 타인의 채무에 대해 대신 갚아주겠다는 보증을 서기로 결정한 것입니다."
+      "ai_explanation": "관계사나 타인의 채무를 회사가 대신 갚아주기로 보증을 서는 결정임."
     },
     {
       "corp_name": "젝시믹스",
@@ -126,7 +126,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000241",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000241",
-      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
+      "ai_explanation": "자사주를 사들이기 위해 체결했던 신탁 계약을 중도에 해지하기로 결정함."
     },
     {
       "corp_name": "에코시티",
@@ -135,7 +135,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000193",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000193",
-      "ai_explanation": "회사가 투자 목적으로 보유하던 다른 회사의 주식이나 지분을 매각하기로 결정한 것입니다."
+      "ai_explanation": "보유하고 있던 다른 회사의 주식이나 지분을 매각하기로 결정함."
     },
     {
       "corp_name": "HLB이노베이션",
@@ -144,7 +144,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260826000846",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000846",
-      "ai_explanation": "사업 확장이나 투자를 목적으로 다른 회사의 주식이나 지분을 인수하기로 결정한 것입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 투자를 하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2980,22 +2980,16 @@
   },
   "top_gainers": [
     {
-      "name": "이건산업",
-      "price": "3710.0",
-      "change_percent": "+19.68%",
-      "pct": 19.68
+      "name": "드림텍",
+      "price": "5990.0",
+      "change_percent": "+14.10%",
+      "pct": 14.1
     },
     {
       "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "19275.0",
-      "change_percent": "+15.21%",
-      "pct": 15.21
-    },
-    {
-      "name": "대양금속",
-      "price": "1604.0",
-      "change_percent": "+14.41%",
-      "pct": 14.41
+      "price": "19000.0",
+      "change_percent": "+13.57%",
+      "pct": 13.57
     },
     {
       "name": "KB 레버리지 2차전지 TOP 10 TR ETN",
@@ -3005,130 +2999,136 @@
     },
     {
       "name": "KB 레버리지 밀 선물 ETN",
-      "price": "10130.0",
-      "change_percent": "+13.37%",
-      "pct": 13.37
+      "price": "10020.0",
+      "change_percent": "+12.14%",
+      "pct": 12.14
+    },
+    {
+      "name": "삼성 KRX 레버리지 2차전지 TOP10 TR ETN",
+      "price": "24555.0",
+      "change_percent": "+12.05%",
+      "pct": 12.05
     }
   ],
   "top_losers": [
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "4520.0",
-      "change_percent": "-15.12%",
-      "pct": 15.12
-    },
-    {
-      "name": "KB 인버스 2X 밀 선물 ETN",
-      "price": "21070.0",
-      "change_percent": "-13.88%",
-      "pct": 13.88
+      "price": "4560.0",
+      "change_percent": "-14.37%",
+      "pct": 14.37
     },
     {
       "name": "이월드",
-      "price": "528.0",
-      "change_percent": "-13.01%",
-      "pct": 13.01
+      "price": "526.0",
+      "change_percent": "-13.34%",
+      "pct": 13.34
+    },
+    {
+      "name": "KB 인버스 2X 밀 선물 ETN",
+      "price": "21255.0",
+      "change_percent": "-13.12%",
+      "pct": 13.12
     },
     {
       "name": "한화머시너리앤서비스홀딩스",
-      "price": "7860.0",
-      "change_percent": "-12.76%",
-      "pct": 12.76
+      "price": "7910.0",
+      "change_percent": "-12.21%",
+      "pct": 12.21
     },
     {
       "name": "에이프로젠",
-      "price": "2440.0",
-      "change_percent": "-9.63%",
-      "pct": 9.63
+      "price": "2455.0",
+      "change_percent": "-9.07%",
+      "pct": 9.07
     }
   ],
   "sector_performance": [
     {
       "name": "전기장비",
-      "change_value": "+7.71%",
-      "pct": 7.71
+      "change_value": "+7.16%",
+      "pct": 7.16
     },
     {
       "name": "전기제품",
-      "change_value": "+5.97%",
-      "pct": 5.97
+      "change_value": "+6.01%",
+      "pct": 6.01
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.94%",
-      "pct": 3.94
+      "change_value": "+3.98%",
+      "pct": 3.98
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+3.38%",
-      "pct": 3.38
+      "change_value": "+3.82%",
+      "pct": 3.82
     },
     {
       "name": "화학",
-      "change_value": "+3.31%",
-      "pct": 3.31
+      "change_value": "+3.52%",
+      "pct": 3.52
     }
   ],
   "sector_heatmap": [
     {
       "name": "전기장비",
-      "change_value": "+7.71%",
-      "pct": 7.71
+      "change_value": "+7.16%",
+      "pct": 7.16
     },
     {
       "name": "전기제품",
-      "change_value": "+5.97%",
-      "pct": 5.97
+      "change_value": "+6.01%",
+      "pct": 6.01
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.94%",
-      "pct": 3.94
+      "change_value": "+3.98%",
+      "pct": 3.98
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+3.38%",
-      "pct": 3.38
+      "change_value": "+3.82%",
+      "pct": 3.82
     },
     {
       "name": "화학",
-      "change_value": "+3.31%",
-      "pct": 3.31
+      "change_value": "+3.52%",
+      "pct": 3.52
     },
     {
       "name": "철강",
-      "change_value": "+3.17%",
-      "pct": 3.17
+      "change_value": "+3.45%",
+      "pct": 3.45
     },
     {
       "name": "식품과기본식료품소매",
-      "change_value": "-2.00%",
-      "pct": -2.0
+      "change_value": "-1.94%",
+      "pct": -1.94
     },
     {
       "name": "부동산",
-      "change_value": "-2.01%",
-      "pct": -2.01
-    },
-    {
-      "name": "자동차",
-      "change_value": "-2.04%",
-      "pct": -2.04
+      "change_value": "-2.12%",
+      "pct": -2.12
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "-2.29%",
-      "pct": -2.29
+      "change_value": "-2.40%",
+      "pct": -2.4
+    },
+    {
+      "name": "자동차",
+      "change_value": "-2.41%",
+      "pct": -2.41
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-3.35%",
-      "pct": -3.35
+      "change_value": "-3.37%",
+      "pct": -3.37
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-4.84%",
-      "pct": -4.84
+      "change_value": "-4.99%",
+      "pct": -4.99
     }
   ],
   "article_counts": {
