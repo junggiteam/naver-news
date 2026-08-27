@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27 17:01:25",
+  "updated_at": "2026-08-27 17:31:15",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "엔비디아의 호실적 발표가 반도체 업황 개선 기대로 이어지면서 국내 증시가 상승 마감했다. 다만 장중 금리 인상 소식이 전해지면서 상승 폭이 일부 제한되는 흐름을 보였다."
+      "text": "미국 엔비디아의 호실적 발표가 반도체 업종 전반에 대한 투자 심리를 개선하며 지수 상승을 견인했다. 다만 기준금리 인상에 대한 경계감이 시장에 반영되면서 장중 상승폭이 다소 제한되는 흐름을 보였다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,40 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "에스케이브로드밴드",
+      "corp_code": "00243988",
+      "report_nm": "주요사항보고서(회사분할결정)",
+      "rcept_dt": "20260827",
+      "rcept_no": "20260827001001",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827001001",
+      "ai_explanation": "회사의 사업 부문을 떼어내어 별도 법인을 설립하기로 결정함."
+    },
+    {
+      "corp_name": "에스케이에코플랜트",
+      "corp_code": "00131799",
+      "report_nm": "주요사항보고서(회사합병결정)",
+      "rcept_dt": "20260827",
+      "rcept_no": "20260827000971",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000971",
+      "ai_explanation": "회사가 다른 회사와 합치거나 다른 회사를 흡수하기로 결정함."
+    },
+    {
+      "corp_name": "에스케이에코엔지니어링",
+      "corp_code": "01594320",
+      "report_nm": "회사합병결정",
+      "rcept_dt": "20260827",
+      "rcept_no": "20260827000983",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000983",
+      "ai_explanation": "회사가 다른 회사와 합치거나 다른 회사를 흡수하기로 결정함."
+    },
+    {
       "corp_name": "이지메디컴",
       "corp_code": "00451763",
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20260827",
       "rcept_no": "20260827000927",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000927",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 사들이기로 결정함."
+      "ai_explanation": "회사가 주주가치 제고 등을 위해 자사주를 사들이기로 결정함."
     },
     {
       "corp_name": "태영건설",
@@ -100,7 +127,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000833",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000833",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정함."
     },
     {
       "corp_name": "더코디",
@@ -109,7 +136,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000846",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000846",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정함."
     },
     {
       "corp_name": "KG모빌리티",
@@ -118,7 +145,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000861",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000861",
-      "ai_explanation": "회사가 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달함."
+      "ai_explanation": "회사가 나중에 주식으로 바꿀 수 있는 채권을 발행하여 자금을 조달함."
     },
     {
       "corp_name": "저스템",
@@ -127,7 +154,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000843",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000843",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 사들이기로 결정함."
+      "ai_explanation": "회사가 주주가치 제고 등을 위해 자사주를 사들이기로 결정함."
     },
     {
       "corp_name": "퀀텀레일",
@@ -136,7 +163,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000761",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000761",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 전환사채 발행 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "넥사다이내믹스",
@@ -145,7 +172,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000837",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000837",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "아리바이오",
@@ -154,7 +181,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000859",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000859",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "더코디",
@@ -163,7 +190,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000813",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000813",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정함."
     },
     {
       "corp_name": "하이퍼코퍼레이션",
@@ -172,7 +199,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000830",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000830",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "에이루트",
@@ -181,7 +208,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000822",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000822",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "에이루트",
@@ -190,7 +217,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000798",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000798",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "에이텀",
@@ -199,7 +226,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000746",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000746",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하기로 결정함."
+      "ai_explanation": "발행한 전환사채의 만기 전 상환을 위해 다시 사들이기로 결정함."
     },
     {
       "corp_name": "켐텍인터내셔날",
@@ -208,7 +235,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000757",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000757",
-      "ai_explanation": "회사 자산 중 건물, 토지 등 비유동 자산을 매각하기로 결정함."
+      "ai_explanation": "보유하고 있던 토지, 건물 등 비유동 자산을 팔기로 결정함."
     },
     {
       "corp_name": "에스케이어드밴스드",
@@ -217,7 +244,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000742",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000742",
-      "ai_explanation": "기존에 공시한 회사 합병 결정 관련 서류의 내용을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 합병 관련 첨부 서류의 내용을 수정함."
     },
     {
       "corp_name": "테라사이언스",
@@ -226,7 +253,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000693",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000693",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "캐리",
@@ -235,7 +262,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000689",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000689",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "엣지파운드리",
@@ -244,7 +271,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000605",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000605",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "유엑스엔",
@@ -253,7 +280,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000646",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000646",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 유상증자 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "현대엘앤씨",
@@ -262,7 +289,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000650",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000650",
-      "ai_explanation": "회사가 타인의 금융기관 대출 등에 대해 보증을 서기로 결정함."
+      "ai_explanation": "회사가 타인의 대출 등에 대해 보증을 서기로 결정함."
     },
     {
       "corp_name": "현대엘앤씨",
@@ -271,7 +298,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000644",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000644",
-      "ai_explanation": "회사가 타인의 금융기관 대출 등에 대해 보증을 서기로 결정함."
+      "ai_explanation": "회사가 타인의 대출 등에 대해 보증을 서기로 결정함."
     },
     {
       "corp_name": "뉴스테이허브제3호위탁관리부동산투자회사",
@@ -280,7 +307,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000615",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000615",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정함."
     },
     {
       "corp_name": "민간임대허브제4호위탁관리부동산투자회사",
@@ -289,7 +316,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000604",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000604",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정함."
     },
     {
       "corp_name": "SK가스",
@@ -298,7 +325,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000513",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000513",
-      "ai_explanation": "기존에 공시한 회사 합병 결정 관련 서류의 내용을 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 합병 관련 첨부 서류의 내용을 수정함."
     },
     {
       "corp_name": "에이치엔이앤씨",
@@ -307,7 +334,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000418",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000418",
-      "ai_explanation": "회사가 다른 회사와 합치거나 합병하기로 결정함."
+      "ai_explanation": "회사가 다른 회사와 합치거나 다른 회사를 흡수하기로 결정함."
     },
     {
       "corp_name": "에스에스지닷컴",
@@ -316,7 +343,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000410",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000410",
-      "ai_explanation": "회사의 사업 부문을 나누어 별도의 회사로 분리하기로 결정함."
+      "ai_explanation": "회사의 사업 부문을 떼어내어 별도 법인을 설립하기로 결정함."
     },
     {
       "corp_name": "한화엔엑스엠디",
@@ -325,7 +352,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000409",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000409",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정함."
     },
     {
       "corp_name": "SK텔레콤",
@@ -334,7 +361,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000390",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000390",
-      "ai_explanation": "회사가 보유 중인 자사 주식을 시장에 내놓거나 특정 대상에게 매각하기로 결정함."
+      "ai_explanation": "회사가 보유 중인 자사주를 시장에 내다 팔기로 결정함."
     },
     {
       "corp_name": "HLB이노베이션",
@@ -343,7 +370,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000249",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000249",
-      "ai_explanation": "기존에 공시한 타법인 주식 취득 관련 내용 중 일부를 수정하여 다시 공시함."
+      "ai_explanation": "이미 공시된 타법인 주식 취득 내용 중 일부 항목을 수정함."
     },
     {
       "corp_name": "한스인테크",
@@ -352,7 +379,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000355",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000355",
-      "ai_explanation": "회사가 다른 회사와 합치거나 합병하기로 결정함."
+      "ai_explanation": "회사가 다른 회사와 합치거나 다른 회사를 흡수하기로 결정함."
     },
     {
       "corp_name": "유니드글로벌상사",
@@ -361,7 +388,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000352",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000352",
-      "ai_explanation": "회사가 타인의 금융기관 대출 등에 대해 보증을 서기로 결정함."
+      "ai_explanation": "회사가 타인의 대출 등에 대해 보증을 서기로 결정함."
     },
     {
       "corp_name": "젝시믹스",
@@ -370,7 +397,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000241",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000241",
-      "ai_explanation": "금융기관에 위탁했던 자사주 취득 계약을 중단하고 종료하기로 결정함."
+      "ai_explanation": "자사주 취득을 목적으로 맺었던 신탁 계약을 종료하기로 결정함."
     },
     {
       "corp_name": "에코시티",
@@ -379,7 +406,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260827000193",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827000193",
-      "ai_explanation": "회사가 보유하고 있던 다른 회사의 주식이나 지분을 매각하기로 결정함."
+      "ai_explanation": "보유하고 있던 다른 회사의 주식을 팔기로 결정함."
     },
     {
       "corp_name": "HLB이노베이션",
@@ -388,7 +415,7 @@
       "rcept_dt": "20260827",
       "rcept_no": "20260826000846",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000846",
-      "ai_explanation": "회사가 사업 확장 등을 위해 다른 회사의 주식이나 지분을 사들이기로 결정함."
+      "ai_explanation": "사업 확장을 위해 다른 회사의 주식을 사들이기로 결정함."
     }
   ],
   "macro_indicators": [
