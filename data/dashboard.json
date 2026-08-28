@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 08:31:06",
+  "updated_at": "2026-08-28 09:01:25",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260828000016",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000016",
-      "ai_explanation": "다른 회사의 주식을 취득하거나 지분을 출자하기로 한 기존 결정 사항을 수정하여 공시함."
+      "ai_explanation": "다른 회사의 주식을 매수하거나 출자하기로 한 기존 결정의 내용을 정정한 공시입니다."
     },
     {
       "corp_name": "아이큐어",
@@ -95,7 +95,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260828000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000007",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 발행하기로 한 기존 결정 내용을 수정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하기로 한 기존 결정의 내용을 정정한 공시입니다."
     },
     {
       "corp_name": "삼성바이오로직스",
@@ -104,7 +104,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260828000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000001",
-      "ai_explanation": "회사의 운영 자금 등을 마련하기 위해 새로운 주식을 발행하여 자본을 확충하기로 결정함."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 주주 배정이나 제3자 배정 등으로 신주를 발행하는 결정입니다."
     },
     {
       "corp_name": "스탠드업테라퓨티스",
@@ -113,7 +113,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260827001066",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827001066",
-      "ai_explanation": "신주 발행을 통한 자금 조달 계획에서 정정 사항이 발생하여 이를 변경하여 다시 공시함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하기로 한 기존 결정의 내용을 정정한 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2937,95 +2937,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "SHD",
+      "price": "10000.0",
+      "change_percent": "+5.26%",
+      "pct": 5.26
+    },
+    {
+      "name": "JW중외제약우",
+      "price": "23900.0",
+      "change_percent": "+4.82%",
+      "pct": 4.82
+    },
+    {
+      "name": "SUN&L",
+      "price": "1725.0",
+      "change_percent": "+4.23%",
+      "pct": 4.23
+    },
+    {
+      "name": "금호전기",
+      "price": "8560.0",
+      "change_percent": "+4.14%",
+      "pct": 4.14
+    },
+    {
+      "name": "만호제강",
+      "price": "4145.0",
+      "change_percent": "+3.88%",
+      "pct": 3.88
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "동양2우B",
+      "price": "6520.0",
+      "change_percent": "-3.55%",
+      "pct": 3.55
+    },
+    {
+      "name": "삼성화재",
+      "price": "659000.0",
+      "change_percent": "-3.37%",
+      "pct": 3.37
+    },
+    {
+      "name": "가온전선",
+      "price": "204500.0",
+      "change_percent": "-3.31%",
+      "pct": 3.31
+    },
+    {
+      "name": "비비안",
+      "price": "4815.0",
+      "change_percent": "-2.63%",
+      "pct": 2.63
+    },
+    {
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7420.0",
+      "change_percent": "-2.50%",
+      "pct": 2.5
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "양방향미디어와서비스",
+      "change_value": "+2.26%",
+      "pct": 2.26
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "무선통신서비스",
+      "change_value": "+1.79%",
+      "pct": 1.79
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "문구류",
+      "change_value": "+1.19%",
+      "pct": 1.19
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+1.02%",
+      "pct": 1.02
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "창업투자",
+      "change_value": "+1.00%",
+      "pct": 1.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "양방향미디어와서비스",
+      "change_value": "+2.26%",
+      "pct": 2.26
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "무선통신서비스",
+      "change_value": "+1.79%",
+      "pct": 1.79
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "문구류",
+      "change_value": "+1.19%",
+      "pct": 1.19
     },
     {
       "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+1.02%",
+      "pct": 1.02
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "창업투자",
+      "change_value": "+1.00%",
+      "pct": 1.0
+    },
+    {
+      "name": "가정용품",
+      "change_value": "+0.59%",
+      "pct": 0.59
+    },
+    {
+      "name": "건축제품",
+      "change_value": "-0.90%",
+      "pct": -0.9
+    },
+    {
+      "name": "철강",
+      "change_value": "-0.90%",
+      "pct": -0.9
+    },
+    {
+      "name": "복합유틸리티",
+      "change_value": "-1.34%",
+      "pct": -1.34
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "-1.40%",
+      "pct": -1.4
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-1.76%",
+      "pct": -1.76
+    },
+    {
+      "name": "손해보험",
+      "change_value": "-2.26%",
+      "pct": -2.26
     }
   ],
   "article_counts": {
