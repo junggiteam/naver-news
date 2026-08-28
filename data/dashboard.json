@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-28 10:02:55",
+  "updated_at": "2026-08-28 10:31:03",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": -0.93,
-    "kosdaq_change": -0.36,
-    "kospi_value": 6848.16,
-    "kosdaq_value": 834.65
+    "label": "하락",
+    "emoji": "🟠",
+    "kospi_change": -1.29,
+    "kosdaq_change": -0.71,
+    "kospi_value": 6823.43,
+    "kosdaq_value": 831.7
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "대신제57호일반사모모투자회사",
+      "corp_code": "01966633",
+      "report_nm": "감자결정",
+      "rcept_dt": "20260828",
+      "rcept_no": "20260828000370",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000370",
+      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
+    },
+    {
       "corp_name": "삼성바이오로직스",
       "corp_code": "00877059",
       "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
       "rcept_dt": "20260828",
       "rcept_no": "20260828000016",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000016",
-      "ai_explanation": "다른 회사의 주식을 취득하거나 출자하기로 한 기존 결정의 내용을 정정하는 공시입니다."
+      "ai_explanation": "타 회사 주식 취득과 관련하여 기존에 공시했던 내용을 변경 또는 정정한 것입니다."
     },
     {
       "corp_name": "아이큐어",
@@ -96,7 +105,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260828000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000007",
-      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 추가 발행하기로 한 기존 결정의 내용을 정정하는 공시입니다."
+      "ai_explanation": "자금 조달을 위해 신주를 발행하여 주주 등에게 배정하기로 한 기존 계획을 수정한 것입니다."
     },
     {
       "corp_name": "삼성바이오로직스",
@@ -105,7 +114,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260828000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828000001",
-      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 신주를 발행하여 자본을 확충하겠다는 결정입니다."
+      "ai_explanation": "운영 자금이나 시설 투자 등을 목적으로 신주를 발행해 자본을 확충하겠다는 결정입니다."
     },
     {
       "corp_name": "스탠드업테라퓨티스",
@@ -114,7 +123,7 @@
       "rcept_dt": "20260828",
       "rcept_no": "20260827001066",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260827001066",
-      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 추가 발행하기로 한 기존 결정의 내용을 정정하는 공시입니다."
+      "ai_explanation": "자금 조달을 위한 유상증자 계획 중 일부 내용을 정정하거나 보완한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2947,133 +2956,128 @@
     },
     {
       "name": "금호전기",
-      "price": "10160.0",
-      "change_percent": "+23.60%",
-      "pct": 23.6
+      "price": "10030.0",
+      "change_percent": "+22.02%",
+      "pct": 22.02
+    },
+    {
+      "name": "에스엠벡셀",
+      "price": "1790.0",
+      "change_percent": "+16.31%",
+      "pct": 16.31
     },
     {
       "name": "신풍제약",
-      "price": "10280.0",
-      "change_percent": "+16.29%",
-      "pct": 16.29
+      "price": "10200.0",
+      "change_percent": "+15.38%",
+      "pct": 15.38
     },
     {
-      "name": "아센디오",
-      "price": "4255.0",
-      "change_percent": "+13.77%",
-      "pct": 13.77
-    },
-    {
-      "name": "신풍제약우",
-      "price": "14800.0",
-      "change_percent": "+10.04%",
-      "pct": 10.04
+      "name": "DI동일",
+      "price": "27950.0",
+      "change_percent": "+10.26%",
+      "pct": 10.26
     }
   ],
   "top_losers": [
     {
-      "name": "SK디앤디",
-      "price": "4200.0",
-      "change_percent": "-8.40%",
-      "pct": 8.4
+      "name": "미래에셋생명",
+      "price": "23700.0",
+      "change_percent": "-8.67%",
+      "pct": 8.67
     },
     {
-      "name": "미래에셋생명",
-      "price": "23800.0",
+      "name": "SK디앤디",
+      "price": "4205.0",
       "change_percent": "-8.29%",
       "pct": 8.29
     },
     {
+      "name": "까뮤이앤씨",
+      "price": "1492.0",
+      "change_percent": "-6.87%",
+      "pct": 6.87
+    },
+    {
       "name": "SK아이이테크놀로지",
-      "price": "16990.0",
-      "change_percent": "-6.75%",
-      "pct": 6.75
+      "price": "17040.0",
+      "change_percent": "-6.48%",
+      "pct": 6.48
     },
     {
-      "name": "에스원",
-      "price": "80300.0",
-      "change_percent": "-6.08%",
-      "pct": 6.08
-    },
-    {
-      "name": "애경케미칼",
-      "price": "10050.0",
-      "change_percent": "-5.55%",
-      "pct": 5.55
+      "name": "동국제강",
+      "price": "10200.0",
+      "change_percent": "-5.90%",
+      "pct": 5.9
     }
   ],
   "sector_performance": [
     {
       "name": "소프트웨어",
-      "change_value": "+3.35%",
-      "pct": 3.35
+      "change_value": "+3.54%",
+      "pct": 3.54
     },
     {
       "name": "화장품",
+      "change_value": "+3.47%",
+      "pct": 3.47
+    },
+    {
+      "name": "기타금융",
       "change_value": "+3.11%",
       "pct": 3.11
     },
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+2.81%",
-      "pct": 2.81
-    },
-    {
       "name": "전자장비와기기",
-      "change_value": "+2.57%",
-      "pct": 2.57
+      "change_value": "+1.98%",
+      "pct": 1.98
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "+2.24%",
-      "pct": 2.24
+      "name": "레저용장비와제품",
+      "change_value": "+1.97%",
+      "pct": 1.97
     }
   ],
   "sector_heatmap": [
     {
       "name": "소프트웨어",
-      "change_value": "+3.35%",
-      "pct": 3.35
+      "change_value": "+3.54%",
+      "pct": 3.54
     },
     {
       "name": "화장품",
+      "change_value": "+3.47%",
+      "pct": 3.47
+    },
+    {
+      "name": "기타금융",
       "change_value": "+3.11%",
       "pct": 3.11
     },
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+2.81%",
-      "pct": 2.81
-    },
-    {
       "name": "전자장비와기기",
-      "change_value": "+2.57%",
-      "pct": 2.57
+      "change_value": "+1.98%",
+      "pct": 1.98
     },
     {
-      "name": "양방향미디어와서비스",
-      "change_value": "+2.24%",
-      "pct": 2.24
+      "name": "레저용장비와제품",
+      "change_value": "+1.97%",
+      "pct": 1.97
     },
     {
-      "name": "기타금융",
-      "change_value": "+2.11%",
-      "pct": 2.11
-    },
-    {
-      "name": "상업서비스와공급품",
-      "change_value": "-1.84%",
-      "pct": -1.84
+      "name": "컴퓨터와주변기기",
+      "change_value": "+1.81%",
+      "pct": 1.81
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-2.22%",
-      "pct": -2.22
+      "change_value": "-2.29%",
+      "pct": -2.29
     },
     {
-      "name": "건설",
-      "change_value": "-2.32%",
-      "pct": -2.32
+      "name": "제약",
+      "change_value": "-2.31%",
+      "pct": -2.31
     },
     {
       "name": "다각화된소비자서비스",
@@ -3082,13 +3086,18 @@
     },
     {
       "name": "통신장비",
-      "change_value": "-2.52%",
-      "pct": -2.52
+      "change_value": "-2.89%",
+      "pct": -2.89
+    },
+    {
+      "name": "건설",
+      "change_value": "-2.92%",
+      "pct": -2.92
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-3.81%",
-      "pct": -3.81
+      "change_value": "-4.00%",
+      "pct": -4.0
     }
   ],
   "article_counts": {
