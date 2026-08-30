@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-31 08:01:19",
+  "updated_at": "2026-08-31 08:31:06",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -1.79,
-    "kosdaq_change": 0.09,
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6788.88,
     "kosdaq_value": 838.41
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "전월세 거래 중 월세 비중이 확대되고 빌라 지표는 감소함"
-    },
-    {
-      "category": "증권",
-      "text": "미국 연방준비제도 인사의 매파적 발언과 국채 금리 상승에 따른 긴축 우려가 커지면서 대형주 위주인 코스피 지수가 하락했다. 반면 코스닥 지수는 일부 건설주와 개별 종목의 수주 기대감 등이 반영되면서 소폭 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -91,7 +87,7 @@
       "rcept_dt": "20260831",
       "rcept_no": "20260828001963",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001963",
-      "ai_explanation": "채권단이 관리하던 기업의 경영 정상화로 관리 절차가 종료되었음을 의미합니다."
+      "ai_explanation": "채권단이 관리하던 기업의 경영 정상화를 인정하여 관리 절차를 종료한다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2910,157 +2906,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "SHD",
-      "price": "12350.0",
-      "change_percent": "+30.00%",
-      "pct": 30.0
-    },
-    {
-      "name": "금호전기",
-      "price": "10680.0",
-      "change_percent": "+29.93%",
-      "pct": 29.93
-    },
-    {
-      "name": "진양폴리",
-      "price": "2190.0",
-      "change_percent": "+14.48%",
-      "pct": 14.48
-    },
-    {
-      "name": "신풍제약",
-      "price": "10090.0",
-      "change_percent": "+14.14%",
-      "pct": 14.14
-    },
-    {
-      "name": "진양화학",
-      "price": "1410.0",
-      "change_percent": "+12.62%",
-      "pct": 12.62
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "미래에셋생명",
-      "price": "23200.0",
-      "change_percent": "-10.60%",
-      "pct": 10.6
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "8015.0",
-      "change_percent": "-8.92%",
-      "pct": 8.92
-    },
-    {
-      "name": "SK디앤디",
-      "price": "4180.0",
-      "change_percent": "-8.83%",
-      "pct": 8.83
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "9570.0",
-      "change_percent": "-8.73%",
-      "pct": 8.73
-    },
-    {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "9630.0",
-      "change_percent": "-8.63%",
-      "pct": 8.63
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+7.40%",
-      "pct": 7.4
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "기타금융",
-      "change_value": "+7.18%",
-      "pct": 7.18
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화장품",
-      "change_value": "+6.33%",
-      "pct": 6.33
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "포장재",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "레저용장비와제품",
-      "change_value": "+3.34%",
-      "pct": 3.34
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+7.40%",
-      "pct": 7.4
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "기타금융",
-      "change_value": "+7.18%",
-      "pct": 7.18
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화장품",
-      "change_value": "+6.33%",
-      "pct": 6.33
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "포장재",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "레저용장비와제품",
-      "change_value": "+3.34%",
-      "pct": 3.34
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "식품",
-      "change_value": "+3.30%",
-      "pct": 3.3
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "조선",
-      "change_value": "-1.11%",
-      "pct": -1.11
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "-1.77%",
-      "pct": -1.77
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "제약",
-      "change_value": "-1.94%",
-      "pct": -1.94
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "통신장비",
-      "change_value": "-2.93%",
-      "pct": -2.93
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-3.57%",
-      "pct": -3.57
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "-3.74%",
-      "pct": -3.74
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
