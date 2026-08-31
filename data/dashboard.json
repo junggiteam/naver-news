@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31 08:31:06",
+  "updated_at": "2026-08-31 09:02:35",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260831",
       "rcept_no": "20260828001963",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001963",
-      "ai_explanation": "채권단이 관리하던 기업의 경영 정상화를 인정하여 관리 절차를 종료한다는 뜻입니다."
+      "ai_explanation": "채권단이 진행하던 기업 경영 정상화 관리 절차가 종료되었음을 알리는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2906,95 +2906,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "금호전기",
+      "price": "11590.0",
+      "change_percent": "+8.52%",
+      "pct": 8.52
+    },
+    {
+      "name": "미래에셋 인버스 2X 코스닥150 선물 ETN",
+      "price": "1781.0",
+      "change_percent": "+5.38%",
+      "pct": 5.38
+    },
+    {
+      "name": "키움 인버스 2X 전력 TOP5 ETN",
+      "price": "4560.0",
+      "change_percent": "+4.59%",
+      "pct": 4.59
+    },
+    {
+      "name": "흥국화재우",
+      "price": "5540.0",
+      "change_percent": "+3.94%",
+      "pct": 3.94
+    },
+    {
+      "name": "JW중외제약우",
+      "price": "23950.0",
+      "change_percent": "+3.01%",
+      "pct": 3.01
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "삼성 레버리지 은 선물 ETN(H)",
+      "price": "37140.0",
+      "change_percent": "-8.41%",
+      "pct": 8.41
+    },
+    {
+      "name": "신한 레버리지 은 선물 ETN(H)",
+      "price": "22605.0",
+      "change_percent": "-7.73%",
+      "pct": 7.73
+    },
+    {
+      "name": "미래에셋 레버리지 반도체 ETN",
+      "price": "22310.0",
+      "change_percent": "-6.54%",
+      "pct": 6.54
+    },
+    {
+      "name": "KB 솔랙티브 레버리지 금 선물 ETN",
+      "price": "21430.0",
+      "change_percent": "-5.18%",
+      "pct": 5.18
+    },
+    {
+      "name": "세아베스틸지주",
+      "price": "40600.0",
+      "change_percent": "-4.69%",
+      "pct": 4.69
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.24%",
+      "pct": 0.24
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "디스플레이장비및부품",
+      "change_value": "+0.08%",
+      "pct": 0.08
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "은행",
+      "change_value": "+0.01%",
+      "pct": 0.01
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "판매업체",
+      "change_value": "+0.01%",
+      "pct": 0.01
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "화장품",
+      "change_value": "+0.01%",
+      "pct": 0.01
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.24%",
+      "pct": 0.24
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "디스플레이장비및부품",
+      "change_value": "+0.08%",
+      "pct": 0.08
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "은행",
+      "change_value": "+0.01%",
+      "pct": 0.01
+    },
+    {
+      "name": "판매업체",
+      "change_value": "+0.01%",
+      "pct": 0.01
+    },
+    {
+      "name": "화장품",
+      "change_value": "+0.01%",
+      "pct": 0.01
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+0.01%",
+      "pct": 0.01
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "부동산",
+      "change_value": "-0.12%",
+      "pct": -0.12
     },
     {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "제약",
+      "change_value": "-0.13%",
+      "pct": -0.13
     },
     {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "철강",
+      "change_value": "-0.21%",
+      "pct": -0.21
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "가정용품",
+      "change_value": "-0.27%",
+      "pct": -0.27
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "가구",
+      "change_value": "-0.34%",
+      "pct": -0.34
     },
     {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "-0.53%",
+      "pct": -0.53
     }
   ],
   "article_counts": {
