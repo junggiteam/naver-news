@@ -3093,9 +3093,15 @@
     svgEl.appendChild(poly);
   }
 
+  function fetchJson(url) {
+    return fetch(url).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status + " " + url);
+      return res.json();
+    });
+  }
+
   function loadSparklines() {
-    fetch(STOCK_HISTORY_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(STOCK_HISTORY_URL + "?t=" + Date.now())
       .then(function (history) {
         if (!Array.isArray(history) || !history.length) return;
         var recent = history.slice(-40);
@@ -3252,8 +3258,7 @@
   }
 
   function loadDashboard() {
-    fetch(DASHBOARD_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(DASHBOARD_URL + "?t=" + Date.now())
       .then(function (data) {
         renderHeroes(data.heroes);
         renderGaugeAndIndices(data.market_mood);
@@ -3587,8 +3592,7 @@
   }
 
   function loadRanking() {
-    fetch(RANKING_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(RANKING_URL + "?t=" + Date.now())
       .then(function (data) {
         var newsList = Array.isArray(data) ? data : data.news;
         var updatedAt = Array.isArray(data) ? "" : data.updated_at;
@@ -3791,8 +3795,7 @@
   }
 
   function loadStock() {
-    fetch(STOCK_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(STOCK_URL + "?t=" + Date.now())
       .then(function (data) {
         swUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
         document.getElementById("sw-index-label").textContent = "주요 경제 지표";
@@ -3868,8 +3871,7 @@
   }
 
   function loadEconomy() {
-    fetch(ECONOMY_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(ECONOMY_URL + "?t=" + Date.now())
       .then(function (data) {
         ewUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
         renderBriefing(
@@ -3887,8 +3889,7 @@
   }
 
   function loadRealestate() {
-    fetch(REALESTATE_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(REALESTATE_URL + "?t=" + Date.now())
       .then(function (data) {
         rwUpdatedEl.textContent = data.updated_at ? data.updated_at + " 기준 집계" : "";
         renderBriefing(
@@ -4080,8 +4081,7 @@
     if (pwCalMaLoaded) { callback(); return; }
     if (pwCalMaLoading) return; // 중복 fetch 방지(필터를 빠르게 여러 번 눌러도 1회만 요청)
     pwCalMaLoading = true;
-    fetch(DART_MA_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(DART_MA_URL + "?t=" + Date.now())
       .then(function (data) {
         pwCalMaEvents = pwCalTransformMaSignals(data);
         pwCalMaLoaded = true;
@@ -4594,8 +4594,7 @@
   }
 
   function loadPolicy() {
-    fetch(DASHBOARD_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(DASHBOARD_URL + "?t=" + Date.now())
       .then(function (data) {
         document.getElementById("pw-updated").textContent =
           data.updated_at ? data.updated_at + " 기준" : "";
@@ -4735,8 +4734,7 @@
   }
 
   function loadCeo() {
-    fetch(CEO_REPORT_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(CEO_REPORT_URL + "?t=" + Date.now())
       .then(function (data) {
         var list = Array.isArray(data) ? data : [];
         var latest = list.reduce(function (a, b) {
@@ -4840,8 +4838,7 @@
     if (crDartLoaded) { callback(); return; }
     if (crDartLoading) return;
     crDartLoading = true;
-    fetch(DART_MA_ARTICLE_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(DART_MA_ARTICLE_URL + "?t=" + Date.now())
       .then(function (data) {
         renderCrDartArticle(data);
         crDartLoaded = true;
@@ -5124,8 +5121,7 @@
   }
 
   function loadBriefing() {
-    fetch(DAILY_REPORTS_URL + "?t=" + Date.now())
-      .then(function (res) { return res.json(); })
+    fetchJson(DAILY_REPORTS_URL + "?t=" + Date.now())
       .then(function (data) {
         var edition = pickLatestBriefingEdition(data && data.reports);
         setCrUpdatedText("briefing", edition ? edition.label + " 기준 (" + edition.data.generated_at + " 생성) · 오전판 12:00·저녁판 18:00 업데이트" : "");
