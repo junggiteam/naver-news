@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-31 11:01:07",
+  "updated_at": "2026-08-31 11:31:01",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -2.16,
-    "kosdaq_change": -3.29,
-    "kospi_value": 6641.95,
-    "kosdaq_value": 810.83
+    "kospi_change": -2.05,
+    "kosdaq_change": -3.21,
+    "kospi_value": 6649.68,
+    "kosdaq_value": 811.46
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 연방준비제도 의장의 매파적 발언으로 인한 금리 인상 우려가 시장 전반의 투자 심리를 위축시키며 지수 하락을 이끌었다. 삼성전자와 SK하이닉스 등 시가총액 상위 반도체 종목이 동반 하락하며 코스피와 코스닥 지수 모두 약세를 보였다."
+      "text": "미국 연방준비제도 의장의 매파적 발언으로 인해 긴축 우려가 커지며 투자 심리가 위축되었다. 이로 인해 반도체주를 중심으로 매도세가 이어지며 코스피와 코스닥 지수가 큰 폭으로 하락했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "셀트리온",
+      "corp_code": "00413046",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260831",
+      "rcept_no": "20260831000538",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000538",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 매수하기로 결정함."
+    },
+    {
+      "corp_name": "세진티에스",
+      "corp_code": "00406727",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260831",
+      "rcept_no": "20260831000462",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000462",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 매수하기로 결정함."
+    },
+    {
       "corp_name": "동진쎄미켐",
       "corp_code": "00118804",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20260831",
       "rcept_no": "20260831000339",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000339",
-      "ai_explanation": "회사가 맺었던 자기주식 취득 신탁 계약을 중도에 해지하기로 결정함."
+      "ai_explanation": "자사주 취득을 위해 체결했던 신탁 계약을 종료하기로 결정함."
     },
     {
       "corp_name": "비에스산업",
@@ -100,7 +118,7 @@
       "rcept_dt": "20260831",
       "rcept_no": "20260831000385",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000385",
-      "ai_explanation": "회사가 계열사나 타인의 채무를 대신 갚아주겠다고 보증을 서는 것임."
+      "ai_explanation": "회사가 타인(주로 계열사 등)의 채무에 대해 보증을 서기로 결정함."
     },
     {
       "corp_name": "SK디앤디",
@@ -109,7 +127,7 @@
       "rcept_dt": "20260831",
       "rcept_no": "20260831000079",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000079",
-      "ai_explanation": "기존에 발표했던 유상증자 내용 중 일부를 수정하여 다시 공시함."
+      "ai_explanation": "이전 공시했던 유상증자 내용 중 일부 항목을 수정하여 다시 공시함."
     },
     {
       "corp_name": "윌비스",
@@ -118,7 +136,7 @@
       "rcept_dt": "20260831",
       "rcept_no": "20260828001963",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001963",
-      "ai_explanation": "채권단이 관리하던 기업 개선 절차가 종료되어 자율 경영 상태로 복귀함."
+      "ai_explanation": "채권은행 등으로부터 받던 경영 관리 절차가 종료되었음을 알림."
     }
   ],
   "macro_indicators": [
@@ -2939,155 +2957,155 @@
   },
   "top_gainers": [
     {
+      "name": "SHD",
+      "price": "15280.0",
+      "change_percent": "+23.72%",
+      "pct": 23.72
+    },
+    {
       "name": "엠앤씨솔루션",
-      "price": "18810.0",
-      "change_percent": "+24.49%",
-      "pct": 24.49
+      "price": "18590.0",
+      "change_percent": "+23.03%",
+      "pct": 23.03
     },
     {
       "name": "써니전자",
-      "price": "2415.0",
-      "change_percent": "+24.16%",
-      "pct": 24.16
-    },
-    {
-      "name": "SHD",
-      "price": "15110.0",
-      "change_percent": "+22.35%",
-      "pct": 22.35
+      "price": "2300.0",
+      "change_percent": "+18.25%",
+      "pct": 18.25
     },
     {
       "name": "금호전기",
-      "price": "12380.0",
-      "change_percent": "+15.92%",
-      "pct": 15.92
+      "price": "12600.0",
+      "change_percent": "+17.98%",
+      "pct": 17.98
     },
     {
-      "name": "주연테크",
-      "price": "1056.0",
-      "change_percent": "+13.79%",
-      "pct": 13.79
+      "name": "키다리스튜디오",
+      "price": "7000.0",
+      "change_percent": "+13.27%",
+      "pct": 13.27
     }
   ],
   "top_losers": [
     {
       "name": "에넥스",
-      "price": "1623.0",
-      "change_percent": "-24.16%",
-      "pct": 24.16
+      "price": "1601.0",
+      "change_percent": "-25.19%",
+      "pct": 25.19
     },
     {
       "name": "우성머티리얼스",
-      "price": "2250.0",
-      "change_percent": "-19.35%",
-      "pct": 19.35
+      "price": "2195.0",
+      "change_percent": "-21.33%",
+      "pct": 21.33
     },
     {
       "name": "아센디오",
-      "price": "3115.0",
-      "change_percent": "-15.92%",
-      "pct": 15.92
-    },
-    {
-      "name": "한올바이오파마",
-      "price": "57200.0",
-      "change_percent": "-11.46%",
-      "pct": 11.46
+      "price": "3110.0",
+      "change_percent": "-16.06%",
+      "pct": 16.06
     },
     {
       "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "17600.0",
-      "change_percent": "-10.95%",
-      "pct": 10.95
+      "price": "17590.0",
+      "change_percent": "-11.00%",
+      "pct": 11.0
+    },
+    {
+      "name": "한올바이오파마",
+      "price": "57600.0",
+      "change_percent": "-10.84%",
+      "pct": 10.84
     }
   ],
   "sector_performance": [
     {
+      "name": "전자제품",
+      "change_value": "+0.87%",
+      "pct": 0.87
+    },
+    {
       "name": "건축제품",
-      "change_value": "+0.77%",
-      "pct": 0.77
+      "change_value": "+0.81%",
+      "pct": 0.81
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+0.35%",
-      "pct": 0.35
-    },
-    {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.34%",
-      "pct": 0.34
-    },
-    {
-      "name": "디스플레이패널",
-      "change_value": "+0.31%",
-      "pct": 0.31
+      "name": "백화점과일반상점",
+      "change_value": "+0.68%",
+      "pct": 0.68
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+0.27%",
-      "pct": 0.27
+      "change_value": "+0.67%",
+      "pct": 0.67
+    },
+    {
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.30%",
+      "pct": 0.3
     }
   ],
   "sector_heatmap": [
     {
+      "name": "전자제품",
+      "change_value": "+0.87%",
+      "pct": 0.87
+    },
+    {
       "name": "건축제품",
-      "change_value": "+0.77%",
-      "pct": 0.77
+      "change_value": "+0.81%",
+      "pct": 0.81
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+0.35%",
-      "pct": 0.35
-    },
-    {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.34%",
-      "pct": 0.34
-    },
-    {
-      "name": "디스플레이패널",
-      "change_value": "+0.31%",
-      "pct": 0.31
+      "name": "백화점과일반상점",
+      "change_value": "+0.68%",
+      "pct": 0.68
     },
     {
       "name": "복합유틸리티",
+      "change_value": "+0.67%",
+      "pct": 0.67
+    },
+    {
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.30%",
+      "pct": 0.3
+    },
+    {
+      "name": "가정용품",
       "change_value": "+0.27%",
       "pct": 0.27
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+0.24%",
-      "pct": 0.24
+      "name": "건강관리기술",
+      "change_value": "-4.75%",
+      "pct": -4.75
     },
     {
       "name": "건설",
-      "change_value": "-5.03%",
-      "pct": -5.03
-    },
-    {
-      "name": "기계",
-      "change_value": "-5.05%",
-      "pct": -5.05
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-5.57%",
-      "pct": -5.57
+      "change_value": "-4.99%",
+      "pct": -4.99
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-5.70%",
-      "pct": -5.7
+      "change_value": "-5.33%",
+      "pct": -5.33
+    },
+    {
+      "name": "생명과학도구및서비스",
+      "change_value": "-5.81%",
+      "pct": -5.81
     },
     {
       "name": "생물공학",
-      "change_value": "-6.58%",
-      "pct": -6.58
+      "change_value": "-6.04%",
+      "pct": -6.04
     },
     {
       "name": "비철금속",
-      "change_value": "-6.96%",
-      "pct": -6.96
+      "change_value": "-6.94%",
+      "pct": -6.94
     }
   ],
   "article_counts": {
