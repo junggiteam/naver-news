@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-01 10:01:11",
+  "updated_at": "2026-09-01 10:31:06",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.12,
-    "kosdaq_change": -1.19,
-    "kospi_value": 6828.4,
-    "kosdaq_value": 824.4
+    "kospi_change": -0.3,
+    "kosdaq_change": -1.54,
+    "kospi_value": 6799.37,
+    "kosdaq_value": 821.42
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "재건축 사업성 악화와 공공 임대주택 공급 확대 등 정책 변화가 이어짐"
+    },
+    {
+      "category": "증권",
+      "text": "삼성전자와 SK하이닉스 등 시가총액 상위 종목이 동반 하락하며 지수 하락을 이끌었다. 반면 중동 정세 불안으로 국제 유가가 급등하면서 SK이노베이션과 S-Oil 등 관련 종목은 강세를 보였다."
     }
   ],
   "daily_term": {
@@ -80,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "탑런토탈솔루션",
+      "corp_code": "00814582",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260901",
+      "rcept_no": "20260901000016",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000016",
+      "ai_explanation": "회사가 주가 안정이나 주주 가치 제고를 위해 신탁을 통해 자사주를 매입하기로 결정한 것입니다."
+    },
+    {
       "corp_name": "대신밸런스제17호기업인수목적",
       "corp_code": "01792825",
       "report_nm": "주요사항보고서(해산사유발생)",
       "rcept_dt": "20260901",
       "rcept_no": "20260901000018",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000018",
-      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC)이 상장 폐지 및 자산 반환을 위해 해산하는 절차입니다."
+      "ai_explanation": "기업인수목적회사(SPAC)가 합병 대상을 찾지 못해 존속 기한 만료 등으로 사업을 종료하는 것입니다."
     },
     {
       "corp_name": "SNT모티브",
@@ -95,7 +108,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260901000005",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260901000005",
-      "ai_explanation": "기업 간의 경영 효율화나 시너지 창출을 위해 두 회사를 하나로 합치는 결정입니다."
+      "ai_explanation": "기업의 규모 확대나 경영 효율화를 위해 다른 기업과 합병하거나 흡수하기로 결정한 것입니다."
     },
     {
       "corp_name": "성호전자",
@@ -104,7 +117,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260831001545",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001545",
-      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달하는 결정입니다."
+      "ai_explanation": "자금 조달을 위해 향후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하기로 결정한 것입니다."
     },
     {
       "corp_name": "인스피언",
@@ -113,7 +126,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260831001544",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001544",
-      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 중도에 해지하는 결정입니다."
+      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료하거나 중도 해지하기로 결정한 것입니다."
     },
     {
       "corp_name": "시선AI",
@@ -122,7 +135,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260831001543",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001543",
-      "ai_explanation": "발행한 전환사채의 만기가 되기 전, 회사가 미리 자금을 들여 이를 되사오는 결정입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전 미리 되사들여 소각하거나 보유하기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3004,154 +3017,154 @@
   "top_gainers": [
     {
       "name": "SK디앤디",
-      "price": "3560.0",
-      "change_percent": "+26.69%",
-      "pct": 26.69
+      "price": "3565.0",
+      "change_percent": "+26.87%",
+      "pct": 26.87
     },
     {
       "name": "현대약품",
-      "price": "7420.0",
-      "change_percent": "+16.30%",
-      "pct": 16.3
+      "price": "7740.0",
+      "change_percent": "+21.32%",
+      "pct": 21.32
     },
     {
       "name": "비에이치",
-      "price": "21000.0",
-      "change_percent": "+15.19%",
-      "pct": 15.19
+      "price": "21100.0",
+      "change_percent": "+15.74%",
+      "pct": 15.74
     },
     {
       "name": "우진아이엔에스",
-      "price": "4735.0",
-      "change_percent": "+13.28%",
-      "pct": 13.28
+      "price": "4740.0",
+      "change_percent": "+13.40%",
+      "pct": 13.4
     },
     {
-      "name": "롯데에너지머티리얼즈",
-      "price": "42500.0",
-      "change_percent": "+12.43%",
-      "pct": 12.43
+      "name": "디아이",
+      "price": "26550.0",
+      "change_percent": "+9.71%",
+      "pct": 9.71
     }
   ],
   "top_losers": [
     {
-      "name": "한화",
-      "price": "120400.0",
-      "change_percent": "-11.14%",
-      "pct": 11.14
-    },
-    {
       "name": "SK오션플랜트",
-      "price": "12320.0",
-      "change_percent": "-10.72%",
-      "pct": 10.72
+      "price": "12380.0",
+      "change_percent": "-10.29%",
+      "pct": 10.29
     },
     {
-      "name": "태원물산",
-      "price": "2110.0",
-      "change_percent": "-8.26%",
-      "pct": 8.26
+      "name": "한화",
+      "price": "121600.0",
+      "change_percent": "-10.26%",
+      "pct": 10.26
     },
     {
       "name": "혜인",
-      "price": "11400.0",
-      "change_percent": "-7.99%",
-      "pct": 7.99
+      "price": "11340.0",
+      "change_percent": "-8.47%",
+      "pct": 8.47
     },
     {
-      "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "117095.0",
-      "change_percent": "-7.89%",
-      "pct": 7.89
+      "name": "주연테크",
+      "price": "1033.0",
+      "change_percent": "-7.35%",
+      "pct": 7.35
+    },
+    {
+      "name": "LG이노텍",
+      "price": "595000.0",
+      "change_percent": "-7.32%",
+      "pct": 7.32
     }
   ],
   "sector_performance": [
     {
       "name": "석유와가스",
-      "change_value": "+4.70%",
-      "pct": 4.7
+      "change_value": "+4.36%",
+      "pct": 4.36
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+2.63%",
+      "pct": 2.63
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "+2.48%",
-      "pct": 2.48
+      "change_value": "+2.27%",
+      "pct": 2.27
     },
     {
-      "name": "전기제품",
-      "change_value": "+2.03%",
-      "pct": 2.03
-    },
-    {
-      "name": "철강",
+      "name": "디스플레이패널",
       "change_value": "+1.79%",
       "pct": 1.79
     },
     {
-      "name": "디스플레이패널",
-      "change_value": "+1.59%",
-      "pct": 1.59
+      "name": "철강",
+      "change_value": "+1.31%",
+      "pct": 1.31
     }
   ],
   "sector_heatmap": [
     {
       "name": "석유와가스",
-      "change_value": "+4.70%",
-      "pct": 4.7
+      "change_value": "+4.36%",
+      "pct": 4.36
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+2.63%",
+      "pct": 2.63
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "+2.48%",
-      "pct": 2.48
+      "change_value": "+2.27%",
+      "pct": 2.27
     },
     {
-      "name": "전기제품",
-      "change_value": "+2.03%",
-      "pct": 2.03
-    },
-    {
-      "name": "철강",
+      "name": "디스플레이패널",
       "change_value": "+1.79%",
       "pct": 1.79
     },
     {
-      "name": "디스플레이패널",
-      "change_value": "+1.59%",
-      "pct": 1.59
+      "name": "철강",
+      "change_value": "+1.31%",
+      "pct": 1.31
     },
     {
-      "name": "손해보험",
-      "change_value": "+1.49%",
-      "pct": 1.49
+      "name": "게임엔터테인먼트",
+      "change_value": "+0.92%",
+      "pct": 0.92
+    },
+    {
+      "name": "통신장비",
+      "change_value": "-2.45%",
+      "pct": -2.45
     },
     {
       "name": "전기장비",
-      "change_value": "-2.49%",
-      "pct": -2.49
-    },
-    {
-      "name": "건설",
-      "change_value": "-2.62%",
-      "pct": -2.62
-    },
-    {
-      "name": "화장품",
-      "change_value": "-2.85%",
-      "pct": -2.85
+      "change_value": "-2.54%",
+      "pct": -2.54
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-2.90%",
-      "pct": -2.9
+      "change_value": "-2.60%",
+      "pct": -2.6
+    },
+    {
+      "name": "건설",
+      "change_value": "-3.10%",
+      "pct": -3.1
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-3.29%",
-      "pct": -3.29
+      "change_value": "-3.16%",
+      "pct": -3.16
     },
     {
       "name": "전자제품",
-      "change_value": "-4.62%",
-      "pct": -4.62
+      "change_value": "-4.84%",
+      "pct": -4.84
     }
   ],
   "article_counts": {
