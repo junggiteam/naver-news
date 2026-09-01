@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01 08:31:04",
+  "updated_at": "2026-09-01 09:01:20",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260831001545",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001545",
-      "ai_explanation": "회사가 채권을 발행하고 추후 주식으로 전환할 수 있는 권리를 부여하여 자금을 조달하는 결정입니다."
+      "ai_explanation": "회사가 채권자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달한다는 의미입니다."
     },
     {
       "corp_name": "인스피언",
@@ -95,7 +95,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260831001544",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001544",
-      "ai_explanation": "회사가 자사주 매입을 위해 체결했던 신탁 계약을 중도에 종료하기로 결정한 것입니다."
+      "ai_explanation": "회사가 자사주 매입을 위해 체결했던 신탁 계약을 종료하고 남은 자사주를 반환받는다는 의미입니다."
     },
     {
       "corp_name": "시선AI",
@@ -104,7 +104,7 @@
       "rcept_dt": "20260901",
       "rcept_no": "20260831001543",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001543",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사들여 소각하거나 보유하겠다는 결정입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 사들여 소각하거나 보유함으로써 부채를 줄인다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2983,95 +2983,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "디아이",
+      "price": "27100.0",
+      "change_percent": "+11.98%",
+      "pct": 11.98
+    },
+    {
+      "name": "SHD",
+      "price": "13980.0",
+      "change_percent": "+5.75%",
+      "pct": 5.75
+    },
+    {
+      "name": "금호전기",
+      "price": "13030.0",
+      "change_percent": "+4.41%",
+      "pct": 4.41
+    },
+    {
+      "name": "유성기업",
+      "price": "1830.0",
+      "change_percent": "+3.39%",
+      "pct": 3.39
+    },
+    {
+      "name": "유유제약1우",
+      "price": "3790.0",
+      "change_percent": "+2.99%",
+      "pct": 2.99
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "포스코퓨처엠",
+      "price": "193800.0",
+      "change_percent": "-3.34%",
+      "pct": 3.34
+    },
+    {
+      "name": "아세아",
+      "price": "206000.0",
+      "change_percent": "-3.29%",
+      "pct": 3.29
+    },
+    {
+      "name": "한화",
+      "price": "131100.0",
+      "change_percent": "-3.25%",
+      "pct": 3.25
+    },
+    {
+      "name": "비비안",
+      "price": "4655.0",
+      "change_percent": "-3.12%",
+      "pct": 3.12
+    },
+    {
+      "name": "SUN&L",
+      "price": "1620.0",
+      "change_percent": "-2.99%",
+      "pct": 2.99
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+1.64%",
+      "pct": 1.64
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+1.64%",
+      "pct": 1.64
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "건강관리장비와용품",
+      "change_value": "+1.45%",
+      "pct": 1.45
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "해운사",
+      "change_value": "+1.09%",
+      "pct": 1.09
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "우주항공과국방",
+      "change_value": "+0.43%",
+      "pct": 0.43
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+1.64%",
+      "pct": 1.64
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+1.64%",
+      "pct": 1.64
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+1.45%",
+      "pct": 1.45
+    },
+    {
+      "name": "해운사",
+      "change_value": "+1.09%",
+      "pct": 1.09
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.43%",
+      "pct": 0.43
+    },
+    {
+      "name": "건축자재",
+      "change_value": "+0.40%",
+      "pct": 0.4
+    },
+    {
+      "name": "전문소매",
+      "change_value": "-1.26%",
+      "pct": -1.26
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "-1.35%",
+      "pct": -1.35
+    },
+    {
+      "name": "카드",
+      "change_value": "-1.49%",
+      "pct": -1.49
+    },
+    {
+      "name": "문구류",
+      "change_value": "-2.01%",
+      "pct": -2.01
+    },
+    {
+      "name": "생명보험",
+      "change_value": "-2.35%",
+      "pct": -2.35
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-3.09%",
+      "pct": -3.09
     }
   ],
   "article_counts": {
