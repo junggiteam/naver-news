@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-02 08:01:17",
+  "updated_at": "2026-09-02 08:25:56",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.23,
-    "kosdaq_change": -1.56,
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6835.8,
     "kosdaq_value": 821.25
   },
@@ -52,10 +52,6 @@
     {
       "category": "부동산",
       "text": "강남권 급매물 출현과 재건축 단지 속도 조절 및 기대감 공존"
-    },
-    {
-      "category": "증권",
-      "text": "글로벌 채권 금리 급등과 중동 지역의 지정학적 리스크 심화로 인해 시장의 투자 심리가 위축된 영향을 받았다. 코스피는 기업들의 자사주 매입이 지수 하락을 방어하며 소폭 상승했으나, 코스닥은 대외적인 불안 요인으로 인해 외국인과 기관의 매도세가 이어지며 하락 마감했다."
     }
   ],
   "daily_term": null,
@@ -2965,157 +2961,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "온타이드",
-      "price": "1040.0",
-      "change_percent": "+30.00%",
-      "pct": 30.0
-    },
-    {
-      "name": "인디에프",
-      "price": "4010.0",
-      "change_percent": "+29.98%",
-      "pct": 29.98
-    },
-    {
-      "name": "현대약품",
-      "price": "8290.0",
-      "change_percent": "+29.94%",
-      "pct": 29.94
-    },
-    {
-      "name": "SK디앤디",
-      "price": "3650.0",
-      "change_percent": "+29.89%",
-      "pct": 29.89
-    },
-    {
-      "name": "비에이치",
-      "price": "22000.0",
-      "change_percent": "+20.68%",
-      "pct": 20.68
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "혜인",
-      "price": "10770.0",
-      "change_percent": "-13.08%",
-      "pct": 13.08
-    },
-    {
-      "name": "엘앤에프",
-      "price": "131200.0",
-      "change_percent": "-10.57%",
-      "pct": 10.57
-    },
-    {
-      "name": "SK오션플랜트",
-      "price": "12450.0",
-      "change_percent": "-9.78%",
-      "pct": 9.78
-    },
-    {
-      "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "116440.0",
-      "change_percent": "-8.40%",
-      "pct": 8.4
-    },
-    {
-      "name": "GS건설",
-      "price": "33300.0",
-      "change_percent": "-8.26%",
-      "pct": 8.26
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "도로와철도운송",
-      "change_value": "+5.72%",
-      "pct": 5.72
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "석유와가스",
-      "change_value": "+5.16%",
-      "pct": 5.16
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "+3.20%",
-      "pct": 3.2
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "+3.09%",
-      "pct": 3.09
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "+2.03%",
-      "pct": 2.03
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "도로와철도운송",
-      "change_value": "+5.72%",
-      "pct": 5.72
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "석유와가스",
-      "change_value": "+5.16%",
-      "pct": 5.16
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "+3.20%",
-      "pct": 3.2
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+3.09%",
-      "pct": 3.09
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "무역회사와판매업체",
-      "change_value": "+2.03%",
-      "pct": 2.03
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+1.61%",
-      "pct": 1.61
-    },
-    {
-      "name": "전기제품",
-      "change_value": "-2.56%",
-      "pct": -2.56
-    },
-    {
-      "name": "건설",
-      "change_value": "-3.09%",
-      "pct": -3.09
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-3.45%",
-      "pct": -3.45
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-3.66%",
-      "pct": -3.66
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화장품",
-      "change_value": "-3.73%",
-      "pct": -3.73
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전자제품",
-      "change_value": "-4.39%",
-      "pct": -4.39
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
