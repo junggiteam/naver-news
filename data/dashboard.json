@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-02 11:16:11",
+  "updated_at": "2026-09-02 11:46:34",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -3.0,
-    "kosdaq_change": -0.68,
-    "kospi_value": 6630.64,
-    "kosdaq_value": 815.65
+    "kospi_change": -3.02,
+    "kosdaq_change": -0.92,
+    "kospi_value": 6629.13,
+    "kosdaq_value": 813.71
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "국내 증시는 유가 상승과 금리 상승이 겹치면서 삼성전자와 SK하이닉스 등 대형주를 중심으로 하락세를 나타냈다. 개별 기업의 호재에 따라 일부 종목은 상승했으나 코스피 지수는 전일 대비 3.00% 하락했고 코스닥 지수는 0.68% 내린 상태로 장을 마감했다."
+      "text": "중동 지역의 지정학적 긴장 고조로 국제 유가가 상승하고 미국 국채 금리가 급등하면서 투자 심리가 위축되어 증시가 하락했다. 이러한 대외적인 불안 요인으로 인해 삼성전자와 SK하이닉스 등 주요 대형주를 중심으로 매도세가 나타나며 지수 낙폭이 확대되었다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "케이엔제이",
+      "corp_code": "00769158",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20260902",
+      "rcept_no": "20260902000070",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000070",
+      "ai_explanation": "회사가 신탁 계약을 통해 자사 주식을 매입하여 주가를 방어하거나 주주 가치를 높이려는 결정입니다."
+    },
+    {
       "corp_name": "미트박스",
       "corp_code": "01374717",
       "report_nm": "주요사항보고서(무상증자결정)",
       "rcept_dt": "20260902",
       "rcept_no": "20260902000056",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000056",
-      "ai_explanation": "주주들에게 대가 없이 신주를 발행하여 나누어 주는 행위입니다."
+      "ai_explanation": "회사가 보유한 잉여금을 자본으로 전입해 주주들에게 주식을 무상으로 나누어 주는 결정입니다."
     },
     {
       "corp_name": "노블엠앤비",
@@ -99,7 +108,7 @@
       "rcept_dt": "20260902",
       "rcept_no": "20260902000060",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000060",
-      "ai_explanation": "누적된 결손금을 보전하거나 자본 구조를 개선하기 위해 주식 수를 줄이는 행위입니다."
+      "ai_explanation": "누적 결손금 보전이나 재무구조 개선을 위해 기존 주식 수를 줄여 자본금을 감소시키는 결정입니다."
     },
     {
       "corp_name": "에스트래픽",
@@ -108,7 +117,7 @@
       "rcept_dt": "20260902",
       "rcept_no": "20260902000044",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000044",
-      "ai_explanation": "주가 안정이나 주주 가치 제고를 위해 신탁 계약을 통해 자사주를 매입하는 행위입니다."
+      "ai_explanation": "회사가 신탁 계약을 통해 자사 주식을 매입하여 주가를 방어하거나 주주 가치를 높이려는 결정입니다."
     },
     {
       "corp_name": "신한지주",
@@ -117,7 +126,7 @@
       "rcept_dt": "20260902",
       "rcept_no": "20260902000010",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000010",
-      "ai_explanation": "일정 조건 발생 시 상각되거나 주식으로 전환되는 채권 형태의 자본을 발행하는 행위입니다."
+      "ai_explanation": "특정 조건 충족 시 자본으로 전환되거나 상각될 수 있는 채권 형태의 자본증권을 발행하는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -3018,155 +3027,155 @@
   },
   "top_gainers": [
     {
-      "name": "디아이",
-      "price": "31250.0",
-      "change_percent": "+17.26%",
-      "pct": 17.26
+      "name": "SK디앤디",
+      "price": "4410.0",
+      "change_percent": "+20.82%",
+      "pct": 20.82
     },
     {
       "name": "온타이드",
-      "price": "1210.0",
-      "change_percent": "+16.35%",
-      "pct": 16.35
+      "price": "1222.0",
+      "change_percent": "+17.50%",
+      "pct": 17.5
     },
     {
-      "name": "SK디앤디",
-      "price": "4230.0",
-      "change_percent": "+15.89%",
-      "pct": 15.89
+      "name": "디아이",
+      "price": "31050.0",
+      "change_percent": "+16.51%",
+      "pct": 16.51
     },
     {
       "name": "일동제약",
-      "price": "16800.0",
-      "change_percent": "+15.86%",
-      "pct": 15.86
+      "price": "16730.0",
+      "change_percent": "+15.38%",
+      "pct": 15.38
     },
     {
-      "name": "미래에셋 레버리지 WTI원유 선물 ETN",
-      "price": "24605.0",
-      "change_percent": "+12.66%",
-      "pct": 12.66
+      "name": "다스코",
+      "price": "4085.0",
+      "change_percent": "+14.59%",
+      "pct": 14.59
     }
   ],
   "top_losers": [
     {
       "name": "에넥스",
-      "price": "1164.0",
-      "change_percent": "-22.40%",
-      "pct": 22.4
+      "price": "1158.0",
+      "change_percent": "-22.80%",
+      "pct": 22.8
     },
     {
       "name": "써니전자",
-      "price": "1882.0",
-      "change_percent": "-20.76%",
-      "pct": 20.76
+      "price": "1904.0",
+      "change_percent": "-19.83%",
+      "pct": 19.83
     },
     {
       "name": "두산퓨얼셀",
-      "price": "38400.0",
-      "change_percent": "-13.42%",
-      "pct": 13.42
-    },
-    {
-      "name": "KB S&P 인버스 2X WTI원유 선물 ETN B",
-      "price": "2140.0",
-      "change_percent": "-10.83%",
-      "pct": 10.83
+      "price": "39200.0",
+      "change_percent": "-11.61%",
+      "pct": 11.61
     },
     {
       "name": "미래에셋 인버스 2X WTI원유 선물 ETN",
-      "price": "15020.0",
-      "change_percent": "-10.62%",
-      "pct": 10.62
+      "price": "15050.0",
+      "change_percent": "-10.44%",
+      "pct": 10.44
+    },
+    {
+      "name": "KB S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "2155.0",
+      "change_percent": "-10.21%",
+      "pct": 10.21
     }
   ],
   "sector_performance": [
     {
       "name": "항공사",
-      "change_value": "+2.84%",
-      "pct": 2.84
+      "change_value": "+2.70%",
+      "pct": 2.7
     },
     {
       "name": "은행",
-      "change_value": "+1.08%",
-      "pct": 1.08
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.98%",
-      "pct": 0.98
-    },
-    {
-      "name": "기타금융",
-      "change_value": "+0.50%",
-      "pct": 0.5
+      "change_value": "+1.54%",
+      "pct": 1.54
     },
     {
       "name": "문구류",
-      "change_value": "+0.37%",
-      "pct": 0.37
+      "change_value": "+0.51%",
+      "pct": 0.51
+    },
+    {
+      "name": "가정용기기와용품",
+      "change_value": "+0.17%",
+      "pct": 0.17
+    },
+    {
+      "name": "기타금융",
+      "change_value": "+0.14%",
+      "pct": 0.14
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공사",
-      "change_value": "+2.84%",
-      "pct": 2.84
+      "change_value": "+2.70%",
+      "pct": 2.7
     },
     {
       "name": "은행",
-      "change_value": "+1.08%",
-      "pct": 1.08
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.98%",
-      "pct": 0.98
-    },
-    {
-      "name": "기타금융",
-      "change_value": "+0.50%",
-      "pct": 0.5
+      "change_value": "+1.54%",
+      "pct": 1.54
     },
     {
       "name": "문구류",
-      "change_value": "+0.37%",
-      "pct": 0.37
+      "change_value": "+0.51%",
+      "pct": 0.51
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "-0.17%",
-      "pct": -0.17
+      "change_value": "+0.17%",
+      "pct": 0.17
+    },
+    {
+      "name": "기타금융",
+      "change_value": "+0.14%",
+      "pct": 0.14
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.05%",
+      "pct": 0.05
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-4.33%",
-      "pct": -4.33
+      "change_value": "-4.38%",
+      "pct": -4.38
     },
     {
-      "name": "생명보험",
+      "name": "조선",
+      "change_value": "-4.40%",
+      "pct": -4.4
+    },
+    {
+      "name": "비철금속",
       "change_value": "-4.42%",
       "pct": -4.42
     },
     {
-      "name": "조선",
-      "change_value": "-4.48%",
-      "pct": -4.48
-    },
-    {
       "name": "자동차부품",
-      "change_value": "-4.51%",
-      "pct": -4.51
+      "change_value": "-4.50%",
+      "pct": -4.5
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "-4.92%",
-      "pct": -4.92
+      "change_value": "-4.96%",
+      "pct": -4.96
     },
     {
       "name": "자동차",
-      "change_value": "-5.14%",
-      "pct": -5.14
+      "change_value": "-5.49%",
+      "pct": -5.49
     }
   ],
   "article_counts": {
