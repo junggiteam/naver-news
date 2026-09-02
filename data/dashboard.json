@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02 08:45:50",
+  "updated_at": "2026-09-02 09:02:26",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2961,95 +2961,151 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "조광피혁",
+      "price": "65300.0",
+      "change_percent": "+1.24%",
+      "pct": 1.24
+    },
+    {
+      "name": "KPX케미칼",
+      "price": "55600.0",
+      "change_percent": "+0.91%",
+      "pct": 0.91
+    },
+    {
+      "name": "한투 인버스2X베트남VN30 선물 ETN(H)",
+      "price": "5080.0",
+      "change_percent": "+0.89%",
+      "pct": 0.89
+    },
+    {
+      "name": "RISE 미국고배당다우존스TOP10",
+      "price": "11195.0",
+      "change_percent": "+0.72%",
+      "pct": 0.72
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "7990.0",
+      "change_percent": "-6.66%",
+      "pct": 6.66
+    },
+    {
+      "name": "명신산업",
+      "price": "8060.0",
+      "change_percent": "-5.18%",
+      "pct": 5.18
+    },
+    {
+      "name": "KODEX 2차전지산업레버리지",
+      "price": "1071.0",
+      "change_percent": "-4.63%",
+      "pct": 4.63
+    },
+    {
+      "name": "HANARO CAPEX설비투자iSelect",
+      "price": "40565.0",
+      "change_percent": "-3.50%",
+      "pct": 3.5
+    },
+    {
+      "name": "TIGER 삼성그룹",
+      "price": "36270.0",
+      "change_percent": "-3.28%",
+      "pct": 3.28
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "레저용장비와제품",
+      "change_value": "+0.32%",
+      "pct": 0.32
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.27%",
+      "pct": 0.27
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "디스플레이장비및부품",
+      "change_value": "+0.16%",
+      "pct": 0.16
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+0.05%",
+      "pct": 0.05
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "판매업체",
+      "change_value": "+0.04%",
+      "pct": 0.04
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "레저용장비와제품",
+      "change_value": "+0.32%",
+      "pct": 0.32
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.27%",
+      "pct": 0.27
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "디스플레이장비및부품",
+      "change_value": "+0.16%",
+      "pct": 0.16
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+0.05%",
+      "pct": 0.05
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "판매업체",
+      "change_value": "+0.04%",
+      "pct": 0.04
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+0.01%",
+      "pct": 0.01
+    },
+    {
+      "name": "기타",
+      "change_value": "-0.09%",
+      "pct": -0.09
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "-0.13%",
+      "pct": -0.13
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "-0.49%",
+      "pct": -0.49
+    },
+    {
+      "name": "화학",
+      "change_value": "-0.54%",
+      "pct": -0.54
+    },
+    {
+      "name": "식품",
+      "change_value": "-0.71%",
+      "pct": -0.71
+    },
+    {
+      "name": "자동차",
+      "change_value": "-0.90%",
+      "pct": -0.9
     }
   ],
   "article_counts": {
