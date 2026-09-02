@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03 07:00:54",
+  "updated_at": "2026-09-03 07:30:50",
   "indices": [
     {
       "name": "코스피",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,359.80",
-      "change_percent": "▼1.14%",
+      "value": "1,360.00",
+      "change_percent": "▼1.13%",
       "direction": "down",
-      "as_of": "2026.09.02 21:07"
+      "as_of": "2026.09.02 21:08"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "857.00",
-      "change_percent": "▼0.20%",
+      "value": "856.80",
+      "change_percent": "▼0.22%",
       "direction": "down",
-      "as_of": "2026.09.02 21:07"
+      "as_of": "2026.09.02 21:08"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,575.87",
+      "value": "1,575.90",
       "change_percent": "▼1.15%",
       "direction": "down",
-      "as_of": "2026.09.02 21:07"
+      "as_of": "2026.09.02 21:08"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "106,401,000",
-      "change_percent": "▼0.56%",
+      "value": "106,110,000",
+      "change_percent": "▼0.84%",
       "direction": "down",
-      "as_of": "2026-09-03 07:00:53"
+      "as_of": "2026-09-03 07:30:47"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,292,000",
-      "change_percent": "▼1.58%",
+      "value": "3,280,000",
+      "change_percent": "▼1.94%",
       "direction": "down",
-      "as_of": "2026-09-03 07:00:51"
+      "as_of": "2026-09-03 07:30:48"
     }
   ],
   "news_categories": [
@@ -126,8 +126,56 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "한국경제TV",
           "rank": 1,
+          "title": "美 상무, 반도체 표적 관세 예고...\"삼성·SK하이닉스, 美서 생산해야\"-[굿모닝 글로벌 이슈]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001264657&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:05",
+          "published_at": "2026-09-03T07:05:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 2,
+          "title": "국채금리 상승세 진정…뉴욕증시 반등 마감-[글로벌 마감 시황]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001264656&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:04",
+          "published_at": "2026-09-03T07:04:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 3,
+          "title": "국제유가, 사흘간 9% 상승 [글로벌 머니플로우]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001264655&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:04",
+          "published_at": "2026-09-03T07:04:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 4,
+          "title": "자체 AI인프라 확보한 SK바이오팜, 후보물질 발굴·신약 개발 빨라진다",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658075&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:02",
+          "published_at": "2026-09-03T07:02:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 5,
+          "title": "중동 전운에도 ‘안전자산’ 금값 뚝…고금리·강달러에 발목[코주부]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658072&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:01",
+          "published_at": "2026-09-03T07:01:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 6,
+          "title": "알테오젠, 노바티스에 4.4조 기술수출(종합)",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658071&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:01",
+          "published_at": "2026-09-03T07:01:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 7,
           "title": "[글로벌증시] 국채금리 숨고르기에 뉴욕증시 일제 상승",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000902254&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-03 06:50",
@@ -135,7 +183,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 8,
           "title": "KAI, 해양경찰청과 중형헬기 ‘흰수리’ 11호기 계약",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658052&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-03 06:02",
@@ -143,7 +191,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 9,
           "title": "한승표 대표, 굿리치 인수 청신호…하나증권서 2000억 조달한다 [시그널]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658037&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-03 06:01",
@@ -151,7 +199,7 @@
         },
         {
           "press_name": "뉴스1",
-          "rank": 4,
+          "rank": 10,
           "title": "스텝 꼬인 K-밸류업, 불확실성만 키웠다[기자의 눈]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0009147757&office_id=421&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-03 06:00",
@@ -159,7 +207,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 11,
           "title": "코스콤, 현대차증권과 토큰증권 맞손…공동플랫폼 구축 협력",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658015&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-02 23:37",
@@ -167,7 +215,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 6,
+          "rank": 12,
           "title": "“코스피 고점 가까워졌다”…전문가가 주식 대신 늘리라는 ‘이 자산’",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005729628&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-02 22:44",
@@ -175,7 +223,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 7,
+          "rank": 13,
           "title": "증선위, '회계기준 위반' 금양에 감사인지정·과징금 조치(종합2보)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016286358&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-02 20:08",
@@ -183,7 +231,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 8,
+          "rank": 14,
           "title": "미 국채금리 '껑충'…글로벌 금융시장 '휘청'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000902170&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-02 20:03",
@@ -191,59 +239,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 9,
+          "rank": 15,
           "title": "중동 긴장에 국채금리·유가 급등…코스피 4% 급락",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0000902168&office_id=422&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
           "upload_time": "2026-09-02 20:01",
           "published_at": "2026-09-02T20:01:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 10,
-          "title": "주식 결제 T+1 전환 본격화…“속도보다 준비가 먼저” 신중론도",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362622&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
-          "upload_time": "2026-09-02 19:46",
-          "published_at": "2026-09-02T19:46:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 11,
-          "title": "35년만 '美日 동시 긴축'?…자금줄 불안에 얼어붙은 시장 [빈난새의 빈틈없이마켓]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005328109&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
-          "upload_time": "2026-09-02 19:03",
-          "published_at": "2026-09-02T19:03:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 12,
-          "title": "\"9월엔 주식 쉬어야 하나\"…26년간 코스피 수익률 따져보니 [분석+]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005328108&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
-          "upload_time": "2026-09-02 19:01",
-          "published_at": "2026-09-02T19:01:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 13,
-          "title": "의료기기 제조업체 스카이랩스, 4일 코스닥 상장",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016286317&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:53",
-          "published_at": "2026-09-02T18:53:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 14,
-          "title": "증선위, '회계기준 위반' 금양에 감사인지정·과징금 조치(종합)",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0016286314&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:49",
-          "published_at": "2026-09-02T18:49:00+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "“美 10년물 5% 눈앞인데, 증시 괜찮나”…2022년 폭락장과 다른 ‘결정적 변수’ [머니닥터 시장진단]",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005729591&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:40",
-          "published_at": "2026-09-02T18:40:00+09:00"
         }
       ]
     },
@@ -251,16 +251,56 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "아시아경제",
           "rank": 1,
-          "title": "외국인 북적이던 백화점, 주가 하반기 들어 반토막 난 이유 [종목+]",
+          "title": "“LG유플러스, 적극적인 주주환원…데이터센터 성장도 기대”[클릭e종목]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811124&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:15",
+          "published_at": "2026-09-03T07:15:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "\"롯데렌탈, 주주환원 대폭 상향 기대\"[클릭e종목]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811121&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:10",
+          "published_at": "2026-09-03T07:10:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 3,
+          "title": "AI 수요에 델·깃랩 호실적…크레도는 수익성 우려에 하락-[美증시 특징주]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001264658&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:05",
+          "published_at": "2026-09-03T07:05:00+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 4,
+          "title": "브로드컴 실적 발표! 실적 호조에도 가이던스 엇갈린 빅테크  [ 美증시 특징주 ]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0001264654&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:03",
+          "published_at": "2026-09-03T07:03:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 5,
+          "title": "제이커브인베, 동방에 120억 투자…‘자항선’ 성장 겨냥 [시그널]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0004658068&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:01",
+          "published_at": "2026-09-03T07:01:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 6,
+          "title": "\"200% 뛰었을 때 팔 걸\" 때늦은 후회…개미들 '곡소리' [종목+]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005328171&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-03 06:31",
           "published_at": "2026-09-03T06:31:00+09:00"
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 7,
           "title": "유튜브 개국공신이 어쩌다…동전주 전락하더니 헐값매각 고프로",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005729640&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-03 05:44",
@@ -268,7 +308,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 8,
           "title": "\"퇴근하면서 거래해 볼까\"…주식시장, 오후 8시까지 열린다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570303&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-03 05:40",
@@ -276,7 +316,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 9,
           "title": "'삼전·닉스'도 못 버틴 매도 폭탄…외국인·기관 4조8000억원 팔았다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570292&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-03 04:00",
@@ -284,7 +324,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 5,
+          "rank": 10,
           "title": "“AI 써라, 안 쓰면 자리 없어진다”…기업 ‘아날로그 문화’ 경고한 손정의",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005729627&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-02 22:28",
@@ -292,7 +332,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
+          "rank": 11,
           "title": "증선위, '회계처리기준 위반' 금양에 과징금…검찰 고발도",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005328130&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-02 21:40",
@@ -300,7 +340,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 12,
           "title": "삼성화재, 英 보험사 캐노피우스 지분 확대 추진",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005729606&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-02 20:04",
@@ -308,7 +348,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 8,
+          "rank": 13,
           "title": "몸 커진 NXT, 종목 줄여 거래량 한도 맞춘다",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570259&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-02 19:06",
@@ -316,7 +356,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 9,
+          "rank": 14,
           "title": "증선위, '회계처리기준 위반' 금양에 과징금...검찰 고발도",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570221&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-02 18:32",
@@ -324,51 +364,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 10,
+          "rank": 15,
           "title": "증선위, 코스닥 IR임원 수사기관 통보…\"신약호재 내부정보로 부당이득\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811073&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
           "upload_time": "2026-09-02 18:31",
           "published_at": "2026-09-02T18:31:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 11,
-          "title": "증선위, 금양에 감사인지정·과징금 조치…\"회계기준 위반\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811069&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:21",
-          "published_at": "2026-09-02T18:21:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 12,
-          "title": "나스닥100데일리커버드콜OTM, 순자산 1조 돌파",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570169&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:09",
-          "published_at": "2026-09-02T18:09:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 13,
-          "title": "한국 주식 파는 외국인, 레버리지 ETF 쓸어담는다",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570168&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:09",
-          "published_at": "2026-09-02T18:09:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 14,
-          "title": "한진칼, 7%대 급등… 경영권 프리미엄 기대",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570167&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:09",
-          "published_at": "2026-09-02T18:09:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 15,
-          "title": "조각투자 한물갔나… 투자자 외면에 올해 발행 14건뿐",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005570166&office_id=014&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=402&date=20260903&page=1",
-          "upload_time": "2026-09-02 18:09",
-          "published_at": "2026-09-02T18:09:00+09:00"
         }
       ]
     },
@@ -376,8 +376,40 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "[마켓무버] 뉴욕증시 4거래일 만에 반등…금리 공포 완화에 투심 회복",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362767&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:24",
+          "published_at": "2026-09-03T07:24:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "트럼프, 또 한·일 알래스카 LNG 참여 거론",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811123&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:11",
+          "published_at": "2026-09-03T07:11:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 3,
+          "title": "미 국채금리 상승 주춤하자 4거래일만에 반등 [뉴욕증시 브리핑]",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005328178&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
+          "upload_time": "2026-09-03 07:11",
+          "published_at": "2026-09-03T07:11:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 4,
+          "title": "\"지금 안 사면 손해\"…日 안 가도 엔화 사 모으는 이유",
+          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362757&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
+          "upload_time": "2026-09-03 06:59",
+          "published_at": "2026-09-03T06:59:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 5,
           "title": "뉴욕 연은 총재 신중론, 기대 밑돈 고용지표…16일 FOMC '오리무중' [Fed 워치]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005328172&office_id=015&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 06:43",
@@ -385,15 +417,15 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 2,
-          "title": "[속보] 개미, '반전' 카드 죽이고 지켜봤다…'호실적' 브로드컴, 시간외하락→반등",
+          "rank": 6,
+          "title": "개미, '반전' 카드 죽이고 지켜봤다…'호실적' 브로드컴, 시간외하락→반등",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0001264650&office_id=215&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 06:36",
           "published_at": "2026-09-03T06:36:00+09:00"
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 7,
           "title": "[실적리뷰]브로드컴, 시간외 거래에서 2% 반등…AI 경쟁력 VS. 성장 지속 우려",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362754&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 06:36",
@@ -401,7 +433,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 4,
+          "rank": 8,
           "title": "뉴욕증시, 국채금리 숨고르기에 4일만에 반등…다우 0.6%↑(종합)",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016286535&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 06:28",
@@ -409,7 +441,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 9,
           "title": "브로드컴, 시장 예상 웃돈 실적에도 시간외 하락…왜?",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362747&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 06:12",
@@ -417,7 +449,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 10,
           "title": "美 에너지장관 \"호르무즈 원유 수송량 전쟁 후 최대 수준\"",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811114&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 06:00",
@@ -425,7 +457,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 7,
+          "rank": 11,
           "title": "스노우플레이크 시간외 20%대 폭등…AI 성장세에 '방긋'",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362734&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 05:56",
@@ -433,7 +465,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 12,
           "title": "[뉴욕증시]美 10년물 고점 찍고 진정…일제히 상승 마감",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811111&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 05:49",
@@ -441,7 +473,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 9,
+          "rank": 13,
           "title": "유튜브 개국공신이 어쩌다…동전주 전락하더니 헐값매각 고프로",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0005729640&office_id=009&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 05:44",
@@ -449,7 +481,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 14,
           "title": "뉴욕증시, 국채금리 숨고르기에 4일만에 반등…다우 0.6%↑",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0016286494&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 05:33",
@@ -457,43 +489,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 11,
+          "rank": 15,
           "title": "국채금리 급등 멈추자 저가매수…뉴욕증시 반등 성공[월스트리트in]",
           "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362731&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
           "upload_time": "2026-09-03 05:32",
           "published_at": "2026-09-03T05:32:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 12,
-          "title": "[속보]뉴욕증시, 4거래일만에 반등…국채금리 급등세 진정",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362729&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
-          "upload_time": "2026-09-03 05:10",
-          "published_at": "2026-09-03T05:10:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 13,
-          "title": "트럼프 \"이란 공격 오래 안 간다\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811109&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
-          "upload_time": "2026-09-03 04:47",
-          "published_at": "2026-09-03T04:47:00+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 14,
-          "title": "Fed 베이지북 \"美 경제 성장 동력은 데이터센터 투자\"",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0005811108&office_id=277&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
-          "upload_time": "2026-09-03 04:19",
-          "published_at": "2026-09-03T04:19:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 15,
-          "title": "[美특징주]퍼시픽가스&일렉트릭, 사업 재편 검토·투자 연기…주가 7%↓",
-          "link": "https://finance.naver.com/news/news_read.naver?article_id=0006362712&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=403&date=20260903&page=1",
-          "upload_time": "2026-09-03 02:44",
-          "published_at": "2026-09-03T02:44:00+09:00"
         }
       ]
     },
@@ -877,7 +877,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "중동 지역의 긴장 상황이 고조되면서 국제 유가가 급등하고 미국 국채 금리까지 상승함에 따라 투자 심리가 위축되었다. 이러한 대외적 불확실성이 커지면서 오늘 국내 증시에서 코스피와 코스닥 지수 모두 하락세를 보였다.",
+  "ai_commentary": "중동 지역의 지정학적 긴장 고조에 따른 국제 유가 급등과 미국 국채 금리 상승이 투자 심리에 부정적인 영향을 미쳤다. 이로 인해 위험 자산 회피 심리가 확산하며 코스피와 코스닥 지수가 동반 하락했다.",
   "top_gainers": [
     {
       "name": "STX그린로지스",
