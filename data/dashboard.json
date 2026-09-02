@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-02 10:01:09",
+  "updated_at": "2026-09-02 10:19:26",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -2.57,
-    "kosdaq_change": -1.03,
-    "kospi_value": 6660.18,
-    "kosdaq_value": 812.82
+    "kospi_change": -2.31,
+    "kosdaq_change": -0.28,
+    "kospi_value": 6678.11,
+    "kosdaq_value": 818.95
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "중동 지역의 지정학적 긴장감이 고조되면서 유가와 금리가 동반 상승한 것이 투자 심리 위축으로 이어졌다. 이에 따라 원달러 환율이 1370원대까지 오르는 등 시장의 불확실성이 커지며 코스피와 코스닥 지수가 하락 마감했다."
+      "text": "중동 지역의 지정학적 긴장감이 고조되면서 안전자산 선호 심리가 강해져 원달러 환율이 상승하고 투자 심리가 위축되었다. 이에 따라 유가와 금리 동반 상승에 대한 우려가 커지며 삼성전자와 SK하이닉스를 비롯한 대형주 중심으로 지수가 하락 마감했다."
     }
   ],
   "daily_term": {
@@ -82,7 +82,17 @@
     "종합부동산세",
     "주식시장 변동성"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "신한지주",
+      "corp_code": "00382199",
+      "report_nm": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
+      "rcept_dt": "20260902",
+      "rcept_no": "20260902000010",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000010",
+      "ai_explanation": "회사가 위기 상황 시 자본으로 전환되거나 상각될 수 있는 채권을 발행하기로 한 결정을 정정함."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -2981,155 +2991,155 @@
   },
   "top_gainers": [
     {
+      "name": "대덕",
+      "price": "20200.0",
+      "change_percent": "+26.33%",
+      "pct": 26.33
+    },
+    {
       "name": "SK디앤디",
-      "price": "4520.0",
-      "change_percent": "+23.84%",
-      "pct": 23.84
+      "price": "4480.0",
+      "change_percent": "+22.74%",
+      "pct": 22.74
     },
     {
       "name": "일동제약",
-      "price": "17500.0",
-      "change_percent": "+20.69%",
-      "pct": 20.69
+      "price": "16980.0",
+      "change_percent": "+17.10%",
+      "pct": 17.1
     },
     {
-      "name": "일신석재",
-      "price": "723.0",
-      "change_percent": "+20.10%",
-      "pct": 20.1
+      "name": "디아이",
+      "price": "31050.0",
+      "change_percent": "+16.51%",
+      "pct": 16.51
     },
     {
       "name": "사조동아원",
-      "price": "7680.0",
-      "change_percent": "+17.43%",
-      "pct": 17.43
-    },
-    {
-      "name": "인디에프",
-      "price": "4525.0",
-      "change_percent": "+12.84%",
-      "pct": 12.84
+      "price": "7470.0",
+      "change_percent": "+14.22%",
+      "pct": 14.22
     }
   ],
   "top_losers": [
     {
       "name": "써니전자",
-      "price": "1936.0",
-      "change_percent": "-18.48%",
-      "pct": 18.48
+      "price": "1873.0",
+      "change_percent": "-21.14%",
+      "pct": 21.14
     },
     {
       "name": "에넥스",
-      "price": "1254.0",
-      "change_percent": "-16.40%",
-      "pct": 16.4
-    },
-    {
-      "name": "KB S&P 인버스 2X WTI원유 선물 ETN B",
-      "price": "2100.0",
-      "change_percent": "-12.50%",
-      "pct": 12.5
-    },
-    {
-      "name": "한투 인버스2XWTI원유선물 ETN B",
-      "price": "2070.0",
-      "change_percent": "-12.47%",
-      "pct": 12.47
+      "price": "1235.0",
+      "change_percent": "-17.67%",
+      "pct": 17.67
     },
     {
       "name": "미래에셋 인버스 2X WTI원유 선물 ETN",
-      "price": "14735.0",
-      "change_percent": "-12.32%",
-      "pct": 12.32
+      "price": "14810.0",
+      "change_percent": "-11.87%",
+      "pct": 11.87
+    },
+    {
+      "name": "KB S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "2120.0",
+      "change_percent": "-11.67%",
+      "pct": 11.67
+    },
+    {
+      "name": "한투 인버스2XWTI원유선물 ETN B",
+      "price": "2095.0",
+      "change_percent": "-11.42%",
+      "pct": 11.42
     }
   ],
   "sector_performance": [
     {
-      "name": "은행",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "name": "문구류",
+      "change_value": "+2.64%",
+      "pct": 2.64
     },
     {
       "name": "생물공학",
-      "change_value": "+1.29%",
-      "pct": 1.29
+      "change_value": "+1.90%",
+      "pct": 1.9
     },
     {
       "name": "항공사",
-      "change_value": "+1.11%",
-      "pct": 1.11
+      "change_value": "+1.24%",
+      "pct": 1.24
     },
     {
-      "name": "부동산",
-      "change_value": "+0.95%",
-      "pct": 0.95
+      "name": "은행",
+      "change_value": "+1.01%",
+      "pct": 1.01
     },
     {
-      "name": "문구류",
-      "change_value": "+0.81%",
-      "pct": 0.81
+      "name": "식품",
+      "change_value": "+0.28%",
+      "pct": 0.28
     }
   ],
   "sector_heatmap": [
     {
-      "name": "은행",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "name": "문구류",
+      "change_value": "+2.64%",
+      "pct": 2.64
     },
     {
       "name": "생물공학",
-      "change_value": "+1.29%",
-      "pct": 1.29
+      "change_value": "+1.90%",
+      "pct": 1.9
     },
     {
       "name": "항공사",
-      "change_value": "+1.11%",
-      "pct": 1.11
+      "change_value": "+1.24%",
+      "pct": 1.24
     },
     {
-      "name": "부동산",
-      "change_value": "+0.95%",
-      "pct": 0.95
-    },
-    {
-      "name": "문구류",
-      "change_value": "+0.81%",
-      "pct": 0.81
+      "name": "은행",
+      "change_value": "+1.01%",
+      "pct": 1.01
     },
     {
       "name": "식품",
-      "change_value": "+0.19%",
-      "pct": 0.19
+      "change_value": "+0.28%",
+      "pct": 0.28
     },
     {
-      "name": "자동차",
-      "change_value": "-3.71%",
-      "pct": -3.71
-    },
-    {
-      "name": "건설",
-      "change_value": "-3.74%",
-      "pct": -3.74
-    },
-    {
-      "name": "조선",
-      "change_value": "-3.82%",
-      "pct": -3.82
-    },
-    {
-      "name": "비철금속",
-      "change_value": "-4.06%",
-      "pct": -4.06
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "-4.11%",
-      "pct": -4.11
+      "name": "방송과엔터테인먼트",
+      "change_value": "-0.01%",
+      "pct": -0.01
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-4.55%",
-      "pct": -4.55
+      "change_value": "-3.70%",
+      "pct": -3.7
+    },
+    {
+      "name": "조선",
+      "change_value": "-3.72%",
+      "pct": -3.72
+    },
+    {
+      "name": "생명보험",
+      "change_value": "-3.94%",
+      "pct": -3.94
+    },
+    {
+      "name": "비철금속",
+      "change_value": "-3.95%",
+      "pct": -3.95
+    },
+    {
+      "name": "자동차",
+      "change_value": "-3.99%",
+      "pct": -3.99
+    },
+    {
+      "name": "항공화물운송과물류",
+      "change_value": "-4.02%",
+      "pct": -4.02
     }
   ],
   "article_counts": {
