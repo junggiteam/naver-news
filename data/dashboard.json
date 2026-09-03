@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-04 08:01:18",
+  "updated_at": "2026-09-04 08:30:17",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.26,
-    "kosdaq_change": -1.71,
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6579.48,
     "kosdaq_value": 790.21
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "주거용 비아파트 공급 및 시니어 레지던스 등 주택 유형 변화"
-    },
-    {
-      "category": "증권",
-      "text": "미국 연방준비제도 인사의 금리 동결 시사 발언으로 뉴욕 증시가 상승하며 코스피는 장중 등락을 거듭한 끝에 소폭 상승 마감했다. 반면 코스닥은 고금리와 고유가 등 매크로 불안에 따른 투자 심리 위축과 일부 기업의 유동성 우려가 겹치며 하락세로 장을 마쳤다."
     }
   ],
   "daily_term": {
@@ -2494,157 +2490,95 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "한솔테크닉스",
-      "price": "8490.0",
-      "change_percent": "+12.01%",
-      "pct": 12.01
-    },
-    {
-      "name": "써니전자",
-      "price": "2085.0",
-      "change_percent": "+11.80%",
-      "pct": 11.8
-    },
-    {
-      "name": "전진건설로봇",
-      "price": "41750.0",
-      "change_percent": "+11.78%",
-      "pct": 11.78
-    },
-    {
-      "name": "자이에스앤디",
-      "price": "11240.0",
-      "change_percent": "+10.74%",
-      "pct": 10.74
-    },
-    {
-      "name": "SOL 조선TOP3플러스레버리지",
-      "price": "8550.0",
-      "change_percent": "+9.83%",
-      "pct": 9.83
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "서울식품우",
-      "price": "4220.0",
-      "change_percent": "-17.42%",
-      "pct": 17.42
-    },
-    {
-      "name": "키다리스튜디오",
-      "price": "6180.0",
-      "change_percent": "-11.59%",
-      "pct": 11.59
-    },
-    {
-      "name": "코리아써키트",
-      "price": "51400.0",
-      "change_percent": "-10.30%",
-      "pct": 10.3
-    },
-    {
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "6190.0",
-      "change_percent": "-10.16%",
-      "pct": 10.16
-    },
-    {
-      "name": "한화머시너리앤서비스홀딩스3우B",
-      "price": "2690.0",
-      "change_percent": "-9.43%",
-      "pct": 9.43
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
       "name": "손해보험",
-      "change_value": "+5.77%",
-      "pct": 5.77
-    },
-    {
-      "name": "조선",
-      "change_value": "+4.18%",
-      "pct": 4.18
-    },
-    {
-      "name": "건설",
-      "change_value": "+3.74%",
-      "pct": 3.74
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "+3.61%",
-      "pct": 3.61
-    },
-    {
-      "name": "철강",
-      "change_value": "+3.46%",
-      "pct": 3.46
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "손해보험",
-      "change_value": "+5.77%",
-      "pct": 5.77
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "조선",
-      "change_value": "+4.18%",
-      "pct": 4.18
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건설",
-      "change_value": "+3.74%",
-      "pct": 3.74
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "+3.61%",
-      "pct": 3.61
-    },
-    {
-      "name": "철강",
-      "change_value": "+3.46%",
-      "pct": 3.46
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "+3.31%",
-      "pct": 3.31
-    },
-    {
-      "name": "기타금융",
-      "change_value": "-3.17%",
-      "pct": -3.17
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-3.22%",
-      "pct": -3.22
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-3.26%",
-      "pct": -3.26
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "-3.45%",
-      "pct": -3.45
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "생물공학",
-      "change_value": "-3.92%",
-      "pct": -3.92
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-3.94%",
-      "pct": -3.94
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
