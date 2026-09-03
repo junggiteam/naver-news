@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 00:01:02",
+  "updated_at": "2026-09-04 00:30:49",
   "indices": [
     {
       "name": "코스피",
@@ -24,38 +24,38 @@
     },
     {
       "name": "다우존스",
-      "value": "53,407.57",
-      "change_percent": "▲0.65%",
+      "value": "53,604.92",
+      "change_percent": "▲1.02%",
       "direction": "up",
-      "as_of": "2026-09-04 00:00:22"
+      "as_of": "2026-09-04 00:30:41"
     },
     {
       "name": "나스닥",
-      "value": "26,399.09",
-      "change_percent": "▲0.69%",
+      "value": "26,532.45",
+      "change_percent": "▲1.20%",
       "direction": "up",
-      "as_of": "2026-09-04 00:00:22"
+      "as_of": "2026-09-04 00:30:41"
     },
     {
       "name": "나스닥100",
-      "value": "29,245.86",
-      "change_percent": "▲0.35%",
+      "value": "29,423.42",
+      "change_percent": "▲0.96%",
       "direction": "up",
-      "as_of": "2026-09-04 00:00:22"
+      "as_of": "2026-09-04 00:30:41"
     },
     {
       "name": "S&P500",
-      "value": "7,701.38",
-      "change_percent": "▲0.45%",
+      "value": "7,734.90",
+      "change_percent": "▲0.89%",
       "direction": "up",
-      "as_of": "2026-09-04 00:00:22"
+      "as_of": "2026-09-04 00:30:41"
     },
     {
       "name": "국내금(원/돈)",
-      "value": "731,900.55",
-      "change_percent": "▲2.02%",
+      "value": "736,031.62",
+      "change_percent": "▲2.60%",
       "direction": "up",
-      "as_of": "2026.09.03 23:34"
+      "as_of": "2026.09.03 23:59"
     },
     {
       "name": "휘발유(원/리터)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,357.10",
-      "change_percent": "▼0.24%",
+      "value": "1,357.60",
+      "change_percent": "▼0.20%",
       "direction": "down",
-      "as_of": "2026.09.03 21:04"
+      "as_of": "2026.09.03 21:05"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "873.18",
-      "change_percent": "▲1.92%",
+      "value": "872.27",
+      "change_percent": "▲1.82%",
       "direction": "up",
-      "as_of": "2026.09.03 21:04"
+      "as_of": "2026.09.03 21:05"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,576.88",
-      "change_percent": "▲0.05%",
+      "value": "1,578.01",
+      "change_percent": "▲0.12%",
       "direction": "up",
-      "as_of": "2026.09.03 21:04"
+      "as_of": "2026.09.03 21:05"
     },
     {
       "name": "USD/JPY",
@@ -108,17 +108,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "110,583,000",
-      "change_percent": "▲3.93%",
+      "value": "110,723,000",
+      "change_percent": "▲4.06%",
       "direction": "up",
-      "as_of": "2026-09-04 00:01:01"
+      "as_of": "2026-09-04 00:30:44"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,419,000",
-      "change_percent": "▲3.83%",
+      "value": "3,415,000",
+      "change_percent": "▲3.70%",
       "direction": "up",
-      "as_of": "2026-09-04 00:01:00"
+      "as_of": "2026-09-04 00:30:39"
     }
   ],
   "news_categories": [
@@ -877,7 +877,7 @@
     "WTI(국제유가) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')",
     "국고채(10년) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: '\\n전일대비\\n\\n\\n\\n\\n(\\n%\\n)\\n\\n')"
   ],
-  "ai_commentary": "중동 지역의 지정학적 긴장감 속에서도 코스피는 반도체 대형주 중심의 반등세에 힘입어 상승 마감했다. 반면 코스닥은 이차전지를 비롯한 주요 종목들의 약세 영향으로 하락하며 800선 아래로 밀려났다.",
+  "ai_commentary": null,
   "top_gainers": [
     {
       "name": "한솔테크닉스",
@@ -1341,6 +1341,6 @@
   ],
   "ipo_calendar": [],
   "_movers_debug": [
-    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(68, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
+    "IPO 일정 -> table 방식 실패. 발견된 table 개수=1 [table#0: shape=(67, 2), cols=['종목', '투자정보']], '공모' 주변 마크업 스니펫='n_link@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style=\"display:none\" class=\"_au_market\">@in_market@</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"search_notice\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"text\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t공모주와 해외 종목은 모바일 페이지로 이동합니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- 현재 자동완성 기능을 사용하고 계십니다 -->\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap\" id=\"atcmpIng\" style=\"display:none;\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"wrap_in\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class=\"words\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<p class=\"msg\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t현재 자동완성 기능을 사용하고 계십니다.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</p>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t<!--// 현재 자', 리스트형 요소 미리보기=['@code@@txt@@market@', '증권 홈', '국내증시선택됨', '해외증시', '시장지표', '리서치', '뉴스', 'MY', '코스피', '코스닥']"
   ]
 }
