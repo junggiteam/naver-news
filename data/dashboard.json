@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-03 10:01:08",
+  "updated_at": "2026-09-03 10:25:59",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.96,
-    "kosdaq_change": -0.61,
-    "kospi_value": 6625.87,
-    "kosdaq_value": 799.04
+    "kospi_change": 1.45,
+    "kosdaq_change": -0.31,
+    "kospi_value": 6657.91,
+    "kosdaq_value": 801.52
   },
   "heroes": {
     "종합": {
@@ -78,7 +78,17 @@
     "미국 국채금리 변동",
     "서울 아파트 갭투자"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "서부광역메트로",
+      "corp_code": "01858714",
+      "report_nm": "비유동자산취득결정",
+      "rcept_dt": "20260903",
+      "rcept_no": "20260903000021",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260903000021",
+      "ai_explanation": "회사가 건물, 기계장치 등 장기간 사용할 고정 자산을 매입하기로 결정했다는 공시입니다."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -2987,155 +2997,155 @@
   },
   "top_gainers": [
     {
-      "name": "TCC스틸",
-      "price": "12290.0",
-      "change_percent": "+13.27%",
-      "pct": 13.27
-    },
-    {
       "name": "한솔테크닉스",
-      "price": "8470.0",
-      "change_percent": "+11.74%",
-      "pct": 11.74
-    },
-    {
-      "name": "한화생명",
-      "price": "6380.0",
-      "change_percent": "+10.57%",
-      "pct": 10.57
-    },
-    {
-      "name": "한미사이언스",
-      "price": "52600.0",
-      "change_percent": "+10.04%",
-      "pct": 10.04
+      "price": "8540.0",
+      "change_percent": "+12.66%",
+      "pct": 12.66
     },
     {
       "name": "대한유화",
-      "price": "101200.0",
-      "change_percent": "+10.00%",
-      "pct": 10.0
+      "price": "102600.0",
+      "change_percent": "+11.52%",
+      "pct": 11.52
+    },
+    {
+      "name": "SNT에너지",
+      "price": "34950.0",
+      "change_percent": "+11.48%",
+      "pct": 11.48
+    },
+    {
+      "name": "TCC스틸",
+      "price": "12000.0",
+      "change_percent": "+10.60%",
+      "pct": 10.6
+    },
+    {
+      "name": "팬오션",
+      "price": "6080.0",
+      "change_percent": "+10.34%",
+      "pct": 10.34
     }
   ],
   "top_losers": [
     {
       "name": "페이퍼코리아",
-      "price": "2450.0",
-      "change_percent": "-8.41%",
-      "pct": 8.41
+      "price": "2465.0",
+      "change_percent": "-7.85%",
+      "pct": 7.85
     },
     {
       "name": "코리아써키트",
-      "price": "53100.0",
-      "change_percent": "-7.33%",
-      "pct": 7.33
+      "price": "53500.0",
+      "change_percent": "-6.63%",
+      "pct": 6.63
     },
     {
-      "name": "삼성 인버스 2X 은 선물 ETN(H)",
-      "price": "40.0",
-      "change_percent": "-6.98%",
-      "pct": 6.98
+      "name": "일동제약",
+      "price": "15430.0",
+      "change_percent": "-6.43%",
+      "pct": 6.43
+    },
+    {
+      "name": "키움 인버스 2X K방산 TOP5 ETN",
+      "price": "8095.0",
+      "change_percent": "-6.36%",
+      "pct": 6.36
     },
     {
       "name": "한화머시너리앤서비스홀딩스",
       "price": "6460.0",
       "change_percent": "-6.24%",
       "pct": 6.24
-    },
-    {
-      "name": "일동제약",
-      "price": "15550.0",
-      "change_percent": "-5.70%",
-      "pct": 5.7
     }
   ],
   "sector_performance": [
     {
       "name": "무역회사와판매업체",
-      "change_value": "+4.14%",
-      "pct": 4.14
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+4.13%",
-      "pct": 4.13
+      "change_value": "+4.37%",
+      "pct": 4.37
     },
     {
       "name": "손해보험",
+      "change_value": "+4.26%",
+      "pct": 4.26
+    },
+    {
+      "name": "해운사",
+      "change_value": "+4.21%",
+      "pct": 4.21
+    },
+    {
+      "name": "전기제품",
       "change_value": "+4.08%",
       "pct": 4.08
     },
     {
-      "name": "은행",
-      "change_value": "+3.86%",
-      "pct": 3.86
-    },
-    {
-      "name": "해운사",
-      "change_value": "+3.80%",
-      "pct": 3.8
+      "name": "철강",
+      "change_value": "+4.04%",
+      "pct": 4.04
     }
   ],
   "sector_heatmap": [
     {
       "name": "무역회사와판매업체",
-      "change_value": "+4.14%",
-      "pct": 4.14
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+4.13%",
-      "pct": 4.13
+      "change_value": "+4.37%",
+      "pct": 4.37
     },
     {
       "name": "손해보험",
+      "change_value": "+4.26%",
+      "pct": 4.26
+    },
+    {
+      "name": "해운사",
+      "change_value": "+4.21%",
+      "pct": 4.21
+    },
+    {
+      "name": "전기제품",
       "change_value": "+4.08%",
       "pct": 4.08
     },
     {
-      "name": "은행",
-      "change_value": "+3.86%",
-      "pct": 3.86
-    },
-    {
-      "name": "해운사",
-      "change_value": "+3.80%",
-      "pct": 3.8
-    },
-    {
       "name": "철강",
-      "change_value": "+3.68%",
-      "pct": 3.68
+      "change_value": "+4.04%",
+      "pct": 4.04
     },
     {
-      "name": "창업투자",
-      "change_value": "-1.21%",
-      "pct": -1.21
+      "name": "생명보험",
+      "change_value": "+3.98%",
+      "pct": 3.98
     },
     {
-      "name": "출판",
-      "change_value": "-1.21%",
-      "pct": -1.21
+      "name": "통신장비",
+      "change_value": "-1.18%",
+      "pct": -1.18
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "-1.36%",
-      "pct": -1.36
-    },
-    {
-      "name": "생물공학",
       "change_value": "-1.52%",
       "pct": -1.52
     },
     {
-      "name": "통신장비",
-      "change_value": "-1.66%",
-      "pct": -1.66
+      "name": "기타금융",
+      "change_value": "-1.55%",
+      "pct": -1.55
     },
     {
       "name": "다각화된소비자서비스",
-      "change_value": "-1.76%",
-      "pct": -1.76
+      "change_value": "-1.62%",
+      "pct": -1.62
+    },
+    {
+      "name": "출판",
+      "change_value": "-1.63%",
+      "pct": -1.63
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-2.88%",
+      "pct": -2.88
     }
   ],
   "article_counts": {
