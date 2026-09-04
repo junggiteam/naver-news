@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 08:45:48",
+  "updated_at": "2026-09-04 09:01:11",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2490,95 +2490,157 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "가온전선",
+      "price": "220500.0",
+      "change_percent": "+5.76%",
+      "pct": 5.76
+    },
+    {
+      "name": "미원상사",
+      "price": "137500.0",
+      "change_percent": "+4.64%",
+      "pct": 4.64
+    },
+    {
+      "name": "비비안",
+      "price": "4830.0",
+      "change_percent": "+3.76%",
+      "pct": 3.76
+    },
+    {
+      "name": "페이퍼코리아",
+      "price": "2570.0",
+      "change_percent": "+3.63%",
+      "pct": 3.63
+    },
+    {
+      "name": "금호건설우",
+      "price": "20700.0",
+      "change_percent": "+3.50%",
+      "pct": 3.5
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "금호전기",
+      "price": "12090.0",
+      "change_percent": "-6.06%",
+      "pct": 6.06
+    },
+    {
+      "name": "TCC스틸",
+      "price": "11140.0",
+      "change_percent": "-4.79%",
+      "pct": 4.79
+    },
+    {
+      "name": "흥국화재",
+      "price": "3830.0",
+      "change_percent": "-3.28%",
+      "pct": 3.28
+    },
+    {
+      "name": "삼성화재",
+      "price": "680000.0",
+      "change_percent": "-3.13%",
+      "pct": 3.13
+    },
+    {
+      "name": "KR모터스",
+      "price": "1366.0",
+      "change_percent": "-2.50%",
+      "pct": 2.5
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+2.80%",
+      "pct": 2.8
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+1.95%",
+      "pct": 1.95
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "양방향미디어와서비스",
+      "change_value": "+1.76%",
+      "pct": 1.76
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+1.57%",
+      "pct": 1.57
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "+1.37%",
+      "pct": 1.37
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+2.80%",
+      "pct": 2.8
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+1.95%",
+      "pct": 1.95
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "양방향미디어와서비스",
+      "change_value": "+1.76%",
+      "pct": 1.76
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+1.57%",
+      "pct": 1.57
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "+1.37%",
+      "pct": 1.37
     },
     {
       "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+1.25%",
+      "pct": 1.25
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "출판",
+      "change_value": "-0.09%",
+      "pct": -0.09
+    },
+    {
+      "name": "디스플레이장비및부품",
+      "change_value": "-0.13%",
+      "pct": -0.13
+    },
+    {
+      "name": "조선",
+      "change_value": "-0.21%",
+      "pct": -0.21
+    },
+    {
+      "name": "은행",
+      "change_value": "-0.34%",
+      "pct": -0.34
+    },
+    {
+      "name": "가스유틸리티",
+      "change_value": "-0.42%",
+      "pct": -0.42
+    },
+    {
+      "name": "손해보험",
+      "change_value": "-2.30%",
+      "pct": -2.3
     }
   ],
   "article_counts": {
