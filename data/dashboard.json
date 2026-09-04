@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-04 10:01:42",
+  "updated_at": "2026-09-04 10:20:07",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 1.1,
-    "kosdaq_change": 1.56,
-    "kospi_value": 6651.53,
-    "kosdaq_value": 802.51
+    "kospi_change": 1.26,
+    "kosdaq_change": 1.32,
+    "kospi_value": 6662.28,
+    "kosdaq_value": 800.68
   },
   "heroes": {
     "종합": {
@@ -52,10 +52,6 @@
     {
       "category": "부동산",
       "text": "신축 아파트 선호와 대출 제한에 따른 주택 매수 자금 조달 방식 변화"
-    },
-    {
-      "category": "증권",
-      "text": "미국 연방준비제도의 금리 동결 기대감이 부각되며 투자 심리가 개선되어 코스피와 코스닥 지수가 각각 1%대 상승했다. 여기에 일본의 긴축 가능성과 달러 대비 원화 환율 하락 등 대외 변수가 긍정적으로 작용하며 지수 상승을 뒷받침했다."
     }
   ],
   "daily_term": {
@@ -73,13 +69,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "브이페이먼츠",
+      "corp_code": "01534610",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260904",
+      "rcept_no": "20260904000040",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904000040",
+      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하거나 주주에게 자금을 수혈받기로 결정했다는 의미입니다."
+    },
+    {
       "corp_name": "포스코플로우",
       "corp_code": "00459297",
       "report_nm": "타법인주식및출자증권취득결정",
       "rcept_dt": "20260904",
       "rcept_no": "20260904000022",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904000022",
-      "ai_explanation": "다른 회사의 주식을 취득하거나 지분을 투자하여 사업 확장 및 지배력을 확보하겠다는 결정입니다."
+      "ai_explanation": "회사가 다른 기업의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 추진한다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2502,148 +2507,148 @@
     },
     {
       "name": "에이프로젠바이오로직스",
-      "price": "2090.0",
-      "change_percent": "+21.02%",
-      "pct": 21.02
-    },
-    {
-      "name": "명신산업",
-      "price": "8760.0",
-      "change_percent": "+12.74%",
-      "pct": 12.74
-    },
-    {
-      "name": "사조동아원",
-      "price": "8640.0",
-      "change_percent": "+11.05%",
-      "pct": 11.05
+      "price": "2145.0",
+      "change_percent": "+24.20%",
+      "pct": 24.2
     },
     {
       "name": "에이프로젠",
-      "price": "2300.0",
-      "change_percent": "+10.58%",
-      "pct": 10.58
+      "price": "2330.0",
+      "change_percent": "+12.02%",
+      "pct": 12.02
+    },
+    {
+      "name": "명신산업",
+      "price": "8670.0",
+      "change_percent": "+11.58%",
+      "pct": 11.58
+    },
+    {
+      "name": "S-Oil",
+      "price": "164300.0",
+      "change_percent": "+11.09%",
+      "pct": 11.09
     }
   ],
   "top_losers": [
     {
-      "name": "N2 인버스 2X 코스닥150 선물 ETN",
-      "price": "6780.0",
-      "change_percent": "-6.42%",
-      "pct": 6.42
-    },
-    {
-      "name": "신한 블룸버그 2X 천연가스 선물 ETN B",
-      "price": "15240.0",
-      "change_percent": "-6.07%",
-      "pct": 6.07
+      "name": "금호전기",
+      "price": "11900.0",
+      "change_percent": "-7.54%",
+      "pct": 7.54
     },
     {
       "name": "하나 레버리지 천연가스 선물 ETN(H)",
-      "price": "8750.0",
-      "change_percent": "-6.02%",
-      "pct": 6.02
+      "price": "8720.0",
+      "change_percent": "-6.34%",
+      "pct": 6.34
+    },
+    {
+      "name": "신한 블룸버그 2X 천연가스 선물 ETN B",
+      "price": "15200.0",
+      "change_percent": "-6.32%",
+      "pct": 6.32
     },
     {
       "name": "한투 레버리지천연가스선물 ETN C",
-      "price": "15270.0",
-      "change_percent": "-5.86%",
-      "pct": 5.86
+      "price": "15195.0",
+      "change_percent": "-6.32%",
+      "pct": 6.32
     },
     {
       "name": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
-      "price": "15260.0",
-      "change_percent": "-5.86%",
-      "pct": 5.86
+      "price": "15195.0",
+      "change_percent": "-6.26%",
+      "pct": 6.26
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+9.50%",
-      "pct": 9.5
+      "change_value": "+12.90%",
+      "pct": 12.9
     },
     {
       "name": "석유와가스",
-      "change_value": "+4.36%",
-      "pct": 4.36
+      "change_value": "+5.29%",
+      "pct": 5.29
     },
     {
       "name": "항공사",
-      "change_value": "+4.25%",
-      "pct": 4.25
+      "change_value": "+4.96%",
+      "pct": 4.96
     },
     {
       "name": "IT서비스",
-      "change_value": "+3.54%",
-      "pct": 3.54
+      "change_value": "+3.12%",
+      "pct": 3.12
     },
     {
       "name": "창업투자",
-      "change_value": "+3.13%",
-      "pct": 3.13
+      "change_value": "+2.73%",
+      "pct": 2.73
     }
   ],
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+9.50%",
-      "pct": 9.5
+      "change_value": "+12.90%",
+      "pct": 12.9
     },
     {
       "name": "석유와가스",
-      "change_value": "+4.36%",
-      "pct": 4.36
+      "change_value": "+5.29%",
+      "pct": 5.29
     },
     {
       "name": "항공사",
-      "change_value": "+4.25%",
-      "pct": 4.25
+      "change_value": "+4.96%",
+      "pct": 4.96
     },
     {
       "name": "IT서비스",
-      "change_value": "+3.54%",
-      "pct": 3.54
+      "change_value": "+3.12%",
+      "pct": 3.12
     },
     {
       "name": "창업투자",
-      "change_value": "+3.13%",
-      "pct": 3.13
+      "change_value": "+2.73%",
+      "pct": 2.73
     },
     {
-      "name": "항공화물운송과물류",
-      "change_value": "+2.53%",
-      "pct": 2.53
-    },
-    {
-      "name": "포장재",
-      "change_value": "-1.21%",
-      "pct": -1.21
-    },
-    {
-      "name": "복합기업",
-      "change_value": "-1.35%",
-      "pct": -1.35
+      "name": "무선통신서비스",
+      "change_value": "+2.32%",
+      "pct": 2.32
     },
     {
       "name": "생명보험",
-      "change_value": "-1.54%",
-      "pct": -1.54
+      "change_value": "-1.31%",
+      "pct": -1.31
+    },
+    {
+      "name": "포장재",
+      "change_value": "-1.51%",
+      "pct": -1.51
     },
     {
       "name": "가스유틸리티",
-      "change_value": "-1.82%",
-      "pct": -1.82
+      "change_value": "-1.65%",
+      "pct": -1.65
+    },
+    {
+      "name": "화장품",
+      "change_value": "-1.76%",
+      "pct": -1.76
     },
     {
       "name": "은행",
-      "change_value": "-2.31%",
-      "pct": -2.31
+      "change_value": "-2.02%",
+      "pct": -2.02
     },
     {
       "name": "손해보험",
-      "change_value": "-4.45%",
-      "pct": -4.45
+      "change_value": "-4.37%",
+      "pct": -4.37
     }
   ],
   "article_counts": {
