@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 08:31:00",
+  "updated_at": "2026-09-07 09:01:13",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260904000543",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904000543",
-      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등을 정정하여 다시 공시함."
+      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등 기존 공시 사항을 정정하여 다시 알리는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2461,95 +2461,157 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "진흥기업2우B",
+      "price": "33850.0",
+      "change_percent": "+16.93%",
+      "pct": 16.93
+    },
+    {
+      "name": "두산",
+      "price": "1241000.0",
+      "change_percent": "+8.67%",
+      "pct": 8.67
+    },
+    {
+      "name": "진흥기업우B",
+      "price": "14500.0",
+      "change_percent": "+8.53%",
+      "pct": 8.53
+    },
+    {
+      "name": "DB하이텍",
+      "price": "97200.0",
+      "change_percent": "+8.12%",
+      "pct": 8.12
+    },
+    {
+      "name": "RISE 삼성전자단일종목레버리지",
+      "price": "11430.0",
+      "change_percent": "+8.03%",
+      "pct": 8.03
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "동양우",
+      "price": "8570.0",
+      "change_percent": "-3.71%",
+      "pct": 3.71
+    },
+    {
+      "name": "KIWOOM 200선물인버스",
+      "price": "1299.0",
+      "change_percent": "-3.35%",
+      "pct": 3.35
+    },
+    {
+      "name": "SH에너지화학",
+      "price": "1563.0",
+      "change_percent": "-2.56%",
+      "pct": 2.56
+    },
+    {
+      "name": "한국화장품제조",
+      "price": "12450.0",
+      "change_percent": "-2.35%",
+      "pct": 2.35
+    },
+    {
+      "name": "RISE 테슬라고정테크100",
+      "price": "14185.0",
+      "change_percent": "-2.21%",
+      "pct": 2.21
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+7.26%",
+      "pct": 7.26
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+4.36%",
+      "pct": 4.36
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+2.97%",
+      "pct": 2.97
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+2.62%",
+      "pct": 2.62
     },
     {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "+1.85%",
+      "pct": 1.85
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+7.26%",
+      "pct": 7.26
     },
     {
-      "name": "종이와목재",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+4.36%",
+      "pct": 4.36
     },
     {
       "name": "전자장비와기기",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "change_value": "+2.97%",
+      "pct": 2.97
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+2.62%",
+      "pct": 2.62
+    },
+    {
+      "name": "복합기업",
+      "change_value": "+1.85%",
+      "pct": 1.85
+    },
+    {
+      "name": "전기장비",
+      "change_value": "+1.35%",
+      "pct": 1.35
+    },
+    {
+      "name": "포장재",
+      "change_value": "-0.13%",
+      "pct": -0.13
+    },
+    {
+      "name": "기타금융",
+      "change_value": "-0.21%",
+      "pct": -0.21
+    },
+    {
+      "name": "창업투자",
+      "change_value": "-0.25%",
+      "pct": -0.25
+    },
+    {
+      "name": "건설",
+      "change_value": "-0.27%",
+      "pct": -0.27
+    },
+    {
+      "name": "손해보험",
+      "change_value": "-0.33%",
+      "pct": -0.33
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "-0.36%",
+      "pct": -0.36
     }
   ],
   "article_counts": {
