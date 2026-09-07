@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 17:45:52",
+  "updated_at": "2026-09-07 18:01:10",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국발 반도체 업종에 대한 훈풍과 외국인 및 기관 투자자의 동반 매수세가 유입되면서 코스피 지수는 최근 37일간 데이터 기준 최고치를 기록했다. 코스닥 지수 또한 반도체 관련 기대감에 힘입어 1.07% 상승하며 장을 마감했다."
+      "text": "반도체 산업의 메모리 이익 사이클에 대한 긍정적인 평가가 나오면서 삼성전자와 SK하이닉스 등 관련 종목이 급등하여 코스피 지수는 최근 37일간 최고치를 기록했다. 이와 더불어 식품주의 배당 매력 부각과 같은 개별 종목군에 대한 관심이 더해지며 코스닥 지수 또한 상승세를 보였다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "HPSP",
+      "corp_code": "01288827",
+      "report_nm": "[기재정정]주요사항보고서(자기주식처분결정)",
+      "rcept_dt": "20260907",
+      "rcept_no": "20260907000328",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000328",
+      "ai_explanation": "회사가 보유한 자사주를 처분하기로 결정했다는 공시입니다."
+    },
+    {
+      "corp_name": "베노티앤알",
+      "corp_code": "01043853",
+      "report_nm": "주요사항보고서(소송등의제기)",
+      "rcept_dt": "20260907",
+      "rcept_no": "20260907000327",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000327",
+      "ai_explanation": "회사가 피고나 원고로서 소송에 휘말렸음을 알리는 공시입니다."
+    },
+    {
       "corp_name": "한국캐피탈",
       "corp_code": "00149594",
       "report_nm": "주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20260907",
       "rcept_no": "20260907000318",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000318",
-      "ai_explanation": "자본으로 인정되는 성격의 채권을 발행하여 자금을 조달한다는 의미입니다."
+      "ai_explanation": "자본으로 인정받는 성격의 채권을 발행해 자금을 조달하겠다는 공시입니다."
     },
     {
       "corp_name": "SK디스커버리",
@@ -100,7 +118,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000315",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000315",
-      "ai_explanation": "금융기관에 맡겨두었던 자기주식 신탁 계약을 종료한다는 의미입니다."
+      "ai_explanation": "자사주 취득을 위해 맺었던 신탁 계약을 해지하겠다는 공시입니다."
     },
     {
       "corp_name": "서울전자통신",
@@ -109,7 +127,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000272",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000272",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 수정했다는 공시입니다."
     },
     {
       "corp_name": "경남제약",
@@ -118,7 +136,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000217",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000217",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 수정했다는 공시입니다."
     },
     {
       "corp_name": "휴림에이텍",
@@ -127,7 +145,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000195",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000195",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 수정했다는 공시입니다."
     },
     {
       "corp_name": "미라셀",
@@ -136,7 +154,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000219",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000219",
-      "ai_explanation": "회사가 주주 등을 대상으로 신주를 발행하여 자금을 조달한다는 의미입니다."
+      "ai_explanation": "신주를 발행하여 자금을 조달하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "엔젠바이오",
@@ -145,7 +163,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000199",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000199",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 수정했다는 공시입니다."
     },
     {
       "corp_name": "iM금융지주",
@@ -154,7 +172,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000181",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000181",
-      "ai_explanation": "특정 조건 충족 시 상각되는 자본성격의 채권을 발행한다는 의미입니다."
+      "ai_explanation": "금융회사가 자본 확충을 위해 조건부 자본증권을 발행하기로 수정 결정했다는 공시입니다."
     },
     {
       "corp_name": "한화로보틱스",
@@ -163,7 +181,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000167",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000167",
-      "ai_explanation": "회사가 주주 등을 대상으로 신주를 발행하여 자금을 조달한다는 의미입니다."
+      "ai_explanation": "신주를 발행하여 자금을 조달하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "크린앤사이언스",
@@ -172,7 +190,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000134",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000134",
-      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "주가 안정 등을 목적으로 회사가 직접 자사주를 사들이기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -181,7 +199,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000107",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000107",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 수정했다는 공시입니다."
     },
     {
       "corp_name": "씨유테크",
@@ -190,7 +208,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000085",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000085",
-      "ai_explanation": "금융기관에 맡겨두었던 자기주식 신탁 계약을 종료한다는 의미입니다."
+      "ai_explanation": "자사주 취득을 위해 맺었던 신탁 계약을 해지하겠다는 공시입니다."
     },
     {
       "corp_name": "파인디앤씨",
@@ -199,7 +217,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000075",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000075",
-      "ai_explanation": "회사가 주주 등을 대상으로 신주를 발행하여 자금을 조달한다는 의미입니다."
+      "ai_explanation": "신주를 발행하여 자금을 조달하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "나이스디앤비",
@@ -208,7 +226,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260907000065",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000065",
-      "ai_explanation": "자기주식 매입을 위해 금융기관과 신탁 계약을 체결했다는 의미입니다."
+      "ai_explanation": "자사주를 매입하기 위해 신탁 계약을 체결하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "블루산업개발",
@@ -217,7 +235,7 @@
       "rcept_dt": "20260907",
       "rcept_no": "20260904000543",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904000543",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 계획의 내용을 수정했다는 공시입니다."
     }
   ],
   "macro_indicators": [
