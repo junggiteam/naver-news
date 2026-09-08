@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-09 08:01:11",
+  "updated_at": "2026-09-09 08:31:05",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.58,
-    "kosdaq_change": -1.25,
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6954.52,
     "kosdaq_value": 811.88
   },
@@ -87,7 +87,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000003",
-      "ai_explanation": "회사가 보유 중인 전환사채를 제3자에게 매도하기로 결정한 내용을 정정한 공시입니다."
+      "ai_explanation": "회사가 보유한 전환사채를 매각하기로 한 기존 결정 사항을 수정하여 공시함."
     },
     {
       "corp_name": "넥사다이내믹스",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000002",
-      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 새로 주식을 발행해 자본을 늘리기로 결정한 공시입니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 새로 발행하여 투자자에게 판매하기로 결정함."
     },
     {
       "corp_name": "더코디",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000001",
-      "ai_explanation": "회사가 발행할 전환사채의 주요 조건이나 내용을 수정하여 다시 공시한 것입니다."
+      "ai_explanation": "회사가 발행하기로 한 전환사채의 주요 조건을 변경하거나 내용을 수정하여 공시함."
     },
     {
       "corp_name": "로지스몬",
@@ -114,7 +114,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260908000434",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000434",
-      "ai_explanation": "회사가 추진하던 유상증자 계획의 세부 내용이나 일정을 변경하여 정정한 공시입니다."
+      "ai_explanation": "회사가 추진 중인 유상증자의 규모나 방식 등 기존 결정 사항을 수정하여 공시함."
     },
     {
       "corp_name": "HLB펩",
@@ -123,7 +123,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260908000431",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000431",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하기로 결정한 공시입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2982,157 +2982,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "현대약품",
-      "price": "10440.0",
-      "change_percent": "+23.99%",
-      "pct": 23.99
-    },
-    {
-      "name": "에스엠벡셀",
-      "price": "2095.0",
-      "change_percent": "+23.53%",
-      "pct": 23.53
-    },
-    {
-      "name": "한전기술",
-      "price": "142600.0",
-      "change_percent": "+16.60%",
-      "pct": 16.6
-    },
-    {
-      "name": "광전자",
-      "price": "8180.0",
-      "change_percent": "+15.37%",
-      "pct": 15.37
-    },
-    {
-      "name": "한신기계",
-      "price": "2630.0",
-      "change_percent": "+10.74%",
-      "pct": 10.74
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "카프로",
-      "price": "185.0",
-      "change_percent": "-94.95%",
-      "pct": 94.95
-    },
-    {
-      "name": "NHN",
-      "price": "59900.0",
-      "change_percent": "-15.40%",
-      "pct": 15.4
-    },
-    {
-      "name": "TIGER 글로벌자원생산기업(합성 H)",
-      "price": "21630.0",
-      "change_percent": "-13.48%",
-      "pct": 13.48
-    },
-    {
-      "name": "주연테크",
-      "price": "829.0",
-      "change_percent": "-10.96%",
-      "pct": 10.96
-    },
-    {
-      "name": "SHD",
-      "price": "13070.0",
-      "change_percent": "-10.42%",
-      "pct": 10.42
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "전기유틸리티",
-      "change_value": "+6.25%",
-      "pct": 6.25
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건설",
-      "change_value": "+2.72%",
-      "pct": 2.72
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+1.60%",
-      "pct": 1.6
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "가정용기기와용품",
-      "change_value": "+1.03%",
-      "pct": 1.03
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "기타금융",
-      "change_value": "+0.97%",
-      "pct": 0.97
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "전기유틸리티",
-      "change_value": "+6.25%",
-      "pct": 6.25
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건설",
-      "change_value": "+2.72%",
-      "pct": 2.72
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+1.60%",
-      "pct": 1.6
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "가정용기기와용품",
-      "change_value": "+1.03%",
-      "pct": 1.03
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "기타금융",
-      "change_value": "+0.97%",
-      "pct": 0.97
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "가스유틸리티",
-      "change_value": "+0.80%",
-      "pct": 0.8
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "항공화물운송과물류",
-      "change_value": "-2.86%",
-      "pct": -2.86
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기제품",
-      "change_value": "-2.88%",
-      "pct": -2.88
-    },
-    {
-      "name": "전기장비",
-      "change_value": "-3.33%",
-      "pct": -3.33
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "-3.76%",
-      "pct": -3.76
-    },
-    {
-      "name": "전자제품",
-      "change_value": "-4.17%",
-      "pct": -4.17
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-4.92%",
-      "pct": -4.92
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
