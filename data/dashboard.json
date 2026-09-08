@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-08 11:45:51",
+  "updated_at": "2026-09-08 12:01:09",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 1.96,
-    "kosdaq_change": 0.89,
-    "kospi_value": 7132.51,
-    "kosdaq_value": 829.48
+    "kospi_change": 1.88,
+    "kosdaq_change": 0.63,
+    "kospi_value": 7126.65,
+    "kosdaq_value": 827.37
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스 등 반도체 대형주가 외국인과 기관의 매수세에 힘입어 강세를 보이면서 코스피 지수가 최근 38일간 최고치를 기록했다. 코스닥 역시 반도체 관련 훈풍과 대미 투자 기대감 등이 반영되며 전일 대비 상승 마감했다."
+      "text": "반도체 산업의 슈퍼사이클 기대감으로 외국인 투자자가 삼성전자와 SK하이닉스를 대거 매수하며 코스피 지수는 최근 38일간 최고치를 기록했습니다. 건설주 등 특정 테마에 대한 수급과 AI 반도체 중심의 상승세가 이어지면서 코스피와 코스닥 모두 오름세로 장을 마쳤습니다."
     }
   ],
   "daily_term": {
@@ -77,12 +77,22 @@
   "keyword_tags": [],
   "dart_filings": [
     {
+      "corp_name": "성호전자",
+      "corp_code": "00317210",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260908",
+      "rcept_no": "20260908000103",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000103",
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 알리는 것입니다."
+    },
+    {
       "corp_name": "더코디",
       "corp_code": "00530413",
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260908",
       "rcept_no": "20260908000001",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000001"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000001",
+      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 주식으로 바꿀 수 있는 채권을 발행하기로 결정한 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -90,7 +100,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260908",
       "rcept_no": "20260907000332",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000332"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000332",
+      "ai_explanation": "기존에 공시한 유상증자(주식 발행을 통한 자금 조달) 관련 내용 중 일부 항목을 수정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2962,154 +2973,154 @@
   "top_gainers": [
     {
       "name": "현대약품",
-      "price": "10440.0",
-      "change_percent": "+23.99%",
-      "pct": 23.99
+      "price": "10350.0",
+      "change_percent": "+22.92%",
+      "pct": 22.92
     },
     {
       "name": "광전자",
-      "price": "8250.0",
-      "change_percent": "+16.36%",
-      "pct": 16.36
+      "price": "8280.0",
+      "change_percent": "+16.78%",
+      "pct": 16.78
     },
     {
       "name": "한전기술",
-      "price": "140300.0",
-      "change_percent": "+14.72%",
-      "pct": 14.72
+      "price": "141100.0",
+      "change_percent": "+15.37%",
+      "pct": 15.37
     },
     {
       "name": "대우건설",
-      "price": "20850.0",
-      "change_percent": "+13.25%",
-      "pct": 13.25
+      "price": "21150.0",
+      "change_percent": "+14.88%",
+      "pct": 14.88
     },
     {
       "name": "한신기계",
-      "price": "2685.0",
-      "change_percent": "+13.05%",
-      "pct": 13.05
+      "price": "2660.0",
+      "change_percent": "+12.00%",
+      "pct": 12.0
     }
   ],
   "top_losers": [
     {
       "name": "카프로",
-      "price": "257.0",
-      "change_percent": "-92.98%",
-      "pct": 92.98
-    },
-    {
-      "name": "NHN",
-      "price": "60200.0",
-      "change_percent": "-14.97%",
-      "pct": 14.97
-    },
-    {
-      "name": "TIGER 글로벌자원생산기업(합성 H)",
-      "price": "21640.0",
-      "change_percent": "-13.44%",
-      "pct": 13.44
+      "price": "256.0",
+      "change_percent": "-93.01%",
+      "pct": 93.01
     },
     {
       "name": "SUN&L",
-      "price": "1506.0",
-      "change_percent": "-13.15%",
-      "pct": 13.15
+      "price": "1422.0",
+      "change_percent": "-17.99%",
+      "pct": 17.99
     },
     {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5595.0",
-      "change_percent": "-9.02%",
-      "pct": 9.02
+      "name": "NHN",
+      "price": "61200.0",
+      "change_percent": "-13.56%",
+      "pct": 13.56
+    },
+    {
+      "name": "TIGER 글로벌자원생산기업(합성 H)",
+      "price": "21625.0",
+      "change_percent": "-13.50%",
+      "pct": 13.5
+    },
+    {
+      "name": "에이엔피",
+      "price": "318.0",
+      "change_percent": "-9.66%",
+      "pct": 9.66
     }
   ],
   "sector_performance": [
     {
       "name": "전기유틸리티",
-      "change_value": "+6.31%",
-      "pct": 6.31
+      "change_value": "+6.21%",
+      "pct": 6.21
     },
     {
       "name": "건설",
-      "change_value": "+5.77%",
-      "pct": 5.77
+      "change_value": "+6.13%",
+      "pct": 6.13
     },
     {
       "name": "건강관리기술",
-      "change_value": "+4.82%",
-      "pct": 4.82
+      "change_value": "+4.55%",
+      "pct": 4.55
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+3.23%",
-      "pct": 3.23
+      "change_value": "+3.11%",
+      "pct": 3.11
     },
     {
       "name": "기계",
-      "change_value": "+3.19%",
-      "pct": 3.19
+      "change_value": "+2.94%",
+      "pct": 2.94
     }
   ],
   "sector_heatmap": [
     {
       "name": "전기유틸리티",
-      "change_value": "+6.31%",
-      "pct": 6.31
+      "change_value": "+6.21%",
+      "pct": 6.21
     },
     {
       "name": "건설",
-      "change_value": "+5.77%",
-      "pct": 5.77
+      "change_value": "+6.13%",
+      "pct": 6.13
     },
     {
       "name": "건강관리기술",
-      "change_value": "+4.82%",
-      "pct": 4.82
+      "change_value": "+4.55%",
+      "pct": 4.55
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+3.23%",
-      "pct": 3.23
+      "change_value": "+3.11%",
+      "pct": 3.11
     },
     {
       "name": "기계",
-      "change_value": "+3.19%",
-      "pct": 3.19
+      "change_value": "+2.94%",
+      "pct": 2.94
     },
     {
-      "name": "창업투자",
-      "change_value": "+3.04%",
-      "pct": 3.04
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "-1.23%",
-      "pct": -1.23
+      "name": "백화점과일반상점",
+      "change_value": "+2.75%",
+      "pct": 2.75
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-1.26%",
-      "pct": -1.26
+      "change_value": "-1.34%",
+      "pct": -1.34
+    },
+    {
+      "name": "게임엔터테인먼트",
+      "change_value": "-1.53%",
+      "pct": -1.53
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-1.26%",
-      "pct": -1.26
-    },
-    {
-      "name": "생물공학",
-      "change_value": "-1.40%",
-      "pct": -1.4
+      "change_value": "-1.55%",
+      "pct": -1.55
     },
     {
       "name": "IT서비스",
-      "change_value": "-1.43%",
-      "pct": -1.43
+      "change_value": "-1.64%",
+      "pct": -1.64
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-1.71%",
+      "pct": -1.71
     },
     {
       "name": "출판",
-      "change_value": "-1.50%",
-      "pct": -1.5
+      "change_value": "-1.86%",
+      "pct": -1.86
     }
   ],
   "article_counts": {
