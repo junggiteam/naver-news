@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-08 13:31:29",
+  "updated_at": "2026-09-08 14:01:11",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 2.39,
-    "kosdaq_change": 0.95,
-    "kospi_value": 7162.89,
-    "kosdaq_value": 830.0
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 1.52,
+    "kosdaq_change": 0.47,
+    "kospi_value": 7101.77,
+    "kosdaq_value": 826.02
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "수도권 아파트 분양 및 청년 주택 공급 추진과 건설사 기술 도입 확대"
+    },
+    {
+      "category": "증권",
+      "text": "코스피와 코스닥은 반도체 관련 종목의 강세에 힘입어 각각 상승 마감했다. 특히 코스피와 코스피200 지수는 최근 38일간 데이터 기준으로 최고치를 기록했다. 시장에서는 외국인과 기관의 동반 순매수가 이어지며 지수 상승을 견인했다."
     }
   ],
   "daily_term": {
@@ -79,7 +83,7 @@
       "rcept_dt": "20260908",
       "rcept_no": "20260908000106",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000106",
-      "ai_explanation": "회사가 주식을 새로 발행하여 자본금을 확충하고 운영 자금 등을 조달하겠다는 의미입니다."
+      "ai_explanation": "회사가 주식을 새로 발행하여 자금을 조달하기로 결정한 것입니다."
     },
     {
       "corp_name": "성호전자",
@@ -88,7 +92,7 @@
       "rcept_dt": "20260908",
       "rcept_no": "20260908000103",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000103",
-      "ai_explanation": "기존에 결정했던 전환사채 발행 내용 중 일부를 정정하여 다시 공시했다는 의미입니다."
+      "ai_explanation": "과거에 공시한 전환사채 발행 내용 중 일부 항목을 수정하였습니다."
     },
     {
       "corp_name": "더코디",
@@ -97,7 +101,7 @@
       "rcept_dt": "20260908",
       "rcept_no": "20260908000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000001",
-      "ai_explanation": "투자자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행해 자금을 조달하겠다는 의미입니다."
+      "ai_explanation": "투자자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달합니다."
     },
     {
       "corp_name": "더코디",
@@ -106,7 +110,7 @@
       "rcept_dt": "20260908",
       "rcept_no": "20260907000332",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000332",
-      "ai_explanation": "기존에 결정했던 유상증자 내용 중 일부를 정정하여 다시 공시했다는 의미입니다."
+      "ai_explanation": "과거에 공시한 유상증자 발행 내용 중 일부 항목을 수정하였습니다."
     }
   ],
   "macro_indicators": [
@@ -2977,155 +2981,155 @@
   },
   "top_gainers": [
     {
+      "name": "에스엠벡셀",
+      "price": "2070.0",
+      "change_percent": "+22.05%",
+      "pct": 22.05
+    },
+    {
       "name": "현대약품",
-      "price": "10350.0",
-      "change_percent": "+22.92%",
-      "pct": 22.92
+      "price": "10090.0",
+      "change_percent": "+19.83%",
+      "pct": 19.83
     },
     {
       "name": "한전기술",
-      "price": "142900.0",
-      "change_percent": "+16.84%",
-      "pct": 16.84
+      "price": "143000.0",
+      "change_percent": "+16.93%",
+      "pct": 16.93
     },
     {
       "name": "광전자",
-      "price": "8170.0",
-      "change_percent": "+15.23%",
-      "pct": 15.23
+      "price": "8180.0",
+      "change_percent": "+15.37%",
+      "pct": 15.37
     },
     {
-      "name": "에스엠벡셀",
-      "price": "1943.0",
-      "change_percent": "+14.56%",
-      "pct": 14.56
-    },
-    {
-      "name": "대우건설",
-      "price": "20850.0",
-      "change_percent": "+13.25%",
-      "pct": 13.25
+      "name": "한신기계",
+      "price": "2645.0",
+      "change_percent": "+11.37%",
+      "pct": 11.37
     }
   ],
   "top_losers": [
     {
       "name": "카프로",
-      "price": "259.0",
-      "change_percent": "-92.92%",
-      "pct": 92.92
+      "price": "220.0",
+      "change_percent": "-93.99%",
+      "pct": 93.99
     },
     {
       "name": "NHN",
-      "price": "59400.0",
-      "change_percent": "-16.10%",
-      "pct": 16.1
+      "price": "60600.0",
+      "change_percent": "-14.41%",
+      "pct": 14.41
     },
     {
       "name": "TIGER 글로벌자원생산기업(합성 H)",
-      "price": "21640.0",
-      "change_percent": "-13.44%",
-      "pct": 13.44
+      "price": "21620.0",
+      "change_percent": "-13.52%",
+      "pct": 13.52
+    },
+    {
+      "name": "SUN&L",
+      "price": "1540.0",
+      "change_percent": "-11.19%",
+      "pct": 11.19
     },
     {
       "name": "에이엔피",
-      "price": "311.0",
-      "change_percent": "-11.65%",
-      "pct": 11.65
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5455.0",
-      "change_percent": "-11.30%",
-      "pct": 11.3
+      "price": "313.0",
+      "change_percent": "-11.08%",
+      "pct": 11.08
     }
   ],
   "sector_performance": [
     {
       "name": "전기유틸리티",
-      "change_value": "+6.11%",
-      "pct": 6.11
+      "change_value": "+6.55%",
+      "pct": 6.55
     },
     {
       "name": "건설",
-      "change_value": "+5.62%",
-      "pct": 5.62
+      "change_value": "+5.02%",
+      "pct": 5.02
     },
     {
       "name": "건강관리기술",
-      "change_value": "+4.47%",
-      "pct": 4.47
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+4.13%",
-      "pct": 4.13
+      "change_value": "+4.48%",
+      "pct": 4.48
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+2.94%",
-      "pct": 2.94
+      "change_value": "+3.08%",
+      "pct": 3.08
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+2.82%",
+      "pct": 2.82
     }
   ],
   "sector_heatmap": [
     {
       "name": "전기유틸리티",
-      "change_value": "+6.11%",
-      "pct": 6.11
+      "change_value": "+6.55%",
+      "pct": 6.55
     },
     {
       "name": "건설",
-      "change_value": "+5.62%",
-      "pct": 5.62
+      "change_value": "+5.02%",
+      "pct": 5.02
     },
     {
       "name": "건강관리기술",
-      "change_value": "+4.47%",
-      "pct": 4.47
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+4.13%",
-      "pct": 4.13
+      "change_value": "+4.48%",
+      "pct": 4.48
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+2.94%",
-      "pct": 2.94
+      "change_value": "+3.08%",
+      "pct": 3.08
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+2.82%",
+      "pct": 2.82
     },
     {
       "name": "기계",
-      "change_value": "+2.40%",
-      "pct": 2.4
+      "change_value": "+1.97%",
+      "pct": 1.97
     },
     {
-      "name": "해운사",
-      "change_value": "-1.62%",
-      "pct": -1.62
-    },
-    {
-      "name": "전자제품",
-      "change_value": "-1.65%",
-      "pct": -1.65
-    },
-    {
-      "name": "화장품",
-      "change_value": "-1.66%",
-      "pct": -1.66
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "-1.77%",
-      "pct": -1.77
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "-2.11%",
-      "pct": -2.11
+      "name": "전기제품",
+      "change_value": "-1.88%",
+      "pct": -1.88
     },
     {
       "name": "출판",
-      "change_value": "-2.17%",
-      "pct": -2.17
+      "change_value": "-1.90%",
+      "pct": -1.9
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-1.95%",
+      "pct": -1.95
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "-2.56%",
+      "pct": -2.56
+    },
+    {
+      "name": "IT서비스",
+      "change_value": "-2.56%",
+      "pct": -2.56
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-2.78%",
+      "pct": -2.78
     }
   ],
   "article_counts": {
