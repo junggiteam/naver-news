@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 17:01:14",
+  "updated_at": "2026-09-09 17:31:13",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 정부의 양자컴퓨터 기업 지분 투자 소식에 관련 종목들이 강세를 보였고, 2차전지주를 비롯한 주요 종목들의 투자 심리가 개선되며 지수가 상승했다. 코스피는 39일 만에 최고치를 기록하며 7,000선 탈환에 성공했고 코스닥 또한 2%대 상승 폭을 보이며 장을 마감했다."
+      "text": "코스피는 2차전지 관련주의 강세와 함께 지수가 7,000선을 회복하며 최근 39일간 최고치를 기록했다. 미국 정부의 양자컴퓨터 기업 투자 소식에 관련주가 동반 상승하며 코스닥 지수의 오름세를 이끌었다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,49 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "아리바이오LAB",
+      "corp_code": "01141599",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260909",
+      "rcept_no": "20260909000478",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000478",
+      "ai_explanation": "회사가 채권자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하는 것입니다."
+    },
+    {
+      "corp_name": "KISCO홀딩스",
+      "corp_code": "00159740",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+      "rcept_dt": "20260909",
+      "rcept_no": "20260909000492",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000492",
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 목적의 신탁 계약을 종료하는 것입니다."
+    },
+    {
+      "corp_name": "한국철강",
+      "corp_code": "00687711",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+      "rcept_dt": "20260909",
+      "rcept_no": "20260909000484",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000484",
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 목적의 신탁 계약을 종료하는 것입니다."
+    },
+    {
+      "corp_name": "금양",
+      "corp_code": "00106119",
+      "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+      "rcept_dt": "20260909",
+      "rcept_no": "20260909000470",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000470",
+      "ai_explanation": "회사의 특정 사업부를 분리하여 별도의 회사로 만드는 결정을 수정하는 것입니다."
+    },
+    {
       "corp_name": "송우인포텍",
       "corp_code": "01831708",
       "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
       "rcept_dt": "20260909",
       "rcept_no": "20260909000424",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000424",
-      "ai_explanation": "회사가 건물이나 토지 등 유형자산을 매입하기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사가 건물이나 토지 등 유형자산을 매입하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "이렘",
@@ -100,7 +136,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000431",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000431",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정한다는 뜻입니다."
+      "ai_explanation": "회사가 주주 등을 대상으로 신주를 발행해 자본을 확충하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "쎄노텍",
@@ -109,7 +145,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000412",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000412",
-      "ai_explanation": "회사가 자사 주가를 안정시키거나 주주 가치를 높이기 위해 자사 주식을 사들인다는 뜻입니다."
+      "ai_explanation": "회사가 경영 효율화나 주가 안정을 위해 자사주를 사들이기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "케이티",
@@ -118,7 +154,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000349",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000349",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료한다는 뜻입니다."
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 목적의 신탁 계약을 종료하는 것입니다."
     },
     {
       "corp_name": "캔버스엔",
@@ -127,7 +163,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000352",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000352",
-      "ai_explanation": "회사가 추후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행한다는 뜻입니다."
+      "ai_explanation": "발행 예정인 전환사채의 조건을 정정하거나 관련 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "캔버스엔",
@@ -136,7 +172,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000346",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000346",
-      "ai_explanation": "회사가 추후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행한다는 뜻입니다."
+      "ai_explanation": "발행 예정인 전환사채의 조건을 정정하거나 관련 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "캔버스엔",
@@ -145,7 +181,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000329",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000329",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정한다는 뜻입니다."
+      "ai_explanation": "회사가 신주를 발행해 자본을 확충하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "금양",
@@ -154,7 +190,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000291",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000291",
-      "ai_explanation": "회사의 일부 사업 부문을 분리하여 별도의 회사로 독립시킨다는 뜻입니다."
+      "ai_explanation": "회사의 특정 사업부를 분리하여 별도의 회사로 만드는 것을 결정하는 것입니다."
     },
     {
       "corp_name": "인콘",
@@ -163,7 +199,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000319",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000319",
-      "ai_explanation": "회사가 추후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행한다는 뜻입니다."
+      "ai_explanation": "이미 결정된 전환사채 발행 관련 내용을 정정하는 것입니다."
     },
     {
       "corp_name": "광무",
@@ -172,7 +208,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000286",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000286",
-      "ai_explanation": "회사가 사업 확장 등을 위해 다른 회사의 주식을 사들이기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사가 다른 회사의 주식을 취득하여 경영권을 확보하거나 투자하는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -181,7 +217,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000290",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000290",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정한다는 뜻입니다."
+      "ai_explanation": "회사가 신주를 발행해 자본을 확충하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "엑스엘게임즈",
@@ -190,7 +226,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000288",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000288",
-      "ai_explanation": "회사가 운영 중인 사업의 전부나 일부를 다른 회사에 넘기기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사의 사업 일부를 다른 회사에 넘기기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -199,7 +235,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000220",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000220",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정한다는 뜻입니다."
+      "ai_explanation": "회사가 신주를 발행해 자본을 확충하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "베셀",
@@ -208,7 +244,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000206",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000206",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료한다는 뜻입니다."
+      "ai_explanation": "자사주 매입을 위한 신탁 계약 해지 결정 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "스노우",
@@ -217,7 +253,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000191",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000191",
-      "ai_explanation": "회사가 다른 회사와 합쳐 하나의 회사가 되기로 결정했다는 뜻입니다."
+      "ai_explanation": "두 개 이상의 회사가 합쳐져 하나의 회사가 되는 것을 결정하는 것입니다."
     },
     {
       "corp_name": "엠디바이스",
@@ -226,7 +262,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000158",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000158",
-      "ai_explanation": "발행했던 전환사채를 만기 전에 회사가 다시 사들인다는 뜻입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사들이는 것입니다."
     },
     {
       "corp_name": "쎄노텍",
@@ -235,7 +271,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000132",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000132",
-      "ai_explanation": "회사가 자사 주가를 안정시키거나 주주 가치를 높이기 위해 자사 주식을 사들인다는 뜻입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 매입하는 것입니다."
     },
     {
       "corp_name": "대선조선",
@@ -244,7 +280,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000121",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000121",
-      "ai_explanation": "회사와 관련된 법적 분쟁이나 소송이 제기되었음을 알리는 공시입니다."
+      "ai_explanation": "회사와 관련된 법적 분쟁이나 소송이 제기된 사실을 알리는 것입니다."
     },
     {
       "corp_name": "티피씨글로벌",
@@ -253,7 +289,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000110",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000110",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료한다는 뜻입니다."
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 목적의 신탁 계약을 종료하는 것입니다."
     },
     {
       "corp_name": "대선조선",
@@ -262,7 +298,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000116",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000116",
-      "ai_explanation": "회사와 관련된 법적 분쟁이나 소송이 제기되었음을 알리는 공시입니다."
+      "ai_explanation": "회사와 관련된 법적 분쟁이나 소송이 제기된 사실을 알리는 것입니다."
     },
     {
       "corp_name": "이노테나",
@@ -271,7 +307,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000085",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000085",
-      "ai_explanation": "회사가 자사주 취득을 위해 금융기관과 신탁 계약을 체결하기로 했다는 뜻입니다."
+      "ai_explanation": "자사주 매입을 위해 증권사와 신탁 계약을 체결하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "베셀",
@@ -280,7 +316,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000079",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000079",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료한다는 뜻입니다."
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 목적의 신탁 계약을 종료하는 것입니다."
     },
     {
       "corp_name": "큐에스아이",
@@ -289,7 +325,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000074",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000074",
-      "ai_explanation": "회사가 자사주 취득을 위해 금융기관과 신탁 계약을 체결하기로 했다는 뜻입니다."
+      "ai_explanation": "회사가 주가 안정 등을 위해 증권사에 자사주 매입을 맡기는 계약을 체결하는 것입니다."
     },
     {
       "corp_name": "에이피알",
@@ -298,7 +334,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000045",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000045",
-      "ai_explanation": "회사가 다른 회사와 합쳐 하나의 회사가 되기로 결정했다는 뜻입니다."
+      "ai_explanation": "두 개 이상의 회사가 합쳐져 하나의 회사가 되는 것을 결정하는 것입니다."
     },
     {
       "corp_name": "이노테나",
@@ -307,7 +343,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000019",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000019",
-      "ai_explanation": "회사가 자사주 취득을 위해 금융기관과 신탁 계약을 체결하기로 했다는 뜻입니다."
+      "ai_explanation": "회사가 주가 안정 등을 위해 증권사에 자사주 매입을 맡기는 계약을 체결하는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -316,7 +352,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000003",
-      "ai_explanation": "회사가 보유하거나 발행했던 전환사채를 제3자에게 매도하기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사가 보유한 자기 전환사채를 제3자에게 매도하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "넥사다이내믹스",
@@ -325,7 +361,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000002",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정한다는 뜻입니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본금을 늘리는 결정을 하는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -334,7 +370,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000001",
-      "ai_explanation": "회사가 추후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행한다는 뜻입니다."
+      "ai_explanation": "전환사채 발행 결정과 관련하여 기재된 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "로지스몬",
@@ -343,7 +379,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260908000434",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000434",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정한다는 뜻입니다."
+      "ai_explanation": "회사가 신주를 발행해 자본을 확충하기로 한 결정을 수정하는 것입니다."
     },
     {
       "corp_name": "HLB펩",
@@ -352,7 +388,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260908000431",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000431",
-      "ai_explanation": "발행했던 전환사채를 만기 전에 회사가 다시 사들인다는 뜻입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사들이는 것입니다."
     }
   ],
   "macro_indicators": [
