@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-10 08:01:07",
+  "updated_at": "2026-09-10 08:31:10",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 1.4,
-    "kosdaq_change": 2.28,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 7051.64,
     "kosdaq_value": 830.37
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "고분양가에도 인기 지역 오피스텔에 수요가 몰리는 양극화 현상 지속됨"
-    },
-    {
-      "category": "증권",
-      "text": "뉴욕증시가 유가 상승과 금리 부담으로 하락세를 보였음에도 불구하고, 국내 증시는 인공지능 관련 모멘텀의 영향으로 상승 마감했다. 배터리, 전력, 조선 업종이 동반 강세를 보였고 기관 투자자의 매수세가 유입되면서 코스피와 코스닥 지수 모두 반등했다."
     }
   ],
   "daily_term": {
@@ -100,7 +96,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000543",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000543",
-      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 주식을 새로 발행해 자본을 늘리기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 새로 주식을 발행하여 자본을 확충한다는 공시입니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -109,7 +105,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000544",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000544",
-      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 주식을 새로 발행해 자본을 늘리기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 새로 주식을 발행하여 자본을 확충한다는 공시입니다."
     },
     {
       "corp_name": "본느",
@@ -118,7 +114,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000542",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000542",
-      "ai_explanation": "기존에 제출했던 유상증자 결정 관련 공시의 내용을 정정하여 다시 제출했다는 공시입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완했다는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2947,157 +2943,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "에스엠벡셀",
-      "price": "2540.0",
-      "change_percent": "+21.24%",
-      "pct": 21.24
-    },
-    {
-      "name": "키다리스튜디오",
-      "price": "7960.0",
-      "change_percent": "+20.61%",
-      "pct": 20.61
-    },
-    {
-      "name": "롯데케미칼",
-      "price": "67800.0",
-      "change_percent": "+18.12%",
-      "pct": 18.12
-    },
-    {
-      "name": "가온전선",
-      "price": "265500.0",
-      "change_percent": "+16.70%",
-      "pct": 16.7
-    },
-    {
-      "name": "롯데에너지머티리얼즈",
-      "price": "41650.0",
-      "change_percent": "+14.11%",
-      "pct": 14.11
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "카프로",
-      "price": "147.0",
-      "change_percent": "-20.54%",
-      "pct": 20.54
-    },
-    {
-      "name": "상상인증권",
-      "price": "4500.0",
-      "change_percent": "-10.89%",
-      "pct": 10.89
-    },
-    {
-      "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "4410.0",
-      "change_percent": "-10.82%",
-      "pct": 10.82
-    },
-    {
-      "name": "형지엘리트",
-      "price": "323.0",
-      "change_percent": "-7.71%",
-      "pct": 7.71
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5595.0",
-      "change_percent": "-7.44%",
-      "pct": 7.44
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "전기제품",
-      "change_value": "+7.16%",
-      "pct": 7.16
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+6.43%",
-      "pct": 6.43
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전기장비",
-      "change_value": "+5.59%",
-      "pct": 5.59
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화학",
-      "change_value": "+5.22%",
-      "pct": 5.22
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+5.13%",
-      "pct": 5.13
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "전기제품",
-      "change_value": "+7.16%",
-      "pct": 7.16
+      "name": "음료",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+6.43%",
-      "pct": 6.43
+      "name": "종이와목재",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "전기장비",
-      "change_value": "+5.59%",
-      "pct": 5.59
+      "name": "호텔,레스토랑,레저",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화학",
-      "change_value": "+5.22%",
-      "pct": 5.22
+      "name": "건강관리업체및서비스",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "+5.13%",
-      "pct": 5.13
+      "name": "손해보험",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "무역회사와판매업체",
-      "change_value": "+5.08%",
-      "pct": 5.08
+      "name": "출판",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "복합유틸리티",
-      "change_value": "-1.71%",
-      "pct": -1.71
-    },
-    {
-      "name": "항공사",
-      "change_value": "-1.97%",
-      "pct": -1.97
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "-2.04%",
-      "pct": -2.04
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "-2.34%",
-      "pct": -2.34
+      "name": "생물공학",
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "-2.64%",
-      "pct": -2.64
+      "change_value": "0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-3.20%",
-      "pct": -3.2
+      "name": "우주항공과국방",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
