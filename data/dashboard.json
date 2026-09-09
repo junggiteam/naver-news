@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-09 11:01:23",
+  "updated_at": "2026-09-09 11:31:17",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 1.41,
-    "kosdaq_change": 1.95,
-    "kospi_value": 7052.61,
-    "kosdaq_value": 827.73
+    "kospi_change": 1.75,
+    "kosdaq_change": 2.03,
+    "kospi_value": 7076.51,
+    "kosdaq_value": 828.4
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 증시가 약세를 보였음에도 반도체와 광통신 등 주요 기술주가 강세를 보이며 투자 심리를 견인했다. 코스피는 장중 7,000선을 돌파하며 최근 39일간 가장 높은 수치를 기록했고, 코스닥 역시 1%대 상승세를 보이며 마감했다."
+      "text": "삼성전자와 SK하이닉스 등 반도체 대형주가 상승세를 주도하고 기관 투자자의 매수세가 유입되면서 코스피 지수가 최근 39일간 가장 높은 수치를 기록했다. AI 인프라 관련주를 비롯한 개별 종목들의 강세와 함께 지수 상승 흐름이 이어지며 코스피와 코스닥이 모두 1~2%대 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "티피씨글로벌",
+      "corp_code": "00578538",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+      "rcept_dt": "20260909",
+      "rcept_no": "20260909000110",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000110",
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 신탁 계약을 중도에 해지하기로 결정함."
+    },
+    {
+      "corp_name": "대선조선",
+      "corp_code": "00110307",
+      "report_nm": "주요사항보고서(소송등의제기)",
+      "rcept_dt": "20260909",
+      "rcept_no": "20260909000116",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000116",
+      "ai_explanation": "회사가 경영 관련 분쟁 등으로 인해 외부 기관으로부터 소송을 당하거나 제기함."
+    },
+    {
       "corp_name": "이노테나",
       "corp_code": "01407158",
       "report_nm": "[기재정정]주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20260909",
       "rcept_no": "20260909000085",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000085",
-      "ai_explanation": "회사가 자사주 취득을 위해 금융기관과 맺은 신탁 계약 내용을 정정 공시했습니다."
+      "ai_explanation": "기존에 공시했던 자사주 매입 신탁 계약 내용 중 일부를 수정하여 정정함."
     },
     {
       "corp_name": "베셀",
@@ -100,7 +118,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000079",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000079",
-      "ai_explanation": "회사가 금융기관과 맺었던 자사주 취득 신탁 계약을 해지하기로 결정했습니다."
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 신탁 계약을 중도에 해지하기로 결정함."
     },
     {
       "corp_name": "큐에스아이",
@@ -109,7 +127,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000074",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000074",
-      "ai_explanation": "회사가 자사주 취득을 목적으로 금융기관과 신탁 계약을 체결하기로 결정했습니다."
+      "ai_explanation": "회사가 주가 안정을 목적으로 증권사를 통해 자사주를 매입하는 신탁 계약을 체결함."
     },
     {
       "corp_name": "에이피알",
@@ -118,7 +136,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000045",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000045",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 결정하고 그 세부 내용을 알리는 공시입니다."
+      "ai_explanation": "회사의 규모 확대나 경영 효율성을 위해 다른 회사와 합치기로 결정함."
     },
     {
       "corp_name": "이노테나",
@@ -127,7 +145,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000019",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000019",
-      "ai_explanation": "회사가 자사주 취득을 목적으로 금융기관과 신탁 계약을 체결하기로 결정했습니다."
+      "ai_explanation": "회사가 주가 안정을 목적으로 증권사를 통해 자사주를 매입하는 신탁 계약을 체결함."
     },
     {
       "corp_name": "더코디",
@@ -136,7 +154,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000003",
-      "ai_explanation": "회사가 보유한 자기 전환사채를 제3자에게 매도하기로 한 내용을 정정 공시했습니다."
+      "ai_explanation": "회사가 보유하고 있던 자기 전환사채를 제3자에게 매도하기로 한 내용을 정정함."
     },
     {
       "corp_name": "넥사다이내믹스",
@@ -145,7 +163,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000002",
-      "ai_explanation": "회사가 신규 자금 조달을 위해 주식을 새로 발행하여 투자자에게 배정하기로 결정했습니다."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 신주를 발행하여 자본금을 늘리기로 결정함."
     },
     {
       "corp_name": "더코디",
@@ -154,7 +172,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260909000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000001",
-      "ai_explanation": "회사가 발행하는 전환사채의 주요 계약 조건 등을 정정하여 공시했습니다."
+      "ai_explanation": "회사가 자금 조달을 위해 발행하는 전환사채의 주요 조건을 수정하여 정정함."
     },
     {
       "corp_name": "로지스몬",
@@ -163,7 +181,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260908000434",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000434",
-      "ai_explanation": "회사가 당초 결정했던 유상증자의 세부 사항을 수정하여 정정 공시했습니다."
+      "ai_explanation": "회사가 신주 발행을 통해 자본을 확충하려던 기존 계획의 내용을 수정하여 정정함."
     },
     {
       "corp_name": "HLB펩",
@@ -172,7 +190,7 @@
       "rcept_dt": "20260909",
       "rcept_no": "20260908000431",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000431",
-      "ai_explanation": "회사가 만기 전 미리 자사의 전환사채를 취득하여 소각하거나 보유하기로 결정했습니다."
+      "ai_explanation": "회사가 만기 전 미리 자사 전환사채를 되사들여 소각하거나 보유하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -3033,34 +3051,34 @@
   },
   "top_gainers": [
     {
-      "name": "에스엠벡셀",
-      "price": "2510.0",
-      "change_percent": "+19.81%",
-      "pct": 19.81
+      "name": "가온전선",
+      "price": "268500.0",
+      "change_percent": "+18.02%",
+      "pct": 18.02
     },
     {
-      "name": "가온전선",
-      "price": "267500.0",
-      "change_percent": "+17.58%",
-      "pct": 17.58
+      "name": "에스엠벡셀",
+      "price": "2460.0",
+      "change_percent": "+17.42%",
+      "pct": 17.42
+    },
+    {
+      "name": "키다리스튜디오",
+      "price": "7620.0",
+      "change_percent": "+15.45%",
+      "pct": 15.45
+    },
+    {
+      "name": "써니전자",
+      "price": "2465.0",
+      "change_percent": "+14.12%",
+      "pct": 14.12
     },
     {
       "name": "비비안",
-      "price": "5890.0",
-      "change_percent": "+13.93%",
-      "pct": 13.93
-    },
-    {
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7290.0",
-      "change_percent": "+13.37%",
-      "pct": 13.37
-    },
-    {
-      "name": "두올",
-      "price": "4140.0",
-      "change_percent": "+12.50%",
-      "pct": 12.5
+      "price": "5790.0",
+      "change_percent": "+11.99%",
+      "pct": 11.99
     }
   ],
   "top_losers": [
@@ -3072,116 +3090,116 @@
     },
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "4410.0",
-      "change_percent": "-10.82%",
-      "pct": 10.82
-    },
-    {
-      "name": "형지엘리트",
-      "price": "318.0",
-      "change_percent": "-9.14%",
-      "pct": 9.14
+      "price": "4315.0",
+      "change_percent": "-12.74%",
+      "pct": 12.74
     },
     {
       "name": "상상인증권",
-      "price": "4625.0",
-      "change_percent": "-8.42%",
-      "pct": 8.42
+      "price": "4600.0",
+      "change_percent": "-8.91%",
+      "pct": 8.91
     },
     {
-      "name": "자이에스앤디",
-      "price": "9930.0",
-      "change_percent": "-8.06%",
-      "pct": 8.06
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "5540.0",
+      "change_percent": "-8.35%",
+      "pct": 8.35
+    },
+    {
+      "name": "형지엘리트",
+      "price": "321.0",
+      "change_percent": "-8.29%",
+      "pct": 8.29
     }
   ],
   "sector_performance": [
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+6.54%",
-      "pct": 6.54
-    },
-    {
       "name": "전기장비",
-      "change_value": "+6.06%",
-      "pct": 6.06
+      "change_value": "+6.77%",
+      "pct": 6.77
     },
     {
-      "name": "통신장비",
-      "change_value": "+4.39%",
-      "pct": 4.39
+      "name": "컴퓨터와주변기기",
+      "change_value": "+6.53%",
+      "pct": 6.53
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+4.30%",
-      "pct": 4.3
+      "change_value": "+4.69%",
+      "pct": 4.69
+    },
+    {
+      "name": "통신장비",
+      "change_value": "+4.67%",
+      "pct": 4.67
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.52%",
-      "pct": 3.52
+      "change_value": "+3.77%",
+      "pct": 3.77
     }
   ],
   "sector_heatmap": [
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+6.54%",
-      "pct": 6.54
-    },
-    {
       "name": "전기장비",
-      "change_value": "+6.06%",
-      "pct": 6.06
+      "change_value": "+6.77%",
+      "pct": 6.77
     },
     {
-      "name": "통신장비",
-      "change_value": "+4.39%",
-      "pct": 4.39
+      "name": "컴퓨터와주변기기",
+      "change_value": "+6.53%",
+      "pct": 6.53
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+4.30%",
-      "pct": 4.3
+      "change_value": "+4.69%",
+      "pct": 4.69
+    },
+    {
+      "name": "통신장비",
+      "change_value": "+4.67%",
+      "pct": 4.67
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.52%",
-      "pct": 3.52
+      "change_value": "+3.77%",
+      "pct": 3.77
     },
     {
-      "name": "무역회사와판매업체",
-      "change_value": "+3.21%",
-      "pct": 3.21
+      "name": "기계",
+      "change_value": "+3.30%",
+      "pct": 3.3
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "-1.63%",
-      "pct": -1.63
-    },
-    {
-      "name": "도로와철도운송",
-      "change_value": "-1.64%",
-      "pct": -1.64
-    },
-    {
-      "name": "은행",
-      "change_value": "-1.70%",
-      "pct": -1.7
+      "name": "게임엔터테인먼트",
+      "change_value": "-1.62%",
+      "pct": -1.62
     },
     {
       "name": "해운사",
-      "change_value": "-1.77%",
-      "pct": -1.77
+      "change_value": "-1.72%",
+      "pct": -1.72
+    },
+    {
+      "name": "도로와철도운송",
+      "change_value": "-1.73%",
+      "pct": -1.73
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "-1.76%",
+      "pct": -1.76
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "-2.35%",
-      "pct": -2.35
+      "change_value": "-2.25%",
+      "pct": -2.25
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-2.56%",
-      "pct": -2.56
+      "change_value": "-2.89%",
+      "pct": -2.89
     }
   ],
   "article_counts": {
