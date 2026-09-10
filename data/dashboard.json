@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-10 14:15:35",
+  "updated_at": "2026-09-10 14:31:02",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.08,
-    "kosdaq_change": 0.2,
-    "kospi_value": 7046.04,
-    "kosdaq_value": 832.06
+    "kospi_change": -0.07,
+    "kosdaq_change": 0.59,
+    "kospi_value": 7046.85,
+    "kosdaq_value": 835.23
   },
   "heroes": {
     "종합": {
@@ -68,13 +68,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "티시스도산공원피에프브이",
+      "corp_code": "02028596",
+      "report_nm": "해산사유발생",
+      "rcept_dt": "20260910",
+      "rcept_no": "20260910000192",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000192",
+      "ai_explanation": "회사가 사업 목적을 달성하거나 종료되어 조직을 없애는 절차에 들어감을 의미합니다."
+    },
+    {
       "corp_name": "엔디에스",
       "corp_code": "00219875",
       "report_nm": "타인을위한채무보증결정",
       "rcept_dt": "20260910",
       "rcept_no": "20260910000123",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000123",
-      "ai_explanation": "회사가 타인의 채무를 대신 갚아주겠다고 보증하는 것을 의미합니다."
+      "ai_explanation": "회사가 타인의 채무를 대신 갚아주기로 약정하여 지급 보증을 서는 것을 의미합니다."
     },
     {
       "corp_name": "PN풍년",
@@ -83,7 +92,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260910000116",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000116",
-      "ai_explanation": "회사가 자사 주식을 시장에서 직접 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 자사의 주식을 시장에서 직접 매입하여 주주 가치를 제고하는 것을 의미합니다."
     },
     {
       "corp_name": "주성코퍼레이션",
@@ -92,7 +101,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260910000105",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000105",
-      "ai_explanation": "기존에 발표한 유상증자 내용 중 일부 항목을 수정했음을 의미합니다."
+      "ai_explanation": "이미 발표한 유상증자 내용 중 일부 항목이나 조건을 수정하여 다시 공시하는 것입니다."
     },
     {
       "corp_name": "주성코퍼레이션",
@@ -101,7 +110,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260910000095",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000095",
-      "ai_explanation": "기존에 발표한 전환사채 발행 내용 중 일부 항목을 수정했음을 의미합니다."
+      "ai_explanation": "이미 발표한 전환사채 발행 조건이나 관련 내용을 수정하여 다시 공시하는 것입니다."
     },
     {
       "corp_name": "볼빅",
@@ -110,7 +119,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260910000108",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000108",
-      "ai_explanation": "기존에 발표한 유상증자 공시의 첨부 서류를 정정했음을 의미합니다."
+      "ai_explanation": "이미 발표한 유상증자 공시의 첨부 서류를 보완하거나 내용을 수정하여 다시 공시하는 것입니다."
     },
     {
       "corp_name": "메디오젠",
@@ -119,7 +128,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000545",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000545",
-      "ai_explanation": "건물이나 토지 등 회사가 보유한 고정 자산을 매각하기로 결정했음을 의미합니다."
+      "ai_explanation": "회사 소유의 건물, 토지, 기계장치 등 고정 자산을 매각하기로 결정한 것을 의미합니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -128,7 +137,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000543",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000543",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 운영 자금이나 채무 상환 등을 목적으로 신주를 발행해 자본을 늘리는 것을 의미합니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -137,7 +146,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000544",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000544",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 운영 자금이나 채무 상환 등을 목적으로 신주를 발행해 자본을 늘리는 것을 의미합니다."
     },
     {
       "corp_name": "본느",
@@ -146,7 +155,7 @@
       "rcept_dt": "20260910",
       "rcept_no": "20260909000542",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000542",
-      "ai_explanation": "기존에 발표한 유상증자 공시의 첨부 서류를 정정했음을 의미합니다."
+      "ai_explanation": "이미 발표한 유상증자 공시의 첨부 서류를 보완하거나 내용을 수정하여 다시 공시하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2995,36 +3004,36 @@
       "pct": 29.94
     },
     {
-      "name": "SK디앤디",
-      "price": "4410.0",
-      "change_percent": "+17.60%",
-      "pct": 17.6
+      "name": "HD현대마린솔루션",
+      "price": "239500.0",
+      "change_percent": "+13.78%",
+      "pct": 13.78
     },
     {
-      "name": "HD현대마린솔루션",
-      "price": "235000.0",
-      "change_percent": "+11.64%",
-      "pct": 11.64
+      "name": "SK디앤디",
+      "price": "4195.0",
+      "change_percent": "+11.87%",
+      "pct": 11.87
     }
   ],
   "top_losers": [
     {
       "name": "SHD",
-      "price": "10380.0",
-      "change_percent": "-19.97%",
-      "pct": 19.97
+      "price": "10600.0",
+      "change_percent": "-18.27%",
+      "pct": 18.27
     },
     {
       "name": "대교우B",
-      "price": "1052.0",
-      "change_percent": "-12.04%",
-      "pct": 12.04
+      "price": "1056.0",
+      "change_percent": "-11.71%",
+      "pct": 11.71
     },
     {
       "name": "주연테크",
-      "price": "697.0",
-      "change_percent": "-10.98%",
-      "pct": 10.98
+      "price": "714.0",
+      "change_percent": "-8.81%",
+      "pct": 8.81
     },
     {
       "name": "서울식품우",
@@ -3033,99 +3042,99 @@
       "pct": 8.58
     },
     {
-      "name": "산일전기",
-      "price": "194300.0",
-      "change_percent": "-7.70%",
-      "pct": 7.7
+      "name": "S-Oil",
+      "price": "153900.0",
+      "change_percent": "-7.23%",
+      "pct": 7.23
     }
   ],
   "sector_performance": [
     {
       "name": "가스유틸리티",
-      "change_value": "+2.74%",
-      "pct": 2.74
+      "change_value": "+2.54%",
+      "pct": 2.54
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+1.61%",
-      "pct": 1.61
-    },
-    {
-      "name": "조선",
-      "change_value": "+1.19%",
-      "pct": 1.19
+      "change_value": "+1.74%",
+      "pct": 1.74
     },
     {
       "name": "생명보험",
-      "change_value": "+1.17%",
-      "pct": 1.17
+      "change_value": "+1.27%",
+      "pct": 1.27
     },
     {
-      "name": "전자제품",
-      "change_value": "+0.90%",
-      "pct": 0.9
+      "name": "담배",
+      "change_value": "+1.25%",
+      "pct": 1.25
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "+0.92%",
+      "pct": 0.92
     }
   ],
   "sector_heatmap": [
     {
       "name": "가스유틸리티",
-      "change_value": "+2.74%",
-      "pct": 2.74
+      "change_value": "+2.54%",
+      "pct": 2.54
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+1.61%",
-      "pct": 1.61
-    },
-    {
-      "name": "조선",
-      "change_value": "+1.19%",
-      "pct": 1.19
+      "change_value": "+1.74%",
+      "pct": 1.74
     },
     {
       "name": "생명보험",
-      "change_value": "+1.17%",
-      "pct": 1.17
-    },
-    {
-      "name": "전자제품",
-      "change_value": "+0.90%",
-      "pct": 0.9
+      "change_value": "+1.27%",
+      "pct": 1.27
     },
     {
       "name": "담배",
-      "change_value": "+0.89%",
-      "pct": 0.89
+      "change_value": "+1.25%",
+      "pct": 1.25
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-1.83%",
-      "pct": -1.83
+      "name": "자동차부품",
+      "change_value": "+0.92%",
+      "pct": 0.92
+    },
+    {
+      "name": "포장재",
+      "change_value": "+0.87%",
+      "pct": 0.87
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-1.85%",
-      "pct": -1.85
+      "change_value": "-1.70%",
+      "pct": -1.7
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-2.12%",
-      "pct": -2.12
+      "change_value": "-1.87%",
+      "pct": -1.87
     },
     {
       "name": "전기장비",
-      "change_value": "-2.16%",
-      "pct": -2.16
+      "change_value": "-1.99%",
+      "pct": -1.99
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "-2.20%",
+      "pct": -2.2
     },
     {
       "name": "건강관리기술",
-      "change_value": "-2.74%",
-      "pct": -2.74
+      "change_value": "-2.64%",
+      "pct": -2.64
     },
     {
       "name": "항공사",
-      "change_value": "-3.15%",
-      "pct": -3.15
+      "change_value": "-3.38%",
+      "pct": -3.38
     }
   ],
   "article_counts": {
