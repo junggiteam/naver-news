@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-11 11:45:40",
+  "updated_at": "2026-09-11 12:01:05",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": null,
-    "kosdaq_value": null
+    "label": "하락",
+    "emoji": "🟠",
+    "kospi_change": -2.48,
+    "kosdaq_change": -1.8,
+    "kospi_value": 6859.18,
+    "kosdaq_value": 821.87
   },
   "heroes": {
     "종합": {
@@ -2942,15 +2942,164 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
-  "sector_performance": [],
-  "sector_heatmap": [],
+  "top_gainers": [
+    {
+      "name": "프리티",
+      "price": "2,390",
+      "change_percent": "+29.89%",
+      "pct": 29.89
+    },
+    {
+      "name": "진흥기업2우B",
+      "price": "28,750",
+      "change_percent": "+29.80%",
+      "pct": 29.8
+    },
+    {
+      "name": "진흥기업우B",
+      "price": "15,800",
+      "change_percent": "+25.20%",
+      "pct": 25.2
+    },
+    {
+      "name": "삼화콘덴서",
+      "price": "138,200",
+      "change_percent": "+19.45%",
+      "pct": 19.45
+    },
+    {
+      "name": "삼성 인버스 2X 은 선물 ETN(H)",
+      "price": "43",
+      "change_percent": "+19.44%",
+      "pct": 19.44
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "카프로",
+      "price": "120",
+      "change_percent": "-16.67%",
+      "pct": 16.67
+    },
+    {
+      "name": "메리츠 레버리지 은 선물 ETN(H)",
+      "price": "8,085",
+      "change_percent": "-13.99%",
+      "pct": 13.99
+    },
+    {
+      "name": "메리츠 인버스 2X WTI원유 선물 ETN(H)",
+      "price": "1,829",
+      "change_percent": "-13.93%",
+      "pct": 13.93
+    },
+    {
+      "name": "KB S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "1,652",
+      "change_percent": "-13.78%",
+      "pct": 13.78
+    },
+    {
+      "name": "한투 인버스2XWTI원유선물 ETN B",
+      "price": "1,638",
+      "change_percent": "-13.61%",
+      "pct": 13.61
+    }
+  ],
+  "sector_performance": [
+    {
+      "name": "컴퓨터와주변기기",
+      "change_value": "+4.04%",
+      "pct": 4.04
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+3.95%",
+      "pct": 3.95
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+3.93%",
+      "pct": 3.93
+    },
+    {
+      "name": "조선",
+      "change_value": "+3.48%",
+      "pct": 3.48
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "+2.63%",
+      "pct": 2.63
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "name": "컴퓨터와주변기기",
+      "change_value": "+4.04%",
+      "pct": 4.04
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+3.95%",
+      "pct": 3.95
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+3.93%",
+      "pct": 3.93
+    },
+    {
+      "name": "조선",
+      "change_value": "+3.48%",
+      "pct": 3.48
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "+2.63%",
+      "pct": 2.63
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "+2.09%",
+      "pct": 2.09
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-2.88%",
+      "pct": -2.88
+    },
+    {
+      "name": "비철금속",
+      "change_value": "-3.01%",
+      "pct": -3.01
+    },
+    {
+      "name": "전기제품",
+      "change_value": "-3.10%",
+      "pct": -3.1
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-3.44%",
+      "pct": -3.44
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "-3.94%",
+      "pct": -3.94
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "-4.26%",
+      "pct": -4.26
+    }
+  ],
   "article_counts": {
     "종합": 409,
     "경제": 30,
     "부동산": 30,
-    "증권": 0
+    "증권": 90
   },
   "article_count_trend": {
     "종합": {
@@ -2972,7 +3121,7 @@
       "surge": false
     },
     "증권": {
-      "today": 0,
+      "today": 90,
       "yesterday": 0,
       "change_pct": null,
       "surge": false
