@@ -1,11 +1,9 @@
 import os
-import re
 import json
 import time
 import random
 from datetime import datetime, timezone, timedelta
 import requests
-from bs4 import BeautifulSoup
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -15,18 +13,24 @@ MAX_RETRIES = 3
 RETRY_WAIT_RANGE = (15, 20)  # 재시도 사이 대기 시간(초)
 
 
-def fetch(url, label=""):
-    """요청 실패(타임아웃/5xx 등 비정상 응답) 시 최대 MAX_RETRIES회까지 재시도.
-    모두 실패하면 None을 반환해 호출부에서 해당 페이지를 건너뛸 수 있게 한다."""
+def fetch_json(url, label=""):
+    """요청 실패(타임아웃/5xx/JSON 아닌 응답 등) 시 최대 MAX_RETRIES회까지 재시도.
+    모두 실패하면 None을 반환해 호출부에서 해당 페이지를 건너뛸 수 있게 한다.
+
+    2026-09 finance.naver.com이 stock.naver.com(Next.js) 앱으로 완전히 이전되면서
+    예전 페이지들은 전부 이 새 앱으로 리다이렉트되고, 지수/시세/뉴스 데이터는 더 이상
+    서버 렌더링된 HTML 안에 없다(React Server Components 스트리밍 방식이라 CSS
+    선택자로 읽을 대상 자체가 없어짐). 대신 이 앱이 클라이언트에서 호출하는
+    m.stock.naver.com / stock.naver.com JSON API를 직접 호출한다."""
     display_label = label or url
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
             if response.status_code == 200:
-                return response.text
+                return response.json()
             print(f"[{display_label}] 응답이 비정상입니다 (상태 코드 {response.status_code}) - {attempt}/{MAX_RETRIES}회 시도")
-        except requests.exceptions.RequestException as e:
+        except (requests.exceptions.RequestException, ValueError) as e:
             print(f"[{display_label}] 요청 중 오류가 발생했습니다: {e} - {attempt}/{MAX_RETRIES}회 시도")
 
         if attempt < MAX_RETRIES:
@@ -38,35 +42,14 @@ def fetch(url, label=""):
     return None
 
 
-def parse_time_to_iso(text, now_kst):
-    """네이버가 제공하는 상대/절대 시간 표기를 크롤링 시점(now_kst) 기준
-    ISO 8601 절대 시각 문자열로 변환. 인식하지 못하면 빈 문자열을 반환."""
-    text = (text or "").strip()
-    if not text:
+def _format_as_of(local_traded_at):
+    """API가 주는 localTradedAt(ISO 8601, 타임존 포함)을 기존 표시 형식으로 변환."""
+    if not local_traded_at:
         return ""
-
-    if text in ("방금전", "방금 전"):
-        return now_kst.isoformat()
-
-    match = re.match(r'^(\d+)분전$', text)
-    if match:
-        return (now_kst - timedelta(minutes=int(match.group(1)))).isoformat()
-
-    match = re.match(r'^(\d+)시간전$', text)
-    if match:
-        return (now_kst - timedelta(hours=int(match.group(1)))).isoformat()
-
-    match = re.match(r'^(\d+)일전$', text)
-    if match:
-        return (now_kst - timedelta(days=int(match.group(1)))).isoformat()
-
-    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"):
-        try:
-            return datetime.strptime(text, fmt).replace(tzinfo=now_kst.tzinfo).isoformat()
-        except ValueError:
-            continue
-
-    return ""
+    try:
+        return datetime.fromisoformat(local_traded_at).strftime("%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return local_traded_at
 
 
 def build_change_percent(rate):
@@ -77,141 +60,153 @@ def build_change_percent(rate):
 
 
 def crawl_domestic_index(code, name, debug_notes=None):
-    """코스피/코스닥: /sise/sise_index.naver 페이지"""
-    url = f"https://finance.naver.com/sise/sise_index.naver?code={code}"
-    html = fetch(url, label=f"{name} 지수")
-    if html is None:
+    """코스피/코스닥/코스피200: m.stock.naver.com 지수 상세 API(JSON)."""
+    url = f"https://m.stock.naver.com/api/index/{code}/basic"
+    data = fetch_json(url, label=f"{name} 지수")
+    if data is None:
         if debug_notes is not None:
             debug_notes.append(f"{name}({code}) -> fetch 자체가 실패(요청/응답 오류, 3회 재시도 후)")
         return None
-    soup = BeautifulSoup(html, 'lxml')
 
-    value_elem = soup.select_one('#now_value')
-    fluc_elem = soup.select_one('#change_value_and_rate') or soup.select_one('#change_rate')
-    if not value_elem or not fluc_elem:
-        if debug_notes is not None:
-            percent_idx = html.find('%')
-            snippet_around_percent = html[max(0, percent_idx - 300):percent_idx + 50] if percent_idx != -1 else "(응답에 % 문자 자체가 없음)"
-            debug_notes.append(
-                f"{name}({code}) -> 페이지는 받았으나 선택자 없음 "
-                f"(now_value={'있음' if value_elem else '없음'}, "
-                f"change_value_and_rate={'있음' if fluc_elem else '없음'}) "
-                f"첫 %기호 주변: {snippet_around_percent!r}"
-            )
-        return None
-
-    percent_match = re.search(r'([+-]?[\d.]+)%', fluc_elem.get_text())
-    if not percent_match:
-        if debug_notes is not None:
-            debug_notes.append(f"{name}({code}) -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: {fluc_elem.get_text()!r})")
-        return None
-    change_percent, direction = build_change_percent(percent_match.group(1))
-
-    as_of = ""
-    iframe = soup.select_one("iframe[name='time']")
-    if iframe and iframe.get('src'):
-        time_match = re.search(r'thistime=(\d{14})', iframe['src'])
-        if time_match:
-            ts = time_match.group(1)
-            as_of = f"{ts[0:4]}-{ts[4:6]}-{ts[6:8]} {ts[8:10]}:{ts[10:12]}:{ts[12:14]}"
-
-    return {
-        "name": name,
-        "value": value_elem.get_text(strip=True),
-        "change_percent": change_percent,
-        "direction": direction,
-        "as_of": as_of
-    }
-
-
-def crawl_world_indices():
-    """다우존스, 나스닥, S&P500: /world/ 페이지에 내장된 실시간 데이터(JS 변수)"""
-    html = fetch("https://finance.naver.com/world/", label="해외증시(다우존스/나스닥/S&P500)")
-    if html is None:
-        return []
-    match = re.search(r"var americaData = jindo\.\$H\((\{.*?\})\);", html)
-    if not match:
-        return []
-
-    data = json.loads(match.group(1))
-    targets = [
-        ("DJI@DJI", "다우존스"),
-        ("NAS@IXIC", "나스닥"),
-        ("NAS@NDX", "나스닥100"),
-        ("SPI@SPX", "S&P500"),
-    ]
-
-    results = []
-    for symbol, name in targets:
-        item = data.get(symbol)
-        if not item:
-            continue
-        change_percent, direction = build_change_percent(item.get('rate', 0))
-        results.append({
+    try:
+        change_percent, direction = build_change_percent(data["fluctuationsRatio"])
+        return {
             "name": name,
-            "value": f"{item.get('last', 0):,.2f}",
+            "value": data["closePrice"],
             "change_percent": change_percent,
             "direction": direction,
-            "as_of": item.get('lastUpdTime', '')
-        })
+            "as_of": _format_as_of(data.get("localTradedAt", "")),
+        }
+    except (KeyError, ValueError, TypeError) as e:
+        if debug_notes is not None:
+            debug_notes.append(f"{name}({code}) -> 응답 JSON 파싱 실패(원본: {data!r}): {e}")
+        return None
+
+
+WORLD_INDEX_CODES = [
+    (".DJI", "다우존스"),
+    (".IXIC", "나스닥"),
+    (".NDX", "나스닥100"),
+    (".INX", "S&P500"),
+]
+
+
+def crawl_world_indices(debug_notes=None):
+    """다우존스/나스닥/나스닥100/S&P500: polling.finance.naver.com 실시간 API(JSON).
+    reutersCode가 예전 "DJI@DJI" 형식에서 ".DJI" 형식으로 바뀌었다(2026-09 확인)."""
+    results = []
+    for reuters_code, name in WORLD_INDEX_CODES:
+        url = f"https://polling.finance.naver.com/api/realtime/worldstock/index/{reuters_code}"
+        data = fetch_json(url, label=f"{name} 지수")
+        datas = (data or {}).get("datas") or []
+        if not datas:
+            if debug_notes is not None:
+                debug_notes.append(f"{name}({reuters_code}) -> 데이터 없음(응답: {data!r})")
+            continue
+        item = datas[0]
+        try:
+            change_percent, direction = build_change_percent(item["fluctuationsRatio"])
+            results.append({
+                "name": name,
+                "value": item["closePrice"],
+                "change_percent": change_percent,
+                "direction": direction,
+                "as_of": _format_as_of(item.get("localTradedAt", "")),
+            })
+        except (KeyError, ValueError, TypeError) as e:
+            if debug_notes is not None:
+                debug_notes.append(f"{name}({reuters_code}) -> 응답 JSON 파싱 실패(원본: {item!r}): {e}")
     return results
 
 
-def crawl_detail_price(url, name, debug_notes=None):
-    """국내금, 휘발유 등: marketindex 상세 페이지 공통 구조(.no_today / .no_exday)"""
-    html = fetch(url, label=name)
-    if html is None:
+def crawl_marketindex_price(category, code, name, debug_notes=None):
+    """환율/유가/금속 등: stock.naver.com marketindex 상세 API(JSON) 공통 구조.
+    exchange 카테고리만 응답이 {"exchangeInfo": {...}}로 한 겹 감싸져 있고
+    energy/metals는 바로 최상위 객체라, 있으면 벗겨내는 방식으로 통일한다."""
+    url = f"https://stock.naver.com/api/securityService/marketindex/{category}/{code}"
+    data = fetch_json(url, label=name)
+    if data is None:
         if debug_notes is not None:
             debug_notes.append(f"{name} -> fetch 자체가 실패(요청/응답 오류, 3회 재시도 후)")
         return None
-    soup = BeautifulSoup(html, 'lxml')
 
-    value_elem = soup.select_one('.today .no_today em')
-    exday_container = soup.select_one('.today .no_exday')
-    if not value_elem or not exday_container:
+    item = data.get("exchangeInfo", data) if isinstance(data, dict) else None
+    if not item:
         if debug_notes is not None:
-            debug_notes.append(
-                f"{name} -> 페이지는 받았으나 선택자 없음 "
-                f"(no_today={'있음' if value_elem else '없음'}, no_exday={'있음' if exday_container else '없음'})"
-            )
+            debug_notes.append(f"{name} -> 응답 형식이 예상과 다름(원본: {data!r})")
         return None
 
-    # em 태그 개수/순서에 의존하지 않고, no_exday 컨테이너 전체 텍스트에서
-    # 숫자+% 패턴을 찾는다 (일부 지표는 em 구조가 달라 고정 인덱스로는 실패했음, 예: WTI)
-    percent_match = re.search(r'([+-]?[\d.]+)\s*%', exday_container.get_text())
-    if not percent_match:
+    try:
+        change_percent, direction = build_change_percent(item["fluctuationsRatio"])
+        return {
+            "name": name,
+            "value": item["closePrice"],
+            "change_percent": change_percent,
+            "direction": direction,
+            "as_of": _format_as_of(item.get("localTradedAt", "")),
+        }
+    except (KeyError, ValueError, TypeError) as e:
         if debug_notes is not None:
-            debug_notes.append(f"{name} -> 등락률 텍스트에서 % 패턴을 못 찾음 (원문: {exday_container.get_text()!r})")
+            debug_notes.append(f"{name} -> 응답 JSON 파싱 실패(원본: {item!r}): {e}")
         return None
-    change_percent, direction = build_change_percent(percent_match.group(1))
-
-    as_of = ""
-    date_elem = soup.select_one('.exchange_info .date')
-    if date_elem:
-        as_of = date_elem.get_text(strip=True)
-
-    return {
-        "name": name,
-        "value": value_elem.get_text(strip=True),
-        "change_percent": change_percent,
-        "direction": direction,
-        "as_of": as_of,
-        "_soup": soup
-    }
 
 
-def crawl_domestic_gold():
-    """국내금: 위 공통 구조는 원/g 기준이라, 계산기의 1돈(3.75g) 환산값으로 대체"""
-    result = crawl_detail_price("https://finance.naver.com/marketindex/goldDetail.naver", "국내금(원/돈)")
+GOLD_GRAMS_PER_DON = 3.75  # 국내금 API는 원/g 기준이라 1돈 환산이 필요
+
+
+def crawl_domestic_gold(debug_notes=None):
+    """국내금: marketindex API가 원/g 기준으로만 주므로 1돈(3.75g) 환산값으로 저장."""
+    result = crawl_marketindex_price("metals", "M04020000", "국내금(원/돈)", debug_notes)
     if result is None:
         return None
-
-    soup = result.pop("_soup")
-    calc_output = soup.select_one('#calcOutput')
-    if calc_output and calc_output.get('value'):
-        result["value"] = calc_output['value'].strip()
-
+    try:
+        grams_value = float(str(result["value"]).replace(",", ""))
+        result["value"] = f"{grams_value * GOLD_GRAMS_PER_DON:,.2f}"
+    except (ValueError, TypeError) as e:
+        if debug_notes is not None:
+            debug_notes.append(f"국내금(원/돈) -> 원/g -> 원/돈 환산 실패(원본 value: {result.get('value')!r}): {e}")
     return result
+
+
+DOMESTIC_BOND_TARGETS = [
+    ("KR3YT=RR", "국고채(3년)"),
+    ("KR10YT=RR", "국고채(10년)"),
+]
+
+
+def crawl_domestic_bonds(debug_notes=None):
+    """국고채(3년)/(10년): stock.naver.com 국채 목록 API(JSON).
+    marketindexCd(IRR_GOVT03Y 등) 기반 상세 페이지가 사라지고, 국가별 국채
+    수익률을 한 번에 내려주는 목록 API(nation=KOR)로 바뀌어 한 번의 호출로 두
+    만기를 모두 추출한다."""
+    url = "https://stock.naver.com/api/securityService/marketindex/bond/nation/KOR"
+    data = fetch_json(url, label="국고채(3년/10년)")
+    if data is None:
+        if debug_notes is not None:
+            debug_notes.append("국고채(3년/10년) -> fetch 자체가 실패(요청/응답 오류, 3회 재시도 후)")
+        return []
+
+    by_code = {item.get("reutersCode"): item for item in data} if isinstance(data, list) else {}
+    results = []
+    for reuters_code, name in DOMESTIC_BOND_TARGETS:
+        item = by_code.get(reuters_code)
+        if not item:
+            if debug_notes is not None:
+                debug_notes.append(f"{name}({reuters_code}) -> 목록에서 항목을 찾지 못함")
+            continue
+        try:
+            change_percent, direction = build_change_percent(item["fluctuationsRatio"])
+            results.append({
+                "name": name,
+                "value": item["closePrice"],
+                "change_percent": change_percent,
+                "direction": direction,
+                "as_of": _format_as_of(item.get("localTradedAt", "")),
+            })
+        except (KeyError, ValueError, TypeError) as e:
+            if debug_notes is not None:
+                debug_notes.append(f"{name}({reuters_code}) -> 응답 JSON 파싱 실패(원본: {item!r}): {e}")
+    return results
 
 
 def crawl_bitcoin():
@@ -272,213 +267,160 @@ NEWS_CATEGORIES = [
 ]
 
 
-def crawl_news_category(category_name, section_id3, now_kst):
-    """finance.naver.com/news/ 카테고리별(시황·전망 등) 뉴스 1~15위
+def crawl_news_category(category_name, section_id3, now_kst, debug_notes=None):
+    """finance.naver.com/news/ 카테고리별(시황·전망 등) 뉴스.
 
-    페이지에는 ul.realtimeNewsList 아래 li.newsList가 두 개(top 박스 + 일반
-    박스) 있고, 각각 최대 10개씩 서로 다른 기사를 담고 있어(실측 확인, 중복
-    없음) 카테고리당 최대 20개까지 존재한다. 예전엔 li.newsList.top 하나만
-    보고 그중 5개만 잘랐는데, top이 "상위 5개"가 아니라 그냥 첫 번째 박스라
-    불필요하게 재료를 버리고 있었다.
-    """
+    2026-09 news_list.naver 페이지가 stock.naver.com/news/section으로 리다이렉트되며
+    section_id3 쿼리스트링이 통째로 사라지고 카테고리 구분 없는 랜딩 페이지만 남는다.
+    실제 탭별 뉴스는 이 페이지가 클라이언트에서 호출하는 /api/domestic/news/focus
+    JSON API로 받아온다. date는 KST 기준 오늘 날짜(YYYYMMDD)를 반드시 넘겨야 하고,
+    생략하면 articleTotal이 0인 빈 응답만 온다(실측 확인)."""
+    date_str = now_kst.strftime("%Y%m%d")
     url = (
-        "https://finance.naver.com/news/news_list.naver"
-        f"?mode=LSS3D&section_id=101&section_id2=258&section_id3={section_id3}"
+        "https://stock.naver.com/api/domestic/news/focus"
+        f"?sid={section_id3}&page=1&pageSize=15&date={date_str}"
     )
-    html = fetch(url, label=f"{category_name} 뉴스")
-    if html is None:
+    data = fetch_json(url, label=f"{category_name} 뉴스")
+    if data is None:
+        if debug_notes is not None:
+            debug_notes.append(f"{category_name} 뉴스 -> fetch 자체가 실패(요청/응답 오류, 3회 재시도 후)")
         return {"category": category_name, "items": []}
-    soup = BeautifulSoup(html, 'lxml')
 
     items = []
-    subjects = soup.select('ul.realtimeNewsList li.newsList .articleSubject')
-
-    for rank, subject in enumerate(subjects[:15], start=1):
-        title_elem = subject.select_one('a')
-        if not title_elem:
-            continue
-
-        title = title_elem.get('title', '').strip() or title_elem.get_text(strip=True)
-        link = title_elem.get('href', '')
-        if link.startswith('/'):
-            link = "https://finance.naver.com" + link
-
-        summary = subject.find_next_sibling(class_='articleSummary')
-        press_elem = summary.select_one('.press') if summary else None
-        time_elem = summary.select_one('.wdate') if summary else None
-
-        upload_time = time_elem.get_text(strip=True) if time_elem else ""
+    for rank, article in enumerate((data.get("articles") or [])[:15], start=1):
+        upload_time = article.get("date", "") or ""
+        published_at = ""
+        if len(upload_time) == 14:
+            try:
+                published_at = (
+                    datetime.strptime(upload_time, "%Y%m%d%H%M%S")
+                    .replace(tzinfo=now_kst.tzinfo)
+                    .isoformat()
+                )
+            except ValueError:
+                pass
 
         items.append({
-            "press_name": press_elem.get_text(strip=True) if press_elem else "",
+            "press_name": article.get("officeHName", ""),
             "rank": rank,
-            "title": title,
-            "link": link,
+            "title": article.get("title", ""),
+            "link": article.get("url", ""),
             "upload_time": upload_time,
-            "published_at": parse_time_to_iso(upload_time, now_kst)
+            "published_at": published_at
         })
+
+    if not items and debug_notes is not None:
+        debug_notes.append(f"{category_name} 뉴스 -> 응답은 받았으나 기사 0건(원본 articleTotal: {data.get('articleTotal')!r})")
 
     return {"category": category_name, "items": items}
 
 
 def crawl_stock_data():
     indices = []
-    debug_notes = []  # 임시 디버깅용, 원인 파악 끝나면 제거 예정
+    debug_notes = []  # 크롤러 실패 시 원인 파악용 - dashboard/위젯에는 노출 안 함(stock_news.json의 _debug 필드로만 저장)
 
     for code, name in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥"), ("KPI200", "코스피200")]:
         try:
-            idx = crawl_domestic_index(code, name, debug_notes if name == "코스피200" else None)
+            idx = crawl_domestic_index(code, name, debug_notes)
             if idx:
                 indices.append(idx)
             else:
                 print(f"{name} 데이터를 찾지 못했습니다.")
         except Exception as e:
             print(f"{name} 수집 실패: {e}")
-            if name == "코스피200":
-                debug_notes.append(f"코스피200(code={code}) -> 예외: {e}")
+            debug_notes.append(f"{name}(code={code}) -> 예외: {e}")
 
     try:
-        indices.extend(crawl_world_indices())
+        indices.extend(crawl_world_indices(debug_notes))
     except Exception as e:
         print(f"해외 지수(다우존스/나스닥/S&P500) 수집 실패: {e}")
+        debug_notes.append(f"해외 지수 -> 예외: {e}")
 
     try:
-        gold = crawl_domestic_gold()
+        gold = crawl_domestic_gold(debug_notes)
         if gold:
             indices.append(gold)
         else:
             print("국내금 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"국내금 수집 실패: {e}")
+        debug_notes.append(f"국내금 -> 예외: {e}")
 
     try:
-        gasoline = crawl_detail_price(
-            "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_GSL",
-            "휘발유(원/리터)"
-        )
+        gasoline = crawl_marketindex_price("energy", "OIL_GSL", "휘발유(원/리터)", debug_notes)
         if gasoline:
-            gasoline.pop("_soup", None)
             indices.append(gasoline)
         else:
             print("휘발유 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"휘발유 수집 실패: {e}")
+        debug_notes.append(f"휘발유(OIL_GSL) -> 예외: {e}")
 
     try:
-        usd_krw = crawl_detail_price(
-            "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_USDKRW",
-            "원/달러 환율"
-        )
+        usd_krw = crawl_marketindex_price("exchange", "FX_USDKRW", "원/달러 환율", debug_notes)
         if usd_krw:
-            usd_krw.pop("_soup", None)
             indices.append(usd_krw)
         else:
             print("원/달러 환율 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"원/달러 환율 수집 실패: {e}")
+        debug_notes.append(f"원/달러 환율(FX_USDKRW) -> 예외: {e}")
 
     try:
-        jpy_krw = crawl_detail_price(
-            "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_JPYKRW",
-            "원/엔 환율(100엔)",
-            debug_notes
-        )
+        jpy_krw = crawl_marketindex_price("exchange", "FX_JPYKRW", "원/엔 환율(100엔)", debug_notes)
         if jpy_krw:
-            jpy_krw.pop("_soup", None)
             indices.append(jpy_krw)
         else:
             print("원/엔 환율 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"원/엔 환율 수집 실패: {e}")
-        debug_notes.append(f"원/엔 환율(marketindexCd=FX_JPYKRW) -> 예외: {e}")
+        debug_notes.append(f"원/엔 환율(FX_JPYKRW) -> 예외: {e}")
 
     try:
-        eur_krw = crawl_detail_price(
-            "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_EURKRW",
-            "원/유로 환율",
-            debug_notes
-        )
+        eur_krw = crawl_marketindex_price("exchange", "FX_EURKRW", "원/유로 환율", debug_notes)
         if eur_krw:
-            eur_krw.pop("_soup", None)
             indices.append(eur_krw)
         else:
             print("원/유로 환율 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"원/유로 환율 수집 실패: {e}")
-        debug_notes.append(f"원/유로 환율(marketindexCd=FX_EURKRW) -> 예외: {e}")
+        debug_notes.append(f"원/유로 환율(FX_EURKRW) -> 예외: {e}")
 
     try:
-        usd_jpy = crawl_detail_price(
-            "https://finance.naver.com/marketindex/worldExchangeDetail.naver?marketindexCd=FX_USDJPY",
-            "USD/JPY",
-            debug_notes
-        )
+        usd_jpy = crawl_marketindex_price("exchangeWorld", "USDJPY", "USD/JPY", debug_notes)
         if usd_jpy:
-            usd_jpy.pop("_soup", None)
             indices.append(usd_jpy)
         else:
             print("USD/JPY 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"USD/JPY 수집 실패: {e}")
-        debug_notes.append(f"USD/JPY(marketindexCd=FX_USDJPY) -> 예외: {e}")
+        debug_notes.append(f"USD/JPY(exchangeWorld/USDJPY) -> 예외: {e}")
 
     try:
-        eur_usd = crawl_detail_price(
-            "https://finance.naver.com/marketindex/worldExchangeDetail.naver?marketindexCd=FX_EURUSD",
-            "EUR/USD",
-            debug_notes
-        )
+        eur_usd = crawl_marketindex_price("exchangeWorld", "EURUSD", "EUR/USD", debug_notes)
         if eur_usd:
-            eur_usd.pop("_soup", None)
             indices.append(eur_usd)
         else:
             print("EUR/USD 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"EUR/USD 수집 실패: {e}")
-        debug_notes.append(f"EUR/USD(marketindexCd=FX_EURUSD) -> 예외: {e}")
+        debug_notes.append(f"EUR/USD(exchangeWorld/EURUSD) -> 예외: {e}")
 
     try:
-        wti = crawl_detail_price(
-            "https://finance.naver.com/marketindex/oilDetail.naver?marketindexCd=OIL_WTI",
-            "WTI(국제유가)",
-            debug_notes
-        )
+        wti = crawl_marketindex_price("energy", "CLcv1", "WTI(국제유가)", debug_notes)
         if wti:
-            wti.pop("_soup", None)
             indices.append(wti)
         else:
             print("WTI 데이터를 찾지 못했습니다.")
     except Exception as e:
         print(f"WTI 수집 실패: {e}")
-        debug_notes.append(f"WTI(marketindexCd=OIL_CL) -> 예외: {e}")
+        debug_notes.append(f"WTI(energy/CLcv1) -> 예외: {e}")
 
     try:
-        bond = crawl_detail_price(
-            "https://finance.naver.com/marketindex/interestDetail.naver?marketindexCd=IRR_GOVT03Y",
-            "국고채(3년)"
-        )
-        if bond:
-            bond.pop("_soup", None)
-            indices.append(bond)
-        else:
-            print("국고채(3년) 데이터를 찾지 못했습니다. (페이지 구조가 다를 수 있어 추후 확인 필요)")
+        indices.extend(crawl_domestic_bonds(debug_notes))
     except Exception as e:
-        print(f"국고채(3년) 수집 실패: {e} (페이지 구조가 다를 수 있어 추후 확인 필요)")
-
-    try:
-        bond10 = crawl_detail_price(
-            "https://finance.naver.com/marketindex/interestDetail.naver?marketindexCd=IRR_GOVT10Y",
-            "국고채(10년)",
-            debug_notes
-        )
-        if bond10:
-            bond10.pop("_soup", None)
-            indices.append(bond10)
-        else:
-            print("국고채(10년) 데이터를 찾지 못했습니다.")
-    except Exception as e:
-        print(f"국고채(10년) 수집 실패: {e}")
-        debug_notes.append(f"국고채(10년)(marketindexCd=IRR_GOVT10Y) -> 예외: {e}")
+        print(f"국고채(3년/10년) 수집 실패: {e}")
+        debug_notes.append(f"국고채(3년/10년) -> 예외: {e}")
 
     try:
         bitcoin = crawl_bitcoin()
@@ -499,9 +441,10 @@ def crawl_stock_data():
     news_categories = []
     for category_name, section_id3 in NEWS_CATEGORIES:
         try:
-            news_categories.append(crawl_news_category(category_name, section_id3, now_kst_minute))
+            news_categories.append(crawl_news_category(category_name, section_id3, now_kst_minute, debug_notes))
         except Exception as e:
             print(f"[{category_name}] 뉴스 수집 실패: {e}")
+            debug_notes.append(f"{category_name} 뉴스 -> 예외: {e}")
             news_categories.append({"category": category_name, "items": []})
 
     os.makedirs("data", exist_ok=True)

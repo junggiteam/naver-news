@@ -1,18 +1,20 @@
-"""급등/급락 종목 TOP5, 업종별 등락 TOP, IPO 일정을 네이버 금융에서 수집.
+"""급등/급락 종목 TOP5, 업종별 등락 TOP, IPO 일정을 네이버 금융(모바일 API)에서 수집.
 
-전용 CSS 선택자를 추측하는 대신, 페이지 안의 HTML <table>을 pandas가
-구조적으로 파싱하게 하고 컬럼 이름으로 원하는 테이블/값을 찾는 방식을 쓴다.
-Naver가 클래스명을 바꿔도(자주 있는 일) 테이블 자체 구조만 유지되면
-계속 동작할 가능성이 높아, 개별 선택자 방식보다 이 페이지들에는 더 안정적이다.
+2026-09 finance.naver.com이 stock.naver.com(Next.js) 앱으로 완전히 이전되면서
+sise_rise.naver/sise_group.naver/ipo.naver 같은 <table> 기반 페이지가 전부 사라졌다
+(html5lib 설치 여부와 무관하게 pd.read_html()이 애초에 읽을 테이블 자체가 없음).
+이 새 앱이 클라이언트에서 호출하는 m.stock.naver.com JSON API를 직접 호출하는
+방식으로 바꾼다.
+
+다만 이 API(m.stock.naver.com/api/stocks/up·down)는 코스피 상위 20개만 내려주고
+코스닥을 포함하는 별도 파라미터/엔드포인트가 없다(2026-09 실측 확인) - 그래서
+top_gainers/top_losers는 코스피 기준으로만 채워진다. 코스닥까지 포함하는 대체
+엔드포인트를 찾으면 이 부분만 넓히면 된다.
 """
 
-import io
-import re
 import time
 import random
 import requests
-import pandas as pd
-from bs4 import BeautifulSoup
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -22,23 +24,15 @@ MAX_RETRIES = 3
 RETRY_WAIT_RANGE = (15, 20)
 
 
-def fetch(url, label=""):
+def fetch_json(url, label=""):
     display_label = label or url
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
             if response.status_code == 200:
-                # requests는 응답 헤더의 Content-Type(charset=EUC-KR)을 이미
-                # 정확히 읽어서 response.encoding에 넣어준다(직접 확인함).
-                # 예전에는 apparent_encoding(chardet 통계적 추측, 이 페이지들
-                # 에서는 EUC-KR 대신 CP949로 추측함)으로 덮어썼는데, 지금까지는
-                # CP949가 EUC-KR 표준 한글 음절을 우연히 같은 방식으로 디코딩해
-                # 문제가 안 드러났을 뿐 - 언젠가 그 우연이 깨지면 이름이 깨질
-                # 수 있는 위험한 코드였다. 헤더가 이미 정확하므로 그냥 그대로
-                # 쓴다(scraper_stock.py의 fetch()도 encoding을 따로 안 건드림).
-                return response.text
+                return response.json()
             print(f"[{display_label}] 응답이 비정상입니다 (상태 코드 {response.status_code}) - {attempt}/{MAX_RETRIES}회 시도")
-        except requests.exceptions.RequestException as e:
+        except (requests.exceptions.RequestException, ValueError) as e:
             print(f"[{display_label}] 요청 중 오류가 발생했습니다: {e} - {attempt}/{MAX_RETRIES}회 시도")
 
         if attempt < MAX_RETRIES:
@@ -49,203 +43,102 @@ def fetch(url, label=""):
     return None
 
 
-def _flat_col_name(col):
-    """MultiIndex 컬럼(병합된 헤더 등)도 하나의 문자열로 평탄화."""
-    if isinstance(col, tuple):
-        return " ".join(str(c) for c in col if "Unnamed" not in str(c))
-    return str(col)
+def crawl_top_movers(direction, debug_notes=None):
+    """direction: 'up'(급등) 또는 'down'(급락). 코스피 기준 상위 20개 중 5개만 사용."""
+    label = f"{'급등' if direction == 'up' else '급락'} TOP5(코스피)"
+    url = f"https://m.stock.naver.com/api/stocks/{direction}"
 
-
-def _find_table_with_column(tables, keyword):
-    """읽어들인 테이블 목록 중, 컬럼 이름에 keyword가 포함된 첫 테이블과
-    그 실제 컬럼명(원본, 평탄화 전)을 함께 반환. 못 찾으면 (None, None)."""
-    for df in tables:
-        for col in df.columns:
-            if keyword in _flat_col_name(col):
-                return df, col
-    return None, None
-
-
-def _get_col(df, keyword, default=""):
-    """평탄화한 컬럼명에 keyword가 포함된 첫 컬럼을 찾아 그 컬럼 객체를 반환."""
-    for col in df.columns:
-        if keyword in _flat_col_name(col):
-            return col
-    return None
-
-
-def crawl_top_movers(direction, sosok, market_label, debug_notes=None):
-    """direction: 'rise'(급등) 또는 'fall'(급락). sosok: 0=코스피, 1=코스닥."""
-    page = "sise_rise" if direction == "rise" else "sise_fall"
-    label = f"{market_label} {'급등' if direction == 'rise' else '급락'} TOP5"
-    url = f"https://finance.naver.com/sise/{page}.naver?sosok={sosok}"
-
-    html = fetch(url, label=label)
-    if html is None:
+    data = fetch_json(url, label=label)
+    if data is None:
         if debug_notes is not None:
             debug_notes.append(f"{label} -> fetch 실패")
         return []
 
-    try:
-        tables = pd.read_html(io.StringIO(html))
-    except Exception as e:
-        if debug_notes is not None:
-            debug_notes.append(f"{label} -> pandas 테이블 파싱 실패: {e}")
-        return []
-
-    df, name_col = _find_table_with_column(tables, "종목명")
-    if df is None:
-        if debug_notes is not None:
-            debug_notes.append(f"{label} -> 테이블 {len(tables)}개 중 '종목명' 컬럼을 가진 테이블 없음")
-        return []
-
-    df = df.dropna(subset=[name_col])
-    price_col = _get_col(df, "현재가")
-    change_col = _get_col(df, "등락률")
-
     items = []
-    for _, row in df.head(5).iterrows():
-        name = str(row[name_col]).strip()
-        if not name or name.lower() == "nan":
-            continue
-        change_text = str(row[change_col]).strip() if change_col is not None else ""
-        pct_match = re.search(r'([+-]?[\d.]+)', change_text.replace(",", ""))
-        items.append({
-            "name": name,
-            "price": str(row[price_col]).strip() if price_col is not None else "",
-            "change_percent": change_text,
-            "pct": abs(float(pct_match.group(1))) if pct_match else 0.0,
-        })
+    for stock in (data.get("stocks") or [])[:5]:
+        try:
+            rate = float(stock["fluctuationsRatio"])
+            items.append({
+                "name": stock["stockName"],
+                "price": stock["closePrice"],
+                "change_percent": f"{rate:+.2f}%",
+                "pct": abs(rate),
+            })
+        except (KeyError, ValueError, TypeError) as e:
+            if debug_notes is not None:
+                debug_notes.append(f"{label} -> 종목 파싱 실패(원본: {stock!r}): {e}")
 
     if not items and debug_notes is not None:
-        debug_notes.append(f"{label} -> 테이블은 찾았으나 유효한 행이 0개")
+        debug_notes.append(f"{label} -> 응답은 받았으나 유효한 종목 0개")
 
     return items
 
 
 def crawl_sector_performance(debug_notes=None):
-    """업종별 등락 TOP (상승률 기준 정렬 상위 5개)."""
-    url = "https://finance.naver.com/sise/sise_group.naver?type=upjong"
-    html = fetch(url, label="업종별 시세")
-    if html is None:
+    """업종별 등락 (등락률 기준 내림차순 정렬, 전체 업종).
+
+    dashboard.py의 build_dashboard()가 이 전체 목록을 받아 상위 5개(sector_performance)와
+    상/하위 6개씩(sector_heatmap)으로 직접 슬라이싱하므로, 여기서 미리 5개로 자르면 안 된다."""
+    # 기본 pageSize=20이라 전체 업종(실측 79개) 중 상승률 상위 20개만 오고
+    # 하락 업종이 통째로 빠진다 - 히트맵이 상/하위 대비를 보여줘야 하므로 이
+    # API가 허용하는 최대치(100, 그 이상은 400 에러 - 실측 확인)로 전체를 받아온다.
+    url = "https://m.stock.naver.com/api/stocks/industry?pageSize=100"
+    data = fetch_json(url, label="업종별 시세")
+    if data is None:
         if debug_notes is not None:
             debug_notes.append("업종별 시세 -> fetch 실패")
         return []
 
-    try:
-        tables = pd.read_html(io.StringIO(html))
-    except Exception as e:
-        if debug_notes is not None:
-            debug_notes.append(f"업종별 시세 -> pandas 테이블 파싱 실패: {e}")
-        return []
-
-    df, name_col = _find_table_with_column(tables, "업종명")
-    if df is None:
-        if debug_notes is not None:
-            debug_notes.append(f"업종별 시세 -> 테이블 {len(tables)}개 중 '업종명' 컬럼을 가진 테이블 없음")
-        return []
-
-    df = df.dropna(subset=[name_col])
-    change_col = _get_col(df, "전일대비")
-    if change_col is None:
-        if debug_notes is not None:
-            debug_notes.append(f"업종별 시세 -> '전일대비' 컬럼을 못 찾음 (컬럼들: {[_flat_col_name(c) for c in df.columns]})")
-        return []
-
-    def _as_series(df_or_series):
-        """중복된 컬럼 라벨 때문에 df[col]이 DataFrame으로 잡히는 경우를
-        첫 번째 컬럼만 남긴 1차원 Series로 강제 변환."""
-        if isinstance(df_or_series, pd.DataFrame):
-            return df_or_series.iloc[:, 0].reset_index(drop=True)
-        return df_or_series.reset_index(drop=True)
-
-    name_series = _as_series(df[name_col])
-    change_series = _as_series(df[change_col])
-
-    def parse_pct(v):
-        m = re.search(r'([+-]?[\d.]+)', str(v).replace(",", ""))
-        return float(m.group(1)) if m else 0.0
-
-    combined = pd.DataFrame({
-        "name": name_series,
-        "change_value": change_series.astype(str).str.strip(),
-    })
-    combined["pct"] = combined["change_value"].apply(parse_pct)
-    combined = combined.sort_values("pct", ascending=False)
-
+    groups = data.get("groups") or []
     items = []
-    for _, row in combined.iterrows():
-        name = str(row["name"]).strip()
-        if not name or name.lower() == "nan":
-            continue
-        items.append({
-            "name": name,
-            "change_value": row["change_value"],
-            "pct": round(float(row["pct"]), 2),
-        })
+    for group in groups:
+        try:
+            rate = float(group["changeRate"])
+            items.append({
+                "name": group["name"],
+                "change_value": f"{rate:+.2f}%",
+                "pct": round(rate, 2),
+            })
+        except (KeyError, ValueError, TypeError) as e:
+            if debug_notes is not None:
+                debug_notes.append(f"업종별 시세 -> 항목 파싱 실패(원본: {group!r}): {e}")
+
+    items.sort(key=lambda item: item["pct"], reverse=True)
 
     if not items and debug_notes is not None:
-        debug_notes.append("업종별 시세 -> 테이블은 찾았으나 유효한 행이 0개")
+        debug_notes.append("업종별 시세 -> 응답은 받았으나 유효한 업종 0개")
 
     return items
 
 
 def crawl_ipo_calendar(debug_notes=None):
     """공모주 청약 일정."""
-    url = "https://finance.naver.com/sise/ipo.naver"
-    html = fetch(url, label="IPO 일정")
-    if html is None:
+    url = "https://m.stock.naver.com/api/stocks/ipo"
+    data = fetch_json(url, label="IPO 일정")
+    if data is None:
         if debug_notes is not None:
             debug_notes.append("IPO 일정 -> fetch 실패")
         return []
 
-    # 1차 시도: <table> 구조로 되어 있는 경우 (pandas)
-    try:
-        tables = pd.read_html(io.StringIO(html))
-    except Exception:
-        tables = []
-
-    df, name_col = _find_table_with_column(tables, "종목명")
-    if df is not None:
-        df = df.dropna(subset=[name_col])
-        date_col = _get_col(df, "청약일") or _get_col(df, "일정")
-        price_col = _get_col(df, "공모가")
-        items = []
-        for _, row in df.head(10).iterrows():
-            name = str(row[name_col]).strip()
-            if not name or name.lower() == "nan":
-                continue
+    items = []
+    for ipo in (data.get("ipoCoInfos") or [])[:10]:
+        try:
+            start = ipo.get("poStartDate", "")
+            end = ipo.get("poEndDate", "")
+            schedule = f"{start}~{end}" if start and end else (start or end)
             items.append({
-                "name": name,
-                "schedule": str(row[date_col]).strip() if date_col is not None else "",
-                "offer_price": str(row[price_col]).strip() if price_col is not None else "",
+                "name": ipo["itemName"],
+                "schedule": schedule,
+                "offer_price": ipo.get("poPrice", ""),
             })
-        if items:
-            return items
+        except (KeyError, TypeError) as e:
+            if debug_notes is not None:
+                debug_notes.append(f"IPO 일정 -> 항목 파싱 실패(원본: {ipo!r}): {e}")
 
-    # 2차 시도: <table> 구조가 아닐 수 있으므로, BeautifulSoup으로 "공모/청약"
-    # 관련 텍스트 주변 실제 마크업을 진단용으로 남긴다 (다음 조사를 위한 근거 확보).
-    if debug_notes is not None:
-        soup = BeautifulSoup(html, 'lxml')
-        table_summaries = [
-            f"table#{i}: shape={t.shape}, cols={[_flat_col_name(c) for c in t.columns]}"
-            for i, t in enumerate(tables)
-        ]
+    if not items and debug_notes is not None:
+        debug_notes.append(f"IPO 일정 -> 응답은 받았으나 유효한 일정 0개(원본 개수: {len(data.get('ipoCoInfos') or [])})")
 
-        keyword_idx = html.find('공모')
-        snippet = html[max(0, keyword_idx - 200):keyword_idx + 400] if keyword_idx != -1 else "(응답에 '공모' 텍스트 자체가 없음)"
-
-        list_like = soup.select('ul li a, div.tbl_type1 li')
-        list_preview = [el.get_text(strip=True) for el in list_like[:10]]
-
-        debug_notes.append(
-            "IPO 일정 -> table 방식 실패. "
-            f"발견된 table 개수={len(tables)} [{'; '.join(table_summaries)}], "
-            f"'공모' 주변 마크업 스니펫={snippet!r}, "
-            f"리스트형 요소 미리보기={list_preview}"
-        )
-
-    return []
+    return items
 
 
 def crawl_market_movers():
@@ -255,17 +148,13 @@ def crawl_market_movers():
     result = {}
 
     try:
-        kospi_gainers = crawl_top_movers("rise", 0, "코스피", debug_notes)
-        kosdaq_gainers = crawl_top_movers("rise", 1, "코스닥", debug_notes)
-        result["top_gainers"] = (kospi_gainers + kosdaq_gainers)[:5]
+        result["top_gainers"] = crawl_top_movers("up", debug_notes)
     except Exception as e:
         debug_notes.append(f"급등 TOP5 -> 예외: {e}")
         result["top_gainers"] = []
 
     try:
-        kospi_losers = crawl_top_movers("fall", 0, "코스피", debug_notes)
-        kosdaq_losers = crawl_top_movers("fall", 1, "코스닥", debug_notes)
-        result["top_losers"] = (kospi_losers + kosdaq_losers)[:5]
+        result["top_losers"] = crawl_top_movers("down", debug_notes)
     except Exception as e:
         debug_notes.append(f"급락 TOP5 -> 예외: {e}")
         result["top_losers"] = []
