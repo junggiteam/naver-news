@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11 15:46:34",
+  "updated_at": "2026-09-11 16:01:09",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 소비자물가지수 발표를 앞두고 경계감이 확산하면서 외국인이 현물과 선물 시장에서 대규모 매도세를 보임에 따라 코스피와 코스닥 지수가 모두 하락 마감했다. 환율이 오름세를 보이는 가운데 전반적인 시장 침체 속에서도 일부 개별 종목들은 특정 이슈에 따라 등락을 보였다."
+      "text": "오늘 국내 증시는 고유가와 고금리에 따른 시장의 불안 심리가 반영되면서 코스피와 코스닥 지수가 각각 1.76%와 1.95% 하락했다. 외국인과 기관 투자자의 동반 매도세가 이어지며 코스피 지수는 6,900선으로 내려앉았다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "코스메카코리아",
+      "corp_code": "00763473",
+      "report_nm": "주요사항보고서(회사합병결정)",
+      "rcept_dt": "20260911",
+      "rcept_no": "20260911000380",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000380",
+      "ai_explanation": "회사가 다른 회사와 합병하기로 결정했다는 공시입니다."
+    },
+    {
+      "corp_name": "LS전선",
+      "corp_code": "00683283",
+      "report_nm": "주요사항보고서(교환사채권발행결정)",
+      "rcept_dt": "20260911",
+      "rcept_no": "20260911000411",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000411",
+      "ai_explanation": "회사가 보유한 자기주식을 교부하는 조건으로 채권을 발행한다는 공시입니다."
+    },
+    {
       "corp_name": "넥사다이내믹스",
       "corp_code": "01440153",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260911",
       "rcept_no": "20260911000372",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000372",
-      "ai_explanation": "기존에 공시한 유상증자 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 운영자금 등을 확보하기 위해 주식을 새로 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "계룡건설산업",
@@ -100,7 +118,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000364",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000364",
-      "ai_explanation": "기존에 공시한 영업정지 관련 내용을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "특정 사업 부문의 영업이 일시 또는 일정 기간 중단되었다는 공시의 수정입니다."
     },
     {
       "corp_name": "엑스페릭스",
@@ -109,7 +127,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000347",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000347",
-      "ai_explanation": "기존에 공시한 전환사채 발행 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -118,7 +136,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000341",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000341",
-      "ai_explanation": "기존에 공시한 유상증자 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 운영자금 등을 확보하기 위해 주식을 새로 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "다보링크",
@@ -127,7 +145,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000313",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000313",
-      "ai_explanation": "기존에 공시한 전환사채 발행 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "엠디엠에프엔씨",
@@ -136,7 +154,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000353",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000353",
-      "ai_explanation": "토지, 건물, 기계장치 등 장기간 보유할 자산을 새로 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "토지, 건물 등 현금화가 어려운 자산을 새로 사들이기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "아티스트스튜디오",
@@ -145,7 +163,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000271",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000271",
-      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 운영자금 등을 확보하기 위해 주식을 새로 발행한다는 공시입니다."
     },
     {
       "corp_name": "옵티코어",
@@ -154,7 +172,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000224",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000224",
-      "ai_explanation": "기존에 공시한 자기 전환사채 만기 전 취득 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사기로 했다는 공시의 수정입니다."
     },
     {
       "corp_name": "케스피온",
@@ -163,7 +181,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000215",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000215",
-      "ai_explanation": "기존에 공시한 유상증자 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 운영자금 등을 확보하기 위해 주식을 새로 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "금양",
@@ -172,7 +190,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000113",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000113",
-      "ai_explanation": "기존에 공시한 회사 분할 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사를 나누어 독립적인 법인으로 분리하기로 결정했다는 공시의 수정입니다."
     },
     {
       "corp_name": "신영해피투모로우제10호기업인수목적",
@@ -181,7 +199,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000089",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000089",
-      "ai_explanation": "합병 실패 등으로 인해 스팩(SPAC) 회사가 청산 절차를 밟게 되었다는 의미입니다."
+      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC)이 상장 폐지 절차인 해산을 진행한다는 공시입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -190,7 +208,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000004",
-      "ai_explanation": "기존에 공시한 전환사채 발행 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -199,7 +217,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260911000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000001",
-      "ai_explanation": "기존에 공시한 전환사채 발행 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행한다는 공시의 수정입니다."
     },
     {
       "corp_name": "엔투텍",
@@ -208,7 +226,7 @@
       "rcept_dt": "20260911",
       "rcept_no": "20260910000592",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000592",
-      "ai_explanation": "기존에 공시한 전환사채 발행 결정 사항을 수정하거나 보완한다는 의미입니다."
+      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행한다는 공시의 수정입니다."
     }
   ],
   "macro_indicators": [
