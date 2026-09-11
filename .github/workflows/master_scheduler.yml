@@ -33,6 +33,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: 공개 사이트 상태 점검
+        run: python service_health.py
+
       - name: 스케줄된 크롤러 실행 (목표 시각 판단 후 필요한 것만 실행)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
