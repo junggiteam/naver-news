@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13 23:31:02",
+  "updated_at": "2026-09-14 00:01:17",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 FOMC 회의를 앞두고 금리 변동성에 대한 경계감이 커지며 투자 심리가 위축된 결과로 풀이된다. 인공지능 관련 모멘텀은 유지되고 있으나 금리 불확실성이 시장의 하락 압력으로 작용하며 지수가 동반 하락했다."
+      "text": "미국 연방공개시장위원회(FOMC) 회의를 앞두고 금리 변동성에 대한 경계감이 커지며 투자 심리가 위축된 것이 지수 하락의 배경으로 지목된다. 또한 시장 전반에 걸친 AI 모멘텀 기대감과 금리 불안이라는 상반된 요인들이 교차하면서 증시가 하방 압력을 받았다."
     }
   ],
   "daily_term": {
@@ -83,7 +83,17 @@
     "재계 혼맥과 경영",
     "에너지 공급망 리스크"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "KS인더스트리",
+      "corp_code": "00618410",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260914",
+      "rcept_no": "20260911000607",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000607",
+      "ai_explanation": "회사가 채권을 발행하고 추후 주식으로 바꿀 수 있는 권리를 부여하여 자금을 조달하는 결정입니다."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -3087,13 +3097,13 @@
     "종합": 395,
     "경제": 30,
     "부동산": 30,
-    "증권": 76
+    "증권": 56
   },
   "article_count_trend": {
     "종합": {
       "today": 395,
-      "yesterday": 403,
-      "change_pct": -2.0,
+      "yesterday": 395,
+      "change_pct": 0.0,
       "surge": false
     },
     "경제": {
@@ -3109,9 +3119,9 @@
       "surge": false
     },
     "증권": {
-      "today": 76,
-      "yesterday": 73,
-      "change_pct": 4.1,
+      "today": 56,
+      "yesterday": 76,
+      "change_pct": -26.3,
       "surge": false
     }
   }
