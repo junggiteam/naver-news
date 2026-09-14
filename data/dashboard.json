@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 08:01:14",
+  "updated_at": "2026-09-15 08:30:38",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432",
-      "ai_explanation": "자금을 조달하기 위해 새로운 주식을 발행하여 주주 등에게 판매하겠다는 뜻입니다."
+      "ai_explanation": "자금을 조달하기 위해 주주 등으로부터 돈을 받고 신주를 발행해 공급하겠다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2964,105 +2964,73 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "광전자",
-      "price": "10,270",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "영풍",
-      "price": "49,950",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "티엠씨",
-      "price": "13,160",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에넥스",
-      "price": "1,696",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "일신방직",
-      "price": "11,920",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "카프로",
-      "price": "71",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SHD",
-      "price": "7,540",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "8,405",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "8,275",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "8,230",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "인터넷과카탈로그소매",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "기타금융",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "우주항공과국방",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "핸드셋",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "다각화된소비자서비스",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "인터넷과카탈로그소매",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "기타금융",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3072,32 +3040,7 @@
       "pct": 0.0
     },
     {
-      "name": "핸드셋",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "기계",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건설",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "석유와가스",
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3107,12 +3050,7 @@
       "pct": 0.0
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3121,7 +3059,7 @@
     "종합": 398,
     "경제": 30,
     "부동산": 30,
-    "증권": 79
+    "증권": 80
   },
   "article_count_trend": {
     "종합": {
@@ -3143,9 +3081,9 @@
       "surge": false
     },
     "증권": {
-      "today": 79,
+      "today": 80,
       "yesterday": 88,
-      "change_pct": -10.2,
+      "change_pct": -9.1,
       "surge": false
     }
   }
