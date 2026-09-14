@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-15 07:32:39",
+  "updated_at": "2026-09-15 08:01:14",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -3.26,
-    "kosdaq_change": -1.69,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6684.37,
     "kosdaq_value": 806.79
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "주요 지역 집값 상승과 수도권 일대 가격 키 맞추기 현상 확산"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시에서 인공지능 산업의 성장 속도 조절론이 제기되며 주요 기술주가 하락했고, 사우디아라비아의 송유관 폐쇄로 인한 유가 급등세가 더해지며 국내 증시에 하방 압력을 가했다. 이러한 미국 금리 인상 우려와 기술주 약세, 유가 상승이라는 삼중고가 겹치면서 코스피와 코스닥 지수가 동반 하락했다."
     }
   ],
   "daily_term": {
@@ -85,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "E8",
+      "corp_code": "01516890",
+      "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+      "rcept_dt": "20260915",
+      "rcept_no": "20260915000001",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000001",
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 하겠다는 뜻입니다."
+    },
+    {
       "corp_name": "베노티앤알",
       "corp_code": "01043853",
       "report_nm": "[기재정정]주요사항보고서(감자결정)",
       "rcept_dt": "20260915",
       "rcept_no": "20260914000433",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000433",
-      "ai_explanation": "자본금을 줄이기 위해 주식 수를 병합하거나 액면가를 낮추는 등의 감자 계획을 수정 공시함."
+      "ai_explanation": "회사의 자본금을 줄이기 위해 발행 주식 수를 줄이거나 액면가를 낮추겠다는 뜻입니다."
     },
     {
       "corp_name": "E8",
@@ -100,7 +105,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정하는 계획을 수정 공시함."
+      "ai_explanation": "자금을 조달하기 위해 새로운 주식을 발행하여 주주 등에게 판매하겠다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2963,153 +2968,153 @@
     {
       "name": "광전자",
       "price": "10,270",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "영풍",
       "price": "49,950",
-      "change_percent": "+29.91%",
-      "pct": 29.91
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "티엠씨",
       "price": "13,160",
-      "change_percent": "+20.96%",
-      "pct": 20.96
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "에넥스",
       "price": "1,696",
-      "change_percent": "+16.08%",
-      "pct": 16.08
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "일신방직",
       "price": "11,920",
-      "change_percent": "+15.39%",
-      "pct": 15.39
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "top_losers": [
     {
       "name": "카프로",
       "price": "71",
-      "change_percent": "-40.83%",
-      "pct": 40.83
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "SHD",
       "price": "7,540",
-      "change_percent": "-18.49%",
-      "pct": 18.49
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "TIGER SK하이닉스단일종목레버리지",
       "price": "8,405",
-      "change_percent": "-13.71%",
-      "pct": 13.71
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "SOL SK하이닉스단일종목레버리지",
       "price": "8,275",
-      "change_percent": "-13.17%",
-      "pct": 13.17
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "KIWOOM SK하이닉스선물단일종목레버리지",
       "price": "8,230",
-      "change_percent": "-13.05%",
-      "pct": 13.05
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_performance": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+3.58%",
-      "pct": 3.58
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "기타금융",
-      "change_value": "+3.30%",
-      "pct": 3.3
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+3.01%",
-      "pct": 3.01
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "핸드셋",
-      "change_value": "+2.98%",
-      "pct": 2.98
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "다각화된소비자서비스",
-      "change_value": "+2.98%",
-      "pct": 2.98
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+3.58%",
-      "pct": 3.58
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "기타금융",
-      "change_value": "+3.30%",
-      "pct": 3.3
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+3.01%",
-      "pct": 3.01
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "핸드셋",
-      "change_value": "+2.98%",
-      "pct": 2.98
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "다각화된소비자서비스",
-      "change_value": "+2.98%",
-      "pct": 2.98
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+2.66%",
-      "pct": 2.66
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "기계",
-      "change_value": "-4.26%",
-      "pct": -4.26
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "건설",
-      "change_value": "-4.36%",
-      "pct": -4.36
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "석유와가스",
-      "change_value": "-4.80%",
-      "pct": -4.8
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-5.12%",
-      "pct": -5.12
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-5.29%",
-      "pct": -5.29
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-5.55%",
-      "pct": -5.55
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
