@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-14 10:31:11",
+  "updated_at": "2026-09-14 11:01:08",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -3.42,
-    "kosdaq_change": -1.75,
-    "kospi_value": 6673.45,
-    "kosdaq_value": 806.24
+    "kospi_change": -2.55,
+    "kosdaq_change": -1.15,
+    "kospi_value": 6733.52,
+    "kosdaq_value": 811.18
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "중동 지역의 지정학적 리스크가 고조되고 고유가와 고금리에 대한 시장의 경계심이 커지며 투자 심리가 위축되었다. 이와 더불어 미국 연방공개시장위원회(FOMC) 회의를 앞둔 경계감과 인공지능(AI) 산업의 성장세가 조정받을 수 있다는 우려가 확산하며 반도체를 비롯한 주요 종목들이 하락세를 보였다. 외국인과 기관의 매도세가 이어지며 코스피와 코스닥 지수 모두 하락 마감했다."
+      "text": "미국 금리 인상 가능성이 제기되면서 투자 심리가 위축된 가운데 반도체 및 주요 대형주들의 약세가 이어지며 지수가 하락했다. 글로벌 매크로 환경의 불안정성과 인공지능 산업의 성장 속도 조절론이 시장 전반에 부담으로 작용한 결과다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,40 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "이노테나",
+      "corp_code": "01407158",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260914",
+      "rcept_no": "20260914000062",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000062",
+      "ai_explanation": "투자자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달한다는 의미입니다."
+    },
+    {
+      "corp_name": "루멘스바이오스",
+      "corp_code": "00406329",
+      "report_nm": "[첨부정정]주요사항보고서(감자결정)",
+      "rcept_dt": "20260914",
+      "rcept_no": "20260914000044",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000044",
+      "ai_explanation": "회사가 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등의 조치를 결정했다는 의미입니다."
+    },
+    {
+      "corp_name": "아이에이",
+      "corp_code": "00252269",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260914",
+      "rcept_no": "20260914000036",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000036",
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 기존 주주나 제3자를 대상으로 신주를 발행한다는 의미입니다."
+    },
+    {
       "corp_name": "루멘스바이오스",
       "corp_code": "00406329",
       "report_nm": "[첨부정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260914",
       "rcept_no": "20260914000039",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000039",
-      "ai_explanation": "회사가 운영자금 등을 마련하기 위해 기존 주주나 제3자에게 신주를 발행하여 자금을 조달하는 것입니다."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 기존 주주나 제3자를 대상으로 신주를 발행한다는 의미입니다."
     },
     {
       "corp_name": "코나아이",
@@ -100,7 +127,7 @@
       "rcept_dt": "20260914",
       "rcept_no": "20260914000031",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000031",
-      "ai_explanation": "회사가 보유한 잉여금을 자본금으로 전입하여 주주들에게 주식을 무상으로 나누어 주는 것입니다."
+      "ai_explanation": "회사가 이익잉여금 등을 재원으로 신주를 발행하여 기존 주주들에게 무상으로 나누어준다는 의미입니다."
     },
     {
       "corp_name": "KS인더스트리",
@@ -109,7 +136,7 @@
       "rcept_dt": "20260914",
       "rcept_no": "20260911000607",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000607",
-      "ai_explanation": "투자자에게 돈을 빌리는 대신, 일정 기간 후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하는 것입니다."
+      "ai_explanation": "투자자에게 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달한다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2961,154 +2988,154 @@
   "top_gainers": [
     {
       "name": "영풍",
-      "price": "49,100",
-      "change_percent": "+27.70%",
-      "pct": 27.7
+      "price": "49,950",
+      "change_percent": "+29.91%",
+      "pct": 29.91
     },
     {
       "name": "광전자",
-      "price": "9,110",
-      "change_percent": "+15.32%",
-      "pct": 15.32
-    },
-    {
-      "name": "에넥스",
-      "price": "1,702",
-      "change_percent": "+16.50%",
-      "pct": 16.5
-    },
-    {
-      "name": "일신방직",
-      "price": "11,920",
-      "change_percent": "+15.39%",
-      "pct": 15.39
+      "price": "9,390",
+      "change_percent": "+18.86%",
+      "pct": 18.86
     },
     {
       "name": "프리티",
-      "price": "2,790",
-      "change_percent": "+16.74%",
-      "pct": 16.74
+      "price": "2,815",
+      "change_percent": "+17.78%",
+      "pct": 17.78
+    },
+    {
+      "name": "에넥스",
+      "price": "1,707",
+      "change_percent": "+16.84%",
+      "pct": 16.84
+    },
+    {
+      "name": "일신방직",
+      "price": "11,720",
+      "change_percent": "+13.46%",
+      "pct": 13.46
     }
   ],
   "top_losers": [
     {
       "name": "카프로",
-      "price": "95",
-      "change_percent": "-20.83%",
-      "pct": 20.83
+      "price": "88",
+      "change_percent": "-26.67%",
+      "pct": 26.67
     },
     {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "8,505",
-      "change_percent": "-12.90%",
-      "pct": 12.9
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "8,350",
-      "change_percent": "-12.38%",
-      "pct": 12.38
+      "name": "코아스",
+      "price": "1,848",
+      "change_percent": "-10.94%",
+      "pct": 10.94
     },
     {
       "name": "SHD",
-      "price": "8,040",
-      "change_percent": "-13.08%",
-      "pct": 13.08
+      "price": "8,120",
+      "change_percent": "-12.22%",
+      "pct": 12.22
     },
     {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "8,320",
-      "change_percent": "-12.10%",
-      "pct": 12.1
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "8,795",
+      "change_percent": "-9.93%",
+      "pct": 9.93
+    },
+    {
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "price": "8,800",
+      "change_percent": "-9.65%",
+      "pct": 9.65
     }
   ],
   "sector_performance": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+3.63%",
-      "pct": 3.63
+      "name": "핸드셋",
+      "change_value": "+3.85%",
+      "pct": 3.85
     },
     {
-      "name": "핸드셋",
-      "change_value": "+3.09%",
-      "pct": 3.09
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+3.26%",
+      "pct": 3.26
+    },
+    {
+      "name": "기타금융",
+      "change_value": "+2.56%",
+      "pct": 2.56
     },
     {
       "name": "건강관리기술",
-      "change_value": "+2.21%",
-      "pct": 2.21
+      "change_value": "+2.45%",
+      "pct": 2.45
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+2.20%",
-      "pct": 2.2
-    },
-    {
-      "name": "화장품",
-      "change_value": "+1.82%",
-      "pct": 1.82
+      "change_value": "+2.23%",
+      "pct": 2.23
     }
   ],
   "sector_heatmap": [
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+3.63%",
-      "pct": 3.63
+      "name": "핸드셋",
+      "change_value": "+3.85%",
+      "pct": 3.85
     },
     {
-      "name": "핸드셋",
-      "change_value": "+3.09%",
-      "pct": 3.09
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+3.26%",
+      "pct": 3.26
+    },
+    {
+      "name": "기타금융",
+      "change_value": "+2.56%",
+      "pct": 2.56
     },
     {
       "name": "건강관리기술",
-      "change_value": "+2.21%",
-      "pct": 2.21
+      "change_value": "+2.45%",
+      "pct": 2.45
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+2.20%",
-      "pct": 2.2
+      "change_value": "+2.23%",
+      "pct": 2.23
     },
     {
-      "name": "화장품",
-      "change_value": "+1.82%",
-      "pct": 1.82
+      "name": "소프트웨어",
+      "change_value": "+1.74%",
+      "pct": 1.74
     },
     {
-      "name": "상업서비스와공급품",
-      "change_value": "+1.65%",
-      "pct": 1.65
-    },
-    {
-      "name": "자동차",
-      "change_value": "-3.32%",
-      "pct": -3.32
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-3.72%",
-      "pct": -3.72
+      "name": "생물공학",
+      "change_value": "-2.69%",
+      "pct": -2.69
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-3.84%",
-      "pct": -3.84
+      "change_value": "-3.05%",
+      "pct": -3.05
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-4.34%",
-      "pct": -4.34
+      "name": "석유와가스",
+      "change_value": "-3.10%",
+      "pct": -3.1
     },
     {
       "name": "생명보험",
-      "change_value": "-4.39%",
-      "pct": -4.39
+      "change_value": "-3.14%",
+      "pct": -3.14
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-4.48%",
-      "pct": -4.48
+      "change_value": "-3.51%",
+      "pct": -3.51
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-3.85%",
+      "pct": -3.85
     }
   ],
   "article_counts": {
