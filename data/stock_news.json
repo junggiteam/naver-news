@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14 20:30:58",
+  "updated_at": "2026-09-14 20:46:25",
   "indices": [
     {
       "name": "코스피",
@@ -59,31 +59,31 @@
     },
     {
       "name": "휘발유(원/리터)",
-      "value": "1,858.69",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-09-14 17:05:52"
+      "value": "1,858.62",
+      "change_percent": "▼0.01%",
+      "direction": "down",
+      "as_of": "2026-09-14 20:05:51"
     },
     {
       "name": "원/달러 환율",
-      "value": "1,346.20",
-      "change_percent": "▲0.18%",
+      "value": "1,346.40",
+      "change_percent": "▲0.19%",
       "direction": "up",
-      "as_of": "2026-09-14 20:26:44"
+      "as_of": "2026-09-14 20:43:33"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "871.36",
-      "change_percent": "▼0.28%",
+      "value": "871.15",
+      "change_percent": "▼0.30%",
       "direction": "down",
-      "as_of": "2026-09-14 20:26:44"
+      "as_of": "2026-09-14 20:43:33"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,554.59",
-      "change_percent": "▼0.18%",
+      "value": "1,554.82",
+      "change_percent": "▼0.17%",
       "direction": "down",
-      "as_of": "2026-09-14 20:26:44"
+      "as_of": "2026-09-14 20:43:33"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "102.80",
-      "change_percent": "▲2.75%",
+      "value": "103.19",
+      "change_percent": "▲3.14%",
       "direction": "up",
-      "as_of": "2026-09-14 06:20:56"
+      "as_of": "2026-09-14 06:36:14"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "105,700,000",
-      "change_percent": "▲1.13%",
+      "value": "105,575,000",
+      "change_percent": "▲1.01%",
       "direction": "up",
-      "as_of": "2026-09-14 20:30:54"
+      "as_of": "2026-09-14 20:46:22"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,412,000",
-      "change_percent": "▲1.19%",
+      "value": "3,407,000",
+      "change_percent": "▲1.04%",
       "direction": "up",
-      "as_of": "2026-09-14 20:30:54"
+      "as_of": "2026-09-14 20:46:22"
     }
   ],
   "news_categories": [
@@ -265,8 +265,24 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "머니투데이",
+          "press_name": "파이낸셜뉴스",
           "rank": 1,
+          "title": "거래소 연장거래 첫날 1.8조 돌파...\"투자 수요 확인했다\"",
+          "link": "https://n.news.naver.com/mnews/article/014/0005575677?sid=101258402",
+          "upload_time": "20260914203911",
+          "published_at": "2026-09-14T20:39:11+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "“그래도 반도체 아니면 뭘 사겠냐”…50% 비싸도 서학개미가 9600억 쓸어담은 ‘이 주식’",
+          "link": "https://n.news.naver.com/mnews/article/011/0004661774?sid=101258402",
+          "upload_time": "20260914203509",
+          "published_at": "2026-09-14T20:35:09+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 3,
           "title": "큐리언트, 1016억 자금 로드맵과 비전 공개 \"이중 페이로드 ADC로 증명\"",
           "link": "https://n.news.naver.com/mnews/article/008/0005413588?sid=101258402",
           "upload_time": "20260914185236",
@@ -274,7 +290,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 4,
           "title": "[클릭 e종목]\"에스엠, 탄탄한 IP…북미서 성장 필요\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005816142?sid=101258402",
           "upload_time": "20260914184600",
@@ -282,7 +298,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "하나證,업비트 글로벌과 디지털자산 사업 협력",
           "link": "https://n.news.naver.com/mnews/article/014/0005575611?sid=101258402",
           "upload_time": "20260914183020",
@@ -290,7 +306,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 6,
           "title": "서학개미 빨아들이는 SK하닉 ADR... 상장 두달 만에 美프리미엄 40% 육박",
           "link": "https://n.news.naver.com/mnews/article/014/0005575606?sid=101258402",
           "upload_time": "20260914182818",
@@ -298,7 +314,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 7,
           "title": "빅테크發 AI 속도조절론에… 제동 걸린 삼전닉스",
           "link": "https://n.news.naver.com/mnews/article/014/0005575605?sid=101258402",
           "upload_time": "20260914182816",
@@ -306,7 +322,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 8,
           "title": "삼천리자전거·세아홀딩스… 주가 부양용 공개매수 열풍",
           "link": "https://n.news.naver.com/mnews/article/014/0005575604?sid=101258402",
           "upload_time": "20260914182814",
@@ -314,7 +330,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 7,
+          "rank": 9,
           "title": "500조로 커진 ETF시장… \"상품 출시·운용 규제 정비해야\"[시험대 오른 한국증시]",
           "link": "https://n.news.naver.com/mnews/article/014/0005575584?sid=101258402",
           "upload_time": "20260914182219",
@@ -322,7 +338,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 8,
+          "rank": 10,
           "title": "3D사무실서 AI직원 채용하고 업무 지휘",
           "link": "https://n.news.naver.com/mnews/article/014/0005575564?sid=101258402",
           "upload_time": "20260914181619",
@@ -330,7 +346,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 9,
+          "rank": 11,
           "title": "동방신기 최강창민, 다음달 컴백…라이브 투어 '레조넌스' 개최",
           "link": "https://n.news.naver.com/mnews/article/008/0005413580?sid=101258402",
           "upload_time": "20260914181337",
@@ -338,7 +354,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 10,
+          "rank": 12,
           "title": "세계최대 페스티벌 '록 인 리오' 선 스트레이 키즈, 10만 관중 운집",
           "link": "https://n.news.naver.com/mnews/article/008/0005413579?sid=101258402",
           "upload_time": "20260914181322",
@@ -346,7 +362,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 11,
+          "rank": 13,
           "title": "페니트리움바이오, 고형암 치료제 FDA 임상2상…12주간 검증",
           "link": "https://n.news.naver.com/mnews/article/008/0005413576?sid=101258402",
           "upload_time": "20260914181041",
@@ -354,7 +370,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 12,
+          "rank": 14,
           "title": "[클릭 e종목]\"롯데칠성, 여전한 비용 불확실성…목표가↓\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005816126?sid=101258402",
           "upload_time": "20260914175700",
@@ -362,27 +378,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 13,
+          "rank": 15,
           "title": "삼성전자 4%·하이닉스 6% 급락 … 아시아 반도체 관련주에 '직격탄'",
           "link": "https://n.news.naver.com/mnews/article/009/0005735084?sid=101258402",
           "upload_time": "20260914175607",
           "published_at": "2026-09-14T17:56:07+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 14,
-          "title": "국민연금 투자사령탑에 이규홍 前사학연금 CIO",
-          "link": "https://n.news.naver.com/mnews/article/009/0005735073?sid=101258402",
-          "upload_time": "20260914175037",
-          "published_at": "2026-09-14T17:50:37+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "[클릭 e종목]\"아모레퍼시픽, 높아질 실적 안정성…목표가↑\"",
-          "link": "https://n.news.naver.com/mnews/article/277/0005816119?sid=101258402",
-          "upload_time": "20260914174900",
-          "published_at": "2026-09-14T17:49:00+09:00"
         }
       ]
     },
@@ -871,7 +871,7 @@
       ]
     }
   ],
-  "ai_commentary": "미국 연방공개시장위원회(FOMC)의 금리 인상에 대한 경계감이 커진 상황에서 외국인 투자자들이 대규모 매도세를 보이며 국내 증시가 하락했다. 특히 반도체 관련 종목을 중심으로 투자 심리가 위축되면서 코스피와 코스닥 지수 모두 동반 하락했다.",
+  "ai_commentary": "미국 연방공개시장위원회(FOMC)의 금리 결정에 대한 경계감이 커진 가운데, 외국인 투자자가 대규모 매도세를 보이면서 코스피와 코스닥 지수가 하락했다. 특히 반도체 관련 종목의 약세와 고금리 및 고유가 상황에 대한 시장의 우려가 지수 하락에 영향을 미쳤다.",
   "top_gainers": [
     {
       "name": "광전자",
