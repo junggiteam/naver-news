@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 08:31:06",
+  "updated_at": "2026-09-15 09:01:16",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000001",
-      "ai_explanation": "다른 회사의 주식을 매수하거나 출자하여 지분을 확보하겠다는 결정입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 하겠다는 뜻입니다."
     },
     {
       "corp_name": "베노티앤알",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000433",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000433",
-      "ai_explanation": "회사가 발행한 주식의 액면가를 낮추거나 주식 수를 줄이는 자본 감소 결정입니다."
+      "ai_explanation": "회사의 자본금을 줄이기 위해 발행 주식 수를 감소하거나 액면가를 낮추겠다는 뜻입니다."
     },
     {
       "corp_name": "E8",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432",
-      "ai_explanation": "회사가 새로운 주식을 발행하여 자본금을 확충하고 운영 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "회사가 추가로 주식을 발행해 자금을 조달하겠다는 계획을 변경했다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2964,8 +2964,70 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "광전자",
+      "price": "11,000",
+      "change_percent": "+7.11%",
+      "pct": 7.11
+    },
+    {
+      "name": "TIGER 글로벌클라우드컴퓨팅INDXX",
+      "price": "13,435",
+      "change_percent": "+5.13%",
+      "pct": 5.13
+    },
+    {
+      "name": "SOL 미국AI소프트웨어",
+      "price": "16,250",
+      "change_percent": "+3.93%",
+      "pct": 3.93
+    },
+    {
+      "name": "DB하이텍",
+      "price": "116,800",
+      "change_percent": "+4.94%",
+      "pct": 4.94
+    },
+    {
+      "name": "미래에셋 인버스 2X 코스피200 선물 ETN B",
+      "price": "25,770",
+      "change_percent": "+1.92%",
+      "pct": 1.92
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "TCC스틸",
+      "price": "11,840",
+      "change_percent": "-3.90%",
+      "pct": 3.9
+    },
+    {
+      "name": "현대해상",
+      "price": "49,750",
+      "change_percent": "-2.83%",
+      "pct": 2.83
+    },
+    {
+      "name": "RISE 미국은행TOP10",
+      "price": "12,435",
+      "change_percent": "-2.24%",
+      "pct": 2.24
+    },
+    {
+      "name": "금호건설우",
+      "price": "18,020",
+      "change_percent": "-2.07%",
+      "pct": 2.07
+    },
+    {
+      "name": "한솔케미칼",
+      "price": "194,800",
+      "change_percent": "-1.62%",
+      "pct": 1.62
+    }
+  ],
   "sector_performance": [
     {
       "name": "음료",
