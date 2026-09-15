@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-15 10:53:09",
+  "updated_at": "2026-09-15 11:15:55",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": -0.23,
-    "kosdaq_change": 1.79,
-    "kospi_value": 6668.67,
-    "kosdaq_value": 821.23
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 0.08,
+    "kosdaq_change": 2.07,
+    "kospi_value": 6689.79,
+    "kosdaq_value": 823.5
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "코스피는 미 연방준비제도의 금리 인상 임박에 따른 긴축 우려와 외국인 및 기관의 매도세가 이어지며 하락세로 마감했다. 반면 코스닥은 이뮨온시아의 임상 승인 소식과 YTN의 지분 매각 관련 이슈 등 개별 종목의 강세가 지수 상승을 견인했다."
+      "text": "미국 연방준비제도의 긴축 우려와 대외 악재가 지속되면서 코스피는 외국인과 기관의 매도세 속에 보합권에서 등락을 거듭했다. 반면 코스닥은 이뮨온시아의 임상 확대 승인 등 일부 개별 종목의 강세가 지수 상승을 견인하며 2%대 상승률을 기록했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "교보15호기업인수목적",
+      "corp_code": "01781847",
+      "report_nm": "주요사항보고서(해산사유발생)",
+      "rcept_dt": "20260915",
+      "rcept_no": "20260915000090",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000090",
+      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC)이 상장 폐지 및 청산 절차를 밟는 것입니다."
+    },
+    {
       "corp_name": "보령",
       "corp_code": "00123143",
       "report_nm": "주요사항보고서(회사분할결정)",
       "rcept_dt": "20260915",
       "rcept_no": "20260915000070",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000070",
-      "ai_explanation": "회사의 사업 부문을 떼어내어 별도 법인을 설립하거나 분리하겠다는 결정입니다."
+      "ai_explanation": "회사의 특정 사업 부문을 떼어내 별도 법인으로 분리하기로 결정한 것입니다."
     },
     {
       "corp_name": "금호석유화학",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000068",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000068",
-      "ai_explanation": "자기주식 취득을 위해 맺었던 신탁 계약을 중도에 종료하겠다는 결정입니다."
+      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
     },
     {
       "corp_name": "천안신사산업단지",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000057",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000057",
-      "ai_explanation": "자금을 조달하기 위해 신규 주식을 발행하여 주주 등에게 배정하겠다는 결정입니다."
+      "ai_explanation": "운영 자금 등을 조달하기 위해 신주를 발행하여 자본금을 늘리는 것입니다."
     },
     {
       "corp_name": "E8",
@@ -118,7 +127,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000001",
-      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 하겠다는 결정입니다."
+      "ai_explanation": "다른 회사의 경영권 인수나 투자를 목적으로 지분을 사들이기로 결정한 것입니다."
     },
     {
       "corp_name": "베노티앤알",
@@ -127,7 +136,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000433",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000433",
-      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 줄이거나 액면가를 낮추겠다는 결정입니다."
+      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 감소시키기로 한 내용을 정정한 것입니다."
     },
     {
       "corp_name": "E8",
@@ -136,7 +145,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432",
-      "ai_explanation": "자금 조달을 위해 신규 주식을 발행하기로 한 기존 계획을 수정하겠다는 결정입니다."
+      "ai_explanation": "자본 확충을 위해 신주를 발행하기로 했던 계획을 정정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3003,156 +3012,156 @@
       "pct": 29.97
     },
     {
+      "name": "티와이홀딩스우",
+      "price": "3,250",
+      "change_percent": "+16.49%",
+      "pct": 16.49
+    },
+    {
       "name": "유니퀘스트",
-      "price": "7,610",
-      "change_percent": "+12.24%",
-      "pct": 12.24
+      "price": "7,540",
+      "change_percent": "+11.21%",
+      "pct": 11.21
     },
     {
-      "name": "두산퓨얼셀",
-      "price": "53,100",
-      "change_percent": "+11.09%",
-      "pct": 11.09
+      "name": "TIGER 글로벌AI사이버보안",
+      "price": "18,290",
+      "change_percent": "+8.90%",
+      "pct": 8.9
     },
     {
-      "name": "신풍",
-      "price": "1,133",
-      "change_percent": "+8.94%",
-      "pct": 8.94
-    },
-    {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "8,700",
-      "change_percent": "+8.89%",
-      "pct": 8.89
+      "name": "현대제철",
+      "price": "36,000",
+      "change_percent": "+9.09%",
+      "pct": 9.09
     }
   ],
   "top_losers": [
     {
       "name": "카프로",
-      "price": "51",
-      "change_percent": "-28.17%",
-      "pct": 28.17
+      "price": "54",
+      "change_percent": "-23.94%",
+      "pct": 23.94
     },
     {
       "name": "프리티",
-      "price": "2,325",
-      "change_percent": "-10.23%",
-      "pct": 10.23
-    },
-    {
-      "name": "키움 레버리지 K방산 TOP5 ETN",
-      "price": "13,025",
-      "change_percent": "-9.45%",
-      "pct": 9.45
-    },
-    {
-      "name": "하나 레버리지 K방산TOP10 ETN",
-      "price": "10,800",
-      "change_percent": "-9.32%",
-      "pct": 9.32
+      "price": "2,315",
+      "change_percent": "-10.62%",
+      "pct": 10.62
     },
     {
       "name": "N2 월간 레버리지 방위산업 Top5 ETN",
       "price": "114,380",
       "change_percent": "-9.16%",
       "pct": 9.16
+    },
+    {
+      "name": "하나 레버리지 K방산TOP10 ETN",
+      "price": "10,835",
+      "change_percent": "-9.03%",
+      "pct": 9.03
+    },
+    {
+      "name": "키움 레버리지 K방산 TOP5 ETN",
+      "price": "13,105",
+      "change_percent": "-8.90%",
+      "pct": 8.9
     }
   ],
   "sector_performance": [
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+3.70%",
-      "pct": 3.7
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+2.59%",
-      "pct": 2.59
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+2.26%",
-      "pct": 2.26
-    },
-    {
-      "name": "철강",
-      "change_value": "+2.25%",
-      "pct": 2.25
+      "change_value": "+4.11%",
+      "pct": 4.11
     },
     {
       "name": "전기제품",
-      "change_value": "+2.11%",
-      "pct": 2.11
+      "change_value": "+3.51%",
+      "pct": 3.51
+    },
+    {
+      "name": "철강",
+      "change_value": "+2.73%",
+      "pct": 2.73
+    },
+    {
+      "name": "전자제품",
+      "change_value": "+2.57%",
+      "pct": 2.57
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+2.46%",
+      "pct": 2.46
     }
   ],
   "sector_heatmap": [
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+3.70%",
-      "pct": 3.7
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+2.59%",
-      "pct": 2.59
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+2.26%",
-      "pct": 2.26
-    },
-    {
-      "name": "철강",
-      "change_value": "+2.25%",
-      "pct": 2.25
+      "change_value": "+4.11%",
+      "pct": 4.11
     },
     {
       "name": "전기제품",
-      "change_value": "+2.11%",
-      "pct": 2.11
+      "change_value": "+3.51%",
+      "pct": 3.51
+    },
+    {
+      "name": "철강",
+      "change_value": "+2.73%",
+      "pct": 2.73
+    },
+    {
+      "name": "전자제품",
+      "change_value": "+2.57%",
+      "pct": 2.57
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+2.46%",
+      "pct": 2.46
     },
     {
       "name": "핸드셋",
-      "change_value": "+2.01%",
-      "pct": 2.01
+      "change_value": "+2.34%",
+      "pct": 2.34
     },
     {
       "name": "무역회사와판매업체",
+      "change_value": "-2.25%",
+      "pct": -2.25
+    },
+    {
+      "name": "해운사",
       "change_value": "-2.29%",
       "pct": -2.29
     },
     {
-      "name": "전기장비",
-      "change_value": "-2.40%",
-      "pct": -2.4
-    },
-    {
       "name": "생명보험",
-      "change_value": "-2.97%",
-      "pct": -2.97
+      "change_value": "-2.82%",
+      "pct": -2.82
     },
     {
       "name": "판매업체",
-      "change_value": "-3.69%",
-      "pct": -3.69
+      "change_value": "-3.36%",
+      "pct": -3.36
     },
     {
       "name": "조선",
-      "change_value": "-4.61%",
-      "pct": -4.61
+      "change_value": "-4.29%",
+      "pct": -4.29
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-5.39%",
-      "pct": -5.39
+      "change_value": "-5.29%",
+      "pct": -5.29
     }
   ],
   "article_counts": {
     "종합": 404,
     "경제": 30,
     "부동산": 30,
-    "증권": 82
+    "증권": 83
   },
   "article_count_trend": {
     "종합": {
@@ -3174,9 +3183,9 @@
       "surge": false
     },
     "증권": {
-      "today": 82,
+      "today": 83,
       "yesterday": 88,
-      "change_pct": -6.8,
+      "change_pct": -5.7,
       "surge": false
     }
   }
