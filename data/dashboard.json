@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-15 11:15:55",
+  "updated_at": "2026-09-15 11:31:09",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 0.08,
-    "kosdaq_change": 2.07,
-    "kospi_value": 6689.79,
-    "kosdaq_value": 823.5
+    "kospi_change": 0.19,
+    "kosdaq_change": 2.02,
+    "kospi_value": 6697.28,
+    "kosdaq_value": 823.12
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 연방준비제도의 긴축 우려와 대외 악재가 지속되면서 코스피는 외국인과 기관의 매도세 속에 보합권에서 등락을 거듭했다. 반면 코스닥은 이뮨온시아의 임상 확대 승인 등 일부 개별 종목의 강세가 지수 상승을 견인하며 2%대 상승률을 기록했다."
+      "text": "코스피는 대외 불확실성과 외국인 및 기관의 매도세가 이어지며 보합권에서 등락을 거듭했다. 반면 코스닥은 개별 종목들의 호재와 바이오 관련주들의 강세에 힘입어 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "티엘엔지니어링",
+      "corp_code": "01583953",
+      "report_nm": "[기재정정]주요사항보고서(유형자산양도결정)",
+      "rcept_dt": "20260915",
+      "rcept_no": "20260915000103",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000103",
+      "ai_explanation": "회사가 보유한 건물, 토지 등 자산을 매각하기로 결정한 내용을 정정하여 공시함."
+    },
+    {
       "corp_name": "교보15호기업인수목적",
       "corp_code": "01781847",
       "report_nm": "주요사항보고서(해산사유발생)",
       "rcept_dt": "20260915",
       "rcept_no": "20260915000090",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000090",
-      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC)이 상장 폐지 및 청산 절차를 밟는 것입니다."
+      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC) 회사가 상장 폐지를 위해 해산 절차를 밟음."
     },
     {
       "corp_name": "보령",
@@ -100,7 +109,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000070",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000070",
-      "ai_explanation": "회사의 특정 사업 부문을 떼어내 별도 법인으로 분리하기로 결정한 것입니다."
+      "ai_explanation": "회사의 특정 사업 부문을 분리하여 별도의 독립된 회사로 설립하기로 결정함."
     },
     {
       "corp_name": "금호석유화학",
@@ -109,7 +118,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000068",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000068",
-      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 종료하기로 결정한 것입니다."
+      "ai_explanation": "자사주 매입을 위해 금융기관과 맺었던 신탁 계약을 종료하기로 결정함."
     },
     {
       "corp_name": "천안신사산업단지",
@@ -118,7 +127,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000057",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000057",
-      "ai_explanation": "운영 자금 등을 조달하기 위해 신주를 발행하여 자본금을 늘리는 것입니다."
+      "ai_explanation": "운영 자금 등을 조달하기 위해 신주를 발행하여 자본금을 늘리기로 결정함."
     },
     {
       "corp_name": "E8",
@@ -127,7 +136,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260915000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000001",
-      "ai_explanation": "다른 회사의 경영권 인수나 투자를 목적으로 지분을 사들이기로 결정한 것입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 추진함."
     },
     {
       "corp_name": "베노티앤알",
@@ -136,7 +145,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000433",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000433",
-      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 감소시키기로 한 내용을 정정한 것입니다."
+      "ai_explanation": "자본금 규모를 줄이기 위해 발행 주식 수를 감소시키기로 한 내용을 정정하여 공시함."
     },
     {
       "corp_name": "E8",
@@ -145,7 +154,7 @@
       "rcept_dt": "20260915",
       "rcept_no": "20260914000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432",
-      "ai_explanation": "자본 확충을 위해 신주를 발행하기로 했던 계획을 정정한 것입니다."
+      "ai_explanation": "신주 발행을 통한 자금 조달 계획을 변경하거나 보완하여 다시 공시함."
     }
   ],
   "macro_indicators": [
@@ -3013,148 +3022,148 @@
     },
     {
       "name": "티와이홀딩스우",
-      "price": "3,250",
-      "change_percent": "+16.49%",
-      "pct": 16.49
+      "price": "3,360",
+      "change_percent": "+20.43%",
+      "pct": 20.43
+    },
+    {
+      "name": "한컴라이프케어",
+      "price": "2,190",
+      "change_percent": "+15.14%",
+      "pct": 15.14
     },
     {
       "name": "유니퀘스트",
-      "price": "7,540",
-      "change_percent": "+11.21%",
-      "pct": 11.21
+      "price": "7,435",
+      "change_percent": "+9.66%",
+      "pct": 9.66
     },
     {
       "name": "TIGER 글로벌AI사이버보안",
-      "price": "18,290",
-      "change_percent": "+8.90%",
-      "pct": 8.9
-    },
-    {
-      "name": "현대제철",
-      "price": "36,000",
-      "change_percent": "+9.09%",
-      "pct": 9.09
+      "price": "18,750",
+      "change_percent": "+11.64%",
+      "pct": 11.64
     }
   ],
   "top_losers": [
     {
       "name": "카프로",
-      "price": "54",
-      "change_percent": "-23.94%",
-      "pct": 23.94
+      "price": "56",
+      "change_percent": "-21.13%",
+      "pct": 21.13
     },
     {
       "name": "프리티",
-      "price": "2,315",
-      "change_percent": "-10.62%",
-      "pct": 10.62
+      "price": "2,285",
+      "change_percent": "-11.78%",
+      "pct": 11.78
     },
     {
       "name": "N2 월간 레버리지 방위산업 Top5 ETN",
-      "price": "114,380",
-      "change_percent": "-9.16%",
-      "pct": 9.16
+      "price": "113,090",
+      "change_percent": "-10.19%",
+      "pct": 10.19
     },
     {
       "name": "하나 레버리지 K방산TOP10 ETN",
-      "price": "10,835",
-      "change_percent": "-9.03%",
-      "pct": 9.03
+      "price": "10,820",
+      "change_percent": "-9.15%",
+      "pct": 9.15
     },
     {
-      "name": "키움 레버리지 K방산 TOP5 ETN",
-      "price": "13,105",
-      "change_percent": "-8.90%",
-      "pct": 8.9
+      "name": "KODEX 방산TOP10레버리지",
+      "price": "5,835",
+      "change_percent": "-8.83%",
+      "pct": 8.83
     }
   ],
   "sector_performance": [
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+4.11%",
-      "pct": 4.11
+      "name": "전기제품",
+      "change_value": "+3.98%",
+      "pct": 3.98
     },
     {
-      "name": "전기제품",
-      "change_value": "+3.51%",
-      "pct": 3.51
+      "name": "생명과학도구및서비스",
+      "change_value": "+3.95%",
+      "pct": 3.95
     },
     {
       "name": "철강",
-      "change_value": "+2.73%",
-      "pct": 2.73
+      "change_value": "+2.63%",
+      "pct": 2.63
+    },
+    {
+      "name": "핸드셋",
+      "change_value": "+2.41%",
+      "pct": 2.41
     },
     {
       "name": "전자제품",
-      "change_value": "+2.57%",
-      "pct": 2.57
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+2.46%",
-      "pct": 2.46
+      "change_value": "+2.34%",
+      "pct": 2.34
     }
   ],
   "sector_heatmap": [
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+4.11%",
-      "pct": 4.11
+      "name": "전기제품",
+      "change_value": "+3.98%",
+      "pct": 3.98
     },
     {
-      "name": "전기제품",
-      "change_value": "+3.51%",
-      "pct": 3.51
+      "name": "생명과학도구및서비스",
+      "change_value": "+3.95%",
+      "pct": 3.95
     },
     {
       "name": "철강",
-      "change_value": "+2.73%",
-      "pct": 2.73
-    },
-    {
-      "name": "전자제품",
-      "change_value": "+2.57%",
-      "pct": 2.57
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+2.46%",
-      "pct": 2.46
+      "change_value": "+2.63%",
+      "pct": 2.63
     },
     {
       "name": "핸드셋",
+      "change_value": "+2.41%",
+      "pct": 2.41
+    },
+    {
+      "name": "전자제품",
       "change_value": "+2.34%",
       "pct": 2.34
     },
     {
+      "name": "화학",
+      "change_value": "+2.32%",
+      "pct": 2.32
+    },
+    {
       "name": "무역회사와판매업체",
-      "change_value": "-2.25%",
-      "pct": -2.25
+      "change_value": "-2.38%",
+      "pct": -2.38
     },
     {
       "name": "해운사",
-      "change_value": "-2.29%",
-      "pct": -2.29
+      "change_value": "-2.71%",
+      "pct": -2.71
     },
     {
       "name": "생명보험",
-      "change_value": "-2.82%",
-      "pct": -2.82
+      "change_value": "-2.85%",
+      "pct": -2.85
     },
     {
       "name": "판매업체",
-      "change_value": "-3.36%",
-      "pct": -3.36
+      "change_value": "-3.07%",
+      "pct": -3.07
     },
     {
       "name": "조선",
-      "change_value": "-4.29%",
-      "pct": -4.29
+      "change_value": "-4.48%",
+      "pct": -4.48
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-5.29%",
-      "pct": -5.29
+      "change_value": "-5.16%",
+      "pct": -5.16
     }
   ],
   "article_counts": {
