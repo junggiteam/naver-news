@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-16 09:01:21",
+  "updated_at": "2026-09-16 09:31:00",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6627.26,
-    "kosdaq_value": 812.41
+    "kospi_change": 0.31,
+    "kosdaq_change": -0.57,
+    "kospi_value": 6647.92,
+    "kosdaq_value": 807.74
   },
   "heroes": {
     "종합": {
@@ -2917,42 +2917,48 @@
   },
   "top_gainers": [
     {
-      "name": "한일홀딩스",
-      "price": "17,740",
-      "change_percent": "-0.17%",
-      "pct": 0.17
+      "name": "LS에코에너지",
+      "price": "59,800",
+      "change_percent": "+19.96%",
+      "pct": 19.96
     },
     {
-      "name": "TIGER 원유선물Enhanced(H)",
-      "price": "8,530",
-      "change_percent": "+1.67%",
-      "pct": 1.67
+      "name": "SHD",
+      "price": "10,780",
+      "change_percent": "+10.00%",
+      "pct": 10.0
     },
     {
-      "name": "혜인",
-      "price": "9,100",
-      "change_percent": "+0.78%",
-      "pct": 0.78
+      "name": "해성디에스",
+      "price": "53,100",
+      "change_percent": "+10.17%",
+      "pct": 10.17
     },
     {
-      "name": "KODEX WTI원유선물(H)",
-      "price": "29,320",
-      "change_percent": "+1.54%",
-      "pct": 1.54
+      "name": "깨끗한나라우",
+      "price": "3,475",
+      "change_percent": "+7.25%",
+      "pct": 7.25
     },
     {
-      "name": "KODEX 미국빅테크10(H)",
-      "price": "63,180",
-      "change_percent": "+1.36%",
-      "pct": 1.36
+      "name": "KEC",
+      "price": "2,930",
+      "change_percent": "+6.55%",
+      "pct": 6.55
     }
   ],
   "top_losers": [
     {
-      "name": "한화투자증권우",
-      "price": "6,100",
-      "change_percent": "-7.85%",
-      "pct": 7.85
+      "name": "카카오페이",
+      "price": "41,550",
+      "change_percent": "-9.18%",
+      "pct": 9.18
+    },
+    {
+      "name": "영풍",
+      "price": "46,800",
+      "change_percent": "-7.33%",
+      "pct": 7.33
     },
     {
       "name": "진흥기업2우B",
@@ -2961,111 +2967,105 @@
       "pct": 6.3
     },
     {
-      "name": "영풍",
-      "price": "48,550",
-      "change_percent": "-3.86%",
-      "pct": 3.86
+      "name": "자이에스앤디",
+      "price": "10,550",
+      "change_percent": "-5.30%",
+      "pct": 5.3
     },
     {
-      "name": "비비안",
-      "price": "5,260",
-      "change_percent": "-3.13%",
-      "pct": 3.13
-    },
-    {
-      "name": "진흥기업우B",
-      "price": "12,100",
-      "change_percent": "-2.81%",
-      "pct": 2.81
+      "name": "신풍제약",
+      "price": "9,320",
+      "change_percent": "-6.52%",
+      "pct": 6.52
     }
   ],
   "sector_performance": [
     {
+      "name": "통신장비",
+      "change_value": "+4.61%",
+      "pct": 4.61
+    },
+    {
       "name": "무역회사와판매업체",
-      "change_value": "+3.01%",
-      "pct": 3.01
+      "change_value": "+3.98%",
+      "pct": 3.98
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+2.61%",
+      "pct": 2.61
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+1.31%",
-      "pct": 1.31
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+1.08%",
-      "pct": 1.08
+      "change_value": "+2.51%",
+      "pct": 2.51
     },
     {
       "name": "전기장비",
-      "change_value": "+1.07%",
-      "pct": 1.07
-    },
-    {
-      "name": "건축제품",
-      "change_value": "+0.54%",
-      "pct": 0.54
+      "change_value": "+2.42%",
+      "pct": 2.42
     }
   ],
   "sector_heatmap": [
     {
+      "name": "통신장비",
+      "change_value": "+4.61%",
+      "pct": 4.61
+    },
+    {
       "name": "무역회사와판매업체",
-      "change_value": "+3.01%",
-      "pct": 3.01
+      "change_value": "+3.98%",
+      "pct": 3.98
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+2.61%",
+      "pct": 2.61
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+1.31%",
-      "pct": 1.31
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+1.08%",
-      "pct": 1.08
+      "change_value": "+2.51%",
+      "pct": 2.51
     },
     {
       "name": "전기장비",
-      "change_value": "+1.07%",
-      "pct": 1.07
+      "change_value": "+2.42%",
+      "pct": 2.42
     },
     {
-      "name": "건축제품",
-      "change_value": "+0.54%",
-      "pct": 0.54
-    },
-    {
-      "name": "레저용장비와제품",
-      "change_value": "+0.53%",
-      "pct": 0.53
-    },
-    {
-      "name": "창업투자",
-      "change_value": "-0.93%",
-      "pct": -0.93
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "-0.94%",
-      "pct": -0.94
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "-1.05%",
-      "pct": -1.05
-    },
-    {
-      "name": "비철금속",
-      "change_value": "-1.12%",
-      "pct": -1.12
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "-1.21%",
-      "pct": -1.21
+      "name": "백화점과일반상점",
+      "change_value": "+2.02%",
+      "pct": 2.02
     },
     {
       "name": "전자제품",
-      "change_value": "-1.64%",
-      "pct": -1.64
+      "change_value": "-1.76%",
+      "pct": -1.76
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "-1.77%",
+      "pct": -1.77
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "-1.83%",
+      "pct": -1.83
+    },
+    {
+      "name": "광고",
+      "change_value": "-1.92%",
+      "pct": -1.92
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-2.21%",
+      "pct": -2.21
+    },
+    {
+      "name": "IT서비스",
+      "change_value": "-2.69%",
+      "pct": -2.69
     }
   ],
   "article_counts": {
