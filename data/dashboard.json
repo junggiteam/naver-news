@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17 08:01:03",
+  "updated_at": "2026-09-17 08:31:04",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2896,105 +2896,83 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "해성디에스",
-      "price": "56,100",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디와이덕양",
-      "price": "1,925",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "LS에코에너지",
-      "price": "55,300",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "8,895",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "10,685",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "진흥기업2우B",
-      "price": "17,800",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SHD",
-      "price": "7,140",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "진흥기업우B",
-      "price": "9,890",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "비비안",
-      "price": "4,450",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양2우B",
-      "price": "5,580",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "통신장비",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "가정용기기와용품",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기장비",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "통신장비",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "가정용기기와용품",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3004,47 +2982,7 @@
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디스플레이장비및부품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건설",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "광고",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3053,7 +2991,7 @@
     "종합": 410,
     "경제": 30,
     "부동산": 30,
-    "증권": 80
+    "증권": 81
   },
   "article_count_trend": {
     "종합": {
@@ -3075,9 +3013,9 @@
       "surge": false
     },
     "증권": {
-      "today": 80,
+      "today": 81,
       "yesterday": 87,
-      "change_pct": -8.0,
+      "change_pct": -6.9,
       "surge": false
     }
   }
