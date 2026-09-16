@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-16 15:01:10",
+  "updated_at": "2026-09-16 15:28:15",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.82,
-    "kosdaq_change": 0.14,
-    "kospi_value": 6681.59,
-    "kosdaq_value": 813.52
+    "kospi_change": 1.27,
+    "kosdaq_change": 0.38,
+    "kospi_value": 6711.45,
+    "kosdaq_value": 815.47
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "아리바이오LAB",
+      "corp_code": "01141599",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260916",
+      "rcept_no": "20260916000344",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000344",
+      "ai_explanation": "회사가 주식을 새로 발행하여 자본금을 확충하겠다는 결정입니다."
+    },
+    {
+      "corp_name": "삼진식품",
+      "corp_code": "01370322",
+      "report_nm": "주요사항보고서(신주인수권부사채권발행결정)",
+      "rcept_dt": "20260916",
+      "rcept_no": "20260916000348",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000348",
+      "ai_explanation": "주식을 살 수 있는 권리가 부여된 채권을 발행하여 자금을 조달하겠다는 결정입니다."
+    },
+    {
       "corp_name": "모아라이프플러스",
       "corp_code": "00587925",
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20260916",
       "rcept_no": "20260916000279",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000279",
-      "ai_explanation": "회사가 주식을 새로 발행하여 자금을 조달하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 주식을 새로 발행하여 자본금을 확충하겠다는 결정입니다."
     },
     {
       "corp_name": "제주은행",
@@ -96,7 +114,7 @@
       "rcept_dt": "20260916",
       "rcept_no": "20260916000229",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000229",
-      "ai_explanation": "회사가 자본 확충을 위해 특정 조건에서 주식으로 전환되거나 상각될 수 있는 채권을 발행한다는 의미입니다."
+      "ai_explanation": "일정 요건 시 상각될 수 있는 채권형 자본증권 발행 관련 내용을 정정한 것입니다."
     },
     {
       "corp_name": "링크솔루션",
@@ -105,7 +123,7 @@
       "rcept_dt": "20260916",
       "rcept_no": "20260916000208",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000208",
-      "ai_explanation": "회사가 투자자에게 주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하여 자금을 조달한다는 의미입니다."
+      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권 발행 관련 내용을 정정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2957,33 +2975,33 @@
   "top_gainers": [
     {
       "name": "해성디에스",
-      "price": "56,900",
-      "change_percent": "+18.05%",
-      "pct": 18.05
+      "price": "57,400",
+      "change_percent": "+19.09%",
+      "pct": 19.09
     },
     {
       "name": "디와이덕양",
-      "price": "1,970",
-      "change_percent": "+17.33%",
-      "pct": 17.33
+      "price": "1,976",
+      "change_percent": "+17.69%",
+      "pct": 17.69
     },
     {
       "name": "LS에코에너지",
-      "price": "56,800",
-      "change_percent": "+13.94%",
-      "pct": 13.94
+      "price": "56,700",
+      "change_percent": "+13.74%",
+      "pct": 13.74
     },
     {
       "name": "KEC",
-      "price": "3,005",
-      "change_percent": "+9.27%",
-      "pct": 9.27
+      "price": "3,015",
+      "change_percent": "+9.64%",
+      "pct": 9.64
     },
     {
-      "name": "두산",
-      "price": "1,383,000",
-      "change_percent": "+7.29%",
-      "pct": 7.29
+      "name": "SOL SK하이닉스단일종목레버리지",
+      "price": "8,890",
+      "change_percent": "+8.55%",
+      "pct": 8.55
     }
   ],
   "top_losers": [
@@ -2995,9 +3013,9 @@
     },
     {
       "name": "SHD",
-      "price": "7,400",
-      "change_percent": "-24.49%",
-      "pct": 24.49
+      "price": "7,250",
+      "change_percent": "-26.02%",
+      "pct": 26.02
     },
     {
       "name": "진흥기업우B",
@@ -3021,60 +3039,70 @@
   "sector_performance": [
     {
       "name": "통신장비",
-      "change_value": "+5.80%",
-      "pct": 5.8
+      "change_value": "+6.00%",
+      "pct": 6.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "change_value": "+3.67%",
+      "pct": 3.67
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+3.25%",
-      "pct": 3.25
+      "change_value": "+3.55%",
+      "pct": 3.55
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+2.27%",
-      "pct": 2.27
+      "change_value": "+2.94%",
+      "pct": 2.94
     },
     {
       "name": "전기장비",
-      "change_value": "+2.14%",
-      "pct": 2.14
+      "change_value": "+2.34%",
+      "pct": 2.34
     }
   ],
   "sector_heatmap": [
     {
       "name": "통신장비",
-      "change_value": "+5.80%",
-      "pct": 5.8
+      "change_value": "+6.00%",
+      "pct": 6.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.73%",
-      "pct": 3.73
+      "change_value": "+3.67%",
+      "pct": 3.67
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+3.25%",
-      "pct": 3.25
+      "change_value": "+3.55%",
+      "pct": 3.55
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+2.27%",
-      "pct": 2.27
+      "change_value": "+2.94%",
+      "pct": 2.94
     },
     {
       "name": "전기장비",
-      "change_value": "+2.14%",
-      "pct": 2.14
+      "change_value": "+2.34%",
+      "pct": 2.34
     },
     {
       "name": "디스플레이장비및부품",
-      "change_value": "+1.76%",
-      "pct": 1.76
+      "change_value": "+1.93%",
+      "pct": 1.93
+    },
+    {
+      "name": "게임엔터테인먼트",
+      "change_value": "-2.27%",
+      "pct": -2.27
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-2.27%",
+      "pct": -2.27
     },
     {
       "name": "기계",
@@ -3082,29 +3110,19 @@
       "pct": -2.31
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-2.33%",
-      "pct": -2.33
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "-2.46%",
-      "pct": -2.46
-    },
-    {
       "name": "양방향미디어와서비스",
-      "change_value": "-2.67%",
-      "pct": -2.67
+      "change_value": "-2.50%",
+      "pct": -2.5
     },
     {
       "name": "IT서비스",
-      "change_value": "-3.30%",
-      "pct": -3.3
+      "change_value": "-3.01%",
+      "pct": -3.01
     },
     {
       "name": "광고",
-      "change_value": "-4.28%",
-      "pct": -4.28
+      "change_value": "-3.96%",
+      "pct": -3.96
     }
   ],
   "article_counts": {
