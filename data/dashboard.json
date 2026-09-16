@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-16 13:31:04",
+  "updated_at": "2026-09-16 14:01:11",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 1.04,
-    "kosdaq_change": -0.14,
-    "kospi_value": 6695.95,
-    "kosdaq_value": 811.26
+    "kospi_change": 0.78,
+    "kosdaq_change": -0.44,
+    "kospi_value": 6678.65,
+    "kosdaq_value": 808.87
   },
   "heroes": {
     "종합": {
@@ -79,7 +79,17 @@
     "기업 가치 제고",
     "전세 보증 리스크"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "링크솔루션",
+      "corp_code": "01764099",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260916",
+      "rcept_no": "20260916000208",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000208",
+      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등 기존 공시 사항을 수정하여 다시 알리는 공시입니다."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -2929,15 +2939,9 @@
   "top_gainers": [
     {
       "name": "디와이덕양",
-      "price": "2,050",
-      "change_percent": "+22.10%",
-      "pct": 22.1
-    },
-    {
-      "name": "LS에코에너지",
-      "price": "58,400",
-      "change_percent": "+17.15%",
-      "pct": 17.15
+      "price": "2,075",
+      "change_percent": "+23.59%",
+      "pct": 23.59
     },
     {
       "name": "해성디에스",
@@ -2946,16 +2950,22 @@
       "pct": 16.39
     },
     {
-      "name": "KEC",
-      "price": "3,005",
-      "change_percent": "+9.27%",
-      "pct": 9.27
+      "name": "LS에코에너지",
+      "price": "57,900",
+      "change_percent": "+16.15%",
+      "pct": 16.15
     },
     {
-      "name": "한화갤러리아",
-      "price": "2,635",
-      "change_percent": "+7.33%",
-      "pct": 7.33
+      "name": "KEC",
+      "price": "3,015",
+      "change_percent": "+9.64%",
+      "pct": 9.64
+    },
+    {
+      "name": "코스맥스비티아이",
+      "price": "25,650",
+      "change_percent": "+7.10%",
+      "pct": 7.1
     }
   ],
   "top_losers": [
@@ -2966,22 +2976,22 @@
       "pct": 29.92
     },
     {
+      "name": "SHD",
+      "price": "7,670",
+      "change_percent": "-21.73%",
+      "pct": 21.73
+    },
+    {
       "name": "카프로",
-      "price": "35",
-      "change_percent": "-20.45%",
-      "pct": 20.45
+      "price": "37",
+      "change_percent": "-15.91%",
+      "pct": 15.91
     },
     {
       "name": "진흥기업우B",
-      "price": "10,370",
-      "change_percent": "-16.71%",
-      "pct": 16.71
-    },
-    {
-      "name": "SHD",
-      "price": "8,220",
-      "change_percent": "-16.12%",
-      "pct": 16.12
+      "price": "10,010",
+      "change_percent": "-19.60%",
+      "pct": 19.6
     },
     {
       "name": "동양2우B",
@@ -2993,90 +3003,90 @@
   "sector_performance": [
     {
       "name": "통신장비",
-      "change_value": "+5.73%",
-      "pct": 5.73
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "+4.14%",
-      "pct": 4.14
+      "change_value": "+5.60%",
+      "pct": 5.6
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+3.25%",
-      "pct": 3.25
+      "change_value": "+3.36%",
+      "pct": 3.36
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+2.97%",
-      "pct": 2.97
+      "change_value": "+2.68%",
+      "pct": 2.68
     },
     {
-      "name": "전기장비",
-      "change_value": "+2.50%",
-      "pct": 2.5
+      "name": "다각화된소비자서비스",
+      "change_value": "+2.21%",
+      "pct": 2.21
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+2.02%",
+      "pct": 2.02
     }
   ],
   "sector_heatmap": [
     {
       "name": "통신장비",
-      "change_value": "+5.73%",
-      "pct": 5.73
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "+4.14%",
-      "pct": 4.14
+      "change_value": "+5.60%",
+      "pct": 5.6
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+3.25%",
-      "pct": 3.25
+      "change_value": "+3.36%",
+      "pct": 3.36
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+2.97%",
-      "pct": 2.97
+      "change_value": "+2.68%",
+      "pct": 2.68
     },
     {
-      "name": "전기장비",
-      "change_value": "+2.50%",
-      "pct": 2.5
+      "name": "다각화된소비자서비스",
+      "change_value": "+2.21%",
+      "pct": 2.21
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+2.36%",
-      "pct": 2.36
+      "change_value": "+2.02%",
+      "pct": 2.02
     },
     {
-      "name": "항공화물운송과물류",
-      "change_value": "-1.94%",
-      "pct": -1.94
+      "name": "전기장비",
+      "change_value": "+1.94%",
+      "pct": 1.94
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-2.16%",
+      "pct": -2.16
     },
     {
       "name": "양방향미디어와서비스",
-      "change_value": "-2.15%",
-      "pct": -2.15
+      "change_value": "-2.18%",
+      "pct": -2.18
     },
     {
-      "name": "생물공학",
-      "change_value": "-2.17%",
-      "pct": -2.17
+      "name": "기계",
+      "change_value": "-2.32%",
+      "pct": -2.32
     },
     {
       "name": "식품과기본식료품소매",
-      "change_value": "-2.50%",
-      "pct": -2.5
+      "change_value": "-2.35%",
+      "pct": -2.35
     },
     {
       "name": "IT서비스",
-      "change_value": "-2.90%",
-      "pct": -2.9
+      "change_value": "-3.13%",
+      "pct": -3.13
     },
     {
       "name": "광고",
-      "change_value": "-3.99%",
-      "pct": -3.99
+      "change_value": "-4.01%",
+      "pct": -4.01
     }
   ],
   "article_counts": {
