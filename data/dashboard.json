@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16 08:31:40",
+  "updated_at": "2026-09-16 09:01:21",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2915,102 +2915,164 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "한일홀딩스",
+      "price": "17,740",
+      "change_percent": "-0.17%",
+      "pct": 0.17
+    },
+    {
+      "name": "TIGER 원유선물Enhanced(H)",
+      "price": "8,530",
+      "change_percent": "+1.67%",
+      "pct": 1.67
+    },
+    {
+      "name": "혜인",
+      "price": "9,100",
+      "change_percent": "+0.78%",
+      "pct": 0.78
+    },
+    {
+      "name": "KODEX WTI원유선물(H)",
+      "price": "29,320",
+      "change_percent": "+1.54%",
+      "pct": 1.54
+    },
+    {
+      "name": "KODEX 미국빅테크10(H)",
+      "price": "63,180",
+      "change_percent": "+1.36%",
+      "pct": 1.36
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "한화투자증권우",
+      "price": "6,100",
+      "change_percent": "-7.85%",
+      "pct": 7.85
+    },
+    {
+      "name": "진흥기업2우B",
+      "price": "23,800",
+      "change_percent": "-6.30%",
+      "pct": 6.3
+    },
+    {
+      "name": "영풍",
+      "price": "48,550",
+      "change_percent": "-3.86%",
+      "pct": 3.86
+    },
+    {
+      "name": "비비안",
+      "price": "5,260",
+      "change_percent": "-3.13%",
+      "pct": 3.13
+    },
+    {
+      "name": "진흥기업우B",
+      "price": "12,100",
+      "change_percent": "-2.81%",
+      "pct": 2.81
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+3.01%",
+      "pct": 3.01
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "가정용기기와용품",
+      "change_value": "+1.31%",
+      "pct": 1.31
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "통신장비",
+      "change_value": "+1.08%",
+      "pct": 1.08
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "+1.07%",
+      "pct": 1.07
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건축제품",
+      "change_value": "+0.54%",
+      "pct": 0.54
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+3.01%",
+      "pct": 3.01
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "가정용기기와용품",
+      "change_value": "+1.31%",
+      "pct": 1.31
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "통신장비",
+      "change_value": "+1.08%",
+      "pct": 1.08
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "+1.07%",
+      "pct": 1.07
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건축제품",
+      "change_value": "+0.54%",
+      "pct": 0.54
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "레저용장비와제품",
+      "change_value": "+0.53%",
+      "pct": 0.53
     },
     {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "창업투자",
+      "change_value": "-0.93%",
+      "pct": -0.93
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "양방향미디어와서비스",
+      "change_value": "-0.94%",
+      "pct": -0.94
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "항공화물운송과물류",
+      "change_value": "-1.05%",
+      "pct": -1.05
     },
     {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "비철금속",
+      "change_value": "-1.12%",
+      "pct": -1.12
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합유틸리티",
+      "change_value": "-1.21%",
+      "pct": -1.21
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "-1.64%",
+      "pct": -1.64
     }
   ],
   "article_counts": {
     "종합": 408,
     "경제": 30,
     "부동산": 30,
-    "증권": 79
+    "증권": 80
   },
   "article_count_trend": {
     "종합": {
@@ -3032,9 +3094,9 @@
       "surge": false
     },
     "증권": {
-      "today": 79,
+      "today": 80,
       "yesterday": 86,
-      "change_pct": -8.1,
+      "change_pct": -7.0,
       "surge": false
     }
   }
