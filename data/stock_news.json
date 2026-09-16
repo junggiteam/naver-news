@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17 02:01:06",
+  "updated_at": "2026-09-17 02:30:55",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "52,043.87",
-      "change_percent": "▼0.09%",
-      "direction": "down",
-      "as_of": "2026-09-16 13:00:57"
+      "value": "52,125.96",
+      "change_percent": "▲0.06%",
+      "direction": "up",
+      "as_of": "2026-09-16 13:30:44"
     },
     {
       "name": "나스닥",
-      "value": "26,155.99",
-      "change_percent": "▲0.67%",
+      "value": "26,158.92",
+      "change_percent": "▲0.68%",
       "direction": "up",
-      "as_of": "2026-09-16 13:00:58"
+      "as_of": "2026-09-16 13:30:45"
     },
     {
       "name": "나스닥100",
-      "value": "29,148.21",
-      "change_percent": "▲0.73%",
+      "value": "29,152.07",
+      "change_percent": "▲0.74%",
       "direction": "up",
-      "as_of": "2026-09-16 13:00:59"
+      "as_of": "2026-09-16 13:30:46"
     },
     {
       "name": "S&P500",
-      "value": "7,607.00",
-      "change_percent": "▲0.28%",
+      "value": "7,610.53",
+      "change_percent": "▲0.33%",
       "direction": "up",
-      "as_of": "2026-09-16 13:00:59"
+      "as_of": "2026-09-16 13:30:47"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,368.10",
-      "change_percent": "▲0.32%",
+      "value": "1,368.20",
+      "change_percent": "▲0.33%",
       "direction": "up",
-      "as_of": "2026-09-17 01:59:03"
+      "as_of": "2026-09-17 02:26:43"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "882.05",
-      "change_percent": "▲0.32%",
+      "value": "882.03",
+      "change_percent": "▲0.31%",
       "direction": "up",
-      "as_of": "2026-09-17 01:59:03"
+      "as_of": "2026-09-17 02:26:43"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,578.10",
+      "value": "1,578.01",
       "change_percent": "▲0.25%",
       "direction": "up",
-      "as_of": "2026-09-17 01:59:03"
+      "as_of": "2026-09-17 02:26:43"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "102.54",
-      "change_percent": "▼3.11%",
+      "value": "102.72",
+      "change_percent": "▼2.94%",
       "direction": "down",
-      "as_of": "2026-09-16 11:51:04"
+      "as_of": "2026-09-16 12:19:54"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "103,802,000",
-      "change_percent": "▲0.79%",
+      "value": "103,747,000",
+      "change_percent": "▲0.74%",
       "direction": "up",
-      "as_of": "2026-09-17 02:01:01"
+      "as_of": "2026-09-17 02:30:14"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,275,000",
-      "change_percent": "▲0.28%",
+      "value": "3,272,000",
+      "change_percent": "▲0.18%",
       "direction": "up",
-      "as_of": "2026-09-17 02:01:02"
+      "as_of": "2026-09-17 02:30:54"
     }
   ],
   "news_categories": [
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "美 ITC, 삼성전자·애플·구글 특허침해 조사 착수",
+          "link": "https://n.news.naver.com/mnews/article/277/0005817453?sid=101258403",
+          "upload_time": "20260917022451",
+          "published_at": "2026-09-17T02:24:51+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
           "title": "임박한 9월 美 FOMC, 주목해야 할 포인트 [Fed 워치]",
           "link": "https://n.news.naver.com/mnews/article/015/0005333218?sid=101258403",
           "upload_time": "20260917013512",
@@ -399,7 +407,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 3,
           "title": "美 인플레에도 버티는 소비…주택 체감경기는 1년 만에 최저",
           "link": "https://n.news.naver.com/mnews/article/277/0005817452?sid=101258403",
           "upload_time": "20260917013352",
@@ -407,7 +415,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 4,
           "title": "[뉴욕증시]9월 FOMC 인상 기대 확산…S&P500·나스닥 ↑",
           "link": "https://n.news.naver.com/mnews/article/277/0005817448?sid=101258403",
           "upload_time": "20260916230127",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "3년만의 美금리인상 앞두고…유가·금리 하락에 뉴욕증시 상승 출발",
           "link": "https://n.news.naver.com/mnews/article/018/0006370699?sid=101258403",
           "upload_time": "20260916230017",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 6,
           "title": "테슬라, 3Q 인도량 하향 조정…미국·중국·유럽서 판매 부진 지속-골드만삭스",
           "link": "https://n.news.naver.com/mnews/article/018/0006370692?sid=101258403",
           "upload_time": "20260916223910",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 7,
           "title": "美 금리 인상 앞두고 달러 강세…달러·엔 155엔대",
           "link": "https://n.news.naver.com/mnews/article/018/0006370677?sid=101258403",
           "upload_time": "20260916211109",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 8,
           "title": "\"벤모 키워 반등한다\"는 페이팔…시장 반응은 싸늘",
           "link": "https://n.news.naver.com/mnews/article/015/0005333121?sid=101258403",
           "upload_time": "20260916180811",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 8,
+          "rank": 9,
           "title": "오픈AI, 1조2000억弗 비공개 자금조달 추진",
           "link": "https://n.news.naver.com/mnews/article/015/0005333120?sid=101258403",
           "upload_time": "20260916180809",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 9,
+          "rank": 10,
           "title": "래리 핑크 \"AI 구축 지연땐 대기업 전유물 될 것\"",
           "link": "https://n.news.naver.com/mnews/article/015/0005333118?sid=101258403",
           "upload_time": "20260916180709",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 10,
+          "rank": 11,
           "title": "인텔서 분사한 美 알테라, 11년 만에 증시복귀 채비",
           "link": "https://n.news.naver.com/mnews/article/015/0005333116?sid=101258403",
           "upload_time": "20260916180616",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 11,
+          "rank": 12,
           "title": "美가상자산법 무산에 … 비트코인 추풍낙엽",
           "link": "https://n.news.naver.com/mnews/article/009/0005736269?sid=101258403",
           "upload_time": "20260916174313",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 12,
+          "rank": 13,
           "title": "美 10년물 국채금리, 19년來 최고치 찍어",
           "link": "https://n.news.naver.com/mnews/article/015/0005333065?sid=101258403",
           "upload_time": "20260916173816",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 13,
+          "rank": 14,
           "title": "다카이치, 자민당 주요 간부 유임…'자기 색깔' 유지",
           "link": "https://n.news.naver.com/mnews/article/277/0005817354?sid=101258403",
           "upload_time": "20260916162141",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 14,
+          "rank": 15,
           "title": "워시-트럼프 충돌 위기…JP모건이 쓴 5가지 시나리오",
           "link": "https://n.news.naver.com/mnews/article/215/0001266196?sid=101258403",
           "upload_time": "20260916161811",
           "published_at": "2026-09-16T16:18:11+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "세일즈포스 CEO \"AI, 소셜미디어와 같은 피해 반복 말아야\"",
-          "link": "https://n.news.naver.com/mnews/article/015/0005333000?sid=101258403",
-          "upload_time": "20260916160620",
-          "published_at": "2026-09-16T16:06:20+09:00"
         }
       ]
     },
