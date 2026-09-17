@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 05:01:03",
+  "updated_at": "2026-09-18 05:30:52",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "51,779.85",
-      "change_percent": "▲0.62%",
+      "value": "51,778.04",
+      "change_percent": "▲0.61%",
       "direction": "up",
-      "as_of": "2026-09-17 16:00:48"
+      "as_of": "2026-09-17 16:20:01"
     },
     {
       "name": "나스닥",
       "value": "26,418.30",
       "change_percent": "▲1.69%",
       "direction": "up",
-      "as_of": "2026-09-17 16:00:50"
+      "as_of": "2026-09-17 16:30:44"
     },
     {
       "name": "나스닥100",
       "value": "29,446.98",
       "change_percent": "▲1.73%",
       "direction": "up",
-      "as_of": "2026-09-17 16:00:51"
+      "as_of": "2026-09-17 16:30:45"
     },
     {
       "name": "S&P500",
-      "value": "7,637.71",
+      "value": "7,637.76",
       "change_percent": "▲1.14%",
       "direction": "up",
-      "as_of": "2026-09-17 16:00:51"
+      "as_of": "2026-09-17 16:20:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -69,21 +69,21 @@
       "value": "1,382.20",
       "change_percent": "▲0.34%",
       "direction": "up",
-      "as_of": "2026-09-18 04:58:04"
+      "as_of": "2026-09-18 05:27:31"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "886.17",
-      "change_percent": "▲0.50%",
+      "value": "886.08",
+      "change_percent": "▲0.49%",
       "direction": "up",
-      "as_of": "2026-09-18 04:58:04"
+      "as_of": "2026-09-18 05:27:31"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,586.63",
-      "change_percent": "▲0.45%",
+      "value": "1,586.28",
+      "change_percent": "▲0.42%",
       "direction": "up",
-      "as_of": "2026-09-18 04:58:04"
+      "as_of": "2026-09-18 05:27:31"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "101.24",
-      "change_percent": "▼1.16%",
+      "value": "101.26",
+      "change_percent": "▼1.14%",
       "direction": "down",
-      "as_of": "2026-09-17 14:50:25"
+      "as_of": "2026-09-17 15:20:00"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "105,681,000",
-      "change_percent": "▲0.79%",
+      "value": "105,788,000",
+      "change_percent": "▲0.89%",
       "direction": "up",
-      "as_of": "2026-09-18 05:01:01"
+      "as_of": "2026-09-18 05:30:44"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,380,000",
-      "change_percent": "▲1.68%",
+      "value": "3,390,000",
+      "change_percent": "▲1.99%",
       "direction": "up",
-      "as_of": "2026-09-18 05:01:01"
+      "as_of": "2026-09-18 05:30:49"
     }
   ],
   "news_categories": [
@@ -390,8 +390,40 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제TV",
           "rank": 1,
+          "title": "[속보] 필라델피아 반도체 3%↑…뉴욕증시, 충격 딛고 일제히 반등",
+          "link": "https://n.news.naver.com/mnews/article/215/0001266385?sid=101258403",
+          "upload_time": "20260918052155",
+          "published_at": "2026-09-18T05:21:55+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "[속보]유가·채권금리 ↓…3대 지수 상승 마감",
+          "link": "https://n.news.naver.com/mnews/article/277/0005818133?sid=101258403",
+          "upload_time": "20260918051825",
+          "published_at": "2026-09-18T05:18:25+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
+          "title": "유엔 조사단 \"美, 이란 학교 공습은 전쟁범죄 해당\"",
+          "link": "https://n.news.naver.com/mnews/article/277/0005818132?sid=101258403",
+          "upload_time": "20260918051322",
+          "published_at": "2026-09-18T05:13:22+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 4,
+          "title": "[속보]뉴욕증시, 연준 충격 딛고 반등…나스닥 1.6%↑",
+          "link": "https://n.news.naver.com/mnews/article/018/0006371616?sid=101258403",
+          "upload_time": "20260918050508",
+          "published_at": "2026-09-18T05:05:08+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 5,
           "title": "[美특징주]바이탈팜스, 비상장 전환 등 전략적 대안 검토에 주가 15%↑",
           "link": "https://n.news.naver.com/mnews/article/018/0006371610?sid=101258403",
           "upload_time": "20260918044810",
@@ -399,7 +431,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 6,
           "title": "KKR, 美 10년물 금리 전망 상향…\"Fed, 2029년 초까지 고금리 유지\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005818131?sid=101258403",
           "upload_time": "20260918042219",
@@ -407,7 +439,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 7,
           "title": "트럼프 \"이란 궤멸할지 중대 결정\"…대규모 공격 재개 시사",
           "link": "https://n.news.naver.com/mnews/article/277/0005818130?sid=101258403",
           "upload_time": "20260918040801",
@@ -415,7 +447,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 8,
           "title": "엔비디아·메타·스페이스X 수장들, 트럼프 설득해 AI 규제기구 설립 막았다",
           "link": "https://n.news.naver.com/mnews/article/277/0005818129?sid=101258403",
           "upload_time": "20260918035632",
@@ -423,7 +455,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 9,
           "title": "[美특징주]타워세미컨덕터, 상승…뉴포토닉스와  AI 광학 엔진 대량 출하",
           "link": "https://n.news.naver.com/mnews/article/018/0006371605?sid=101258403",
           "upload_time": "20260918025907",
@@ -431,7 +463,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 10,
           "title": "[美특징주]파라마운트스카이댄스, 워너브로스 합병 리스크에 월가 '매도'…주가 3%↓",
           "link": "https://n.news.naver.com/mnews/article/018/0006371604?sid=101258403",
           "upload_time": "20260918022614",
@@ -439,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 7,
+          "rank": 11,
           "title": "[美특징주]루시드, 볼트와 유럽 자율주행 협력·구조조정 종료…주가 10% 급등",
           "link": "https://n.news.naver.com/mnews/article/018/0006371603?sid=101258403",
           "upload_time": "20260918020013",
@@ -447,7 +479,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 12,
           "title": "[뉴욕증시]국제유가 ↓· 기술주 ↑…S&P500·나스닥 1%대 ↑",
           "link": "https://n.news.naver.com/mnews/article/277/0005818124?sid=101258403",
           "upload_time": "20260917234804",
@@ -455,7 +487,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 13,
           "title": "[美특징주]MS-노키아 협력에 개장전 동반↑… AI 데이터 통합으로 통신 혁신 가속",
           "link": "https://n.news.naver.com/mnews/article/018/0006371586?sid=101258403",
           "upload_time": "20260917224216",
@@ -463,7 +495,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 10,
+          "rank": 14,
           "title": "中 틱톡 운영사의 AI 신약개발사, 2억9000만달러 투자유치",
           "link": "https://n.news.naver.com/mnews/article/015/0005333633?sid=101258403",
           "upload_time": "20260917185815",
@@ -471,43 +503,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 11,
+          "rank": 15,
           "title": "[글로벌 핫스톡] AEC 둔화 넘는다…크레도, ‘광통신’으로 성장축 확장",
           "link": "https://n.news.naver.com/mnews/article/011/0004663051?sid=101258403",
           "upload_time": "20260917182014",
           "published_at": "2026-09-17T18:20:14+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 12,
-          "title": "9월엔 미장 신경꺼라?…‘선거 7주전’부터는 다릅니다 [데이터로 읽는 자산시장]",
-          "link": "https://n.news.naver.com/mnews/article/009/0005736947?sid=101258403",
-          "upload_time": "20260917175710",
-          "published_at": "2026-09-17T17:57:10+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 13,
-          "title": "[미국 주식 돋보기] 빅파마 뒤에서 웃는다 … 질주하는 써모피셔",
-          "link": "https://n.news.naver.com/mnews/article/009/0005736885?sid=101258403",
-          "upload_time": "20260917174210",
-          "published_at": "2026-09-17T17:42:10+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 14,
-          "title": "“당장 10% 빠질 수 있는데, 던질까 담을까?”…금리 인상 1년 뒤 웃었던 美 증시",
-          "link": "https://n.news.naver.com/mnews/article/009/0005736798?sid=101258403",
-          "upload_time": "20260917170310",
-          "published_at": "2026-09-17T17:03:10+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 15,
-          "title": "美 긴축 재개에 환율 다시 오르나…“1400원 열어둬야”",
-          "link": "https://n.news.naver.com/mnews/article/018/0006371336?sid=101258403",
-          "upload_time": "20260917164710",
-          "published_at": "2026-09-17T16:47:10+09:00"
         }
       ]
     },
