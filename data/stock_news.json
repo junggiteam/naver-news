@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-09-18 08:00:59",
+  "updated_at": "2026-09-18 08:30:59",
   "indices": [
     {
       "name": "코스피",
       "value": "6,715.41",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-09-18 08:00:46"
+      "as_of": "2026-09-18 08:30:48"
     },
     {
       "name": "코스닥",
       "value": "822.18",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-09-18 08:00:46"
+      "as_of": "2026-09-18 08:30:49"
     },
     {
       "name": "코스피200",
       "value": "1,058.27",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-09-18 08:00:47"
+      "as_of": "2026-09-18 08:30:49"
     },
     {
       "name": "다우존스",
@@ -53,9 +53,9 @@
     {
       "name": "국내금(원/돈)",
       "value": "719,887.50",
-      "change_percent": "▲0.43%",
+      "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-09-17 15:19:54"
+      "as_of": "2026-09-18 00:00:00"
     },
     {
       "name": "휘발유(원/리터)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,382.00",
-      "change_percent": "▲0.33%",
-      "direction": "up",
-      "as_of": "2026-09-18 05:50:43"
+      "value": "1,381.00",
+      "change_percent": "▼0.07%",
+      "direction": "down",
+      "as_of": "2026-09-18 08:24:55"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "886.04",
-      "change_percent": "▲0.48%",
-      "direction": "up",
-      "as_of": "2026-09-18 05:50:43"
+      "value": "885.54",
+      "change_percent": "▼0.06%",
+      "direction": "down",
+      "as_of": "2026-09-18 08:24:55"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,586.19",
-      "change_percent": "▲0.42%",
-      "direction": "up",
-      "as_of": "2026-09-18 05:50:43"
+      "value": "1,585.11",
+      "change_percent": "▼0.07%",
+      "direction": "down",
+      "as_of": "2026-09-18 08:24:55"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "101.22",
-      "change_percent": "▼0.68%",
+      "value": "101.12",
+      "change_percent": "▼0.78%",
       "direction": "down",
-      "as_of": "2026-09-17 17:50:56"
+      "as_of": "2026-09-17 18:20:37"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "105,358,000",
-      "change_percent": "▲0.48%",
+      "value": "105,504,000",
+      "change_percent": "▲0.62%",
       "direction": "up",
-      "as_of": "2026-09-18 08:00:54"
+      "as_of": "2026-09-18 08:30:56"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,370,000",
-      "change_percent": "▲1.38%",
+      "value": "3,378,000",
+      "change_percent": "▲1.62%",
       "direction": "up",
-      "as_of": "2026-09-18 08:00:51"
+      "as_of": "2026-09-18 08:30:57"
     }
   ],
   "news_categories": [
@@ -140,8 +140,40 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "증시 조정에…ETF 거래대금도 석달새 반토막 이하로",
+          "link": "https://n.news.naver.com/mnews/article/015/0005333740?sid=101258401",
+          "upload_time": "20260918082620",
+          "published_at": "2026-09-18T08:26:20+09:00"
+        },
+        {
+          "press_name": "뉴스1",
+          "rank": 2,
+          "title": "美 반도체 훈풍…삼성전자·SK하이닉스 프리마켓 3% 상승",
+          "link": "https://n.news.naver.com/mnews/article/421/0009177867?sid=101258401",
+          "upload_time": "20260918081554",
+          "published_at": "2026-09-18T08:15:54+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 3,
+          "title": "[마켓뷰] 美증시 긴축 소화하며 반등…코스피도 이어받을까",
+          "link": "https://n.news.naver.com/mnews/article/001/0016319480?sid=101258401",
+          "upload_time": "20260918080633",
+          "published_at": "2026-09-18T08:06:33+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 4,
+          "title": "조정 길어지자 ETF 일평균 거래대금, '불장' 6월의 '반토막'",
+          "link": "https://n.news.naver.com/mnews/article/001/0016319475?sid=101258401",
+          "upload_time": "20260918080500",
+          "published_at": "2026-09-18T08:05:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 5,
           "title": "금리 인상 충격 딛고 뉴욕증시 반등…국내 증시도 상승 출발 전망[굿모닝 증시]",
           "link": "https://n.news.naver.com/mnews/article/277/0005818161?sid=101258401",
           "upload_time": "20260918075813",
@@ -149,15 +181,15 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
-          "title": "\"美국채, 안전자산 기능 약화…채권 대비 주식 매력 높아\"-NH",
+          "rank": 6,
+          "title": "\"美국채, 안전자산 역할 약화…채권 대비 주식 매력 높아\"-NH",
           "link": "https://n.news.naver.com/mnews/article/015/0005333728?sid=101258401",
           "upload_time": "20260918075708",
           "published_at": "2026-09-18T07:57:08+09:00"
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 7,
           "title": "원화 강세에 3분기 기업 실적 '비상'…\"금융주에 주목해야\"",
           "link": "https://n.news.naver.com/mnews/article/018/0006371663?sid=101258401",
           "upload_time": "20260918075312",
@@ -165,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 4,
+          "rank": 8,
           "title": "[3분증시] 뉴욕증시, 금리인상 불확실성 해소에 반등",
           "link": "https://n.news.naver.com/mnews/article/422/0000907374?sid=101258401",
           "upload_time": "20260918074017",
@@ -173,7 +205,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 9,
           "title": "유석환 로킷헬스케어 대표 “패치로 연골 재생…하버드대와 내년 임상”",
           "link": "https://n.news.naver.com/mnews/article/011/0004663183?sid=101258401",
           "upload_time": "20260918070213",
@@ -181,7 +213,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 6,
+          "rank": 10,
           "title": "매파 FOMC에 엇갈린 코스피·코스닥…코스닥은 왜 버티나[코주부]",
           "link": "https://n.news.naver.com/mnews/article/011/0004663180?sid=101258401",
           "upload_time": "20260918070119",
@@ -189,7 +221,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 11,
           "title": "고려은단·덴프스 ‘짝퉁’ 4만 3500개 팔렸다",
           "link": "https://n.news.naver.com/mnews/article/011/0004663176?sid=101258401",
           "upload_time": "20260918070109",
@@ -197,7 +229,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 8,
+          "rank": 12,
           "title": "금리 인상에도 기술주 강세 [굿모닝 글로벌이슈]",
           "link": "https://n.news.naver.com/mnews/article/215/0001266392?sid=101258401",
           "upload_time": "20260918065504",
@@ -205,7 +237,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 9,
+          "rank": 13,
           "title": "FOMC 충격 하루 만에 진정…뉴욕증시 반등 마감-[글로벌 마감 시황]",
           "link": "https://n.news.naver.com/mnews/article/215/0001266391?sid=101258401",
           "upload_time": "20260918065301",
@@ -213,7 +245,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 10,
+          "rank": 14,
           "title": "[글로벌증시] 뉴욕증시 반등 훈풍…오늘 코스피 영향은?",
           "link": "https://n.news.naver.com/mnews/article/422/0000907365?sid=101258401",
           "upload_time": "20260918065014",
@@ -221,43 +253,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 11,
+          "rank": 15,
           "title": "현대차 홍은희 “수소 투자 중단되면 기술 주도권 잃어…정부 일관된 지원 절실”",
           "link": "https://n.news.naver.com/mnews/article/011/0004663168?sid=101258401",
           "upload_time": "20260918063111",
           "published_at": "2026-09-18T06:31:11+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 12,
-          "title": "\"삼전닉스 주춤할 때 치솟았다\"…뒤에서 웃은 종목 뭐길래",
-          "link": "https://n.news.naver.com/mnews/article/015/0005333709?sid=101258401",
-          "upload_time": "20260918060115",
-          "published_at": "2026-09-18T06:01:15+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 13,
-          "title": "8월 외국인 국내 주식 3천440억 순매수…올해 처음으로 '사자'",
-          "link": "https://n.news.naver.com/mnews/article/001/0016319362?sid=101258401",
-          "upload_time": "20260918060000",
-          "published_at": "2026-09-18T06:00:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스TV",
-          "rank": 14,
-          "title": "외국인 증권자금 7개월째 순유출…주식은 순유입 전환",
-          "link": "https://n.news.naver.com/mnews/article/422/0000907348?sid=101258401",
-          "upload_time": "20260918055310",
-          "published_at": "2026-09-18T05:53:10+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "악재소멸? 뉴욕증시 3대지수 상승[월가월부]",
-          "link": "https://n.news.naver.com/mnews/article/009/0005737002?sid=101258401",
-          "upload_time": "20260918055207",
-          "published_at": "2026-09-18T05:52:07+09:00"
         }
       ]
     },
@@ -265,8 +265,96 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "삼전닉스 '메모리 패권 시대' 열린다…\"GPU보다 훨씬 더 중요\" [분석+]",
+          "link": "https://n.news.naver.com/mnews/article/015/0005333741?sid=101258402",
+          "upload_time": "20260918082912",
+          "published_at": "2026-09-18T08:29:12+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 2,
+          "title": "'B2C·자동차소재' 사업 주목받는 LX하우시스, 목표주가 5만원",
+          "link": "https://n.news.naver.com/mnews/article/014/0005577765?sid=101258402",
+          "upload_time": "20260918082812",
+          "published_at": "2026-09-18T08:28:12+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 3,
+          "title": "외평채 80억弗 역대 최대…산은·수은·공기업 KP와 '달러 쟁탈전' [fn마켓워치]",
+          "link": "https://n.news.naver.com/mnews/article/014/0005577763?sid=101258402",
+          "upload_time": "20260918082516",
+          "published_at": "2026-09-18T08:25:16+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 4,
+          "title": "삼성전기, AI 부품 호조에 3분기 최대 실적 전망…목표가 300만원",
+          "link": "https://n.news.naver.com/mnews/article/014/0005577759?sid=101258402",
+          "upload_time": "20260918081816",
+          "published_at": "2026-09-18T08:18:16+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 5,
+          "title": "민수용 미수금 14.2조 기록 한국가스공사, 다시 증가세",
+          "link": "https://n.news.naver.com/mnews/article/014/0005577758?sid=101258402",
+          "upload_time": "20260918081614",
+          "published_at": "2026-09-18T08:16:14+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 6,
+          "title": "티로보틱스, 美 수주 확대에 현지 생산거점 구축 추진",
+          "link": "https://n.news.naver.com/mnews/article/277/0005818171?sid=101258402",
+          "upload_time": "20260918081038",
+          "published_at": "2026-09-18T08:10:38+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 7,
+          "title": "\"금융주, 원화 강세 시기에 돋보여…3분기 실적시즌서 주목\"",
+          "link": "https://n.news.naver.com/mnews/article/015/0005333736?sid=101258402",
+          "upload_time": "20260918080912",
+          "published_at": "2026-09-18T08:09:12+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 8,
+          "title": "\"동양, AI 데이터센터·가덕도신공항 수혜 기대\"",
+          "link": "https://n.news.naver.com/mnews/article/277/0005818167?sid=101258402",
+          "upload_time": "20260918080817",
+          "published_at": "2026-09-18T08:08:17+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 9,
+          "title": "LX하우시스, B2C 호조·비건축자재 매출 증가…“실적 회복 기대”-현대차",
+          "link": "https://n.news.naver.com/mnews/article/018/0006371673?sid=101258402",
+          "upload_time": "20260918080616",
+          "published_at": "2026-09-18T08:06:16+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 10,
+          "title": "\"삼성전기, 3분기 '어닝 서프라이즈' 전망…저가 매수 기회\"-KB",
+          "link": "https://n.news.naver.com/mnews/article/015/0005333732?sid=101258402",
+          "upload_time": "20260918080312",
+          "published_at": "2026-09-18T08:03:12+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 11,
+          "title": "'141만원 황제주' 두산, 275만원 간다는데…AI 타고 더 뛴다",
+          "link": "https://n.news.naver.com/mnews/article/018/0006371668?sid=101258402",
+          "upload_time": "20260918080110",
+          "published_at": "2026-09-18T08:01:10+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 12,
           "title": "한솔케미칼, 과산화수소·프리커서 성장 본격화…목표가↓-현대차",
           "link": "https://n.news.naver.com/mnews/article/018/0006371664?sid=101258402",
           "upload_time": "20260918075413",
@@ -274,15 +362,15 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
-          "title": "“삼성전기, 업황은 신고가인데 주가 저평가…저가 매수 기회”",
+          "rank": 13,
+          "title": "“주가 41% 빠졌지만 실적은 역대 최대”…삼성전기, 저가 매수 기회라는데",
           "link": "https://n.news.naver.com/mnews/article/009/0005737019?sid=101258402",
           "upload_time": "20260918075211",
           "published_at": "2026-09-18T07:52:11+09:00"
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 14,
           "title": "하만규 한국주강 대표 \"숨은 자산 150억 현금화…신사업·M&A 시동\"",
           "link": "https://n.news.naver.com/mnews/article/014/0005577749?sid=101258402",
           "upload_time": "20260918075014",
@@ -290,99 +378,11 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 4,
+          "rank": 15,
           "title": "컴투스, 12년 만의 신작 흥행…목표가↑-KB",
           "link": "https://n.news.naver.com/mnews/article/008/0005415626?sid=101258402",
           "upload_time": "20260918074713",
           "published_at": "2026-09-18T07:47:13+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 5,
-          "title": "하나투어, 유류할증료·고환율에 여행심리 위축…적정주가 3.7만원↓-다올",
-          "link": "https://n.news.naver.com/mnews/article/018/0006371659?sid=101258402",
-          "upload_time": "20260918074712",
-          "published_at": "2026-09-18T07:47:12+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 6,
-          "title": "달바글로벌, 3Q 영업익 92%↑ 전망…“저가 매수 기회”-NH",
-          "link": "https://n.news.naver.com/mnews/article/018/0006371658?sid=101258402",
-          "upload_time": "20260918074709",
-          "published_at": "2026-09-18T07:47:09+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 7,
-          "title": "주가 41% 빠졌는데 \"기회다\"…300만원 간다는 삼성전자 동생",
-          "link": "https://n.news.naver.com/mnews/article/018/0006371650?sid=101258402",
-          "upload_time": "20260918073416",
-          "published_at": "2026-09-18T07:34:16+09:00"
-        },
-        {
-          "press_name": "한국경제TV",
-          "rank": 8,
-          "title": "금리·유가 부담 완화에 반도체 강세…원전·암호화폐주도 상승-[美증시 특징주]",
-          "link": "https://n.news.naver.com/mnews/article/215/0001266393?sid=101258402",
-          "upload_time": "20260918065519",
-          "published_at": "2026-09-18T06:55:19+09:00"
-        },
-        {
-          "press_name": "동행미디어 시대",
-          "rank": 9,
-          "title": "그린광학, 외형 커졌지만 재고 부담도",
-          "link": "https://n.news.naver.com/mnews/article/417/0001158669?sid=101258402",
-          "upload_time": "20260918061000",
-          "published_at": "2026-09-18T06:10:00+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 10,
-          "title": "\"삼전닉스 주춤할 때 치솟았다\"…뒤에서 웃은 종목 뭐길래",
-          "link": "https://n.news.naver.com/mnews/article/015/0005333709?sid=101258402",
-          "upload_time": "20260918060115",
-          "published_at": "2026-09-18T06:01:15+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 11,
-          "title": "\"이제 살 때 됐나\"…외국인, 8개월 만에 K주식 3400억 쓸어담아",
-          "link": "https://n.news.naver.com/mnews/article/015/0005333707?sid=101258402",
-          "upload_time": "20260918060111",
-          "published_at": "2026-09-18T06:01:11+09:00"
-        },
-        {
-          "press_name": "동행미디어 시대",
-          "rank": 12,
-          "title": "현대차 그늘 못 벗어난 에스엘, 로봇사업도",
-          "link": "https://n.news.naver.com/mnews/article/417/0001158666?sid=101258402",
-          "upload_time": "20260918060000",
-          "published_at": "2026-09-18T06:00:00+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 13,
-          "title": "덕산넵코어스, 일반청약 경쟁률 332.82대 1…증거금 1.8조원",
-          "link": "https://n.news.naver.com/mnews/article/018/0006371582?sid=101258402",
-          "upload_time": "20260917222509",
-          "published_at": "2026-09-17T22:25:09+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 14,
-          "title": "네오사피엔스, 21일 코스닥 입성…공모가 1만원",
-          "link": "https://n.news.naver.com/mnews/article/014/0005577700?sid=101258402",
-          "upload_time": "20260917215310",
-          "published_at": "2026-09-17T21:53:10+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 15,
-          "title": "\"추세 하락 없다\" 덤덤한 증시… 환율 13.6원 올라 3주만에 1380원대[美 3년만에 금리 인상]",
-          "link": "https://n.news.naver.com/mnews/article/014/0005577640?sid=101258402",
-          "upload_time": "20260917183911",
-          "published_at": "2026-09-17T18:39:11+09:00"
         }
       ]
     },
@@ -432,7 +432,7 @@
         {
           "press_name": "매일경제",
           "rank": 6,
-          "title": "악재소멸? 뉴욕증시 3대지수 상승[월가월부]",
+          "title": "“나올 악재들은 다 나온건가?”…뉴욕증시 3대지수 상승[월가월부]",
           "link": "https://n.news.naver.com/mnews/article/009/0005737002?sid=101258403",
           "upload_time": "20260918055207",
           "published_at": "2026-09-18T05:52:07+09:00"
@@ -517,7 +517,7 @@
         {
           "press_name": "아시아경제",
           "rank": 1,
-          "title": "\"인재 채용때 '빌런'을 거르려면\"…스타트업 HR 전문가의 비법[VC는 지금]",
+          "title": "\"면접 때 이 질문 하나면 끝\"…스타트업 대표들 메모한 '빌런' 거르는 비결[VC는 지금]",
           "link": "https://n.news.naver.com/mnews/article/277/0005818158?sid=101258404",
           "upload_time": "20260918075000",
           "published_at": "2026-09-18T07:50:00+09:00"
@@ -759,6 +759,14 @@
         {
           "press_name": "서울경제",
           "rank": 1,
+          "title": "유류세 인하 2개월 연장...ℓ당 휘발유 122원·경유 145원 유지",
+          "link": "https://n.news.naver.com/mnews/article/011/0004663199?sid=101258429",
+          "upload_time": "20260918080110",
+          "published_at": "2026-09-18T08:01:10+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
           "title": "환율 하루새 13.6원 치솟아…“채권금리 더 오르나” 기업 초긴장",
           "link": "https://n.news.naver.com/mnews/article/011/0004663002?sid=101258429",
           "upload_time": "20260917173911",
@@ -766,7 +774,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 3,
           "title": "美 금리 인상에 환율 13.6원 급등…1382원 넘겨(상보)",
           "link": "https://n.news.naver.com/mnews/article/277/0005818002?sid=101258429",
           "upload_time": "20260917163859",
@@ -774,7 +782,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 4,
           "title": "미 긴축 기조에…원/달러 환율 3주만에 1,380원대로(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016318705?sid=101258429",
           "upload_time": "20260917160846",
@@ -782,7 +790,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "원·달러 환율 13.6원 오른 1382.2원(오후 3시30분)",
           "link": "https://n.news.naver.com/mnews/article/277/0005817959?sid=101258429",
           "upload_time": "20260917153330",
@@ -790,7 +798,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 5,
+          "rank": 6,
           "title": "\"아무도 일본을 초강대국이라 생각 안해\"…ADB 총재의 경고",
           "link": "https://n.news.naver.com/mnews/article/001/0016318165?sid=101258429",
           "upload_time": "20260917143606",
@@ -798,7 +806,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 6,
+          "rank": 7,
           "title": "한국인 28세부터 흑자…45세 소득 정점 찍고 61세엔 다시 적자로",
           "link": "https://n.news.naver.com/mnews/article/011/0004662864?sid=101258429",
           "upload_time": "20260917121108",
@@ -806,7 +814,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 8,
           "title": "매파 연준에 원·달러 환율 1380원 돌파 [김혜란의 FX]",
           "link": "https://n.news.naver.com/mnews/article/011/0004662838?sid=101258429",
           "upload_time": "20260917110215",
@@ -814,7 +822,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 9,
           "title": "\"美, 9월 올리고 추가 인상 시사\"…한은, 금리 셈법 복잡해졌다",
           "link": "https://n.news.naver.com/mnews/article/277/0005817734?sid=101258429",
           "upload_time": "20260917104000",
@@ -822,7 +830,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 9,
+          "rank": 10,
           "title": "미국 금리 인상에…원/달러 환율 1,380원 코앞까지 상승",
           "link": "https://n.news.naver.com/mnews/article/001/0016316772?sid=101258429",
           "upload_time": "20260917095023",
@@ -830,7 +838,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "한투증권 \"미 금리인상 후 환율 상승했으나 추세 전환은 아냐\"",
           "link": "https://n.news.naver.com/mnews/article/001/0016316410?sid=101258429",
           "upload_time": "20260917082137",
@@ -840,163 +848,26 @@
     }
   ],
   "ai_commentary": null,
-  "top_gainers": [
-    {
-      "name": "진양화학",
-      "price": "1,775",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SH에너지화학",
-      "price": "1,950",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "씨케이솔루션",
-      "price": "2,105",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전방",
-      "price": "37,350",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한화시스템",
-      "price": "79,600",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "SHD",
-      "price": "5,250",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "7,950",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우성머티리얼스",
-      "price": "2,205",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양2우B",
-      "price": "5,060",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "주연테크",
-      "price": "469",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "우주항공과국방",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "조선",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "무역회사와판매업체",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "판매업체",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "기계",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "핸드셋",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "항공사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리기술",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디스플레이장비및부품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "레저용장비와제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "사무용전자제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "석유와가스",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1006,7 +877,147 @@
       "pct": 0.0
     },
     {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "가스유틸리티",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "포장재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "광고",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "기타금융",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기장비",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "항공사",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "철강",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "가구",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "은행",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "도로와철도운송",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "카드",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
       "name": "다각화된통신서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "무선통신서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "문구류",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "복합유틸리티",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생명보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "기계",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전문소매",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "디스플레이패널",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "항공화물운송과물류",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1021,22 +1032,42 @@
       "pct": 0.0
     },
     {
-      "name": "섬유,의류,신발,호화품",
+      "name": "해운사",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "은행",
+      "name": "비철금속",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "식품",
+      "name": "증권",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "종이와목재",
+      "name": "건축제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건설",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "창업투자",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1051,57 +1082,7 @@
       "pct": 0.0
     },
     {
-      "name": "가정용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "비철금속",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "제약",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "도로와철도운송",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "자동차부품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건설",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "포장재",
+      "name": "섬유,의류,신발,호화품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1111,47 +1092,12 @@
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
+      "name": "화학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "증권",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "철강",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "운송인프라",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "교육서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에너지장비및서비스",
+      "name": "레저용장비와제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1161,37 +1107,17 @@
       "pct": 0.0
     },
     {
-      "name": "기타",
+      "name": "디스플레이장비및부품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리장비와용품",
+      "name": "식품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "가스유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "카드",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
+      "name": "IT서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1201,7 +1127,57 @@
       "pct": 0.0
     },
     {
+      "name": "판매업체",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "백화점과일반상점",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "게임엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생명과학도구및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "제약",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
       "name": "건축자재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "가정용기기와용품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "가정용품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "운송인프라",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "통신장비",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1211,82 +1187,52 @@
       "pct": 0.0
     },
     {
-      "name": "음료",
+      "name": "핸드셋",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "광고",
+      "name": "조선",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "호텔,레스토랑,레저",
+      "name": "교육서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "양방향미디어와서비스",
+      "name": "기타",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "식품과기본식료품소매",
+      "name": "건강관리기술",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "화학",
+      "name": "소프트웨어",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "문구류",
+      "name": "생물공학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "기타금융",
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "무선통신서비스",
+      "name": "우주항공과국방",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디스플레이패널",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건축제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가구",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전문소매",
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -1296,7 +1242,7 @@
       "pct": 0.0
     },
     {
-      "name": "방송과엔터테인먼트",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -1352,5 +1298,9 @@
       "schedule": "20261019~20261020",
       "offer_price": ""
     }
+  ],
+  "_movers_debug": [
+    "급등 TOP5(코스피) -> 응답은 받았으나 유효한 종목 0개",
+    "급락 TOP5(코스피) -> 응답은 받았으나 유효한 종목 0개"
   ]
 }
