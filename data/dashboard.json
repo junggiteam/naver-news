@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 08:31:22",
+  "updated_at": "2026-09-18 09:01:12",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -80,12 +80,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "지티엑스씨",
+      "corp_code": "01790359",
+      "report_nm": "유상증자결정",
+      "rcept_dt": "20260918",
+      "rcept_no": "20260918000014",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000014",
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하고 운영 자금 등을 조달하기로 결정한 것입니다."
+    },
+    {
+      "corp_name": "지티엑스씨",
+      "corp_code": "01790359",
+      "report_nm": "비유동자산취득결정",
+      "rcept_dt": "20260918",
+      "rcept_no": "20260918000010",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000010",
+      "ai_explanation": "건물, 토지, 설비 등 장기 보유 목적으로 회사가 고정 자산을 매입하기로 결정한 것입니다."
+    },
+    {
       "corp_name": "엠디엠위탁관리부동산투자회사",
       "corp_code": "01871140",
       "report_nm": "유상증자결정",
       "rcept_dt": "20260918",
       "rcept_no": "20260918000002",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000002"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000002",
+      "ai_explanation": "리츠(부동산투자회사)가 자산을 추가로 매입하거나 운영하기 위해 주주로부터 자금을 조달하는 것입니다."
     },
     {
       "corp_name": "젠큐릭스",
@@ -93,7 +112,8 @@
       "report_nm": "[기재정정]주요사항보고서(영업정지)",
       "rcept_dt": "20260918",
       "rcept_no": "20260917000376",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000376"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000376",
+      "ai_explanation": "기존에 공시했던 영업 정지 내용에 오류가 있어 관련 내용을 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "인산가",
@@ -101,7 +121,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260918",
       "rcept_no": "20260917000375",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000375"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000375",
+      "ai_explanation": "앞서 공시했던 유상증자 결정 내용 중 일부 항목을 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "삼보산업",
@@ -109,7 +130,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260918",
       "rcept_no": "20260917000373",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000373"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000373",
+      "ai_explanation": "앞서 공시했던 유상증자 결정 내용 중 일부 항목을 수정하여 다시 공시한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2993,102 +3015,164 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "동양",
+      "price": "1,198",
+      "change_percent": "+15.08%",
+      "pct": 15.08
+    },
+    {
+      "name": "SHD",
+      "price": "5,750",
+      "change_percent": "+9.52%",
+      "pct": 9.52
+    },
+    {
+      "name": "KIWOOM 팔란티어미국30년국채혼합액티브(H)",
+      "price": "11,060",
+      "change_percent": "+6.50%",
+      "pct": 6.5
+    },
+    {
+      "name": "유유제약2우B",
+      "price": "7,990",
+      "change_percent": "+5.41%",
+      "pct": 5.41
+    },
+    {
+      "name": "진흥기업우B",
+      "price": "10,000",
+      "change_percent": "+5.26%",
+      "pct": 5.26
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "비비안",
+      "price": "4,210",
+      "change_percent": "-13.82%",
+      "pct": 13.82
+    },
+    {
+      "name": "진흥기업2우B",
+      "price": "16,900",
+      "change_percent": "-5.11%",
+      "pct": 5.11
+    },
+    {
+      "name": "전방",
+      "price": "29,750",
+      "change_percent": "-2.14%",
+      "pct": 2.14
+    },
+    {
+      "name": "혜인",
+      "price": "9,730",
+      "change_percent": "-1.52%",
+      "pct": 1.52
+    },
+    {
+      "name": "페이퍼코리아",
+      "price": "2,140",
+      "change_percent": "-1.38%",
+      "pct": 1.38
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+3.98%",
+      "pct": 3.98
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+2.99%",
+      "pct": 2.99
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "컴퓨터와주변기기",
+      "change_value": "+2.03%",
+      "pct": 2.03
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "철강",
+      "change_value": "+1.19%",
+      "pct": 1.19
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
       "name": "전자장비와기기",
+      "change_value": "+3.98%",
+      "pct": 3.98
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+2.99%",
+      "pct": 2.99
+    },
+    {
+      "name": "컴퓨터와주변기기",
+      "change_value": "+2.03%",
+      "pct": 2.03
+    },
+    {
+      "name": "복합기업",
+      "change_value": "+1.36%",
+      "pct": 1.36
+    },
+    {
+      "name": "철강",
+      "change_value": "+1.19%",
+      "pct": 1.19
+    },
+    {
+      "name": "건축자재",
+      "change_value": "+1.13%",
+      "pct": 1.13
+    },
+    {
+      "name": "문구류",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리장비와용품",
+      "name": "카드",
       "change_value": "+0.00%",
       "pct": 0.0
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "화장품",
+      "change_value": "-0.01%",
+      "pct": -0.01
+    },
+    {
+      "name": "판매업체",
+      "change_value": "-0.01%",
+      "pct": -0.01
     }
   ],
   "article_counts": {
     "종합": 408,
     "경제": 30,
     "부동산": 30,
-    "증권": 85
+    "증권": 87
   },
   "article_count_trend": {
     "종합": {
@@ -3110,9 +3194,9 @@
       "surge": false
     },
     "증권": {
-      "today": 85,
+      "today": 87,
       "yesterday": 90,
-      "change_pct": -5.6,
+      "change_pct": -3.3,
       "surge": false
     }
   }
