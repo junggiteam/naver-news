@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-22 07:51:18",
+  "updated_at": "2026-09-22 08:15:55",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 1.65,
-    "kosdaq_change": 1.11,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 7007.72,
     "kosdaq_value": 836.27
   },
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "멀티캠퍼스",
+      "corp_code": "00425351",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260922",
+      "rcept_no": "20260922000002",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000002",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 자사주를 매입하기로 결정했다는 의미입니다."
+    },
+    {
       "corp_name": "GS건설",
       "corp_code": "00120030",
       "report_nm": "[기재정정]주요사항보고서(영업정지)",
       "rcept_dt": "20260922",
       "rcept_no": "20260922000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000001",
-      "ai_explanation": "회사가 법령 위반 등의 사유로 일정 기간 영업을 할 수 없게 된 사실을 알리는 공시입니다."
+      "ai_explanation": "행정처분으로 인해 회사의 특정 영업 업무가 일정 기간 중단되었음을 알리는 공시입니다."
     },
     {
       "corp_name": "KX",
@@ -96,7 +105,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000430",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000430",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 결정하고 그 세부 내용을 알리는 공시입니다."
+      "ai_explanation": "경영 효율성 증대와 사업 경쟁력 강화를 위해 다른 회사와 합병하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "셀리드",
@@ -105,7 +114,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000434",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000434",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하기로 결정했음을 알리는 공시입니다."
+      "ai_explanation": "운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -114,7 +123,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000433",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000433",
-      "ai_explanation": "회사가 만기 전에 발행했던 전환사채를 미리 사들이기로 결정했음을 알리는 공시입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 매입하여 소각하거나 보유하기로 결정한 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -123,7 +132,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000432",
-      "ai_explanation": "회사가 만기 전에 발행했던 전환사채를 미리 사들이기로 결정했음을 알리는 공시입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 매입하여 소각하거나 보유하기로 결정한 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -132,7 +141,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000428",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000428",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 사채를 새로 발행하기로 결정한 공시입니다."
+      "ai_explanation": "자금 조달을 목적으로 주식으로 전환할 권리가 부여된 채권을 새로 발행하기로 결정한 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -141,7 +150,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000425",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000425",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 사채를 새로 발행하기로 결정한 공시입니다."
+      "ai_explanation": "자금 조달을 목적으로 주식으로 전환할 권리가 부여된 채권을 새로 발행하기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2610,164 +2619,102 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "디아이",
-      "price": "35,500",
-      "change_percent": "+13.06%",
-      "pct": 13.06
-    },
-    {
-      "name": "삼정펄프",
-      "price": "31,200",
-      "change_percent": "+13.04%",
-      "pct": 13.04
-    },
-    {
-      "name": "KEC",
-      "price": "3,190",
-      "change_percent": "+11.73%",
-      "pct": 11.73
-    },
-    {
-      "name": "에스엠벡셀",
-      "price": "2,790",
-      "change_percent": "+11.60%",
-      "pct": 11.6
-    },
-    {
-      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "12,170",
-      "change_percent": "+10.54%",
-      "pct": 10.54
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "동양2우B",
-      "price": "5,240",
-      "change_percent": "-20.24%",
-      "pct": 20.24
-    },
-    {
-      "name": "동양우",
-      "price": "8,520",
-      "change_percent": "-20.15%",
-      "pct": 20.15
-    },
-    {
-      "name": "티웨이홀딩스",
-      "price": "908",
-      "change_percent": "-14.58%",
-      "pct": 14.58
-    },
-    {
-      "name": "진흥기업2우B",
-      "price": "14,640",
-      "change_percent": "-12.39%",
-      "pct": 12.39
-    },
-    {
-      "name": "동양",
-      "price": "1,202",
-      "change_percent": "-11.16%",
-      "pct": 11.16
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "소프트웨어",
-      "change_value": "+19.30%",
-      "pct": 19.3
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+7.68%",
-      "pct": 7.68
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "복합유틸리티",
-      "change_value": "+4.54%",
-      "pct": 4.54
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "석유와가스",
-      "change_value": "+3.79%",
-      "pct": 3.79
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+3.77%",
-      "pct": 3.77
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "소프트웨어",
-      "change_value": "+19.30%",
-      "pct": 19.3
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+7.68%",
-      "pct": 7.68
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "복합유틸리티",
-      "change_value": "+4.54%",
-      "pct": 4.54
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "석유와가스",
-      "change_value": "+3.79%",
-      "pct": 3.79
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+3.77%",
-      "pct": 3.77
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "판매업체",
-      "change_value": "+3.68%",
-      "pct": 3.68
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화학",
-      "change_value": "-1.14%",
-      "pct": -1.14
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "건축제품",
-      "change_value": "-1.27%",
-      "pct": -1.27
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기제품",
-      "change_value": "-1.53%",
-      "pct": -1.53
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
-      "change_value": "-2.25%",
-      "pct": -2.25
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "-2.26%",
-      "pct": -2.26
-    },
-    {
-      "name": "문구류",
-      "change_value": "-2.61%",
-      "pct": -2.61
+      "name": "건강관리장비와용품",
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
     "종합": 396,
     "경제": 30,
     "부동산": 30,
-    "증권": 69
+    "증권": 70
   },
   "article_count_trend": {
     "종합": {
@@ -2789,9 +2736,9 @@
       "surge": false
     },
     "증권": {
-      "today": 69,
+      "today": 70,
       "yesterday": 88,
-      "change_pct": -21.6,
+      "change_pct": -20.5,
       "surge": false
     }
   }
