@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-21 14:31:15",
+  "updated_at": "2026-09-21 15:03:25",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 1.31,
-    "kosdaq_change": 0.77,
-    "kospi_value": 6984.85,
-    "kosdaq_value": 833.52
+    "kospi_change": 1.41,
+    "kosdaq_change": 0.83,
+    "kospi_value": 6991.56,
+    "kosdaq_value": 833.97
   },
   "heroes": {
     "종합": {
@@ -80,13 +80,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "사운드백신",
+      "corp_code": "01298930",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260921",
+      "rcept_no": "20260921000190",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000190",
+      "ai_explanation": "회사가 발행할 전환사채의 주요 내용을 수정하여 다시 공시하는 것입니다."
+    },
+    {
+      "corp_name": "루멘스바이오스",
+      "corp_code": "00406329",
+      "report_nm": "[기재정정]주요사항보고서(감자결정)",
+      "rcept_dt": "20260921",
+      "rcept_no": "20260921000180",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000180",
+      "ai_explanation": "회사가 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 내용을 수정 공시하는 것입니다."
+    },
+    {
       "corp_name": "리딩투자증권",
       "corp_code": "00323549",
       "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
       "rcept_dt": "20260921",
       "rcept_no": "20260921000113",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000113",
-      "ai_explanation": "회사를 쪼개어 특정 사업 부문을 분리하거나 새로운 법인을 설립하기로 한 내용을 정정한 것입니다."
+      "ai_explanation": "회사의 사업 부문을 나누어 별도 법인으로 분리하는 계획을 수정하여 공시하는 것입니다."
     },
     {
       "corp_name": "기업은행",
@@ -95,7 +113,7 @@
       "rcept_dt": "20260921",
       "rcept_no": "20260921000105",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000105",
-      "ai_explanation": "은행 자본 건전성 확충을 위해 특정 조건에서 상각되는 채권을 발행하기로 한 내용을 정정한 것입니다."
+      "ai_explanation": "금융기관이 자본 확충을 위해 발행하는 조건부 자본증권의 발행 계획을 수정 공시하는 것입니다."
     },
     {
       "corp_name": "모아라이프플러스",
@@ -104,7 +122,7 @@
       "rcept_dt": "20260921",
       "rcept_no": "20260921000097",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000097",
-      "ai_explanation": "회사 운영 자금 등을 조달하기 위해 주식을 새로 발행하여 자본을 늘리기로 한 내용을 정정한 것입니다."
+      "ai_explanation": "회사가 운영자금 등을 마련하기 위해 신주를 발행하는 계획을 수정하여 공시하는 것입니다."
     },
     {
       "corp_name": "삼성FN리츠",
@@ -113,7 +131,7 @@
       "rcept_dt": "20260921",
       "rcept_no": "20260921000086",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000086",
-      "ai_explanation": "부동산 투자 재원 확보 등을 위해 주식을 추가 발행하여 자본을 확충하기로 한 내용을 정정한 것입니다."
+      "ai_explanation": "리츠가 자산을 추가로 매입하거나 자본을 조달하기 위해 신주를 발행하는 계획을 수정 공시하는 것입니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -122,7 +140,7 @@
       "rcept_dt": "20260921",
       "rcept_no": "20260918000503",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918000503",
-      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 사들여 소각하거나 보유하기로 결정한 것입니다."
+      "ai_explanation": "회사가 이미 발행한 전환사채를 만기 전에 다시 사들여 소각하거나 보유하기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3029,161 +3047,161 @@
   "top_gainers": [
     {
       "name": "에스엠벡셀",
-      "price": "2,865",
-      "change_percent": "+14.60%",
-      "pct": 14.6
+      "price": "2,830",
+      "change_percent": "+13.20%",
+      "pct": 13.2
     },
     {
       "name": "디아이",
-      "price": "35,650",
-      "change_percent": "+13.54%",
-      "pct": 13.54
+      "price": "35,450",
+      "change_percent": "+12.90%",
+      "pct": 12.9
     },
     {
-      "name": "SH에너지화학",
-      "price": "1,911",
-      "change_percent": "+10.91%",
-      "pct": 10.91
+      "name": "KEC",
+      "price": "3,130",
+      "change_percent": "+9.63%",
+      "pct": 9.63
     },
     {
       "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "12,160",
-      "change_percent": "+10.45%",
-      "pct": 10.45
+      "price": "12,125",
+      "change_percent": "+10.13%",
+      "pct": 10.13
     },
     {
-      "name": "KIWOOM 삼성전자선물단일종목레버리지",
-      "price": "11,755",
-      "change_percent": "+9.45%",
-      "pct": 9.45
+      "name": "KODEX 삼성전자단일종목레버리지",
+      "price": "12,750",
+      "change_percent": "+9.49%",
+      "pct": 9.49
     }
   ],
   "top_losers": [
     {
       "name": "동양우",
-      "price": "8,510",
-      "change_percent": "-20.24%",
-      "pct": 20.24
+      "price": "8,520",
+      "change_percent": "-20.15%",
+      "pct": 20.15
     },
     {
       "name": "동양2우B",
-      "price": "5,290",
-      "change_percent": "-19.48%",
-      "pct": 19.48
-    },
-    {
-      "name": "진흥기업2우B",
-      "price": "14,500",
-      "change_percent": "-13.23%",
-      "pct": 13.23
+      "price": "5,370",
+      "change_percent": "-18.26%",
+      "pct": 18.26
     },
     {
       "name": "티웨이홀딩스",
-      "price": "916",
-      "change_percent": "-13.83%",
-      "pct": 13.83
+      "price": "915",
+      "change_percent": "-13.92%",
+      "pct": 13.92
     },
     {
-      "name": "체시스",
-      "price": "4,200",
-      "change_percent": "-10.54%",
-      "pct": 10.54
+      "name": "진흥기업2우B",
+      "price": "14,850",
+      "change_percent": "-11.13%",
+      "pct": 11.13
+    },
+    {
+      "name": "DYP",
+      "price": "3,695",
+      "change_percent": "-9.88%",
+      "pct": 9.88
     }
   ],
   "sector_performance": [
     {
       "name": "소프트웨어",
-      "change_value": "+8.58%",
-      "pct": 8.58
+      "change_value": "+12.33%",
+      "pct": 12.33
     },
     {
       "name": "건강관리기술",
-      "change_value": "+6.21%",
-      "pct": 6.21
+      "change_value": "+7.51%",
+      "pct": 7.51
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+4.41%",
-      "pct": 4.41
+      "change_value": "+4.14%",
+      "pct": 4.14
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.34%",
-      "pct": 3.34
+      "change_value": "+3.66%",
+      "pct": 3.66
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+2.82%",
-      "pct": 2.82
+      "name": "판매업체",
+      "change_value": "+3.22%",
+      "pct": 3.22
     }
   ],
   "sector_heatmap": [
     {
       "name": "소프트웨어",
-      "change_value": "+8.58%",
-      "pct": 8.58
+      "change_value": "+12.33%",
+      "pct": 12.33
     },
     {
       "name": "건강관리기술",
-      "change_value": "+6.21%",
-      "pct": 6.21
+      "change_value": "+7.51%",
+      "pct": 7.51
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+4.41%",
-      "pct": 4.41
+      "change_value": "+4.14%",
+      "pct": 4.14
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.34%",
-      "pct": 3.34
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+2.82%",
-      "pct": 2.82
+      "change_value": "+3.66%",
+      "pct": 3.66
     },
     {
       "name": "판매업체",
-      "change_value": "+2.42%",
-      "pct": 2.42
+      "change_value": "+3.22%",
+      "pct": 3.22
     },
     {
-      "name": "전기장비",
-      "change_value": "-1.90%",
-      "pct": -1.9
+      "name": "반도체와반도체장비",
+      "change_value": "+2.91%",
+      "pct": 2.91
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "-1.94%",
-      "pct": -1.94
+      "name": "화학",
+      "change_value": "-2.02%",
+      "pct": -2.02
     },
     {
       "name": "통신장비",
-      "change_value": "-2.24%",
-      "pct": -2.24
+      "change_value": "-2.18%",
+      "pct": -2.18
     },
     {
       "name": "전기제품",
-      "change_value": "-2.27%",
-      "pct": -2.27
-    },
-    {
-      "name": "에너지장비및서비스",
-      "change_value": "-3.04%",
-      "pct": -3.04
+      "change_value": "-2.48%",
+      "pct": -2.48
     },
     {
       "name": "문구류",
-      "change_value": "-3.08%",
-      "pct": -3.08
+      "change_value": "-3.24%",
+      "pct": -3.24
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "-3.26%",
+      "pct": -3.26
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "-3.32%",
+      "pct": -3.32
     }
   ],
   "article_counts": {
     "종합": 395,
     "경제": 30,
     "부동산": 30,
-    "증권": 80
+    "증권": 81
   },
   "article_count_trend": {
     "종합": {
@@ -3205,9 +3223,9 @@
       "surge": false
     },
     "증권": {
-      "today": 80,
+      "today": 81,
       "yesterday": 78,
-      "change_pct": 2.6,
+      "change_pct": 3.8,
       "surge": false
     }
   }
