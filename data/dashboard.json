@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-21 10:01:08",
+  "updated_at": "2026-09-21 10:16:35",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.97,
-    "kosdaq_change": 0.63,
-    "kospi_value": 6960.79,
-    "kosdaq_value": 832.36
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 1.61,
+    "kosdaq_change": 1.18,
+    "kospi_value": 7005.02,
+    "kosdaq_value": 836.84
   },
   "heroes": {
     "종합": {
@@ -40,6 +40,10 @@
     {
       "category": "부동산",
       "text": "서울 주요 지역 중심으로 신속통합기획 홍보 전시가 진행됨"
+    },
+    {
+      "category": "증권",
+      "text": "미국 반도체주 강세의 영향으로 삼성전자와 SK하이닉스 등 주요 반도체 종목이 상승하며 지수 오름세를 견인했다. 비트코인 가격이 8만 달러를 회복함에 따라 관련 종목들이 강세를 보였고 외국인과 기관의 매수세가 유입되면서 코스피와 코스닥 지수 모두 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -2970,48 +2974,36 @@
   "top_gainers": [
     {
       "name": "디아이",
-      "price": "34,650",
-      "change_percent": "+10.35%",
-      "pct": 10.35
-    },
-    {
-      "name": "KEC",
-      "price": "3,100",
-      "change_percent": "+8.58%",
-      "pct": 8.58
+      "price": "35,300",
+      "change_percent": "+12.42%",
+      "pct": 12.42
     },
     {
       "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "11,860",
-      "change_percent": "+7.72%",
-      "pct": 7.72
-    },
-    {
-      "name": "광전자",
-      "price": "11,300",
-      "change_percent": "+7.41%",
-      "pct": 7.41
+      "price": "12,030",
+      "change_percent": "+9.26%",
+      "pct": 9.26
     },
     {
       "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "12,485",
-      "change_percent": "+7.21%",
-      "pct": 7.21
+      "price": "12,660",
+      "change_percent": "+8.72%",
+      "pct": 8.72
+    },
+    {
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "price": "11,495",
+      "change_percent": "+8.55%",
+      "pct": 8.55
+    },
+    {
+      "name": "에스엠벡셀",
+      "price": "2,680",
+      "change_percent": "+7.20%",
+      "pct": 7.2
     }
   ],
   "top_losers": [
-    {
-      "name": "동양우",
-      "price": "9,060",
-      "change_percent": "-15.09%",
-      "pct": 15.09
-    },
-    {
-      "name": "티웨이홀딩스",
-      "price": "880",
-      "change_percent": "-17.22%",
-      "pct": 17.22
-    },
     {
       "name": "동양2우B",
       "price": "5,360",
@@ -3019,112 +3011,124 @@
       "pct": 18.42
     },
     {
-      "name": "깨끗한나라우",
-      "price": "4,100",
-      "change_percent": "+7.89%",
-      "pct": 7.89
+      "name": "티웨이홀딩스",
+      "price": "900",
+      "change_percent": "-15.33%",
+      "pct": 15.33
+    },
+    {
+      "name": "동양우",
+      "price": "9,060",
+      "change_percent": "-15.09%",
+      "pct": 15.09
     },
     {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "8,440",
-      "change_percent": "-7.15%",
-      "pct": 7.15
+      "price": "8,310",
+      "change_percent": "-8.58%",
+      "pct": 8.58
+    },
+    {
+      "name": "DYP",
+      "price": "3,805",
+      "change_percent": "-7.20%",
+      "pct": 7.2
     }
   ],
   "sector_performance": [
     {
       "name": "소프트웨어",
-      "change_value": "+9.82%",
-      "pct": 9.82
+      "change_value": "+9.74%",
+      "pct": 9.74
     },
     {
       "name": "건강관리기술",
-      "change_value": "+4.46%",
-      "pct": 4.46
+      "change_value": "+4.64%",
+      "pct": 4.64
     },
     {
       "name": "판매업체",
-      "change_value": "+3.06%",
-      "pct": 3.06
+      "change_value": "+3.23%",
+      "pct": 3.23
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+2.54%",
-      "pct": 2.54
+      "change_value": "+3.07%",
+      "pct": 3.07
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+2.25%",
-      "pct": 2.25
+      "name": "석유와가스",
+      "change_value": "+2.93%",
+      "pct": 2.93
     }
   ],
   "sector_heatmap": [
     {
       "name": "소프트웨어",
-      "change_value": "+9.82%",
-      "pct": 9.82
+      "change_value": "+9.74%",
+      "pct": 9.74
     },
     {
       "name": "건강관리기술",
-      "change_value": "+4.46%",
-      "pct": 4.46
+      "change_value": "+4.64%",
+      "pct": 4.64
     },
     {
       "name": "판매업체",
-      "change_value": "+3.06%",
-      "pct": 3.06
+      "change_value": "+3.23%",
+      "pct": 3.23
     },
     {
       "name": "복합유틸리티",
-      "change_value": "+2.54%",
-      "pct": 2.54
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+2.25%",
-      "pct": 2.25
+      "change_value": "+3.07%",
+      "pct": 3.07
     },
     {
       "name": "석유와가스",
-      "change_value": "+1.94%",
-      "pct": 1.94
+      "change_value": "+2.93%",
+      "pct": 2.93
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+2.85%",
+      "pct": 2.85
+    },
+    {
+      "name": "포장재",
+      "change_value": "-1.43%",
+      "pct": -1.43
     },
     {
       "name": "건축자재",
-      "change_value": "-1.88%",
-      "pct": -1.88
+      "change_value": "-1.46%",
+      "pct": -1.46
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-1.92%",
-      "pct": -1.92
+      "name": "항공화물운송과물류",
+      "change_value": "-1.49%",
+      "pct": -1.49
     },
     {
       "name": "전기제품",
-      "change_value": "-2.03%",
-      "pct": -2.03
+      "change_value": "-1.63%",
+      "pct": -1.63
     },
     {
-      "name": "전기장비",
-      "change_value": "-2.06%",
-      "pct": -2.06
-    },
-    {
-      "name": "건설",
-      "change_value": "-2.08%",
-      "pct": -2.08
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-1.65%",
+      "pct": -1.65
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-3.28%",
-      "pct": -3.28
+      "change_value": "-2.80%",
+      "pct": -2.8
     }
   ],
   "article_counts": {
     "종합": 391,
     "경제": 30,
     "부동산": 30,
-    "증권": 76
+    "증권": 77
   },
   "article_count_trend": {
     "종합": {
@@ -3146,9 +3150,9 @@
       "surge": false
     },
     "증권": {
-      "today": 76,
+      "today": 77,
       "yesterday": 78,
-      "change_pct": -2.6,
+      "change_pct": -1.3,
       "surge": false
     }
   }
