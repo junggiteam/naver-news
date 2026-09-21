@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 05:01:04",
+  "updated_at": "2026-09-22 05:30:51",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "52,050.26",
+      "value": "52,048.83",
       "change_percent": "▲0.71%",
       "direction": "up",
-      "as_of": "2026-09-21 16:00:51"
+      "as_of": "2026-09-21 16:20:01"
     },
     {
       "name": "나스닥",
       "value": "27,122.09",
       "change_percent": "▲2.26%",
       "direction": "up",
-      "as_of": "2026-09-21 16:00:53"
+      "as_of": "2026-09-21 16:30:42"
     },
     {
       "name": "나스닥100",
       "value": "30,482.35",
       "change_percent": "▲2.83%",
       "direction": "up",
-      "as_of": "2026-09-21 16:00:52"
+      "as_of": "2026-09-21 16:30:43"
     },
     {
       "name": "S&P500",
-      "value": "7,764.80",
+      "value": "7,764.70",
       "change_percent": "▲1.49%",
       "direction": "up",
-      "as_of": "2026-09-21 16:00:51"
+      "as_of": "2026-09-21 16:20:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,375.20",
-      "change_percent": "▼0.92%",
+      "value": "1,374.70",
+      "change_percent": "▼0.96%",
       "direction": "down",
-      "as_of": "2026-09-22 04:59:44"
+      "as_of": "2026-09-22 05:28:03"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "873.59",
-      "change_percent": "▼1.21%",
+      "value": "873.35",
+      "change_percent": "▼1.24%",
       "direction": "down",
-      "as_of": "2026-09-22 04:59:44"
+      "as_of": "2026-09-22 05:28:03"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,576.67",
-      "change_percent": "▼1.06%",
+      "value": "1,576.02",
+      "change_percent": "▼1.11%",
       "direction": "down",
-      "as_of": "2026-09-22 04:59:44"
+      "as_of": "2026-09-22 05:28:03"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "95.53",
-      "change_percent": "▼4.76%",
+      "value": "95.50",
+      "change_percent": "▼4.79%",
       "direction": "down",
-      "as_of": "2026-09-21 14:50:29"
+      "as_of": "2026-09-21 15:20:50"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "116,816,000",
-      "change_percent": "▲5.09%",
+      "value": "117,256,000",
+      "change_percent": "▲5.49%",
       "direction": "up",
-      "as_of": "2026-09-22 05:01:01"
+      "as_of": "2026-09-22 05:30:50"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,726,000",
-      "change_percent": "▲2.96%",
+      "value": "3,770,000",
+      "change_percent": "▲4.17%",
       "direction": "up",
-      "as_of": "2026-09-22 05:01:01"
+      "as_of": "2026-09-22 05:30:50"
     }
   ],
   "news_categories": [
@@ -140,8 +140,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "머니투데이",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "뉴욕증시, AI주 급등에 '들썩'…나스닥 2.3% 뛰며 최고치 마감",
+          "link": "https://n.news.naver.com/mnews/article/001/0016328111?sid=101258401",
+          "upload_time": "20260922051613",
+          "published_at": "2026-09-22T05:16:13+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 2,
           "title": "코스피 7000선 복귀, 반도체가 들어올렸다",
           "link": "https://n.news.naver.com/mnews/article/008/0005417000?sid=101258401",
           "upload_time": "20260922035900",
@@ -149,7 +157,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 2,
+          "rank": 3,
           "title": "증권사 물린 부동산PF 64곳... 정상화 급한 정부 재촉 난감",
           "link": "https://n.news.naver.com/mnews/article/008/0005416999?sid=101258401",
           "upload_time": "20260922035800",
@@ -157,7 +165,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 3,
+          "rank": 4,
           "title": "반도체 타고 '7천피' 탈환…삼성전자 5% 급등",
           "link": "https://n.news.naver.com/mnews/article/422/0000908463?sid=101258401",
           "upload_time": "20260921210025",
@@ -165,7 +173,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 5,
           "title": "“1000주에 최대 460만원 예상”…‘27만 전자’ 배당 받으려면 이날까지",
           "link": "https://n.news.naver.com/mnews/article/009/0005738620?sid=101258401",
           "upload_time": "20260921200214",
@@ -173,7 +181,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 5,
+          "rank": 6,
           "title": "미중 정상회담 결과따라 시장 출렁일 듯…섣부른 행동 자제해야 [동여의도 위클리]",
           "link": "https://n.news.naver.com/mnews/article/009/0005738613?sid=101258401",
           "upload_time": "20260921193406",
@@ -181,7 +189,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 7,
           "title": "반도체·수출 호조에 코스피 7000선 재탈환",
           "link": "https://n.news.naver.com/mnews/article/014/0005579239?sid=101258401",
           "upload_time": "20260921190222",
@@ -189,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 7,
+          "rank": 8,
           "title": "거래소, 애프터마켓 특별감시TF 가동…불공정거래 감시",
           "link": "https://n.news.naver.com/mnews/article/001/0016327660?sid=101258401",
           "upload_time": "20260921185421",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 8,
+          "rank": 9,
           "title": "제논·옵토닉스 등 2개사 코스닥 상장예심 통과",
           "link": "https://n.news.naver.com/mnews/article/001/0016327633?sid=101258401",
           "upload_time": "20260921184314",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 10,
           "title": "\"정산 기다리지 마세요\"…KG파이낸셜, 선정산 서비스 선봬",
           "link": "https://n.news.naver.com/mnews/article/018/0006373871?sid=101258401",
           "upload_time": "20260921184215",
@@ -213,7 +221,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 10,
+          "rank": 11,
           "title": "삼성전자 5% 급등…코스피 7,000선 탈환",
           "link": "https://n.news.naver.com/mnews/article/422/0000908428?sid=101258401",
           "upload_time": "20260921183513",
@@ -221,7 +229,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 11,
+          "rank": 12,
           "title": "‘7천피 탈환’ 구원투수 나선 삼전…수출 호조·배당 기대에 5% 급등",
           "link": "https://n.news.naver.com/mnews/article/009/0005738605?sid=101258401",
           "upload_time": "20260921183106",
@@ -229,7 +237,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 12,
+          "rank": 13,
           "title": "한국거래소 “애프터마켓 VI 1112→553회…연말까지 ‘특별감시 TF’ 가동”",
           "link": "https://n.news.naver.com/mnews/article/011/0004664212?sid=101258401",
           "upload_time": "20260921181911",
@@ -237,7 +245,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 13,
+          "rank": 14,
           "title": "키움운용, '미국S&P500모멘텀' ETF 구성종목 절반 이상 교체",
           "link": "https://n.news.naver.com/mnews/article/001/0016327571?sid=101258401",
           "upload_time": "20260921180817",
@@ -245,19 +253,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 14,
+          "rank": 15,
           "title": "월가 자산운용사 “코스피 극심한 변동성, 한국 국가브랜드 훼손” 일침",
           "link": "https://n.news.naver.com/mnews/article/009/0005738601?sid=101258401",
           "upload_time": "20260921180810",
           "published_at": "2026-09-21T18:08:10+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 15,
-          "title": "[투자의 창] 연금에도 ‘국장’이 필요한 이유",
-          "link": "https://n.news.naver.com/mnews/article/011/0004664199?sid=101258401",
-          "upload_time": "20260921180613",
-          "published_at": "2026-09-21T18:06:13+09:00"
         }
       ]
     },
@@ -390,8 +390,32 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "뉴욕증시, AI주 급등에 '들썩'…나스닥 2.3% 뛰며 최고치 마감",
+          "link": "https://n.news.naver.com/mnews/article/001/0016328111?sid=101258403",
+          "upload_time": "20260922051613",
+          "published_at": "2026-09-22T05:16:13+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "[속보] 뉴욕증시, 유가·국채 금리 하락에 상승 마감…나스닥 2%↑",
+          "link": "https://n.news.naver.com/mnews/article/018/0006373997?sid=101258403",
+          "upload_time": "20260922050908",
+          "published_at": "2026-09-22T05:09:08+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
+          "title": "[속보]뉴욕증시, 유가·국채금리 내려가자 일제히 상승 마감",
+          "link": "https://n.news.naver.com/mnews/article/277/0005819519?sid=101258403",
+          "upload_time": "20260922050616",
+          "published_at": "2026-09-22T05:06:16+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 4,
           "title": "트럼프 \"AI가 인류 멸망? 사기극…중국과 경쟁서 이겨야\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005819516?sid=101258403",
           "upload_time": "20260922042737",
@@ -399,7 +423,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 5,
           "title": "한미일, 北 완전한 비핵화 재확인…\"대화의 길 열려 있어\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005819515?sid=101258403",
           "upload_time": "20260922041148",
@@ -407,7 +431,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 6,
           "title": "엔비디아 경쟁사 AMD, 시총 1조달러 첫 돌파…美반도체사 4번째",
           "link": "https://n.news.naver.com/mnews/article/001/0016328090?sid=101258403",
           "upload_time": "20260922022446",
@@ -415,7 +439,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 7,
           "title": "AI주 강세·유가 하락에 뉴욕증시 오전 장 강세",
           "link": "https://n.news.naver.com/mnews/article/018/0006373977?sid=101258403",
           "upload_time": "20260921234610",
@@ -423,7 +447,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 5,
+          "rank": 8,
           "title": "[뉴욕증시]유가·국채금리 하락…일제히 상승세",
           "link": "https://n.news.naver.com/mnews/article/277/0005819513?sid=101258403",
           "upload_time": "20260921233952",
@@ -431,7 +455,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 9,
           "title": "[美특징주]워너 브로스·파라마운트, 810억달러 합병 돌파구 기대...동반 '상승'",
           "link": "https://n.news.naver.com/mnews/article/018/0006373971?sid=101258403",
           "upload_time": "20260921230509",
@@ -439,7 +463,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 10,
           "title": "일학개미, 글로벌X 닛케이ETF에 몰렸다…‘버핏 픽’ 종합상사도 줍줍",
           "link": "https://n.news.naver.com/mnews/article/009/0005738636?sid=101258403",
           "upload_time": "20260921215107",
@@ -447,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 8,
+          "rank": 11,
           "title": "[美특징주]스트레티지, 개장전 6% 강세…비트코인, 8.4만 달러 회복",
           "link": "https://n.news.naver.com/mnews/article/018/0006373930?sid=101258403",
           "upload_time": "20260921211108",
@@ -455,7 +479,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 12,
           "title": "마이크론, 메모리 호황에 호실적 기대…내년 D램 출하량 둔화는 우려-스티펠",
           "link": "https://n.news.naver.com/mnews/article/018/0006373887?sid=101258403",
           "upload_time": "20260921193817",
@@ -463,7 +487,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 10,
+          "rank": 13,
           "title": "[美특징주]마이크론, D램 공급 부족·HBM 가격 상승 전망에 프리마켓서↑",
           "link": "https://n.news.naver.com/mnews/article/018/0006373886?sid=101258403",
           "upload_time": "20260921193707",
@@ -471,7 +495,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 11,
+          "rank": 14,
           "title": "[美특징주]노보 노디스크, 위고비 이후 성장전략 실망에 개장전 5%↓",
           "link": "https://n.news.naver.com/mnews/article/018/0006373882?sid=101258403",
           "upload_time": "20260921192514",
@@ -479,35 +503,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 12,
+          "rank": 15,
           "title": "올해 평균 수익률 -5.9%…美장기채 ETF 투자자 속타네",
           "link": "https://n.news.naver.com/mnews/article/011/0004664194?sid=101258403",
           "upload_time": "20260921180010",
           "published_at": "2026-09-21T18:00:10+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 13,
-          "title": "'日 글로벌X 닛케이 ETF'… 일학개미 이달 순매수 1위",
-          "link": "https://n.news.naver.com/mnews/article/009/0005738571?sid=101258403",
-          "upload_time": "20260921175610",
-          "published_at": "2026-09-21T17:56:10+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 14,
-          "title": "1400원 다가서는 환율…추가 상승 vs 다시 하락",
-          "link": "https://n.news.naver.com/mnews/article/018/0006373790?sid=101258403",
-          "upload_time": "20260921163910",
-          "published_at": "2026-09-21T16:39:10+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "英 네오클라우드 기업 엔스케일, 뉴욕 증시 상장 추진",
-          "link": "https://n.news.naver.com/mnews/article/015/0005334656?sid=101258403",
-          "upload_time": "20260921151221",
-          "published_at": "2026-09-21T15:12:21+09:00"
         }
       ]
     },
@@ -711,7 +711,7 @@
       ]
     }
   ],
-  "ai_commentary": "삼성전자를 비롯한 반도체 관련주의 강세와 수출 호조가 지수 상승을 견인하며 코스피가 7000선을 재탈환했다. 여기에 배당에 대한 투자자들의 기대감이 더해지며 코스피와 코스닥 지수 모두 상승세로 마감했다.",
+  "ai_commentary": "뉴욕 증시에서 AI 관련주가 급등하며 나스닥 지수가 상승 마감한 영향이 국내 시장으로 이어졌다. 삼성전자를 비롯한 반도체 종목이 수출 호조와 배당 기대감으로 크게 오르며 코스피와 코스닥 지수의 동반 상승을 견인했다.",
   "top_gainers": [
     {
       "name": "디아이",
