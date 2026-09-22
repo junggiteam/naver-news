@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 08:31:08",
+  "updated_at": "2026-09-22 09:01:10",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260922000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000002",
-      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매수하기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 매입하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "GS건설",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260922000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000001",
-      "ai_explanation": "회사가 법령 위반 등으로 특정 기간 영업을 할 수 없게 되었음을 알리는 공시입니다."
+      "ai_explanation": "회사가 법규 위반 등으로 인해 일정 기간 영업을 할 수 없게 된 사실을 정정하여 공시한 것입니다."
     },
     {
       "corp_name": "KX",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000430",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000430",
-      "ai_explanation": "회사가 다른 회사와 합쳐지거나 다른 회사를 흡수하기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 다른 회사와 합치기로 한 기존 결정 내용 중 일부를 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "셀리드",
@@ -114,7 +114,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000434",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000434",
-      "ai_explanation": "회사가 운영자금 조달 등을 위해 신주를 발행하여 자본을 늘리기로 결정한 공시입니다."
+      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 기존 주주나 제3자로부터 신주를 발행해 자본을 늘리는 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -123,7 +123,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000433",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000433",
-      "ai_explanation": "발행한 전환사채를 만기 전에 회사 자금으로 미리 되사기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하기로 결정한 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -132,7 +132,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000432",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000432",
-      "ai_explanation": "발행한 전환사채를 만기 전에 회사 자금으로 미리 되사기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하기로 결정한 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -141,7 +141,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000428",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000428",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 채권을 새로 발행한다는 공시입니다."
+      "ai_explanation": "회사가 자금 조달을 목적으로 일정 기간 후 주식으로 전환할 수 있는 채권을 발행하는 것입니다."
     },
     {
       "corp_name": "코람코라이프인프라리츠",
@@ -150,7 +150,7 @@
       "rcept_dt": "20260922",
       "rcept_no": "20260921000425",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000425",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 채권을 새로 발행한다는 공시입니다."
+      "ai_explanation": "회사가 자금 조달을 목적으로 일정 기간 후 주식으로 전환할 수 있는 채권을 발행하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2619,8 +2619,52 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "국도화학",
+      "price": "38,000",
+      "change_percent": "+0.53%",
+      "pct": 0.53
+    },
+    {
+      "name": "미래에셋 레버리지 은 선물 ETN B",
+      "price": "32,005",
+      "change_percent": "+1.44%",
+      "pct": 1.44
+    },
+    {
+      "name": "태광산업",
+      "price": "903,000",
+      "change_percent": "+1.12%",
+      "pct": 1.12
+    },
+    {
+      "name": "삼영무역",
+      "price": "21,500",
+      "change_percent": "+1.18%",
+      "pct": 1.18
+    },
+    {
+      "name": "RISE 수소경제테마",
+      "price": "22,480",
+      "change_percent": "+1.10%",
+      "pct": 1.1
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "아센디오",
+      "price": "3,070",
+      "change_percent": "-4.06%",
+      "pct": 4.06
+    },
+    {
+      "name": "삼천리",
+      "price": "130,900",
+      "change_percent": "-0.30%",
+      "pct": 0.3
+    }
+  ],
   "sector_performance": [
     {
       "name": "음료",
@@ -2714,7 +2758,7 @@
     "종합": 396,
     "경제": 30,
     "부동산": 30,
-    "증권": 71
+    "증권": 73
   },
   "article_count_trend": {
     "종합": {
@@ -2736,9 +2780,9 @@
       "surge": false
     },
     "증권": {
-      "today": 71,
+      "today": 73,
       "yesterday": 88,
-      "change_pct": -19.3,
+      "change_pct": -17.0,
       "surge": false
     }
   }
