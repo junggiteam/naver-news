@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-23 15:01:15",
+  "updated_at": "2026-09-23 15:31:06",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.55,
-    "kosdaq_change": 0.95,
-    "kospi_value": 7056.25,
-    "kosdaq_value": 842.3
+    "kospi_change": 0.69,
+    "kosdaq_change": 1.12,
+    "kospi_value": 7066.65,
+    "kosdaq_value": 843.69
   },
   "heroes": {
     "종합": {
@@ -69,13 +69,40 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "여수퓨어파워",
+      "corp_code": "01880351",
+      "report_nm": "해산사유발생",
+      "rcept_dt": "20260923",
+      "rcept_no": "20260923000478",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000478",
+      "ai_explanation": "회사의 경영 활동을 중단하고 법인격을 소멸시키는 절차가 시작되었음을 의미합니다."
+    },
+    {
+      "corp_name": "여수에코파워",
+      "corp_code": "01880342",
+      "report_nm": "해산사유발생",
+      "rcept_dt": "20260923",
+      "rcept_no": "20260923000470",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000470",
+      "ai_explanation": "회사의 경영 활동을 중단하고 법인격을 소멸시키는 절차가 시작되었음을 의미합니다."
+    },
+    {
+      "corp_name": "에이프로젠바이오로직스",
+      "corp_code": "00101044",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260923",
+      "rcept_no": "20260923000418",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000418",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
+    },
+    {
       "corp_name": "더코디",
       "corp_code": "00530413",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260923",
       "rcept_no": "20260923000410",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000410",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     },
     {
       "corp_name": "더코디",
@@ -84,7 +111,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000390",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000390",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     },
     {
       "corp_name": "GMI벤처",
@@ -93,7 +120,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000362",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000362",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     },
     {
       "corp_name": "에스에스알",
@@ -102,7 +129,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000281",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000281",
-      "ai_explanation": "회사 주식을 사들이기로 했던 신탁 계약을 종료한다는 뜻입니다."
+      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 중도에 해지하기로 결정했음을 의미합니다."
     },
     {
       "corp_name": "한화로보틱스",
@@ -111,7 +138,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000292",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000292",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     },
     {
       "corp_name": "다온아이앤씨",
@@ -120,7 +147,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000269",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000269",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 추가 발행하기로 결정했다는 뜻입니다."
+      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 신주를 발행하여 자본금을 늘리기로 결정했음을 의미합니다."
     },
     {
       "corp_name": "루멘스바이오스",
@@ -129,7 +156,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000238",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000238",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     },
     {
       "corp_name": "에이치앤엘어드밴스드",
@@ -138,7 +165,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000183",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000183",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 추가 발행하기로 결정했다는 뜻입니다."
+      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 신주를 발행하여 자본금을 늘리기로 결정했음을 의미합니다."
     },
     {
       "corp_name": "특수건설",
@@ -147,7 +174,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000131",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000131",
-      "ai_explanation": "기존에 공시한 전환사채 발행 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     },
     {
       "corp_name": "이랜드스포츠",
@@ -156,7 +183,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000002",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 추가 발행하기로 결정했다는 뜻입니다."
+      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 신주를 발행하여 자본금을 늘리기로 결정했음을 의미합니다."
     },
     {
       "corp_name": "젠큐릭스",
@@ -165,7 +192,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260922000545",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000545",
-      "ai_explanation": "기존에 공시한 회사 간 합병 계획의 내용을 일부 정정한다는 뜻입니다."
+      "ai_explanation": "기존에 공시한 회사 합병 결정 내용 중 일부를 수정하거나 보완하였음을 의미합니다."
     }
   ],
   "macro_indicators": [
@@ -3092,47 +3119,47 @@
   "top_gainers": [
     {
       "name": "SH에너지화학",
-      "price": "2,695",
-      "change_percent": "+27.12%",
-      "pct": 27.12
+      "price": "2,615",
+      "change_percent": "+23.35%",
+      "pct": 23.35
     },
     {
       "name": "KSS해운",
-      "price": "11,900",
-      "change_percent": "+18.29%",
-      "pct": 18.29
+      "price": "11,860",
+      "change_percent": "+17.89%",
+      "pct": 17.89
     },
     {
       "name": "하나 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,305",
-      "change_percent": "+11.37%",
-      "pct": 11.37
+      "price": "9,285",
+      "change_percent": "+11.13%",
+      "pct": 11.13
     },
     {
       "name": "메리츠 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,340",
-      "change_percent": "+11.06%",
-      "pct": 11.06
+      "price": "9,345",
+      "change_percent": "+11.12%",
+      "pct": 11.12
     },
     {
       "name": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
-      "price": "16,160",
-      "change_percent": "+10.87%",
-      "pct": 10.87
+      "price": "16,185",
+      "change_percent": "+11.05%",
+      "pct": 11.05
     }
   ],
   "top_losers": [
     {
       "name": "계양전기",
-      "price": "3,225",
-      "change_percent": "-15.58%",
-      "pct": 15.58
+      "price": "3,235",
+      "change_percent": "-15.31%",
+      "pct": 15.31
     },
     {
       "name": "대양금속",
-      "price": "973",
-      "change_percent": "-13.97%",
-      "pct": 13.97
+      "price": "962",
+      "change_percent": "-14.94%",
+      "pct": 14.94
     },
     {
       "name": "한투 인버스2X천연가스선물 ETN B",
@@ -3156,90 +3183,90 @@
   "sector_performance": [
     {
       "name": "가정용품",
-      "change_value": "+171.30%",
-      "pct": 171.3
+      "change_value": "+165.54%",
+      "pct": 165.54
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.08%",
-      "pct": 3.08
+      "change_value": "+3.65%",
+      "pct": 3.65
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+2.10%",
-      "pct": 2.1
+      "change_value": "+2.27%",
+      "pct": 2.27
     },
     {
       "name": "판매업체",
-      "change_value": "+1.51%",
-      "pct": 1.51
+      "change_value": "+2.12%",
+      "pct": 2.12
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "+1.25%",
-      "pct": 1.25
+      "change_value": "+1.44%",
+      "pct": 1.44
     }
   ],
   "sector_heatmap": [
     {
       "name": "가정용품",
-      "change_value": "+171.30%",
-      "pct": 171.3
+      "change_value": "+165.54%",
+      "pct": 165.54
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.08%",
-      "pct": 3.08
+      "change_value": "+3.65%",
+      "pct": 3.65
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+2.10%",
-      "pct": 2.1
+      "change_value": "+2.27%",
+      "pct": 2.27
     },
     {
       "name": "판매업체",
-      "change_value": "+1.51%",
-      "pct": 1.51
+      "change_value": "+2.12%",
+      "pct": 2.12
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "+1.25%",
-      "pct": 1.25
+      "change_value": "+1.44%",
+      "pct": 1.44
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+0.97%",
-      "pct": 0.97
-    },
-    {
-      "name": "전기유틸리티",
-      "change_value": "-3.03%",
-      "pct": -3.03
+      "change_value": "+1.16%",
+      "pct": 1.16
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "-3.17%",
-      "pct": -3.17
+      "change_value": "-2.89%",
+      "pct": -2.89
     },
     {
       "name": "철강",
-      "change_value": "-3.46%",
-      "pct": -3.46
+      "change_value": "-3.02%",
+      "pct": -3.02
+    },
+    {
+      "name": "문구류",
+      "change_value": "-3.05%",
+      "pct": -3.05
     },
     {
       "name": "기계",
-      "change_value": "-3.71%",
-      "pct": -3.71
+      "change_value": "-3.21%",
+      "pct": -3.21
     },
     {
       "name": "전자제품",
-      "change_value": "-3.80%",
-      "pct": -3.8
+      "change_value": "-3.59%",
+      "pct": -3.59
     },
     {
       "name": "건설",
-      "change_value": "-5.34%",
-      "pct": -5.34
+      "change_value": "-4.80%",
+      "pct": -4.8
     }
   ],
   "article_counts": {
