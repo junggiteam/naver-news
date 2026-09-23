@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-23 10:01:13",
+  "updated_at": "2026-09-23 10:26:11",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.92,
-    "kosdaq_change": 0.58,
-    "kospi_value": 7082.4,
-    "kosdaq_value": 839.19
+    "kospi_change": 1.1,
+    "kosdaq_change": 0.89,
+    "kospi_value": 7095.06,
+    "kosdaq_value": 841.84
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "특수건설",
+      "corp_code": "00186939",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20260923",
+      "rcept_no": "20260923000131",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000131",
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 알리는 공시입니다."
+    },
+    {
       "corp_name": "이랜드스포츠",
       "corp_code": "01050862",
       "report_nm": "유상증자결정",
       "rcept_dt": "20260923",
       "rcept_no": "20260923000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000002",
-      "ai_explanation": "주식을 추가 발행하여 회사 운영 자금이나 투자 재원을 조달하겠다는 의미입니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 주식을 새로 발행하여 기존 주주나 제3자에게 배정하는 결정입니다."
     },
     {
       "corp_name": "젠큐릭스",
@@ -96,7 +105,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260922000545",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000545",
-      "ai_explanation": "기존에 공시한 회사 합병 결정 내용 중 일부를 정정하여 다시 알린다는 의미입니다."
+      "ai_explanation": "기존에 공시한 회사 합병 내용 중 일부 항목을 수정하여 다시 알리는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -3023,154 +3032,154 @@
   "top_gainers": [
     {
       "name": "KSS해운",
-      "price": "11,830",
-      "change_percent": "+17.59%",
-      "pct": 17.59
+      "price": "11,620",
+      "change_percent": "+15.51%",
+      "pct": 15.51
     },
     {
       "name": "하나 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,300",
-      "change_percent": "+11.31%",
-      "pct": 11.31
+      "price": "9,290",
+      "change_percent": "+11.19%",
+      "pct": 11.19
+    },
+    {
+      "name": "KTis",
+      "price": "2,895",
+      "change_percent": "+18.16%",
+      "pct": 18.16
     },
     {
       "name": "메리츠 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,310",
-      "change_percent": "+10.70%",
-      "pct": 10.7
+      "price": "9,335",
+      "change_percent": "+11.00%",
+      "pct": 11.0
     },
     {
       "name": "신한 블룸버그 2X 천연가스 선물 ETN B",
-      "price": "16,085",
-      "change_percent": "+10.13%",
-      "pct": 10.13
-    },
-    {
-      "name": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
-      "price": "16,065",
-      "change_percent": "+10.22%",
-      "pct": 10.22
+      "price": "16,155",
+      "change_percent": "+10.61%",
+      "pct": 10.61
     }
   ],
   "top_losers": [
     {
       "name": "대양금속",
-      "price": "864",
-      "change_percent": "-23.61%",
-      "pct": 23.61
+      "price": "974",
+      "change_percent": "-13.88%",
+      "pct": 13.88
     },
     {
       "name": "계양전기",
-      "price": "3,325",
-      "change_percent": "-12.96%",
-      "pct": 12.96
-    },
-    {
-      "name": "N2 인버스 2X 천연가스 선물 ETN",
-      "price": "9,800",
-      "change_percent": "-12.50%",
-      "pct": 12.5
-    },
-    {
-      "name": "신풍",
-      "price": "1,088",
-      "change_percent": "-11.40%",
-      "pct": 11.4
+      "price": "3,370",
+      "change_percent": "-11.78%",
+      "pct": 11.78
     },
     {
       "name": "한투 인버스2X천연가스선물 ETN B",
-      "price": "9,300",
-      "change_percent": "-11.13%",
-      "pct": 11.13
+      "price": "9,275",
+      "change_percent": "-11.37%",
+      "pct": 11.37
+    },
+    {
+      "name": "KB 인버스 2X 천연가스 선물 ETN B",
+      "price": "9,245",
+      "change_percent": "-11.36%",
+      "pct": 11.36
+    },
+    {
+      "name": "삼성 인버스 2X 천연가스 선물 ETN D",
+      "price": "12,700",
+      "change_percent": "-11.25%",
+      "pct": 11.25
     }
   ],
   "sector_performance": [
     {
       "name": "가정용품",
-      "change_value": "+140.46%",
-      "pct": 140.46
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "+2.64%",
-      "pct": 2.64
+      "change_value": "+133.19%",
+      "pct": 133.19
     },
     {
       "name": "디스플레이패널",
-      "change_value": "+2.24%",
-      "pct": 2.24
+      "change_value": "+2.83%",
+      "pct": 2.83
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+1.85%",
-      "pct": 1.85
+      "change_value": "+2.46%",
+      "pct": 2.46
     },
     {
-      "name": "화학",
-      "change_value": "+1.73%",
-      "pct": 1.73
+      "name": "건강관리기술",
+      "change_value": "+2.35%",
+      "pct": 2.35
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "+2.29%",
+      "pct": 2.29
     }
   ],
   "sector_heatmap": [
     {
       "name": "가정용품",
-      "change_value": "+140.46%",
-      "pct": 140.46
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "+2.64%",
-      "pct": 2.64
+      "change_value": "+133.19%",
+      "pct": 133.19
     },
     {
       "name": "디스플레이패널",
-      "change_value": "+2.24%",
-      "pct": 2.24
+      "change_value": "+2.83%",
+      "pct": 2.83
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+1.85%",
-      "pct": 1.85
-    },
-    {
-      "name": "화학",
-      "change_value": "+1.73%",
-      "pct": 1.73
+      "change_value": "+2.46%",
+      "pct": 2.46
     },
     {
       "name": "건강관리기술",
-      "change_value": "+1.72%",
-      "pct": 1.72
+      "change_value": "+2.35%",
+      "pct": 2.35
     },
     {
-      "name": "항공화물운송과물류",
-      "change_value": "-1.50%",
-      "pct": -1.5
+      "name": "석유와가스",
+      "change_value": "+2.29%",
+      "pct": 2.29
     },
     {
-      "name": "사무용전자제품",
-      "change_value": "-1.53%",
-      "pct": -1.53
-    },
-    {
-      "name": "기계",
-      "change_value": "-1.69%",
-      "pct": -1.69
+      "name": "생명보험",
+      "change_value": "+1.89%",
+      "pct": 1.89
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-1.72%",
-      "pct": -1.72
+      "change_value": "-1.60%",
+      "pct": -1.6
+    },
+    {
+      "name": "철강",
+      "change_value": "-1.66%",
+      "pct": -1.66
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "-1.66%",
+      "pct": -1.66
+    },
+    {
+      "name": "기계",
+      "change_value": "-1.94%",
+      "pct": -1.94
     },
     {
       "name": "전자제품",
-      "change_value": "-2.78%",
-      "pct": -2.78
+      "change_value": "-2.45%",
+      "pct": -2.45
     },
     {
       "name": "건설",
-      "change_value": "-3.95%",
-      "pct": -3.95
+      "change_value": "-4.26%",
+      "pct": -4.26
     }
   ],
   "article_counts": {
