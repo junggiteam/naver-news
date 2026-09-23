@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-23 14:01:18",
+  "updated_at": "2026-09-23 14:31:03",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.41,
-    "kosdaq_change": 0.94,
-    "kospi_value": 7046.66,
-    "kosdaq_value": 842.21
+    "kospi_change": 0.39,
+    "kosdaq_change": 0.74,
+    "kospi_value": 7045.54,
+    "kosdaq_value": 840.56
   },
   "heroes": {
     "종합": {
@@ -69,13 +69,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "GMI벤처",
+      "corp_code": "00110750",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260923",
+      "rcept_no": "20260923000362",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000362",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용을 수정하여 다시 보고하는 것입니다."
+    },
+    {
       "corp_name": "에스에스알",
       "corp_code": "01250374",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20260923",
       "rcept_no": "20260923000281",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000281",
-      "ai_explanation": "회사가 신탁 방식으로 진행하던 자사주 매입 계약을 종료하기로 결정했다는 의미입니다."
+      "ai_explanation": "주가 안정을 위해 체결했던 자기주식 취득 신탁 계약을 종료하는 것입니다."
     },
     {
       "corp_name": "한화로보틱스",
@@ -84,7 +93,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000292",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000292",
-      "ai_explanation": "기존에 공시한 유상증자 계획 중 일부 내용(일정, 금액 등)을 수정하여 다시 공시했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용을 수정하여 다시 보고하는 것입니다."
     },
     {
       "corp_name": "다온아이앤씨",
@@ -93,7 +102,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000269",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000269",
-      "ai_explanation": "회사가 운영자금 조달 등을 목적으로 신주를 발행하여 자본금을 늘리기로 결정했다는 의미입니다."
+      "ai_explanation": "운영자금 조달 등을 목적으로 새로 주식을 발행하여 자본을 확충하는 것입니다."
     },
     {
       "corp_name": "루멘스바이오스",
@@ -102,7 +111,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000238",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000238",
-      "ai_explanation": "이미 공시된 유상증자 계획에서 정정 사항이 발생하여 내용을 변경해 다시 공시했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용을 수정하여 다시 보고하는 것입니다."
     },
     {
       "corp_name": "에이치앤엘어드밴스드",
@@ -111,7 +120,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000183",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000183",
-      "ai_explanation": "회사가 신규 자금 확보 등을 위해 신주를 발행하여 자본을 확충하기로 결정했다는 의미입니다."
+      "ai_explanation": "운영자금 조달 등을 목적으로 새로 주식을 발행하여 자본을 확충하는 것입니다."
     },
     {
       "corp_name": "특수건설",
@@ -120,7 +129,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000131",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000131",
-      "ai_explanation": "기존에 공시한 전환사채 발행 조건이나 일정 등에 변경 사항이 있어 이를 수정 공시했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 관련 내용을 수정하여 다시 보고하는 것입니다."
     },
     {
       "corp_name": "이랜드스포츠",
@@ -129,7 +138,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260923000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000002",
-      "ai_explanation": "회사가 신주를 발행하여 자본금을 추가로 조달하기로 이사회에서 의결했다는 의미입니다."
+      "ai_explanation": "운영자금 조달 등을 목적으로 새로 주식을 발행하여 자본을 확충하는 것입니다."
     },
     {
       "corp_name": "젠큐릭스",
@@ -138,7 +147,7 @@
       "rcept_dt": "20260923",
       "rcept_no": "20260922000545",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000545",
-      "ai_explanation": "기존에 발표한 기업 간 합병 계획에서 수정할 내용이 생겨 다시 공시했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 기업 간 합병 결정 내용을 수정하여 다시 보고하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3065,15 +3074,15 @@
   "top_gainers": [
     {
       "name": "SH에너지화학",
-      "price": "2,620",
-      "change_percent": "+23.58%",
-      "pct": 23.58
+      "price": "2,725",
+      "change_percent": "+28.54%",
+      "pct": 28.54
     },
     {
       "name": "KSS해운",
-      "price": "11,920",
-      "change_percent": "+18.49%",
-      "pct": 18.49
+      "price": "11,890",
+      "change_percent": "+18.19%",
+      "pct": 18.19
     },
     {
       "name": "하나 레버리지 천연가스 선물 ETN(H)",
@@ -3082,36 +3091,30 @@
       "pct": 11.37
     },
     {
+      "name": "메리츠 레버리지 천연가스 선물 ETN(H)",
+      "price": "9,335",
+      "change_percent": "+11.00%",
+      "pct": 11.0
+    },
+    {
       "name": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
       "price": "16,160",
       "change_percent": "+10.87%",
       "pct": 10.87
-    },
-    {
-      "name": "메리츠 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,320",
-      "change_percent": "+10.82%",
-      "pct": 10.82
     }
   ],
   "top_losers": [
     {
       "name": "계양전기",
-      "price": "3,250",
-      "change_percent": "-14.92%",
-      "pct": 14.92
+      "price": "3,240",
+      "change_percent": "-15.18%",
+      "pct": 15.18
     },
     {
       "name": "대양금속",
-      "price": "983",
-      "change_percent": "-13.09%",
-      "pct": 13.09
-    },
-    {
-      "name": "KB 인버스 2X 천연가스 선물 ETN B",
-      "price": "9,225",
-      "change_percent": "-11.55%",
-      "pct": 11.55
+      "price": "981",
+      "change_percent": "-13.26%",
+      "pct": 13.26
     },
     {
       "name": "신한 인버스2X 천연가스 선물 ETN B",
@@ -3124,95 +3127,101 @@
       "price": "9,280",
       "change_percent": "-11.32%",
       "pct": 11.32
+    },
+    {
+      "name": "삼성 인버스 2X 천연가스 선물 ETN D",
+      "price": "12,695",
+      "change_percent": "-11.29%",
+      "pct": 11.29
     }
   ],
   "sector_performance": [
     {
       "name": "가정용품",
-      "change_value": "+143.95%",
-      "pct": 143.95
+      "change_value": "+160.21%",
+      "pct": 160.21
     },
     {
       "name": "석유와가스",
-      "change_value": "+2.67%",
-      "pct": 2.67
+      "change_value": "+4.00%",
+      "pct": 4.0
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+1.88%",
-      "pct": 1.88
+      "change_value": "+1.86%",
+      "pct": 1.86
     },
     {
       "name": "판매업체",
-      "change_value": "+1.33%",
-      "pct": 1.33
+      "change_value": "+1.37%",
+      "pct": 1.37
     },
     {
-      "name": "창업투자",
-      "change_value": "+1.19%",
-      "pct": 1.19
+      "name": "화장품",
+      "change_value": "+1.18%",
+      "pct": 1.18
     }
   ],
   "sector_heatmap": [
     {
       "name": "가정용품",
-      "change_value": "+143.95%",
-      "pct": 143.95
+      "change_value": "+160.21%",
+      "pct": 160.21
     },
     {
       "name": "석유와가스",
-      "change_value": "+2.67%",
-      "pct": 2.67
+      "change_value": "+4.00%",
+      "pct": 4.0
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+1.88%",
-      "pct": 1.88
+      "change_value": "+1.86%",
+      "pct": 1.86
     },
     {
       "name": "판매업체",
-      "change_value": "+1.33%",
-      "pct": 1.33
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+1.19%",
-      "pct": 1.19
+      "change_value": "+1.37%",
+      "pct": 1.37
     },
     {
       "name": "화장품",
-      "change_value": "+1.17%",
-      "pct": 1.17
+      "change_value": "+1.18%",
+      "pct": 1.18
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-3.02%",
-      "pct": -3.02
+      "name": "창업투자",
+      "change_value": "+1.08%",
+      "pct": 1.08
     },
     {
-      "name": "항공화물운송과물류",
-      "change_value": "-3.27%",
-      "pct": -3.27
+      "name": "우주항공과국방",
+      "change_value": "-2.95%",
+      "pct": -2.95
+    },
+    {
+      "name": "문구류",
+      "change_value": "-3.05%",
+      "pct": -3.05
     },
     {
       "name": "철강",
-      "change_value": "-3.28%",
-      "pct": -3.28
+      "change_value": "-3.19%",
+      "pct": -3.19
     },
     {
       "name": "전자제품",
-      "change_value": "-3.35%",
-      "pct": -3.35
+      "change_value": "-3.57%",
+      "pct": -3.57
     },
     {
       "name": "기계",
-      "change_value": "-3.56%",
-      "pct": -3.56
+      "change_value": "-3.80%",
+      "pct": -3.8
     },
     {
       "name": "건설",
-      "change_value": "-5.12%",
-      "pct": -5.12
+      "change_value": "-5.21%",
+      "pct": -5.21
     }
   ],
   "article_counts": {
