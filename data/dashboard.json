@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 08:01:08",
+  "updated_at": "2026-09-28 08:31:01",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260928",
       "rcept_no": "20260923000640",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000640",
-      "ai_explanation": "회사가 채권을 발행하되 추후 주식으로 전환할 수 있는 권리를 부여해 자금을 조달한다는 의미입니다."
+      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 바꿀 수 있는 권리가 부여된 자금을 조달하겠다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -3001,120 +3001,21 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "SH에너지화학",
-      "price": "2,610",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KSS해운",
-      "price": "11,730",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,320",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
-      "price": "16,245",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "메리츠 레버리지 천연가스 선물 ETN(H)",
-      "price": "9,360",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "대양금속",
-      "price": "963",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "계양전기",
-      "price": "3,300",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "N2 인버스 2X 천연가스 선물 ETN",
-      "price": "9,935",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나 인버스 2X 천연가스 선물 ETN(H)",
-      "price": "10,840",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KB 인버스 2X 천연가스 선물 ETN B",
-      "price": "9,300",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "가정용품",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "석유와가스",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "판매업체",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "sector_heatmap": [
-    {
-      "name": "가정용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "판매업체",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3124,32 +3025,69 @@
       "pct": 0.0
     },
     {
-      "name": "문구류",
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "항공화물운송과물류",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "기계",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자제품",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "철강",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건설",
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3158,7 +3096,7 @@
     "종합": 390,
     "경제": 30,
     "부동산": 30,
-    "증권": 50
+    "증권": 54
   },
   "article_count_trend": {
     "종합": {
@@ -3180,9 +3118,9 @@
       "surge": false
     },
     "증권": {
-      "today": 50,
+      "today": 54,
       "yesterday": 60,
-      "change_pct": -16.7,
+      "change_pct": -10.0,
       "surge": false
     }
   }
