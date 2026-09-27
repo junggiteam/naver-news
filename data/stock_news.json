@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27 20:16:52",
+  "updated_at": "2026-09-27 20:45:50",
   "indices": [
     {
       "name": "코스피",
@@ -59,10 +59,10 @@
     },
     {
       "name": "휘발유(원/리터)",
-      "value": "1,856.05",
+      "value": "1,856.08",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-09-27 17:05:52"
+      "as_of": "2026-09-27 20:05:51"
     },
     {
       "name": "원/달러 환율",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "115,356,000",
-      "change_percent": "▲0.44%",
+      "value": "115,374,000",
+      "change_percent": "▲0.45%",
       "direction": "up",
-      "as_of": "2026-09-27 20:16:50"
+      "as_of": "2026-09-27 20:45:48"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,681,000",
-      "change_percent": "▲0.30%",
+      "value": "3,683,000",
+      "change_percent": "▲0.35%",
       "direction": "up",
-      "as_of": "2026-09-27 20:16:38"
+      "as_of": "2026-09-27 20:45:45"
     }
   ],
   "news_categories": [
@@ -140,8 +140,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "예탁원, 결제촉진대금에 증권납부 허용…국채 담보인정 최대 98%",
+          "link": "https://n.news.naver.com/mnews/article/001/0016339055?sid=101258401",
+          "upload_time": "20260927202802",
+          "published_at": "2026-09-27T20:28:02+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 2,
           "title": "눈높이 낮춘 증권가…추석 이후 코스피 향방은",
           "link": "https://n.news.naver.com/mnews/article/422/0000910131?sid=101258401",
           "upload_time": "20260927191612",
@@ -149,7 +157,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "수출株 날고…내수株 꺾였다 3분기도 'K자형' 실적 양극화",
           "link": "https://n.news.naver.com/mnews/article/009/0005740442?sid=101258401",
           "upload_time": "20260927190814",
@@ -157,7 +165,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 4,
           "title": "한화에어로, 경력직 채용 지침 논란에 사과…방지책 마련",
           "link": "https://n.news.naver.com/mnews/article/011/0004665699?sid=101258401",
           "upload_time": "20260927180707",
@@ -165,7 +173,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 4,
+          "rank": 5,
           "title": "‘무료 AI 비서’ 메타 뮤즈 써보니 [한경 프리미엄9 TODAY]",
           "link": "https://n.news.naver.com/mnews/article/015/0005336377?sid=101258401",
           "upload_time": "20260927180019",
@@ -173,7 +181,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 6,
           "title": "2세대 팰리세이드, 30만 대 판매 눈앞",
           "link": "https://n.news.naver.com/mnews/article/011/0004665690?sid=101258401",
           "upload_time": "20260927175507",
@@ -181,7 +189,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 7,
           "title": "美 물가가 변수…마이크론 실적도 가늠자[주간 증시 전망]",
           "link": "https://n.news.naver.com/mnews/article/014/0005581202?sid=101258401",
           "upload_time": "20260927175311",
@@ -189,7 +197,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 8,
           "title": "점유율 한 자릿수로 떨어진 넥스트레이드…거래 종목 늘리나",
           "link": "https://n.news.naver.com/mnews/article/011/0004665677?sid=101258401",
           "upload_time": "20260927174110",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 8,
+          "rank": 9,
           "title": "외국인, SK스퀘어·SK이노·대한항공에 1.3조 베팅",
           "link": "https://n.news.naver.com/mnews/article/011/0004665673?sid=101258401",
           "upload_time": "20260927173910",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 9,
+          "rank": 10,
           "title": "삼성 계열 운용사 3곳, 내달 전주 사무소 연다",
           "link": "https://n.news.naver.com/mnews/article/011/0004665670?sid=101258401",
           "upload_time": "20260927173809",
@@ -213,7 +221,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 10,
+          "rank": 11,
           "title": "美 국채 토큰 규모 20조원…월가선 ‘실시간 담보’ 활용",
           "link": "https://n.news.naver.com/mnews/article/011/0004665668?sid=101258401",
           "upload_time": "20260927173707",
@@ -221,7 +229,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 11,
+          "rank": 12,
           "title": "자체 구축이냐 공동 플랫폼이냐…토큰증권 인프라 ‘호환성’이 관건",
           "link": "https://n.news.naver.com/mnews/article/011/0004665664?sid=101258401",
           "upload_time": "20260927173516",
@@ -229,7 +237,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 12,
+          "rank": 13,
           "title": "\"코스피 4분기 7700 예상…국내보다 미국 주식 유망\"",
           "link": "https://n.news.naver.com/mnews/article/015/0005336309?sid=101258401",
           "upload_time": "20260927170709",
@@ -237,7 +245,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 13,
+          "rank": 14,
           "title": "금리 민감도 약해진 반도체株…외국인 수급·3분기 실적 관건",
           "link": "https://n.news.naver.com/mnews/article/009/0005740395?sid=101258401",
           "upload_time": "20260927170013",
@@ -245,19 +253,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 14,
+          "rank": 15,
           "title": "올해 수익률 1위는 코스피",
           "link": "https://n.news.naver.com/mnews/article/009/0005740349?sid=101258401",
           "upload_time": "20260927164711",
           "published_at": "2026-09-27T16:47:11+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "빨라진 바이오 IPO 시계…심사기간 절반 '뚝'",
-          "link": "https://n.news.naver.com/mnews/article/009/0005740347?sid=101258401",
-          "upload_time": "20260927164706",
-          "published_at": "2026-09-27T16:47:06+09:00"
         }
       ]
     },
@@ -515,8 +515,16 @@
       "category": "채권·선물",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "예탁원, 결제촉진대금에 증권납부 허용…국채 담보인정 최대 98%",
+          "link": "https://n.news.naver.com/mnews/article/001/0016339055?sid=101258404",
+          "upload_time": "20260927202802",
+          "published_at": "2026-09-27T20:28:02+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "[마켓인]추석 연휴 끝, 북클로징 전 부지런히 회사채 발행",
           "link": "https://n.news.naver.com/mnews/article/018/0006376019?sid=101258404",
           "upload_time": "20260927201109",
@@ -524,7 +532,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "은행채 4분기 차환 역대최대 27조 … 회사채로 '불똥'",
           "link": "https://n.news.naver.com/mnews/article/009/0005740350?sid=101258404",
           "upload_time": "20260927164713",
@@ -532,7 +540,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "추석 넘긴 코스피, 미 PCE 지수·마이크론 실적에 달렸다[주간증시전망]",
           "link": "https://n.news.naver.com/mnews/article/018/0006375965?sid=101258404",
           "upload_time": "20260927154016",
@@ -540,7 +548,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "\"삼성전자 30조 배당 막차 타자\"…레버리지도 줄줄이 '불기둥'[펀드와치]",
           "link": "https://n.news.naver.com/mnews/article/018/0006375892?sid=101258404",
           "upload_time": "20260927132813",
@@ -548,7 +556,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 5,
+          "rank": 6,
           "title": "올해 주요 재테크 수익률 1위는 코스피200 ETF",
           "link": "https://n.news.naver.com/mnews/article/001/0016337895?sid=101258404",
           "upload_time": "20260927090007",
@@ -556,7 +564,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 7,
           "title": "‘경영권 분쟁’ 고려아연 회사채 시장 ‘노크’…최대 3000억 조달",
           "link": "https://n.news.naver.com/mnews/article/018/0006375744?sid=101258404",
           "upload_time": "20260926190310",
@@ -564,7 +572,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 8,
           "title": "주도주 없는 증시…연 5% 채권의 귀환",
           "link": "https://n.news.naver.com/mnews/article/015/0005336121?sid=101258404",
           "upload_time": "20260926100116",
@@ -572,7 +580,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 9,
           "title": "'금 보유 확대' 등 글로벌 준비자산 재편에도…\"달러 중심 체제 유지\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005820953?sid=101258404",
           "upload_time": "20260926100000",
@@ -580,7 +588,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 9,
+          "rank": 10,
           "title": "'곰의 습격' 막아낸 해외 이사회…K 베어허그 앞두고 시사점은[주末머니]",
           "link": "https://n.news.naver.com/mnews/article/277/0005820929?sid=101258404",
           "upload_time": "20260926081500",
@@ -588,7 +596,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "'자산토큰화반' 신설한 한은, 국채 토큰화 속도내나",
           "link": "https://n.news.naver.com/mnews/article/001/0016336627?sid=101258404",
           "upload_time": "20260926055100",
