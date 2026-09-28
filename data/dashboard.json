@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 23:15:35",
+  "updated_at": "2026-09-28 23:31:08",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -28,7 +28,12 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "category": "증권",
+      "text": "미국 국채 금리 급등으로 인해 시중 자금이 이탈하면서 삼성전자와 SK하이닉스 등 대형주가 급락해 코스피가 하락했다. 반면 코스닥은 태양광 등 일부 업종의 강세와 신규 상장 종목에 대한 기대감이 반영되며 소폭 상승 마감했다."
+    }
+  ],
   "daily_term": {
     "term": "자사주 매입",
     "explanation": "기업이 시장에 풀린 자기 회사의 주식을 직접 다시 사들이는 것을 말합니다. 주식 수가 줄어들면 주주 한 명이 가진 지분의 가치가 높아지고, 기업이 자신의 미래를 긍정적으로 보고 있다는 신호로 해석되어 보통 주가 상승 요인이 됩니다. 쉽게 말해 기업이 '우리 회사 가치가 저평가되었으니 우리가 직접 사겠다'며 시장에 자신감을 보이는 행동입니다."
@@ -49,8 +54,7 @@
       "report_nm": "주요사항보고서(자기신주인수권부사채만기전취득결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000388",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000388",
-      "ai_explanation": "회사가 발행했던 자기 신주인수권부사채를 만기 전에 미리 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000388"
     },
     {
       "corp_name": "진코스텍",
@@ -58,8 +62,7 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000389",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000389",
-      "ai_explanation": "과거에 공시했던 유상증자 결정 내용을 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000389"
     },
     {
       "corp_name": "크라우드웍스",
@@ -67,8 +70,7 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000378",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000378",
-      "ai_explanation": "회사가 주주 등을 대상으로 신주를 발행하여 자금을 조달하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000378"
     },
     {
       "corp_name": "핑거",
@@ -76,8 +78,7 @@
       "report_nm": "[첨부정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000344",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000344",
-      "ai_explanation": "회사가 발행하는 전환사채 관련 첨부 서류 내용을 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000344"
     },
     {
       "corp_name": "롯데지주",
@@ -85,8 +86,7 @@
       "report_nm": "주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000345",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000345",
-      "ai_explanation": "회계상 자본으로 인정받을 수 있는 성격의 채무증권을 발행하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000345"
     },
     {
       "corp_name": "메타케어",
@@ -94,8 +94,7 @@
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000334",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000334",
-      "ai_explanation": "회사가 보유하거나 발행했던 전환사채를 만기 전에 미리 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000334"
     },
     {
       "corp_name": "아리바이오LAB",
@@ -103,8 +102,7 @@
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000335",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000335",
-      "ai_explanation": "과거에 공시했던 전환사채 발행 결정 내용을 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000335"
     },
     {
       "corp_name": "롯데지주",
@@ -112,8 +110,7 @@
       "report_nm": "주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000342",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000342",
-      "ai_explanation": "회계상 자본으로 인정받을 수 있는 성격의 채무증권을 발행하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000342"
     },
     {
       "corp_name": "디비월드",
@@ -121,8 +118,7 @@
       "report_nm": "[기재정정]주요사항보고서(영업정지)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000339",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000339",
-      "ai_explanation": "과거에 공시했던 영업정지 관련 내용을 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000339"
     },
     {
       "corp_name": "에코프로",
@@ -130,8 +126,7 @@
       "report_nm": "주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000337",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000337",
-      "ai_explanation": "회계상 자본으로 인정받을 수 있는 성격의 채무증권을 발행하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000337"
     },
     {
       "corp_name": "손오공",
@@ -139,8 +134,7 @@
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000304",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000304",
-      "ai_explanation": "회사가 보유하거나 발행했던 전환사채를 만기 전에 미리 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000304"
     },
     {
       "corp_name": "모아라이프플러스",
@@ -148,8 +142,7 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000299",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000299",
-      "ai_explanation": "과거에 공시했던 유상증자 결정 내용을 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000299"
     },
     {
       "corp_name": "이연제약",
@@ -157,8 +150,7 @@
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000281",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000281",
-      "ai_explanation": "회사가 보유하거나 발행했던 전환사채를 만기 전에 미리 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000281"
     },
     {
       "corp_name": "모아데이타",
@@ -166,8 +158,7 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000288",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000288",
-      "ai_explanation": "과거에 공시했던 유상증자 결정 내용을 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000288"
     },
     {
       "corp_name": "에프앤가이드",
@@ -175,8 +166,7 @@
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000280",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000280",
-      "ai_explanation": "주가 안정 등을 위해 금융기관에 자금을 맡겨 자기주식을 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000280"
     },
     {
       "corp_name": "캔버스엔",
@@ -184,8 +174,7 @@
       "report_nm": "[기재정정]주요사항보고서(자기전환사채매도결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000272",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000272",
-      "ai_explanation": "보유 중인 자기 전환사채를 제3자에게 매도하기로 결정한 내용을 수정 공시합니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000272"
     },
     {
       "corp_name": "캔버스엔",
@@ -193,8 +182,7 @@
       "report_nm": "[기재정정]주요사항보고서(자기전환사채매도결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000266",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000266",
-      "ai_explanation": "보유 중인 자기 전환사채를 제3자에게 매도하기로 결정한 내용을 수정 공시합니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000266"
     },
     {
       "corp_name": "캔버스엔",
@@ -202,8 +190,7 @@
       "report_nm": "[기재정정]주요사항보고서(자기전환사채매도결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000262",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000262",
-      "ai_explanation": "보유 중인 자기 전환사채를 제3자에게 매도하기로 결정한 내용을 수정 공시합니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000262"
     },
     {
       "corp_name": "캔버스엔",
@@ -211,8 +198,7 @@
       "report_nm": "[기재정정]주요사항보고서(자기전환사채매도결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000259",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000259",
-      "ai_explanation": "보유 중인 자기 전환사채를 제3자에게 매도하기로 결정한 내용을 수정 공시합니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000259"
     },
     {
       "corp_name": "옵트론텍",
@@ -220,8 +206,7 @@
       "report_nm": "주요사항보고서(제3자의전환사채매수선택권행사)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000278",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000278",
-      "ai_explanation": "제3자가 전환사채를 매수할 수 있는 권리(콜옵션)를 행사하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000278"
     },
     {
       "corp_name": "옵트론텍",
@@ -229,8 +214,7 @@
       "report_nm": "주요사항보고서(전환사채매수선택권행사자지정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000269",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000269",
-      "ai_explanation": "전환사채 매수선택권을 행사할 대상자를 구체적으로 지정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000269"
     },
     {
       "corp_name": "코스메카코리아",
@@ -238,8 +222,7 @@
       "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000245",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000245",
-      "ai_explanation": "회사 합병 결정 내용의 첨부 서류를 수정하여 다시 공시하는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000245"
     },
     {
       "corp_name": "한화오션",
@@ -247,8 +230,7 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000252",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000252",
-      "ai_explanation": "주가 안정 및 주주가치 제고를 위해 회사 자금으로 자기주식을 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000252"
     },
     {
       "corp_name": "동양이노텍",
@@ -256,8 +238,7 @@
       "report_nm": "회사분할결정",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000254",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000254",
-      "ai_explanation": "회사의 특정 사업 부문을 분리하여 별도 법인을 설립하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000254"
     },
     {
       "corp_name": "디지아이",
@@ -265,8 +246,7 @@
       "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000226",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000226",
-      "ai_explanation": "경영 참여나 투자 목적으로 다른 회사의 주식을 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000226"
     },
     {
       "corp_name": "크린앤사이언스",
@@ -274,8 +254,7 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000182",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000182",
-      "ai_explanation": "주가 안정 및 주주가치 제고를 위해 회사 자금으로 자기주식을 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000182"
     },
     {
       "corp_name": "칩스앤미디어",
@@ -283,8 +262,7 @@
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000175",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000175",
-      "ai_explanation": "주가 안정 등을 위해 금융기관에 자금을 맡겨 자기주식을 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000175"
     },
     {
       "corp_name": "달바글로벌",
@@ -292,8 +270,7 @@
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000146",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000146",
-      "ai_explanation": "주가 안정 등을 위해 금융기관에 자금을 맡겨 자기주식을 사들이기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000146"
     },
     {
       "corp_name": "에프에스티",
@@ -301,8 +278,7 @@
       "report_nm": "주요사항보고서(자기주식처분결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000136",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000136",
-      "ai_explanation": "회사가 보유하고 있던 자기주식을 시장에 내다 팔기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000136"
     },
     {
       "corp_name": "삼천리이에스",
@@ -310,8 +286,7 @@
       "report_nm": "타인을위한채무보증결정",
       "rcept_dt": "20260928",
       "rcept_no": "20260928000129",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000129",
-      "ai_explanation": "관계사나 타인의 채무를 회사가 대신 갚겠다고 보증하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000129"
     },
     {
       "corp_name": "핑거",
@@ -319,8 +294,7 @@
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260923000640",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000640",
-      "ai_explanation": "회사가 투자 자금 조달을 위해 전환사채를 발행하기로 결정한 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000640"
     }
   ],
   "macro_indicators": [
