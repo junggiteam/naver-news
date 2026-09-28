@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 08:01:16",
+  "updated_at": "2026-09-29 08:31:12",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20260929",
       "rcept_no": "20260928000396",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000396",
-      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하고 운영 자금 등을 조달하기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 주식을 새로 발행하여 자본금을 확충하고 운영 자금을 조달하기로 결정한 것입니다."
     },
     {
       "corp_name": "벡트",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260929",
       "rcept_no": "20260928000391",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000391",
-      "ai_explanation": "기존에 공시했던 유상증자 결정 내용 중 일부 항목을 수정하거나 보완했다는 공시입니다."
+      "ai_explanation": "기존에 공시했던 유상증자 결정 내용 중 일부 항목을 수정하거나 보완한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3020,155 +3020,93 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "HLB글로벌",
-      "price": "2,055",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한화솔루션",
-      "price": "34,250",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한투 인버스2X은선물 ETN",
-      "price": "43,410",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "삼성 인버스 2X 은 선물 ETN",
-      "price": "44,820",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "신한 인버스 2X 은 선물 ETN(H)",
-      "price": "64",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "KB 레버리지 은 선물 ETN",
-      "price": "7,330",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "삼성 레버리지 은 선물 ETN(H)",
-      "price": "31,500",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "신한 레버리지 은 선물 ETN(H)",
-      "price": "19,090",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "메리츠 레버리지 은 선물 ETN(H)",
-      "price": "7,625",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "미래에셋 레버리지 은 선물 ETN B",
-      "price": "26,965",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "건강관리기술",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리장비와용품",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자제품",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건축제품",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "건강관리기술",
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에너지장비및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건축제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "창업투자",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "복합기업",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
