@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-28 13:31:00",
+  "updated_at": "2026-09-28 14:01:16",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -1.94,
-    "kosdaq_change": 1.13,
-    "kospi_value": 6943.64,
-    "kosdaq_value": 854.0
+    "kospi_change": -2.2,
+    "kosdaq_change": 0.84,
+    "kospi_value": 6925.47,
+    "kosdaq_value": 851.59
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 국채 금리 급등의 영향으로 삼성전자와 SK하이닉스 등 시가총액 상위 반도체주가 4%대 하락하며 코스피 지수가 7000선 아래로 밀려났다. 반면 코스닥 시장은 코스피의 약세 흐름 속에서도 바이오 관련주가 강세를 보이면서 상승 마감했다."
+      "text": "미국 국채금리 급등의 여파로 외국인과 기관의 대규모 매도세가 이어지며 코스피는 삼성전자와 SK하이닉스 등 시가총액 상위 종목의 약세와 함께 7,000선 아래로 하락했다. 반면 코스닥은 개별 기업들의 기술적 성과와 사업 수주 소식 등이 전해지며 상대적으로 견조한 흐름을 보였다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "삼천리이에스",
+      "corp_code": "00477114",
+      "report_nm": "타인을위한채무보증결정",
+      "rcept_dt": "20260928",
+      "rcept_no": "20260928000129",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000129",
+      "ai_explanation": "회사가 타인의 채무를 대신 갚아주기로 약속하여 보증을 서는 결정입니다."
+    },
+    {
       "corp_name": "핑거",
       "corp_code": "01142075",
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20260928",
       "rcept_no": "20260923000640",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000640",
-      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 바꿀 수 있는 권리가 부여된 자금을 조달한다는 의미입니다."
+      "ai_explanation": "회사가 향후 주식으로 바꿀 수 있는 권리가 포함된 채권을 발행하는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -3012,129 +3021,124 @@
       "pct": 29.82
     },
     {
-      "name": "SH에너지화학",
-      "price": "3,110",
-      "change_percent": "+19.16%",
-      "pct": 19.16
-    },
-    {
       "name": "한투 인버스2X은선물 ETN",
       "price": "43,410",
       "change_percent": "+17.04%",
       "pct": 17.04
     },
     {
-      "name": "금강공업",
-      "price": "5,100",
-      "change_percent": "+16.84%",
-      "pct": 16.84
+      "name": "SH에너지화학",
+      "price": "3,015",
+      "change_percent": "+15.52%",
+      "pct": 15.52
     },
     {
-      "name": "SNT다이내믹스",
-      "price": "30,150",
-      "change_percent": "+15.74%",
-      "pct": 15.74
+      "name": "금강공업",
+      "price": "5,030",
+      "change_percent": "+15.23%",
+      "pct": 15.23
+    },
+    {
+      "name": "삼성 인버스 2X 은 선물 ETN",
+      "price": "43,920",
+      "change_percent": "+14.64%",
+      "pct": 14.64
     }
   ],
   "top_losers": [
     {
       "name": "KB 레버리지 은 선물 ETN",
-      "price": "7,400",
-      "change_percent": "-13.60%",
-      "pct": 13.6
+      "price": "7,390",
+      "change_percent": "-13.72%",
+      "pct": 13.72
     },
     {
       "name": "신한 레버리지 은 선물 ETN(H)",
-      "price": "19,335",
-      "change_percent": "-12.93%",
-      "pct": 12.93
-    },
-    {
-      "name": "메리츠 레버리지 미국채30년 스트립 ETN(H)",
-      "price": "29,330",
-      "change_percent": "-12.60%",
-      "pct": 12.6
-    },
-    {
-      "name": "미래에셋 레버리지 은 선물 ETN B",
-      "price": "27,310",
-      "change_percent": "-12.48%",
-      "pct": 12.48
+      "price": "19,355",
+      "change_percent": "-12.83%",
+      "pct": 12.83
     },
     {
       "name": "삼성 레버리지 은 선물 ETN(H)",
-      "price": "32,025",
-      "change_percent": "-12.66%",
-      "pct": 12.66
+      "price": "31,970",
+      "change_percent": "-12.81%",
+      "pct": 12.81
+    },
+    {
+      "name": "메리츠 레버리지 미국채30년 스트립 ETN(H)",
+      "price": "29,305",
+      "change_percent": "-12.68%",
+      "pct": 12.68
+    },
+    {
+      "name": "미래에셋 레버리지 은 선물 ETN B",
+      "price": "27,250",
+      "change_percent": "-12.67%",
+      "pct": 12.67
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+9.48%",
-      "pct": 9.48
+      "change_value": "+9.77%",
+      "pct": 9.77
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+7.74%",
-      "pct": 7.74
+      "change_value": "+7.73%",
+      "pct": 7.73
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+6.12%",
-      "pct": 6.12
+      "change_value": "+5.62%",
+      "pct": 5.62
     },
     {
       "name": "건축제품",
-      "change_value": "+3.86%",
-      "pct": 3.86
+      "change_value": "+3.47%",
+      "pct": 3.47
     },
     {
       "name": "전자제품",
-      "change_value": "+3.53%",
-      "pct": 3.53
+      "change_value": "+3.30%",
+      "pct": 3.3
     }
   ],
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+9.48%",
-      "pct": 9.48
+      "change_value": "+9.77%",
+      "pct": 9.77
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+7.74%",
-      "pct": 7.74
+      "change_value": "+7.73%",
+      "pct": 7.73
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+6.12%",
-      "pct": 6.12
+      "change_value": "+5.62%",
+      "pct": 5.62
     },
     {
       "name": "건축제품",
-      "change_value": "+3.86%",
-      "pct": 3.86
+      "change_value": "+3.47%",
+      "pct": 3.47
     },
     {
       "name": "전자제품",
-      "change_value": "+3.53%",
-      "pct": 3.53
+      "change_value": "+3.30%",
+      "pct": 3.3
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+3.52%",
-      "pct": 3.52
+      "name": "화학",
+      "change_value": "+3.07%",
+      "pct": 3.07
     },
     {
       "name": "기타",
-      "change_value": "-1.36%",
-      "pct": -1.36
-    },
-    {
-      "name": "전기장비",
-      "change_value": "-1.84%",
-      "pct": -1.84
+      "change_value": "-1.45%",
+      "pct": -1.45
     },
     {
       "name": "다각화된소비자서비스",
@@ -3142,19 +3146,24 @@
       "pct": -1.99
     },
     {
+      "name": "전기장비",
+      "change_value": "-2.06%",
+      "pct": -2.06
+    },
+    {
       "name": "복합기업",
-      "change_value": "-3.12%",
-      "pct": -3.12
+      "change_value": "-3.30%",
+      "pct": -3.3
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-4.05%",
-      "pct": -4.05
+      "change_value": "-4.38%",
+      "pct": -4.38
     },
     {
       "name": "가정용품",
-      "change_value": "-13.10%",
-      "pct": -13.1
+      "change_value": "-13.41%",
+      "pct": -13.41
     }
   ],
   "article_counts": {
