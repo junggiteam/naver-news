@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30 08:01:08",
+  "updated_at": "2026-09-30 08:30:57",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -80,13 +80,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "제일기획",
+      "corp_code": "00148276",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20260930",
+      "rcept_no": "20260930000006",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000006",
+      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 자사의 주식을 시장에서 매수하기로 결정함."
+    },
+    {
       "corp_name": "고영",
       "corp_code": "00579999",
       "report_nm": "[기재정정]주요사항보고서(자기주식처분결정)",
       "rcept_dt": "20260930",
       "rcept_no": "20260929000686",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000686",
-      "ai_explanation": "회사가 보유하고 있던 자기주식을 시장에 내놓거나 특정 대상에게 매각하기로 결정한 내용입니다."
+      "ai_explanation": "기존에 보유하고 있던 자사주를 처분하여 임직원 상여 지급이나 투자 재원 등을 확보함."
     }
   ],
   "macro_indicators": [
@@ -2505,78 +2514,21 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "SH에너지화학",
-      "price": "3,300",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "DB하이텍",
-      "price": "141,900",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "이수스페셜티케미컬",
-      "price": "72,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "코리아써키트",
-      "price": "75,800",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "삼화콘덴서",
-      "price": "158,800",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "부산주공",
-      "price": "37",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "대양금속",
-      "price": "712",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "진흥기업우B",
-      "price": "8,700",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "인디에프",
-      "price": "3,420",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양우",
-      "price": "7,630",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "전자장비와기기",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2586,24 +2538,24 @@
       "pct": 0.0
     },
     {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디스플레이장비및부품",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "전자장비와기기",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2613,17 +2565,27 @@
       "pct": 0.0
     },
     {
-      "name": "전기장비",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "디스플레이장비및부품",
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "다각화된소비자서비스",
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2633,27 +2595,12 @@
       "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
+      "name": "전자장비와기기",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건설",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용품",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -2662,7 +2609,7 @@
     "종합": 412,
     "경제": 30,
     "부동산": 30,
-    "증권": 81
+    "증권": 82
   },
   "article_count_trend": {
     "종합": {
@@ -2684,9 +2631,9 @@
       "surge": false
     },
     "증권": {
-      "today": 81,
+      "today": 82,
       "yesterday": 85,
-      "change_pct": -4.7,
+      "change_pct": -3.5,
       "surge": false
     }
   }
