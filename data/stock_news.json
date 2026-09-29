@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 23:00:58",
+  "updated_at": "2026-09-29 23:30:58",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "51,402.67",
-      "change_percent": "▼0.15%",
+      "value": "51,371.49",
+      "change_percent": "▼0.21%",
       "direction": "down",
-      "as_of": "2026-09-29 10:00:49"
+      "as_of": "2026-09-29 10:30:47"
     },
     {
       "name": "나스닥",
-      "value": "26,835.66",
-      "change_percent": "▲0.06%",
+      "value": "26,861.26",
+      "change_percent": "▲0.15%",
       "direction": "up",
-      "as_of": "2026-09-29 10:00:49"
+      "as_of": "2026-09-29 10:30:48"
     },
     {
       "name": "나스닥100",
-      "value": "30,373.01",
-      "change_percent": "▲0.32%",
+      "value": "30,407.24",
+      "change_percent": "▲0.43%",
       "direction": "up",
-      "as_of": "2026-09-29 10:00:50"
+      "as_of": "2026-09-29 10:30:49"
     },
     {
       "name": "S&P500",
-      "value": "7,684.65",
-      "change_percent": "▲0.01%",
+      "value": "7,685.54",
+      "change_percent": "▲0.02%",
       "direction": "up",
-      "as_of": "2026-09-29 10:00:48"
+      "as_of": "2026-09-29 10:30:47"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,355.50",
-      "change_percent": "▼0.33%",
+      "value": "1,354.30",
+      "change_percent": "▼0.42%",
       "direction": "down",
-      "as_of": "2026-09-29 22:59:03"
+      "as_of": "2026-09-29 23:26:53"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "860.66",
-      "change_percent": "▼0.37%",
+      "value": "860.45",
+      "change_percent": "▼0.40%",
       "direction": "down",
-      "as_of": "2026-09-29 22:59:03"
+      "as_of": "2026-09-29 23:26:53"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,537.27",
-      "change_percent": "▼0.62%",
+      "value": "1,536.11",
+      "change_percent": "▼0.69%",
       "direction": "down",
-      "as_of": "2026-09-29 22:59:03"
+      "as_of": "2026-09-29 23:26:53"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "90.99",
-      "change_percent": "▼1.74%",
+      "value": "91.28",
+      "change_percent": "▼1.43%",
       "direction": "down",
-      "as_of": "2026-09-29 08:50:44"
+      "as_of": "2026-09-29 09:20:01"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "113,916,000",
-      "change_percent": "▲0.37%",
-      "direction": "up",
-      "as_of": "2026-09-29 23:00:53"
+      "value": "113,434,000",
+      "change_percent": "▼0.06%",
+      "direction": "down",
+      "as_of": "2026-09-29 23:30:54"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,688,000",
-      "change_percent": "▲0.99%",
+      "value": "3,665,000",
+      "change_percent": "▲0.36%",
       "direction": "up",
-      "as_of": "2026-09-29 23:00:52"
+      "as_of": "2026-09-29 23:30:43"
     }
   ],
   "news_categories": [
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "[뉴욕증시]미국채 금리 고공행진…일제히 하락세",
+          "link": "https://n.news.naver.com/mnews/article/277/0005822418?sid=101258403",
+          "upload_time": "20260929231625",
+          "published_at": "2026-09-29T23:16:25+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "[美특징주]우라늄 에너지, 원전 연료 공급망 강화 기대에 주가↑",
           "link": "https://n.news.naver.com/mnews/article/018/0006377283?sid=101258403",
           "upload_time": "20260929225614",
@@ -399,7 +407,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 3,
           "title": "[美특징주]'투자자의 날' 기대…마벨, 개장 전 1% 상승",
           "link": "https://n.news.naver.com/mnews/article/018/0006377273?sid=101258403",
           "upload_time": "20260929213011",
@@ -407,7 +415,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "상승세 이어가지 못한 日증시…닛케이 0.60%↓",
           "link": "https://n.news.naver.com/mnews/article/018/0006377143?sid=101258403",
           "upload_time": "20260929160417",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "\"AI 산업, 2031년 매출 8000조 벌어야 데이터센터 투자 유지\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005822240?sid=101258403",
           "upload_time": "20260929152922",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 5,
+          "rank": 6,
           "title": "“40년 만의 기회, 지금이 살 때” vs “금리 자산 쳐다도 보지마”…‘채권 투자’에 갈라진 월가",
           "link": "https://n.news.naver.com/mnews/article/009/0005741328?sid=101258403",
           "upload_time": "20260929144820",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
+          "rank": 7,
           "title": "AMD, AI 3차원 공간지능 스타트업 월드랩스 82억달러에 인수",
           "link": "https://n.news.naver.com/mnews/article/015/0005337084?sid=101258403",
           "upload_time": "20260929132216",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 8,
           "title": "\"가전 대신 엔터\" 소니, 내년 CES 불참…'60년 개근' 끝나",
           "link": "https://n.news.naver.com/mnews/article/015/0005337076?sid=101258403",
           "upload_time": "20260929125015",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 9,
           "title": "젠슨 황, 벤플리트 수상…이재용·최태원 뉴욕에서 함께 축하(종합)",
           "link": "https://n.news.naver.com/mnews/article/277/0005822079?sid=101258403",
           "upload_time": "20260929111358",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 10,
           "title": "CEO가 메타로 갑자기 가버린 이 회사…주가 19% 폭락",
           "link": "https://n.news.naver.com/mnews/article/018/0006376919?sid=101258403",
           "upload_time": "20260929111107",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 10,
+          "rank": 11,
           "title": "\"채권 혹한기 대비하라\" 美 국채금리 급등에 국고채도 출렁",
           "link": "https://n.news.naver.com/mnews/article/277/0005822025?sid=101258403",
           "upload_time": "20260929103300",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 11,
+          "rank": 12,
           "title": "\"오픈AI, 신규 AI모델 출시 취소…거짓말·독자행동 등 안전문제 발생\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005821999?sid=101258403",
           "upload_time": "20260929101244",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 12,
+          "rank": 13,
           "title": "사우디, 폭격받았던 동서 송유관 복구…홍해 원유수출 재개",
           "link": "https://n.news.naver.com/mnews/article/277/0005821993?sid=101258403",
           "upload_time": "20260929100254",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 13,
+          "rank": 14,
           "title": "[인터뷰]민주당 하원 잡으면 '관세 절차전'…김동석 \"韓, 美 의회 접점 넓혀야\"[美 중간선거]③",
           "link": "https://n.news.naver.com/mnews/article/277/0005821900?sid=101258403",
           "upload_time": "20260929091604",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 14,
+          "rank": 15,
           "title": "[마켓무버] 유가·금리 부담에 AI 안전성 우려까지…뉴욕증시 약세",
           "link": "https://n.news.naver.com/mnews/article/018/0006376774?sid=101258403",
           "upload_time": "20260929085222",
           "published_at": "2026-09-29T08:52:22+09:00"
-        },
-        {
-          "press_name": "한국경제TV",
-          "rank": 15,
-          "title": "美 10년 국채금리와 S&P 수익률 간 역전 발생 | 負의 yield gap, 87년 블랙 먼데이 신호? | 한상춘 한국경제신문 논설위원",
-          "link": "https://n.news.naver.com/mnews/article/215/0001267485?sid=101258403",
-          "upload_time": "20260929081352",
-          "published_at": "2026-09-29T08:13:52+09:00"
         }
       ]
     },
