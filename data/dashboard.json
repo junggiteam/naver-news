@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-30 09:15:50",
+  "updated_at": "2026-09-30 09:31:04",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6870.81,
-    "kosdaq_value": 849.8
+    "kospi_change": 0.91,
+    "kosdaq_change": 1.08,
+    "kospi_value": 6933.6,
+    "kosdaq_value": 858.97
   },
   "heroes": {
     "종합": {
@@ -87,7 +87,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260930000006",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000006",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 자사 주식을 직접 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고 등을 목적으로 자사 주식을 직접 매입하기로 결정한 것입니다."
     },
     {
       "corp_name": "고영",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260929000686",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000686",
-      "ai_explanation": "회사가 보유 중인 자사 주식을 시장에 내놓거나 특정 대상에게 매각하기로 정정 결정했다는 의미입니다."
+      "ai_explanation": "회사가 과거에 취득했던 자사 주식을 시장에 내다 팔거나 임직원에게 상여금으로 지급하기로 한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2517,125 +2517,155 @@
   },
   "top_gainers": [
     {
-      "name": "한양증권",
-      "price": "19,220",
-      "change_percent": "+0.31%",
-      "pct": 0.31
+      "name": "부산주공",
+      "price": "46",
+      "change_percent": "+24.32%",
+      "pct": 24.32
     },
     {
-      "name": "대상우",
-      "price": "14,630",
-      "change_percent": "+0.07%",
-      "pct": 0.07
+      "name": "KBI동양철관",
+      "price": "1,408",
+      "change_percent": "+23.40%",
+      "pct": 23.4
+    },
+    {
+      "name": "하이스틸",
+      "price": "3,670",
+      "change_percent": "+11.38%",
+      "pct": 11.38
+    },
+    {
+      "name": "키다리스튜디오",
+      "price": "8,880",
+      "change_percent": "+10.86%",
+      "pct": 10.86
+    },
+    {
+      "name": "하나 S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "1,919",
+      "change_percent": "+10.16%",
+      "pct": 10.16
     }
   ],
   "top_losers": [
     {
-      "name": "삼영무역",
-      "price": "21,400",
-      "change_percent": "-1.15%",
-      "pct": 1.15
+      "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
+      "price": "50,385",
+      "change_percent": "-10.01%",
+      "pct": 10.01
     },
     {
-      "name": "ACE 인버스",
-      "price": "1,256",
-      "change_percent": "-0.87%",
-      "pct": 0.87
+      "name": "미래에셋 레버리지 WTI원유 선물 ETN",
+      "price": "24,540",
+      "change_percent": "-9.99%",
+      "pct": 9.99
     },
     {
-      "name": "RISE 테슬라고정테크100",
-      "price": "14,470",
-      "change_percent": "-0.07%",
-      "pct": 0.07
+      "name": "하나 S&P 레버리지 WTI원유 선물 ETN B",
+      "price": "50,410",
+      "change_percent": "-9.98%",
+      "pct": 9.98
+    },
+    {
+      "name": "삼성 레버리지 WTI원유 선물 ETN",
+      "price": "2,900",
+      "change_percent": "-9.52%",
+      "pct": 9.52
+    },
+    {
+      "name": "KB S&P 레버리지 WTI원유 선물 ETN B",
+      "price": "51,005",
+      "change_percent": "-9.82%",
+      "pct": 9.82
     }
   ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+3.28%",
+      "pct": 3.28
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "조선",
+      "change_value": "+1.86%",
+      "pct": 1.86
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "항공사",
+      "change_value": "+1.70%",
+      "pct": 1.7
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "화학",
+      "change_value": "+1.63%",
+      "pct": 1.63
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "+1.62%",
+      "pct": 1.62
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+3.28%",
+      "pct": 3.28
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "조선",
+      "change_value": "+1.86%",
+      "pct": 1.86
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "항공사",
+      "change_value": "+1.70%",
+      "pct": 1.7
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "화학",
+      "change_value": "+1.63%",
+      "pct": 1.63
+    },
+    {
+      "name": "전자제품",
+      "change_value": "+1.62%",
+      "pct": 1.62
+    },
+    {
+      "name": "건축제품",
+      "change_value": "+1.62%",
+      "pct": 1.62
+    },
+    {
+      "name": "기타금융",
+      "change_value": "-1.08%",
+      "pct": -1.08
+    },
+    {
+      "name": "생명보험",
+      "change_value": "-1.21%",
+      "pct": -1.21
     },
     {
       "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "-1.40%",
+      "pct": -1.4
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "은행",
+      "change_value": "-1.66%",
+      "pct": -1.66
     },
     {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "다각화된소비자서비스",
+      "change_value": "-1.98%",
+      "pct": -1.98
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "가정용품",
+      "change_value": "-2.97%",
+      "pct": -2.97
     }
   ],
   "article_counts": {
