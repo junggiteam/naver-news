@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-30 11:25:41",
+  "updated_at": "2026-09-30 11:47:33",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.14,
-    "kosdaq_change": 1.17,
-    "kospi_value": 6880.09,
-    "kosdaq_value": 859.73
+    "kospi_change": -0.35,
+    "kosdaq_change": 0.55,
+    "kospi_value": 6846.9,
+    "kosdaq_value": 854.46
   },
   "heroes": {
     "종합": {
@@ -87,7 +87,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260930000163",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000163",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 매입하기로 결정한 것입니다."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매수하여 주가 안정이나 주주 가치를 제고하겠다는 결정입니다."
     },
     {
       "corp_name": "제일기획",
@@ -96,7 +96,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260930000006",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000006",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 직접 매입하기로 결정한 것입니다."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매수하여 주가 안정이나 주주 가치를 제고하겠다는 결정입니다."
     },
     {
       "corp_name": "고영",
@@ -105,7 +105,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260929000686",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000686",
-      "ai_explanation": "회사가 보유 중인 자사 주식을 시장에 내놓거나 특정 대상에게 매각하기로 결정한 것입니다."
+      "ai_explanation": "회사가 보유하고 있던 자사 주식을 시장에 팔거나 특정 대상에게 넘기기로 한 결정을 수정했습니다."
     }
   ],
   "macro_indicators": [
@@ -2539,29 +2539,29 @@
     },
     {
       "name": "이수스페셜티케미컬",
-      "price": "78,900",
-      "change_percent": "+16.03%",
-      "pct": 16.03
+      "price": "79,800",
+      "change_percent": "+17.35%",
+      "pct": 17.35
     },
     {
       "name": "하이스틸",
-      "price": "3,730",
-      "change_percent": "+13.20%",
-      "pct": 13.2
+      "price": "3,760",
+      "change_percent": "+14.11%",
+      "pct": 14.11
     },
     {
       "name": "TCC스틸",
-      "price": "12,560",
-      "change_percent": "+11.74%",
-      "pct": 11.74
+      "price": "12,760",
+      "change_percent": "+13.52%",
+      "pct": 13.52
     }
   ],
   "top_losers": [
     {
-      "name": "SUN&L",
-      "price": "1,084",
-      "change_percent": "-9.97%",
-      "pct": 9.97
+      "name": "코아스",
+      "price": "1,692",
+      "change_percent": "-11.97%",
+      "pct": 11.97
     },
     {
       "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
@@ -2570,89 +2570,84 @@
       "pct": 9.72
     },
     {
-      "name": "코아스",
-      "price": "1,704",
-      "change_percent": "-11.34%",
-      "pct": 11.34
-    },
-    {
       "name": "미래에셋 레버리지 WTI원유 선물 ETN",
-      "price": "24,640",
-      "change_percent": "-9.63%",
-      "pct": 9.63
+      "price": "24,650",
+      "change_percent": "-9.59%",
+      "pct": 9.59
     },
     {
       "name": "삼성 레버리지 WTI원유 선물 ETN",
       "price": "2,900",
       "change_percent": "-9.52%",
       "pct": 9.52
+    },
+    {
+      "name": "메리츠 레버리지 WTI원유 선물 ETN(H)",
+      "price": "52,720",
+      "change_percent": "-9.35%",
+      "pct": 9.35
     }
   ],
   "sector_performance": [
     {
       "name": "무역회사와판매업체",
-      "change_value": "+4.77%",
-      "pct": 4.77
+      "change_value": "+3.96%",
+      "pct": 3.96
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+3.60%",
-      "pct": 3.6
+      "change_value": "+3.07%",
+      "pct": 3.07
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+3.32%",
-      "pct": 3.32
+      "change_value": "+2.53%",
+      "pct": 2.53
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "+3.03%",
-      "pct": 3.03
+      "name": "광고",
+      "change_value": "+2.10%",
+      "pct": 2.1
     },
     {
       "name": "화학",
-      "change_value": "+2.67%",
-      "pct": 2.67
+      "change_value": "+1.97%",
+      "pct": 1.97
     }
   ],
   "sector_heatmap": [
     {
       "name": "무역회사와판매업체",
-      "change_value": "+4.77%",
-      "pct": 4.77
+      "change_value": "+3.96%",
+      "pct": 3.96
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+3.60%",
-      "pct": 3.6
+      "change_value": "+3.07%",
+      "pct": 3.07
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+3.32%",
-      "pct": 3.32
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+3.03%",
-      "pct": 3.03
-    },
-    {
-      "name": "화학",
-      "change_value": "+2.67%",
-      "pct": 2.67
+      "change_value": "+2.53%",
+      "pct": 2.53
     },
     {
       "name": "광고",
-      "change_value": "+2.41%",
-      "pct": 2.41
+      "change_value": "+2.10%",
+      "pct": 2.1
+    },
+    {
+      "name": "화학",
+      "change_value": "+1.97%",
+      "pct": 1.97
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "+1.59%",
+      "pct": 1.59
     },
     {
       "name": "사무용전자제품",
-      "change_value": "-2.04%",
-      "pct": -2.04
-    },
-    {
-      "name": "은행",
       "change_value": "-2.30%",
       "pct": -2.3
     },
@@ -2663,18 +2658,23 @@
     },
     {
       "name": "손해보험",
-      "change_value": "-2.44%",
-      "pct": -2.44
+      "change_value": "-2.72%",
+      "pct": -2.72
+    },
+    {
+      "name": "은행",
+      "change_value": "-2.77%",
+      "pct": -2.77
     },
     {
       "name": "생명보험",
-      "change_value": "-2.54%",
-      "pct": -2.54
+      "change_value": "-2.88%",
+      "pct": -2.88
     },
     {
       "name": "가정용품",
-      "change_value": "-3.17%",
-      "pct": -3.17
+      "change_value": "-3.46%",
+      "pct": -3.46
     }
   ],
   "article_counts": {
