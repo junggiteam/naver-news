@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-30 11:47:33",
+  "updated_at": "2026-09-30 12:01:23",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.35,
-    "kosdaq_change": 0.55,
-    "kospi_value": 6846.9,
-    "kosdaq_value": 854.46
+    "kospi_change": -0.17,
+    "kosdaq_change": 0.65,
+    "kospi_value": 6859.3,
+    "kosdaq_value": 855.36
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,58 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "상상인",
+      "corp_code": "00306162",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+      "rcept_dt": "20260930",
+      "rcept_no": "20260930000194",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000194",
+      "ai_explanation": "회사가 자사주 매입을 위해 맺었던 신탁 계약을 중도에 해지하는 것입니다."
+    },
+    {
+      "corp_name": "삼영이엔씨",
+      "corp_code": "00288343",
+      "report_nm": "주요사항보고서(감자결정)",
+      "rcept_dt": "20260930",
+      "rcept_no": "20260930000204",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000204",
+      "ai_explanation": "회사가 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
+    },
+    {
+      "corp_name": "토스플레이스",
+      "corp_code": "01825947",
+      "report_nm": "타인을위한채무보증결정",
+      "rcept_dt": "20260930",
+      "rcept_no": "20260930000211",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000211",
+      "ai_explanation": "회사가 다른 기업의 채무를 대신 갚겠다고 보증을 서는 결정입니다."
+    },
+    {
+      "corp_name": "삼영이엔씨",
+      "corp_code": "00288343",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20260930",
+      "rcept_no": "20260930000197",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000197",
+      "ai_explanation": "회사가 신주를 발행해 자본금을 늘리고 외부로부터 자금을 조달하는 결정입니다."
+    },
+    {
+      "corp_name": "삼영이엔씨",
+      "corp_code": "00288343",
+      "report_nm": "주요사항보고서(감자결정)",
+      "rcept_dt": "20260930",
+      "rcept_no": "20260930000192",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000192",
+      "ai_explanation": "회사가 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
+    },
+    {
       "corp_name": "육일씨엔에쓰",
       "corp_code": "00843900",
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20260930",
       "rcept_no": "20260930000163",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000163",
-      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매수하여 주가 안정이나 주주 가치를 제고하겠다는 결정입니다."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 사들이기로 결정한 것입니다."
     },
     {
       "corp_name": "제일기획",
@@ -96,7 +141,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260930000006",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000006",
-      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매수하여 주가 안정이나 주주 가치를 제고하겠다는 결정입니다."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 사들이기로 결정한 것입니다."
     },
     {
       "corp_name": "고영",
@@ -105,7 +150,7 @@
       "rcept_dt": "20260930",
       "rcept_no": "20260929000686",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000686",
-      "ai_explanation": "회사가 보유하고 있던 자사 주식을 시장에 팔거나 특정 대상에게 넘기기로 한 결정을 수정했습니다."
+      "ai_explanation": "기존에 결정했던 자사주 처분 계획의 내용을 변경하여 공시한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2527,9 +2572,9 @@
   "top_gainers": [
     {
       "name": "부산주공",
-      "price": "51",
-      "change_percent": "+37.84%",
-      "pct": 37.84
+      "price": "55",
+      "change_percent": "+48.65%",
+      "pct": 48.65
     },
     {
       "name": "KBI동양철관",
@@ -2539,117 +2584,117 @@
     },
     {
       "name": "이수스페셜티케미컬",
-      "price": "79,800",
-      "change_percent": "+17.35%",
-      "pct": 17.35
+      "price": "80,100",
+      "change_percent": "+17.79%",
+      "pct": 17.79
     },
     {
       "name": "하이스틸",
-      "price": "3,760",
-      "change_percent": "+14.11%",
-      "pct": 14.11
+      "price": "3,750",
+      "change_percent": "+13.81%",
+      "pct": 13.81
     },
     {
       "name": "TCC스틸",
-      "price": "12,760",
-      "change_percent": "+13.52%",
-      "pct": 13.52
+      "price": "12,630",
+      "change_percent": "+12.37%",
+      "pct": 12.37
     }
   ],
   "top_losers": [
     {
       "name": "코아스",
-      "price": "1,692",
-      "change_percent": "-11.97%",
-      "pct": 11.97
+      "price": "1,647",
+      "change_percent": "-14.31%",
+      "pct": 14.31
     },
     {
       "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
-      "price": "50,550",
-      "change_percent": "-9.72%",
-      "pct": 9.72
+      "price": "50,700",
+      "change_percent": "-9.45%",
+      "pct": 9.45
+    },
+    {
+      "name": "KB S&P 레버리지 WTI원유 선물 ETN B",
+      "price": "51,275",
+      "change_percent": "-9.34%",
+      "pct": 9.34
     },
     {
       "name": "미래에셋 레버리지 WTI원유 선물 ETN",
-      "price": "24,650",
-      "change_percent": "-9.59%",
-      "pct": 9.59
+      "price": "24,810",
+      "change_percent": "-9.00%",
+      "pct": 9.0
     },
     {
       "name": "삼성 레버리지 WTI원유 선물 ETN",
-      "price": "2,900",
-      "change_percent": "-9.52%",
-      "pct": 9.52
-    },
-    {
-      "name": "메리츠 레버리지 WTI원유 선물 ETN(H)",
-      "price": "52,720",
-      "change_percent": "-9.35%",
-      "pct": 9.35
+      "price": "2,915",
+      "change_percent": "-9.05%",
+      "pct": 9.05
     }
   ],
   "sector_performance": [
     {
       "name": "무역회사와판매업체",
-      "change_value": "+3.96%",
-      "pct": 3.96
+      "change_value": "+3.97%",
+      "pct": 3.97
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+3.07%",
-      "pct": 3.07
+      "change_value": "+3.53%",
+      "pct": 3.53
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+2.53%",
-      "pct": 2.53
-    },
-    {
-      "name": "광고",
-      "change_value": "+2.10%",
-      "pct": 2.1
+      "change_value": "+2.75%",
+      "pct": 2.75
     },
     {
       "name": "화학",
-      "change_value": "+1.97%",
-      "pct": 1.97
+      "change_value": "+2.34%",
+      "pct": 2.34
+    },
+    {
+      "name": "광고",
+      "change_value": "+2.13%",
+      "pct": 2.13
     }
   ],
   "sector_heatmap": [
     {
       "name": "무역회사와판매업체",
-      "change_value": "+3.96%",
-      "pct": 3.96
+      "change_value": "+3.97%",
+      "pct": 3.97
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+3.07%",
-      "pct": 3.07
+      "change_value": "+3.53%",
+      "pct": 3.53
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+2.53%",
-      "pct": 2.53
-    },
-    {
-      "name": "광고",
-      "change_value": "+2.10%",
-      "pct": 2.1
+      "change_value": "+2.75%",
+      "pct": 2.75
     },
     {
       "name": "화학",
-      "change_value": "+1.97%",
-      "pct": 1.97
+      "change_value": "+2.34%",
+      "pct": 2.34
+    },
+    {
+      "name": "광고",
+      "change_value": "+2.13%",
+      "pct": 2.13
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+1.59%",
-      "pct": 1.59
+      "change_value": "+1.47%",
+      "pct": 1.47
     },
     {
       "name": "사무용전자제품",
-      "change_value": "-2.30%",
-      "pct": -2.3
+      "change_value": "-2.04%",
+      "pct": -2.04
     },
     {
       "name": "다각화된소비자서비스",
@@ -2657,24 +2702,24 @@
       "pct": -2.37
     },
     {
-      "name": "손해보험",
-      "change_value": "-2.72%",
-      "pct": -2.72
+      "name": "은행",
+      "change_value": "-2.95%",
+      "pct": -2.95
     },
     {
-      "name": "은행",
-      "change_value": "-2.77%",
-      "pct": -2.77
+      "name": "손해보험",
+      "change_value": "-2.99%",
+      "pct": -2.99
     },
     {
       "name": "생명보험",
-      "change_value": "-2.88%",
-      "pct": -2.88
+      "change_value": "-3.01%",
+      "pct": -3.01
     },
     {
       "name": "가정용품",
-      "change_value": "-3.46%",
-      "pct": -3.46
+      "change_value": "-3.30%",
+      "pct": -3.3
     }
   ],
   "article_counts": {
