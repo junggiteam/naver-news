@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-01 09:02:21",
+  "updated_at": "2026-10-01 09:31:02",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 6838.04,
-    "kosdaq_value": 855.91
+    "kospi_change": -0.74,
+    "kosdaq_change": 0.52,
+    "kospi_value": 6787.34,
+    "kosdaq_value": 860.33
   },
   "heroes": {
     "종합": {
@@ -87,7 +87,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000878",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000878",
-      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 바꿀 수 있는 권리가 부여된 사채를 발행하기로 결정함."
+      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 바꿀 수 있는 권리가 부여된 사채를 발행하기로 함."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -96,7 +96,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000870",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000870",
-      "ai_explanation": "회사가 자금 조달을 위해 주식을 새로 발행하여 파는 유상증자 결정 내용을 정정하여 공시함."
+      "ai_explanation": "회사가 자본금을 늘리기 위해 주주 등을 대상으로 신주를 발행하여 자금을 조달하기로 함."
     },
     {
       "corp_name": "씨피시스템",
@@ -105,7 +105,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000872",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000872",
-      "ai_explanation": "회사가 건물이나 토지 등 유형자산을 사들이기로 한 기존 결정 내용을 정정하여 공시함."
+      "ai_explanation": "회사가 영업 활동 등을 위해 토지, 건물 등 유형자산을 사들이기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2991,137 +2991,155 @@
   },
   "top_gainers": [
     {
-      "name": "씨티알모빌리티",
-      "price": "3,400",
-      "change_percent": "+1.19%",
-      "pct": 1.19
+      "name": "대한제강",
+      "price": "9,450",
+      "change_percent": "+21.31%",
+      "pct": 21.31
     },
     {
-      "name": "한국무브넥스",
-      "price": "3,425",
-      "change_percent": "+0.44%",
-      "pct": 0.44
+      "name": "부산주공",
+      "price": "50",
+      "change_percent": "+13.64%",
+      "pct": 13.64
     },
     {
-      "name": "효성ITX",
-      "price": "11,890",
-      "change_percent": "+0.08%",
-      "pct": 0.08
+      "name": "디아이",
+      "price": "40,750",
+      "change_percent": "+11.04%",
+      "pct": 11.04
+    },
+    {
+      "name": "동국제강",
+      "price": "10,510",
+      "change_percent": "+11.22%",
+      "pct": 11.22
+    },
+    {
+      "name": "드림텍",
+      "price": "8,710",
+      "change_percent": "+9.56%",
+      "pct": 9.56
     }
   ],
   "top_losers": [
     {
-      "name": "차AI헬스케어",
-      "price": "4,990",
-      "change_percent": "-1.19%",
-      "pct": 1.19
+      "name": "진양화학",
+      "price": "1,522",
+      "change_percent": "-14.78%",
+      "pct": 14.78
     },
     {
-      "name": "제이에스코퍼레이션",
-      "price": "12,530",
-      "change_percent": "-0.32%",
-      "pct": 0.32
+      "name": "SUN&L",
+      "price": "982",
+      "change_percent": "-8.74%",
+      "pct": 8.74
     },
     {
-      "name": "RISE 국고채10년액티브",
-      "price": "97,645",
-      "change_percent": "-0.25%",
-      "pct": 0.25
+      "name": "하나 레버리지 옥수수 선물 ETN(H)",
+      "price": "9,180",
+      "change_percent": "-7.92%",
+      "pct": 7.92
     },
     {
-      "name": "한양증권",
-      "price": "19,200",
-      "change_percent": "-0.05%",
-      "pct": 0.05
+      "name": "하이스틸",
+      "price": "3,600",
+      "change_percent": "-8.16%",
+      "pct": 8.16
+    },
+    {
+      "name": "진흥기업2우B",
+      "price": "10,930",
+      "change_percent": "-7.53%",
+      "pct": 7.53
     }
   ],
   "sector_performance": [
     {
+      "name": "게임엔터테인먼트",
+      "change_value": "+2.50%",
+      "pct": 2.5
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "+2.17%",
+      "pct": 2.17
+    },
+    {
       "name": "레저용장비와제품",
-      "change_value": "+0.37%",
-      "pct": 0.37
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
-      "name": "가정용품",
-      "change_value": "+0.18%",
-      "pct": 0.18
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.02%",
-      "pct": 0.02
+      "name": "제약",
+      "change_value": "+1.47%",
+      "pct": 1.47
     },
     {
       "name": "디스플레이장비및부품",
-      "change_value": "+0.01%",
-      "pct": 0.01
-    },
-    {
-      "name": "건축자재",
-      "change_value": "+0.01%",
-      "pct": 0.01
+      "change_value": "+1.17%",
+      "pct": 1.17
     }
   ],
   "sector_heatmap": [
     {
+      "name": "게임엔터테인먼트",
+      "change_value": "+2.50%",
+      "pct": 2.5
+    },
+    {
+      "name": "자동차부품",
+      "change_value": "+2.17%",
+      "pct": 2.17
+    },
+    {
       "name": "레저용장비와제품",
-      "change_value": "+0.37%",
-      "pct": 0.37
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
-      "name": "가정용품",
-      "change_value": "+0.18%",
-      "pct": 0.18
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.02%",
-      "pct": 0.02
+      "name": "제약",
+      "change_value": "+1.47%",
+      "pct": 1.47
     },
     {
       "name": "디스플레이장비및부품",
-      "change_value": "+0.01%",
-      "pct": 0.01
-    },
-    {
-      "name": "건축자재",
-      "change_value": "+0.01%",
-      "pct": 0.01
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "+0.01%",
-      "pct": 0.01
-    },
-    {
-      "name": "문구류",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "담배",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-0.01%",
-      "pct": -0.01
+      "change_value": "+1.17%",
+      "pct": 1.17
     },
     {
       "name": "상업서비스와공급품",
-      "change_value": "-0.01%",
-      "pct": -0.01
+      "change_value": "+0.95%",
+      "pct": 0.95
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "-0.03%",
-      "pct": -0.03
+      "name": "건강관리기술",
+      "change_value": "-1.50%",
+      "pct": -1.5
+    },
+    {
+      "name": "가정용품",
+      "change_value": "-1.63%",
+      "pct": -1.63
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-1.79%",
+      "pct": -1.79
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "-1.86%",
+      "pct": -1.86
+    },
+    {
+      "name": "전기장비",
+      "change_value": "-2.20%",
+      "pct": -2.2
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "-2.32%",
+      "pct": -2.32
     }
   ],
   "article_counts": {
