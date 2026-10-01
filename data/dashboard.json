@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01 17:01:13",
+  "updated_at": "2026-10-01 17:31:09",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "마이크론의 실적 개선과 반도체 수출 호조로 투자 심리가 회복되면서 코스피와 코스닥 지수가 동반 상승했다. 외국인과 기관의 순매수세가 유입된 가운데 바이오 등 주요 업종이 강세를 보였으며, 특히 코스닥 지수는 최근 61일간 데이터 기준으로 최고치를 기록했다."
+      "text": "미국 반도체 기업 마이크론의 실적 호조로 반도체 업종에 대한 투자 심리가 개선되면서 코스피가 반등했다. 외국인과 기관의 매수세가 유입된 코스닥은 바이오 등 주요 종목들의 강세에 힘입어 최근 61일간 데이터 기준 최고치를 기록했다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "대진첨단소재",
+      "corp_code": "01549472",
+      "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
+      "rcept_dt": "20261001",
+      "rcept_no": "20261001000567",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000567",
+      "ai_explanation": "기존에 공시한 회사 합병 결정 내용을 수정하여 다시 알리는 것입니다."
+    },
+    {
       "corp_name": "엔시스",
       "corp_code": "01310773",
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261001",
       "rcept_no": "20261001000515",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000515",
-      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 전환할 수 있는 권리를 부여하는 결정입니다."
+      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 채권을 발행하는 것입니다."
     },
     {
       "corp_name": "코람코가치투자제4호위탁관리모부동산투자회사",
@@ -99,7 +108,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000510",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000510",
-      "ai_explanation": "회사가 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
+      "ai_explanation": "자본금을 줄여 재무구조를 개선하거나 주주에게 자금을 환원하는 것입니다."
     },
     {
       "corp_name": "강남역1307피에프브이",
@@ -108,7 +117,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000507",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000507",
-      "ai_explanation": "회사가 새로운 주식을 발행하여 자본금을 늘리고 외부 자금을 조달하는 결정입니다."
+      "ai_explanation": "회사가 신주를 발행하여 주주나 제3자로부터 자금을 조달하는 것입니다."
     },
     {
       "corp_name": "솔브레인홀딩스",
@@ -117,7 +126,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000489",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000489",
-      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지거나 다른 회사에 흡수되는 결정입니다."
+      "ai_explanation": "두 개 이상의 회사를 하나로 합치기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "에스제이그룹",
@@ -126,7 +135,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000479",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000479",
-      "ai_explanation": "회사가 자기 회사 주식을 사들이기 위해 신탁 기관과 계약을 맺는 결정입니다."
+      "ai_explanation": "주가 안정 등을 위해 신탁 계약을 통해 자사주를 사들이는 것입니다."
     },
     {
       "corp_name": "엑스플러스",
@@ -135,7 +144,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000451",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000451",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "삼성바이오로직스",
@@ -144,7 +153,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000449",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000449",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "에스케이에어플러스",
@@ -153,7 +162,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000458",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000458",
-      "ai_explanation": "토지, 건물, 기계 등 장기간 사용할 목적의 자산을 사들이는 결정입니다."
+      "ai_explanation": "토지, 건물, 기계 등 장기 보유 목적의 자산을 사들이는 것입니다."
     },
     {
       "corp_name": "프리티",
@@ -162,7 +171,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000450",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000450",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "쏘카",
@@ -171,7 +180,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000418",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000418",
-      "ai_explanation": "회사가 자기 회사 주식을 사들이기 위해 신탁 기관과 계약을 맺는 결정입니다."
+      "ai_explanation": "주가 안정 등을 위해 신탁 계약을 통해 자사주를 사들이는 것입니다."
     },
     {
       "corp_name": "강남역1307피에프브이",
@@ -180,7 +189,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000440",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000440",
-      "ai_explanation": "토지, 건물, 기계 등 장기간 사용할 목적의 자산을 사들이는 결정입니다."
+      "ai_explanation": "토지, 건물, 기계 등 장기 보유 목적의 자산을 사들이는 것입니다."
     },
     {
       "corp_name": "하나증권",
@@ -189,7 +198,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000407",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000407",
-      "ai_explanation": "자본으로 인정받는 채권을 발행하기로 한 기존 결정 내용을 수정하는 공시입니다."
+      "ai_explanation": "자본으로 인정되는 채무증권 발행 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "다보링크",
@@ -198,7 +207,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000364",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000364",
-      "ai_explanation": "회사가 새로운 주식을 발행하여 자본금을 늘리고 외부 자금을 조달하는 결정입니다."
+      "ai_explanation": "회사가 신주를 발행하여 주주나 제3자로부터 자금을 조달하는 것입니다."
     },
     {
       "corp_name": "케이쓰리아이",
@@ -207,7 +216,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000359",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000359",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "S&K폴리텍",
@@ -216,7 +225,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000382",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000382",
-      "ai_explanation": "기존에 공시한 회사 합병 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 회사 합병 결정 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -225,7 +234,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000354",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000354",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "금양",
@@ -234,7 +243,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000328",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000328",
-      "ai_explanation": "회사의 사업부를 떼어내어 별도 법인을 설립하거나 분리하는 결정입니다."
+      "ai_explanation": "기존에 공시한 회사 분할 결정 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "GST",
@@ -243,7 +252,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000344",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000344",
-      "ai_explanation": "회사가 보유하고 있던 자기 회사 주식을 시장에 내다 파는 결정입니다."
+      "ai_explanation": "보유 중인 자사주를 시장에 내다 팔기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "퍼시픽산업",
@@ -252,7 +261,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000357",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000357",
-      "ai_explanation": "회사의 사업 부문이나 영업권을 통째로 다른 회사에 넘겨받는 결정입니다."
+      "ai_explanation": "회사의 사업 부문이나 영업권을 다른 기업에 넘기기로 결정한 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -261,7 +270,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000343",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000343",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "퍼시픽산업",
@@ -270,7 +279,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000355",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000355",
-      "ai_explanation": "토지, 건물, 기계 등 장기간 사용할 목적의 자산을 사들이는 결정입니다."
+      "ai_explanation": "토지, 건물, 기계 등 장기 보유 목적의 자산을 사들이는 것입니다."
     },
     {
       "corp_name": "다보링크",
@@ -279,7 +288,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000339",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000339",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "NH농우바이오",
@@ -288,7 +297,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000311",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000311",
-      "ai_explanation": "영업 양수와 관련된 기존 공시 내용 중 첨부 서류를 보완하는 것입니다."
+      "ai_explanation": "기존에 공시한 영업 양수 내용에 첨부 서류를 보완한 것입니다."
     },
     {
       "corp_name": "명성라이픽스",
@@ -297,7 +306,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000279",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000279",
-      "ai_explanation": "다른 회사의 주식을 사들여 지분을 확보하거나 경영에 참여하는 결정입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권이나 투자를 확보하는 것입니다."
     },
     {
       "corp_name": "KS인더스트리",
@@ -306,7 +315,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000226",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000226",
-      "ai_explanation": "회사와 관련된 소송이 제기되었음을 알리거나 기존 소송 내용을 수정하는 공시입니다."
+      "ai_explanation": "소송이 제기된 사실에 대해 기존 공시 내용을 수정하여 알리는 것입니다."
     },
     {
       "corp_name": "쏘카",
@@ -315,7 +324,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000162",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000162",
-      "ai_explanation": "기존에 체결했던 자기주식 취득 신탁 계약을 중도에 종료하는 결정입니다."
+      "ai_explanation": "주가 안정 등을 위해 맺었던 자사주 취득 신탁 계약을 끝내는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -324,7 +333,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000144",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000144",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "MH에탄올",
@@ -333,7 +342,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000135",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000135",
-      "ai_explanation": "회사가 이익잉여금 등을 활용해 주주에게 주식을 무상으로 나눠주는 결정입니다."
+      "ai_explanation": "주주에게 무상으로 신주를 나누어 주어 자본금을 늘리는 것입니다."
     },
     {
       "corp_name": "성광벤드",
@@ -342,7 +351,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000062",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000062",
-      "ai_explanation": "회사가 자기 회사 주식을 사들이기 위해 신탁 기관과 계약을 맺는 결정입니다."
+      "ai_explanation": "주가 안정 등을 위해 신탁 계약을 통해 자사주를 사들이는 것입니다."
     },
     {
       "corp_name": "농협하나로유통",
@@ -351,7 +360,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000047",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000047",
-      "ai_explanation": "두 개 이상의 회사가 하나로 합쳐지거나 다른 회사에 흡수되는 결정입니다."
+      "ai_explanation": "두 개 이상의 회사를 하나로 합치기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "에이전트AI",
@@ -360,7 +369,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000008",
-      "ai_explanation": "회사가 보유한 자기 전환사채를 제3자에게 매도하기로 한 내용을 수정하는 공시입니다."
+      "ai_explanation": "회사가 보유한 자기 전환사채를 매도하기로 결정한 내용을 수정하는 것입니다."
     },
     {
       "corp_name": "청보",
@@ -369,7 +378,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000878",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000878",
-      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 전환할 수 있는 권리를 부여하는 결정입니다."
+      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 채권을 발행하는 것입니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -378,7 +387,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000870",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000870",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부 항목을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 세부 사항을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "씨피시스템",
@@ -387,7 +396,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000872",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000872",
-      "ai_explanation": "토지, 건물 등 유형의 자산을 돈을 주고 사들이기로 한 내용을 수정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 건물이나 설비 등 유형자산 매입 내용을 수정하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3234,27 +3243,27 @@
   "top_gainers": [
     {
       "name": "대한제강",
-      "price": "9,080",
-      "change_percent": "+16.56%",
-      "pct": 16.56
+      "price": "9,060",
+      "change_percent": "+16.30%",
+      "pct": 16.3
     },
     {
       "name": "드림텍",
-      "price": "9,090",
-      "change_percent": "+14.34%",
-      "pct": 14.34
-    },
-    {
-      "name": "솔루엠",
-      "price": "15,220",
-      "change_percent": "+13.50%",
-      "pct": 13.5
+      "price": "9,100",
+      "change_percent": "+14.47%",
+      "pct": 14.47
     },
     {
       "name": "디아이",
-      "price": "41,400",
-      "change_percent": "+12.81%",
-      "pct": 12.81
+      "price": "41,650",
+      "change_percent": "+13.49%",
+      "pct": 13.49
+    },
+    {
+      "name": "솔루엠",
+      "price": "15,190",
+      "change_percent": "+13.27%",
+      "pct": 13.27
     },
     {
       "name": "하나 레버리지 코스닥150 선물 ETN",
@@ -3266,15 +3275,15 @@
   "top_losers": [
     {
       "name": "대양금속",
-      "price": "690",
-      "change_percent": "-13.75%",
-      "pct": 13.75
+      "price": "684",
+      "change_percent": "-14.50%",
+      "pct": 14.5
     },
     {
       "name": "진양화학",
-      "price": "1,570",
-      "change_percent": "-12.09%",
-      "pct": 12.09
+      "price": "1,545",
+      "change_percent": "-13.49%",
+      "pct": 13.49
     },
     {
       "name": "N2 인버스 2X 코스닥150 선물 ETN",
@@ -3298,18 +3307,18 @@
   "sector_performance": [
     {
       "name": "생물공학",
-      "change_value": "+5.37%",
-      "pct": 5.37
+      "change_value": "+5.39%",
+      "pct": 5.39
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+5.30%",
-      "pct": 5.3
+      "change_value": "+5.26%",
+      "pct": 5.26
     },
     {
       "name": "판매업체",
-      "change_value": "+4.35%",
-      "pct": 4.35
+      "change_value": "+4.16%",
+      "pct": 4.16
     },
     {
       "name": "디스플레이장비및부품",
@@ -3317,26 +3326,26 @@
       "pct": 3.4
     },
     {
-      "name": "제약",
-      "change_value": "+3.36%",
-      "pct": 3.36
+      "name": "게임엔터테인먼트",
+      "change_value": "+3.33%",
+      "pct": 3.33
     }
   ],
   "sector_heatmap": [
     {
       "name": "생물공학",
-      "change_value": "+5.37%",
-      "pct": 5.37
+      "change_value": "+5.39%",
+      "pct": 5.39
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+5.30%",
-      "pct": 5.3
+      "change_value": "+5.26%",
+      "pct": 5.26
     },
     {
       "name": "판매업체",
-      "change_value": "+4.35%",
-      "pct": 4.35
+      "change_value": "+4.16%",
+      "pct": 4.16
     },
     {
       "name": "디스플레이장비및부품",
@@ -3344,44 +3353,44 @@
       "pct": 3.4
     },
     {
-      "name": "제약",
-      "change_value": "+3.36%",
-      "pct": 3.36
+      "name": "게임엔터테인먼트",
+      "change_value": "+3.33%",
+      "pct": 3.33
     },
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+3.36%",
-      "pct": 3.36
+      "name": "제약",
+      "change_value": "+3.26%",
+      "pct": 3.26
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "-1.26%",
-      "pct": -1.26
-    },
-    {
-      "name": "항공사",
-      "change_value": "-1.49%",
-      "pct": -1.49
+      "change_value": "-1.31%",
+      "pct": -1.31
     },
     {
       "name": "은행",
-      "change_value": "-1.50%",
-      "pct": -1.5
+      "change_value": "-1.46%",
+      "pct": -1.46
+    },
+    {
+      "name": "항공사",
+      "change_value": "-1.88%",
+      "pct": -1.88
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "-2.10%",
-      "pct": -2.1
+      "change_value": "-2.20%",
+      "pct": -2.2
     },
     {
       "name": "석유와가스",
-      "change_value": "-3.49%",
-      "pct": -3.49
+      "change_value": "-3.36%",
+      "pct": -3.36
     },
     {
       "name": "가정용품",
-      "change_value": "-3.73%",
-      "pct": -3.73
+      "change_value": "-4.30%",
+      "pct": -4.3
     }
   ],
   "article_counts": {
