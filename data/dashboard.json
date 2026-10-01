@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-01 10:31:52",
+  "updated_at": "2026-10-01 11:01:08",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": -0.19,
-    "kosdaq_change": 2.37,
-    "kospi_value": 6824.96,
-    "kosdaq_value": 876.17
+    "kospi_change": -0.23,
+    "kosdaq_change": 2.67,
+    "kospi_value": 6822.16,
+    "kosdaq_value": 878.73
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "대구 신규 주택사업 승인 보류 해제 및 지역별 개발 추진"
+    },
+    {
+      "category": "증권",
+      "text": "코스피는 반도체 대형주가 보합세를 보이며 약보합 마감했으나, 코스닥은 반도체 소부장 종목과 일부 개별주가 강세를 보이면서 최근 61일간 데이터 기준 최고치를 기록했다. 코스닥의 상승세는 엔씨소프트와 같은 게임주의 급등과 반도체 장비 및 관련 부품주의 동반 상승이 견인했다."
     }
   ],
   "daily_term": {
@@ -81,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "성광벤드",
+      "corp_code": "00132318",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261001",
+      "rcept_no": "20261001000062",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000062",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 신탁 방식으로 매입하기로 결정한 것입니다."
+    },
+    {
       "corp_name": "농협하나로유통",
       "corp_code": "01065040",
       "report_nm": "회사합병결정",
       "rcept_dt": "20261001",
       "rcept_no": "20261001000047",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000047",
-      "ai_explanation": "두 회사가 하나로 합쳐지거나 다른 회사를 인수하여 조직을 통합한다는 결정입니다."
+      "ai_explanation": "기업 간의 결합을 통해 경영 효율성을 높이거나 사업을 확장하기 위해 회사를 합병하는 것입니다."
     },
     {
       "corp_name": "에이전트AI",
@@ -96,7 +109,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20261001000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000008",
-      "ai_explanation": "회사가 보유한 자기 전환사채를 제3자에게 매도하기로 한 내용을 정정하여 공시한 것입니다."
+      "ai_explanation": "회사가 보유 중인 자사 전환사채를 제3자에게 매각하기로 한 기존 결정 사항을 정정한 것입니다."
     },
     {
       "corp_name": "청보",
@@ -105,7 +118,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000878",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000878",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환할 수 있는 권리가 부여된 채권을 발행한다는 결정입니다."
+      "ai_explanation": "회사가 운영 자금 조달 등을 목적으로 향후 주식으로 전환 가능한 채권을 발행하기로 한 것입니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -114,7 +127,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000870",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000870",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하기로 한 기존 계획의 내용을 수정하여 공시한 것입니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하기로 한 기존 결정 사항의 내용을 정정한 것입니다."
     },
     {
       "corp_name": "씨피시스템",
@@ -123,7 +136,7 @@
       "rcept_dt": "20261001",
       "rcept_no": "20260930000872",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000872",
-      "ai_explanation": "회사가 건물이나 토지 등 유형자산을 사들이기로 한 기존 계획의 내용을 수정하여 공시한 것입니다."
+      "ai_explanation": "회사가 업무용 건물이나 토지 등 고정 자산을 매입하기로 한 기존 결정 사항을 정정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3010,154 +3023,154 @@
   "top_gainers": [
     {
       "name": "대한제강",
-      "price": "9,530",
-      "change_percent": "+22.34%",
-      "pct": 22.34
+      "price": "9,570",
+      "change_percent": "+22.85%",
+      "pct": 22.85
+    },
+    {
+      "name": "부산주공",
+      "price": "51",
+      "change_percent": "+15.91%",
+      "pct": 15.91
     },
     {
       "name": "드림텍",
-      "price": "9,050",
-      "change_percent": "+13.84%",
-      "pct": 13.84
+      "price": "9,070",
+      "change_percent": "+14.09%",
+      "pct": 14.09
     },
     {
       "name": "NC",
-      "price": "235,000",
-      "change_percent": "+12.44%",
-      "pct": 12.44
+      "price": "233,000",
+      "change_percent": "+11.48%",
+      "pct": 11.48
     },
     {
-      "name": "하나 인버스 2X 옥수수 선물 ETN(H)",
-      "price": "22,765",
-      "change_percent": "+8.40%",
-      "pct": 8.4
-    },
-    {
-      "name": "미래에셋 인버스 2X 옥수수 선물 ETN",
-      "price": "26,240",
-      "change_percent": "+8.32%",
-      "pct": 8.32
+      "name": "삼성에피스홀딩스",
+      "price": "374,500",
+      "change_percent": "+8.24%",
+      "pct": 8.24
     }
   ],
   "top_losers": [
     {
-      "name": "진양화학",
-      "price": "1,503",
-      "change_percent": "-15.85%",
-      "pct": 15.85
+      "name": "대양금속",
+      "price": "581",
+      "change_percent": "-27.37%",
+      "pct": 27.37
     },
     {
-      "name": "대양금속",
-      "price": "677",
-      "change_percent": "-15.37%",
-      "pct": 15.37
+      "name": "진양화학",
+      "price": "1,500",
+      "change_percent": "-16.01%",
+      "pct": 16.01
     },
     {
       "name": "SUN&L",
-      "price": "937",
-      "change_percent": "-12.92%",
-      "pct": 12.92
-    },
-    {
-      "name": "진흥기업2우B",
-      "price": "10,810",
-      "change_percent": "-8.54%",
-      "pct": 8.54
+      "price": "915",
+      "change_percent": "-14.96%",
+      "pct": 14.96
     },
     {
       "name": "하이스틸",
-      "price": "3,555",
-      "change_percent": "-9.31%",
-      "pct": 9.31
+      "price": "3,550",
+      "change_percent": "-9.44%",
+      "pct": 9.44
+    },
+    {
+      "name": "진흥기업2우B",
+      "price": "10,760",
+      "change_percent": "-8.97%",
+      "pct": 8.97
     }
   ],
   "sector_performance": [
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+4.08%",
-      "pct": 4.08
+      "name": "생명과학도구및서비스",
+      "change_value": "+5.33%",
+      "pct": 5.33
     },
     {
       "name": "생물공학",
-      "change_value": "+3.86%",
-      "pct": 3.86
+      "change_value": "+4.53%",
+      "pct": 4.53
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+3.43%",
-      "pct": 3.43
+      "name": "게임엔터테인먼트",
+      "change_value": "+4.00%",
+      "pct": 4.0
     },
     {
       "name": "제약",
-      "change_value": "+3.02%",
-      "pct": 3.02
+      "change_value": "+3.78%",
+      "pct": 3.78
     },
     {
       "name": "디스플레이장비및부품",
-      "change_value": "+2.42%",
-      "pct": 2.42
+      "change_value": "+2.52%",
+      "pct": 2.52
     }
   ],
   "sector_heatmap": [
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+4.08%",
-      "pct": 4.08
+      "name": "생명과학도구및서비스",
+      "change_value": "+5.33%",
+      "pct": 5.33
     },
     {
       "name": "생물공학",
-      "change_value": "+3.86%",
-      "pct": 3.86
+      "change_value": "+4.53%",
+      "pct": 4.53
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+3.43%",
-      "pct": 3.43
+      "name": "게임엔터테인먼트",
+      "change_value": "+4.00%",
+      "pct": 4.0
     },
     {
       "name": "제약",
-      "change_value": "+3.02%",
-      "pct": 3.02
+      "change_value": "+3.78%",
+      "pct": 3.78
     },
     {
       "name": "디스플레이장비및부품",
-      "change_value": "+2.42%",
-      "pct": 2.42
+      "change_value": "+2.52%",
+      "pct": 2.52
     },
     {
-      "name": "자동차부품",
-      "change_value": "+2.04%",
-      "pct": 2.04
+      "name": "건강관리업체및서비스",
+      "change_value": "+2.12%",
+      "pct": 2.12
     },
     {
-      "name": "가정용품",
-      "change_value": "-1.70%",
-      "pct": -1.7
+      "name": "항공사",
+      "change_value": "-1.55%",
+      "pct": -1.55
     },
     {
       "name": "은행",
-      "change_value": "-1.86%",
-      "pct": -1.86
+      "change_value": "-1.66%",
+      "pct": -1.66
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "-1.87%",
-      "pct": -1.87
+      "name": "생명보험",
+      "change_value": "-1.68%",
+      "pct": -1.68
     },
     {
       "name": "전자제품",
-      "change_value": "-2.01%",
-      "pct": -2.01
+      "change_value": "-2.24%",
+      "pct": -2.24
     },
     {
       "name": "석유와가스",
-      "change_value": "-2.38%",
-      "pct": -2.38
+      "change_value": "-2.41%",
+      "pct": -2.41
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "-2.45%",
-      "pct": -2.45
+      "change_value": "-2.41%",
+      "pct": -2.41
     }
   ],
   "article_counts": {
