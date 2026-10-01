@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-02 07:58:35",
+  "updated_at": "2026-10-02 08:15:45",
   "market_mood": {
-    "label": "급등",
-    "emoji": "🟢",
-    "kospi_change": 1.95,
-    "kosdaq_change": 4.48,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6971.35,
     "kosdaq_value": 894.29
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "분당 재건축 호가 상승 및 용인 반도체 단지 착공"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시가 국채 금리 하락에 힘입어 일제히 상승 마감한 영향이 국내 증시에 긍정적으로 작용했다. 특히 마이크론의 실적 호조에 따른 반도체 업종의 강세가 지수 상승을 견인했으며, 코스닥 지수는 최근 62일간 데이터 기준 최고치를 기록했다."
     }
   ],
   "daily_term": {
@@ -2917,157 +2913,95 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "디아이",
-      "price": "42,500",
-      "change_percent": "+15.80%",
-      "pct": 15.8
-    },
-    {
-      "name": "솔루엠",
-      "price": "15,380",
-      "change_percent": "+14.69%",
-      "pct": 14.69
-    },
-    {
-      "name": "드림텍",
-      "price": "9,100",
-      "change_percent": "+14.47%",
-      "pct": 14.47
-    },
-    {
-      "name": "대한제강",
-      "price": "8,900",
-      "change_percent": "+14.25%",
-      "pct": 14.25
-    },
-    {
-      "name": "MH에탄올",
-      "price": "4,530",
-      "change_percent": "+13.82%",
-      "pct": 13.82
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "진양화학",
-      "price": "1,540",
-      "change_percent": "-13.77%",
-      "pct": 13.77
-    },
-    {
-      "name": "대양금속",
-      "price": "692",
-      "change_percent": "-13.50%",
-      "pct": 13.5
-    },
-    {
-      "name": "N2 인버스 2X 코스닥150 선물 ETN",
-      "price": "5,300",
-      "change_percent": "-11.89%",
-      "pct": 11.89
-    },
-    {
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1,449",
-      "change_percent": "-11.86%",
-      "pct": 11.86
-    },
-    {
-      "name": "신한 인버스 2X 코스닥 150 선물 ETN",
-      "price": "1,474",
-      "change_percent": "-11.58%",
-      "pct": 11.58
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "생물공학",
-      "change_value": "+5.87%",
-      "pct": 5.87
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+5.38%",
-      "pct": 5.38
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "판매업체",
-      "change_value": "+4.15%",
-      "pct": 4.15
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "디스플레이장비및부품",
-      "change_value": "+3.82%",
-      "pct": 3.82
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "제약",
-      "change_value": "+3.61%",
-      "pct": 3.61
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
       "name": "생물공학",
-      "change_value": "+5.87%",
-      "pct": 5.87
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+5.38%",
-      "pct": 5.38
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "판매업체",
-      "change_value": "+4.15%",
-      "pct": 4.15
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "디스플레이장비및부품",
-      "change_value": "+3.82%",
-      "pct": 3.82
-    },
-    {
-      "name": "제약",
-      "change_value": "+3.61%",
-      "pct": 3.61
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+3.52%",
-      "pct": 3.52
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "-1.14%",
-      "pct": -1.14
-    },
-    {
-      "name": "은행",
-      "change_value": "-1.23%",
-      "pct": -1.23
-    },
-    {
-      "name": "항공사",
-      "change_value": "-1.68%",
-      "pct": -1.68
-    },
-    {
-      "name": "무역회사와판매업체",
-      "change_value": "-1.87%",
-      "pct": -1.87
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-3.14%",
-      "pct": -3.14
-    },
-    {
-      "name": "가정용품",
-      "change_value": "-4.31%",
-      "pct": -4.31
+      "name": "건강관리장비와용품",
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
