@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-02 11:46:12",
+  "updated_at": "2026-10-02 12:02:40",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.01,
-    "kosdaq_change": -0.03,
-    "kospi_value": 6970.81,
-    "kosdaq_value": 894.0
+    "kospi_change": 0.25,
+    "kosdaq_change": 0.08,
+    "kospi_value": 6989.01,
+    "kosdaq_value": 894.98
   },
   "heroes": {
     "종합": {
@@ -84,7 +84,7 @@
       "rcept_dt": "20261002",
       "rcept_no": "20261002000047",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000047",
-      "ai_explanation": "다른 회사와 주식을 교환하거나 이전하여 경영 결합 또는 지분 구조를 변경하는 결정입니다."
+      "ai_explanation": "회사가 다른 회사와 주식을 서로 교환하거나 이전하여 경영 통합 등을 추진한다는 결정입니다."
     },
     {
       "corp_name": "비욘드바이오",
@@ -93,7 +93,7 @@
       "rcept_dt": "20261002",
       "rcept_no": "20261002000034",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000034",
-      "ai_explanation": "기존에 공시한 유상증자(주식 발행을 통한 자금 조달) 내용의 일부를 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자(자금 조달을 위한 신주 발행) 내용 중 일부를 수정하거나 보완했다는 뜻입니다."
     },
     {
       "corp_name": "대신제54호일반사모모투자회사",
@@ -102,7 +102,7 @@
       "rcept_dt": "20261002",
       "rcept_no": "20261002000029",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000029",
-      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 줄이거나 주식 액면가를 낮추는 결정입니다."
+      "ai_explanation": "자본금을 줄이기 위해 발행 주식 수를 감소시키거나 주식 액면가를 낮추기로 결정했다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2955,27 +2955,27 @@
     },
     {
       "name": "롯데에너지머티리얼즈",
-      "price": "50,200",
-      "change_percent": "+16.88%",
-      "pct": 16.88
+      "price": "50,500",
+      "change_percent": "+17.58%",
+      "pct": 17.58
+    },
+    {
+      "name": "솔루엠",
+      "price": "17,200",
+      "change_percent": "+11.47%",
+      "pct": 11.47
     },
     {
       "name": "S-Oil",
-      "price": "163,200",
-      "change_percent": "+9.68%",
-      "pct": 9.68
+      "price": "163,000",
+      "change_percent": "+9.54%",
+      "pct": 9.54
     },
     {
-      "name": "금호전기",
-      "price": "10,350",
-      "change_percent": "+9.52%",
-      "pct": 9.52
-    },
-    {
-      "name": "S-Oil우",
-      "price": "87,700",
-      "change_percent": "+8.81%",
-      "pct": 8.81
+      "name": "한투 레버리지WTI원유선물 ETN B",
+      "price": "55,600",
+      "change_percent": "+9.01%",
+      "pct": 9.01
     }
   ],
   "top_losers": [
@@ -2986,117 +2986,117 @@
       "pct": 91.63
     },
     {
-      "name": "SH에너지화학",
-      "price": "3,055",
-      "change_percent": "-15.61%",
-      "pct": 15.61
-    },
-    {
       "name": "부산주공",
       "price": "31",
       "change_percent": "-22.50%",
       "pct": 22.5
     },
     {
-      "name": "에이엔피",
-      "price": "214",
-      "change_percent": "-11.57%",
-      "pct": 11.57
+      "name": "SH에너지화학",
+      "price": "3,085",
+      "change_percent": "-14.78%",
+      "pct": 14.78
     },
     {
-      "name": "한국화장품제조",
-      "price": "15,280",
-      "change_percent": "-9.75%",
-      "pct": 9.75
+      "name": "에이엔피",
+      "price": "215",
+      "change_percent": "-11.16%",
+      "pct": 11.16
+    },
+    {
+      "name": "이월드",
+      "price": "2,400",
+      "change_percent": "-9.77%",
+      "pct": 9.77
     }
   ],
   "sector_performance": [
     {
       "name": "통신장비",
-      "change_value": "+3.78%",
-      "pct": 3.78
+      "change_value": "+3.73%",
+      "pct": 3.73
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.03%",
-      "pct": 3.03
+      "change_value": "+2.88%",
+      "pct": 2.88
     },
     {
       "name": "컴퓨터와주변기기",
-      "change_value": "+2.80%",
-      "pct": 2.8
+      "change_value": "+2.63%",
+      "pct": 2.63
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+2.39%",
-      "pct": 2.39
+      "change_value": "+2.59%",
+      "pct": 2.59
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+2.28%",
-      "pct": 2.28
+      "change_value": "+2.32%",
+      "pct": 2.32
     }
   ],
   "sector_heatmap": [
     {
       "name": "통신장비",
-      "change_value": "+3.78%",
-      "pct": 3.78
+      "change_value": "+3.73%",
+      "pct": 3.73
     },
     {
       "name": "석유와가스",
-      "change_value": "+3.03%",
-      "pct": 3.03
+      "change_value": "+2.88%",
+      "pct": 2.88
     },
     {
       "name": "컴퓨터와주변기기",
-      "change_value": "+2.80%",
-      "pct": 2.8
+      "change_value": "+2.63%",
+      "pct": 2.63
     },
     {
       "name": "우주항공과국방",
-      "change_value": "+2.39%",
-      "pct": 2.39
+      "change_value": "+2.59%",
+      "pct": 2.59
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+2.28%",
-      "pct": 2.28
+      "change_value": "+2.32%",
+      "pct": 2.32
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "+2.19%",
-      "pct": 2.19
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "-1.61%",
-      "pct": -1.61
-    },
-    {
-      "name": "제약",
-      "change_value": "-1.90%",
-      "pct": -1.9
+      "change_value": "+2.06%",
+      "pct": 2.06
     },
     {
       "name": "화장품",
-      "change_value": "-2.03%",
-      "pct": -2.03
+      "change_value": "-1.59%",
+      "pct": -1.59
     },
     {
-      "name": "항공사",
-      "change_value": "-2.45%",
-      "pct": -2.45
+      "name": "생명과학도구및서비스",
+      "change_value": "-1.69%",
+      "pct": -1.69
+    },
+    {
+      "name": "제약",
+      "change_value": "-1.78%",
+      "pct": -1.78
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-2.55%",
-      "pct": -2.55
+      "change_value": "-2.00%",
+      "pct": -2.0
+    },
+    {
+      "name": "항공사",
+      "change_value": "-2.43%",
+      "pct": -2.43
     },
     {
       "name": "생물공학",
-      "change_value": "-2.67%",
-      "pct": -2.67
+      "change_value": "-2.52%",
+      "pct": -2.52
     }
   ],
   "article_counts": {
