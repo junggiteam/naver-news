@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 23:30:55",
+  "updated_at": "2026-10-06 00:01:10",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -79,7 +79,17 @@
     "아파트 거래 위축",
     "국내 증시 변동성"
   ],
-  "dart_filings": [],
+  "dart_filings": [
+    {
+      "corp_name": "성호전자",
+      "corp_code": "00317210",
+      "report_nm": "[첨부정정]주요사항보고서(신주인수권부사채권발행결정)",
+      "rcept_dt": "20261006",
+      "rcept_no": "20261002000673",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000673",
+      "ai_explanation": "신주인수권부사채(BW)를 발행하기로 한 기존 공시의 내용을 정정하여 다시 보고하는 것입니다."
+    }
+  ],
   "macro_indicators": [
     {
       "class": "시장금리",
@@ -3098,13 +3108,13 @@
     "종합": 392,
     "경제": 30,
     "부동산": 30,
-    "증권": 63
+    "증권": 59
   },
   "article_count_trend": {
     "종합": {
       "today": 392,
-      "yesterday": 394,
-      "change_pct": -0.5,
+      "yesterday": 392,
+      "change_pct": 0.0,
       "surge": false
     },
     "경제": {
@@ -3120,9 +3130,9 @@
       "surge": false
     },
     "증권": {
-      "today": 63,
-      "yesterday": 56,
-      "change_pct": 12.5,
+      "today": 59,
+      "yesterday": 63,
+      "change_pct": -6.3,
       "surge": false
     }
   }
