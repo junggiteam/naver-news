@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 22:15:50",
+  "updated_at": "2026-10-05 22:30:49",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "51,176.96",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-10-05 09:15:39"
+      "value": "51,096.94",
+      "change_percent": "▼0.16%",
+      "direction": "down",
+      "as_of": "2026-10-05 09:30:39"
     },
     {
       "name": "나스닥",
-      "value": "27,190.86",
-      "change_percent": "▲0.00%",
+      "value": "27,232.20",
+      "change_percent": "▲0.15%",
       "direction": "up",
-      "as_of": "2026-10-05 09:15:40"
+      "as_of": "2026-10-05 09:30:40"
     },
     {
       "name": "나스닥100",
-      "value": "30,807.93",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-10-05 09:15:41"
+      "value": "30,806.53",
+      "change_percent": "▼0.01%",
+      "direction": "down",
+      "as_of": "2026-10-05 09:30:40"
     },
     {
       "name": "S&P500",
-      "value": "7,722.72",
-      "change_percent": "▲0.00%",
+      "value": "7,728.50",
+      "change_percent": "▲0.07%",
       "direction": "up",
-      "as_of": "2026-10-05 09:15:41"
+      "as_of": "2026-10-05 09:30:39"
     },
     {
       "name": "국내금(원/돈)",
@@ -69,21 +69,21 @@
       "value": "1,344.70",
       "change_percent": "▼1.09%",
       "direction": "down",
-      "as_of": "2026-10-05 22:11:44"
+      "as_of": "2026-10-05 22:29:13"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "849.60",
+      "value": "849.54",
       "change_percent": "▼1.23%",
       "direction": "down",
-      "as_of": "2026-10-05 22:11:44"
+      "as_of": "2026-10-05 22:29:13"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,506.60",
-      "change_percent": "▼1.44%",
+      "value": "1,506.20",
+      "change_percent": "▼1.46%",
       "direction": "down",
-      "as_of": "2026-10-05 22:11:44"
+      "as_of": "2026-10-05 22:29:13"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "89.57",
-      "change_percent": "▼1.69%",
+      "value": "89.21",
+      "change_percent": "▼2.09%",
       "direction": "down",
-      "as_of": "2026-10-05 08:04:49"
+      "as_of": "2026-10-05 08:19:51"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "116,454,000",
-      "change_percent": "▼0.35%",
+      "value": "116,133,000",
+      "change_percent": "▼0.63%",
       "direction": "down",
-      "as_of": "2026-10-05 22:15:49"
+      "as_of": "2026-10-05 22:30:48"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,674,000",
-      "change_percent": "▼0.27%",
+      "value": "3,670,000",
+      "change_percent": "▼0.38%",
       "direction": "down",
-      "as_of": "2026-10-05 22:15:47"
+      "as_of": "2026-10-05 22:30:44"
     }
   ],
   "news_categories": [
@@ -140,8 +140,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "파이낸셜뉴스",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "‘한국형 베어허그’ 입법 본격화…11월 정무위 소위 목표, 금융위와 세부기준 조율",
+          "link": "https://n.news.naver.com/mnews/article/009/0005744198?sid=101258401",
+          "upload_time": "20261005221709",
+          "published_at": "2026-10-05T22:17:09+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 2,
+          "title": "삼닉 레버리지 ‘20좌 미만’ 단주 출구 마련",
+          "link": "https://n.news.naver.com/mnews/article/009/0005744197?sid=101258401",
+          "upload_time": "20261005221609",
+          "published_at": "2026-10-05T22:16:09+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 3,
           "title": "정유·해운 웃고... 화학·전자 울고",
           "link": "https://n.news.naver.com/mnews/article/014/0005585089?sid=101258401",
           "upload_time": "20261005183712",
@@ -149,7 +165,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 4,
           "title": "日 라피더스, 삼성처럼 동맹 구축 [한경 프리미엄9 TODAY]",
           "link": "https://n.news.naver.com/mnews/article/015/0005339304?sid=101258401",
           "upload_time": "20261005183616",
@@ -157,7 +173,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 5,
           "title": "[투자의 창] 숨 고른 원·달러 환율, 다시 오를까",
           "link": "https://n.news.naver.com/mnews/article/011/0004668273?sid=101258401",
           "upload_time": "20261005174708",
@@ -165,7 +181,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 4,
+          "rank": 6,
           "title": "코스닥 리포트 다시 줄고 쏠림 심화…외면받는 ‘스몰캡’",
           "link": "https://n.news.naver.com/mnews/article/011/0004668268?sid=101258401",
           "upload_time": "20261005174108",
@@ -173,7 +189,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 7,
           "title": "리밸런싱 앞둔 반도체 ETF, 소부장에 수급 몰린다",
           "link": "https://n.news.naver.com/mnews/article/011/0004668267?sid=101258401",
           "upload_time": "20261005174014",
@@ -181,7 +197,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 6,
+          "rank": 8,
           "title": "은행권 해킹 사태에 주목받는 국내 보안株",
           "link": "https://n.news.naver.com/mnews/article/009/0005744074?sid=101258401",
           "upload_time": "20261005165813",
@@ -189,7 +205,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 9,
           "title": "與·금융위 \"다음달 법안심사\"… 보완책 병행 필요",
           "link": "https://n.news.naver.com/mnews/article/009/0005744072?sid=101258401",
           "upload_time": "20261005165808",
@@ -197,7 +213,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 8,
+          "rank": 10,
           "title": "반도체 소부장 랠리 … ETF 출시도 잇따라",
           "link": "https://n.news.naver.com/mnews/article/009/0005744071?sid=101258401",
           "upload_time": "20261005165214",
@@ -205,7 +221,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 9,
+          "rank": 11,
           "title": "삼닉 레버리지 '20좌 미만' 출구 마련",
           "link": "https://n.news.naver.com/mnews/article/009/0005744070?sid=101258401",
           "upload_time": "20261005165212",
@@ -213,7 +229,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 10,
+          "rank": 12,
           "title": "AI株 숨고르기 반사익…美바이오 ETF 순풍",
           "link": "https://n.news.naver.com/mnews/article/009/0005744069?sid=101258401",
           "upload_time": "20261005165209",
@@ -221,7 +237,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 11,
+          "rank": 13,
           "title": "[표] 이번주 증시 캘린더",
           "link": "https://n.news.naver.com/mnews/article/009/0005744066?sid=101258401",
           "upload_time": "20261005164710",
@@ -229,7 +245,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 12,
+          "rank": 14,
           "title": "이 모든걸 다 누린다, 매경플러스",
           "link": "https://n.news.naver.com/mnews/article/009/0005744065?sid=101258401",
           "upload_time": "20261005164706",
@@ -237,27 +253,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 13,
+          "rank": 15,
           "title": "“AI 투자 1~2년 더 이어져…메모리·전력 수혜”",
           "link": "https://n.news.naver.com/mnews/article/011/0004668242?sid=101258401",
           "upload_time": "20261005163411",
           "published_at": "2026-10-05T16:34:11+09:00"
-        },
-        {
-          "press_name": "머니투데이",
-          "rank": 14,
-          "title": "자사주 '버팀목' 빠지는 삼성전자… 100조원대 영업익으로 극복할까?",
-          "link": "https://n.news.naver.com/mnews/article/008/0005422146?sid=101258401",
-          "upload_time": "20261005151736",
-          "published_at": "2026-10-05T15:17:36+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 15,
-          "title": "금융권 잇단 해킹사태에 증권업계도 '긴장'…\"휴일도 비상근무\"(종합)",
-          "link": "https://n.news.naver.com/mnews/article/001/0016357846?sid=101258401",
-          "upload_time": "20261005143629",
-          "published_at": "2026-10-05T14:36:29+09:00"
         }
       ]
     },
