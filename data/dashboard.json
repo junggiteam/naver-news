@@ -1,75 +1,82 @@
 {
-  "updated_at": "2026-10-07 07:31:03",
+  "updated_at": "2026-10-07 08:01:17",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": -0.89,
-    "kosdaq_change": 2.98,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 6941.39,
     "kosdaq_value": 919.92
   },
   "heroes": {
     "종합": {
-      "title": "광주 음식점 메뉴에 5·18 비하 표현 논란…업주 \"몰랐다\"",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/06/16359980.jpg?type=nf70_70",
-      "link": "https://n.news.naver.com/article/001/0016359980?ntype=RANKING",
+      "title": "사우디 공항·정유시설에 후티 공습…韓기업 가까운 지역도 피격(종합)",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/07/16361135.jpg?type=nf70_70",
+      "link": "https://n.news.naver.com/article/001/0016361135?ntype=RANKING",
       "press_name": "연합뉴스"
     },
     "경제": {
-      "title": "“강남에 한달 출장 가세요? 단기임대 숙소에 머물면 체류 비용,  호텔 절반 이하”",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/10/07/4002447.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/023/0004002447",
-      "press_name": "조선일보"
+      "title": "3주 파업 예고한 삼성바이오 노조…생산·수주 불확실성 커진다",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/07/16361196.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016361196",
+      "press_name": "연합뉴스"
     },
     "부동산": {
-      "title": "정부, 농지 특조법 특례 2∼3년 설정·직권 지목 변경 추진(종합)",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/06/16360654.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016360654",
+      "title": "스마트시티 서비스 10개 중 4개 운영차질…국비 환수는 0건",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/07/16361189.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016361189",
       "press_name": "연합뉴스"
     }
   },
   "headlines": [
     {
-      "category": "경제",
-      "text": "정부, 전세사기 피해자 보증금의 최소 3분의 1 보전 방안 마련"
+      "category": "종합",
+      "text": "코스닥 지수가 최근 67일간 최고치를 기록한 가운데 외국인은 1.7조 원을 순매도했다."
+    },
+    {
+      "category": "종합",
+      "text": "버거킹이 유해진 출연 광고를 종료했고 K화장품 짝퉁 및 플랫폼 정보 유출이 논란이다."
+    },
+    {
+      "category": "종합",
+      "text": "독감 유행이 빨라지고 나주 부부 사망 및 연구소 흑사병 의혹 등 사건사고가 잇따랐다."
     },
     {
       "category": "경제",
-      "text": "소부장 및 바이오주 강세로 코스닥 최근 67일간 최고치 기록"
+      "text": "코스닥 지수가 최근 67일간 최고치를 기록하며 900선을 탈환함"
     },
     {
       "category": "경제",
-      "text": "AI 서버 수요 증가와 유조선 부족 등 글로벌 물가 상승 요인 지속"
+      "text": "미국 금리 불확실성과 가계 부채 부담으로 국내 금융시장 변동성 확대"
+    },
+    {
+      "category": "경제",
+      "text": "글로벌 AI 반도체 강세 속 국내 반도체 및 방산 분야 경쟁력 확보 주력"
     },
     {
       "category": "부동산",
-      "text": "전세사기 피해 보증금의 최소 3분의 1을 국가가 보장하는 지원안 마련"
+      "text": "서울 아파트값 86주 연속 상승세 속에 국토부 국감에서 공급 대책 논의"
     },
     {
       "category": "부동산",
-      "text": "서울 아파트 거래량 감소 속 30대 매수 비중 확대 및 줍줍 열기 과열"
+      "text": "분양 물량은 늘었으나 청약자는 줄며 선별 청약 현상이 뚜렷해짐"
     },
     {
       "category": "부동산",
-      "text": "분양가상한제 해제 이후 신규 아파트 분양가가 시세보다 52% 상승"
-    },
-    {
-      "category": "증권",
-      "text": "삼성전자 등 대형주 중심의 외국인 매도세가 이어지며 코스피는 하락했으나, 코스닥은 반도체 소부장과 바이오 업종의 강세에 힘입어 최근 67일간 데이터 기준 최고치를 기록했다. 특히 바이오 관련 기업들의 원료 공급 및 합병 소식이 투자 심리에 영향을 미치며 코스닥 지수가 900선을 회복했다."
+      "text": "서울 주요 지역 집값 상승과 전세난으로 주거지 이동 및 사수 움직임"
     }
   ],
   "daily_term": {
-    "term": "국제 유가",
-    "explanation": "국제 유가는 전 세계에서 거래되는 원유의 가격으로, 우리 생활 속 기름값이나 물가에 직접적인 영향을 주는 경제의 온도계와 같습니다. 마치 식당 주인이 식재료 값이 오르면 음식값을 올리듯, 유가가 오르면 운송비와 생산비가 증가해 우리가 사는 물건들의 가격도 따라 오르게 됩니다. 따라서 유가의 움직임을 살피는 것은 내 지갑의 미래를 예측하는 것과 같습니다."
+    "term": "기준금리",
+    "explanation": "중앙은행이 경제 상황에 맞춰 결정하는 이자율의 기준으로, 시중 모든 대출 금리의 나침반 역할을 합니다. 기준금리가 오르면 은행에서 돈을 빌린 사람들의 이자 부담이 커지고, 반대로 내리면 대출 문턱이 낮아져 돈이 시장에 풀리게 됩니다. 마치 경제라는 자동차의 속도를 조절하는 브레이크나 가속 페달과 같은 존재입니다."
   },
   "keyword_tags": [
-    "전세사기 지원책",
-    "코스닥 시장 활성화",
-    "AI 산업 투자",
-    "부동산 청약 과열",
-    "반도체 소부장",
-    "기업 정보보안",
-    "금리 및 유가 변동성"
+    "기준금리",
+    "부동산 전세난",
+    "반도체 투자",
+    "개인정보 유출",
+    "바이오 산업",
+    "국내 증시 변동성"
   ],
   "dart_filings": [
     {
@@ -79,7 +86,7 @@
       "rcept_dt": "20261007",
       "rcept_no": "20261006000463",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000463",
-      "ai_explanation": "기존에 공시했던 전환사채 발행 내용의 일부 사항을 수정하여 다시 알리는 공시입니다."
+      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용을 정정하여 다시 공시함."
     },
     {
       "corp_name": "더코디",
@@ -88,7 +95,7 @@
       "rcept_dt": "20261007",
       "rcept_no": "20261006000462",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000462",
-      "ai_explanation": "기존에 공시했던 전환사채 발행 내용의 일부 사항을 수정하여 다시 알리는 공시입니다."
+      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용을 정정하여 다시 공시함."
     }
   ],
   "macro_indicators": [
@@ -2986,166 +2993,166 @@
     {
       "name": "케이아이이",
       "price": "23,950",
-      "change_percent": "+20.35%",
-      "pct": 20.35
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "HLB글로벌",
       "price": "2,070",
-      "change_percent": "+16.88%",
-      "pct": 16.88
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "씨케이솔루션",
       "price": "2,225",
-      "change_percent": "+16.13%",
-      "pct": 16.13
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "케이씨텍",
       "price": "106,300",
-      "change_percent": "+15.54%",
-      "pct": 15.54
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "LG이노텍",
       "price": "655,000",
-      "change_percent": "+14.11%",
-      "pct": 14.11
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "top_losers": [
     {
       "name": "한창",
       "price": "77",
-      "change_percent": "-31.25%",
-      "pct": 31.25
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "에이엔피",
       "price": "164",
-      "change_percent": "-18.81%",
-      "pct": 18.81
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "키다리스튜디오",
       "price": "7,130",
-      "change_percent": "-13.99%",
-      "pct": 13.99
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "동양우",
       "price": "7,780",
-      "change_percent": "-12.78%",
-      "pct": 12.78
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "SG글로벌",
       "price": "1,045",
-      "change_percent": "-12.26%",
-      "pct": 12.26
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_performance": [
     {
       "name": "전자제품",
-      "change_value": "+7.84%",
-      "pct": 7.84
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "소프트웨어",
-      "change_value": "+7.54%",
-      "pct": 7.54
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+6.80%",
-      "pct": 6.8
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기제품",
-      "change_value": "+6.45%",
-      "pct": 6.45
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+5.40%",
-      "pct": 5.4
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자제품",
-      "change_value": "+7.84%",
-      "pct": 7.84
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "소프트웨어",
-      "change_value": "+7.54%",
-      "pct": 7.54
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+6.80%",
-      "pct": 6.8
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기제품",
-      "change_value": "+6.45%",
-      "pct": 6.45
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+5.40%",
-      "pct": 5.4
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "화학",
-      "change_value": "+5.25%",
-      "pct": 5.25
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "조선",
-      "change_value": "-1.43%",
-      "pct": -1.43
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "게임엔터테인먼트",
-      "change_value": "-1.46%",
-      "pct": -1.46
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-1.49%",
-      "pct": -1.49
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "가정용품",
-      "change_value": "-2.30%",
-      "pct": -2.3
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-2.88%",
-      "pct": -2.88
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "문구류",
-      "change_value": "-7.00%",
-      "pct": -7.0
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
-    "종합": 408,
+    "종합": 407,
     "경제": 30,
     "부동산": 30,
     "증권": 70
   },
   "article_count_trend": {
     "종합": {
-      "today": 408,
+      "today": 407,
       "yesterday": 408,
-      "change_pct": 0.0,
+      "change_pct": -0.2,
       "surge": false
     },
     "경제": {
