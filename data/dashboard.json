@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06 08:30:59",
+  "updated_at": "2026-10-06 09:01:14",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -73,8 +73,7 @@
       "report_nm": "[첨부정정]주요사항보고서(신주인수권부사채권발행결정)",
       "rcept_dt": "20261006",
       "rcept_no": "20261002000673",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000673",
-      "ai_explanation": "회사가 신주를 인수할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달하겠다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000673"
     }
   ],
   "macro_indicators": [
@@ -2938,95 +2937,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "두산",
+      "price": "1,464,000",
+      "change_percent": "+9.17%",
+      "pct": 9.17
+    },
+    {
+      "name": "하이트진로홀딩스우",
+      "price": "9,990",
+      "change_percent": "+9.06%",
+      "pct": 9.06
+    },
+    {
+      "name": "흥국화재우",
+      "price": "5,970",
+      "change_percent": "+6.61%",
+      "pct": 6.61
+    },
+    {
+      "name": "PLUS 글로벌원자력밸류체인",
+      "price": "12,635",
+      "change_percent": "+4.25%",
+      "pct": 4.25
+    },
+    {
+      "name": "두산우",
+      "price": "471,500",
+      "change_percent": "+4.20%",
+      "pct": 4.2
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "진흥기업우B",
+      "price": "6,520",
+      "change_percent": "-9.19%",
+      "pct": 9.19
+    },
+    {
+      "name": "동양우",
+      "price": "8,400",
+      "change_percent": "-5.83%",
+      "pct": 5.83
+    },
+    {
+      "name": "마이티 바이오시밀러&CDMO액티브",
+      "price": "8,515",
+      "change_percent": "-5.13%",
+      "pct": 5.13
+    },
+    {
+      "name": "PLUS 미국양자컴퓨팅TOP10",
+      "price": "15,650",
+      "change_percent": "-2.58%",
+      "pct": 2.58
+    },
+    {
+      "name": "KISCO홀딩스",
+      "price": "25,050",
+      "change_percent": "-2.34%",
+      "pct": 2.34
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "+2.44%",
+      "pct": 2.44
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+2.31%",
+      "pct": 2.31
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "비철금속",
+      "change_value": "+1.73%",
+      "pct": 1.73
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건강관리장비와용품",
+      "change_value": "+1.63%",
+      "pct": 1.63
     },
     {
       "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+1.26%",
+      "pct": 1.26
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "+2.44%",
+      "pct": 2.44
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+2.31%",
+      "pct": 2.31
+    },
+    {
+      "name": "비철금속",
+      "change_value": "+1.73%",
+      "pct": 1.73
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+1.63%",
+      "pct": 1.63
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+1.26%",
+      "pct": 1.26
+    },
+    {
+      "name": "항공사",
+      "change_value": "+1.24%",
+      "pct": 1.24
+    },
+    {
+      "name": "조선",
+      "change_value": "-0.12%",
+      "pct": -0.12
+    },
+    {
+      "name": "건축제품",
+      "change_value": "-0.13%",
+      "pct": -0.13
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-0.20%",
+      "pct": -0.2
+    },
+    {
+      "name": "도로와철도운송",
+      "change_value": "-0.27%",
+      "pct": -0.27
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "-2.26%",
+      "pct": -2.26
+    },
+    {
+      "name": "문구류",
+      "change_value": "-7.53%",
+      "pct": -7.53
     }
   ],
   "article_counts": {
