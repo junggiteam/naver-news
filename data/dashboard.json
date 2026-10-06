@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07 08:01:17",
+  "updated_at": "2026-10-07 08:31:05",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,7 @@
       "rcept_dt": "20261007",
       "rcept_no": "20261006000463",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000463",
-      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용을 정정하여 다시 공시함."
+      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등 기존 공시 사항을 정정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "더코디",
@@ -95,7 +95,7 @@
       "rcept_dt": "20261007",
       "rcept_no": "20261006000462",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000462",
-      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용을 정정하여 다시 공시함."
+      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등 기존 공시 사항을 정정하여 다시 알리는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2989,145 +2989,73 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "케이아이이",
-      "price": "23,950",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "HLB글로벌",
-      "price": "2,070",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "씨케이솔루션",
-      "price": "2,225",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "케이씨텍",
-      "price": "106,300",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "LG이노텍",
-      "price": "655,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "한창",
-      "price": "77",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에이엔피",
-      "price": "164",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "키다리스튜디오",
-      "price": "7,130",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양우",
-      "price": "7,780",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SG글로벌",
-      "price": "1,045",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "전자제품",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기제품",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리장비와용품",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "전자제품",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기제품",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리장비와용품",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "화학",
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "조선",
+      "name": "생물공학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용품",
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3137,7 +3065,17 @@
       "pct": 0.0
     },
     {
-      "name": "문구류",
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
