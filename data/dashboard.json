@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-06 09:31:12",
+  "updated_at": "2026-10-06 10:01:22",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 0.2,
-    "kosdaq_change": 2.46,
-    "kospi_value": 7018.02,
-    "kosdaq_value": 915.28
+    "kospi_change": -0.12,
+    "kosdaq_change": 2.15,
+    "kospi_value": 6995.41,
+    "kosdaq_value": 912.5
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 기술주 강세와 LG전자 등 일부 대형주에 대한 투자 심리 개선이 코스피 상승을 견인했으나 삼성전자를 비롯한 반도체주의 약세로 지수 상승 폭은 제한되었습니다. 반면 코스닥은 금융권 AI 보안 이슈로 관련 보안주가 급등하며 최근 66일간 데이터 기준으로 최고치를 기록했습니다."
+      "text": "미국 기술주 강세의 영향으로 삼성전기와 LG전자 등 관련 대형주가 상승했으나, 코스피는 삼성전자의 약세와 혼조세 속에 전일 대비 0.12% 하락하며 보합권에서 마감했다. 반면 코스닥은 금융권 보안 이슈로 인한 보안주 급등 등에 힘입어 2.15% 상승하며 최근 66일간 데이터 기준 최고치를 기록했다."
     }
   ],
   "daily_term": {
@@ -78,7 +78,7 @@
       "rcept_dt": "20261006",
       "rcept_no": "20261002000673",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000673",
-      "ai_explanation": "회사가 신주를 인수할 권리가 부여된 사채를 발행하여 자금을 조달하겠다는 결정을 정정하는 공시입니다."
+      "ai_explanation": "회사가 신주를 인수할 권리가 부여된 채권을 발행하여 자금을 조달하겠다는 공시의 정정 내용입니다."
     }
   ],
   "macro_indicators": [
@@ -2945,154 +2945,154 @@
   "top_gainers": [
     {
       "name": "부산주공",
-      "price": "37",
-      "change_percent": "+37.04%",
-      "pct": 37.04
+      "price": "35",
+      "change_percent": "+29.63%",
+      "pct": 29.63
     },
     {
       "name": "HLB글로벌",
-      "price": "2,255",
-      "change_percent": "+27.33%",
-      "pct": 27.33
+      "price": "2,205",
+      "change_percent": "+24.51%",
+      "pct": 24.51
     },
     {
       "name": "씨케이솔루션",
-      "price": "2,230",
-      "change_percent": "+16.39%",
-      "pct": 16.39
+      "price": "2,290",
+      "change_percent": "+19.52%",
+      "pct": 19.52
     },
     {
-      "name": "키움 레버리지 바이오TOP10 ETN",
-      "price": "7,550",
-      "change_percent": "+12.02%",
-      "pct": 12.02
+      "name": "TCC스틸",
+      "price": "14,900",
+      "change_percent": "+10.70%",
+      "pct": 10.7
     },
     {
       "name": "하나 레버리지 천연가스 선물 ETN(H)",
-      "price": "8,660",
-      "change_percent": "+11.31%",
-      "pct": 11.31
+      "price": "8,685",
+      "change_percent": "+11.63%",
+      "pct": 11.63
     }
   ],
   "top_losers": [
+    {
+      "name": "키다리스튜디오",
+      "price": "7,140",
+      "change_percent": "-13.87%",
+      "pct": 13.87
+    },
+    {
+      "name": "혜인",
+      "price": "8,360",
+      "change_percent": "-11.53%",
+      "pct": 11.53
+    },
+    {
+      "name": "한투 인버스2X천연가스선물 ETN B",
+      "price": "9,530",
+      "change_percent": "-10.77%",
+      "pct": 10.77
+    },
+    {
+      "name": "삼성 인버스 2X 천연가스 선물 ETN D",
+      "price": "13,015",
+      "change_percent": "-10.73%",
+      "pct": 10.73
+    },
     {
       "name": "KB 인버스 2X 천연가스 선물 ETN B",
       "price": "9,485",
       "change_percent": "-10.60%",
       "pct": 10.6
-    },
-    {
-      "name": "한투 인버스2X천연가스선물 ETN B",
-      "price": "9,555",
-      "change_percent": "-10.53%",
-      "pct": 10.53
-    },
-    {
-      "name": "삼성 인버스 2X 천연가스 선물 ETN D",
-      "price": "13,050",
-      "change_percent": "-10.49%",
-      "pct": 10.49
-    },
-    {
-      "name": "신한 인버스2X 천연가스 선물 ETN B",
-      "price": "14,555",
-      "change_percent": "-9.96%",
-      "pct": 9.96
-    },
-    {
-      "name": "메리츠 인버스 2X 천연가스 선물 ETN(H)",
-      "price": "11,280",
-      "change_percent": "-9.94%",
-      "pct": 9.94
     }
   ],
   "sector_performance": [
     {
-      "name": "건강관리장비와용품",
-      "change_value": "+7.53%",
-      "pct": 7.53
-    },
-    {
       "name": "전자제품",
-      "change_value": "+6.35%",
-      "pct": 6.35
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+5.30%",
-      "pct": 5.3
+      "change_value": "+5.65%",
+      "pct": 5.65
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+4.89%",
-      "pct": 4.89
+      "change_value": "+5.53%",
+      "pct": 5.53
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "+5.27%",
+      "pct": 5.27
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+4.67%",
+      "pct": 4.67
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.04%",
-      "pct": 4.04
+      "change_value": "+3.27%",
+      "pct": 3.27
     }
   ],
   "sector_heatmap": [
     {
-      "name": "건강관리장비와용품",
-      "change_value": "+7.53%",
-      "pct": 7.53
-    },
-    {
       "name": "전자제품",
-      "change_value": "+6.35%",
-      "pct": 6.35
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+5.30%",
-      "pct": 5.3
+      "change_value": "+5.65%",
+      "pct": 5.65
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+4.89%",
-      "pct": 4.89
+      "change_value": "+5.53%",
+      "pct": 5.53
+    },
+    {
+      "name": "건강관리장비와용품",
+      "change_value": "+5.27%",
+      "pct": 5.27
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+4.67%",
+      "pct": 4.67
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.04%",
-      "pct": 4.04
+      "change_value": "+3.27%",
+      "pct": 3.27
     },
     {
       "name": "판매업체",
-      "change_value": "+3.71%",
-      "pct": 3.71
+      "change_value": "+2.74%",
+      "pct": 2.74
     },
     {
-      "name": "해운사",
-      "change_value": "-1.64%",
-      "pct": -1.64
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-1.51%",
+      "pct": -1.51
     },
     {
-      "name": "생명보험",
-      "change_value": "-1.64%",
-      "pct": -1.64
+      "name": "사무용전자제품",
+      "change_value": "-1.54%",
+      "pct": -1.54
     },
     {
       "name": "게임엔터테인먼트",
-      "change_value": "-1.75%",
-      "pct": -1.75
+      "change_value": "-1.72%",
+      "pct": -1.72
+    },
+    {
+      "name": "해운사",
+      "change_value": "-1.81%",
+      "pct": -1.81
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-1.84%",
-      "pct": -1.84
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-2.64%",
-      "pct": -2.64
+      "change_value": "-2.24%",
+      "pct": -2.24
     },
     {
       "name": "문구류",
-      "change_value": "-8.33%",
-      "pct": -8.33
+      "change_value": "-6.64%",
+      "pct": -6.64
     }
   ],
   "article_counts": {
