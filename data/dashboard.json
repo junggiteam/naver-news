@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08 08:01:01",
+  "updated_at": "2026-10-08 08:31:05",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2495,135 +2495,73 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "동양고속",
-      "price": "29,250",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "천일고속",
-      "price": "180,300",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "국제약품",
-      "price": "4,430",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "대성산업",
-      "price": "5,060",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "진양화학",
-      "price": "1,686",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "한창",
-      "price": "58",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "14,550",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "부산주공",
-      "price": "25",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나 레버리지 K방산TOP10 ETN",
-      "price": "9,895",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KODEX 방산TOP10레버리지",
-      "price": "5,365",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "화장품",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "방송과엔터테인먼트",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "도로와철도운송",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "기타금융",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "화장품",
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "도로와철도운송",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "기타금융",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "통신장비",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2633,17 +2571,17 @@
       "pct": 0.0
     },
     {
-      "name": "항공화물운송과물류",
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기장비",
+      "name": "전자장비와기기",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자제품",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -2652,7 +2590,7 @@
     "종합": 409,
     "경제": 30,
     "부동산": 30,
-    "증권": 76
+    "증권": 79
   },
   "article_count_trend": {
     "종합": {
@@ -2674,9 +2612,9 @@
       "surge": false
     },
     "증권": {
-      "today": 76,
+      "today": 79,
       "yesterday": 90,
-      "change_pct": -15.6,
+      "change_pct": -12.2,
       "surge": false
     }
   }
