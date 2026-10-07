@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07 08:31:05",
+  "updated_at": "2026-10-07 09:01:16",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -80,13 +80,40 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "SK디앤디",
+      "corp_code": "00508344",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261007",
+      "rcept_no": "20261007000004",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000004",
+      "ai_explanation": "기존에 발표했던 유상증자 계획의 내용을 일부 수정하여 다시 공시함."
+    },
+    {
+      "corp_name": "삼환기업",
+      "corp_code": "00129411",
+      "report_nm": "감자결정",
+      "rcept_dt": "20261007",
+      "rcept_no": "20261007000006",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000006",
+      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등의 조치를 결정함."
+    },
+    {
+      "corp_name": "삼환기업",
+      "corp_code": "00129411",
+      "report_nm": "유상증자결정",
+      "rcept_dt": "20261007",
+      "rcept_no": "20261007000005",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000005",
+      "ai_explanation": "자금을 조달하기 위해 기존 주주나 제3자를 대상으로 신주를 발행함."
+    },
+    {
       "corp_name": "더코디",
       "corp_code": "00530413",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261007",
       "rcept_no": "20261006000463",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000463",
-      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등 기존 공시 사항을 정정하여 다시 알리는 것입니다."
+      "ai_explanation": "기존에 발표했던 전환사채 발행 계획의 내용을 일부 수정하여 다시 공시함."
     },
     {
       "corp_name": "더코디",
@@ -95,7 +122,7 @@
       "rcept_dt": "20261007",
       "rcept_no": "20261006000462",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000462",
-      "ai_explanation": "회사가 발행한 전환사채의 조건이나 내용 등 기존 공시 사항을 정정하여 다시 알리는 것입니다."
+      "ai_explanation": "기존에 발표했던 전환사채 발행 계획의 내용을 일부 수정하여 다시 공시함."
     }
   ],
   "macro_indicators": [
@@ -2989,102 +3016,158 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "한일홀딩스",
+      "price": "17,410",
+      "change_percent": "+1.16%",
+      "pct": 1.16
+    },
+    {
+      "name": "동아쏘시오홀딩스",
+      "price": "93,700",
+      "change_percent": "+0.75%",
+      "pct": 0.75
+    },
+    {
+      "name": "일신방직",
+      "price": "10,880",
+      "change_percent": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "한국수출포장",
+      "price": "2,760",
+      "change_percent": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "키움 KPOP ETN",
+      "price": "6,795",
+      "change_percent": "+0.07%",
+      "pct": 0.07
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "BYC",
+      "price": "36,750",
+      "change_percent": "+1.52%",
+      "pct": 1.52
+    },
+    {
+      "name": "삼성FN리츠",
+      "price": "5,000",
+      "change_percent": "-0.99%",
+      "pct": 0.99
+    },
+    {
+      "name": "방림",
+      "price": "5,490",
+      "change_percent": "-0.18%",
+      "pct": 0.18
+    },
+    {
+      "name": "TIGER Fn메타버스",
+      "price": "7,190",
+      "change_percent": "-0.07%",
+      "pct": 0.07
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "레저용장비와제품",
+      "change_value": "+0.34%",
+      "pct": 0.34
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.27%",
+      "pct": 0.27
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건축자재",
+      "change_value": "+0.07%",
+      "pct": 0.07
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "상업서비스와공급품",
+      "change_value": "+0.06%",
+      "pct": 0.06
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건축제품",
+      "change_value": "+0.05%",
+      "pct": 0.05
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
+      "name": "레저용장비와제품",
+      "change_value": "+0.34%",
+      "pct": 0.34
+    },
+    {
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.27%",
+      "pct": 0.27
+    },
+    {
+      "name": "건축자재",
+      "change_value": "+0.07%",
+      "pct": 0.07
+    },
+    {
+      "name": "상업서비스와공급품",
+      "change_value": "+0.06%",
+      "pct": 0.06
+    },
+    {
+      "name": "건축제품",
+      "change_value": "+0.05%",
+      "pct": 0.05
+    },
+    {
+      "name": "가정용품",
+      "change_value": "+0.03%",
+      "pct": 0.03
+    },
+    {
+      "name": "다각화된통신서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "종이와목재",
+      "name": "카드",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "호텔,레스토랑,레저",
+      "name": "사무용전자제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리업체및서비스",
+      "name": "다각화된소비자서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "부동산",
+      "change_value": "-0.05%",
+      "pct": -0.05
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "판매업체",
+      "change_value": "-0.06%",
+      "pct": -0.06
     }
   ],
   "article_counts": {
     "종합": 407,
     "경제": 30,
     "부동산": 30,
-    "증권": 70
+    "증권": 71
   },
   "article_count_trend": {
     "종합": {
@@ -3106,9 +3189,9 @@
       "surge": false
     },
     "증권": {
-      "today": 70,
+      "today": 71,
       "yesterday": 83,
-      "change_pct": -15.7,
+      "change_pct": -14.5,
       "surge": false
     }
   }
