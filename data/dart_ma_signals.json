@@ -13820,6 +13820,15 @@
     ],
     "지분인수": [
       {
+        "corp_name": "BGF에코머티리얼즈",
+        "corp_code": "00599595",
+        "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
+        "rcept_dt": "20261007",
+        "rcept_no": "20261007000464",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000464",
+        "action": "타법인주식및출자증권양도결정"
+      },
+      {
         "corp_name": "농심엔지니어링",
         "corp_code": "00290463",
         "report_nm": "타법인주식및출자증권취득결정",
@@ -13829,7 +13838,17 @@
         "action": "타법인주식및출자증권양수결정"
       }
     ],
-    "영업양수도": [],
+    "영업양수도": [
+      {
+        "corp_name": "큐앤드비인터내셔날",
+        "corp_code": "01636495",
+        "report_nm": "영업양수결정",
+        "rcept_dt": "20261007",
+        "rcept_no": "20261007000494",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000494",
+        "action": "영업양수결정"
+      }
+    ],
     "주식교환_이전": [
       {
         "corp_name": "네이버파이낸셜",
@@ -13851,6 +13870,24 @@
     "경영권이동_최대주주변경": [],
     "자기주식": [
       {
+        "corp_name": "나래나노텍",
+        "corp_code": "00362122",
+        "report_nm": "주요사항보고서(자기주식취득결정)",
+        "rcept_dt": "20261007",
+        "rcept_no": "20261007000472",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000472",
+        "action": "자기주식취득결정"
+      },
+      {
+        "corp_name": "BGF에코머티리얼즈",
+        "corp_code": "00599595",
+        "report_nm": "주요사항보고서(자기주식취득결정)",
+        "rcept_dt": "20261007",
+        "rcept_no": "20261007000430",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000430",
+        "action": "자기주식취득결정"
+      },
+      {
         "corp_name": "씨에스윈드",
         "corp_code": "00670340",
         "report_nm": "주요사항보고서(자기주식처분결정)",
@@ -13869,6 +13906,6 @@
         "action": "자기주식처분결정"
       }
     ],
-    "_updated_at": "2026-10-07 17:01:13"
+    "_updated_at": "2026-10-07 17:31:41"
   }
 }
