@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09 07:01:04",
+  "updated_at": "2026-10-09 07:29:46",
   "indices": [
     {
       "name": "코스피",
@@ -69,21 +69,21 @@
       "value": "1,344.00",
       "change_percent": "▲0.22%",
       "direction": "up",
-      "as_of": "2026-10-09 06:35:46"
+      "as_of": "2026-10-09 07:21:16"
     },
     {
       "name": "원/엔 환율(100엔)",
       "value": "852.12",
       "change_percent": "▲0.41%",
       "direction": "up",
-      "as_of": "2026-10-09 06:35:46"
+      "as_of": "2026-10-09 07:21:16"
     },
     {
       "name": "원/유로 환율",
       "value": "1,506.83",
       "change_percent": "▲0.32%",
       "direction": "up",
-      "as_of": "2026-10-09 06:35:46"
+      "as_of": "2026-10-09 07:21:16"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "91.49",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-10-08 16:51:02"
+      "value": "91.00",
+      "change_percent": "▼0.54%",
+      "direction": "down",
+      "as_of": "2026-10-08 17:19:33"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "111,979,000",
-      "change_percent": "▼1.38%",
+      "value": "112,200,000",
+      "change_percent": "▼1.19%",
       "direction": "down",
-      "as_of": "2026-10-09 07:01:02"
+      "as_of": "2026-10-09 07:29:45"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,401,000",
-      "change_percent": "▼3.11%",
+      "value": "3,394,000",
+      "change_percent": "▼3.30%",
       "direction": "down",
-      "as_of": "2026-10-09 07:01:01"
+      "as_of": "2026-10-09 07:29:40"
     }
   ],
   "news_categories": [
@@ -140,8 +140,48 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "머니투데이",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "연중 최저가 속출 카지노주…원화 강세·관광기금 변수 여전",
+          "link": "https://n.news.naver.com/mnews/article/001/0016367179?sid=101258401",
+          "upload_time": "20261009071500",
+          "published_at": "2026-10-09T07:15:00+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "전쟁에 치솟는 곡물가, 식량위기 우려 고개…\"진짜 공포는 내년\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0016367176?sid=101258401",
+          "upload_time": "20261009071000",
+          "published_at": "2026-10-09T07:10:00+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 3,
+          "title": "세달만에 90만원 뚝, 33% 급락한 SK하닉…코스피 톱 10곳 중 8곳도 떨어졌다",
+          "link": "https://n.news.naver.com/mnews/article/009/0005746259?sid=101258401",
+          "upload_time": "20261009070807",
+          "published_at": "2026-10-09T07:08:07+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 4,
+          "title": "반도체 주춤한 사이 2차전지 '급속충전'…관련 ETF 수익률 상위권",
+          "link": "https://n.news.naver.com/mnews/article/001/0016367174?sid=101258401",
+          "upload_time": "20261009070501",
+          "published_at": "2026-10-09T07:05:01+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 5,
+          "title": "동양·천일고속 급등…다시 불붙은 서울고터 재개발 테마 [코주부]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004669664?sid=101258401",
+          "upload_time": "20261009070111",
+          "published_at": "2026-10-09T07:01:11+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 6,
           "title": "\"지금은 종목 투자 안 통합니다\"…최고민수 조언은?[부꾸미]",
           "link": "https://n.news.naver.com/mnews/article/008/0005424162?sid=101258401",
           "upload_time": "20261009033000",
@@ -149,7 +189,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 7,
           "title": "\"시뮬레이션해보니 손실 확률 70%\"...한 의원실의 단일레버리지 분석",
           "link": "https://n.news.naver.com/mnews/article/015/0005340736?sid=101258401",
           "upload_time": "20261008215213",
@@ -157,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 3,
+          "rank": 8,
           "title": "레버리지 ETF에 고개 숙인 이억원…\"적법한 절차 거쳐 도입\"",
           "link": "https://n.news.naver.com/mnews/article/422/0000913928?sid=101258401",
           "upload_time": "20261008211109",
@@ -165,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 4,
+          "rank": 9,
           "title": "삼성전자 100조 벌어도…코스피 2.62% '뚝'",
           "link": "https://n.news.naver.com/mnews/article/422/0000913926?sid=101258401",
           "upload_time": "20261008210809",
@@ -173,7 +213,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 5,
+          "rank": 10,
           "title": "“단일 종목 레버리지 도입, 청와대 지시 아냐”...고개 숙인 금융위원장",
           "link": "https://n.news.naver.com/mnews/article/009/0005746221?sid=101258401",
           "upload_time": "20261008203906",
@@ -181,7 +221,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 6,
+          "rank": 11,
           "title": "“단순 분석을 스트레스 테스트라 하나”…박대출, 단일종목레버리지 위험검증 부실 지적",
           "link": "https://n.news.naver.com/mnews/article/009/0005746220?sid=101258401",
           "upload_time": "20261008203706",
@@ -189,7 +229,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 12,
           "title": "100조 실적 잔칫날인데 삼전 주가는 왜…“극단적 저평가”라는데",
           "link": "https://n.news.naver.com/mnews/article/009/0005746212?sid=101258401",
           "upload_time": "20261008195013",
@@ -197,7 +237,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 8,
+          "rank": 13,
           "title": "삼성전자 역대급 실적에도…코스피 6,600선 후퇴",
           "link": "https://n.news.naver.com/mnews/article/422/0000913881?sid=101258401",
           "upload_time": "20261008185512",
@@ -205,7 +245,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 9,
+          "rank": 14,
           "title": "외국인·기관 3조 매도 폭탄… 코스피 6600선으로 ‘후퇴’",
           "link": "https://n.news.naver.com/mnews/article/014/0005586981?sid=101258401",
           "upload_time": "20261008182222",
@@ -213,51 +253,11 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 10,
+          "rank": 15,
           "title": "사흘째 하락한 코스피… 테마주는 들썩",
           "link": "https://n.news.naver.com/mnews/article/014/0005586976?sid=101258401",
           "upload_time": "20261008182023",
           "published_at": "2026-10-08T18:20:23+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 11,
-          "title": "전기차·ESS가 쌍끌이…LG엔솔, 3분기 실적 신기록",
-          "link": "https://n.news.naver.com/mnews/article/011/0004669589?sid=101258401",
-          "upload_time": "20261008181910",
-          "published_at": "2026-10-08T18:19:10+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 12,
-          "title": "印 코끼리 올라탄 현대차그룹, 첫 100만대 고지 보인다",
-          "link": "https://n.news.naver.com/mnews/article/011/0004669586?sid=101258401",
-          "upload_time": "20261008181417",
-          "published_at": "2026-10-08T18:14:17+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 13,
-          "title": "삼성전자 실적 신기록 주가 향방은 [한경 프리미엄9 TODAY]",
-          "link": "https://n.news.naver.com/mnews/article/015/0005340678?sid=101258401",
-          "upload_time": "20261008175824",
-          "published_at": "2026-10-08T17:58:24+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 14,
-          "title": "美·日·대만 증시 달리는데…코스피만 뒷걸음",
-          "link": "https://n.news.naver.com/mnews/article/011/0004669574?sid=101258401",
-          "upload_time": "20261008175410",
-          "published_at": "2026-10-08T17:54:10+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 15,
-          "title": "HD현대마린, 글로벌 엔진 MRO 골텐스 3300억에 인수 [시그널]",
-          "link": "https://n.news.naver.com/mnews/article/011/0004669564?sid=101258401",
-          "upload_time": "20261008174616",
-          "published_at": "2026-10-08T17:46:16+09:00"
         }
       ]
     },
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "\"오픈AI 매출 기대 못 미친다\"…S&P500·나스닥 '하락' [뉴욕증시 브리핑]",
+          "link": "https://n.news.naver.com/mnews/article/015/0005340771?sid=101258403",
+          "upload_time": "20261009072110",
+          "published_at": "2026-10-09T07:21:10+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "[TODAY애플]AI 전략에 75달러 추가 가치 기대…주가 상승 마감",
           "link": "https://n.news.naver.com/mnews/article/018/0006384345?sid=101258403",
           "upload_time": "20261009053907",
@@ -399,7 +407,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 3,
           "title": "[오후장특징주]치폴레멕시칸그릴, 코히런트, 파라마운트스카이댄스",
           "link": "https://n.news.naver.com/mnews/article/018/0006384344?sid=101258403",
           "upload_time": "20261009053811",
@@ -407,7 +415,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "AI 투자 수익성 의문에 고유가까지…나스닥 1.3%↓[월스트리트in]",
           "link": "https://n.news.naver.com/mnews/article/018/0006384343?sid=101258403",
           "upload_time": "20261009053010",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "[속보]AI주 급락·유가 급등에…나스닥 1.3% 하락",
           "link": "https://n.news.naver.com/mnews/article/018/0006384342?sid=101258403",
           "upload_time": "20261009050811",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 6,
           "title": "오픈AI 매출 680억달러 아닌 500억달러…엔비디아 등 AI주 동반 하락",
           "link": "https://n.news.naver.com/mnews/article/018/0006384339?sid=101258403",
           "upload_time": "20261009043609",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 7,
           "title": "[美특징주]브로드컴, 오픈AI 관련 500억달러 조달 추진…주가 5%↓",
           "link": "https://n.news.naver.com/mnews/article/018/0006384338?sid=101258403",
           "upload_time": "20261009042512",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 7,
+          "rank": 8,
           "title": "[美특징주]파라마운트스카이댄스, CEO 자신감에 주가 급등",
           "link": "https://n.news.naver.com/mnews/article/018/0006384337?sid=101258403",
           "upload_time": "20261009042411",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "조선비즈",
-          "rank": 8,
+          "rank": 9,
           "title": "뉴욕증시, 美 국채 금리·국제유가 상승에 하락 출발…나스닥 0.62%↓",
           "link": "https://n.news.naver.com/mnews/article/366/0001197019?sid=101258403",
           "upload_time": "20261008233711",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 9,
+          "rank": 10,
           "title": "“3개월 새 300% 뛰었는데 아직 시작도 안 했다”…대박난 ‘이 주식’ 뭐길래",
           "link": "https://n.news.naver.com/mnews/article/009/0005746234?sid=101258403",
           "upload_time": "20261008224607",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 10,
+          "rank": 11,
           "title": "'3Q 어닝시즌 본격화' 반도체섹터 \"선별적 접근 필요\"…AMD·램리서치 등 '최...",
           "link": "https://n.news.naver.com/mnews/article/018/0006384323?sid=101258403",
           "upload_time": "20261008224015",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 11,
+          "rank": 12,
           "title": "美, 이란 대규모 군사작전 검토…유가 105달러 돌파·월가 긴장",
           "link": "https://n.news.naver.com/mnews/article/018/0006384318?sid=101258403",
           "upload_time": "20261008215610",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 12,
+          "rank": 13,
           "title": "뉴로진, 희귀 유전질환 치료제 개발 주목...투자의견 '매수'-JP모건",
           "link": "https://n.news.naver.com/mnews/article/018/0006384317?sid=101258403",
           "upload_time": "20261008214608",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 13,
+          "rank": 14,
           "title": "[美특징주]울프스피드, 국방부와 15억달러 금융지원 약정...개장 전 '급등'",
           "link": "https://n.news.naver.com/mnews/article/018/0006384316?sid=101258403",
           "upload_time": "20261008214512",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 14,
+          "rank": 15,
           "title": "하얏트 호텔, 주가 밸류 매력적…목표가↑-미즈호",
           "link": "https://n.news.naver.com/mnews/article/018/0006384308?sid=101258403",
           "upload_time": "20261008212415",
           "published_at": "2026-10-08T21:24:15+09:00"
-        },
-        {
-          "press_name": "한국경제TV",
-          "rank": 15,
-          "title": "'차라리 엔비디아만 살 걸'…분산투자 했더니 수익률 역주행 [딥시그널]",
-          "link": "https://n.news.naver.com/mnews/article/215/0001268625?sid=101258403",
-          "upload_time": "20261008210000",
-          "published_at": "2026-10-08T21:00:00+09:00"
         }
       ]
     },
@@ -799,7 +799,7 @@
       ]
     }
   ],
-  "ai_commentary": "삼성전자가 견조한 실적을 발표했음에도 불구하고 외국인과 기관의 대규모 동반 매도세가 유입되면서 코스피 지수가 하락 마감했다. 미국과 일본 등 주요국 증시가 상승세를 보인 것과 대조적으로 국내 증시는 투자 심리 위축과 함께 코스피와 코스닥 모두 약세를 기록했다.",
+  "ai_commentary": "삼성전자를 비롯한 주요 대형주들이 부진한 실적 및 주가 하락 흐름을 보이면서 코스피 지수가 2% 넘게 하락했다. 외국인과 기관 투자자의 대규모 매도세가 지수 하락을 견인했으며, 반도체 등 시가총액 상위 종목들의 약세가 시장 전체에 영향을 미쳤다.",
   "top_gainers": [
     {
       "name": "HLB글로벌",
