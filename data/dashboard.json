@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12 08:01:13",
+  "updated_at": "2026-10-12 08:31:17",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -66,7 +66,8 @@
       "report_nm": "주요사항보고서(감자결정)",
       "rcept_dt": "20261012",
       "rcept_no": "20261008000738",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000738"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000738",
+      "ai_explanation": "회사가 누적 결손금 보전이나 자본 구조 개선을 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2930,130 +2931,21 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "HLB글로벌",
-      "price": "2,635",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에이엔피",
-      "price": "249",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우성",
-      "price": "21,550",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양고속",
-      "price": "37,200",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "천일고속",
-      "price": "221,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "부산주공",
-      "price": "18",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "블루산업개발",
-      "price": "3,530",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한미사이언스",
-      "price": "52,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한창",
-      "price": "52",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "신풍제약",
-      "price": "9,890",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "문구류",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "판매업체",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "도로와철도운송",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디스플레이장비및부품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "sector_heatmap": [
-    {
-      "name": "문구류",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "판매업체",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "도로와철도운송",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "디스플레이장비및부품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "핸드셋",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생명보험",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3063,22 +2955,69 @@
       "pct": 0.0
     },
     {
-      "name": "우주항공과국방",
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "게임엔터테인먼트",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "가정용품",
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
       "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3087,7 +3026,7 @@
     "종합": 385,
     "경제": 30,
     "부동산": 30,
-    "증권": 54
+    "증권": 55
   },
   "article_count_trend": {
     "종합": {
@@ -3109,9 +3048,9 @@
       "surge": false
     },
     "증권": {
-      "today": 54,
+      "today": 55,
       "yesterday": 69,
-      "change_pct": -21.7,
+      "change_pct": -20.3,
       "surge": false
     }
   }
