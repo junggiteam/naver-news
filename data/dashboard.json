@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-12 11:02:33",
+  "updated_at": "2026-10-12 11:31:42",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -1.76,
-    "kosdaq_change": -3.07,
-    "kospi_value": 6509.06,
-    "kosdaq_value": 864.88
+    "kospi_change": -1.97,
+    "kosdaq_change": -3.38,
+    "kospi_value": 6495.37,
+    "kosdaq_value": 862.08
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스 등 반도체 관련주의 약세가 이어지며 투자 심리가 위축된 가운데, 외국인의 대규모 매도세가 지수 하락을 주도했다. 시장에서는 AI 산업의 성장성에 대한 거품론이 제기되면서 반도체 종목에 대한 매도 압력이 커진 점을 주가 하락의 주요 배경으로 꼽고 있다."
+      "text": "삼성전자와 SK하이닉스 등 반도체 관련 종목이 AI 거품론에 따른 매도 압력으로 약세를 보이면서 지수 하락을 주도했다. 여기에 외국인의 순매도세가 이어지며 코스피와 코스닥 지수가 각각 2%와 3%대 하락 마감했다."
     }
   ],
   "daily_term": null,
@@ -70,12 +70,40 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "그린가스솔루션이앤씨",
+      "corp_code": "01676031",
+      "report_nm": "무상증자결정",
+      "rcept_dt": "20261012",
+      "rcept_no": "20261012000079",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000079",
+      "ai_explanation": "주주들에게 대가 없이 신주를 발행하여 나누어 주는 행위입니다."
+    },
+    {
+      "corp_name": "일월지엠엘",
+      "corp_code": "00923826",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261012",
+      "rcept_no": "20261012000070",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000070",
+      "ai_explanation": "앞서 공시한 유상증자 내용 중 일부를 수정하여 다시 알리는 것입니다."
+    },
+    {
+      "corp_name": "경남제약",
+      "corp_code": "00307028",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261012",
+      "rcept_no": "20261012000071",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000071",
+      "ai_explanation": "앞서 공시한 유상증자 내용 중 일부를 수정하여 다시 알리는 것입니다."
+    },
+    {
       "corp_name": "코레이트자산운용",
       "corp_code": "00314790",
       "report_nm": "주요사항보고서(감자결정)",
       "rcept_dt": "20261012",
       "rcept_no": "20261008000738",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000738"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000738",
+      "ai_explanation": "자본금 규모를 줄이기 위해 발행 주식 수를 줄이거나 액면가를 낮추는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2942,59 +2970,59 @@
   "top_gainers": [
     {
       "name": "금호전기",
-      "price": "11,060",
-      "change_percent": "+29.81%",
-      "pct": 29.81
-    },
-    {
-      "name": "금호건설우",
-      "price": "17,890",
-      "change_percent": "+20.07%",
-      "pct": 20.07
+      "price": "11,070",
+      "change_percent": "+29.93%",
+      "pct": 29.93
     },
     {
       "name": "한화머시너리앤서비스홀딩스",
-      "price": "7,520",
-      "change_percent": "+23.68%",
-      "pct": 23.68
+      "price": "7,500",
+      "change_percent": "+23.36%",
+      "pct": 23.36
     },
     {
       "name": "금호건설",
-      "price": "13,610",
-      "change_percent": "+22.17%",
-      "pct": 22.17
+      "price": "13,770",
+      "change_percent": "+23.61%",
+      "pct": 23.61
     },
     {
-      "name": "한창",
-      "price": "50",
-      "change_percent": "-3.85%",
-      "pct": 3.85
+      "name": "금호건설우",
+      "price": "18,100",
+      "change_percent": "+21.48%",
+      "pct": 21.48
+    },
+    {
+      "name": "동양고속",
+      "price": "45,200",
+      "change_percent": "+18.95%",
+      "pct": 18.95
     }
   ],
   "top_losers": [
     {
       "name": "유니온머티리얼",
-      "price": "664",
-      "change_percent": "-21.97%",
-      "pct": 21.97
+      "price": "633",
+      "change_percent": "-25.62%",
+      "pct": 25.62
     },
     {
       "name": "에이엔피",
-      "price": "198",
-      "change_percent": "-20.48%",
-      "pct": 20.48
-    },
-    {
-      "name": "DN오토모티브",
-      "price": "41,400",
-      "change_percent": "-15.85%",
-      "pct": 15.85
+      "price": "199",
+      "change_percent": "-20.08%",
+      "pct": 20.08
     },
     {
       "name": "HLB글로벌",
-      "price": "2,235",
-      "change_percent": "-15.18%",
-      "pct": 15.18
+      "price": "2,225",
+      "change_percent": "-15.56%",
+      "pct": 15.56
+    },
+    {
+      "name": "DN오토모티브",
+      "price": "42,050",
+      "change_percent": "-14.53%",
+      "pct": 14.53
     },
     {
       "name": "한투 FTSE100 ETN",
@@ -3006,97 +3034,97 @@
   "sector_performance": [
     {
       "name": "해운사",
-      "change_value": "+4.76%",
-      "pct": 4.76
+      "change_value": "+5.24%",
+      "pct": 5.24
     },
     {
       "name": "손해보험",
-      "change_value": "+2.12%",
-      "pct": 2.12
+      "change_value": "+2.39%",
+      "pct": 2.39
     },
     {
       "name": "건축자재",
-      "change_value": "+1.34%",
-      "pct": 1.34
-    },
-    {
-      "name": "항공사",
-      "change_value": "+1.12%",
-      "pct": 1.12
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
       "name": "카드",
-      "change_value": "+0.97%",
-      "pct": 0.97
+      "change_value": "+1.21%",
+      "pct": 1.21
+    },
+    {
+      "name": "담배",
+      "change_value": "+0.96%",
+      "pct": 0.96
     }
   ],
   "sector_heatmap": [
     {
       "name": "해운사",
-      "change_value": "+4.76%",
-      "pct": 4.76
+      "change_value": "+5.24%",
+      "pct": 5.24
     },
     {
       "name": "손해보험",
-      "change_value": "+2.12%",
-      "pct": 2.12
+      "change_value": "+2.39%",
+      "pct": 2.39
     },
     {
       "name": "건축자재",
-      "change_value": "+1.34%",
-      "pct": 1.34
-    },
-    {
-      "name": "항공사",
-      "change_value": "+1.12%",
-      "pct": 1.12
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
       "name": "카드",
-      "change_value": "+0.97%",
-      "pct": 0.97
+      "change_value": "+1.21%",
+      "pct": 1.21
+    },
+    {
+      "name": "담배",
+      "change_value": "+0.96%",
+      "pct": 0.96
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+0.79%",
-      "pct": 0.79
-    },
-    {
-      "name": "문구류",
-      "change_value": "-4.05%",
-      "pct": -4.05
-    },
-    {
-      "name": "전기장비",
-      "change_value": "-4.16%",
-      "pct": -4.16
+      "change_value": "+0.85%",
+      "pct": 0.85
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-4.27%",
-      "pct": -4.27
+      "change_value": "-4.09%",
+      "pct": -4.09
     },
     {
-      "name": "기계",
-      "change_value": "-5.11%",
-      "pct": -5.11
+      "name": "화학",
+      "change_value": "-4.18%",
+      "pct": -4.18
+    },
+    {
+      "name": "전기장비",
+      "change_value": "-4.71%",
+      "pct": -4.71
     },
     {
       "name": "전자제품",
-      "change_value": "-5.16%",
-      "pct": -5.16
+      "change_value": "-5.19%",
+      "pct": -5.19
+    },
+    {
+      "name": "기계",
+      "change_value": "-5.52%",
+      "pct": -5.52
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "-6.19%",
-      "pct": -6.19
+      "change_value": "-5.90%",
+      "pct": -5.9
     }
   ],
   "article_counts": {
     "종합": 394,
     "경제": 30,
     "부동산": 30,
-    "증권": 65
+    "증권": 70
   },
   "article_count_trend": {
     "종합": {
@@ -3118,9 +3146,9 @@
       "surge": false
     },
     "증권": {
-      "today": 65,
+      "today": 70,
       "yesterday": 69,
-      "change_pct": -5.8,
+      "change_pct": 1.4,
       "surge": false
     }
   }
