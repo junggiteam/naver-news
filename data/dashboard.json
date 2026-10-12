@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-12 14:16:32",
+  "updated_at": "2026-10-12 14:31:27",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -2.46,
-    "kosdaq_change": -3.67,
-    "kospi_value": 6463.16,
-    "kosdaq_value": 859.53
+    "kospi_change": -3.24,
+    "kosdaq_change": -4.18,
+    "kospi_value": 6411.18,
+    "kosdaq_value": 855.01
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "중동 정세의 불안감이 고조되는 가운데 외국인 투자자들의 대규모 매도세가 이어지며 국내 증시가 하락했다. 특히 삼성전자와 SK하이닉스를 비롯한 반도체 관련주가 AI 거품론과 실적 우려로 동반 약세를 보이면서 지수 하락을 주도했다."
+      "text": "외국인 투자자들이 삼성전자와 SK하이닉스를 중심으로 대규모 순매도에 나서면서 코스피와 코스닥 지수가 동반 급락했다. 중동 정세의 불안과 주요 반도체 기업의 약세가 시장 전반의 투자 심리를 위축시킨 것이 지수 하락의 주요 배경이다."
     }
   ],
   "daily_term": {
@@ -77,13 +77,22 @@
   "keyword_tags": [],
   "dart_filings": [
     {
+      "corp_name": "에이전트AI",
+      "corp_code": "00367695",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20261012",
+      "rcept_no": "20261012000152",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000152",
+      "ai_explanation": "전환사채를 발행하기로 한 기존 결정의 세부 내용을 정정하는 공시입니다."
+    },
+    {
       "corp_name": "에스케이증권제11호기업인수목적",
       "corp_code": "01797440",
       "report_nm": "주요사항보고서(해산사유발생)",
       "rcept_dt": "20261012",
       "rcept_no": "20261012000117",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000117",
-      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC)이 상장 폐지 및 자산 반환 절차에 들어감을 의미합니다."
+      "ai_explanation": "기업인수목적회사가 합병 대상을 찾지 못해 회사 문을 닫고 자금을 반환하는 절차입니다."
     },
     {
       "corp_name": "그린가스솔루션이앤씨",
@@ -92,7 +101,7 @@
       "rcept_dt": "20261012",
       "rcept_no": "20261012000079",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000079",
-      "ai_explanation": "회사가 자본잉여금을 자본금으로 전입해 주주들에게 주식을 무상으로 나눠주는 결정입니다."
+      "ai_explanation": "주주들에게 대가 없이 주식을 나누어 주어 자본금을 늘리는 결정입니다."
     },
     {
       "corp_name": "일월지엠엘",
@@ -101,7 +110,7 @@
       "rcept_dt": "20261012",
       "rcept_no": "20261012000070",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000070",
-      "ai_explanation": "기존에 공시했던 유상증자(주주배정 등)의 내용 중 일부 항목을 수정하여 다시 공시함입니다."
+      "ai_explanation": "신주 발행을 통한 자금 조달 계획 중 일부 내용을 정정하는 공시입니다."
     },
     {
       "corp_name": "경남제약",
@@ -110,7 +119,7 @@
       "rcept_dt": "20261012",
       "rcept_no": "20261012000071",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000071",
-      "ai_explanation": "기존에 공시했던 유상증자(주주배정 등)의 내용 중 일부 항목을 수정하여 다시 공시함입니다."
+      "ai_explanation": "신주 발행을 통한 자금 조달 계획 중 일부 내용을 정정하는 공시입니다."
     },
     {
       "corp_name": "코레이트자산운용",
@@ -119,7 +128,7 @@
       "rcept_dt": "20261012",
       "rcept_no": "20261008000738",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000738",
-      "ai_explanation": "주주총회 결의를 통해 기업의 자본금 규모를 줄이는 자본 감소 절차를 의미합니다."
+      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2992,76 +3001,71 @@
     },
     {
       "name": "한화머시너리앤서비스홀딩스",
-      "price": "7,500",
-      "change_percent": "+23.36%",
-      "pct": 23.36
+      "price": "7,530",
+      "change_percent": "+23.85%",
+      "pct": 23.85
+    },
+    {
+      "name": "유니켐",
+      "price": "5,440",
+      "change_percent": "+24.20%",
+      "pct": 24.2
     },
     {
       "name": "금호건설",
-      "price": "13,660",
-      "change_percent": "+22.62%",
-      "pct": 22.62
+      "price": "13,730",
+      "change_percent": "+23.25%",
+      "pct": 23.25
     },
     {
       "name": "금호건설우",
-      "price": "17,890",
-      "change_percent": "+20.07%",
-      "pct": 20.07
-    },
-    {
-      "name": "도화엔지니어링",
-      "price": "5,740",
-      "change_percent": "+17.38%",
-      "pct": 17.38
+      "price": "17,900",
+      "change_percent": "+20.13%",
+      "pct": 20.13
     }
   ],
   "top_losers": [
     {
       "name": "에이엔피",
-      "price": "197",
-      "change_percent": "-20.88%",
-      "pct": 20.88
+      "price": "196",
+      "change_percent": "-21.29%",
+      "pct": 21.29
     },
     {
       "name": "유니온머티리얼",
-      "price": "684",
-      "change_percent": "-19.62%",
-      "pct": 19.62
+      "price": "672",
+      "change_percent": "-21.03%",
+      "pct": 21.03
     },
     {
       "name": "HLB글로벌",
-      "price": "2,140",
-      "change_percent": "-18.79%",
-      "pct": 18.79
+      "price": "2,080",
+      "change_percent": "-21.06%",
+      "pct": 21.06
     },
     {
       "name": "DN오토모티브",
-      "price": "40,900",
-      "change_percent": "-16.87%",
-      "pct": 16.87
+      "price": "40,100",
+      "change_percent": "-18.50%",
+      "pct": 18.5
     },
     {
       "name": "LG이노텍",
-      "price": "490,000",
-      "change_percent": "-14.34%",
-      "pct": 14.34
+      "price": "485,000",
+      "change_percent": "-15.21%",
+      "pct": 15.21
     }
   ],
   "sector_performance": [
     {
       "name": "해운사",
-      "change_value": "+6.47%",
-      "pct": 6.47
+      "change_value": "+6.06%",
+      "pct": 6.06
     },
     {
       "name": "손해보험",
-      "change_value": "+2.28%",
-      "pct": 2.28
-    },
-    {
-      "name": "항공사",
-      "change_value": "+1.85%",
-      "pct": 1.85
+      "change_value": "+2.13%",
+      "pct": 2.13
     },
     {
       "name": "카드",
@@ -3070,25 +3074,25 @@
     },
     {
       "name": "담배",
-      "change_value": "+1.41%",
-      "pct": 1.41
+      "change_value": "+1.47%",
+      "pct": 1.47
+    },
+    {
+      "name": "항공사",
+      "change_value": "+1.39%",
+      "pct": 1.39
     }
   ],
   "sector_heatmap": [
     {
       "name": "해운사",
-      "change_value": "+6.47%",
-      "pct": 6.47
+      "change_value": "+6.06%",
+      "pct": 6.06
     },
     {
       "name": "손해보험",
-      "change_value": "+2.28%",
-      "pct": 2.28
-    },
-    {
-      "name": "항공사",
-      "change_value": "+1.85%",
-      "pct": 1.85
+      "change_value": "+2.13%",
+      "pct": 2.13
     },
     {
       "name": "카드",
@@ -3097,50 +3101,55 @@
     },
     {
       "name": "담배",
-      "change_value": "+1.41%",
-      "pct": 1.41
+      "change_value": "+1.47%",
+      "pct": 1.47
     },
     {
-      "name": "항공화물운송과물류",
-      "change_value": "+0.97%",
-      "pct": 0.97
+      "name": "항공사",
+      "change_value": "+1.39%",
+      "pct": 1.39
+    },
+    {
+      "name": "광고",
+      "change_value": "+1.21%",
+      "pct": 1.21
+    },
+    {
+      "name": "판매업체",
+      "change_value": "-5.21%",
+      "pct": -5.21
     },
     {
       "name": "문구류",
-      "change_value": "-4.33%",
-      "pct": -4.33
-    },
-    {
-      "name": "화학",
-      "change_value": "-4.52%",
-      "pct": -4.52
+      "change_value": "-5.25%",
+      "pct": -5.25
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "-5.17%",
-      "pct": -5.17
+      "change_value": "-5.26%",
+      "pct": -5.26
     },
     {
       "name": "전기장비",
-      "change_value": "-5.54%",
-      "pct": -5.54
+      "change_value": "-6.25%",
+      "pct": -6.25
     },
     {
       "name": "기계",
-      "change_value": "-5.90%",
-      "pct": -5.9
+      "change_value": "-6.67%",
+      "pct": -6.67
     },
     {
       "name": "전자제품",
-      "change_value": "-6.46%",
-      "pct": -6.46
+      "change_value": "-6.97%",
+      "pct": -6.97
     }
   ],
   "article_counts": {
     "종합": 393,
     "경제": 30,
     "부동산": 30,
-    "증권": 71
+    "증권": 72
   },
   "article_count_trend": {
     "종합": {
@@ -3162,9 +3171,9 @@
       "surge": false
     },
     "증권": {
-      "today": 71,
+      "today": 72,
       "yesterday": 69,
-      "change_pct": 2.9,
+      "change_pct": 4.3,
       "surge": false
     }
   }
