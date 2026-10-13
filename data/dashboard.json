@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13 08:31:00",
+  "updated_at": "2026-10-13 09:01:12",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,8 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261013000002",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000002"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000002",
+      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하고 운영 자금을 조달하겠다는 의미입니다."
     },
     {
       "corp_name": "제일엠앤에스",
@@ -94,7 +95,8 @@
       "report_nm": "주요사항보고서(감자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261013000001",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000001"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000001",
+      "ai_explanation": "회사가 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추겠다는 의미입니다."
     },
     {
       "corp_name": "STX",
@@ -102,7 +104,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261012000510",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000510"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000510",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완했다는 의미입니다."
     },
     {
       "corp_name": "STX",
@@ -110,7 +113,8 @@
       "report_nm": "[기재정정]주요사항보고서(감자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261012000507",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000507"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000507",
+      "ai_explanation": "기존에 공시한 감자 결정 내용 중 일부를 수정하거나 보완했다는 의미입니다."
     },
     {
       "corp_name": "제일엠앤에스",
@@ -118,7 +122,8 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261012000514",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000514"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000514",
+      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하고 운영 자금을 조달하겠다는 의미입니다."
     },
     {
       "corp_name": "모아라이프플러스",
@@ -126,7 +131,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261012000513",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000513"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000513",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완했다는 의미입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -134,7 +140,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261012000509",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000509"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000509",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완했다는 의미입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -142,7 +149,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261013",
       "rcept_no": "20261012000506",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000506"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000506",
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완했다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2531,8 +2539,70 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "금호전기",
+      "price": "11,870",
+      "change_percent": "+7.23%",
+      "pct": 7.23
+    },
+    {
+      "name": "두산2우B",
+      "price": "345,000",
+      "change_percent": "+3.60%",
+      "pct": 3.6
+    },
+    {
+      "name": "대한방직",
+      "price": "5,690",
+      "change_percent": "+3.27%",
+      "pct": 3.27
+    },
+    {
+      "name": "동양우",
+      "price": "6,700",
+      "change_percent": "+2.92%",
+      "pct": 2.92
+    },
+    {
+      "name": "유유제약2우B",
+      "price": "8,200",
+      "change_percent": "+2.89%",
+      "pct": 2.89
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "PLUS 삼성전자단일종목레버리지",
+      "price": "10,435",
+      "change_percent": "-6.24%",
+      "pct": 6.24
+    },
+    {
+      "name": "키움 레버리지 바이오TOP10 ETN",
+      "price": "6,000",
+      "change_percent": "-4.46%",
+      "pct": 4.46
+    },
+    {
+      "name": "TREX 200",
+      "price": "98,035",
+      "change_percent": "-3.15%",
+      "pct": 3.15
+    },
+    {
+      "name": "이지스밸류플러스리츠",
+      "price": "3,500",
+      "change_percent": "-0.99%",
+      "pct": 0.99
+    },
+    {
+      "name": "조선선재",
+      "price": "78,500",
+      "change_percent": "-0.88%",
+      "pct": 0.88
+    }
+  ],
   "sector_performance": [
     {
       "name": "음료",
@@ -2626,7 +2696,7 @@
     "종합": 406,
     "경제": 30,
     "부동산": 30,
-    "증권": 77
+    "증권": 79
   },
   "article_count_trend": {
     "종합": {
@@ -2648,9 +2718,9 @@
       "surge": false
     },
     "증권": {
-      "today": 77,
+      "today": 79,
       "yesterday": 81,
-      "change_pct": -4.9,
+      "change_pct": -2.5,
       "surge": false
     }
   }
