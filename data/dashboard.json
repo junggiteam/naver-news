@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-13 13:45:53",
+  "updated_at": "2026-10-13 14:01:13",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -6.62,
-    "kosdaq_change": -3.26,
-    "kospi_value": 5961.86,
-    "kosdaq_value": 821.47
+    "kospi_change": -6.39,
+    "kosdaq_change": -2.83,
+    "kospi_value": 5976.3,
+    "kosdaq_value": 825.14
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "SK하이닉스를 비롯한 주요 종목의 급락세가 이어지며 코스피가 최근 73일간 데이터 중 최저치를 기록하고 코스닥 지수도 함께 하락했다. 시장의 공포 심리가 확산되는 가운데 코스피는 장중 6000선이 무너지며 매도 사이드카가 발동되기도 했다."
+      "text": "반도체 대장주인 삼성전자와 SK하이닉스가 8%에서 10%대 급락세를 보이면서 지수 하락을 주도했다. 이로 인해 코스피 지수는 장중 6000선이 붕괴하며 최근 73일간 데이터 기준으로 최저치를 기록했다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,49 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "에스엔엔씨",
+      "corp_code": "00585486",
+      "report_nm": "타인을위한채무보증결정",
+      "rcept_dt": "20261013",
+      "rcept_no": "20261013000154",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000154",
+      "ai_explanation": "회사가 타인의 채무를 대신 갚기로 보증을 서는 결정입니다."
+    },
+    {
+      "corp_name": "씨어스",
+      "corp_code": "01514227",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20261013",
+      "rcept_no": "20261013000138",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000138",
+      "ai_explanation": "회사가 주식으로 전환할 수 있는 채권을 발행하여 자금을 조달하는 결정입니다."
+    },
+    {
+      "corp_name": "아이엘",
+      "corp_code": "01326279",
+      "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
+      "rcept_dt": "20261013",
+      "rcept_no": "20261013000135",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000135",
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 다시 사들이는 결정입니다."
+    },
+    {
+      "corp_name": "MSDI",
+      "corp_code": "00615723",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261013",
+      "rcept_no": "20261013000136",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000136",
+      "ai_explanation": "이미 공시한 유상증자 계획의 내용을 수정하여 다시 알리는 것입니다."
+    },
+    {
       "corp_name": "로터스카스코리아",
       "corp_code": "01783359",
       "report_nm": "유상증자결정",
       "rcept_dt": "20261013",
       "rcept_no": "20261013000120",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000120",
-      "ai_explanation": "회사가 주식을 새로 발행하여 자본금을 확충하겠다는 결정입니다."
+      "ai_explanation": "회사가 신주를 발행하여 주주 등으로부터 자금을 조달하는 결정입니다."
     },
     {
       "corp_name": "이연제약",
@@ -99,7 +135,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261013000057",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000057",
-      "ai_explanation": "앞서 공시한 전환사채 발행 내용 중 일부 항목을 수정한다는 뜻입니다."
+      "ai_explanation": "이미 공시한 전환사채 발행 계획의 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "제일엠앤에스",
@@ -108,7 +144,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261013000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000002",
-      "ai_explanation": "회사가 주식을 새로 발행해 자본금을 늘리겠다는 결정입니다."
+      "ai_explanation": "회사가 신주를 발행하여 주주 등으로부터 자금을 조달하는 결정입니다."
     },
     {
       "corp_name": "제일엠앤에스",
@@ -117,7 +153,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261013000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000001",
-      "ai_explanation": "회사의 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
+      "ai_explanation": "누적 결손 해소 등을 위해 자본금을 줄이는 결정입니다."
     },
     {
       "corp_name": "STX",
@@ -126,7 +162,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261012000510",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000510",
-      "ai_explanation": "앞서 공시한 유상증자 내용 중 일부 항목을 수정한다는 뜻입니다."
+      "ai_explanation": "이미 공시한 유상증자 계획의 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "STX",
@@ -135,7 +171,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261012000507",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000507",
-      "ai_explanation": "앞서 공시한 감자 결정 내용 중 일부 항목을 수정한다는 뜻입니다."
+      "ai_explanation": "이미 공시한 자본금 감소 계획의 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "제일엠앤에스",
@@ -144,7 +180,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261012000514",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000514",
-      "ai_explanation": "회사가 주식을 새로 발행해 자본금을 늘리겠다는 결정입니다."
+      "ai_explanation": "회사가 신주를 발행하여 주주 등으로부터 자금을 조달하는 결정입니다."
     },
     {
       "corp_name": "모아라이프플러스",
@@ -153,7 +189,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261012000513",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000513",
-      "ai_explanation": "앞서 공시한 유상증자 내용 중 일부 항목을 수정한다는 뜻입니다."
+      "ai_explanation": "이미 공시한 유상증자 계획의 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -162,7 +198,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261012000509",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000509",
-      "ai_explanation": "앞서 공시한 유상증자 내용 중 일부 항목을 수정한다는 뜻입니다."
+      "ai_explanation": "이미 공시한 유상증자 계획의 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -171,7 +207,7 @@
       "rcept_dt": "20261013",
       "rcept_no": "20261012000506",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000506",
-      "ai_explanation": "앞서 공시한 유상증자 내용 중 일부 항목을 수정한다는 뜻입니다."
+      "ai_explanation": "이미 공시한 유상증자 계획의 내용을 수정하여 다시 알리는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2563,9 +2599,9 @@
   "top_gainers": [
     {
       "name": "대양금속",
-      "price": "691",
-      "change_percent": "+24.50%",
-      "pct": 24.5
+      "price": "711",
+      "change_percent": "+28.11%",
+      "pct": 28.11
     },
     {
       "name": "에이엔피",
@@ -2580,24 +2616,24 @@
       "pct": 20.94
     },
     {
-      "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3,365",
-      "change_percent": "+17.04%",
-      "pct": 17.04
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "price": "10,725",
+      "change_percent": "+16.83%",
+      "pct": 16.83
     },
     {
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "10,720",
-      "change_percent": "+16.78%",
-      "pct": 16.78
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "3,360",
+      "change_percent": "+16.87%",
+      "pct": 16.87
     }
   ],
   "top_losers": [
     {
       "name": "한창",
-      "price": "21",
-      "change_percent": "-41.67%",
-      "pct": 41.67
+      "price": "18",
+      "change_percent": "-50.00%",
+      "pct": 50.0
     },
     {
       "name": "한투 레버리지코스닥150선물 ETN",
@@ -2607,117 +2643,117 @@
     },
     {
       "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "6,900",
-      "change_percent": "-21.01%",
-      "pct": 21.01
+      "price": "6,825",
+      "change_percent": "-21.87%",
+      "pct": 21.87
     },
     {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "5,930",
-      "change_percent": "-20.99%",
-      "pct": 20.99
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "6,085",
+      "change_percent": "-21.84%",
+      "pct": 21.84
     },
     {
       "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "6,065",
-      "change_percent": "-20.72%",
-      "pct": 20.72
+      "price": "6,045",
+      "change_percent": "-20.98%",
+      "pct": 20.98
     }
   ],
   "sector_performance": [
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+1.18%",
-      "pct": 1.18
+      "name": "카드",
+      "change_value": "+1.19%",
+      "pct": 1.19
     },
     {
-      "name": "카드",
-      "change_value": "+0.95%",
-      "pct": 0.95
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.87%",
+      "pct": 0.87
     },
     {
       "name": "해운사",
-      "change_value": "+0.46%",
-      "pct": 0.46
+      "change_value": "+0.82%",
+      "pct": 0.82
     },
     {
       "name": "문구류",
-      "change_value": "+0.20%",
-      "pct": 0.2
+      "change_value": "+0.59%",
+      "pct": 0.59
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+0.05%",
-      "pct": 0.05
+      "name": "담배",
+      "change_value": "+0.22%",
+      "pct": 0.22
     }
   ],
   "sector_heatmap": [
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+1.18%",
-      "pct": 1.18
+      "name": "카드",
+      "change_value": "+1.19%",
+      "pct": 1.19
     },
     {
-      "name": "카드",
-      "change_value": "+0.95%",
-      "pct": 0.95
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.87%",
+      "pct": 0.87
     },
     {
       "name": "해운사",
-      "change_value": "+0.46%",
-      "pct": 0.46
+      "change_value": "+0.82%",
+      "pct": 0.82
     },
     {
       "name": "문구류",
-      "change_value": "+0.20%",
-      "pct": 0.2
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.05%",
-      "pct": 0.05
+      "change_value": "+0.59%",
+      "pct": 0.59
     },
     {
       "name": "담배",
-      "change_value": "-0.11%",
-      "pct": -0.11
+      "change_value": "+0.22%",
+      "pct": 0.22
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+0.21%",
+      "pct": 0.21
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "-6.04%",
-      "pct": -6.04
+      "change_value": "-5.84%",
+      "pct": -5.84
     },
     {
       "name": "생명보험",
-      "change_value": "-6.47%",
-      "pct": -6.47
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-6.96%",
-      "pct": -6.96
+      "change_value": "-6.76%",
+      "pct": -6.76
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-7.19%",
-      "pct": -7.19
+      "change_value": "-7.13%",
+      "pct": -7.13
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-7.40%",
+      "pct": -7.4
     },
     {
       "name": "화장품",
-      "change_value": "-7.60%",
-      "pct": -7.6
+      "change_value": "-7.73%",
+      "pct": -7.73
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-8.81%",
-      "pct": -8.81
+      "change_value": "-8.61%",
+      "pct": -8.61
     }
   ],
   "article_counts": {
     "종합": 411,
     "경제": 30,
     "부동산": 30,
-    "증권": 89
+    "증권": 90
   },
   "article_count_trend": {
     "종합": {
@@ -2739,9 +2775,9 @@
       "surge": false
     },
     "증권": {
-      "today": 89,
+      "today": 90,
       "yesterday": 81,
-      "change_pct": 9.9,
+      "change_pct": 11.1,
       "surge": false
     }
   }
