@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15 02:31:02",
+  "updated_at": "2026-10-15 02:46:45",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -16,34 +16,61 @@
       "press_name": "연합뉴스"
     },
     "경제": {
-      "title": "취임 6주년 정의선 \"인도서 자동차 넘어 인프라·에너지 투자\"(종합)",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/14/16377667.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016377667",
-      "press_name": "연합뉴스"
+      "title": "李정부 14개월 월세 상승률, 직전 10년의 1.3배",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/10/15/4003935.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/023/0004003935",
+      "press_name": "조선일보"
     },
     "부동산": {
-      "title": "농지 전수조사 불만에 매입한다는데…‘매입 대기’ 면적 여의도 11배",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/020/2026/10/14/3755000.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/020/0003755000",
-      "press_name": "동아일보"
+      "title": "“국민이 집값 올 코트 프레싱 해야”… 정부, 불난 민심에 부채질",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/10/15/4003925.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/023/0004003925",
+      "press_name": "조선일보"
     }
   },
   "headlines": [
     {
-      "category": "경제",
-      "text": "미국 9월 물가 지수 상승으로 금리 인상 가능성이 제기되며 시장 변동성 확대"
+      "category": "종합",
+      "text": "코스피 및 코스피200 지수가 최근 75일간 최저치를 기록하며 하락함"
+    },
+    {
+      "category": "종합",
+      "text": "넷플릭스가 성장 정체에 따라 2022년 이후 최대 규모의 구조조정을 단행함"
+    },
+    {
+      "category": "종합",
+      "text": "외식 물가 상승으로 인한 김밥 메뉴 삭제와 2030세대의 외식 부담 심화"
     },
     {
       "category": "경제",
-      "text": "코스피와 코스피200이 최근 74일간 최저치를 기록하며 투자 심리 위축"
+      "text": "미국 소비자물가 상승세가 재개되면서 금리 인상 가능성이 커지고 있음"
     },
     {
       "category": "경제",
-      "text": "서울 아파트 가격 상승과 세종시 전세 부족 등 부동산 시장 불안 지속"
+      "text": "코스피와 코스피200이 최근 75일간 최저치를 기록하며 약세장 지속"
+    },
+    {
+      "category": "경제",
+      "text": "국내 반도체 업계가 AI 인프라 수요에 대응하며 기술 경쟁력 강화 추진"
+    },
+    {
+      "category": "증권",
+      "text": "ASML의 실적 부진 여파로 반도체 업종에 대한 투자 심리가 위축되면서 코스피와 코스닥 지수가 동반 하락했다. 특히 외국인 투자자들이 국내 반도체 대형주를 대거 매도한 영향이 더해지며 코스피는 최근 75일간 데이터 기준으로 최저치를 기록했다."
     }
   ],
-  "daily_term": null,
-  "keyword_tags": [],
+  "daily_term": {
+    "term": "소비자물가",
+    "explanation": "우리가 일상에서 사는 물건이나 서비스의 가격이 전반적으로 얼마나 올랐는지를 나타내는 지표입니다. 물가가 오르면 같은 돈으로 살 수 있는 물건이 줄어들어 돈의 가치가 떨어지는 것과 같습니다. 마치 시장바구니에 담을 수 있는 물건의 개수가 예전보다 적어지는 현상이라고 이해하면 쉽습니다."
+  },
+  "keyword_tags": [
+    "소비자물가 상승",
+    "기준금리 인상",
+    "반도체 AI 투자",
+    "부동산 시장 침체",
+    "재건축 공사비 갈등",
+    "증시 변동성 확대",
+    "기업 구조조정"
+  ],
   "dart_filings": [
     {
       "corp_name": "테크트랜스",
@@ -3047,16 +3074,16 @@
     }
   ],
   "article_counts": {
-    "종합": 411,
+    "종합": 409,
     "경제": 30,
     "부동산": 30,
     "증권": 83
   },
   "article_count_trend": {
     "종합": {
-      "today": 411,
+      "today": 409,
       "yesterday": 411,
-      "change_pct": 0.0,
+      "change_pct": -0.5,
       "surge": false
     },
     "경제": {
