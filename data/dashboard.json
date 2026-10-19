@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 03:31:22",
+  "updated_at": "2026-10-20 04:01:17",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
@@ -28,7 +28,12 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "category": "증권",
+      "text": "최근 이어진 주가 급락에 따른 저가 매수세가 유입되면서 코스피와 코스닥 지수가 동반 상승했다. 시장은 반도체 등 주요 기업의 실적 발표와 향후 경제 정책 방향을 주시하며 반등 모멘텀을 탐색하는 분위기다."
+    }
+  ],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [
@@ -38,7 +43,8 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261020",
       "rcept_no": "20261019000369",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000369"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000369",
+      "ai_explanation": "회사가 운영자금 등을 조달하기 위해 주식을 새로 발행하여 기존 또는 신규 주주에게 판매하는 절차를 정정한 공시입니다."
     }
   ],
   "macro_indicators": [
