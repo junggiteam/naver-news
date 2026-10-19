@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-19 11:45:50",
+  "updated_at": "2026-10-19 12:01:12",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.48,
-    "kosdaq_change": -0.68,
-    "kospi_value": 5641.08,
-    "kosdaq_value": 789.39
+    "kospi_change": 0.22,
+    "kosdaq_change": -0.2,
+    "kospi_value": 5680.73,
+    "kosdaq_value": 793.23
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "세나테크놀로지",
+      "corp_code": "01010615",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261019",
+      "rcept_no": "20261019000081",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000081",
+      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 금융기관에 위탁하여 자사주를 매입하기로 결정함."
+    },
+    {
       "corp_name": "실리콘투",
       "corp_code": "00982023",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261019",
       "rcept_no": "20261019000068",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000068",
-      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하여 주가 안정과 주주 가치를 높이려는 결정입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 금융기관에 위탁하여 자사주를 매입하기로 결정함."
     },
     {
       "corp_name": "엔케이",
@@ -96,7 +105,7 @@
       "rcept_dt": "20261019",
       "rcept_no": "20261019000058",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000058",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 해지한다는 결정입니다."
+      "ai_explanation": "기존에 체결했던 자기주식 취득 신탁 계약을 중도에 종료하기로 결정함."
     },
     {
       "corp_name": "웨이버스",
@@ -105,7 +114,7 @@
       "rcept_dt": "20261019",
       "rcept_no": "20261019000035",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000035",
-      "ai_explanation": "회사가 직접 자금을 들여 시장에서 자사 주식을 매입하여 보유하겠다는 결정입니다."
+      "ai_explanation": "회사가 직접 시장에서 자사 주식을 매입하여 보유하기로 결정함."
     },
     {
       "corp_name": "하나금융지주",
@@ -114,7 +123,7 @@
       "rcept_dt": "20261019",
       "rcept_no": "20261019000037",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000037",
-      "ai_explanation": "자본으로 인정받을 수 있는 조건부 채권인 신종자본증권을 발행하기로 한 내용을 정정한 것입니다."
+      "ai_explanation": "회사가 필요 시 자본으로 전환되거나 상각될 수 있는 조건부 채권을 발행하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2983,41 +2992,29 @@
     },
     {
       "name": "한화갤러리아우",
-      "price": "6,550",
-      "change_percent": "+25.96%",
-      "pct": 25.96
+      "price": "6,460",
+      "change_percent": "+24.23%",
+      "pct": 24.23
     },
     {
       "name": "휴니드",
-      "price": "5,260",
-      "change_percent": "+27.36%",
-      "pct": 27.36
+      "price": "4,995",
+      "change_percent": "+20.94%",
+      "pct": 20.94
     },
     {
       "name": "롯데에너지머티리얼즈",
-      "price": "56,100",
-      "change_percent": "+13.56%",
-      "pct": 13.56
+      "price": "56,200",
+      "change_percent": "+13.77%",
+      "pct": 13.77
     }
   ],
   "top_losers": [
     {
       "name": "키다리스튜디오",
-      "price": "5,290",
-      "change_percent": "-13.42%",
-      "pct": 13.42
-    },
-    {
-      "name": "한미사이언스",
-      "price": "42,450",
-      "change_percent": "-11.01%",
-      "pct": 11.01
-    },
-    {
-      "name": "케이씨텍",
-      "price": "95,900",
-      "change_percent": "-9.27%",
-      "pct": 9.27
+      "price": "5,330",
+      "change_percent": "-12.77%",
+      "pct": 12.77
     },
     {
       "name": "N2 레버리지 천연가스 선물 ETN",
@@ -3026,106 +3023,118 @@
       "pct": 9.24
     },
     {
-      "name": "한투 레버리지천연가스선물 ETN C",
-      "price": "14,465",
-      "change_percent": "-9.17%",
-      "pct": 9.17
+      "name": "신한 블룸버그 2X 천연가스 선물 ETN B",
+      "price": "14,470",
+      "change_percent": "-9.11%",
+      "pct": 9.11
+    },
+    {
+      "name": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
+      "price": "14,470",
+      "change_percent": "-8.99%",
+      "pct": 8.99
+    },
+    {
+      "name": "하나 레버리지 천연가스 선물 ETN(H)",
+      "price": "8,460",
+      "change_percent": "-8.98%",
+      "pct": 8.98
     }
   ],
   "sector_performance": [
     {
       "name": "전기제품",
-      "change_value": "+5.59%",
-      "pct": 5.59
-    },
-    {
-      "name": "자동차",
-      "change_value": "+3.86%",
-      "pct": 3.86
-    },
-    {
-      "name": "화학",
-      "change_value": "+3.72%",
-      "pct": 3.72
+      "change_value": "+5.68%",
+      "pct": 5.68
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+3.29%",
-      "pct": 3.29
+      "change_value": "+3.92%",
+      "pct": 3.92
     },
     {
-      "name": "IT서비스",
-      "change_value": "+3.08%",
-      "pct": 3.08
+      "name": "자동차",
+      "change_value": "+3.84%",
+      "pct": 3.84
+    },
+    {
+      "name": "화학",
+      "change_value": "+3.83%",
+      "pct": 3.83
+    },
+    {
+      "name": "비철금속",
+      "change_value": "+3.45%",
+      "pct": 3.45
     }
   ],
   "sector_heatmap": [
     {
       "name": "전기제품",
-      "change_value": "+5.59%",
-      "pct": 5.59
-    },
-    {
-      "name": "자동차",
-      "change_value": "+3.86%",
-      "pct": 3.86
-    },
-    {
-      "name": "화학",
-      "change_value": "+3.72%",
-      "pct": 3.72
+      "change_value": "+5.68%",
+      "pct": 5.68
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+3.29%",
-      "pct": 3.29
+      "change_value": "+3.92%",
+      "pct": 3.92
     },
     {
-      "name": "IT서비스",
-      "change_value": "+3.08%",
-      "pct": 3.08
+      "name": "자동차",
+      "change_value": "+3.84%",
+      "pct": 3.84
     },
     {
-      "name": "항공사",
-      "change_value": "+3.07%",
-      "pct": 3.07
+      "name": "화학",
+      "change_value": "+3.83%",
+      "pct": 3.83
     },
     {
-      "name": "디스플레이패널",
+      "name": "비철금속",
+      "change_value": "+3.45%",
+      "pct": 3.45
+    },
+    {
+      "name": "철강",
+      "change_value": "+3.20%",
+      "pct": 3.2
+    },
+    {
+      "name": "가정용품",
+      "change_value": "-1.37%",
+      "pct": -1.37
+    },
+    {
+      "name": "문구류",
+      "change_value": "-1.46%",
+      "pct": -1.46
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "-1.57%",
+      "pct": -1.57
+    },
+    {
+      "name": "컴퓨터와주변기기",
       "change_value": "-1.64%",
       "pct": -1.64
     },
     {
-      "name": "복합기업",
-      "change_value": "-1.69%",
-      "pct": -1.69
-    },
-    {
-      "name": "컴퓨터와주변기기",
-      "change_value": "-1.83%",
-      "pct": -1.83
-    },
-    {
       "name": "인터넷과카탈로그소매",
-      "change_value": "-2.32%",
-      "pct": -2.32
+      "change_value": "-1.96%",
+      "pct": -1.96
     },
     {
       "name": "조선",
-      "change_value": "-2.44%",
-      "pct": -2.44
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "-2.80%",
-      "pct": -2.8
+      "change_value": "-2.25%",
+      "pct": -2.25
     }
   ],
   "article_counts": {
     "종합": 399,
     "경제": 30,
     "부동산": 30,
-    "증권": 63
+    "증권": 64
   },
   "article_count_trend": {
     "종합": {
@@ -3147,9 +3156,9 @@
       "surge": false
     },
     "증권": {
-      "today": 63,
+      "today": 64,
       "yesterday": 61,
-      "change_pct": 3.3,
+      "change_pct": 4.9,
       "surge": false
     }
   }
