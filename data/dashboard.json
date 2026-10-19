@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-19 10:15:47",
+  "updated_at": "2026-10-19 10:30:56",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -1.72,
-    "kosdaq_change": -1.51,
-    "kospi_value": 5570.56,
-    "kosdaq_value": 782.81
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": -0.26,
+    "kosdaq_change": -0.54,
+    "kospi_value": 5653.1,
+    "kosdaq_value": 790.46
   },
   "heroes": {
     "종합": {
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "부동산 쏠림 현상과 대출 규제 속 상위 0.1% 순자산이 증가하는 추세임"
-    },
-    {
-      "category": "증권",
-      "text": "인공지능 투자에 대한 불안감이 커지고 유가가 상승하면서 환율이 반등하는 등 시장의 하방 압력이 높아졌다. 이에 따라 코스피200은 최근 79일간 데이터 기준 최저치를 기록하며 코스피와 코스닥 지수 모두 1%대 하락으로 마감했다."
     }
   ],
   "daily_term": {
@@ -2944,30 +2940,36 @@
     },
     {
       "name": "에스엠벡셀",
-      "price": "3,905",
-      "change_percent": "+25.56%",
-      "pct": 25.56
-    },
-    {
-      "name": "에이엔피",
-      "price": "502",
-      "change_percent": "+17.29%",
-      "pct": 17.29
+      "price": "3,900",
+      "change_percent": "+25.40%",
+      "pct": 25.4
     },
     {
       "name": "한화갤러리아우",
-      "price": "6,050",
-      "change_percent": "+16.35%",
-      "pct": 16.35
+      "price": "6,130",
+      "change_percent": "+17.88%",
+      "pct": 17.88
     },
     {
       "name": "명신산업",
-      "price": "9,510",
-      "change_percent": "+12.54%",
-      "pct": 12.54
+      "price": "9,430",
+      "change_percent": "+11.60%",
+      "pct": 11.6
+    },
+    {
+      "name": "키움 레버리지 2차전지산업 ETN",
+      "price": "9,190",
+      "change_percent": "+11.39%",
+      "pct": 11.39
     }
   ],
   "top_losers": [
+    {
+      "name": "한미사이언스",
+      "price": "42,000",
+      "change_percent": "-11.95%",
+      "pct": 11.95
+    },
     {
       "name": "신한 블룸버그 2X 천연가스 선물 ETN B",
       "price": "14,350",
@@ -2975,124 +2977,118 @@
       "pct": 9.86
     },
     {
+      "name": "N2 레버리지 천연가스 선물 ETN",
+      "price": "8,860",
+      "change_percent": "-9.55%",
+      "pct": 9.55
+    },
+    {
+      "name": "에넥스",
+      "price": "1,730",
+      "change_percent": "-9.00%",
+      "pct": 9.0
+    },
+    {
       "name": "메리츠 레버리지 천연가스 선물 ETN(H)",
-      "price": "8,440",
-      "change_percent": "-9.59%",
-      "pct": 9.59
-    },
-    {
-      "name": "하나 레버리지 천연가스 선물 ETN(H)",
-      "price": "8,410",
-      "change_percent": "-9.52%",
-      "pct": 9.52
-    },
-    {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "4,140",
-      "change_percent": "-9.51%",
-      "pct": 9.51
-    },
-    {
-      "name": "LS에코에너지",
-      "price": "56,400",
-      "change_percent": "-9.18%",
-      "pct": 9.18
+      "price": "8,500",
+      "change_percent": "-8.94%",
+      "pct": 8.94
     }
   ],
   "sector_performance": [
     {
       "name": "전기제품",
-      "change_value": "+2.48%",
-      "pct": 2.48
+      "change_value": "+5.33%",
+      "pct": 5.33
+    },
+    {
+      "name": "화학",
+      "change_value": "+3.43%",
+      "pct": 3.43
+    },
+    {
+      "name": "비철금속",
+      "change_value": "+2.58%",
+      "pct": 2.58
     },
     {
       "name": "항공사",
-      "change_value": "+1.90%",
-      "pct": 1.9
+      "change_value": "+2.43%",
+      "pct": 2.43
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+1.72%",
-      "pct": 1.72
-    },
-    {
-      "name": "제약",
-      "change_value": "+1.53%",
-      "pct": 1.53
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "+1.51%",
-      "pct": 1.51
+      "name": "철강",
+      "change_value": "+2.41%",
+      "pct": 2.41
     }
   ],
   "sector_heatmap": [
     {
       "name": "전기제품",
-      "change_value": "+2.48%",
-      "pct": 2.48
+      "change_value": "+5.33%",
+      "pct": 5.33
+    },
+    {
+      "name": "화학",
+      "change_value": "+3.43%",
+      "pct": 3.43
+    },
+    {
+      "name": "비철금속",
+      "change_value": "+2.58%",
+      "pct": 2.58
     },
     {
       "name": "항공사",
-      "change_value": "+1.90%",
-      "pct": 1.9
+      "change_value": "+2.43%",
+      "pct": 2.43
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "+1.72%",
-      "pct": 1.72
-    },
-    {
-      "name": "제약",
-      "change_value": "+1.53%",
-      "pct": 1.53
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "+1.51%",
-      "pct": 1.51
+      "name": "철강",
+      "change_value": "+2.41%",
+      "pct": 2.41
     },
     {
       "name": "판매업체",
-      "change_value": "+1.44%",
-      "pct": 1.44
+      "change_value": "+2.39%",
+      "pct": 2.39
     },
     {
-      "name": "복합기업",
-      "change_value": "-2.56%",
-      "pct": -2.56
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "-2.63%",
-      "pct": -2.63
+      "name": "가구",
+      "change_value": "-1.67%",
+      "pct": -1.67
     },
     {
       "name": "디스플레이패널",
-      "change_value": "-2.69%",
-      "pct": -2.69
+      "change_value": "-1.87%",
+      "pct": -1.87
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-3.40%",
-      "pct": -3.4
-    },
-    {
-      "name": "조선",
-      "change_value": "-3.77%",
-      "pct": -3.77
+      "name": "기타금융",
+      "change_value": "-2.05%",
+      "pct": -2.05
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-4.82%",
-      "pct": -4.82
+      "change_value": "-2.32%",
+      "pct": -2.32
+    },
+    {
+      "name": "조선",
+      "change_value": "-2.59%",
+      "pct": -2.59
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-3.12%",
+      "pct": -3.12
     }
   ],
   "article_counts": {
     "종합": 399,
     "경제": 30,
     "부동산": 30,
-    "증권": 61
+    "증권": 63
   },
   "article_count_trend": {
     "종합": {
@@ -3114,9 +3110,9 @@
       "surge": false
     },
     "증권": {
-      "today": 61,
+      "today": 63,
       "yesterday": 61,
-      "change_pct": 0.0,
+      "change_pct": 3.3,
       "surge": false
     }
   }
