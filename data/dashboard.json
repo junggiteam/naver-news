@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-20 15:31:33",
+  "updated_at": "2026-10-20 16:01:04",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -3.97,
-    "kosdaq_change": -3.34,
-    "kospi_value": 5539.05,
-    "kosdaq_value": 781.84
+    "kospi_change": -3.73,
+    "kosdaq_change": -3.33,
+    "kospi_value": 5552.74,
+    "kosdaq_value": 781.97
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "오늘 코스피와 코스닥 지수는 개인과 기관 및 외국인 간의 수급 공방 속에 각각 3.97%와 3.34% 하락하며 마감했다. 특히 코스피와 코스피200 지수는 최근 80일간의 데이터 기준으로 최저치를 기록했다."
+      "text": "오늘 코스피와 코스닥 지수는 반도체 종목의 약세가 이어지며 각각 3%대 하락세를 기록했다. 이는 최근 80일간 데이터 기준으로 코스피와 코스피200 지수가 최저치를 경신한 결과다. 이와 함께 원/달러 환율이 연저점을 기록하는 등 시장 전반의 투자 심리가 위축된 모습이다."
     }
   ],
   "daily_term": null,
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "프리티",
+      "corp_code": "00122825",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261020",
+      "rcept_no": "20261020000255",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000255",
+      "ai_explanation": "회사 운영 자금 마련 등을 위해 주식을 추가 발행하기로 한 결정을 수정했습니다."
+    },
+    {
       "corp_name": "케이쓰리아이",
       "corp_code": "01689266",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261020",
       "rcept_no": "20261020000190",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000190",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
+      "ai_explanation": "외부 자금 조달을 위해 주식으로 전환할 수 있는 채권을 발행하기로 한 결정을 수정했습니다."
     },
     {
       "corp_name": "엔켐",
@@ -96,7 +105,7 @@
       "rcept_dt": "20261020",
       "rcept_no": "20261020000185",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000185",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
+      "ai_explanation": "외부 자금 조달을 위해 주식으로 전환할 수 있는 채권을 발행하기로 한 결정을 수정했습니다."
     },
     {
       "corp_name": "메가스터디교육",
@@ -105,7 +114,7 @@
       "rcept_dt": "20261020",
       "rcept_no": "20261020000167",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000167",
-      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 종료함."
+      "ai_explanation": "자사주 매입을 위해 체결했던 신탁 계약을 종료하기로 결정했습니다."
     },
     {
       "corp_name": "에스솔라루프1",
@@ -114,7 +123,7 @@
       "rcept_dt": "20261020",
       "rcept_no": "20261020000157",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000157",
-      "ai_explanation": "건물, 토지 등 비유동자산 매입 계획의 내용을 수정하여 다시 공시함."
+      "ai_explanation": "건물이나 설비 등 대규모 유형 자산을 사들이기로 한 기존 결정을 수정했습니다."
     },
     {
       "corp_name": "에스솔라루프1",
@@ -123,7 +132,7 @@
       "rcept_dt": "20261020",
       "rcept_no": "20261020000012",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000012",
-      "ai_explanation": "사업 목적 등을 위해 건물, 토지 등 비유동자산을 새로 취득하기로 함."
+      "ai_explanation": "회사 운영을 위해 건물이나 설비 등 대규모 유형 자산을 새로 사들이기로 결정했습니다."
     },
     {
       "corp_name": "엘에이티",
@@ -132,7 +141,7 @@
       "rcept_dt": "20261020",
       "rcept_no": "20261019000369",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000369",
-      "ai_explanation": "자금 조달을 위해 추진하는 유상증자의 내용을 수정하여 다시 공시함."
+      "ai_explanation": "회사 운영 자금 마련 등을 위해 주식을 추가 발행하기로 한 결정을 수정했습니다."
     }
   ],
   "macro_indicators": [
@@ -3043,97 +3052,97 @@
   "sector_performance": [
     {
       "name": "담배",
-      "change_value": "+0.41%",
-      "pct": 0.41
+      "change_value": "+0.47%",
+      "pct": 0.47
     },
     {
-      "name": "다각화된통신서비스",
-      "change_value": "+0.20%",
-      "pct": 0.2
+      "name": "가구",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "카드",
-      "change_value": "+0.12%",
-      "pct": 0.12
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "운송인프라",
-      "change_value": "-0.21%",
-      "pct": -0.21
+      "change_value": "-0.14%",
+      "pct": -0.14
     },
     {
       "name": "음료",
-      "change_value": "-0.25%",
-      "pct": -0.25
+      "change_value": "-0.18%",
+      "pct": -0.18
     }
   ],
   "sector_heatmap": [
     {
       "name": "담배",
-      "change_value": "+0.41%",
-      "pct": 0.41
+      "change_value": "+0.47%",
+      "pct": 0.47
     },
     {
-      "name": "다각화된통신서비스",
-      "change_value": "+0.20%",
-      "pct": 0.2
+      "name": "가구",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "카드",
-      "change_value": "+0.12%",
-      "pct": 0.12
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "운송인프라",
-      "change_value": "-0.21%",
-      "pct": -0.21
+      "change_value": "-0.14%",
+      "pct": -0.14
     },
     {
       "name": "음료",
-      "change_value": "-0.25%",
-      "pct": -0.25
+      "change_value": "-0.18%",
+      "pct": -0.18
     },
     {
-      "name": "교육서비스",
-      "change_value": "-0.50%",
-      "pct": -0.5
+      "name": "다각화된통신서비스",
+      "change_value": "-0.20%",
+      "pct": -0.2
     },
     {
       "name": "화학",
-      "change_value": "-6.22%",
-      "pct": -6.22
+      "change_value": "-6.15%",
+      "pct": -6.15
     },
     {
       "name": "비철금속",
-      "change_value": "-6.67%",
-      "pct": -6.67
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-6.89%",
-      "pct": -6.89
+      "change_value": "-6.60%",
+      "pct": -6.6
     },
     {
       "name": "조선",
-      "change_value": "-7.12%",
-      "pct": -7.12
+      "change_value": "-6.86%",
+      "pct": -6.86
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "-7.18%",
+      "pct": -7.18
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-8.18%",
-      "pct": -8.18
+      "change_value": "-8.26%",
+      "pct": -8.26
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-10.60%",
-      "pct": -10.6
+      "change_value": "-10.51%",
+      "pct": -10.51
     }
   ],
   "article_counts": {
     "종합": 408,
     "경제": 30,
     "부동산": 30,
-    "증권": 85
+    "증권": 87
   },
   "article_count_trend": {
     "종합": {
@@ -3155,9 +3164,9 @@
       "surge": false
     },
     "증권": {
-      "today": 85,
+      "today": 87,
       "yesterday": 87,
-      "change_pct": -2.3,
+      "change_pct": 0.0,
       "surge": false
     }
   }
