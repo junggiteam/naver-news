@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-21 11:01:22",
+  "updated_at": "2026-10-21 11:31:01",
   "market_mood": {
-    "label": "급등",
-    "emoji": "🟢",
-    "kospi_change": 4.57,
-    "kosdaq_change": 2.26,
-    "kospi_value": 5806.32,
-    "kosdaq_value": 799.64
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 3.79,
+    "kosdaq_change": 1.68,
+    "kospi_value": 5763.24,
+    "kosdaq_value": 795.12
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "한국유니온제약",
+      "corp_code": "00532855",
+      "report_nm": "주요사항보고서(감자결정)",
+      "rcept_dt": "20261021",
+      "rcept_no": "20261021000092",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000092",
+      "ai_explanation": "결손금 보전이나 자본 구조 개선을 위해 발행 주식 수를 줄이는 결정입니다."
+    },
+    {
+      "corp_name": "한국유니온제약",
+      "corp_code": "00532855",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261021",
+      "rcept_no": "20261021000091",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000091",
+      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 새로운 주식을 발행하여 자본을 조달하는 결정입니다."
+    },
+    {
       "corp_name": "메가스터디교육",
       "corp_code": "01074862",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261021",
       "rcept_no": "20261021000053",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000053",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 신탁 계약 방식으로 자사주를 매입하기로 결정함."
+      "ai_explanation": "주가 안정이나 주주 가치 제고를 목적으로 금융기관에 자금을 맡겨 자사주를 사들이는 계약입니다."
     },
     {
       "corp_name": "셀바이오휴먼텍",
@@ -96,7 +114,7 @@
       "rcept_dt": "20261021",
       "rcept_no": "20261021000068",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000068",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 종료하기로 결정함."
+      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료하는 결정입니다."
     },
     {
       "corp_name": "경농",
@@ -105,7 +123,7 @@
       "rcept_dt": "20261021",
       "rcept_no": "20261021000052",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000052",
-      "ai_explanation": "회사 간 합병을 진행하기 위한 세부 사항을 수정하거나 보완하여 다시 공시함."
+      "ai_explanation": "기업의 경쟁력 강화 등을 위해 다른 회사와 통합하거나 합치는 과정에 대한 정정 보고입니다."
     },
     {
       "corp_name": "빅텐츠",
@@ -114,7 +132,7 @@
       "rcept_dt": "20261021",
       "rcept_no": "20261020000390",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000390",
-      "ai_explanation": "발행한 전환사채의 만기일 전에 회사가 이를 미리 되사들여 소각하거나 보유하기로 결정함."
+      "ai_explanation": "발행한 전환사채를 만기 전 미리 사들여 소각하거나 보유하려는 결정입니다."
     },
     {
       "corp_name": "빅텐츠",
@@ -123,7 +141,7 @@
       "rcept_dt": "20261021",
       "rcept_no": "20261020000391",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261020000391",
-      "ai_explanation": "발행한 전환사채의 만기일 전에 회사가 이를 미리 되사들여 소각하거나 보유하기로 결정함."
+      "ai_explanation": "발행한 전환사채를 만기 전 미리 사들여 소각하거나 보유하려는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2950,33 +2968,33 @@
   "top_gainers": [
     {
       "name": "형지엘리트",
-      "price": "2,460",
-      "change_percent": "+27.86%",
-      "pct": 27.86
+      "price": "2,500",
+      "change_percent": "+29.94%",
+      "pct": 29.94
     },
     {
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "4,820",
-      "change_percent": "+16.85%",
-      "pct": 16.85
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "4,890",
+      "change_percent": "+17.27%",
+      "pct": 17.27
     },
     {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "5,050",
-      "change_percent": "+17.72%",
-      "pct": 17.72
+      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
+      "price": "8,155",
+      "change_percent": "+16.83%",
+      "pct": 16.83
     },
     {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "5,730",
-      "change_percent": "+17.42%",
-      "pct": 17.42
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "price": "8,375",
+      "change_percent": "+16.40%",
+      "pct": 16.4
     },
     {
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "4,990",
-      "change_percent": "+17.41%",
-      "pct": 17.41
+      "name": "ACE 삼성전자단일종목레버리지",
+      "price": "8,040",
+      "change_percent": "+15.10%",
+      "pct": 15.1
     }
   ],
   "top_losers": [
@@ -2988,116 +3006,116 @@
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9,650",
-      "change_percent": "-16.52%",
-      "pct": 16.52
-    },
-    {
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "10,505",
-      "change_percent": "-14.56%",
-      "pct": 14.56
+      "price": "9,940",
+      "change_percent": "-14.01%",
+      "pct": 14.01
     },
     {
       "name": "LIG디펜스앤에어로스페이스",
-      "price": "469,000",
-      "change_percent": "-14.42%",
-      "pct": 14.42
+      "price": "474,000",
+      "change_percent": "-13.50%",
+      "pct": 13.5
+    },
+    {
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "price": "10,715",
+      "change_percent": "-12.85%",
+      "pct": 12.85
     },
     {
       "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3,760",
-      "change_percent": "-13.16%",
-      "pct": 13.16
+      "price": "3,850",
+      "change_percent": "-11.09%",
+      "pct": 11.09
     }
   ],
   "sector_performance": [
     {
       "name": "반도체와반도체장비",
-      "change_value": "+7.78%",
-      "pct": 7.78
+      "change_value": "+6.18%",
+      "pct": 6.18
     },
     {
       "name": "석유와가스",
-      "change_value": "+5.50%",
-      "pct": 5.5
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+4.75%",
-      "pct": 4.75
+      "change_value": "+6.15%",
+      "pct": 6.15
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.49%",
-      "pct": 4.49
+      "change_value": "+4.08%",
+      "pct": 4.08
     },
     {
       "name": "복합기업",
-      "change_value": "+4.35%",
-      "pct": 4.35
+      "change_value": "+3.63%",
+      "pct": 3.63
+    },
+    {
+      "name": "전기장비",
+      "change_value": "+3.51%",
+      "pct": 3.51
     }
   ],
   "sector_heatmap": [
     {
       "name": "반도체와반도체장비",
-      "change_value": "+7.78%",
-      "pct": 7.78
+      "change_value": "+6.18%",
+      "pct": 6.18
     },
     {
       "name": "석유와가스",
-      "change_value": "+5.50%",
-      "pct": 5.5
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+4.75%",
-      "pct": 4.75
+      "change_value": "+6.15%",
+      "pct": 6.15
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.49%",
-      "pct": 4.49
+      "change_value": "+4.08%",
+      "pct": 4.08
     },
     {
       "name": "복합기업",
-      "change_value": "+4.35%",
-      "pct": 4.35
+      "change_value": "+3.63%",
+      "pct": 3.63
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+4.13%",
-      "pct": 4.13
+      "name": "전기장비",
+      "change_value": "+3.51%",
+      "pct": 3.51
     },
     {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "-1.09%",
-      "pct": -1.09
+      "name": "건설",
+      "change_value": "+2.90%",
+      "pct": 2.9
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "-1.13%",
-      "pct": -1.13
-    },
-    {
-      "name": "포장재",
-      "change_value": "-1.34%",
-      "pct": -1.34
+      "name": "판매업체",
+      "change_value": "-1.23%",
+      "pct": -1.23
     },
     {
       "name": "도로와철도운송",
-      "change_value": "-1.45%",
-      "pct": -1.45
+      "change_value": "-1.23%",
+      "pct": -1.23
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "-1.29%",
+      "pct": -1.29
+    },
+    {
+      "name": "포장재",
+      "change_value": "-1.55%",
+      "pct": -1.55
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "-1.76%",
-      "pct": -1.76
+      "change_value": "-1.95%",
+      "pct": -1.95
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "-1.91%",
-      "pct": -1.91
+      "change_value": "-2.40%",
+      "pct": -2.4
     }
   ],
   "article_counts": {
