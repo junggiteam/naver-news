@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22 08:01:13",
+  "updated_at": "2026-10-22 08:24:43",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -46,12 +46,22 @@
   "keyword_tags": [],
   "dart_filings": [
     {
+      "corp_name": "삼성E&A",
+      "corp_code": "00126308",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261022",
+      "rcept_no": "20261022000004",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 자사주를 직접 매입하겠다는 결정입니다."
+    },
+    {
       "corp_name": "IBKS제25호스팩",
       "corp_code": "01949584",
       "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261021000442",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442",
+      "ai_explanation": "기존에 공시한 회사 합병 결정 내용 중 일부 정정 사항이 발생하여 수정 보고하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2855,155 +2865,93 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "혜인",
-      "price": "10,450",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "명신산업",
-      "price": "10,060",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "미래산업",
-      "price": "7,420",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "금호에이치티",
-      "price": "8,070",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "4,835",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "서울식품우",
-      "price": "2,100",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "10,195",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "깨끗한나라우",
-      "price": "3,605",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "10,985",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SK디스커버리",
-      "price": "61,700",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
-    {
-      "name": "석유와가스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건설",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "sector_heatmap": [
-    {
-      "name": "석유와가스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생명과학도구및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건설",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "카드",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
     {
       "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리기술",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "도로와철도운송",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "무역회사와판매업체",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "다각화된통신서비스",
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
