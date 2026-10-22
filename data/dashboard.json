@@ -1,53 +1,57 @@
 {
-  "updated_at": "2026-10-22 09:31:10",
+  "updated_at": "2026-10-22 10:01:34",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -0.88,
-    "kosdaq_change": -1.67,
-    "kospi_value": 5685.0,
-    "kosdaq_value": 779.51
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": -0.75,
+    "kosdaq_change": -1.13,
+    "kospi_value": 5692.4,
+    "kosdaq_value": 783.8
   },
   "heroes": {
     "종합": {
-      "title": "장동혁 1년전 '사석 욕설 녹취' 공개 논란…대표실 \"법적조치\"",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/21/16392520.jpg?type=nf70_70",
-      "link": "https://n.news.naver.com/article/001/0016392520?ntype=RANKING",
+      "title": "결혼이 가른 55세 친구의 엇갈린 노후…국민연금의 낡은 구조",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16392780.jpg?type=nf70_70",
+      "link": "https://n.news.naver.com/article/001/0016392780?ntype=RANKING",
       "press_name": "연합뉴스"
     },
     "경제": {
-      "title": "유가 110달러 넘는데 묶여있는 기름값… “가격신호 되살려야”",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/032/2026/10/22/3477803.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/032/0003477803",
-      "press_name": "경향신문"
+      "title": "한은, 물가·집값 경계 속 기준금리 동결…긴축 속도조절(종합)",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16393191.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016393191",
+      "press_name": "연합뉴스"
     },
     "부동산": {
-      "title": "서울시, 옥외광고 제도개선 방향 의견 수렴…26일 공청회",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16392773.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016392773",
+      "title": "상계한신 1·2차 1천140세대로 재건축…미아동엔 1천577세대",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16393261.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016393261",
       "press_name": "연합뉴스"
     }
   },
   "headlines": [
     {
-      "category": "종합",
-      "text": "고물가에 편의점 저가 의류 등 소비 양극화 현상 지속"
+      "category": "경제",
+      "text": "한국은행 금융통화위원회 기준금리 연 3.0%로 동결"
     },
     {
-      "category": "종합",
-      "text": "국민연금 고갈설 및 증시 변동성에 따른 불안 심리 확산"
+      "category": "경제",
+      "text": "서울 아파트 실거래가 1년 사이 15.5% 상승"
     },
     {
-      "category": "종합",
-      "text": "김여정 대남 확성기 가동 예고 등 남북 간 긴장 고조"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시의 훈풍에도 불구하고 국내 증시는 차익 실현 매물이 출회하며 코스피와 코스닥 모두 하락세로 마감했다. 장중 삼성전자와 삼성전기 등 특정 종목의 개별 호재가 있었으나 지수 하락을 방어하기에는 역부족이었다."
+      "category": "경제",
+      "text": "반도체주 약세 영향으로 코스피 지수 하락세 지속"
     }
   ],
   "daily_term": null,
-  "keyword_tags": [],
+  "keyword_tags": [
+    "기준금리 동결",
+    "서울 아파트값 상승",
+    "부동산 공급 대책",
+    "반도체 투자 확대",
+    "코스피 변동성",
+    "정치권 리스크",
+    "기업 지배구조 개편"
+  ],
   "dart_filings": [
     {
       "corp_name": "오스템임플란트",
@@ -55,7 +59,8 @@
       "report_nm": "[첨부정정]주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000022",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022",
+      "ai_explanation": "회사가 발행한 채권의 자본 인정 관련 공시 내용을 정정하여 다시 제출함."
     },
     {
       "corp_name": "삼성E&A",
@@ -63,7 +68,8 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000004",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004",
+      "ai_explanation": "주가 안정 및 주주 가치 제고를 위해 회사가 자사 주식을 매입하기로 결정함."
     },
     {
       "corp_name": "IBKS제25호스팩",
@@ -71,7 +77,8 @@
       "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261021000442",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442",
+      "ai_explanation": "스팩이 비상장사와 합병하기로 한 기존 결정의 세부 내용을 정정하여 공시함."
     }
   ],
   "macro_indicators": [
@@ -2877,34 +2884,34 @@
   },
   "top_gainers": [
     {
-      "name": "삼성E&A",
-      "price": "55,400",
-      "change_percent": "+16.14%",
-      "pct": 16.14
+      "name": "유니켐",
+      "price": "7,880",
+      "change_percent": "+18.32%",
+      "pct": 18.32
+    },
+    {
+      "name": "유니퀘스트",
+      "price": "11,820",
+      "change_percent": "+14.87%",
+      "pct": 14.87
     },
     {
       "name": "혜인",
-      "price": "11,470",
-      "change_percent": "+9.76%",
-      "pct": 9.76
+      "price": "11,950",
+      "change_percent": "+14.35%",
+      "pct": 14.35
     },
     {
-      "name": "유니켐",
-      "price": "7,640",
-      "change_percent": "+14.71%",
-      "pct": 14.71
+      "name": "삼성E&A",
+      "price": "54,500",
+      "change_percent": "+14.26%",
+      "pct": 14.26
     },
     {
-      "name": "휴니드",
-      "price": "5,040",
-      "change_percent": "+9.45%",
-      "pct": 9.45
-    },
-    {
-      "name": "한투 인버스2X천연가스선물 ETN B",
-      "price": "10,475",
-      "change_percent": "+6.94%",
-      "pct": 6.94
+      "name": "유화증권우",
+      "price": "2,825",
+      "change_percent": "-2.08%",
+      "pct": 2.08
     }
   ],
   "top_losers": [
@@ -2916,91 +2923,91 @@
     },
     {
       "name": "에이엔피",
-      "price": "213",
-      "change_percent": "-8.19%",
-      "pct": 8.19
+      "price": "209",
+      "change_percent": "-9.91%",
+      "pct": 9.91
     },
     {
-      "name": "SK이노베이션",
-      "price": "142,200",
-      "change_percent": "-7.84%",
-      "pct": 7.84
+      "name": "형지엘리트",
+      "price": "1,953",
+      "change_percent": "-8.74%",
+      "pct": 8.74
     },
     {
       "name": "에스엠벡셀",
-      "price": "3,570",
-      "change_percent": "-7.87%",
-      "pct": 7.87
+      "price": "3,550",
+      "change_percent": "-8.39%",
+      "pct": 8.39
     },
     {
-      "name": "TIGER 200에너지화학레버리지",
-      "price": "6,170",
-      "change_percent": "-7.70%",
-      "pct": 7.7
+      "name": "삼아알미늄",
+      "price": "74,600",
+      "change_percent": "-7.67%",
+      "pct": 7.67
     }
   ],
   "sector_performance": [
     {
       "name": "건설",
-      "change_value": "+5.91%",
-      "pct": 5.91
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+2.51%",
-      "pct": 2.51
+      "change_value": "+5.38%",
+      "pct": 5.38
     },
     {
       "name": "IT서비스",
-      "change_value": "+2.22%",
-      "pct": 2.22
+      "change_value": "+3.55%",
+      "pct": 3.55
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+1.07%",
-      "pct": 1.07
+      "name": "전자장비와기기",
+      "change_value": "+2.47%",
+      "pct": 2.47
     },
     {
       "name": "사무용전자제품",
-      "change_value": "+0.79%",
-      "pct": 0.79
+      "change_value": "+1.06%",
+      "pct": 1.06
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.97%",
+      "pct": 0.97
     }
   ],
   "sector_heatmap": [
     {
       "name": "건설",
-      "change_value": "+5.91%",
-      "pct": 5.91
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+2.51%",
-      "pct": 2.51
+      "change_value": "+5.38%",
+      "pct": 5.38
     },
     {
       "name": "IT서비스",
-      "change_value": "+2.22%",
-      "pct": 2.22
+      "change_value": "+3.55%",
+      "pct": 3.55
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+1.07%",
-      "pct": 1.07
+      "name": "전자장비와기기",
+      "change_value": "+2.47%",
+      "pct": 2.47
     },
     {
       "name": "사무용전자제품",
-      "change_value": "+0.79%",
-      "pct": 0.79
+      "change_value": "+1.06%",
+      "pct": 1.06
     },
     {
-      "name": "담배",
-      "change_value": "+0.67%",
-      "pct": 0.67
+      "name": "손해보험",
+      "change_value": "+0.97%",
+      "pct": 0.97
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "-2.40%",
-      "pct": -2.4
+      "name": "소프트웨어",
+      "change_value": "+0.94%",
+      "pct": 0.94
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-2.26%",
+      "pct": -2.26
     },
     {
       "name": "화학",
@@ -3008,37 +3015,37 @@
       "pct": -2.6
     },
     {
+      "name": "다각화된통신서비스",
+      "change_value": "-2.61%",
+      "pct": -2.61
+    },
+    {
       "name": "해운사",
-      "change_value": "-3.01%",
-      "pct": -3.01
+      "change_value": "-2.86%",
+      "pct": -2.86
     },
     {
       "name": "전기제품",
-      "change_value": "-3.36%",
-      "pct": -3.36
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "-3.52%",
-      "pct": -3.52
+      "change_value": "-3.56%",
+      "pct": -3.56
     },
     {
       "name": "석유와가스",
-      "change_value": "-4.47%",
-      "pct": -4.47
+      "change_value": "-3.74%",
+      "pct": -3.74
     }
   ],
   "article_counts": {
-    "종합": 412,
+    "종합": 414,
     "경제": 30,
     "부동산": 30,
-    "증권": 84
+    "증권": 85
   },
   "article_count_trend": {
     "종합": {
-      "today": 412,
+      "today": 414,
       "yesterday": 415,
-      "change_pct": -0.7,
+      "change_pct": -0.2,
       "surge": false
     },
     "경제": {
@@ -3054,9 +3061,9 @@
       "surge": false
     },
     "증권": {
-      "today": 84,
+      "today": 85,
       "yesterday": 90,
-      "change_pct": -6.7,
+      "change_pct": -5.6,
       "surge": false
     }
   }
