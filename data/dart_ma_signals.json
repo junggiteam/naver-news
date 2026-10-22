@@ -14508,6 +14508,24 @@
   "2026-10-22": {
     "합병_분할": [
       {
+        "corp_name": "휴맥스",
+        "corp_code": "00787057",
+        "report_nm": "주요사항보고서(회사합병결정)",
+        "rcept_dt": "20261022",
+        "rcept_no": "20261022000424",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000424",
+        "action": "회사합병결정"
+      },
+      {
+        "corp_name": "피스피스스튜디오",
+        "corp_code": "01755259",
+        "report_nm": "주요사항보고서(회사합병결정)",
+        "rcept_dt": "20261022",
+        "rcept_no": "20261022000456",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000456",
+        "action": "회사합병결정"
+      },
+      {
         "corp_name": "주성코퍼레이션",
         "corp_code": "00753643",
         "report_nm": "주요사항보고서(회사합병결정)",
@@ -14562,11 +14580,30 @@
         "action": "회사합병결정"
       }
     ],
-    "지분인수": [],
+    "지분인수": [
+      {
+        "corp_name": "쌍방울",
+        "corp_code": "00681142",
+        "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+        "rcept_dt": "20261022",
+        "rcept_no": "20261022000454",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000454",
+        "action": "타법인주식및출자증권양수결정"
+      }
+    ],
     "영업양수도": [],
     "주식교환_이전": [],
     "경영권이동_최대주주변경": [],
     "자기주식": [
+      {
+        "corp_name": "코칩",
+        "corp_code": "00446901",
+        "report_nm": "주요사항보고서(자기주식처분결정)",
+        "rcept_dt": "20261022",
+        "rcept_no": "20261022000438",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000438",
+        "action": "자기주식처분결정"
+      },
       {
         "corp_name": "현대차증권",
         "corp_code": "00137997",
@@ -14622,6 +14659,6 @@
         "action": "자기주식취득결정"
       }
     ],
-    "_updated_at": "2026-10-22 17:01:27"
+    "_updated_at": "2026-10-22 17:31:02"
   }
 }
