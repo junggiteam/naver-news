@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-22 14:31:19",
+  "updated_at": "2026-10-22 15:01:08",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -3.67,
-    "kosdaq_change": -3.3,
-    "kospi_value": 5525.38,
-    "kosdaq_value": 766.58
+    "kospi_change": -3.54,
+    "kosdaq_change": -3.58,
+    "kospi_value": 5532.42,
+    "kosdaq_value": 764.38
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "오늘 코스피와 코스닥은 한국은행의 기준금리 동결 결정에 따른 투자 심리 위축과 외국인의 매도세가 겹치며 각각 3%대 하락 마감했다. 이번 코스피 지수는 최근 82일간 데이터 기준으로 최저치를 기록했다."
+      "text": "오늘 코스피와 코스닥 지수는 외국인 투자자의 매도세가 확대되면서 각각 3% 넘게 하락했다. 코스피 지수는 최근 82일간의 데이터와 비교했을 때 가장 낮은 수치를 기록했다. 반도체 관련 훈풍 등으로 인한 원화 강세와 중국 증시의 약세 흐름이 시장의 투자 심리에 영향을 미쳤다."
     }
   ],
   "daily_term": {
@@ -65,13 +65,36 @@
   "keyword_tags": [],
   "dart_filings": [
     {
+      "corp_name": "에이팩트",
+      "corp_code": "00667425",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261022",
+      "rcept_no": "20261022000194",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000194"
+    },
+    {
+      "corp_name": "한국맥널티",
+      "corp_code": "00579139",
+      "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
+      "rcept_dt": "20261022",
+      "rcept_no": "20261022000159",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000159"
+    },
+    {
+      "corp_name": "HPSP",
+      "corp_code": "01288827",
+      "report_nm": "주요사항보고서(자기주식처분결정)",
+      "rcept_dt": "20261022",
+      "rcept_no": "20261022000168",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000168"
+    },
+    {
       "corp_name": "이엘피",
       "corp_code": "00374020",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000142",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000142",
-      "ai_explanation": "회사가 신탁 계약을 통해 자사 주식을 매입하기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000142"
     },
     {
       "corp_name": "비비안",
@@ -79,8 +102,7 @@
       "report_nm": "주요사항보고서(유형자산양수결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000140",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000140",
-      "ai_explanation": "회사가 건물이나 토지 등 유형 자산을 사들이기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000140"
     },
     {
       "corp_name": "비비안",
@@ -88,8 +110,7 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000134",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000134",
-      "ai_explanation": "기존에 공시한 유상증자 결정 내용에 오류가 있어 수정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000134"
     },
     {
       "corp_name": "비비안",
@@ -97,8 +118,7 @@
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000133",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000133",
-      "ai_explanation": "기존에 공시한 유상증자 결정 내용에 오류가 있어 수정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000133"
     },
     {
       "corp_name": "LS이브이코리아",
@@ -106,8 +126,7 @@
       "report_nm": "타인을위한채무보증결정",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000132",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000132",
-      "ai_explanation": "회사가 타인(계열사 등)의 빚을 갚을 보증을 서기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000132"
     },
     {
       "corp_name": "시큐레터",
@@ -115,8 +134,7 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000116",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000116",
-      "ai_explanation": "회사가 운영 자금 조달 등을 목적으로 신규 주식을 발행하기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000116"
     },
     {
       "corp_name": "미래아이앤지",
@@ -124,8 +142,7 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000100",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000100",
-      "ai_explanation": "회사가 운영 자금 조달 등을 목적으로 신규 주식을 발행하기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000100"
     },
     {
       "corp_name": "MH에탄올",
@@ -133,8 +150,7 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000102",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000102",
-      "ai_explanation": "회사가 시장에서 직접 자사 주식을 사들이기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000102"
     },
     {
       "corp_name": "진천테크노폴리스개발",
@@ -142,8 +158,7 @@
       "report_nm": "[기재정정]증여결정",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000096",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000096",
-      "ai_explanation": "기존에 공시한 자산 무상 증여 결정 내용을 수정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000096"
     },
     {
       "corp_name": "서린바이오",
@@ -151,8 +166,7 @@
       "report_nm": "주요사항보고서(자기주식처분결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000095",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000095",
-      "ai_explanation": "회사가 보유 중인 자사 주식을 시장에 내다 팔기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000095"
     },
     {
       "corp_name": "메쥬",
@@ -160,8 +174,7 @@
       "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000089",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000089",
-      "ai_explanation": "기존에 공시한 유형 자산 매입 결정 내용을 수정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000089"
     },
     {
       "corp_name": "비즈플레이",
@@ -169,8 +182,7 @@
       "report_nm": "주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000063",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000063",
-      "ai_explanation": "두 회사가 하나의 회사로 합쳐지기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000063"
     },
     {
       "corp_name": "오스템임플란트",
@@ -178,8 +190,7 @@
       "report_nm": "[첨부정정]주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000022",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022",
-      "ai_explanation": "자본으로 인정되는 채권 발행 관련 공시 내용을 수정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022"
     },
     {
       "corp_name": "삼성E&A",
@@ -187,8 +198,7 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000004",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004",
-      "ai_explanation": "회사가 시장에서 직접 자사 주식을 사들이기로 결정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004"
     },
     {
       "corp_name": "IBKS제25호스팩",
@@ -196,8 +206,7 @@
       "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261021000442",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442",
-      "ai_explanation": "기존에 공시한 회사 합병 결정 내용을 수정했다는 뜻입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442"
     }
   ],
   "macro_indicators": [
@@ -3004,41 +3013,41 @@
   "top_gainers": [
     {
       "name": "삼성E&A",
-      "price": "55,800",
-      "change_percent": "+16.98%",
-      "pct": 16.98
+      "price": "55,300",
+      "change_percent": "+15.93%",
+      "pct": 15.93
     },
     {
       "name": "유니퀘스트",
-      "price": "12,000",
-      "change_percent": "+16.62%",
-      "pct": 16.62
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "11,430",
-      "change_percent": "+12.11%",
-      "pct": 12.11
-    },
-    {
-      "name": "대림통상",
-      "price": "2,030",
-      "change_percent": "+13.60%",
-      "pct": 13.6
+      "price": "11,815",
+      "change_percent": "+14.82%",
+      "pct": 14.82
     },
     {
       "name": "삼성 인버스 2X 항셍테크 TR ETN(H) B",
-      "price": "9,135",
-      "change_percent": "+11.20%",
-      "pct": 11.2
+      "price": "9,140",
+      "change_percent": "+11.26%",
+      "pct": 11.26
+    },
+    {
+      "name": "하나 인버스 2X 반도체 ETN",
+      "price": "2,870",
+      "change_percent": "+10.81%",
+      "pct": 10.81
+    },
+    {
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "11,275",
+      "change_percent": "+10.59%",
+      "pct": 10.59
     }
   ],
   "top_losers": [
     {
       "name": "서울식품우",
-      "price": "1,366",
-      "change_percent": "-34.95%",
-      "pct": 34.95
+      "price": "1,360",
+      "change_percent": "-35.24%",
+      "pct": 35.24
     },
     {
       "name": "에이엔피",
@@ -3047,44 +3056,44 @@
       "pct": 16.81
     },
     {
+      "name": "동양2우B",
+      "price": "3,720",
+      "change_percent": "-14.29%",
+      "pct": 14.29
+    },
+    {
       "name": "KB 레버리지 항셍테크 선물 ETN(H) B",
       "price": "8,350",
       "change_percent": "-13.56%",
       "pct": 13.56
     },
     {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "4,010",
-      "change_percent": "-12.64%",
-      "pct": 12.64
-    },
-    {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "4,235",
-      "change_percent": "-12.41%",
-      "pct": 12.41
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "4,030",
+      "change_percent": "-13.15%",
+      "pct": 13.15
     }
   ],
   "sector_performance": [
     {
       "name": "건설",
-      "change_value": "+4.71%",
-      "pct": 4.71
-    },
-    {
-      "name": "사무용전자제품",
-      "change_value": "+1.19%",
-      "pct": 1.19
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "+0.78%",
-      "pct": 0.78
+      "change_value": "+3.77%",
+      "pct": 3.77
     },
     {
       "name": "손해보험",
-      "change_value": "+0.65%",
-      "pct": 0.65
+      "change_value": "+0.66%",
+      "pct": 0.66
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "+0.53%",
+      "pct": 0.53
+    },
+    {
+      "name": "IT서비스",
+      "change_value": "+0.31%",
+      "pct": 0.31
     },
     {
       "name": "담배",
@@ -3095,23 +3104,23 @@
   "sector_heatmap": [
     {
       "name": "건설",
-      "change_value": "+4.71%",
-      "pct": 4.71
-    },
-    {
-      "name": "사무용전자제품",
-      "change_value": "+1.19%",
-      "pct": 1.19
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "+0.78%",
-      "pct": 0.78
+      "change_value": "+3.77%",
+      "pct": 3.77
     },
     {
       "name": "손해보험",
-      "change_value": "+0.65%",
-      "pct": 0.65
+      "change_value": "+0.66%",
+      "pct": 0.66
+    },
+    {
+      "name": "사무용전자제품",
+      "change_value": "+0.53%",
+      "pct": 0.53
+    },
+    {
+      "name": "IT서비스",
+      "change_value": "+0.31%",
+      "pct": 0.31
     },
     {
       "name": "담배",
@@ -3120,38 +3129,38 @@
     },
     {
       "name": "도로와철도운송",
-      "change_value": "+0.07%",
-      "pct": 0.07
+      "change_value": "-0.26%",
+      "pct": -0.26
     },
     {
       "name": "생물공학",
-      "change_value": "-3.43%",
-      "pct": -3.43
+      "change_value": "-3.77%",
+      "pct": -3.77
     },
     {
       "name": "철강",
-      "change_value": "-3.65%",
-      "pct": -3.65
+      "change_value": "-4.27%",
+      "pct": -4.27
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-4.82%",
-      "pct": -4.82
+      "change_value": "-4.87%",
+      "pct": -4.87
     },
     {
       "name": "화학",
-      "change_value": "-4.83%",
-      "pct": -4.83
+      "change_value": "-5.55%",
+      "pct": -5.55
     },
     {
       "name": "석유와가스",
-      "change_value": "-5.16%",
-      "pct": -5.16
+      "change_value": "-5.86%",
+      "pct": -5.86
     },
     {
       "name": "전기제품",
-      "change_value": "-5.43%",
-      "pct": -5.43
+      "change_value": "-6.15%",
+      "pct": -6.15
     }
   ],
   "article_counts": {
