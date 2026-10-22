@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23 08:01:15",
+  "updated_at": "2026-10-23 08:31:02",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261022000513",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000513",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 한 결정을 정정하여 다시 공시함."
+      "ai_explanation": "합병 절차와 관련된 기존 공시 내용을 정정하여 다시 발표하는 것입니다."
     },
     {
       "corp_name": "KR모터스",
@@ -95,7 +95,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261022000510",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000510",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유함."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "KR모터스",
@@ -104,7 +104,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261022000509",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000509",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유함."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2428,100 +2428,53 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "삼성E&A",
-      "price": "56,100",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "유니퀘스트",
-      "price": "12,020",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "MH에탄올",
-      "price": "2,465",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나 인버스 2X 반도체 ETN",
-      "price": "2,890",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "삼성 인버스 2X 항셍테크 TR ETN(H) B",
-      "price": "9,125",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "서울식품우",
-      "price": "1,305",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양2우B",
-      "price": "3,565",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에이엔피",
-      "price": "200",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KB 레버리지 항셍테크 선물 ETN(H) B",
-      "price": "8,355",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "키움 레버리지 2차전지산업 ETN",
-      "price": "7,380",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "건설",
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전문소매",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "담배",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "건설",
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2531,42 +2484,22 @@
       "pct": 0.0
     },
     {
-      "name": "전문소매",
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "IT서비스",
+      "name": "생물공학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "담배",
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "운송인프라",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "조선",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "철강",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "화학",
+      "name": "우주항공과국방",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2576,7 +2509,12 @@
       "pct": 0.0
     },
     {
-      "name": "석유와가스",
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -2585,7 +2523,7 @@
     "종합": 405,
     "경제": 30,
     "부동산": 30,
-    "증권": 88
+    "증권": 89
   },
   "article_count_trend": {
     "종합": {
@@ -2607,9 +2545,9 @@
       "surge": false
     },
     "증권": {
-      "today": 88,
+      "today": 89,
       "yesterday": 90,
-      "change_pct": -2.2,
+      "change_pct": -1.1,
       "surge": false
     }
   }
