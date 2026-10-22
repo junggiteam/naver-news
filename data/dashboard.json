@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-22 12:31:21",
+  "updated_at": "2026-10-22 13:01:42",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -2.2,
-    "kosdaq_change": -1.92,
-    "kospi_value": 5609.28,
-    "kosdaq_value": 777.52
+    "kospi_change": -2.79,
+    "kosdaq_change": -2.31,
+    "kospi_value": 5575.55,
+    "kosdaq_value": 774.41
   },
   "heroes": {
     "종합": {
@@ -16,55 +16,69 @@
       "press_name": "연합뉴스"
     },
     "경제": {
-      "title": "한은, 물가·집값 경계 속 기준금리 동결…긴축 속도조절(종합)",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16393191.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016393191",
-      "press_name": "연합뉴스"
+      "title": "로그인 없이 뚫린다‥'PHP 결함'에 전 세계 비상",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/214/2026/10/22/1530710.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/214/0001530710",
+      "press_name": "MBC"
     },
     "부동산": {
-      "title": "상계한신 1·2차 1천140세대로 재건축…미아동엔 1천577세대",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16393261.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016393261",
+      "title": "강남구, 서울시와 수서지구 4개 단지 신통기획 현장 자문",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/10/22/16394026.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016394026",
       "press_name": "연합뉴스"
     }
   },
   "headlines": [
     {
       "category": "경제",
-      "text": "한국은행 금융통화위원회 기준금리 연 3.0%로 동결"
+      "text": "메타 등 기업들의 대규모 AI 투자와 반도체 공급망 확보 경쟁 가속화"
     },
     {
       "category": "경제",
-      "text": "서울 아파트 실거래가 1년 사이 15.5% 상승"
+      "text": "고령층의 반도체 투자 손실과 주주 권리 행사 및 경영권 분쟁 확산"
     },
     {
       "category": "경제",
-      "text": "반도체주 약세 영향으로 코스피 지수 하락세 지속"
+      "text": "한은 총재의 물가 전망 및 재정 확장 정책에 대한 지속 가능성 경고"
+    },
+    {
+      "category": "부동산",
+      "text": "전북 지역 집값 상승세 지속과 서울 서남권 신축 공급 확대"
+    },
+    {
+      "category": "부동산",
+      "text": "서울 수서지구 등 재건축 신속통합기획 및 정비사업 논의 활발"
+    },
+    {
+      "category": "부동산",
+      "text": "건설사 3분기 영업이익 증가와 부동산 대책 실효성 논란 지속"
     },
     {
       "category": "증권",
-      "text": "한국은행이 기준금리를 동결한 가운데 통화 정책이 매파적이라는 평가가 나오면서 투자 심리가 위축되어 지수가 하락했다. 미국 증시 내 AI 반도체 종목의 급락과 외국인의 매수세 축소가 이어지며 삼성전자와 SK하이닉스 등 대형주가 약세를 보였다."
+      "text": "미국 AI 반도체 주가의 급락 여파로 반도체 대형주들이 동반 하락하며 지수 하락을 견인했다. 한국은행의 매파적 금리 동결 결정 이후 시장의 긴축 우려가 커지면서 외국인 투자자의 매수세가 축소되어 낙폭이 확대되었다."
     }
   ],
-  "daily_term": null,
-  "keyword_tags": [
-    "기준금리 동결",
-    "서울 아파트값 상승",
-    "부동산 공급 대책",
-    "반도체 투자 확대",
-    "코스피 변동성",
-    "정치권 리스크",
-    "기업 지배구조 개편"
-  ],
+  "daily_term": {
+    "term": "환율",
+    "explanation": "환율은 서로 다른 나라의 돈을 교환할 때 적용되는 일종의 '가격표'입니다. 예를 들어 사과 한 상자가 원화로는 1만 원이지만 달러로는 10달러라면, 이 둘을 연결해 주는 교환 비율이 바로 환율입니다. 이 숫자가 오르내림에 따라 우리 물가와 수출 기업들의 수익이 크게 달라지기 때문에 경제의 체온계라고도 불립니다."
+  },
+  "keyword_tags": [],
   "dart_filings": [
+    {
+      "corp_name": "진천테크노폴리스개발",
+      "corp_code": "01567991",
+      "report_nm": "[기재정정]증여결정",
+      "rcept_dt": "20261022",
+      "rcept_no": "20261022000096",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000096"
+    },
     {
       "corp_name": "서린바이오",
       "corp_code": "00373447",
       "report_nm": "주요사항보고서(자기주식처분결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000095",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000095",
-      "ai_explanation": "회사가 보유하고 있던 자사주를 외부에 매각하기로 결정했다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000095"
     },
     {
       "corp_name": "메쥬",
@@ -72,8 +86,7 @@
       "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000089",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000089",
-      "ai_explanation": "회사가 건물, 토지 등 업무용 자산을 새로 사들이기로 결정했다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000089"
     },
     {
       "corp_name": "비즈플레이",
@@ -81,8 +94,7 @@
       "report_nm": "주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000063",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000063",
-      "ai_explanation": "두 회사가 하나의 회사로 합쳐지기로 결정했다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000063"
     },
     {
       "corp_name": "오스템임플란트",
@@ -90,8 +102,7 @@
       "report_nm": "[첨부정정]주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000022",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022",
-      "ai_explanation": "자본으로 인정되는 성격의 채권(신종자본증권 등)을 발행하기로 결정했다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022"
     },
     {
       "corp_name": "삼성E&A",
@@ -99,8 +110,7 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000004",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004",
-      "ai_explanation": "회사가 시장에서 자사 주식을 다시 사들이기로 결정했다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004"
     },
     {
       "corp_name": "IBKS제25호스팩",
@@ -108,8 +118,7 @@
       "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261021000442",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442",
-      "ai_explanation": "스팩(SPAC)이 다른 회사와 합병하기로 결정했다는 공시입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442"
     }
   ],
   "macro_indicators": [
@@ -118,7 +127,7 @@
       "name": "한국은행 기준금리",
       "value": "3",
       "unit": "%",
-      "cycle": "20261019"
+      "cycle": "20261022"
     },
     {
       "class": "시장금리",
@@ -2916,167 +2925,167 @@
   "top_gainers": [
     {
       "name": "유니퀘스트",
-      "price": "12,430",
-      "change_percent": "+20.80%",
-      "pct": 20.8
+      "price": "12,270",
+      "change_percent": "+19.24%",
+      "pct": 19.24
     },
     {
       "name": "삼성E&A",
-      "price": "55,300",
-      "change_percent": "+15.93%",
-      "pct": 15.93
+      "price": "55,400",
+      "change_percent": "+16.14%",
+      "pct": 16.14
+    },
+    {
+      "name": "형지엘리트",
+      "price": "2,610",
+      "change_percent": "+21.96%",
+      "pct": 21.96
     },
     {
       "name": "LS에코에너지",
-      "price": "60,100",
-      "change_percent": "+12.97%",
-      "pct": 12.97
+      "price": "59,400",
+      "change_percent": "+11.65%",
+      "pct": 11.65
     },
     {
-      "name": "혜인",
-      "price": "11,460",
-      "change_percent": "+9.67%",
-      "pct": 9.67
-    },
-    {
-      "name": "유니켐",
-      "price": "7,350",
-      "change_percent": "+10.36%",
-      "pct": 10.36
+      "name": "자이에스앤디",
+      "price": "9,360",
+      "change_percent": "+10.25%",
+      "pct": 10.25
     }
   ],
   "top_losers": [
     {
       "name": "서울식품우",
-      "price": "1,460",
-      "change_percent": "-30.48%",
-      "pct": 30.48
-    },
-    {
-      "name": "KB 레버리지 항셍테크 선물 ETN(H) B",
-      "price": "8,500",
-      "change_percent": "-12.01%",
-      "pct": 12.01
+      "price": "1,360",
+      "change_percent": "-35.24%",
+      "pct": 35.24
     },
     {
       "name": "에이엔피",
-      "price": "205",
-      "change_percent": "-11.64%",
-      "pct": 11.64
+      "price": "203",
+      "change_percent": "-12.50%",
+      "pct": 12.5
+    },
+    {
+      "name": "KB 레버리지 항셍테크 선물 ETN(H) B",
+      "price": "8,455",
+      "change_percent": "-12.47%",
+      "pct": 12.47
     },
     {
       "name": "인디에프",
-      "price": "2,785",
-      "change_percent": "-10.16%",
-      "pct": 10.16
+      "price": "2,760",
+      "change_percent": "-10.97%",
+      "pct": 10.97
     },
     {
       "name": "삼성 레버리지 항셍테크 TR ETN(H) B",
-      "price": "16,115",
-      "change_percent": "-9.95%",
-      "pct": 9.95
+      "price": "16,060",
+      "change_percent": "-10.25%",
+      "pct": 10.25
     }
   ],
   "sector_performance": [
     {
       "name": "건설",
-      "change_value": "+5.34%",
-      "pct": 5.34
+      "change_value": "+4.76%",
+      "pct": 4.76
     },
     {
       "name": "사무용전자제품",
-      "change_value": "+2.11%",
-      "pct": 2.11
+      "change_value": "+1.98%",
+      "pct": 1.98
     },
     {
       "name": "IT서비스",
-      "change_value": "+2.08%",
-      "pct": 2.08
+      "change_value": "+1.81%",
+      "pct": 1.81
     },
     {
       "name": "손해보험",
-      "change_value": "+1.21%",
-      "pct": 1.21
+      "change_value": "+1.10%",
+      "pct": 1.1
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+0.89%",
-      "pct": 0.89
+      "name": "운송인프라",
+      "change_value": "+0.58%",
+      "pct": 0.58
     }
   ],
   "sector_heatmap": [
     {
       "name": "건설",
-      "change_value": "+5.34%",
-      "pct": 5.34
+      "change_value": "+4.76%",
+      "pct": 4.76
     },
     {
       "name": "사무용전자제품",
-      "change_value": "+2.11%",
-      "pct": 2.11
+      "change_value": "+1.98%",
+      "pct": 1.98
     },
     {
       "name": "IT서비스",
-      "change_value": "+2.08%",
-      "pct": 2.08
+      "change_value": "+1.81%",
+      "pct": 1.81
     },
     {
       "name": "손해보험",
-      "change_value": "+1.21%",
-      "pct": 1.21
+      "change_value": "+1.10%",
+      "pct": 1.1
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+0.89%",
-      "pct": 0.89
+      "name": "운송인프라",
+      "change_value": "+0.58%",
+      "pct": 0.58
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+0.82%",
-      "pct": 0.82
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.47%",
+      "pct": 0.47
     },
     {
       "name": "해운사",
-      "change_value": "-2.65%",
-      "pct": -2.65
+      "change_value": "-2.92%",
+      "pct": -2.92
     },
     {
       "name": "다각화된소비자서비스",
-      "change_value": "-3.30%",
-      "pct": -3.3
+      "change_value": "-3.02%",
+      "pct": -3.02
     },
     {
       "name": "화학",
-      "change_value": "-3.35%",
-      "pct": -3.35
+      "change_value": "-3.69%",
+      "pct": -3.69
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-3.54%",
-      "pct": -3.54
+      "change_value": "-3.99%",
+      "pct": -3.99
     },
     {
       "name": "전기제품",
-      "change_value": "-4.00%",
-      "pct": -4.0
+      "change_value": "-4.41%",
+      "pct": -4.41
     },
     {
       "name": "석유와가스",
-      "change_value": "-4.11%",
-      "pct": -4.11
+      "change_value": "-4.61%",
+      "pct": -4.61
     }
   ],
   "article_counts": {
-    "종합": 414,
+    "종합": 412,
     "경제": 30,
     "부동산": 30,
     "증권": 88
   },
   "article_count_trend": {
     "종합": {
-      "today": 414,
+      "today": 412,
       "yesterday": 415,
-      "change_pct": -0.2,
+      "change_pct": -0.7,
       "surge": false
     },
     "경제": {
