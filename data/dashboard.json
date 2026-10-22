@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-22 11:48:34",
+  "updated_at": "2026-10-22 12:01:13",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -2.19,
-    "kosdaq_change": -1.96,
-    "kospi_value": 5610.25,
-    "kosdaq_value": 777.24
+    "kospi_change": -2.2,
+    "kosdaq_change": -1.87,
+    "kospi_value": 5609.38,
+    "kosdaq_value": 777.93
   },
   "heroes": {
     "종합": {
@@ -40,10 +40,6 @@
     {
       "category": "경제",
       "text": "반도체주 약세 영향으로 코스피 지수 하락세 지속"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시의 상승세에도 불구하고 국내 증시는 외국인과 기관의 매도세가 이어지며 코스피와 코스닥 지수가 각각 2%대와 1%대 하락세를 보였다. 특히 삼성전자와 SK하이닉스 등 시가총액 상위 반도체 종목이 3%대 약세를 보인 것이 지수 하락에 영향을 미쳤다."
     }
   ],
   "daily_term": null,
@@ -58,13 +54,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "메쥬",
+      "corp_code": "01780608",
+      "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
+      "rcept_dt": "20261022",
+      "rcept_no": "20261022000089",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000089",
+      "ai_explanation": "회사 업무 공간이나 설비 등 유형자산을 사들이기로 한 계획을 변경하여 다시 공시함."
+    },
+    {
       "corp_name": "비즈플레이",
       "corp_code": "01534027",
       "report_nm": "주요사항보고서(회사합병결정)",
       "rcept_dt": "20261022",
       "rcept_no": "20261022000063",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000063",
-      "ai_explanation": "기업 간의 합병을 통해 경영 효율성을 높이거나 사업 영역을 확장하겠다는 결정입니다."
+      "ai_explanation": "경영 효율성 증대나 사업 확장을 위해 다른 회사와 합치기로 결정함."
     },
     {
       "corp_name": "오스템임플란트",
@@ -73,7 +78,7 @@
       "rcept_dt": "20261022",
       "rcept_no": "20261022000022",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000022",
-      "ai_explanation": "회사가 발행한 채권이 회계상 자본으로 인정되는 신종자본증권 등을 발행한다는 의미입니다."
+      "ai_explanation": "자본으로 인정받는 채권 형태의 증권을 발행하기로 한 기존 공시 내용을 보완함."
     },
     {
       "corp_name": "삼성E&A",
@@ -82,7 +87,7 @@
       "rcept_dt": "20261022",
       "rcept_no": "20261022000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000004",
-      "ai_explanation": "주가 안정 및 주주 가치 제고를 목적으로 회사 자금을 들여 자사 주식을 매입하겠다는 결정입니다."
+      "ai_explanation": "주가 안정과 주주 가치 제고를 위해 회사 자금을 들여 자사 주식을 사들이기로 함."
     },
     {
       "corp_name": "IBKS제25호스팩",
@@ -91,7 +96,7 @@
       "rcept_dt": "20261022",
       "rcept_no": "20261021000442",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000442",
-      "ai_explanation": "기존에 공시한 회사 합병 내용 중 일부 항목을 수정하거나 보완하여 다시 공시한 것입니다."
+      "ai_explanation": "기업인수목적회사(스팩)가 비상장 기업과 합병하기로 했던 내용을 수정하여 공시함."
     }
   ],
   "macro_indicators": [
@@ -2904,35 +2909,41 @@
     },
     {
       "name": "삼성E&A",
-      "price": "55,500",
-      "change_percent": "+16.35%",
-      "pct": 16.35
-    },
-    {
-      "name": "유니켐",
-      "price": "7,640",
-      "change_percent": "+14.71%",
-      "pct": 14.71
+      "price": "55,900",
+      "change_percent": "+17.19%",
+      "pct": 17.19
     },
     {
       "name": "LS에코에너지",
-      "price": "60,400",
-      "change_percent": "+13.53%",
-      "pct": 13.53
+      "price": "60,900",
+      "change_percent": "+14.47%",
+      "pct": 14.47
+    },
+    {
+      "name": "유니켐",
+      "price": "7,450",
+      "change_percent": "+11.86%",
+      "pct": 11.86
     },
     {
       "name": "덕성우",
-      "price": "5,410",
-      "change_percent": "+9.96%",
-      "pct": 9.96
+      "price": "5,260",
+      "change_percent": "+6.91%",
+      "pct": 6.91
     }
   ],
   "top_losers": [
     {
       "name": "서울식품우",
-      "price": "1,590",
-      "change_percent": "-24.29%",
-      "pct": 24.29
+      "price": "1,450",
+      "change_percent": "-30.95%",
+      "pct": 30.95
+    },
+    {
+      "name": "에이엔피",
+      "price": "204",
+      "change_percent": "-12.07%",
+      "pct": 12.07
     },
     {
       "name": "KB 레버리지 항셍테크 선물 ETN(H) B",
@@ -2941,16 +2952,10 @@
       "pct": 11.44
     },
     {
-      "name": "에이엔피",
-      "price": "208",
-      "change_percent": "-10.34%",
-      "pct": 10.34
-    },
-    {
       "name": "삼성 레버리지 항셍테크 TR ETN(H) B",
-      "price": "16,250",
-      "change_percent": "-9.19%",
-      "pct": 9.19
+      "price": "16,170",
+      "change_percent": "-9.64%",
+      "pct": 9.64
     },
     {
       "name": "에스엠벡셀",
@@ -2962,8 +2967,13 @@
   "sector_performance": [
     {
       "name": "건설",
-      "change_value": "+5.02%",
-      "pct": 5.02
+      "change_value": "+5.83%",
+      "pct": 5.83
+    },
+    {
+      "name": "IT서비스",
+      "change_value": "+2.07%",
+      "pct": 2.07
     },
     {
       "name": "사무용전자제품",
@@ -2971,26 +2981,26 @@
       "pct": 1.85
     },
     {
-      "name": "IT서비스",
-      "change_value": "+1.78%",
-      "pct": 1.78
-    },
-    {
       "name": "손해보험",
-      "change_value": "+1.43%",
-      "pct": 1.43
+      "change_value": "+1.32%",
+      "pct": 1.32
     },
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "change_value": "+0.91%",
+      "pct": 0.91
     }
   ],
   "sector_heatmap": [
     {
       "name": "건설",
-      "change_value": "+5.02%",
-      "pct": 5.02
+      "change_value": "+5.83%",
+      "pct": 5.83
+    },
+    {
+      "name": "IT서비스",
+      "change_value": "+2.07%",
+      "pct": 2.07
     },
     {
       "name": "사무용전자제품",
@@ -2998,61 +3008,56 @@
       "pct": 1.85
     },
     {
-      "name": "IT서비스",
-      "change_value": "+1.78%",
-      "pct": 1.78
-    },
-    {
       "name": "손해보험",
-      "change_value": "+1.43%",
-      "pct": 1.43
-    },
-    {
-      "name": "인터넷과카탈로그소매",
       "change_value": "+1.32%",
       "pct": 1.32
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.84%",
-      "pct": 0.84
+      "name": "인터넷과카탈로그소매",
+      "change_value": "+0.91%",
+      "pct": 0.91
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "-2.87%",
-      "pct": -2.87
-    },
-    {
-      "name": "해운사",
-      "change_value": "-2.93%",
-      "pct": -2.93
+      "name": "게임엔터테인먼트",
+      "change_value": "+0.49%",
+      "pct": 0.49
     },
     {
       "name": "화학",
-      "change_value": "-3.35%",
-      "pct": -3.35
+      "change_value": "-3.15%",
+      "pct": -3.15
+    },
+    {
+      "name": "다각화된통신서비스",
+      "change_value": "-3.22%",
+      "pct": -3.22
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-3.43%",
-      "pct": -3.43
+      "change_value": "-3.23%",
+      "pct": -3.23
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "-3.30%",
+      "pct": -3.3
     },
     {
       "name": "전기제품",
-      "change_value": "-4.10%",
-      "pct": -4.1
+      "change_value": "-3.64%",
+      "pct": -3.64
     },
     {
       "name": "석유와가스",
-      "change_value": "-4.11%",
-      "pct": -4.11
+      "change_value": "-3.92%",
+      "pct": -3.92
     }
   ],
   "article_counts": {
     "종합": 414,
     "경제": 30,
     "부동산": 30,
-    "증권": 86
+    "증권": 88
   },
   "article_count_trend": {
     "종합": {
@@ -3074,9 +3079,9 @@
       "surge": false
     },
     "증권": {
-      "today": 86,
+      "today": 88,
       "yesterday": 90,
-      "change_pct": -4.4,
+      "change_pct": -2.2,
       "surge": false
     }
   }
