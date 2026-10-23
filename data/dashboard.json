@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-23 09:15:57",
+  "updated_at": "2026-10-23 09:31:11",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -2.43,
-    "kosdaq_change": -3.27,
-    "kospi_value": 5399.18,
-    "kosdaq_value": 739.1
+    "label": "급락",
+    "emoji": "🔴",
+    "kospi_change": -2.67,
+    "kosdaq_change": -3.49,
+    "kospi_value": 5386.02,
+    "kosdaq_value": 737.44
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국발 경기 침체 우려가 국내 증시에도 반영되며 코스피와 코스닥 지수가 동반 급락했다. 이날 코스피와 코스피200 지수는 최근 83일간 데이터 기준으로 최저치를 기록하며 하락세를 보였다."
+      "text": "미국 시장에서 불거진 AI 산업의 수익성 우려와 그에 따른 투자 심리 위축이 국내 증시의 동반 하락으로 이어졌습니다. 특히 반도체 업종에 대한 불안감이 커지면서 코스피와 코스피200 지수는 최근 83일간 데이터 기준으로 최저치를 기록했습니다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "갤럭시아디바이스",
+      "corp_code": "00220242",
+      "report_nm": "타법인주식및출자증권취득결정",
+      "rcept_dt": "20261023",
+      "rcept_no": "20261023000026",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000026",
+      "ai_explanation": "다른 회사의 주식을 사거나 지분을 투자하기로 결정했음을 의미합니다."
+    },
+    {
       "corp_name": "하나금융지주",
       "corp_code": "00547583",
       "report_nm": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
       "rcept_dt": "20261023",
       "rcept_no": "20261023000011",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000011",
-      "ai_explanation": "은행 자본 확충을 위해 특정 조건에서 주식 전환이나 상각이 가능한 채권을 발행한다는 공시입니다."
+      "ai_explanation": "회사가 경영 위기 시 자본으로 전환되는 조건부 채권을 발행한다는 내용입니다."
     },
     {
       "corp_name": "노을",
@@ -99,7 +108,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261023000005",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000005",
-      "ai_explanation": "운영 자금 등을 조달하기 위해 기존 주주나 제3자에게 신주를 발행하여 자본을 늘리겠다는 뜻입니다."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 새로 주식을 발행해 주주에게 파는 결정입니다."
     },
     {
       "corp_name": "우성",
@@ -108,7 +117,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261022000513",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000513",
-      "ai_explanation": "다른 회사와 합병하기로 한 기존 결정 내용 중 일부를 수정하거나 보완하여 다시 공시한 것입니다."
+      "ai_explanation": "두 회사가 하나로 합쳐지는 합병 계획의 세부 내용을 수정했다는 의미입니다."
     },
     {
       "corp_name": "KR모터스",
@@ -117,7 +126,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261022000510",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000510",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전 미리 사들여서 소각하거나 보유하겠다는 뜻입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 뜻입니다."
     },
     {
       "corp_name": "KR모터스",
@@ -126,7 +135,7 @@
       "rcept_dt": "20261023",
       "rcept_no": "20261022000509",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000509",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전 미리 사들여서 소각하거나 보유하겠다는 뜻입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2453,82 +2462,77 @@
   "top_gainers": [
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "9,335",
-      "change_percent": "+12.40%",
-      "pct": 12.4
-    },
-    {
-      "name": "두산퓨얼셀2우B",
-      "price": "7,690",
-      "change_percent": "+9.86%",
-      "pct": 9.86
-    },
-    {
-      "name": "하나 인버스 2X 반도체 ETN",
-      "price": "3,120",
-      "change_percent": "+7.96%",
-      "pct": 7.96
+      "price": "9,515",
+      "change_percent": "+14.57%",
+      "pct": 14.57
     },
     {
       "name": "미래에셋 인버스 2X 반도체 ETN",
-      "price": "4,840",
-      "change_percent": "+7.80%",
-      "pct": 7.8
+      "price": "4,920",
+      "change_percent": "+9.58%",
+      "pct": 9.58
+    },
+    {
+      "name": "하나 인버스 2X 반도체 ETN",
+      "price": "3,160",
+      "change_percent": "+9.34%",
+      "pct": 9.34
+    },
+    {
+      "name": "하나 인버스 2X 코스닥150 선물 ETN",
+      "price": "2,160",
+      "change_percent": "+8.71%",
+      "pct": 8.71
     },
     {
       "name": "한투 인버스2X코스닥150선물 ETN",
-      "price": "2,160",
-      "change_percent": "+8.49%",
-      "pct": 8.49
+      "price": "2,155",
+      "change_percent": "+8.24%",
+      "pct": 8.24
     }
   ],
   "top_losers": [
     {
       "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "7,340",
-      "change_percent": "-12.51%",
-      "pct": 12.51
+      "price": "7,135",
+      "change_percent": "-14.96%",
+      "pct": 14.96
     },
     {
       "name": "혜인",
-      "price": "9,510",
-      "change_percent": "-12.43%",
-      "pct": 12.43
+      "price": "9,390",
+      "change_percent": "-13.54%",
+      "pct": 13.54
     },
     {
-      "name": "SGC에너지",
-      "price": "34,750",
-      "change_percent": "-8.19%",
-      "pct": 8.19
+      "name": "미래에셋 레버리지 반도체 ETN",
+      "price": "15,385",
+      "change_percent": "-10.71%",
+      "pct": 10.71
     },
     {
-      "name": "솔루엠",
-      "price": "14,370",
-      "change_percent": "-5.34%",
-      "pct": 5.34
+      "name": "하나 레버리지 반도체 ETN",
+      "price": "111,750",
+      "change_percent": "-9.63%",
+      "pct": 9.63
     },
     {
-      "name": "HANARO 미국AI광통신TOP10",
-      "price": "6,675",
-      "change_percent": "-8.75%",
-      "pct": 8.75
+      "name": "삼성 iSelect 레버리지 조선 TOP10 TR ETN",
+      "price": "8,790",
+      "change_percent": "-9.61%",
+      "pct": 9.61
     }
   ],
   "sector_performance": [
     {
-      "name": "소프트웨어",
-      "change_value": "+1.08%",
-      "pct": 1.08
+      "name": "제약",
+      "change_value": "+0.84%",
+      "pct": 0.84
     },
     {
       "name": "전문소매",
-      "change_value": "+0.69%",
-      "pct": 0.69
-    },
-    {
-      "name": "제약",
-      "change_value": "+0.59%",
-      "pct": 0.59
+      "change_value": "+0.54%",
+      "pct": 0.54
     },
     {
       "name": "다각화된소비자서비스",
@@ -2536,26 +2540,26 @@
       "pct": 0.29
     },
     {
-      "name": "건설",
-      "change_value": "-0.18%",
-      "pct": -0.18
+      "name": "소프트웨어",
+      "change_value": "+0.26%",
+      "pct": 0.26
+    },
+    {
+      "name": "해운사",
+      "change_value": "+0.15%",
+      "pct": 0.15
     }
   ],
   "sector_heatmap": [
     {
-      "name": "소프트웨어",
-      "change_value": "+1.08%",
-      "pct": 1.08
+      "name": "제약",
+      "change_value": "+0.84%",
+      "pct": 0.84
     },
     {
       "name": "전문소매",
-      "change_value": "+0.69%",
-      "pct": 0.69
-    },
-    {
-      "name": "제약",
-      "change_value": "+0.59%",
-      "pct": 0.59
+      "change_value": "+0.54%",
+      "pct": 0.54
     },
     {
       "name": "다각화된소비자서비스",
@@ -2563,44 +2567,49 @@
       "pct": 0.29
     },
     {
-      "name": "건설",
-      "change_value": "-0.18%",
-      "pct": -0.18
+      "name": "소프트웨어",
+      "change_value": "+0.26%",
+      "pct": 0.26
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "-0.28%",
-      "pct": -0.28
+      "name": "해운사",
+      "change_value": "+0.15%",
+      "pct": 0.15
+    },
+    {
+      "name": "담배",
+      "change_value": "+0.15%",
+      "pct": 0.15
     },
     {
       "name": "통신장비",
-      "change_value": "-4.06%",
-      "pct": -4.06
-    },
-    {
-      "name": "조선",
-      "change_value": "-4.25%",
-      "pct": -4.25
+      "change_value": "-4.44%",
+      "pct": -4.44
     },
     {
       "name": "복합기업",
-      "change_value": "-4.25%",
-      "pct": -4.25
+      "change_value": "-4.61%",
+      "pct": -4.61
     },
     {
       "name": "기계",
-      "change_value": "-4.42%",
-      "pct": -4.42
+      "change_value": "-4.63%",
+      "pct": -4.63
     },
     {
-      "name": "전기장비",
-      "change_value": "-5.76%",
-      "pct": -5.76
+      "name": "조선",
+      "change_value": "-4.63%",
+      "pct": -4.63
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-6.56%",
-      "pct": -6.56
+      "change_value": "-6.61%",
+      "pct": -6.61
+    },
+    {
+      "name": "전기장비",
+      "change_value": "-7.03%",
+      "pct": -7.03
     }
   ],
   "article_counts": {
