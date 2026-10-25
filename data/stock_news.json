@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 07:15:46",
+  "updated_at": "2026-10-26 07:30:55",
   "indices": [
     {
       "name": "코스피",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,327.00",
-      "change_percent": "▲0.04%",
-      "direction": "up",
-      "as_of": "2026-10-26 06:51:12"
+      "value": "1,326.00",
+      "change_percent": "▼0.04%",
+      "direction": "down",
+      "as_of": "2026-10-26 07:24:28"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "845.14",
-      "change_percent": "▼0.19%",
+      "value": "844.96",
+      "change_percent": "▼0.21%",
       "direction": "down",
-      "as_of": "2026-10-26 06:51:12"
+      "as_of": "2026-10-26 07:24:28"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,488.76",
-      "change_percent": "▲0.02%",
-      "direction": "up",
-      "as_of": "2026-10-26 06:51:12"
+      "value": "1,486.51",
+      "change_percent": "▼0.13%",
+      "direction": "down",
+      "as_of": "2026-10-26 07:24:28"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "101.73",
-      "change_percent": "▼1.49%",
+      "value": "101.75",
+      "change_percent": "▼1.47%",
       "direction": "down",
-      "as_of": "2026-10-25 17:05:44"
+      "as_of": "2026-10-25 17:20:21"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "107,606,000",
-      "change_percent": "▼0.84%",
+      "value": "107,793,000",
+      "change_percent": "▼0.67%",
       "direction": "down",
-      "as_of": "2026-10-26 07:15:45"
+      "as_of": "2026-10-26 07:30:54"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,130,000",
-      "change_percent": "▼1.17%",
+      "value": "3,138,000",
+      "change_percent": "▼0.92%",
       "direction": "down",
-      "as_of": "2026-10-26 07:15:28"
+      "as_of": "2026-10-26 07:30:53"
     }
   ],
   "news_categories": [
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "한국경제TV",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "美기업 순익 30% 증가 예상…AI 기업들에 집중",
+          "link": "https://n.news.naver.com/mnews/article/018/0006396021?sid=101258403",
+          "upload_time": "20261026073011",
+          "published_at": "2026-10-26T07:30:11+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 2,
           "title": "'10조' 베팅하더니…호르무즈 원유 37% 운송, 한국 기업 일냈다 [굿모닝 글로벌 이슈]",
           "link": "https://n.news.naver.com/mnews/article/215/0001270413?sid=101258403",
           "upload_time": "20261026065922",
@@ -399,7 +407,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 2,
+          "rank": 3,
           "title": "\"美 장대한 분노 또 만지작”…브렌트유 4월 이후 최고 [글로벌 머니플로우]",
           "link": "https://n.news.naver.com/mnews/article/215/0001270412?sid=101258403",
           "upload_time": "20261026065908",
@@ -407,7 +415,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 3,
+          "rank": 4,
           "title": "미·이란 긴장 고조에 유가 폭등…뉴욕증시 일제히 하락-[글로벌 마감 시황]",
           "link": "https://n.news.naver.com/mnews/article/215/0001270411?sid=101258403",
           "upload_time": "20261026065715",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 4,
+          "rank": 5,
           "title": "프랑스, 일단 국가신용등급 강등은 모면했다! | ECB의 TPI, 증시 국채 파동 악재 탈피 계기? | 한상춘 한국경제신문 논설위원",
           "link": "https://n.news.naver.com/mnews/article/215/0001270410?sid=101258403",
           "upload_time": "20261026065652",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 5,
+          "rank": 6,
           "title": "\"머스크가 또 판 흔든다\"…美 통신업계 주가 엇갈린 이유 [美증시 특징주]",
           "link": "https://n.news.naver.com/mnews/article/215/0001270409?sid=101258403",
           "upload_time": "20261026065533",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 7,
           "title": "머스크 \"스페이스X, AI칩 구입에 53조원 조달\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005833155?sid=101258403",
           "upload_time": "20261026065333",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 7,
+          "rank": 8,
           "title": "美 S&P500 3분기 순익 30% 증가 전망…엔비디아·마이크론이 34% 견인",
           "link": "https://n.news.naver.com/mnews/article/277/0005833144?sid=101258403",
           "upload_time": "20261026054831",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 8,
+          "rank": 9,
           "title": "\"코스피 1만2000 간다\"더니…4개월 만에 돌변한 골드만삭스, 왜",
           "link": "https://n.news.naver.com/mnews/article/215/0001270401?sid=101258403",
           "upload_time": "20261025223756",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 9,
+          "rank": 10,
           "title": "“코스피 목표 25% 낮췄는데 상승 여력 60%?”…골드만삭스의 반전 전망",
           "link": "https://n.news.naver.com/mnews/article/009/0005753732?sid=101258403",
           "upload_time": "20261025211009",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 10,
+          "rank": 11,
           "title": "“AI수익성 붕괴 시 日 금융시장 전이”…BOJ, 해외펀드 자금에 경고등",
           "link": "https://n.news.naver.com/mnews/article/018/0006395927?sid=101258403",
           "upload_time": "20261025180608",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 11,
+          "rank": 12,
           "title": "하이닉스 2배 추종 ETF, 美 상장 3개월만에 퇴출",
           "link": "https://n.news.naver.com/mnews/article/011/0004674917?sid=101258403",
           "upload_time": "20261025175414",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 12,
+          "rank": 13,
           "title": "[AI세계속으로]메타 기대·우려 공존…앤스로픽 IPO에 쏠린 눈",
           "link": "https://n.news.naver.com/mnews/article/277/0005833099?sid=101258403",
           "upload_time": "20261025162111",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 13,
+          "rank": 14,
           "title": "인도재벌 암바니 IT기업 IPO…기업가치 1천억달러 넘겨",
           "link": "https://n.news.naver.com/mnews/article/001/0016399175?sid=101258403",
           "upload_time": "20261025160432",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 14,
+          "rank": 15,
           "title": "韓메모리株 담은 ETF 대박에…美테마 ETF 올해 87% 급증",
           "link": "https://n.news.naver.com/mnews/article/018/0006395845?sid=101258403",
           "upload_time": "20261025150307",
           "published_at": "2026-10-25T15:03:07+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "선진국이라던 프랑스의 '생활고 시위'…EU 전역에 확산[시사쇼]",
-          "link": "https://n.news.naver.com/mnews/article/277/0005833024?sid=101258403",
-          "upload_time": "20261025090000",
-          "published_at": "2026-10-25T09:00:00+09:00"
         }
       ]
     },
@@ -631,7 +631,7 @@
       ]
     }
   ],
-  "ai_commentary": null,
+  "ai_commentary": "미국 빅테크 기업들의 실적 발표와 연방공개시장위원회(FOMC)의 금리 결정을 앞둔 경계감이 시장 전반에 영향을 미쳤다. 코스피는 삼성전자와 SK하이닉스 등 대형주 중심의 등락 속에서 보합권 흐름을 보였으나, 코스닥은 반도체 등 주요 종목에 대한 투자 심리 위축과 성장성에 대한 우려가 반영되며 하락 마감했다.",
   "top_gainers": [
     {
       "name": "진양화학",
