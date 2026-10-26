@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-26 13:15:33",
+  "updated_at": "2026-10-26 13:31:02",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -0.85,
-    "kosdaq_change": -2.07,
-    "kospi_value": 5503.08,
-    "kosdaq_value": 736.15
+    "kospi_change": -0.74,
+    "kosdaq_change": -1.92,
+    "kospi_value": 5509.42,
+    "kosdaq_value": 737.27
   },
   "heroes": {
     "종합": {
@@ -52,10 +52,6 @@
     {
       "category": "부동산",
       "text": "고금리 지속에 따른 이자 부담 증가와 부동산 가격 상승폭 둔화"
-    },
-    {
-      "category": "증권",
-      "text": "미국 금리 결정과 주요 기업의 실적 발표를 앞두고 투자 심리가 위축되면서 외국인의 매도세가 이어져 지수가 하락했다. 코스피와 코스피200 지수는 최근 86일간 데이터 기준으로 최저치를 기록하며 장을 마감했다."
     }
   ],
   "daily_term": {
@@ -65,13 +61,31 @@
   "keyword_tags": [],
   "dart_filings": [
     {
+      "corp_name": "셀트리온",
+      "corp_code": "00413046",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261026",
+      "rcept_no": "20261026000084",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000084",
+      "ai_explanation": "회사가 주가 안정이나 주주 가치 제고를 위해 자사 주식을 직접 사들이기로 결정한 공시입니다."
+    },
+    {
+      "corp_name": "한화파워",
+      "corp_code": "01245929",
+      "report_nm": "타인을위한채무보증결정",
+      "rcept_dt": "20261026",
+      "rcept_no": "20261026000088",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000088",
+      "ai_explanation": "회사가 계열사나 타인의 채무를 대신 갚아주기로 약속하여 보증을 서는 결정 공시입니다."
+    },
+    {
       "corp_name": "대구백화점",
       "corp_code": "00108977",
       "report_nm": "[기재정정]주요사항보고서(유형자산양도결정)",
       "rcept_dt": "20261026",
       "rcept_no": "20261023000493",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000493",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등 자산을 매각하기로 한 결정을 정정하여 공시함."
+      "ai_explanation": "건물이나 토지 등 회사가 보유한 자산을 매각하기로 한 결정의 내용을 일부 수정하는 공시입니다."
     },
     {
       "corp_name": "퀀텀레일",
@@ -80,7 +94,7 @@
       "rcept_dt": "20261026",
       "rcept_no": "20261023000491",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000491",
-      "ai_explanation": "주식 수를 줄여 자본금을 감소시키기로 결정함."
+      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등 자본 구조를 조정하는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2862,33 +2876,33 @@
   "top_gainers": [
     {
       "name": "대양금속",
-      "price": "850",
-      "change_percent": "+21.78%",
-      "pct": 21.78
+      "price": "851",
+      "change_percent": "+21.92%",
+      "pct": 21.92
     },
     {
       "name": "인디에프",
-      "price": "3,230",
-      "change_percent": "+15.77%",
-      "pct": 15.77
+      "price": "3,205",
+      "change_percent": "+14.87%",
+      "pct": 14.87
     },
     {
       "name": "씨티알모빌리티",
-      "price": "3,375",
-      "change_percent": "+12.50%",
-      "pct": 12.5
+      "price": "3,335",
+      "change_percent": "+11.17%",
+      "pct": 11.17
     },
     {
       "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "16,095",
-      "change_percent": "+11.54%",
-      "pct": 11.54
+      "price": "15,730",
+      "change_percent": "+9.01%",
+      "pct": 9.01
     },
     {
       "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "14,685",
-      "change_percent": "+9.79%",
-      "pct": 9.79
+      "price": "14,635",
+      "change_percent": "+9.42%",
+      "pct": 9.42
     }
   ],
   "top_losers": [
@@ -2906,117 +2920,117 @@
     },
     {
       "name": "미래에셋글로벌리츠",
-      "price": "986",
-      "change_percent": "-20.03%",
-      "pct": 20.03
+      "price": "985",
+      "change_percent": "-20.11%",
+      "pct": 20.11
     },
     {
       "name": "혜인",
-      "price": "8,260",
-      "change_percent": "-16.31%",
-      "pct": 16.31
+      "price": "8,170",
+      "change_percent": "-17.22%",
+      "pct": 17.22
     },
     {
-      "name": "해태제과식품",
-      "price": "4,720",
-      "change_percent": "-14.65%",
-      "pct": 14.65
+      "name": "HD현대마린솔루션",
+      "price": "168,500",
+      "change_percent": "-14.25%",
+      "pct": 14.25
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+15.87%",
-      "pct": 15.87
+      "change_value": "+16.01%",
+      "pct": 16.01
     },
     {
       "name": "디스플레이패널",
-      "change_value": "+1.52%",
-      "pct": 1.52
+      "change_value": "+2.36%",
+      "pct": 2.36
+    },
+    {
+      "name": "생명보험",
+      "change_value": "+1.12%",
+      "pct": 1.12
     },
     {
       "name": "컴퓨터와주변기기",
-      "change_value": "+1.24%",
-      "pct": 1.24
+      "change_value": "+1.02%",
+      "pct": 1.02
     },
     {
       "name": "소프트웨어",
-      "change_value": "+0.59%",
-      "pct": 0.59
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.58%",
-      "pct": 0.58
+      "change_value": "+0.79%",
+      "pct": 0.79
     }
   ],
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+15.87%",
-      "pct": 15.87
+      "change_value": "+16.01%",
+      "pct": 16.01
     },
     {
       "name": "디스플레이패널",
-      "change_value": "+1.52%",
-      "pct": 1.52
-    },
-    {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+1.24%",
-      "pct": 1.24
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.59%",
-      "pct": 0.59
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.58%",
-      "pct": 0.58
+      "change_value": "+2.36%",
+      "pct": 2.36
     },
     {
       "name": "생명보험",
-      "change_value": "+0.55%",
-      "pct": 0.55
+      "change_value": "+1.12%",
+      "pct": 1.12
     },
     {
-      "name": "무역회사와판매업체",
-      "change_value": "-2.68%",
-      "pct": -2.68
+      "name": "컴퓨터와주변기기",
+      "change_value": "+1.02%",
+      "pct": 1.02
     },
     {
-      "name": "사무용전자제품",
-      "change_value": "-2.75%",
-      "pct": -2.75
+      "name": "소프트웨어",
+      "change_value": "+0.79%",
+      "pct": 0.79
     },
     {
-      "name": "은행",
-      "change_value": "-3.25%",
-      "pct": -3.25
+      "name": "전기제품",
+      "change_value": "+0.40%",
+      "pct": 0.4
     },
     {
       "name": "복합유틸리티",
-      "change_value": "-3.28%",
-      "pct": -3.28
+      "change_value": "-2.74%",
+      "pct": -2.74
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "-2.88%",
+      "pct": -2.88
+    },
+    {
+      "name": "은행",
+      "change_value": "-3.45%",
+      "pct": -3.45
+    },
+    {
+      "name": "조선",
+      "change_value": "-3.64%",
+      "pct": -3.64
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-4.38%",
-      "pct": -4.38
+      "change_value": "-4.71%",
+      "pct": -4.71
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-4.92%",
-      "pct": -4.92
+      "change_value": "-4.78%",
+      "pct": -4.78
     }
   ],
   "article_counts": {
     "종합": 399,
     "경제": 30,
     "부동산": 30,
-    "증권": 66
+    "증권": 70
   },
   "article_count_trend": {
     "종합": {
@@ -3038,9 +3052,9 @@
       "surge": false
     },
     "증권": {
-      "today": 66,
+      "today": 70,
       "yesterday": 82,
-      "change_pct": -19.5,
+      "change_pct": -14.6,
       "surge": false
     }
   }
