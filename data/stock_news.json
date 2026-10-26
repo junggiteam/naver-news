@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 21:30:55",
+  "updated_at": "2026-10-26 22:01:04",
   "indices": [
     {
       "name": "코스피",
@@ -25,30 +25,30 @@
     {
       "name": "다우존스",
       "value": "52,215.16",
-      "change_percent": "▼1.23%",
-      "direction": "down",
-      "as_of": "2026-10-23 16:42:55"
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026-10-26 09:00:56"
     },
     {
       "name": "나스닥",
       "value": "25,955.34",
-      "change_percent": "▼0.21%",
-      "direction": "down",
-      "as_of": "2026-10-23 17:15:59"
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026-10-26 09:00:56"
     },
     {
       "name": "나스닥100",
       "value": "28,957.53",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-10-23 17:15:59"
+      "as_of": "2026-10-26 09:00:57"
     },
     {
       "name": "S&P500",
       "value": "7,623.68",
-      "change_percent": "▼0.52%",
-      "direction": "down",
-      "as_of": "2026-10-23 16:38:21"
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026-10-26 09:00:55"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,325.30",
-      "change_percent": "▼0.05%",
+      "value": "1,325.60",
+      "change_percent": "▼0.03%",
       "direction": "down",
-      "as_of": "2026-10-26 21:29:43"
+      "as_of": "2026-10-26 21:57:23"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "842.24",
-      "change_percent": "▼0.34%",
+      "value": "842.67",
+      "change_percent": "▼0.29%",
       "direction": "down",
-      "as_of": "2026-10-26 21:29:43"
+      "as_of": "2026-10-26 21:57:23"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,483.81",
-      "change_percent": "▼0.15%",
+      "value": "1,483.21",
+      "change_percent": "▼0.20%",
       "direction": "down",
-      "as_of": "2026-10-26 21:29:43"
+      "as_of": "2026-10-26 21:57:23"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "101.05",
-      "change_percent": "▼2.15%",
+      "value": "101.14",
+      "change_percent": "▼2.06%",
       "direction": "down",
-      "as_of": "2026-10-26 07:20:00"
+      "as_of": "2026-10-26 07:50:52"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "107,312,000",
-      "change_percent": "▲0.10%",
-      "direction": "up",
-      "as_of": "2026-10-26 21:30:53"
+      "value": "107,100,000",
+      "change_percent": "▼0.10%",
+      "direction": "down",
+      "as_of": "2026-10-26 22:01:02"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,110,000",
-      "change_percent": "▼0.29%",
+      "value": "3,099,000",
+      "change_percent": "▼0.64%",
       "direction": "down",
-      "as_of": "2026-10-26 21:30:51"
+      "as_of": "2026-10-26 22:01:01"
     }
   ],
   "news_categories": [
@@ -140,8 +140,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "일본계 ‘지분 매수설’ 영향…JYP엔터, 애프터마켓서 14% 급등",
+          "link": "https://n.news.naver.com/mnews/article/015/0005346748?sid=101258401",
+          "upload_time": "20261026213310",
+          "published_at": "2026-10-26T21:33:10+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 2,
+          "title": "“있는 돈 없는 돈, 이미 다 끌어넣었나”…코스피 거래대금도 하락세",
+          "link": "https://n.news.naver.com/mnews/article/009/0005754343?sid=101258401",
+          "upload_time": "20261026213107",
+          "published_at": "2026-10-26T21:31:07+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 3,
           "title": "국제유가·실적 경계감에 코스피, 5,500선 하회",
           "link": "https://n.news.naver.com/mnews/article/422/0000919689?sid=101258401",
           "upload_time": "20261026210310",
@@ -149,7 +165,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 4,
           "title": "“투자금까지 모았지만 함부로 못 들어가”…K반도체 대어들 IPO 속도조절",
           "link": "https://n.news.naver.com/mnews/article/009/0005754335?sid=101258401",
           "upload_time": "20261026201206",
@@ -157,7 +173,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 5,
           "title": "9월에라도 피신할걸…주식형 펀드 빼서 여기 넣었으면 돈 벌었다",
           "link": "https://n.news.naver.com/mnews/article/009/0005754331?sid=101258401",
           "upload_time": "20261026194306",
@@ -165,7 +181,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 4,
+          "rank": 6,
           "title": "코스피 5,500선 아래로 밀려…7개월만 최저",
           "link": "https://n.news.naver.com/mnews/article/422/0000919658?sid=101258401",
           "upload_time": "20261026184609",
@@ -173,7 +189,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 7,
           "title": "국민참여성장펀드 3개월 누적 수익률 0.5% [마켓시그널]",
           "link": "https://n.news.naver.com/mnews/article/011/0004675350?sid=101258401",
           "upload_time": "20261026183111",
@@ -181,7 +197,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 8,
           "title": "美FOMC·반도체 실적 앞두고… 코스피 5500선 깨졌다",
           "link": "https://n.news.naver.com/mnews/article/014/0005594666?sid=101258401",
           "upload_time": "20261026182119",
@@ -189,7 +205,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 7,
+          "rank": 9,
           "title": "21만전자·127만닉스… 반도체 투톱 급락에 공매도도 주춤",
           "link": "https://n.news.naver.com/mnews/article/014/0005594665?sid=101258401",
           "upload_time": "20261026182117",
@@ -197,7 +213,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 8,
+          "rank": 10,
           "title": "[투자의 창] ESS·전고체가 여는 2차전지 2막",
           "link": "https://n.news.naver.com/mnews/article/011/0004675336?sid=101258401",
           "upload_time": "20261026180815",
@@ -205,7 +221,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 9,
+          "rank": 11,
           "title": "코스피 1만 넘는다더니…증권사 전망치 줄하향",
           "link": "https://n.news.naver.com/mnews/article/011/0004675335?sid=101258401",
           "upload_time": "20261026180711",
@@ -213,7 +229,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 10,
+          "rank": 12,
           "title": "상폐 막힌 코스닥…주가도 3주새 20% 넘게 빠져",
           "link": "https://n.news.naver.com/mnews/article/011/0004675334?sid=101258401",
           "upload_time": "20261026180511",
@@ -221,7 +237,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 11,
+          "rank": 13,
           "title": "中 전기차 올라탄 K타이어 ‘최대 실적’ 눈앞",
           "link": "https://n.news.naver.com/mnews/article/011/0004675316?sid=101258401",
           "upload_time": "20261026175426",
@@ -229,7 +245,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 12,
+          "rank": 14,
           "title": "파생계약으로 빌린 돈 7조… 주가 급락에 기업들 비상",
           "link": "https://n.news.naver.com/mnews/article/009/0005754309?sid=101258401",
           "upload_time": "20261026174625",
@@ -237,27 +253,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 13,
+          "rank": 15,
           "title": "국가필수의약품 원료, 10개 중 8개 수입 의존",
           "link": "https://n.news.naver.com/mnews/article/011/0004675293?sid=101258401",
           "upload_time": "20261026173813",
           "published_at": "2026-10-26T17:38:13+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 14,
-          "title": "증권사엔 쏠쏠한 장사 … 주가 하락 위험없이 수수료 벌어",
-          "link": "https://n.news.naver.com/mnews/article/009/0005754285?sid=101258401",
-          "upload_time": "20261026173513",
-          "published_at": "2026-10-26T17:35:13+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "급등장에 주식 맡기고 돈 빌렸더니 … 한화·SK '2조 손실' 우려",
-          "link": "https://n.news.naver.com/mnews/article/009/0005754284?sid=101258401",
-          "upload_time": "20261026173510",
-          "published_at": "2026-10-26T17:35:10+09:00"
         }
       ]
     },
@@ -265,8 +265,24 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "머니투데이",
           "rank": 1,
+          "title": "JYP \"지분 인수 제안받은 적 없다\"… 日 넥스로크 공개매수설 '일축'",
+          "link": "https://n.news.naver.com/mnews/article/008/0005431898?sid=101258402",
+          "upload_time": "20261026215716",
+          "published_at": "2026-10-26T21:57:16+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 2,
+          "title": "호환필터 품질 논란 속 기회…크린앤사이언스, 국내 기반에 해외 매출 더한다",
+          "link": "https://n.news.naver.com/mnews/article/014/0005594762?sid=101258402",
+          "upload_time": "20261026215616",
+          "published_at": "2026-10-26T21:56:16+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 3,
           "title": "“결국 이렇게 되네” SK하이닉스 ETF ‘퇴장’…美 증시서 3개월 만에 사라지는 이유",
           "link": "https://n.news.naver.com/mnews/article/011/0004675366?sid=101258402",
           "upload_time": "20261026205308",
@@ -274,15 +290,15 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 2,
-          "title": "7500억 증빙 없이 'JYP 공개매수'…M&A 업계선 \"비상식적 행보\"",
+          "rank": 4,
+          "title": "\"JYP 공개매수\" 예고에 주가 치솟았는데...업계선 \"비상식적 행보\", 왜",
           "link": "https://n.news.naver.com/mnews/article/008/0005431890?sid=101258402",
           "upload_time": "20261026203813",
           "published_at": "2026-10-26T20:38:13+09:00"
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "JYP, 애프터마켓서 18% 급등…'일본계 자본 인수 시도' 소식 영향 [종목 NOW]",
           "link": "https://n.news.naver.com/mnews/article/014/0005594754?sid=101258402",
           "upload_time": "20261026195309",
@@ -290,7 +306,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 6,
           "title": "9월에라도 피신할걸…주식형 펀드 빼서 여기 넣었으면 돈 벌었다",
           "link": "https://n.news.naver.com/mnews/article/009/0005754331?sid=101258402",
           "upload_time": "20261026194306",
@@ -298,7 +314,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 7,
           "title": "NH투증, 3분기 순이익 3836억… 전년比 35% 증가",
           "link": "https://n.news.naver.com/mnews/article/014/0005594667?sid=101258402",
           "upload_time": "20261026182122",
@@ -306,7 +322,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 8,
           "title": "두 배 늘어난 기업 자사주 소각 결의…\"실제 소각규모·구체적 일정 살펴야\"",
           "link": "https://n.news.naver.com/mnews/article/014/0005594664?sid=101258402",
           "upload_time": "20261026182115",
@@ -314,7 +330,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 7,
+          "rank": 9,
           "title": "신한운용, ICGN 가입… \"수탁자 책임 강화\"",
           "link": "https://n.news.naver.com/mnews/article/014/0005594663?sid=101258402",
           "upload_time": "20261026182113",
@@ -322,7 +338,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 10,
           "title": "[클릭 e종목]\"한솔케미칼, 과산화수소 점유율 확대…안정적 투자 대안\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005833648?sid=101258402",
           "upload_time": "20261026181100",
@@ -330,7 +346,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 9,
+          "rank": 11,
           "title": "하림지주, 자회사 식품사업부문 인적분할…'하림식품' 만든다 [공시]",
           "link": "https://n.news.naver.com/mnews/article/014/0005594649?sid=101258402",
           "upload_time": "20261026180513",
@@ -338,7 +354,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 10,
+          "rank": 12,
           "title": "통합 대한항공, 이륙 전 고객정보 보호 '시험대'",
           "link": "https://n.news.naver.com/mnews/article/417/0001162131?sid=101258402",
           "upload_time": "20261026175536",
@@ -346,7 +362,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 11,
+          "rank": 13,
           "title": "오늘도 밀키트, 실패 없는 한 끼를 산다",
           "link": "https://n.news.naver.com/mnews/article/417/0001162129?sid=101258402",
           "upload_time": "20261026174728",
@@ -354,7 +370,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 12,
+          "rank": 14,
           "title": "더존비즈온, 개인정보 침해사고…\"정부 조사에 성실히 협조\"",
           "link": "https://n.news.naver.com/mnews/article/008/0005431840?sid=101258402",
           "upload_time": "20261026173923",
@@ -362,27 +378,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 13,
+          "rank": 15,
           "title": "사상최고 치솟던 브라질 증시…우파 집권 실패하자 '찬바람'",
           "link": "https://n.news.naver.com/mnews/article/015/0005346660?sid=101258402",
           "upload_time": "20261026173624",
           "published_at": "2026-10-26T17:36:24+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 14,
-          "title": "오늘의 프리미엄9 콘텐츠 다이제스트(10월 26일)",
-          "link": "https://n.news.naver.com/mnews/article/015/0005346652?sid=101258402",
-          "upload_time": "20261026173315",
-          "published_at": "2026-10-26T17:33:15+09:00"
-        },
-        {
-          "press_name": "머니투데이",
-          "rank": 15,
-          "title": "솔리다임 자금조달 어떻게? 증권가 \"수백조 이익 활용하면...\"",
-          "link": "https://n.news.naver.com/mnews/article/008/0005431836?sid=101258402",
-          "upload_time": "20261026173216",
-          "published_at": "2026-10-26T17:32:16+09:00"
         }
       ]
     },
@@ -632,8 +632,24 @@
       "category": "공시·메모",
       "items": [
         {
-          "press_name": "연합뉴스",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "대구백화점 본점 매각 첫 중도금 25억원, 26·29일 분할 납입",
+          "link": "https://n.news.naver.com/mnews/article/018/0006396680?sid=101258406",
+          "upload_time": "20261026215407",
+          "published_at": "2026-10-26T21:54:07+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "대호에이엘 주주조합 지분 11% 돌파…경영권 분쟁 새 변수",
+          "link": "https://n.news.naver.com/mnews/article/018/0006396679?sid=101258406",
+          "upload_time": "20261026215015",
+          "published_at": "2026-10-26T21:50:15+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 3,
           "title": "하림산업, 부동산개발·식품사업 분할…하림식품 신설",
           "link": "https://n.news.naver.com/mnews/article/001/0016401437?sid=101258406",
           "upload_time": "20261026183812",
@@ -641,7 +657,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 4,
           "title": "이틀 연속 상한가 노을, 상폐 위기 벗어나나…주가 1000원 유지가 관건",
           "link": "https://n.news.naver.com/mnews/article/018/0006396580?sid=101258406",
           "upload_time": "20261026183215",
@@ -649,7 +665,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "기업은행 3분기 순익 7천712억원…1년 전보다 2.7%↑(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016401209?sid=101258406",
           "upload_time": "20261026161804",
@@ -657,7 +673,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 4,
+          "rank": 6,
           "title": "기업은행 3분기 영업이익 1조313억원…작년 동기 대비 5.6%↑",
           "link": "https://n.news.naver.com/mnews/article/001/0016401204?sid=101258406",
           "upload_time": "20261026161642",
@@ -665,7 +681,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 5,
+          "rank": 7,
           "title": "증권사 3분기 실적 개시…NH증권, 전분기 대비 23.5%↓(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016401083?sid=101258406",
           "upload_time": "20261026154231",
@@ -673,7 +689,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
+          "rank": 8,
           "title": "거래소 \"KOFR OIS 누적 청산 492조원…도입 1년만 10배 증가\"",
           "link": "https://n.news.naver.com/mnews/article/015/0005346537?sid=101258406",
           "upload_time": "20261026153823",
@@ -681,7 +697,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 7,
+          "rank": 9,
           "title": "BNK금융, 1∼3분기 당기순이익 6천223억원…작년보다 19.2%↓(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016400877?sid=101258406",
           "upload_time": "20261026150001",
@@ -689,7 +705,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 8,
+          "rank": 10,
           "title": "HD건설기계 3분기 영업이익 1천577억원…23.9% 증가(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016400812?sid=101258406",
           "upload_time": "20261026144125",
@@ -697,7 +713,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 9,
+          "rank": 11,
           "title": "HD현대마린솔루션 3분기 영업이익 957억원…2.2% 증가(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016400683?sid=101258406",
           "upload_time": "20261026141753",
@@ -705,7 +721,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 12,
           "title": "경남은행 3분기 영업이익 819억원…작년 동기 대비 28.5%↓",
           "link": "https://n.news.naver.com/mnews/article/001/0016400471?sid=101258406",
           "upload_time": "20261026131928",
@@ -713,7 +729,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 11,
+          "rank": 13,
           "title": "부산은행 3분기 영업이익 1천459억원…작년 동기 대비 34.5%↓",
           "link": "https://n.news.naver.com/mnews/article/001/0016400470?sid=101258406",
           "upload_time": "20261026131858",
@@ -721,7 +737,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 12,
+          "rank": 14,
           "title": "BNK투자증권 3분기 영업이익 33억원…작년 동기 대비 46.3%↓",
           "link": "https://n.news.naver.com/mnews/article/001/0016400467?sid=101258406",
           "upload_time": "20261026131826",
@@ -729,27 +745,11 @@
         },
         {
           "press_name": "헤럴드경제",
-          "rank": 13,
+          "rank": 15,
           "title": "HD현대마린솔루션, 3분기 영업익 957억…전년비 2.2% ↑",
           "link": "https://n.news.naver.com/mnews/article/016/0002714412?sid=101258406",
           "upload_time": "20261026131412",
           "published_at": "2026-10-26T13:14:12+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 14,
-          "title": "예탁원, 전자의결권 플랫폼 'eVOP' 개통…기존 K-VOTE 통합",
-          "link": "https://n.news.naver.com/mnews/article/015/0005346441?sid=101258406",
-          "upload_time": "20261026111310",
-          "published_at": "2026-10-26T11:13:10+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "NH투자증권, 임직원 대상 '금융소비자보호 주간' 운영",
-          "link": "https://n.news.naver.com/mnews/article/015/0005346439?sid=101258406",
-          "upload_time": "20261026110712",
-          "published_at": "2026-10-26T11:07:12+09:00"
         }
       ]
     },
@@ -855,7 +855,7 @@
       ]
     }
   ],
-  "ai_commentary": "국제 유가 변동성과 반도체 기업들의 실적에 대한 경계심이 커지며 투자 심리가 위축된 가운데 코스피와 코스닥 지수가 각각 하락 마감했다. 이번 하락으로 코스피와 코스피200은 최근 86일간 데이터 기준으로 최저치를 기록했다.",
+  "ai_commentary": "미국 연방공개시장위원회(FOMC) 회의를 앞둔 경계감과 반도체 주요 기업들의 실적 우려가 겹치며 투자 심리가 위축된 것이 지수 하락의 배경으로 작용했다. 코스피와 코스피200 지수는 각각 최근 86일간 데이터 기준으로 최저치를 기록하며 장을 마감했다.",
   "top_gainers": [
     {
       "name": "대양금속",
