@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-26 11:01:27",
+  "updated_at": "2026-10-26 11:31:36",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -1.08,
-    "kosdaq_change": -2.21,
-    "kospi_value": 5490.13,
-    "kosdaq_value": 735.09
+    "kospi_change": -1.53,
+    "kosdaq_change": -2.56,
+    "kospi_value": 5465.26,
+    "kosdaq_value": 732.41
   },
   "heroes": {
     "종합": {
@@ -52,6 +52,10 @@
     {
       "category": "부동산",
       "text": "고금리 지속에 따른 이자 부담 증가와 부동산 가격 상승폭 둔화"
+    },
+    {
+      "category": "증권",
+      "text": "중동 지역의 지정학적 리스크로 인한 유가 상승 여파가 투자 심리에 부정적인 영향을 미치며 코스피와 코스닥 지수가 동반 하락했다. 코스피와 코스피200 지수는 이번 하락으로 인해 최근 86일간 데이터 기준으로 최저치를 기록했다. 일부 종목은 개별 이슈에 따라 등락이 엇갈렸으나, 전반적인 시장 분위기는 약세 흐름이 뚜렷했다."
     }
   ],
   "daily_term": {
@@ -67,7 +71,7 @@
       "rcept_dt": "20261026",
       "rcept_no": "20261023000493",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000493",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등 자산을 매각하기로 한 결정을 정정하여 공시함."
+      "ai_explanation": "보유하고 있는 건물이나 토지 등 유형자산을 매각하기로 결정한 내용을 정정하여 공시함."
     },
     {
       "corp_name": "퀀텀레일",
@@ -76,7 +80,7 @@
       "rcept_dt": "20261026",
       "rcept_no": "20261023000491",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000491",
-      "ai_explanation": "주식 수를 줄여 자본금을 감소시키기로 결정함."
+      "ai_explanation": "누적 결손금 보전이나 재무구조 개선 등을 위해 주식 수를 줄이는 자본 감소를 결정함."
     }
   ],
   "macro_indicators": [
@@ -2858,87 +2862,87 @@
   "top_gainers": [
     {
       "name": "대양금속",
-      "price": "812",
-      "change_percent": "+16.33%",
-      "pct": 16.33
+      "price": "801",
+      "change_percent": "+14.76%",
+      "pct": 14.76
     },
     {
       "name": "인디에프",
-      "price": "3,180",
-      "change_percent": "+13.98%",
-      "pct": 13.98
+      "price": "3,150",
+      "change_percent": "+12.90%",
+      "pct": 12.9
     },
     {
       "name": "씨티알모빌리티",
-      "price": "3,390",
-      "change_percent": "+13.00%",
-      "pct": 13.0
-    },
-    {
-      "name": "진양산업",
-      "price": "6,200",
-      "change_percent": "+12.93%",
-      "pct": 12.93
+      "price": "3,370",
+      "change_percent": "+12.33%",
+      "pct": 12.33
     },
     {
       "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "16,090",
-      "change_percent": "+11.50%",
-      "pct": 11.5
+      "price": "16,095",
+      "change_percent": "+11.54%",
+      "pct": 11.54
+    },
+    {
+      "name": "하나 인버스 2X K방산TOP10 ETN",
+      "price": "14,830",
+      "change_percent": "+10.88%",
+      "pct": 10.88
     }
   ],
   "top_losers": [
     {
       "name": "CJ씨푸드1우",
-      "price": "2,320",
-      "change_percent": "-40.28%",
-      "pct": 40.28
+      "price": "2,345",
+      "change_percent": "-39.64%",
+      "pct": 39.64
     },
     {
       "name": "미래에셋글로벌리츠",
-      "price": "1,003",
-      "change_percent": "-18.65%",
-      "pct": 18.65
-    },
-    {
-      "name": "혜인",
-      "price": "8,340",
-      "change_percent": "-15.50%",
-      "pct": 15.5
+      "price": "991",
+      "change_percent": "-19.63%",
+      "pct": 19.63
     },
     {
       "name": "깨끗한나라우",
-      "price": "2,400",
-      "change_percent": "-17.24%",
-      "pct": 17.24
+      "price": "2,295",
+      "change_percent": "-20.86%",
+      "pct": 20.86
+    },
+    {
+      "name": "혜인",
+      "price": "8,310",
+      "change_percent": "-15.81%",
+      "pct": 15.81
     },
     {
       "name": "해태제과식품",
-      "price": "4,795",
-      "change_percent": "-13.29%",
-      "pct": 13.29
+      "price": "4,775",
+      "change_percent": "-13.65%",
+      "pct": 13.65
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+15.84%",
-      "pct": 15.84
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+1.19%",
-      "pct": 1.19
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.92%",
-      "pct": 0.92
+      "change_value": "+15.70%",
+      "pct": 15.7
     },
     {
       "name": "컴퓨터와주변기기",
       "change_value": "+0.87%",
       "pct": 0.87
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+0.74%",
+      "pct": 0.74
+    },
+    {
+      "name": "생명보험",
+      "change_value": "+0.42%",
+      "pct": 0.42
     },
     {
       "name": "디스플레이패널",
@@ -2949,18 +2953,8 @@
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+15.84%",
-      "pct": 15.84
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+1.19%",
-      "pct": 1.19
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.92%",
-      "pct": 0.92
+      "change_value": "+15.70%",
+      "pct": 15.7
     },
     {
       "name": "컴퓨터와주변기기",
@@ -2968,51 +2962,61 @@
       "pct": 0.87
     },
     {
+      "name": "소프트웨어",
+      "change_value": "+0.74%",
+      "pct": 0.74
+    },
+    {
+      "name": "생명보험",
+      "change_value": "+0.42%",
+      "pct": 0.42
+    },
+    {
       "name": "디스플레이패널",
       "change_value": "+0.30%",
       "pct": 0.3
     },
     {
-      "name": "가구",
-      "change_value": "-0.20%",
-      "pct": -0.2
-    },
-    {
-      "name": "판매업체",
-      "change_value": "-2.68%",
-      "pct": -2.68
-    },
-    {
-      "name": "백화점과일반상점",
-      "change_value": "-2.69%",
-      "pct": -2.69
+      "name": "음료",
+      "change_value": "-0.32%",
+      "pct": -0.32
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "-2.80%",
-      "pct": -2.8
+      "change_value": "-2.91%",
+      "pct": -2.91
     },
     {
-      "name": "복합유틸리티",
-      "change_value": "-2.87%",
-      "pct": -2.87
+      "name": "판매업체",
+      "change_value": "-2.93%",
+      "pct": -2.93
+    },
+    {
+      "name": "조선",
+      "change_value": "-3.08%",
+      "pct": -3.08
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "-3.09%",
+      "pct": -3.09
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-4.53%",
-      "pct": -4.53
+      "change_value": "-4.73%",
+      "pct": -4.73
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-6.13%",
-      "pct": -6.13
+      "change_value": "-6.00%",
+      "pct": -6.0
     }
   ],
   "article_counts": {
     "종합": 399,
     "경제": 30,
     "부동산": 30,
-    "증권": 61
+    "증권": 65
   },
   "article_count_trend": {
     "종합": {
@@ -3034,9 +3038,9 @@
       "surge": false
     },
     "증권": {
-      "today": 61,
+      "today": 65,
       "yesterday": 82,
-      "change_pct": -25.6,
+      "change_pct": -20.7,
       "surge": false
     }
   }
