@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-27 14:15:42",
+  "updated_at": "2026-10-27 14:31:22",
   "market_mood": {
-    "label": "급등",
-    "emoji": "🟢",
-    "kospi_change": 3.67,
-    "kosdaq_change": 2.81,
-    "kospi_value": 5670.43,
-    "kosdaq_value": 747.62
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 3.34,
+    "kosdaq_change": 2.3,
+    "kospi_value": 5652.03,
+    "kosdaq_value": 743.94
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "앤트로픽의 실적 성장 기대감에 힘입어 반도체 관련주가 강세를 보이면서 코스피와 코스닥 지수가 큰 폭으로 상승했다. 이 과정에서 코스피 시장은 장중 급등세가 나타나며 매수 사이드카가 발동되기도 했다."
+      "text": "미국 AI 기업 앤트로픽의 성장세가 국내 증시에 긍정적인 영향을 미치며 투자 심리를 개선했다. 이와 더불어 국내 경제성장률 지표가 양호하게 나타나면서 코스피와 코스닥 지수 모두 상승세로 마감했다."
     }
   ],
   "daily_term": null,
@@ -82,13 +82,20 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "APS",
+      "corp_code": "00296078",
+      "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+      "rcept_dt": "20261027",
+      "rcept_no": "20261027000159",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000159"
+    },
+    {
       "corp_name": "신한지주",
       "corp_code": "00382199",
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000117",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000117",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 직접 매입하기로 결정함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000117"
     },
     {
       "corp_name": "삼일",
@@ -96,8 +103,7 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000118",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000118",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사주를 직접 매입하기로 결정함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000118"
     },
     {
       "corp_name": "달바글로벌",
@@ -105,8 +111,7 @@
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000092",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000092",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 종료하기로 결정함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000092"
     },
     {
       "corp_name": "제이에스전선",
@@ -114,8 +119,7 @@
       "report_nm": "비유동자산처분결정",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000050",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000050",
-      "ai_explanation": "건물, 토지 등 회사가 보유한 비유동자산을 매각하여 현금을 확보하기로 함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000050"
     },
     {
       "corp_name": "뉴스테이허브제2호위탁관리부동산투자회사",
@@ -123,8 +127,7 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000048",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000048",
-      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 신주를 발행하여 자본을 확충하기로 함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000048"
     },
     {
       "corp_name": "삼성생명",
@@ -132,8 +135,7 @@
       "report_nm": "[기재정정]주요사항보고서(자본으로인정되는채무증권발행결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000012",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000012",
-      "ai_explanation": "자본 건전성을 강화하기 위해 자본으로 인정받는 채무증권(후순위채 등)을 발행함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000012"
     },
     {
       "corp_name": "대구백화점",
@@ -141,8 +143,7 @@
       "report_nm": "[기재정정]주요사항보고서(유형자산양도결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261027000001",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000001",
-      "ai_explanation": "보유 중인 부동산 등 유형자산을 매각하여 자금을 확보하려는 내용을 정정함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000001"
     },
     {
       "corp_name": "그린플러스",
@@ -150,8 +151,7 @@
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261026000394",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000394",
-      "ai_explanation": "향후 주식으로 전환할 수 있는 권리가 부여된 채권을 발행하여 자금을 조달함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000394"
     },
     {
       "corp_name": "그린플러스",
@@ -159,8 +159,7 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261026000393",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000393",
-      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 신주를 발행하여 자본을 확충하기로 함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000393"
     },
     {
       "corp_name": "모아데이타",
@@ -168,8 +167,7 @@
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261026000395",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000395",
-      "ai_explanation": "발행했던 전환사채를 만기 전 미리 매입하여 사채 부담을 해소하기로 결정함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000395"
     },
     {
       "corp_name": "모아데이타",
@@ -177,8 +175,7 @@
       "report_nm": "[기재정정]주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261026000388",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000388",
-      "ai_explanation": "발행했던 전환사채를 만기 전 미리 매입하는 결정 사항의 내용을 정정함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000388"
     },
     {
       "corp_name": "썬테크",
@@ -186,8 +183,7 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261027",
       "rcept_no": "20261026000385",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000385",
-      "ai_explanation": "운영 자금이나 시설 투자 등을 위해 신주를 발행하여 자본을 확충하기로 함."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000385"
     }
   ],
   "macro_indicators": [
@@ -2958,144 +2954,139 @@
   "top_gainers": [
     {
       "name": "엠씨넥스",
-      "price": "20,600",
-      "change_percent": "+17.38%",
-      "pct": 17.38
+      "price": "21,250",
+      "change_percent": "+21.08%",
+      "pct": 21.08
     },
     {
-      "name": "TIGER 반도체TOP10레버리지",
-      "price": "21,985",
-      "change_percent": "+14.27%",
-      "pct": 14.27
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "5,110",
+      "change_percent": "+14.19%",
+      "pct": 14.19
     },
     {
       "name": "한솔테크닉스",
-      "price": "8,360",
-      "change_percent": "+13.90%",
-      "pct": 13.9
+      "price": "8,380",
+      "change_percent": "+14.17%",
+      "pct": 14.17
     },
     {
       "name": "드림텍",
-      "price": "7,480",
-      "change_percent": "+14.20%",
-      "pct": 14.2
+      "price": "7,450",
+      "change_percent": "+13.74%",
+      "pct": 13.74
     },
     {
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "5,055",
-      "change_percent": "+13.34%",
-      "pct": 13.34
+      "name": "코리아써키트",
+      "price": "75,400",
+      "change_percent": "+13.55%",
+      "pct": 13.55
     }
   ],
   "top_losers": [
     {
       "name": "서울식품우",
-      "price": "816",
-      "change_percent": "-33.82%",
-      "pct": 33.82
+      "price": "800",
+      "change_percent": "-35.12%",
+      "pct": 35.12
     },
     {
       "name": "미래에셋글로벌리츠",
-      "price": "820",
-      "change_percent": "-16.24%",
-      "pct": 16.24
+      "price": "813",
+      "change_percent": "-16.96%",
+      "pct": 16.96
     },
     {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "8,975",
-      "change_percent": "-13.16%",
-      "pct": 13.16
+      "name": "HD현대에너지솔루션",
+      "price": "84,200",
+      "change_percent": "-12.56%",
+      "pct": 12.56
     },
     {
       "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3,800",
-      "change_percent": "-12.34%",
-      "pct": 12.34
+      "price": "3,825",
+      "change_percent": "-11.76%",
+      "pct": 11.76
     },
     {
-      "name": "CJ씨푸드1우",
-      "price": "1,698",
-      "change_percent": "-6.81%",
-      "pct": 6.81
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "9,155",
+      "change_percent": "-11.42%",
+      "pct": 11.42
     }
   ],
   "sector_performance": [
     {
       "name": "전자장비와기기",
-      "change_value": "+7.25%",
-      "pct": 7.25
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+5.49%",
-      "pct": 5.49
+      "change_value": "+7.00%",
+      "pct": 7.0
     },
     {
       "name": "핸드셋",
-      "change_value": "+5.22%",
-      "pct": 5.22
+      "change_value": "+5.15%",
+      "pct": 5.15
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+4.95%",
+      "pct": 4.95
     },
     {
       "name": "석유와가스",
-      "change_value": "+4.61%",
-      "pct": 4.61
+      "change_value": "+4.05%",
+      "pct": 4.05
     },
     {
-      "name": "생명보험",
-      "change_value": "+4.38%",
-      "pct": 4.38
+      "name": "전기제품",
+      "change_value": "+3.96%",
+      "pct": 3.96
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자장비와기기",
-      "change_value": "+7.25%",
-      "pct": 7.25
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+5.49%",
-      "pct": 5.49
+      "change_value": "+7.00%",
+      "pct": 7.0
     },
     {
       "name": "핸드셋",
-      "change_value": "+5.22%",
-      "pct": 5.22
+      "change_value": "+5.15%",
+      "pct": 5.15
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+4.95%",
+      "pct": 4.95
     },
     {
       "name": "석유와가스",
-      "change_value": "+4.61%",
-      "pct": 4.61
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+4.38%",
-      "pct": 4.38
+      "change_value": "+4.05%",
+      "pct": 4.05
     },
     {
       "name": "전기제품",
-      "change_value": "+4.27%",
-      "pct": 4.27
+      "change_value": "+3.96%",
+      "pct": 3.96
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "-1.46%",
-      "pct": -1.46
+      "name": "생명보험",
+      "change_value": "+3.83%",
+      "pct": 3.83
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "-1.46%",
-      "pct": -1.46
+      "name": "화장품",
+      "change_value": "-1.09%",
+      "pct": -1.09
+    },
+    {
+      "name": "담배",
+      "change_value": "-1.16%",
+      "pct": -1.16
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "-1.66%",
-      "pct": -1.66
-    },
-    {
-      "name": "건강관리기술",
-      "change_value": "-1.88%",
-      "pct": -1.88
+      "change_value": "-1.93%",
+      "pct": -1.93
     },
     {
       "name": "카드",
@@ -3103,16 +3094,21 @@
       "pct": -1.93
     },
     {
+      "name": "건강관리기술",
+      "change_value": "-2.11%",
+      "pct": -2.11
+    },
+    {
       "name": "제약",
-      "change_value": "-2.44%",
-      "pct": -2.44
+      "change_value": "-2.64%",
+      "pct": -2.64
     }
   ],
   "article_counts": {
     "종합": 412,
     "경제": 30,
     "부동산": 30,
-    "증권": 84
+    "증권": 87
   },
   "article_count_trend": {
     "종합": {
@@ -3134,9 +3130,9 @@
       "surge": false
     },
     "증권": {
-      "today": 84,
+      "today": 87,
       "yesterday": 86,
-      "change_pct": -2.3,
+      "change_pct": 1.2,
       "surge": false
     }
   }
