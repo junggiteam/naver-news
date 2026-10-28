@@ -15051,6 +15051,15 @@
   "2026-10-28": {
     "합병_분할": [
       {
+        "corp_name": "휴맥스",
+        "corp_code": "00787057",
+        "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+        "rcept_dt": "20261028",
+        "rcept_no": "20261028000235",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000235",
+        "action": "회사합병결정"
+      },
+      {
         "corp_name": "티앤제이인베스트먼트",
         "corp_code": "01816860",
         "report_nm": "회사합병결정",
@@ -15078,11 +15087,39 @@
         "action": "회사분할결정"
       }
     ],
-    "지분인수": [],
+    "지분인수": [
+      {
+        "corp_name": "호텔아이파크",
+        "corp_code": "00519766",
+        "report_nm": "타법인주식및출자증권취득결정",
+        "rcept_dt": "20261028",
+        "rcept_no": "20261028000252",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000252",
+        "action": "타법인주식및출자증권양수결정"
+      }
+    ],
     "영업양수도": [],
     "주식교환_이전": [],
     "경영권이동_최대주주변경": [],
     "자기주식": [
+      {
+        "corp_name": "신원",
+        "corp_code": "00136864",
+        "report_nm": "주요사항보고서(자기주식취득결정)",
+        "rcept_dt": "20261028",
+        "rcept_no": "20261028000248",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000248",
+        "action": "자기주식취득결정"
+      },
+      {
+        "corp_name": "한국알콜",
+        "corp_code": "00158565",
+        "report_nm": "주요사항보고서(자기주식취득결정)",
+        "rcept_dt": "20261028",
+        "rcept_no": "20261028000226",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000226",
+        "action": "자기주식취득결정"
+      },
       {
         "corp_name": "SK하이닉스",
         "corp_code": "00164779",
@@ -15093,6 +15130,6 @@
         "action": "자기주식취득결정"
       }
     ],
-    "_updated_at": "2026-10-28 14:31:14"
+    "_updated_at": "2026-10-28 15:01:20"
   }
 }
