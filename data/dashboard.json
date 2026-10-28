@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-28 10:23:48",
+  "updated_at": "2026-10-28 10:46:00",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 5.44,
-    "kosdaq_change": 3.47,
-    "kospi_value": 5945.12,
-    "kosdaq_value": 769.67
+    "kospi_change": 6.14,
+    "kosdaq_change": 3.45,
+    "kospi_value": 5984.31,
+    "kosdaq_value": 769.52
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "SK하이닉스의 실적 호조가 반도체 대형주 중심의 강한 매수세를 이끌며 지수 상승을 견인했다. 주가 급등에 따라 코스피 시장에서는 이틀 연속으로 매수 사이드카가 발동되었다."
+      "text": "SK하이닉스가 발표한 실적 호조와 주주환원 정책 강화에 힘입어 반도체 관련주가 급등하며 지수 상승을 견인했다. 인공지능 분야에 대한 기대감과 대형주 중심의 투자 심리 개선이 이어지면서 코스피 시장에는 매수 사이드카가 발동되었다."
     }
   ],
   "daily_term": {
@@ -90,7 +90,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000091",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000091",
-      "ai_explanation": "토지, 건물, 설비 등 장기간 보유할 자산을 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 건물, 기계장치 등 장기간 사용할 자산을 새로 매입하기로 결정했다는 뜻입니다."
     },
     {
       "corp_name": "썬테크",
@@ -99,7 +99,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000063",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000063",
-      "ai_explanation": "회사가 자본금을 늘리기 위해 기존 주주나 제3자에게 신주를 발행해 자금을 조달한다는 뜻입니다."
+      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하여 주주 등으로부터 투자를 받기로 결정했다는 뜻입니다."
     },
     {
       "corp_name": "가승개발",
@@ -108,7 +108,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000040",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000040",
-      "ai_explanation": "이전에 공시한 자산 취득 계획에 수정 사항이 생겨 내용을 바로잡는다는 의미입니다."
+      "ai_explanation": "이전에 공시했던 자산 취득 계획의 내용 중 일부를 수정하거나 보완했다는 뜻입니다."
     },
     {
       "corp_name": "SK하이닉스",
@@ -117,7 +117,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000014",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000014",
-      "ai_explanation": "회사가 주가 안정과 주주 가치 제고를 목적으로 자사 주식을 시장에서 사들이기로 결정했음을 의미합니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 자사 주식을 시장에서 직접 매입하기로 결정했다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2924,134 +2924,139 @@
       "pct": 29.89
     },
     {
-      "name": "CJ씨푸드1우",
-      "price": "2,425",
-      "change_percent": "+23.54%",
-      "pct": 23.54
-    },
-    {
       "name": "해성디에스",
-      "price": "53,300",
-      "change_percent": "+19.37%",
-      "pct": 19.37
+      "price": "53,800",
+      "change_percent": "+20.49%",
+      "pct": 20.49
     },
     {
       "name": "1Q 삼성전자선물단일종목레버리지",
-      "price": "9,200",
-      "change_percent": "+16.53%",
-      "pct": 16.53
+      "price": "9,420",
+      "change_percent": "+19.32%",
+      "pct": 19.32
     },
     {
-      "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "8,795",
-      "change_percent": "+16.49%",
-      "pct": 16.49
+      "name": "PLUS 삼성전자단일종목레버리지",
+      "price": "10,005",
+      "change_percent": "+18.61%",
+      "pct": 18.61
+    },
+    {
+      "name": "KODEX 삼성전자단일종목레버리지",
+      "price": "9,925",
+      "change_percent": "+19.08%",
+      "pct": 19.08
     }
   ],
   "top_losers": [
     {
+      "name": "서울식품우",
+      "price": "639",
+      "change_percent": "-20.42%",
+      "pct": 20.42
+    },
+    {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "9,230",
-      "change_percent": "-16.09%",
-      "pct": 16.09
+      "price": "8,980",
+      "change_percent": "-18.36%",
+      "pct": 18.36
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7,855",
-      "change_percent": "-15.31%",
-      "pct": 15.31
-    },
-    {
-      "name": "프레스티지바이오파마",
-      "price": "4,200",
-      "change_percent": "-16.83%",
-      "pct": 16.83
-    },
-    {
-      "name": "성문전자우",
-      "price": "4,950",
-      "change_percent": "-14.51%",
-      "pct": 14.51
+      "price": "7,625",
+      "change_percent": "-17.79%",
+      "pct": 17.79
     },
     {
       "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3,320",
-      "change_percent": "-14.87%",
-      "pct": 14.87
+      "price": "3,270",
+      "change_percent": "-16.15%",
+      "pct": 16.15
+    },
+    {
+      "name": "성문전자우",
+      "price": "4,850",
+      "change_percent": "-16.23%",
+      "pct": 16.23
     }
   ],
   "sector_performance": [
     {
-      "name": "생명보험",
-      "change_value": "+8.97%",
-      "pct": 8.97
+      "name": "반도체와반도체장비",
+      "change_value": "+8.87%",
+      "pct": 8.87
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+7.50%",
-      "pct": 7.5
+      "name": "생명보험",
+      "change_value": "+8.53%",
+      "pct": 8.53
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+7.44%",
-      "pct": 7.44
+      "change_value": "+8.51%",
+      "pct": 8.51
     },
     {
       "name": "복합기업",
-      "change_value": "+5.52%",
-      "pct": 5.52
+      "change_value": "+5.81%",
+      "pct": 5.81
     },
     {
-      "name": "기계",
-      "change_value": "+5.10%",
-      "pct": 5.1
+      "name": "통신장비",
+      "change_value": "+5.29%",
+      "pct": 5.29
     }
   ],
   "sector_heatmap": [
     {
-      "name": "생명보험",
-      "change_value": "+8.97%",
-      "pct": 8.97
+      "name": "반도체와반도체장비",
+      "change_value": "+8.87%",
+      "pct": 8.87
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+7.50%",
-      "pct": 7.5
+      "name": "생명보험",
+      "change_value": "+8.53%",
+      "pct": 8.53
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+7.44%",
-      "pct": 7.44
+      "change_value": "+8.51%",
+      "pct": 8.51
     },
     {
       "name": "복합기업",
-      "change_value": "+5.52%",
-      "pct": 5.52
-    },
-    {
-      "name": "기계",
-      "change_value": "+5.10%",
-      "pct": 5.1
+      "change_value": "+5.81%",
+      "pct": 5.81
     },
     {
       "name": "통신장비",
-      "change_value": "+4.74%",
-      "pct": 4.74
+      "change_value": "+5.29%",
+      "pct": 5.29
+    },
+    {
+      "name": "무선통신서비스",
+      "change_value": "+5.03%",
+      "pct": 5.03
     },
     {
       "name": "전문소매",
-      "change_value": "-0.55%",
-      "pct": -0.55
+      "change_value": "-0.69%",
+      "pct": -0.69
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "-0.61%",
-      "pct": -0.61
+      "change_value": "-0.77%",
+      "pct": -0.77
     },
     {
       "name": "포장재",
-      "change_value": "-0.92%",
-      "pct": -0.92
+      "change_value": "-0.94%",
+      "pct": -0.94
+    },
+    {
+      "name": "문구류",
+      "change_value": "-0.94%",
+      "pct": -0.94
     },
     {
       "name": "다각화된소비자서비스",
@@ -3059,14 +3064,9 @@
       "pct": -1.46
     },
     {
-      "name": "문구류",
-      "change_value": "-1.47%",
-      "pct": -1.47
-    },
-    {
       "name": "판매업체",
-      "change_value": "-1.92%",
-      "pct": -1.92
+      "change_value": "-2.05%",
+      "pct": -2.05
     }
   ],
   "article_counts": {
