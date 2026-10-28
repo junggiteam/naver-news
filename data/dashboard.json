@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29 08:01:20",
+  "updated_at": "2026-10-29 08:31:01",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000002",
-      "ai_explanation": "유상증자 계획을 수정하여 다시 공시함."
+      "ai_explanation": "기존에 발표한 유상증자 계획의 내용을 일부 변경하거나 보완하여 다시 공시함."
     },
     {
       "corp_name": "광진실업",
@@ -96,7 +96,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000001",
-      "ai_explanation": "유상증자 계획을 수정하여 다시 공시함."
+      "ai_explanation": "기존에 발표한 유상증자 계획의 내용을 일부 변경하거나 보완하여 다시 공시함."
     }
   ],
   "macro_indicators": [
@@ -2890,105 +2890,83 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "6,285",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "6,205",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "6,075",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "7,100",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "5,925",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "서울식품우",
-      "price": "321",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7,170",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "CJ씨푸드1우",
-      "price": "1,569",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "성문전자우",
-      "price": "4,630",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3,125",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "반도체와반도체장비",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "생명보험",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "통신장비",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "반도체와반도체장비",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "생명보험",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -2998,47 +2976,7 @@
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "기계",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전문소매",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "포장재",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "광고",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3047,7 +2985,7 @@
     "종합": 415,
     "경제": 30,
     "부동산": 30,
-    "증권": 85
+    "증권": 86
   },
   "article_count_trend": {
     "종합": {
@@ -3069,9 +3007,9 @@
       "surge": false
     },
     "증권": {
-      "today": 85,
+      "today": 86,
       "yesterday": 90,
-      "change_pct": -5.6,
+      "change_pct": -4.4,
       "surge": false
     }
   }
