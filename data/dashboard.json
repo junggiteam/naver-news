@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-28 11:47:24",
+  "updated_at": "2026-10-28 12:01:24",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 5.66,
-    "kosdaq_change": 2.91,
-    "kospi_value": 5957.57,
-    "kosdaq_value": 765.51
+    "kospi_change": 5.91,
+    "kosdaq_change": 3.09,
+    "kospi_value": 5971.55,
+    "kosdaq_value": 766.83
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스를 중심으로 한 반도체 관련주의 동반 급등이 지수 상승을 견인했다. 실적 기대감과 주주환원 정책 발표가 맞물리며 투자 심리가 개선된 결과로 풀이된다."
+      "text": "삼성전자와 SK하이닉스 등 대형 반도체 종목이 큰 폭으로 상승하며 지수 급등을 견인했다. 외국인 투자자의 순매수세가 유입되면서 코스피가 장중 6,000선에 도달하는 등 지수 상승세가 두드러졌다."
     }
   ],
   "daily_term": {
@@ -90,7 +90,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000134",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000134",
-      "ai_explanation": "자사주를 사들이기 위해 금융기관과 맺었던 신탁 계약을 해지한다는 결정입니다."
+      "ai_explanation": "회사가 증권사와 맺었던 자기주식 매입 신탁 계약을 해지한다는 결정입니다."
     },
     {
       "corp_name": "현대모비스",
@@ -99,7 +99,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000138",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000138",
-      "ai_explanation": "회사의 특정 사업 부문을 떼어내어 별도의 회사로 만드는 분할 계획을 변경한다는 내용입니다."
+      "ai_explanation": "회사를 나누는 분할 계획에 대한 공시 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "달바글로벌",
@@ -108,7 +108,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000114",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000114",
-      "ai_explanation": "자사주를 매입하기 위해 금융기관과 새롭게 신탁 계약을 체결한다는 결정입니다."
+      "ai_explanation": "회사가 증권사를 통해 자사주를 매입하기로 신탁 계약을 체결하는 결정입니다."
     },
     {
       "corp_name": "고려예선",
@@ -117,7 +117,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000091",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000091",
-      "ai_explanation": "건물, 토지, 설비 등 장기간 보유할 목적의 자산을 새로 사들이겠다는 결정입니다."
+      "ai_explanation": "건물, 토지, 설비 등 장기간 사용할 자산을 새로 사들이기로 결정한 것입니다."
     },
     {
       "corp_name": "썬테크",
@@ -126,7 +126,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000063",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000063",
-      "ai_explanation": "주주를 대상으로 추가로 주식을 발행해 자금을 조달하는 유상증자 계획을 수정한다는 내용입니다."
+      "ai_explanation": "유상증자 방식이나 규모 등 기존에 공시했던 내용을 정정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "가승개발",
@@ -135,7 +135,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000040",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000040",
-      "ai_explanation": "장기 보유 자산 취득과 관련된 기존 공시 내용 중 일부를 수정한다는 의미입니다."
+      "ai_explanation": "기존에 공시했던 비유동자산 취득 관련 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "SK하이닉스",
@@ -144,7 +144,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000014",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000014",
-      "ai_explanation": "회사가 직접 자금을 들여 자사 주식을 시장에서 사들이겠다는 결정입니다."
+      "ai_explanation": "회사가 직접 자사의 주식을 시장에서 사들이기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2946,47 +2946,41 @@
   "top_gainers": [
     {
       "name": "씨티알모빌리티",
-      "price": "4,520",
-      "change_percent": "+29.89%",
-      "pct": 29.89
+      "price": "4,300",
+      "change_percent": "+23.56%",
+      "pct": 23.56
     },
     {
       "name": "해성디에스",
-      "price": "53,600",
-      "change_percent": "+20.04%",
-      "pct": 20.04
+      "price": "53,500",
+      "change_percent": "+19.82%",
+      "pct": 19.82
     },
     {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "6,755",
-      "change_percent": "+16.37%",
-      "pct": 16.37
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "6,025",
+      "change_percent": "+17.56%",
+      "pct": 17.56
     },
     {
-      "name": "1Q 삼성전자선물단일종목레버리지",
-      "price": "9,205",
-      "change_percent": "+16.59%",
-      "pct": 16.59
+      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
+      "price": "5,750",
+      "change_percent": "+18.19%",
+      "pct": 18.19
     },
     {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "5,780",
-      "change_percent": "+16.41%",
-      "pct": 16.41
+      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
+      "price": "6,870",
+      "change_percent": "+17.84%",
+      "pct": 17.84
     }
   ],
   "top_losers": [
     {
       "name": "프레스티지바이오파마",
-      "price": "4,000",
-      "change_percent": "-20.79%",
-      "pct": 20.79
-    },
-    {
-      "name": "서울식품우",
-      "price": "646",
-      "change_percent": "-19.55%",
-      "pct": 19.55
+      "price": "4,035",
+      "change_percent": "-20.10%",
+      "pct": 20.1
     },
     {
       "name": "성문전자우",
@@ -2996,104 +2990,110 @@
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7,760",
-      "change_percent": "-16.33%",
-      "pct": 16.33
+      "price": "7,660",
+      "change_percent": "-17.41%",
+      "pct": 17.41
+    },
+    {
+      "name": "서울식품우",
+      "price": "675",
+      "change_percent": "-15.94%",
+      "pct": 15.94
     },
     {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "9,260",
-      "change_percent": "-15.82%",
-      "pct": 15.82
+      "price": "9,230",
+      "change_percent": "-16.09%",
+      "pct": 16.09
     }
   ],
   "sector_performance": [
     {
+      "name": "소프트웨어",
+      "change_value": "+10.21%",
+      "pct": 10.21
+    },
+    {
       "name": "생명보험",
-      "change_value": "+8.40%",
-      "pct": 8.4
+      "change_value": "+8.39%",
+      "pct": 8.39
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+7.99%",
-      "pct": 7.99
+      "change_value": "+8.34%",
+      "pct": 8.34
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+7.17%",
-      "pct": 7.17
+      "change_value": "+7.46%",
+      "pct": 7.46
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+6.44%",
-      "pct": 6.44
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+5.86%",
-      "pct": 5.86
+      "name": "복합기업",
+      "change_value": "+6.23%",
+      "pct": 6.23
     }
   ],
   "sector_heatmap": [
     {
+      "name": "소프트웨어",
+      "change_value": "+10.21%",
+      "pct": 10.21
+    },
+    {
       "name": "생명보험",
-      "change_value": "+8.40%",
-      "pct": 8.4
+      "change_value": "+8.39%",
+      "pct": 8.39
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+7.99%",
-      "pct": 7.99
+      "change_value": "+8.34%",
+      "pct": 8.34
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+7.17%",
-      "pct": 7.17
+      "change_value": "+7.46%",
+      "pct": 7.46
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+6.44%",
-      "pct": 6.44
+      "name": "복합기업",
+      "change_value": "+6.23%",
+      "pct": 6.23
     },
     {
       "name": "통신장비",
-      "change_value": "+5.86%",
-      "pct": 5.86
-    },
-    {
-      "name": "무선통신서비스",
-      "change_value": "+5.85%",
-      "pct": 5.85
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "-0.73%",
-      "pct": -0.73
+      "change_value": "+5.96%",
+      "pct": 5.96
     },
     {
       "name": "사무용전자제품",
+      "change_value": "-0.79%",
+      "pct": -0.79
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "-0.84%",
+      "pct": -0.84
+    },
+    {
+      "name": "판매업체",
+      "change_value": "-0.87%",
+      "pct": -0.87
+    },
+    {
+      "name": "전문소매",
       "change_value": "-0.92%",
       "pct": -0.92
     },
     {
       "name": "포장재",
-      "change_value": "-1.06%",
-      "pct": -1.06
-    },
-    {
-      "name": "전문소매",
-      "change_value": "-1.25%",
-      "pct": -1.25
+      "change_value": "-1.24%",
+      "pct": -1.24
     },
     {
       "name": "문구류",
-      "change_value": "-1.26%",
-      "pct": -1.26
-    },
-    {
-      "name": "판매업체",
-      "change_value": "-1.27%",
-      "pct": -1.27
+      "change_value": "-1.47%",
+      "pct": -1.47
     }
   ],
   "article_counts": {
