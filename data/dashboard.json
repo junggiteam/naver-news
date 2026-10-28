@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-28 12:01:24",
+  "updated_at": "2026-10-28 12:31:09",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 5.91,
-    "kosdaq_change": 3.09,
-    "kospi_value": 5971.55,
-    "kosdaq_value": 766.83
+    "kospi_change": 6.45,
+    "kosdaq_change": 2.93,
+    "kospi_value": 6002.18,
+    "kosdaq_value": 765.65
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스 등 대형 반도체 종목이 큰 폭으로 상승하며 지수 급등을 견인했다. 외국인 투자자의 순매수세가 유입되면서 코스피가 장중 6,000선에 도달하는 등 지수 상승세가 두드러졌다."
+      "text": "삼성전자와 SK하이닉스 등 시가총액 상위 반도체 종목이 급등세를 보이며 지수 상승을 견인했다. 외국인 투자자의 대규모 매수세가 유입되면서 코스피 지수는 장중 6,000선을 터치하는 등 강한 오름세를 나타냈다."
     }
   ],
   "daily_term": {
@@ -90,7 +90,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000134",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000134",
-      "ai_explanation": "회사가 증권사와 맺었던 자기주식 매입 신탁 계약을 해지한다는 결정입니다."
+      "ai_explanation": "회사가 증권사와 맺었던 자사주 매입 신탁 계약을 해지한다는 결정입니다."
     },
     {
       "corp_name": "현대모비스",
@@ -99,7 +99,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000138",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000138",
-      "ai_explanation": "회사를 나누는 분할 계획에 대한 공시 내용을 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "회사의 사업 부문을 분리하여 별도 법인을 설립하기로 한 결정을 수정 공시한 것입니다."
     },
     {
       "corp_name": "달바글로벌",
@@ -108,7 +108,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000114",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000114",
-      "ai_explanation": "회사가 증권사를 통해 자사주를 매입하기로 신탁 계약을 체결하는 결정입니다."
+      "ai_explanation": "회사가 자사주를 매입하기 위해 증권사와 신탁 계약을 새로 체결한다는 결정입니다."
     },
     {
       "corp_name": "고려예선",
@@ -117,7 +117,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000091",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000091",
-      "ai_explanation": "건물, 토지, 설비 등 장기간 사용할 자산을 새로 사들이기로 결정한 것입니다."
+      "ai_explanation": "건물, 토지, 설비 등 장기적으로 사용할 자산을 매입하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "썬테크",
@@ -126,7 +126,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000063",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000063",
-      "ai_explanation": "유상증자 방식이나 규모 등 기존에 공시했던 내용을 정정하여 다시 알리는 것입니다."
+      "ai_explanation": "주주로부터 자금을 조달하는 유상증자 계획의 첨부 서류 등을 정정한 것입니다."
     },
     {
       "corp_name": "가승개발",
@@ -135,7 +135,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000040",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000040",
-      "ai_explanation": "기존에 공시했던 비유동자산 취득 관련 내용을 수정하여 다시 알리는 것입니다."
+      "ai_explanation": "과거 공시한 건물이나 설비 등 자산 취득 계획의 세부 내용을 수정한 것입니다."
     },
     {
       "corp_name": "SK하이닉스",
@@ -144,7 +144,7 @@
       "rcept_dt": "20261028",
       "rcept_no": "20261028000014",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000014",
-      "ai_explanation": "회사가 직접 자사의 주식을 시장에서 사들이기로 결정한 것입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고 등을 위해 자사주를 직접 매입하겠다는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2946,41 +2946,41 @@
   "top_gainers": [
     {
       "name": "씨티알모빌리티",
-      "price": "4,300",
-      "change_percent": "+23.56%",
-      "pct": 23.56
+      "price": "4,397",
+      "change_percent": "+26.35%",
+      "pct": 26.35
     },
     {
-      "name": "해성디에스",
-      "price": "53,500",
-      "change_percent": "+19.82%",
-      "pct": 19.82
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "6,980",
+      "change_percent": "+20.24%",
+      "pct": 20.24
+    },
+    {
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "5,960",
+      "change_percent": "+20.04%",
+      "pct": 20.04
+    },
+    {
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "6,080",
+      "change_percent": "+20.04%",
+      "pct": 20.04
     },
     {
       "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "6,025",
-      "change_percent": "+17.56%",
-      "pct": 17.56
-    },
-    {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "5,750",
-      "change_percent": "+18.19%",
-      "pct": 18.19
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "6,870",
-      "change_percent": "+17.84%",
-      "pct": 17.84
+      "price": "6,145",
+      "change_percent": "+19.90%",
+      "pct": 19.9
     }
   ],
   "top_losers": [
     {
-      "name": "프레스티지바이오파마",
-      "price": "4,035",
-      "change_percent": "-20.10%",
-      "pct": 20.1
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "7,410",
+      "change_percent": "-20.11%",
+      "pct": 20.11
     },
     {
       "name": "성문전자우",
@@ -2989,111 +2989,111 @@
       "pct": 18.31
     },
     {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7,660",
-      "change_percent": "-17.41%",
-      "pct": 17.41
-    },
-    {
-      "name": "서울식품우",
-      "price": "675",
-      "change_percent": "-15.94%",
-      "pct": 15.94
-    },
-    {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "9,230",
-      "change_percent": "-16.09%",
-      "pct": 16.09
+      "price": "9,025",
+      "change_percent": "-17.95%",
+      "pct": 17.95
+    },
+    {
+      "name": "프레스티지바이오파마",
+      "price": "4,150",
+      "change_percent": "-17.82%",
+      "pct": 17.82
+    },
+    {
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "3,210",
+      "change_percent": "-17.69%",
+      "pct": 17.69
     }
   ],
   "sector_performance": [
     {
-      "name": "소프트웨어",
-      "change_value": "+10.21%",
-      "pct": 10.21
+      "name": "반도체와반도체장비",
+      "change_value": "+9.54%",
+      "pct": 9.54
     },
     {
       "name": "생명보험",
-      "change_value": "+8.39%",
-      "pct": 8.39
+      "change_value": "+9.41%",
+      "pct": 9.41
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+8.34%",
-      "pct": 8.34
+      "name": "소프트웨어",
+      "change_value": "+8.14%",
+      "pct": 8.14
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+7.46%",
-      "pct": 7.46
+      "change_value": "+7.90%",
+      "pct": 7.9
     },
     {
       "name": "복합기업",
-      "change_value": "+6.23%",
-      "pct": 6.23
+      "change_value": "+6.44%",
+      "pct": 6.44
     }
   ],
   "sector_heatmap": [
     {
-      "name": "소프트웨어",
-      "change_value": "+10.21%",
-      "pct": 10.21
+      "name": "반도체와반도체장비",
+      "change_value": "+9.54%",
+      "pct": 9.54
     },
     {
       "name": "생명보험",
-      "change_value": "+8.39%",
-      "pct": 8.39
+      "change_value": "+9.41%",
+      "pct": 9.41
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+8.34%",
-      "pct": 8.34
+      "name": "소프트웨어",
+      "change_value": "+8.14%",
+      "pct": 8.14
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+7.46%",
-      "pct": 7.46
+      "change_value": "+7.90%",
+      "pct": 7.9
     },
     {
       "name": "복합기업",
-      "change_value": "+6.23%",
-      "pct": 6.23
+      "change_value": "+6.44%",
+      "pct": 6.44
     },
     {
-      "name": "통신장비",
-      "change_value": "+5.96%",
-      "pct": 5.96
-    },
-    {
-      "name": "사무용전자제품",
-      "change_value": "-0.79%",
-      "pct": -0.79
-    },
-    {
-      "name": "건강관리기술",
-      "change_value": "-0.84%",
-      "pct": -0.84
-    },
-    {
-      "name": "판매업체",
-      "change_value": "-0.87%",
-      "pct": -0.87
-    },
-    {
-      "name": "전문소매",
-      "change_value": "-0.92%",
-      "pct": -0.92
-    },
-    {
-      "name": "포장재",
-      "change_value": "-1.24%",
-      "pct": -1.24
+      "name": "무선통신서비스",
+      "change_value": "+6.06%",
+      "pct": 6.06
     },
     {
       "name": "문구류",
-      "change_value": "-1.47%",
-      "pct": -1.47
+      "change_value": "-0.73%",
+      "pct": -0.73
+    },
+    {
+      "name": "해운사",
+      "change_value": "-0.78%",
+      "pct": -0.78
+    },
+    {
+      "name": "판매업체",
+      "change_value": "-0.89%",
+      "pct": -0.89
+    },
+    {
+      "name": "포장재",
+      "change_value": "-1.19%",
+      "pct": -1.19
+    },
+    {
+      "name": "전문소매",
+      "change_value": "-1.29%",
+      "pct": -1.29
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "-1.70%",
+      "pct": -1.7
     }
   ],
   "article_counts": {
