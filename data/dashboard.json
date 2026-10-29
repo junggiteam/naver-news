@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-29 14:46:17",
+  "updated_at": "2026-10-29 15:01:22",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -0.76,
-    "kosdaq_change": -1.88,
-    "kospi_value": 5966.67,
-    "kosdaq_value": 756.8
+    "kospi_change": -1.19,
+    "kosdaq_change": -2.25,
+    "kospi_value": 5940.82,
+    "kosdaq_value": 753.9
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자가 시장의 기대치를 밑도는 실적을 발표하며 주가가 하락하자 지수 전반에 하방 압력이 가해졌다. 반도체 부문의 실적 발표에도 불구하고 투자 심리가 위축되면서 코스피와 코스닥 지수 모두 하락세로 마감했다."
+      "text": "삼성전자가 3분기 실적 발표에서 높은 영업이익을 기록했음에도 불구하고 주가가 하락세를 보이면서 코스피 지수에 하락 압력으로 작용했다. 증시 전반의 투자 심리가 위축된 가운데 ETF 순자산총액이 17분기 만에 감소세로 전환되는 등 하락 흐름이 나타났다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,58 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "서울전자통신",
+      "corp_code": "00130587",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261029",
+      "rcept_no": "20261029000299",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000299",
+      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완한다는 의미입니다."
+    },
+    {
+      "corp_name": "에이엘티",
+      "corp_code": "00493325",
+      "report_nm": "주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20261029",
+      "rcept_no": "20261029000290",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000290",
+      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환 가능한 채권을 발행하기로 결정했다는 의미입니다."
+    },
+    {
+      "corp_name": "KR모터스",
+      "corp_code": "00112378",
+      "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
+      "rcept_dt": "20261029",
+      "rcept_no": "20261029000294",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000294",
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 의미입니다."
+    },
+    {
+      "corp_name": "KR모터스",
+      "corp_code": "00112378",
+      "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
+      "rcept_dt": "20261029",
+      "rcept_no": "20261029000291",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000291",
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 의미입니다."
+    },
+    {
+      "corp_name": "KR모터스",
+      "corp_code": "00112378",
+      "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
+      "rcept_dt": "20261029",
+      "rcept_no": "20261029000287",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000287",
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 의미입니다."
+    },
+    {
       "corp_name": "상지건설",
       "corp_code": "00232007",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261029",
       "rcept_no": "20261029000254",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000254",
-      "ai_explanation": "기업이 운영 자금 조달 등을 위해 발행할 신주 관련 공시 내용을 수정했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "현대자동차",
@@ -99,7 +144,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000247",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000247",
-      "ai_explanation": "회사가 보유 중인 자사주를 시장에 팔거나 특정 대상에게 넘기기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 보유 중인 자사주를 시장이나 특정 대상에게 매각하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "씨아이테크",
@@ -108,7 +153,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000183",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000183",
-      "ai_explanation": "기업이 자본 확충이나 사업 자금 확보를 위해 새 주식을 발행해 자금을 조달한다는 의미입니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하려는 목적으로 증자를 결정했다는 의미입니다."
     },
     {
       "corp_name": "유니투스",
@@ -117,7 +162,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000157",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000157",
-      "ai_explanation": "회사의 특정 사업 부문을 분리하여 별도의 독립된 회사로 설립하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사의 특정 사업 부문을 분리하여 별도의 독립된 회사로 만드는 결정을 의미합니다."
     },
     {
       "corp_name": "아이엘",
@@ -126,7 +171,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000027",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000027",
-      "ai_explanation": "경영 효율성이나 사업 확장을 위해 다른 회사와 하나로 합치기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 다른 기업과 통합하여 하나의 기업으로 합쳐지기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "광진실업",
@@ -135,7 +180,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000002",
-      "ai_explanation": "기업이 자본 조달을 위해 진행 중인 유상증자 관련 공시의 내용을 정정했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "광진실업",
@@ -144,7 +189,7 @@
       "rcept_dt": "20261029",
       "rcept_no": "20261029000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000001",
-      "ai_explanation": "기업이 자본 조달을 위해 진행 중인 유상증자 관련 공시의 내용을 정정했다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2941,154 +2986,154 @@
   "top_gainers": [
     {
       "name": "씨티알모빌리티",
-      "price": "5,060",
-      "change_percent": "+28.59%",
-      "pct": 28.59
+      "price": "5,030",
+      "change_percent": "+27.83%",
+      "pct": 27.83
     },
     {
       "name": "한화비전",
-      "price": "48,150",
-      "change_percent": "+19.78%",
-      "pct": 19.78
+      "price": "49,900",
+      "change_percent": "+24.13%",
+      "pct": 24.13
     },
     {
       "name": "아센디오",
-      "price": "3,565",
-      "change_percent": "+18.05%",
-      "pct": 18.05
+      "price": "3,475",
+      "change_percent": "+15.07%",
+      "pct": 15.07
     },
     {
       "name": "광전자",
-      "price": "9,330",
-      "change_percent": "+16.77%",
-      "pct": 16.77
+      "price": "9,480",
+      "change_percent": "+18.65%",
+      "pct": 18.65
     },
     {
       "name": "진양화학",
-      "price": "2,435",
-      "change_percent": "+15.13%",
-      "pct": 15.13
+      "price": "2,430",
+      "change_percent": "+14.89%",
+      "pct": 14.89
     }
   ],
   "top_losers": [
     {
       "name": "서울식품우",
-      "price": "212",
-      "change_percent": "-33.96%",
-      "pct": 33.96
-    },
-    {
-      "name": "CJ씨푸드1우",
-      "price": "1,222",
-      "change_percent": "-22.12%",
-      "pct": 22.12
+      "price": "198",
+      "change_percent": "-38.32%",
+      "pct": 38.32
     },
     {
       "name": "와이투솔루션",
-      "price": "3,255",
-      "change_percent": "-18.93%",
-      "pct": 18.93
+      "price": "3,215",
+      "change_percent": "-19.93%",
+      "pct": 19.93
     },
     {
       "name": "대우건설",
-      "price": "11,880",
-      "change_percent": "-16.75%",
-      "pct": 16.75
+      "price": "11,600",
+      "change_percent": "-18.71%",
+      "pct": 18.71
+    },
+    {
+      "name": "CJ씨푸드1우",
+      "price": "1,255",
+      "change_percent": "-20.01%",
+      "pct": 20.01
     },
     {
       "name": "깨끗한나라우",
-      "price": "1,650",
-      "change_percent": "-14.60%",
-      "pct": 14.6
+      "price": "1,648",
+      "change_percent": "-14.70%",
+      "pct": 14.7
     }
   ],
   "sector_performance": [
     {
       "name": "통신장비",
-      "change_value": "+3.72%",
-      "pct": 3.72
+      "change_value": "+4.54%",
+      "pct": 4.54
     },
     {
       "name": "증권",
-      "change_value": "+2.66%",
-      "pct": 2.66
-    },
-    {
-      "name": "디스플레이장비및부품",
-      "change_value": "+1.89%",
-      "pct": 1.89
+      "change_value": "+3.02%",
+      "pct": 3.02
     },
     {
       "name": "담배",
-      "change_value": "+1.54%",
-      "pct": 1.54
+      "change_value": "+1.86%",
+      "pct": 1.86
+    },
+    {
+      "name": "디스플레이장비및부품",
+      "change_value": "+1.75%",
+      "pct": 1.75
     },
     {
       "name": "은행",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "change_value": "+1.67%",
+      "pct": 1.67
     }
   ],
   "sector_heatmap": [
     {
       "name": "통신장비",
-      "change_value": "+3.72%",
-      "pct": 3.72
+      "change_value": "+4.54%",
+      "pct": 4.54
     },
     {
       "name": "증권",
-      "change_value": "+2.66%",
-      "pct": 2.66
-    },
-    {
-      "name": "디스플레이장비및부품",
-      "change_value": "+1.89%",
-      "pct": 1.89
+      "change_value": "+3.02%",
+      "pct": 3.02
     },
     {
       "name": "담배",
-      "change_value": "+1.54%",
-      "pct": 1.54
+      "change_value": "+1.86%",
+      "pct": 1.86
+    },
+    {
+      "name": "디스플레이장비및부품",
+      "change_value": "+1.75%",
+      "pct": 1.75
     },
     {
       "name": "은행",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "change_value": "+1.67%",
+      "pct": 1.67
     },
     {
       "name": "손해보험",
-      "change_value": "+1.00%",
-      "pct": 1.0
+      "change_value": "+1.48%",
+      "pct": 1.48
     },
     {
-      "name": "전자제품",
-      "change_value": "-4.26%",
-      "pct": -4.26
+      "name": "전기장비",
+      "change_value": "-4.66%",
+      "pct": -4.66
     },
     {
       "name": "조선",
-      "change_value": "-4.42%",
-      "pct": -4.42
+      "change_value": "-4.66%",
+      "pct": -4.66
     },
     {
       "name": "전기제품",
-      "change_value": "-4.52%",
-      "pct": -4.52
-    },
-    {
-      "name": "기계",
-      "change_value": "-5.08%",
-      "pct": -5.08
+      "change_value": "-5.10%",
+      "pct": -5.1
     },
     {
       "name": "소프트웨어",
-      "change_value": "-5.33%",
-      "pct": -5.33
+      "change_value": "-5.55%",
+      "pct": -5.55
+    },
+    {
+      "name": "기계",
+      "change_value": "-5.59%",
+      "pct": -5.59
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-6.05%",
-      "pct": -6.05
+      "change_value": "-6.81%",
+      "pct": -6.81
     }
   ],
   "article_counts": {
