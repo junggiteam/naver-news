@@ -1,23 +1,23 @@
 {
-  "checked_at": "2026-10-30T05:30:43.817494+09:00",
+  "checked_at": "2026-10-30T05:45:34.295532+09:00",
   "services": [
     {
       "id": "sowhat-site",
       "title": "쏘왓레터 사이트",
       "url": "https://ceonote.co.kr/sowhat-auto",
-      "status": "error",
-      "http_status": 403,
-      "response_ms": 837,
-      "message": "HTTP 403 응답"
+      "status": "ok",
+      "http_status": 200,
+      "response_ms": 1086,
+      "message": "정상 응답"
     },
     {
       "id": "newsbot-site",
       "title": "뉴스봇 사이트",
       "url": "https://ceonote.co.kr/newsbot",
-      "status": "error",
-      "http_status": 403,
-      "response_ms": 216,
-      "message": "HTTP 403 응답"
+      "status": "ok",
+      "http_status": 200,
+      "response_ms": 837,
+      "message": "정상 응답"
     }
   ]
 }
