@@ -15229,6 +15229,15 @@
         "corp_code": "01032404",
         "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
         "rcept_dt": "20261029",
+        "rcept_no": "20261029000586",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000586",
+        "action": "회사합병결정"
+      },
+      {
+        "corp_name": "콜마비앤에이치",
+        "corp_code": "01032404",
+        "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+        "rcept_dt": "20261029",
         "rcept_no": "20261029000532",
         "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000532",
         "action": "회사합병결정"
@@ -15264,9 +15273,44 @@
         "action": "영업양수결정"
       }
     ],
-    "주식교환_이전": [],
+    "주식교환_이전": [
+      {
+        "corp_name": "SK시그넷",
+        "corp_code": "01188730",
+        "report_nm": "주요사항보고서(주식교환ㆍ이전결정)",
+        "rcept_dt": "20261029",
+        "rcept_no": "20261029000644",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000644"
+      },
+      {
+        "corp_name": "SK",
+        "corp_code": "00181712",
+        "report_nm": "주요사항보고서(주식교환ㆍ이전결정)",
+        "rcept_dt": "20261029",
+        "rcept_no": "20261029000607",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000607"
+      }
+    ],
     "경영권이동_최대주주변경": [],
     "자기주식": [
+      {
+        "corp_name": "아모레퍼시픽홀딩스",
+        "corp_code": "00154462",
+        "report_nm": "주요사항보고서(자기주식처분결정)",
+        "rcept_dt": "20261029",
+        "rcept_no": "20261029000621",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000621",
+        "action": "자기주식처분결정"
+      },
+      {
+        "corp_name": "아모레퍼시픽",
+        "corp_code": "00583424",
+        "report_nm": "주요사항보고서(자기주식처분결정)",
+        "rcept_dt": "20261029",
+        "rcept_no": "20261029000577",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000577",
+        "action": "자기주식처분결정"
+      },
       {
         "corp_name": "삼성전자",
         "corp_code": "00126380",
@@ -15286,6 +15330,6 @@
         "action": "자기주식처분결정"
       }
     ],
-    "_updated_at": "2026-10-29 17:01:20"
+    "_updated_at": "2026-10-29 17:31:18"
   }
 }
