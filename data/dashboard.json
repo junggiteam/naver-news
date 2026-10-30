@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 08:31:07",
+  "updated_at": "2026-10-30 09:01:21",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261030000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000001",
-      "ai_explanation": "기존에 공시한 유상증자 계획의 내용을 일부 정정하여 보고함."
+      "ai_explanation": "기존에 발표한 유상증자 계획의 내용을 일부 수정하여 공시함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -95,7 +95,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000673",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000673",
-      "ai_explanation": "기존에 공시한 전환사채 발행 계획의 내용을 일부 정정하여 보고함."
+      "ai_explanation": "기존에 발표한 전환사채 발행 계획의 내용을 일부 수정하여 공시함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -104,7 +104,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000674",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000674",
-      "ai_explanation": "회사가 자금 조달을 위해 주식으로 전환 가능한 사채를 발행하기로 결정함."
+      "ai_explanation": "회사 운영 자금 조달 등을 목적으로 전환사채 발행을 새로 결정함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -113,7 +113,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000672",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000672",
-      "ai_explanation": "기존에 공시한 전환사채 발행 계획의 내용을 일부 정정하여 보고함."
+      "ai_explanation": "기존에 발표한 전환사채 발행 계획의 내용을 일부 수정하여 공시함."
     },
     {
       "corp_name": "시지트로닉스",
@@ -122,7 +122,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000669",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000669",
-      "ai_explanation": "회사가 신규 자금 조달 등을 위해 신주를 발행하여 유상증자를 결정함."
+      "ai_explanation": "신규 자금 조달 등을 목적으로 제3자 배정 등 유상증자를 새로 결정함."
     },
     {
       "corp_name": "대구백화점",
@@ -131,7 +131,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000668",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000668",
-      "ai_explanation": "기존에 공시한 건물이나 토지 등 유형자산 매각 계획의 내용을 정정함."
+      "ai_explanation": "기존에 발표한 부동산 등 유형자산 매각 계획의 내용을 일부 수정함."
     }
   ],
   "macro_indicators": [
@@ -2480,95 +2480,151 @@
     "holiday": "공휴일 API 미연동(주말만 반영, 영업일 보정 부정확할 수 있음)",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "코스맥스비티아이",
+      "price": "23,350",
+      "change_percent": "+2.64%",
+      "pct": 2.64
+    },
+    {
+      "name": "신도리코",
+      "price": "36,500",
+      "change_percent": "-0.54%",
+      "pct": 0.54
+    },
+    {
+      "name": "KODEX 미국S&P500경기소비재",
+      "price": "16,665",
+      "change_percent": "+0.39%",
+      "pct": 0.39
+    },
+    {
+      "name": "현대그린푸드",
+      "price": "19,640",
+      "change_percent": "+0.05%",
+      "pct": 0.05
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "SK하이닉스",
+      "price": "1,439,000",
+      "change_percent": "-5.70%",
+      "pct": 5.7
+    },
+    {
+      "name": "PLUS 한화그룹주",
+      "price": "20,020",
+      "change_percent": "-5.10%",
+      "pct": 5.1
+    },
+    {
+      "name": "IBK K-AI반도체코어테크",
+      "price": "44,305",
+      "change_percent": "-5.00%",
+      "pct": 5.0
+    },
+    {
+      "name": "두산",
+      "price": "915,000",
+      "change_percent": "-4.79%",
+      "pct": 4.79
+    },
+    {
+      "name": "한독",
+      "price": "7,980",
+      "change_percent": "-4.77%",
+      "pct": 4.77
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "사무용전자제품",
+      "change_value": "+1.77%",
+      "pct": 1.77
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "소프트웨어",
+      "change_value": "+0.65%",
+      "pct": 0.65
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.39%",
+      "pct": 0.39
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "해운사",
+      "change_value": "+0.36%",
+      "pct": 0.36
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "가구",
+      "change_value": "+0.30%",
+      "pct": 0.3
     }
   ],
   "sector_heatmap": [
     {
+      "name": "사무용전자제품",
+      "change_value": "+1.77%",
+      "pct": 1.77
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+0.65%",
+      "pct": 0.65
+    },
+    {
+      "name": "식품과기본식료품소매",
+      "change_value": "+0.39%",
+      "pct": 0.39
+    },
+    {
+      "name": "해운사",
+      "change_value": "+0.36%",
+      "pct": 0.36
+    },
+    {
+      "name": "가구",
+      "change_value": "+0.30%",
+      "pct": 0.3
+    },
+    {
       "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+0.09%",
+      "pct": 0.09
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "-2.31%",
+      "pct": -2.31
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "에너지장비및서비스",
+      "change_value": "-2.52%",
+      "pct": -2.52
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "-3.12%",
+      "pct": -3.12
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "자동차",
+      "change_value": "-3.18%",
+      "pct": -3.18
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "-3.30%",
+      "pct": -3.3
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "-4.55%",
+      "pct": -4.55
     }
   ],
   "article_counts": {
