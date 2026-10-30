@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-30 10:45:55",
+  "updated_at": "2026-10-30 11:01:17",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -5.1,
-    "kosdaq_change": -3.71,
-    "kospi_value": 5634.78,
-    "kosdaq_value": 725.31
+    "kospi_change": -5.14,
+    "kosdaq_change": -4.23,
+    "kospi_value": 5632.46,
+    "kosdaq_value": 721.4
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "구글 모회사인 알파벳의 실적 부진으로 촉발된 미국발 AI 산업 우려가 국내 증시 전반에 영향을 미쳤다. 외국인과 기관의 대규모 매도세가 이어지며 코스피 시장에 매도 사이드카가 발동되었고, 주요 반도체주를 포함한 전반적인 지수 하락이 나타났다."
+      "text": "미국 AI 기술주의 급락으로 투자 심리가 위축되면서 코스피와 코스닥 지수가 동반 하락했다. 이 영향으로 코스피 시장에서는 보름 만에 매도 사이드카가 발동되었다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "삼성FN리츠",
+      "corp_code": "01688896",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261030",
+      "rcept_no": "20261030000106",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000106",
+      "ai_explanation": "기존에 발표한 유상증자 계획의 내용을 수정하여 공시함."
+    },
+    {
       "corp_name": "NAVER",
       "corp_code": "00266961",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261030",
       "rcept_no": "20261030000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000001",
-      "ai_explanation": "기존에 발표한 유상증자 계획의 내용을 일부 수정하여 공시함."
+      "ai_explanation": "기존에 발표한 유상증자 계획의 내용을 수정하여 공시함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -99,7 +108,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000673",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000673",
-      "ai_explanation": "기존에 발표한 전환사채 발행 계획의 내용을 일부 수정하여 공시함."
+      "ai_explanation": "기존에 발표한 전환사채 발행 계획의 내용을 수정하여 공시함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -108,7 +117,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000674",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000674",
-      "ai_explanation": "자금 조달을 위해 주식으로 전환 가능한 사채를 발행하기로 결정함."
+      "ai_explanation": "주식으로 전환할 수 있는 권리가 부여된 채권을 새로 발행하기로 결정함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -117,7 +126,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000672",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000672",
-      "ai_explanation": "기존에 발표한 전환사채 발행 계획의 내용을 일부 수정하여 공시함."
+      "ai_explanation": "기존에 발표한 전환사채 발행 계획의 내용을 수정하여 공시함."
     },
     {
       "corp_name": "시지트로닉스",
@@ -126,7 +135,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000669",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000669",
-      "ai_explanation": "운영 자금 등을 마련하기 위해 신주를 발행하여 유상증자를 결정함."
+      "ai_explanation": "자금을 조달하기 위해 신주를 발행하여 유상증자를 결정함."
     },
     {
       "corp_name": "대구백화점",
@@ -135,7 +144,7 @@
       "rcept_dt": "20261030",
       "rcept_no": "20261029000668",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000668",
-      "ai_explanation": "기존에 발표한 부동산 등 유형자산 매각 계획의 내용을 일부 수정함."
+      "ai_explanation": "기존에 발표한 부동산 등 유형자산 매각 계획의 내용을 수정하여 공시함."
     }
   ],
   "macro_indicators": [
@@ -2487,154 +2496,154 @@
   "top_gainers": [
     {
       "name": "형지엘리트",
-      "price": "1,805",
-      "change_percent": "+27.47%",
-      "pct": 27.47
+      "price": "1,813",
+      "change_percent": "+28.04%",
+      "pct": 28.04
     },
     {
       "name": "진양화학",
-      "price": "2,855",
-      "change_percent": "+16.53%",
-      "pct": 16.53
+      "price": "3,020",
+      "change_percent": "+23.27%",
+      "pct": 23.27
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "8,005",
-      "change_percent": "+17.12%",
-      "pct": 17.12
+      "price": "7,970",
+      "change_percent": "+16.61%",
+      "pct": 16.61
     },
     {
       "name": "키움 인버스 2X 반도체TOP10 ETN",
-      "price": "3,620",
-      "change_percent": "+14.20%",
-      "pct": 14.2
+      "price": "3,640",
+      "change_percent": "+14.83%",
+      "pct": 14.83
     },
     {
-      "name": "대원제약",
-      "price": "8,790",
-      "change_percent": "+14.16%",
-      "pct": 14.16
+      "name": "미래에셋 인버스 2X 반도체 ETN",
+      "price": "4,405",
+      "change_percent": "+14.42%",
+      "pct": 14.42
     }
   ],
   "top_losers": [
     {
       "name": "메타케어",
-      "price": "1,030",
-      "change_percent": "-20.65%",
-      "pct": 20.65
+      "price": "1,006",
+      "change_percent": "-22.50%",
+      "pct": 22.5
+    },
+    {
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "5,385",
+      "change_percent": "-16.83%",
+      "pct": 16.83
+    },
+    {
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "5,355",
+      "change_percent": "-18.24%",
+      "pct": 18.24
     },
     {
       "name": "CJ씨푸드1우",
-      "price": "1,100",
-      "change_percent": "-17.23%",
-      "pct": 17.23
-    },
-    {
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "6,150",
-      "change_percent": "-17.23%",
-      "pct": 17.23
+      "price": "1,210",
+      "change_percent": "-8.95%",
+      "pct": 8.95
     },
     {
       "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "5,230",
-      "change_percent": "-17.05%",
-      "pct": 17.05
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "5,150",
-      "change_percent": "-17.00%",
-      "pct": 17.0
+      "price": "5,255",
+      "change_percent": "-16.65%",
+      "pct": 16.65
     }
   ],
   "sector_performance": [
     {
       "name": "카드",
-      "change_value": "+2.44%",
-      "pct": 2.44
+      "change_value": "+2.20%",
+      "pct": 2.2
     },
     {
       "name": "해운사",
-      "change_value": "+2.08%",
-      "pct": 2.08
+      "change_value": "+2.19%",
+      "pct": 2.19
     },
     {
       "name": "제약",
-      "change_value": "+1.35%",
-      "pct": 1.35
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "change_value": "+1.09%",
+      "pct": 1.09
     },
     {
       "name": "가구",
-      "change_value": "+1.31%",
-      "pct": 1.31
+      "change_value": "+0.91%",
+      "pct": 0.91
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+0.90%",
+      "pct": 0.9
     }
   ],
   "sector_heatmap": [
     {
       "name": "카드",
-      "change_value": "+2.44%",
-      "pct": 2.44
+      "change_value": "+2.20%",
+      "pct": 2.2
     },
     {
       "name": "해운사",
-      "change_value": "+2.08%",
-      "pct": 2.08
+      "change_value": "+2.19%",
+      "pct": 2.19
     },
     {
       "name": "제약",
-      "change_value": "+1.35%",
-      "pct": 1.35
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+1.32%",
-      "pct": 1.32
+      "change_value": "+1.09%",
+      "pct": 1.09
     },
     {
       "name": "가구",
-      "change_value": "+1.31%",
-      "pct": 1.31
+      "change_value": "+0.91%",
+      "pct": 0.91
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "+0.90%",
+      "pct": 0.9
     },
     {
       "name": "음료",
-      "change_value": "+0.97%",
-      "pct": 0.97
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-5.13%",
-      "pct": -5.13
+      "change_value": "+0.87%",
+      "pct": 0.87
     },
     {
       "name": "전기장비",
-      "change_value": "-5.24%",
-      "pct": -5.24
+      "change_value": "-5.59%",
+      "pct": -5.59
     },
     {
       "name": "복합기업",
-      "change_value": "-5.25%",
-      "pct": -5.25
+      "change_value": "-5.74%",
+      "pct": -5.74
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "-6.65%",
-      "pct": -6.65
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-5.83%",
+      "pct": -5.83
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-7.19%",
-      "pct": -7.19
+      "change_value": "-7.10%",
+      "pct": -7.1
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "-7.14%",
+      "pct": -7.14
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-8.44%",
-      "pct": -8.44
+      "change_value": "-8.81%",
+      "pct": -8.81
     }
   ],
   "article_counts": {
