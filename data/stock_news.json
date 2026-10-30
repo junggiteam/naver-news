@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 05:01:03",
+  "updated_at": "2026-10-31 05:30:55",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "51,771.14",
+      "value": "51,770.31",
       "change_percent": "▼1.09%",
       "direction": "down",
-      "as_of": "2026-10-30 16:00:50"
+      "as_of": "2026-10-30 16:20:01"
     },
     {
       "name": "나스닥",
       "value": "25,437.00",
       "change_percent": "▼2.86%",
       "direction": "down",
-      "as_of": "2026-10-30 16:00:52"
+      "as_of": "2026-10-30 16:30:43"
     },
     {
       "name": "나스닥100",
       "value": "28,384.85",
       "change_percent": "▼3.46%",
       "direction": "down",
-      "as_of": "2026-10-30 16:00:52"
+      "as_of": "2026-10-30 16:30:46"
     },
     {
       "name": "S&P500",
-      "value": "7,579.86",
+      "value": "7,580.07",
       "change_percent": "▼1.82%",
       "direction": "down",
-      "as_of": "2026-10-30 16:00:49"
+      "as_of": "2026-10-30 16:20:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,333.10",
-      "change_percent": "▼0.55%",
+      "value": "1,333.20",
+      "change_percent": "▼0.54%",
       "direction": "down",
-      "as_of": "2026-10-31 04:59:53"
+      "as_of": "2026-10-31 05:27:52"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "846.22",
+      "value": "846.19",
       "change_percent": "▼0.44%",
       "direction": "down",
-      "as_of": "2026-10-31 04:59:53"
+      "as_of": "2026-10-31 05:29:32"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,488.74",
-      "change_percent": "▼0.70%",
+      "value": "1,488.96",
+      "change_percent": "▼0.69%",
       "direction": "down",
-      "as_of": "2026-10-31 04:59:53"
+      "as_of": "2026-10-31 05:29:32"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "103.24",
-      "change_percent": "▲1.22%",
+      "value": "103.02",
+      "change_percent": "▲1.00%",
       "direction": "up",
-      "as_of": "2026-10-30 14:50:59"
+      "as_of": "2026-10-30 15:20:09"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "103,704,000",
-      "change_percent": "▼1.57%",
+      "value": "103,619,000",
+      "change_percent": "▼1.65%",
       "direction": "down",
-      "as_of": "2026-10-31 05:01:01"
+      "as_of": "2026-10-31 05:30:33"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,023,000",
-      "change_percent": "▼0.69%",
+      "value": "3,017,000",
+      "change_percent": "▼0.89%",
       "direction": "down",
-      "as_of": "2026-10-31 05:01:01"
+      "as_of": "2026-10-31 05:30:53"
     }
   ],
   "news_categories": [
@@ -390,8 +390,24 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "뉴욕증시 기술주 매도 확대…나스닥 2.9%↓·인텔 29%↓",
+          "link": "https://n.news.naver.com/mnews/article/001/0016413020?sid=101258403",
+          "upload_time": "20261031052759",
+          "published_at": "2026-10-31T05:27:59+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "[속보]인텔 폭락에 나스닥 2.9% 급락…AI 투자 불안 확산",
+          "link": "https://n.news.naver.com/mnews/article/018/0006400572?sid=101258403",
+          "upload_time": "20261031051014",
+          "published_at": "2026-10-31T05:10:14+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
           "title": "AI 불안, 주식 넘어 회사채로…인텔·아마존 부도 대비 비용 최고",
           "link": "https://n.news.naver.com/mnews/article/018/0006400568?sid=101258403",
           "upload_time": "20261031043211",
@@ -399,7 +415,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 4,
           "title": "AI 투자 불안에 나스닥100 시총 2670조원 증발 위기",
           "link": "https://n.news.naver.com/mnews/article/018/0006400567?sid=101258403",
           "upload_time": "20261031041813",
@@ -407,7 +423,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 5,
           "title": "인텔 장중 30% 폭락…美정부 보유지분 가치 16조원 줄어",
           "link": "https://n.news.naver.com/mnews/article/018/0006400566?sid=101258403",
           "upload_time": "20261031040415",
@@ -415,7 +431,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 6,
           "title": "美중간선거 앞둔 월가…‘민주당 약진’ 시나리오에 투자전략 재점검",
           "link": "https://n.news.naver.com/mnews/article/018/0006400236?sid=101258403",
           "upload_time": "20261030220112",
@@ -423,7 +439,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 5,
+          "rank": 7,
           "title": "바이낸스 8조원대 해킹 피해…\"北 연계 조직 소행 가능성\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005836040?sid=101258403",
           "upload_time": "20261030190104",
@@ -431,7 +447,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
+          "rank": 8,
           "title": "AI 돈줄 마른다…반도체 성장 의구심에 韓주식 던진 외국인",
           "link": "https://n.news.naver.com/mnews/article/015/0005348660?sid=101258403",
           "upload_time": "20261030180309",
@@ -439,7 +455,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 9,
           "title": "MS, 회사채 시장 9년 만에 복귀…250억弗 발행",
           "link": "https://n.news.naver.com/mnews/article/015/0005348640?sid=101258403",
           "upload_time": "20261030174215",
@@ -447,7 +463,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 8,
+          "rank": 10,
           "title": "코스피 3%·닛케이 2% 뚝 … 亞증시 '휘청'",
           "link": "https://n.news.naver.com/mnews/article/009/0005756748?sid=101258403",
           "upload_time": "20261030173706",
@@ -455,7 +471,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 9,
+          "rank": 11,
           "title": "\"못생긴 신발, 한물간 줄 알았는데\"…30% 폭락했던 크록스 주가 '대반전'",
           "link": "https://n.news.naver.com/mnews/article/277/0005835941?sid=101258403",
           "upload_time": "20261030150505",
@@ -463,7 +479,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 10,
+          "rank": 12,
           "title": "토스, 日 치어증권 품는다…“인수 마무리 단계”",
           "link": "https://n.news.naver.com/mnews/article/009/0005756582?sid=101258403",
           "upload_time": "20261030142909",
@@ -471,7 +487,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 11,
+          "rank": 13,
           "title": "일본은행, 금리 1.25% 동결…\"물가 2% 목표 사실상 달성\"(상보)",
           "link": "https://n.news.naver.com/mnews/article/277/0005835864?sid=101258403",
           "upload_time": "20261030125502",
@@ -479,7 +495,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 12,
+          "rank": 14,
           "title": "[속보]일본은행, 기준금리 동결…1.25% 유지",
           "link": "https://n.news.naver.com/mnews/article/277/0005835862?sid=101258403",
           "upload_time": "20261030123902",
@@ -487,27 +503,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 13,
+          "rank": 15,
           "title": "3분기 외환거래 '역대 최대' 경신…환율 변동성 축소에 증가세 둔화",
           "link": "https://n.news.naver.com/mnews/article/018/0006399827?sid=101258403",
           "upload_time": "20261030120226",
           "published_at": "2026-10-30T12:02:26+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 14,
-          "title": "AI '쩐의 전쟁' MS도 참전…빅테크 우량채 발행액 3배로 늘어",
-          "link": "https://n.news.naver.com/mnews/article/277/0005835835?sid=101258403",
-          "upload_time": "20261030111626",
-          "published_at": "2026-10-30T11:16:26+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 15,
-          "title": "현대글로비스 3분기 매출 9조536억·영업익 5천665억…역대 최대(종합)",
-          "link": "https://n.news.naver.com/mnews/article/001/0016411369?sid=101258403",
-          "upload_time": "20261030111312",
-          "published_at": "2026-10-30T11:13:12+09:00"
         }
       ]
     },
@@ -799,7 +799,7 @@
       ]
     }
   ],
-  "ai_commentary": "미국 빅테크 기업들의 실적이 시장 기대치에 미치지 못하면서 인공지능 수익성에 대한 우려가 확산되어 투자 심리가 위축되었다. 이에 외국인 투자자들이 대규모 매도세에 나서며 코스피와 코스닥 지수가 3%대 하락 마감했다.",
+  "ai_commentary": "미국 주요 빅테크 기업들의 실적이 시장 기대에 미치지 못하면서 투자 심리가 위축되어 코스피와 코스닥 지수가 큰 폭으로 하락했다. 외국인 투자자들이 대규모 매도세에 나서며 지수 하락을 주도했고, 코스피 시장에서는 매도 사이드카가 발동되기도 했다.",
   "top_gainers": [
     {
       "name": "진양화학",
