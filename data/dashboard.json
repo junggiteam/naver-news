@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 08:01:07",
+  "updated_at": "2026-11-02 08:31:01",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2941,140 +2941,73 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "진양화학",
-      "price": "3,185",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "형지엘리트",
-      "price": "1,840",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "7,785",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "미래에셋 인버스 2X 반도체 ETN",
-      "price": "4,360",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "진양폴리",
-      "price": "3,040",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "CJ씨푸드1우",
-      "price": "900",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "메타케어",
-      "price": "997",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "대덕전자",
-      "price": "116,400",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "효성화학",
-      "price": "38,900",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "동양2우B",
-      "price": "2,840",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "카드",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
     {
       "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "담배",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "카드",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
       "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "담배",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "제약",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건설",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기장비",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "반도체와반도체장비",
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3084,12 +3017,17 @@
       "pct": 0.0
     },
     {
-      "name": "자동차",
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
       "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3098,7 +3036,7 @@
     "종합": 395,
     "경제": 30,
     "부동산": 30,
-    "증권": 54
+    "증권": 55
   },
   "article_count_trend": {
     "종합": {
@@ -3120,9 +3058,9 @@
       "surge": false
     },
     "증권": {
-      "today": 54,
+      "today": 55,
       "yesterday": 73,
-      "change_pct": -26.0,
+      "change_pct": -24.7,
       "surge": false
     }
   }
