@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-02 15:46:03",
+  "updated_at": "2026-11-02 16:01:12",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 2.46,
-    "kosdaq_change": 1.41,
-    "kospi_value": 5871.57,
-    "kosdaq_value": 734.62
+    "kospi_change": 2.24,
+    "kosdaq_change": 1.38,
+    "kospi_value": 5859.08,
+    "kosdaq_value": 734.36
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "기관 투자자의 1조 원대 대규모 순매수세가 유입되면서 삼성전자와 SK하이닉스 등 대형 반도체주가 강세를 보인 것이 지수 상승을 견인했다. 저PBR 종목 다수가 동반 상승하고 일부 기업의 합병 및 지분 경쟁 이슈 등이 더해지며 시장 전반의 투자 심리가 개선되었다."
+      "text": "미국 반도체주 급락의 영향으로 장 초반 변동성을 보였으나, 기관과 기타법인의 매수세가 유입되면서 코스피와 코스닥 지수 모두 상승세로 마감했다. 삼성전자와 SK하이닉스 등 주요 반도체 종목이 상승 전환하며 지수 반등을 이끌었고, 환율은 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -72,13 +72,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "옵티코어",
+      "corp_code": "01506990",
+      "report_nm": "[기재정정]주요사항보고서(자기전환사채만기전취득결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000164",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000164",
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 뜻입니다."
+    },
+    {
+      "corp_name": "드림인사이트",
+      "corp_code": "01492688",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000180",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000180",
+      "ai_explanation": "회사가 자사 주가를 안정시키거나 주주 가치를 높이기 위해 자기 주식을 직접 사는 결정입니다."
+    },
+    {
       "corp_name": "케이사인",
       "corp_code": "01003040",
       "report_nm": "주요사항보고서(자기주식처분결정)",
       "rcept_dt": "20261102",
       "rcept_no": "20261102000125",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000125",
-      "ai_explanation": "회사가 보유하고 있던 자사주를 시장에 내다 팔기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 보유하고 있던 자기 주식을 시장에 팔거나 특정인에게 양도하겠다는 결정입니다."
     },
     {
       "corp_name": "APS",
@@ -87,7 +105,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000127",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000127",
-      "ai_explanation": "주가 안정이나 주주 가치 제고를 위해 신탁 계약을 통해 자사주를 사들이겠다는 공시입니다."
+      "ai_explanation": "금융기관에 자금을 맡겨 자기 주식을 대신 취득하도록 위탁 계약을 맺는 결정입니다."
     },
     {
       "corp_name": "하나32호기업인수목적",
@@ -96,7 +114,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000120",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000120",
-      "ai_explanation": "스팩(SPAC) 회사가 합병 대상을 찾지 못해 상장 폐지 및 해산 절차를 밟는다는 공시입니다."
+      "ai_explanation": "합병 대상을 찾지 못한 스팩(SPAC) 회사가 상장 폐지 및 청산 절차를 밟는다는 뜻입니다."
     },
     {
       "corp_name": "에이치티알헤시라스",
@@ -105,7 +123,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000115",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000115",
-      "ai_explanation": "운영 자금이나 사업 확장을 위해 새로 주식을 발행하여 자본을 확충하겠다는 공시입니다."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 신주를 발행하여 주주에게 주식을 파는 결정입니다."
     },
     {
       "corp_name": "SCL사이언스",
@@ -114,7 +132,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000071",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000071",
-      "ai_explanation": "다른 회사와 합병하기로 한 기존 결정 내용 중 일부를 수정하여 다시 제출한 공시입니다."
+      "ai_explanation": "두 회사 이상이 하나로 합쳐지거나 다른 회사를 흡수하기로 한 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -3005,9 +3023,9 @@
     },
     {
       "name": "한국철강",
-      "price": "12,910",
-      "change_percent": "+23.78%",
-      "pct": 23.78
+      "price": "12,900",
+      "change_percent": "+23.68%",
+      "pct": 23.68
     }
   ],
   "top_losers": [
@@ -3019,15 +3037,15 @@
     },
     {
       "name": "효성화학",
-      "price": "37,100",
-      "change_percent": "-20.22%",
-      "pct": 20.22
+      "price": "37,050",
+      "change_percent": "-20.32%",
+      "pct": 20.32
     },
     {
       "name": "형지엘리트",
-      "price": "1,530",
-      "change_percent": "-16.85%",
-      "pct": 16.85
+      "price": "1,514",
+      "change_percent": "-17.72%",
+      "pct": 17.72
     },
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
@@ -3036,69 +3054,69 @@
       "pct": 15.89
     },
     {
-      "name": "씨티알모빌리티",
-      "price": "4,130",
-      "change_percent": "-11.18%",
-      "pct": 11.18
+      "name": "코아스",
+      "price": "954",
+      "change_percent": "-10.34%",
+      "pct": 10.34
     }
   ],
   "sector_performance": [
     {
       "name": "항공화물운송과물류",
-      "change_value": "+9.86%",
-      "pct": 9.86
+      "change_value": "+9.85%",
+      "pct": 9.85
     },
     {
       "name": "항공사",
-      "change_value": "+8.53%",
-      "pct": 8.53
+      "change_value": "+8.13%",
+      "pct": 8.13
     },
     {
       "name": "전기장비",
-      "change_value": "+7.60%",
-      "pct": 7.6
+      "change_value": "+7.39%",
+      "pct": 7.39
     },
     {
       "name": "조선",
-      "change_value": "+6.53%",
-      "pct": 6.53
+      "change_value": "+6.56%",
+      "pct": 6.56
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+5.33%",
-      "pct": 5.33
+      "change_value": "+5.42%",
+      "pct": 5.42
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공화물운송과물류",
-      "change_value": "+9.86%",
-      "pct": 9.86
+      "change_value": "+9.85%",
+      "pct": 9.85
     },
     {
       "name": "항공사",
-      "change_value": "+8.53%",
-      "pct": 8.53
+      "change_value": "+8.13%",
+      "pct": 8.13
     },
     {
       "name": "전기장비",
-      "change_value": "+7.60%",
-      "pct": 7.6
+      "change_value": "+7.39%",
+      "pct": 7.39
     },
     {
       "name": "조선",
-      "change_value": "+6.53%",
-      "pct": 6.53
+      "change_value": "+6.56%",
+      "pct": 6.56
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+5.33%",
-      "pct": 5.33
+      "change_value": "+5.42%",
+      "pct": 5.42
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+5.17%",
-      "pct": 5.17
+      "change_value": "+4.99%",
+      "pct": 4.99
     },
     {
       "name": "담배",
@@ -3107,13 +3125,13 @@
     },
     {
       "name": "은행",
-      "change_value": "-1.84%",
-      "pct": -1.84
+      "change_value": "-1.86%",
+      "pct": -1.86
     },
     {
       "name": "손해보험",
-      "change_value": "-1.88%",
-      "pct": -1.88
+      "change_value": "-1.97%",
+      "pct": -1.97
     },
     {
       "name": "카드",
@@ -3122,20 +3140,20 @@
     },
     {
       "name": "부동산",
-      "change_value": "-3.28%",
-      "pct": -3.28
+      "change_value": "-3.12%",
+      "pct": -3.12
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-5.30%",
-      "pct": -5.3
+      "change_value": "-5.38%",
+      "pct": -5.38
     }
   ],
   "article_counts": {
     "종합": 401,
     "경제": 30,
     "부동산": 30,
-    "증권": 76
+    "증권": 78
   },
   "article_count_trend": {
     "종합": {
@@ -3157,9 +3175,9 @@
       "surge": false
     },
     "증권": {
-      "today": 76,
+      "today": 78,
       "yesterday": 73,
-      "change_pct": 4.1,
+      "change_pct": 6.8,
       "surge": false
     }
   }
