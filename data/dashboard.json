@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-02 13:31:04",
+  "updated_at": "2026-11-02 14:01:15",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 2.93,
-    "kosdaq_change": 1.83,
-    "kospi_value": 5898.56,
-    "kosdaq_value": 737.66
+    "kospi_change": 2.85,
+    "kosdaq_change": 1.5,
+    "kospi_value": 5894.0,
+    "kosdaq_value": 735.26
   },
   "heroes": {
     "종합": {
@@ -55,7 +55,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 기술주 급락의 여파로 시작했던 국내 증시는 기관 투자자들의 매수세가 유입되며 반등에 성공했다. 반도체 관련주를 중심으로 한 주주환원 기대감과 장중 상승 전환 흐름이 이어지면서 코스피와 코스닥 지수가 동반 상승 마감했다."
+      "text": "기관 투자자의 대규모 매수세가 유입되면서 코스피와 코스닥 지수가 상승 마감했다. SK하이닉스를 비롯한 반도체 관련주가 강세를 보이며 지수 상승을 견인했다."
     }
   ],
   "daily_term": {
@@ -78,7 +78,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000071",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000071",
-      "ai_explanation": "회사가 다른 회사와 합병하기로 결정하고, 기존에 제출한 관련 신고 내용을 일부 수정하여 공시함."
+      "ai_explanation": "회사 간의 합병을 결정했으나, 기존에 제출했던 공시 내용 중 일부를 정정하여 다시 제출한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2950,6 +2950,12 @@
       "pct": 29.94
     },
     {
+      "name": "동양2우B",
+      "price": "3,690",
+      "change_percent": "+29.93%",
+      "pct": 29.93
+    },
+    {
       "name": "샘표",
       "price": "55,600",
       "change_percent": "+29.91%",
@@ -2962,12 +2968,6 @@
       "pct": 29.86
     },
     {
-      "name": "동양2우B",
-      "price": "3,650",
-      "change_percent": "+28.52%",
-      "pct": 28.52
-    },
-    {
       "name": "한국철강",
       "price": "12,910",
       "change_percent": "+23.78%",
@@ -2977,58 +2977,58 @@
   "top_losers": [
     {
       "name": "CJ씨푸드1우",
-      "price": "617",
-      "change_percent": "-31.44%",
-      "pct": 31.44
+      "price": "474",
+      "change_percent": "-47.33%",
+      "pct": 47.33
     },
     {
       "name": "효성화학",
-      "price": "37,950",
-      "change_percent": "-18.39%",
-      "pct": 18.39
+      "price": "37,200",
+      "change_percent": "-20.00%",
+      "pct": 20.0
     },
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "8,160",
-      "change_percent": "-16.09%",
-      "pct": 16.09
+      "price": "8,090",
+      "change_percent": "-16.81%",
+      "pct": 16.81
     },
     {
       "name": "형지엘리트",
-      "price": "1,556",
-      "change_percent": "-15.43%",
-      "pct": 15.43
+      "price": "1,557",
+      "change_percent": "-15.38%",
+      "pct": 15.38
     },
     {
       "name": "씨티알모빌리티",
-      "price": "4,150",
-      "change_percent": "-10.75%",
-      "pct": 10.75
+      "price": "4,160",
+      "change_percent": "-10.54%",
+      "pct": 10.54
     }
   ],
   "sector_performance": [
     {
       "name": "항공화물운송과물류",
-      "change_value": "+9.92%",
-      "pct": 9.92
+      "change_value": "+9.93%",
+      "pct": 9.93
     },
     {
       "name": "전기장비",
-      "change_value": "+7.49%",
-      "pct": 7.49
+      "change_value": "+7.69%",
+      "pct": 7.69
     },
     {
       "name": "조선",
-      "change_value": "+6.91%",
-      "pct": 6.91
+      "change_value": "+6.46%",
+      "pct": 6.46
     },
     {
       "name": "항공사",
-      "change_value": "+6.16%",
-      "pct": 6.16
+      "change_value": "+6.10%",
+      "pct": 6.1
     },
     {
-      "name": "백화점과일반상점",
+      "name": "건설",
       "change_value": "+5.10%",
       "pct": 5.1
     }
@@ -3036,43 +3036,43 @@
   "sector_heatmap": [
     {
       "name": "항공화물운송과물류",
-      "change_value": "+9.92%",
-      "pct": 9.92
+      "change_value": "+9.93%",
+      "pct": 9.93
     },
     {
       "name": "전기장비",
-      "change_value": "+7.49%",
-      "pct": 7.49
+      "change_value": "+7.69%",
+      "pct": 7.69
     },
     {
       "name": "조선",
-      "change_value": "+6.91%",
-      "pct": 6.91
+      "change_value": "+6.46%",
+      "pct": 6.46
     },
     {
       "name": "항공사",
-      "change_value": "+6.16%",
-      "pct": 6.16
+      "change_value": "+6.10%",
+      "pct": 6.1
     },
     {
-      "name": "백화점과일반상점",
+      "name": "건설",
       "change_value": "+5.10%",
       "pct": 5.1
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+5.05%",
-      "pct": 5.05
+      "name": "에너지장비및서비스",
+      "change_value": "+5.08%",
+      "pct": 5.08
     },
     {
       "name": "은행",
-      "change_value": "-1.77%",
-      "pct": -1.77
+      "change_value": "-1.81%",
+      "pct": -1.81
     },
     {
-      "name": "도로와철도운송",
-      "change_value": "-1.79%",
-      "pct": -1.79
+      "name": "카드",
+      "change_value": "-1.88%",
+      "pct": -1.88
     },
     {
       "name": "다각화된소비자서비스",
@@ -3081,18 +3081,18 @@
     },
     {
       "name": "손해보험",
-      "change_value": "-2.17%",
-      "pct": -2.17
+      "change_value": "-2.21%",
+      "pct": -2.21
     },
     {
       "name": "부동산",
-      "change_value": "-3.23%",
-      "pct": -3.23
+      "change_value": "-3.37%",
+      "pct": -3.37
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-4.72%",
-      "pct": -4.72
+      "change_value": "-4.50%",
+      "pct": -4.5
     }
   ],
   "article_counts": {
