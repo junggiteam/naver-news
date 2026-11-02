@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 16:45:45",
+  "updated_at": "2026-11-02 17:01:09",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "인텔의 실적 부진이라는 악재에도 불구하고 반도체 업종을 중심으로 매수세가 유입되면서 코스피와 코스닥 지수가 각각 2%대와 1%대 상승 마감했다. 기관 투자자들이 대규모 순매수에 나서며 지수 반등을 주도했고, 장중 변동성을 보였던 주요 반도체 종목들도 상승세로 거래를 마쳤다."
+      "text": "최근 불거진 인텔의 실적 부진 우려에도 불구하고 삼성전자와 SK하이닉스 등 주요 반도체 종목이 반등하며 지수 상승을 견인했다. 기관 투자자가 대규모 순매수에 나서며 조선주를 비롯한 주요 업종의 강세를 이끌어 코스피와 코스닥 지수 모두 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,58 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "육일씨엔에쓰",
+      "corp_code": "00843900",
+      "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000280",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000280",
+      "ai_explanation": "회사가 건물, 토지 등 자산을 사들이기로 한 계획의 내용을 수정한 것입니다."
+    },
+    {
+      "corp_name": "엠에프씨",
+      "corp_code": "01217795",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000278",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000278",
+      "ai_explanation": "회사가 자사 주가를 안정시키거나 주주 가치를 높이기 위해 자기 주식을 직접 사겠다는 것입니다."
+    },
+    {
+      "corp_name": "시디즈",
+      "corp_code": "00852087",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000265",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000265",
+      "ai_explanation": "증권사를 통해 자사 주식을 매입하도록 신탁 계약을 체결했다는 의미입니다."
+    },
+    {
+      "corp_name": "마녀공장",
+      "corp_code": "01136977",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000268",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000268",
+      "ai_explanation": "증권사를 통해 자사 주식을 매입하도록 신탁 계약을 체결했다는 의미입니다."
+    },
+    {
+      "corp_name": "액스비스",
+      "corp_code": "01554508",
+      "report_nm": "[첨부정정]주요사항보고서(유형자산양수결정)",
+      "rcept_dt": "20261102",
+      "rcept_no": "20261102000224",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000224",
+      "ai_explanation": "회사가 건물, 토지 등 자산을 사들이기로 한 계획의 첨부 서류를 정정한 것입니다."
+    },
+    {
       "corp_name": "마녀공장",
       "corp_code": "01136977",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20261102",
       "rcept_no": "20261102000220",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000220",
-      "ai_explanation": "회사가 신탁 방식으로 진행하던 자사주 매입 계약을 종료하는 결정입니다."
+      "ai_explanation": "증권사에 맡겼던 자사주 매입 신탁 계약을 종료하겠다는 것입니다."
     },
     {
       "corp_name": "KS인더스트리",
@@ -99,7 +144,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000212",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000212",
-      "ai_explanation": "회사가 자금을 조달하기 위해 신주를 발행하는 계획을 수정하여 공시한 것입니다."
+      "ai_explanation": "회사 자본금을 늘리기 위한 신주 발행 계획의 내용을 수정한 것입니다."
     },
     {
       "corp_name": "옵티코어",
@@ -108,7 +153,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000164",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000164",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 다시 사들이기로 한 내용을 수정한 것입니다."
+      "ai_explanation": "회사가 발행한 전환사채를 만기 전에 미리 되사겠다는 계획을 수정한 것입니다."
     },
     {
       "corp_name": "드림인사이트",
@@ -117,7 +162,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000180",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000180",
-      "ai_explanation": "회사가 직접 시장에서 자기 회사 주식을 사들이기로 결정한 것입니다."
+      "ai_explanation": "회사가 자사 주가를 안정시키거나 주주 가치를 높이기 위해 자기 주식을 직접 사겠다는 것입니다."
     },
     {
       "corp_name": "케이사인",
@@ -126,7 +171,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000125",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000125",
-      "ai_explanation": "회사가 보유하고 있던 자기 회사 주식을 외부로 매각하거나 배분하기로 한 것입니다."
+      "ai_explanation": "회사가 보유 중인 자사 주식을 시장에 팔거나 특정인에게 넘기기로 결정했다는 것입니다."
     },
     {
       "corp_name": "APS",
@@ -135,7 +180,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000127",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000127",
-      "ai_explanation": "자사주를 안정적으로 매입하기 위해 금융기관과 신탁 계약을 체결한 것입니다."
+      "ai_explanation": "증권사를 통해 자사 주식을 매입하도록 신탁 계약을 체결했다는 의미입니다."
     },
     {
       "corp_name": "하나32호기업인수목적",
@@ -144,7 +189,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000120",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000120",
-      "ai_explanation": "스팩(SPAC) 회사가 합병 대상을 찾지 못해 존속 기한 만료 등으로 해산하는 것입니다."
+      "ai_explanation": "합병 대상 기업을 찾지 못해 SPAC이 목적을 다하고 청산 절차에 들어간다는 것입니다."
     },
     {
       "corp_name": "에이치티알헤시라스",
@@ -153,7 +198,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000115",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000115",
-      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 새로운 주식을 발행하여 자본을 늘리는 것입니다."
+      "ai_explanation": "회사가 운영 자금 등을 마련하기 위해 주식을 새로 발행해 자본을 늘리겠다는 것입니다."
     },
     {
       "corp_name": "SCL사이언스",
@@ -162,7 +207,7 @@
       "rcept_dt": "20261102",
       "rcept_no": "20261102000071",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000071",
-      "ai_explanation": "두 기업이 합병하기로 한 기존 공시 내용 중 첨부 서류를 정정한 것입니다."
+      "ai_explanation": "두 회사가 하나로 합쳐지기로 한 합병 결정 공시의 첨부 서류를 정정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3067,9 +3112,9 @@
     },
     {
       "name": "효성화학",
-      "price": "37,200",
-      "change_percent": "-20.00%",
-      "pct": 20.0
+      "price": "37,250",
+      "change_percent": "-19.89%",
+      "pct": 19.89
     },
     {
       "name": "형지엘리트",
@@ -3085,78 +3130,78 @@
     },
     {
       "name": "씨티알모빌리티",
-      "price": "4,120",
-      "change_percent": "-11.40%",
-      "pct": 11.4
+      "price": "4,140",
+      "change_percent": "-10.97%",
+      "pct": 10.97
     }
   ],
   "sector_performance": [
     {
       "name": "항공화물운송과물류",
-      "change_value": "+8.46%",
-      "pct": 8.46
+      "change_value": "+8.72%",
+      "pct": 8.72
     },
     {
       "name": "항공사",
-      "change_value": "+7.52%",
-      "pct": 7.52
+      "change_value": "+7.72%",
+      "pct": 7.72
     },
     {
       "name": "전기장비",
-      "change_value": "+6.39%",
-      "pct": 6.39
+      "change_value": "+6.46%",
+      "pct": 6.46
     },
     {
       "name": "조선",
-      "change_value": "+6.25%",
-      "pct": 6.25
+      "change_value": "+6.35%",
+      "pct": 6.35
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+4.94%",
-      "pct": 4.94
+      "change_value": "+4.96%",
+      "pct": 4.96
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공화물운송과물류",
-      "change_value": "+8.46%",
-      "pct": 8.46
+      "change_value": "+8.72%",
+      "pct": 8.72
     },
     {
       "name": "항공사",
-      "change_value": "+7.52%",
-      "pct": 7.52
+      "change_value": "+7.72%",
+      "pct": 7.72
     },
     {
       "name": "전기장비",
-      "change_value": "+6.39%",
-      "pct": 6.39
+      "change_value": "+6.46%",
+      "pct": 6.46
     },
     {
       "name": "조선",
-      "change_value": "+6.25%",
-      "pct": 6.25
+      "change_value": "+6.35%",
+      "pct": 6.35
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "+4.94%",
-      "pct": 4.94
+      "change_value": "+4.96%",
+      "pct": 4.96
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+4.62%",
-      "pct": 4.62
+      "name": "철강",
+      "change_value": "+4.56%",
+      "pct": 4.56
     },
     {
       "name": "담배",
-      "change_value": "-1.53%",
-      "pct": -1.53
+      "change_value": "-1.58%",
+      "pct": -1.58
     },
     {
       "name": "은행",
-      "change_value": "-1.85%",
-      "pct": -1.85
+      "change_value": "-1.72%",
+      "pct": -1.72
     },
     {
       "name": "카드",
@@ -3170,20 +3215,20 @@
     },
     {
       "name": "부동산",
-      "change_value": "-3.08%",
-      "pct": -3.08
+      "change_value": "-3.04%",
+      "pct": -3.04
     },
     {
       "name": "건강관리업체및서비스",
-      "change_value": "-6.10%",
-      "pct": -6.1
+      "change_value": "-6.53%",
+      "pct": -6.53
     }
   ],
   "article_counts": {
     "종합": 401,
     "경제": 30,
     "부동산": 30,
-    "증권": 79
+    "증권": 81
   },
   "article_count_trend": {
     "종합": {
@@ -3205,9 +3250,9 @@
       "surge": false
     },
     "증권": {
-      "today": 79,
+      "today": 81,
       "yesterday": 73,
-      "change_pct": 8.2,
+      "change_pct": 11.0,
       "surge": false
     }
   }
