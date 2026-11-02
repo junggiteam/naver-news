@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 05:18:15",
+  "updated_at": "2026-11-03 05:46:38",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
@@ -28,7 +28,12 @@
       "press_name": "동아일보"
     }
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "category": "증권",
+      "text": "미국 기술주가 급락하고 인텔의 주가가 부진했음에도 불구하고, 국내 증시는 기관 투자자의 대규모 매수세가 유입되면서 상승 마감했다. 미국 중간선거를 앞둔 불확실성과 AI 산업에 대한 시장의 의구심 속에서도 기관의 강한 매수세가 지수 상승을 견인했다."
+    }
+  ],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [],
@@ -3047,16 +3052,16 @@
     }
   ],
   "article_counts": {
-    "종합": 402,
+    "종합": 404,
     "경제": 30,
     "부동산": 30,
     "증권": 79
   },
   "article_count_trend": {
     "종합": {
-      "today": 402,
+      "today": 404,
       "yesterday": 402,
-      "change_pct": 0.0,
+      "change_pct": 0.5,
       "surge": false
     },
     "경제": {
