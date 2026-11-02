@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 08:31:01",
+  "updated_at": "2026-11-02 09:01:17",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -2941,102 +2941,146 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "SJM",
+      "price": "3,090",
+      "change_percent": "+1.98%",
+      "pct": 1.98
+    },
+    {
+      "name": "미창석유",
+      "price": "116,000",
+      "change_percent": "+0.09%",
+      "pct": 0.09
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "기아",
+      "price": "90,700",
+      "change_percent": "-5.13%",
+      "pct": 5.13
+    },
+    {
+      "name": "동일제강",
+      "price": "1,181",
+      "change_percent": "-4.99%",
+      "pct": 4.99
+    },
+    {
+      "name": "비비안",
+      "price": "3,335",
+      "change_percent": "-4.71%",
+      "pct": 4.71
+    },
+    {
+      "name": "페이퍼코리아",
+      "price": "1,752",
+      "change_percent": "-3.63%",
+      "pct": 3.63
+    },
+    {
+      "name": "대한방직",
+      "price": "5,220",
+      "change_percent": "-3.51%",
+      "pct": 3.51
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+0.03%",
+      "pct": 0.03
+    },
+    {
+      "name": "기타",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "종이와목재",
+      "name": "제약",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "호텔,레스토랑,레저",
+      "name": "반도체와반도체장비",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
+      "name": "자동차부품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+0.03%",
+      "pct": 0.03
+    },
+    {
+      "name": "기타",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "종이와목재",
+      "name": "제약",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "호텔,레스토랑,레저",
+      "name": "반도체와반도체장비",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리업체및서비스",
+      "name": "자동차부품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "손해보험",
+      "name": "화학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "출판",
+      "name": "문구류",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "생물공학",
+      "name": "카드",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "방송과엔터테인먼트",
+      "name": "사무용전자제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "우주항공과국방",
+      "name": "다각화된소비자서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "상업서비스와공급품",
+      "change_value": "-0.01%",
+      "pct": -0.01
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "판매업체",
+      "change_value": "-0.13%",
+      "pct": -0.13
     }
   ],
   "article_counts": {
     "종합": 395,
     "경제": 30,
     "부동산": 30,
-    "증권": 55
+    "증권": 57
   },
   "article_count_trend": {
     "종합": {
@@ -3058,9 +3102,9 @@
       "surge": false
     },
     "증권": {
-      "today": 55,
+      "today": 57,
       "yesterday": 73,
-      "change_pct": -24.7,
+      "change_pct": -21.9,
       "surge": false
     }
   }
