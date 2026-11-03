@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-11-03 08:31:26",
+  "updated_at": "2026-11-03 09:01:09",
   "indices": [
     {
       "name": "코스피",
       "value": "5,859.08",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-11-03 08:31:15"
+      "as_of": "2026-11-03 09:00:00"
     },
     {
       "name": "코스닥",
       "value": "734.36",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-11-03 08:31:15"
+      "as_of": "2026-11-03 09:00:00"
     },
     {
       "name": "코스피200",
       "value": "920.63",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-11-03 08:31:16"
+      "as_of": "2026-11-03 09:00:00"
     },
     {
       "name": "다우존스",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,346.00",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-11-03 08:24:29"
+      "value": "1,345.50",
+      "change_percent": "▼0.04%",
+      "direction": "down",
+      "as_of": "2026-11-03 08:59:56"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "852.17",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-11-03 08:24:29"
+      "value": "852.04",
+      "change_percent": "▼0.01%",
+      "direction": "down",
+      "as_of": "2026-11-03 08:59:56"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,505.70",
-      "change_percent": "▼0.01%",
-      "direction": "down",
-      "as_of": "2026-11-03 08:24:29"
+      "value": "1,506.44",
+      "change_percent": "▲0.04%",
+      "direction": "up",
+      "as_of": "2026-11-03 09:00:25"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "96.34",
-      "change_percent": "▼0.12%",
+      "value": "96.33",
+      "change_percent": "▼0.13%",
       "direction": "down",
-      "as_of": "2026-11-02 17:20:54"
+      "as_of": "2026-11-02 17:50:28"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "103,665,000",
-      "change_percent": "▼1.13%",
-      "direction": "down",
-      "as_of": "2026-11-03 08:31:22"
+      "value": "103,652,000",
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026-11-03 09:01:05"
     },
     {
       "name": "이더리움(원/코인)",
       "value": "3,038,000",
-      "change_percent": "▼0.23%",
-      "direction": "down",
-      "as_of": "2026-11-03 08:31:04"
+      "change_percent": "▲0.00%",
+      "direction": "up",
+      "as_of": "2026-11-03 09:01:05"
     }
   ],
   "news_categories": [
@@ -140,8 +140,64 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "뉴스1",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "아리바이오 경구용 치매약 美·日 특허 확보 “글로벌 상업화 기반 구축”",
+          "link": "https://n.news.naver.com/mnews/article/011/0004678050?sid=101258401",
+          "upload_time": "20261103085510",
+          "published_at": "2026-11-03T08:55:10+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "다올, 한미약품 목표가↑…\"올해 세번째 기술이전, R&D 경쟁력 입증\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0016417315?sid=101258401",
+          "upload_time": "20261103085141",
+          "published_at": "2026-11-03T08:51:41+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 3,
+          "title": "KB운용, 'KB 코리아 첨단전략산업50 목표전환 제2호 펀드' 출시",
+          "link": "https://n.news.naver.com/mnews/article/001/0016417312?sid=101258401",
+          "upload_time": "20261103084644",
+          "published_at": "2026-11-03T08:46:44+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 4,
+          "title": "AI 수익성 우려 재발…삼전·닉스 프리마켓서 3%대↓[특징주]",
+          "link": "https://n.news.naver.com/mnews/article/018/0006402507?sid=101258401",
+          "upload_time": "20261103084510",
+          "published_at": "2026-11-03T08:45:10+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 5,
+          "title": "한투 \"美 중간선거해 11월은 S&P500 상승…7,360∼8,040 예상\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0016417296?sid=101258401",
+          "upload_time": "20261103083523",
+          "published_at": "2026-11-03T08:35:23+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 6,
+          "title": "삼성증권 \"포스코인터, 에너지 사업 견고한 실적 흐름 지속\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0016417294?sid=101258401",
+          "upload_time": "20261103083434",
+          "published_at": "2026-11-03T08:34:34+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 7,
+          "title": "AI 수익성 우려 재점화…삼전닉스 프리장서 나란히 3%대 하락[코주부]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004678041?sid=101258401",
+          "upload_time": "20261103083310",
+          "published_at": "2026-11-03T08:33:10+09:00"
+        },
+        {
+          "press_name": "뉴스1",
+          "rank": 8,
           "title": "'AI 수익성 우려' 재확산…삼성전자·SK하이닉스 프리마켓서 3%대↓",
           "link": "https://n.news.naver.com/mnews/article/421/0009265955?sid=101258401",
           "upload_time": "20261103081756",
@@ -149,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 9,
           "title": "[마켓뷰] 전날은 선방했지만…AI 수익성 우려 지속, 코스피 향방은",
           "link": "https://n.news.naver.com/mnews/article/001/0016417261?sid=101258401",
           "upload_time": "20261103080622",
@@ -157,7 +213,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 10,
           "title": "[속보] 한양증권에서도 해킹…고객정보 15건 등 일부 정보 유출",
           "link": "https://n.news.naver.com/mnews/article/011/0004678032?sid=101258401",
           "upload_time": "20261103080212",
@@ -165,7 +221,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 4,
+          "rank": 11,
           "title": "[3분증시] 뉴욕증시, 지정학적 완화에도 혼조 마감",
           "link": "https://n.news.naver.com/mnews/article/422/0000922254?sid=101258401",
           "upload_time": "20261103075109",
@@ -173,7 +229,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 5,
+          "rank": 12,
           "title": "한양증권도 해킹…고객정보 등 일부 정보 유출",
           "link": "https://n.news.naver.com/mnews/article/422/0000922253?sid=101258401",
           "upload_time": "20261103074910",
@@ -181,7 +237,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 6,
+          "rank": 13,
           "title": "대웅제약, 692억 규모 동남아 수출계약 해지…불성실공시법인 지정 예고",
           "link": "https://n.news.naver.com/mnews/article/011/0004678017?sid=101258401",
           "upload_time": "20261103070117",
@@ -189,7 +245,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 14,
           "title": "원내검사 수요에…제약사 진단 시장 공략",
           "link": "https://n.news.naver.com/mnews/article/011/0004678015?sid=101258401",
           "upload_time": "20261103070113",
@@ -197,67 +253,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 8,
+          "rank": 15,
           "title": "[글로벌증시] 뉴욕증시 혼조 마감…유가 하락에도 기술주 매도세",
           "link": "https://n.news.naver.com/mnews/article/422/0000922237?sid=101258401",
           "upload_time": "20261103065311",
           "published_at": "2026-11-03T06:53:11+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 9,
-          "title": "판매량 13개월 연속 줄었는데…현대차, 노사 갈등에 G80 HEV 테스트 중단",
-          "link": "https://n.news.naver.com/mnews/article/011/0004677991?sid=101258401",
-          "upload_time": "20261103060132",
-          "published_at": "2026-11-03T06:01:32+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 10,
-          "title": "돌아온 조갑주號 순항…이지스운용, 광화문 케이트윈타워 1조 인수 [시그널]",
-          "link": "https://n.news.naver.com/mnews/article/011/0004677981?sid=101258401",
-          "upload_time": "20261103060013",
-          "published_at": "2026-11-03T06:00:13+09:00"
-        },
-        {
-          "press_name": "뉴스1",
-          "rank": 11,
-          "title": "외국인 매도세 막아선 연기금…급락장서 9000억 '사자' 증시 버팀목",
-          "link": "https://n.news.naver.com/mnews/article/421/0009265826?sid=101258401",
-          "upload_time": "20261103060000",
-          "published_at": "2026-11-03T06:00:00+09:00"
-        },
-        {
-          "press_name": "연합뉴스TV",
-          "rank": 12,
-          "title": "'앤트로픽' 매출 급증에도 영업적자…AI 인프라에 1,200조 원 약정",
-          "link": "https://n.news.naver.com/mnews/article/422/0000922208?sid=101258401",
-          "upload_time": "20261103054012",
-          "published_at": "2026-11-03T05:40:12+09:00"
-        },
-        {
-          "press_name": "머니투데이",
-          "rank": 13,
-          "title": "외풍에도 꿋꿋… 코스피 올린 '기관의 힘'",
-          "link": "https://n.news.naver.com/mnews/article/008/0005435508?sid=101258401",
-          "upload_time": "20261103035800",
-          "published_at": "2026-11-03T03:58:00+09:00"
-        },
-        {
-          "press_name": "머니투데이",
-          "rank": 14,
-          "title": "\"실적은 좋은데 왜 불안하지?\"…삼전닉스 주가 언제까지 출렁일까[부꾸미]",
-          "link": "https://n.news.naver.com/mnews/article/008/0005435501?sid=101258401",
-          "upload_time": "20261103033000",
-          "published_at": "2026-11-03T03:30:00+09:00"
-        },
-        {
-          "press_name": "중앙일보",
-          "rank": 15,
-          "title": "“미 중간선거 뒤엔 늘 반등” vs “AI 의구심, 금리도 높아”",
-          "link": "https://n.news.naver.com/mnews/article/025/0003562322?sid=101258401",
-          "upload_time": "20261103000200",
-          "published_at": "2026-11-03T00:02:00+09:00"
         }
       ]
     },
@@ -265,124 +265,124 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "연합뉴스",
+          "press_name": "한국경제TV",
           "rank": 1,
-          "title": "대신증권, 두산밥캣 목표주가↓…\"4분기 이익률 하락 전망\"",
-          "link": "https://n.news.naver.com/mnews/article/001/0016417287?sid=101258402",
-          "upload_time": "20261103083055",
-          "published_at": "2026-11-03T08:30:55+09:00"
+          "title": "삼성전자 '목표가 하향' 또 나왔다...\"가격 상승세 둔화\"",
+          "link": "https://n.news.naver.com/mnews/article/215/0001271434?sid=101258402",
+          "upload_time": "20261103090002",
+          "published_at": "2026-11-03T09:00:02+09:00"
         },
         {
-          "press_name": "아시아경제",
+          "press_name": "한국경제",
           "rank": 2,
-          "title": "서울평가정보, 최대주주 50만주 장내매수…AI·디지털 금융 성장 자신감",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837050?sid=101258402",
-          "upload_time": "20261103083021",
-          "published_at": "2026-11-03T08:30:21+09:00"
+          "title": "누보, 美 식품원료 박람회 참가…K-말차 세계화 박차",
+          "link": "https://n.news.naver.com/mnews/article/015/0005349507?sid=101258402",
+          "upload_time": "20261103085313",
+          "published_at": "2026-11-03T08:53:13+09:00"
         },
         {
-          "press_name": "이데일리",
+          "press_name": "파이낸셜뉴스",
           "rank": 3,
-          "title": "‘면역항암 신약개발’ 넥스아이, 일반청약 돌입[오늘청약]",
-          "link": "https://n.news.naver.com/mnews/article/018/0006402490?sid=101258402",
-          "upload_time": "20261103082620",
-          "published_at": "2026-11-03T08:26:20+09:00"
+          "title": "한미약품, 올해만 세 번째 기술수출…증권가 \"71만원 간다\"",
+          "link": "https://n.news.naver.com/mnews/article/014/0005598396?sid=101258402",
+          "upload_time": "20261103085217",
+          "published_at": "2026-11-03T08:52:17+09:00"
         },
         {
-          "press_name": "아시아경제",
+          "press_name": "연합뉴스",
           "rank": 4,
-          "title": "아리바이오, AR1001 美·日 특허 확보…상업화 기반 강화",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837040?sid=101258402",
-          "upload_time": "20261103082430",
-          "published_at": "2026-11-03T08:24:30+09:00"
+          "title": "다올, 한미약품 목표가↑…\"올해 세번째 기술이전, R&D 경쟁력 입증\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0016417315?sid=101258402",
+          "upload_time": "20261103085141",
+          "published_at": "2026-11-03T08:51:41+09:00"
         },
         {
-          "press_name": "이데일리",
+          "press_name": "매일경제",
           "rank": 5,
-          "title": "포스코인터내셔널, 3분기 영업익 기대치 상회…美 LNG·세넥스 성장 주목-IBK",
-          "link": "https://n.news.naver.com/mnews/article/018/0006402485?sid=101258402",
-          "upload_time": "20261103082417",
-          "published_at": "2026-11-03T08:24:17+09:00"
+          "title": "“삼성전자, 목표주가 44만원”…비중 확대 유효하다는 이유는",
+          "link": "https://n.news.naver.com/mnews/article/009/0005757954?sid=101258402",
+          "upload_time": "20261103085109",
+          "published_at": "2026-11-03T08:51:09+09:00"
         },
         {
           "press_name": "아시아경제",
           "rank": 6,
-          "title": "이지메디봇, ‘유봇’ 시제품 제작 완료…품목허가 시험 절차 돌입",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837038?sid=101258402",
-          "upload_time": "20261103082337",
-          "published_at": "2026-11-03T08:23:37+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 7,
-          "title": "성호전자, 밀린 출하 풀린다…'AI 광통신 장비' 실적 반등 기대",
-          "link": "https://n.news.naver.com/mnews/article/014/0005598378?sid=101258402",
-          "upload_time": "20261103082312",
-          "published_at": "2026-11-03T08:23:12+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 8,
-          "title": "젬백스, '퇴행성 뇌질환 권위자' 이재홍 박사 CMO 영입…임상 개발 고도화",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837035?sid=101258402",
-          "upload_time": "20261103082041",
-          "published_at": "2026-11-03T08:20:41+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 9,
-          "title": "한국석유공업, 한국철도학회 추계학술대회서 ‘차세대 철도궤도 기술’ 소개",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837033?sid=101258402",
-          "upload_time": "20261103081854",
-          "published_at": "2026-11-03T08:18:54+09:00"
+          "title": "누보, 美 식품원료 박람회서 프리미엄 K말차 선봬…수출 확대 속도",
+          "link": "https://n.news.naver.com/mnews/article/277/0005837072?sid=101258402",
+          "upload_time": "20261103085039",
+          "published_at": "2026-11-03T08:50:39+09:00"
         },
         {
           "press_name": "이데일리",
-          "rank": 10,
-          "title": "‘AI 인프라 관리·운영 소프트웨어’ 래블업, 코스닥 입성[오늘상장]",
-          "link": "https://n.news.naver.com/mnews/article/018/0006402481?sid=101258402",
-          "upload_time": "20261103081814",
-          "published_at": "2026-11-03T08:18:14+09:00"
+          "rank": 7,
+          "title": "성호전자, AI 데이터센터 장비 수주 확대…2027년 영업익 748억 전망-메리츠",
+          "link": "https://n.news.naver.com/mnews/article/018/0006402514?sid=101258402",
+          "upload_time": "20261103084819",
+          "published_at": "2026-11-03T08:48:19+09:00"
         },
         {
-          "press_name": "연합뉴스",
+          "press_name": "머니투데이",
+          "rank": 8,
+          "title": "젬백스,  '퇴행성 뇌질환 권위자' 이재홍 박사 CMO 영입",
+          "link": "https://n.news.naver.com/mnews/article/008/0005435588?sid=101258402",
+          "upload_time": "20261103084751",
+          "published_at": "2026-11-03T08:47:51+09:00"
+        },
+        {
+          "press_name": "머니투데이",
+          "rank": 9,
+          "title": "팬오션, 실적 기대에 목표주가 8700원으로 상향-미래에셋증권",
+          "link": "https://n.news.naver.com/mnews/article/008/0005435587?sid=101258402",
+          "upload_time": "20261103084728",
+          "published_at": "2026-11-03T08:47:28+09:00"
+        },
+        {
+          "press_name": "파이낸셜뉴스",
+          "rank": 10,
+          "title": "[속보] 한양증권에서도 해킹…고객정보 유출",
+          "link": "https://n.news.naver.com/mnews/article/014/0005598392?sid=101258402",
+          "upload_time": "20261103084712",
+          "published_at": "2026-11-03T08:47:12+09:00"
+        },
+        {
+          "press_name": "이데일리",
           "rank": 11,
-          "title": "IBK증권, 포스코퓨처엠 목표가↑…\"4분기 LFP 출하 시작\"",
-          "link": "https://n.news.naver.com/mnews/article/001/0016417276?sid=101258402",
-          "upload_time": "20261103081757",
-          "published_at": "2026-11-03T08:17:57+09:00"
+          "title": "에스엠벡셀, 천무 넘어 군용 드론·우주로…특수전지 사업 확장-밸류파인더",
+          "link": "https://n.news.naver.com/mnews/article/018/0006402510?sid=101258402",
+          "upload_time": "20261103084710",
+          "published_at": "2026-11-03T08:47:10+09:00"
         },
         {
           "press_name": "머니투데이",
           "rank": 12,
-          "title": "\"SK하이닉스, 비중확대 전략 유효… 목표가 320만\"-한투",
-          "link": "https://n.news.naver.com/mnews/article/008/0005435578?sid=101258402",
-          "upload_time": "20261103081442",
-          "published_at": "2026-11-03T08:14:42+09:00"
+          "title": "\"SOOP, 매수→중립…엑셀방송 위축·배구단 비용\"-삼성",
+          "link": "https://n.news.naver.com/mnews/article/008/0005435586?sid=101258402",
+          "upload_time": "20261103084703",
+          "published_at": "2026-11-03T08:47:03+09:00"
         },
         {
-          "press_name": "아시아경제",
+          "press_name": "머니투데이",
           "rank": 13,
-          "title": "부스터즈, '룰루피치' TV 광고 시작…\"대중적 인지도 확대\"",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837031?sid=101258402",
-          "upload_time": "20261103081202",
-          "published_at": "2026-11-03T08:12:02+09:00"
+          "title": "\"한섬, 신규 브랜드·환율 등 전방위적 모멘텀…목표가 3.6만원\"",
+          "link": "https://n.news.naver.com/mnews/article/008/0005435585?sid=101258402",
+          "upload_time": "20261103084648",
+          "published_at": "2026-11-03T08:46:48+09:00"
         },
         {
-          "press_name": "아시아경제",
+          "press_name": "머니투데이",
           "rank": 14,
-          "title": "플래티어, 글로벌 종합물류기업 L사에 ‘트라이센티스 토스카’ 공급 계약",
-          "link": "https://n.news.naver.com/mnews/article/277/0005837025?sid=101258402",
-          "upload_time": "20261103080508",
-          "published_at": "2026-11-03T08:05:08+09:00"
+          "title": "\"에쓰오일, 내년 영업이익 추정치 18% 하향…목표가↓\"-하나",
+          "link": "https://n.news.naver.com/mnews/article/008/0005435584?sid=101258402",
+          "upload_time": "20261103084637",
+          "published_at": "2026-11-03T08:46:37+09:00"
         },
         {
-          "press_name": "한국경제",
+          "press_name": "연합뉴스",
           "rank": 15,
-          "title": "\"포스코퓨처엠, LFP 출하 개시로 성장 본격화될 것…목표가↑\"-IBK",
-          "link": "https://n.news.naver.com/mnews/article/015/0005349487?sid=101258402",
-          "upload_time": "20261103080425",
-          "published_at": "2026-11-03T08:04:25+09:00"
+          "title": "한투증권, 삼성전자 목표가 57만→44만원…\"추가 상승동력 필요\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0016417308?sid=101258402",
+          "upload_time": "20261103084535",
+          "published_at": "2026-11-03T08:45:35+09:00"
         }
       ]
     },
@@ -408,7 +408,7 @@
         {
           "press_name": "한국경제",
           "rank": 3,
-          "title": "국제유가 급락에도 기술주 매도세 지속…나스닥 1.07% ↓ [뉴욕증시 브리핑]",
+          "title": "국제유가 급락에도 기술주 매도세 지속…나스닥 1.07%↓ [뉴욕증시 브리핑]",
           "link": "https://n.news.naver.com/mnews/article/015/0005349474?sid=101258403",
           "upload_time": "20261103071014",
           "published_at": "2026-11-03T07:10:14+09:00"
@@ -808,8 +808,64 @@
     }
   ],
   "ai_commentary": null,
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "사조동아원",
+      "price": "7,120",
+      "change_percent": "+1.42%",
+      "pct": 1.42
+    },
+    {
+      "name": "농심홀딩스",
+      "price": "85,000",
+      "change_percent": "-0.23%",
+      "pct": 0.23
+    },
+    {
+      "name": "ACE 미국달러단기채권액티브",
+      "price": "11,355",
+      "change_percent": "+0.18%",
+      "pct": 0.18
+    },
+    {
+      "name": "아이마켓코리아",
+      "price": "8,160",
+      "change_percent": "+0.12%",
+      "pct": 0.12
+    },
+    {
+      "name": "미창석유",
+      "price": "115,700",
+      "change_percent": "+0.09%",
+      "pct": 0.09
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "맵스리얼티",
+      "price": "6,830",
+      "change_percent": "-2.01%",
+      "pct": 2.01
+    },
+    {
+      "name": "KODEX 차이나과창판STAR50(합성)",
+      "price": "9,990",
+      "change_percent": "-1.67%",
+      "pct": 1.67
+    },
+    {
+      "name": "TIGER 글로벌4차산업혁신기술(합성 H)",
+      "price": "21,810",
+      "change_percent": "-4.93%",
+      "pct": 4.93
+    },
+    {
+      "name": "ACE 일본TOPIX레버리지(H)",
+      "price": "84,490",
+      "change_percent": "-0.23%",
+      "pct": 0.23
+    }
+  ],
   "sector_performance": [
     {
       "name": "음료",
@@ -1258,9 +1314,5 @@
       "schedule": "20261112~20261113",
       "offer_price": ""
     }
-  ],
-  "_movers_debug": [
-    "급등 TOP5(코스피) -> 응답은 받았으나 유효한 종목 0개",
-    "급락 TOP5(코스피) -> 응답은 받았으나 유효한 종목 0개"
   ]
 }
