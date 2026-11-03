@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-03 11:01:13",
+  "updated_at": "2026-11-03 11:29:14",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -2.46,
-    "kosdaq_change": -2.15,
-    "kospi_value": 5715.23,
-    "kosdaq_value": 718.54
+    "kospi_change": -2.39,
+    "kosdaq_change": -2.44,
+    "kospi_value": 5719.1,
+    "kosdaq_value": 716.43
   },
   "heroes": {
     "종합": {
@@ -28,23 +28,33 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [
-    {
-      "category": "증권",
-      "text": "미국 증시에서 인공지능 관련주의 수익성 우려가 재점화되며 투자 심리가 위축된 점이 국내 증시 하락에 영향을 미쳤다. 또한 유가 급락으로 인해 정유주가 크게 하락하고 반도체 대형주가 약세를 보이면서 코스피와 코스닥 지수가 동반 하락했다."
-    }
-  ],
+  "headlines": [],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [
+    {
+      "corp_name": "수소에너지네트워크",
+      "corp_code": "01527179",
+      "report_nm": "감자결정",
+      "rcept_dt": "20261103",
+      "rcept_no": "20261103000093",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000093"
+    },
+    {
+      "corp_name": "에이엘티",
+      "corp_code": "00493325",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20261103",
+      "rcept_no": "20261103000081",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000081"
+    },
     {
       "corp_name": "마이크로디지탈",
       "corp_code": "01267967",
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20261103",
       "rcept_no": "20261103000036",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000036",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사들여 소각하거나 보유하겠다는 결정입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000036"
     }
   ],
   "macro_indicators": [
@@ -2934,131 +2944,131 @@
       "pct": 29.9
     },
     {
-      "name": "아시아나IDT",
-      "price": "10,800",
-      "change_percent": "+20.00%",
-      "pct": 20.0
+      "name": "미래에셋글로벌리츠",
+      "price": "933",
+      "change_percent": "+26.42%",
+      "pct": 26.42
     }
   ],
   "top_losers": [
     {
-      "name": "CJ씨푸드1우",
-      "price": "480",
-      "change_percent": "+6.67%",
-      "pct": 6.67
-    },
-    {
       "name": "샘표식품",
-      "price": "23,650",
-      "change_percent": "-13.69%",
-      "pct": 13.69
+      "price": "23,500",
+      "change_percent": "-14.23%",
+      "pct": 14.23
     },
     {
       "name": "삼아알미늄",
-      "price": "49,950",
-      "change_percent": "-12.98%",
-      "pct": 12.98
-    },
-    {
-      "name": "KODEX 미국AI광통신네트워크",
-      "price": "8,035",
-      "change_percent": "-11.12%",
-      "pct": 11.12
+      "price": "49,500",
+      "change_percent": "-13.76%",
+      "pct": 13.76
     },
     {
       "name": "프리티",
-      "price": "727",
-      "change_percent": "-10.91%",
-      "pct": 10.91
+      "price": "717",
+      "change_percent": "-12.13%",
+      "pct": 12.13
+    },
+    {
+      "name": "HANARO 미국AI광통신TOP10",
+      "price": "6,290",
+      "change_percent": "-11.35%",
+      "pct": 11.35
+    },
+    {
+      "name": "KODEX 미국AI광통신네트워크",
+      "price": "8,030",
+      "change_percent": "-11.17%",
+      "pct": 11.17
     }
   ],
   "sector_performance": [
     {
       "name": "항공사",
-      "change_value": "+16.10%",
-      "pct": 16.1
+      "change_value": "+16.02%",
+      "pct": 16.02
     },
     {
       "name": "종이와목재",
-      "change_value": "+1.99%",
-      "pct": 1.99
+      "change_value": "+2.23%",
+      "pct": 2.23
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.79%",
-      "pct": 1.79
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+1.45%",
-      "pct": 1.45
+      "change_value": "+1.58%",
+      "pct": 1.58
     },
     {
       "name": "도로와철도운송",
-      "change_value": "+1.37%",
-      "pct": 1.37
+      "change_value": "+1.39%",
+      "pct": 1.39
+    },
+    {
+      "name": "상업서비스와공급품",
+      "change_value": "+1.36%",
+      "pct": 1.36
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공사",
-      "change_value": "+16.10%",
-      "pct": 16.1
+      "change_value": "+16.02%",
+      "pct": 16.02
     },
     {
       "name": "종이와목재",
-      "change_value": "+1.99%",
-      "pct": 1.99
+      "change_value": "+2.23%",
+      "pct": 2.23
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.79%",
-      "pct": 1.79
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+1.45%",
-      "pct": 1.45
+      "change_value": "+1.58%",
+      "pct": 1.58
     },
     {
       "name": "도로와철도운송",
-      "change_value": "+1.37%",
-      "pct": 1.37
+      "change_value": "+1.39%",
+      "pct": 1.39
+    },
+    {
+      "name": "상업서비스와공급품",
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
       "name": "생물공학",
-      "change_value": "+1.23%",
-      "pct": 1.23
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "-3.33%",
-      "pct": -3.33
+      "change_value": "+1.18%",
+      "pct": 1.18
     },
     {
       "name": "철강",
-      "change_value": "-3.47%",
-      "pct": -3.47
-    },
-    {
-      "name": "생명보험",
-      "change_value": "-3.55%",
-      "pct": -3.55
-    },
-    {
-      "name": "전자제품",
       "change_value": "-3.70%",
       "pct": -3.7
     },
     {
+      "name": "생명보험",
+      "change_value": "-3.74%",
+      "pct": -3.74
+    },
+    {
+      "name": "전기제품",
+      "change_value": "-3.93%",
+      "pct": -3.93
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-3.98%",
+      "pct": -3.98
+    },
+    {
       "name": "전자장비와기기",
-      "change_value": "-4.03%",
-      "pct": -4.03
+      "change_value": "-4.35%",
+      "pct": -4.35
     },
     {
       "name": "석유와가스",
-      "change_value": "-5.21%",
-      "pct": -5.21
+      "change_value": "-5.47%",
+      "pct": -5.47
     }
   ],
   "article_counts": {
