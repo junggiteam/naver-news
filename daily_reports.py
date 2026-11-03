@@ -281,6 +281,25 @@ def _generate_reports(materials, report_type, stock_data=None):
 
 VALID_REPORT_TYPES = ("morning", "evening")
 ARCHIVE_FILE = os.path.join("data", "daily_reports_archive.json")
+MIN_PUBLISHED_CATEGORIES = 3
+
+
+def _valid_report_count(edition):
+    return sum(
+        isinstance(edition.get(category), dict)
+        and bool(edition[category].get("title"))
+        and bool(edition[category].get("body"))
+        for category in CATEGORIES
+    )
+
+
+def has_valid_published_edition(report_type, date_str):
+    """마커만 성공으로 기록된 빈 판도 다시 생성할 수 있도록 실제 발행물을 검사한다."""
+    edition = _load_json(REPORTS_FILE).get("reports", {}).get(report_type) or {}
+    return (
+        edition.get("generated_at", "").startswith(date_str)
+        and _valid_report_count(edition) >= MIN_PUBLISHED_CATEGORIES
+    )
 
 
 def _append_to_archive(report_type, edition_entry):
@@ -305,6 +324,14 @@ def _save_edition(report_type, basis, reports):
     """daily_reports.json에서 report_type 판(오전/저녁)만 갱신하고 다른 판은
     보존한다. morning/evening 구조 도입 이전의 평면 스키마(카테고리명이
     reports 바로 아래 있던 구버전) 잔재가 있으면 함께 정리한다."""
+    valid_count = _valid_report_count(reports)
+    if valid_count < MIN_PUBLISHED_CATEGORIES:
+        raise RuntimeError(
+            f"{report_type}판 생성 실패: 정상 카테고리 {valid_count}/{len(CATEGORIES)}개 "
+            f"(최소 {MIN_PUBLISHED_CATEGORIES}개 필요). 기존 발행물을 유지하고 재시도합니다. "
+            f"Gemini 오류: {ai_briefing.LAST_ERROR or '응답 또는 재료 확인 필요'}"
+        )
+
     output = _load_json(REPORTS_FILE)
     existing_reports = output.get("reports", {})
     # 구버전 스키마 잔재 제거: morning/evening이 아닌 키(예: 예전 "시황" 등)는 버림
@@ -323,7 +350,7 @@ def _save_edition(report_type, basis, reports):
     with open(REPORTS_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"성공! {report_type}판 카테고리 {len(CATEGORIES)}개 리포트가 {REPORTS_FILE}에 저장되었습니다.")
+    print(f"성공! {report_type}판 정상 카테고리 {valid_count}/{len(CATEGORIES)}개가 {REPORTS_FILE}에 저장되었습니다.")
 
     _append_to_archive(report_type, edition_entry)
 

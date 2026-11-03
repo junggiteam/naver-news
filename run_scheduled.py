@@ -482,6 +482,7 @@ REPORT_SLOTS = {
         "target": "15:37", "window_minutes": 15, "func": _record_daily_close_snapshot,
     },
 }
+REPORT_RETRY_INTERVAL = timedelta(minutes=30)
 # DART 주요사항보고서 취합 기사는 위 REPORT_SLOTS(하루 1번, 날짜 단위
 # 중복 방지)와 다른 별도 체계를 쓴다 - 평일 12:00~17:10 사이 매시간
 # 반복 체크(_dart_ma_article_due/_build_dart_ma_article, run_scheduled()
@@ -496,10 +497,8 @@ def _is_in_time_window(now_kst, target_hhmm, window_minutes):
 
 
 def find_due_report_slots(now_kst, marker):
-    """목표 시각(±윈도우) 안에 들어왔고 오늘 아직 실행하지 않은 리포트
-    슬롯 이름 목록을 반환. weekdays_only=True인 슬롯은 주말(토=5,일=6)에
-    건너뛴다 - 이 키가 없는 기존 슬롯들은 cfg.get(...)이 기본 False라
-    영향 없음."""
+    """브리핑은 정상 발행될 때까지 당일 30분 간격으로 재시도한다.
+    다른 슬롯은 기존 목표 시각(±윈도우) 규칙을 유지한다."""
     today_str = now_kst.strftime("%Y-%m-%d")
     due_slots = []
     for slot_name, cfg in REPORT_SLOTS.items():
@@ -507,9 +506,24 @@ def find_due_report_slots(now_kst, marker):
             continue
         last_run_str = marker.get(slot_name)
         last_run_date = last_run_str.split("T")[0] if last_run_str else None
-        if last_run_date == today_str:
-            continue
-        if _is_in_time_window(now_kst, cfg["target"], cfg["window_minutes"]):
+        if slot_name in ("daily_report_morning", "daily_report_evening"):
+            report_type = slot_name.rsplit("_", 1)[-1]
+            if daily_reports.has_valid_published_edition(report_type, today_str):
+                continue
+            hour, minute = map(int, cfg["target"].split(":"))
+            target = now_kst.replace(hour=hour, minute=minute, second=0, microsecond=0)
+            start = target - timedelta(minutes=cfg["window_minutes"])
+            if report_type == "morning":
+                end = now_kst.replace(hour=17, minute=42, second=0, microsecond=0)
+            else:
+                end = now_kst.replace(hour=23, minute=59, second=59, microsecond=999999)
+            if not start <= now_kst < end:
+                continue
+            last_failure = marker.get(slot_name + "_last_failure")
+            if last_failure and now_kst - datetime.fromisoformat(last_failure) < REPORT_RETRY_INTERVAL:
+                continue
+            due_slots.append(slot_name)
+        elif last_run_date != today_str and _is_in_time_window(now_kst, cfg["target"], cfg["window_minutes"]):
             due_slots.append(slot_name)
     return due_slots
 
@@ -554,10 +568,14 @@ def run_scheduled(now_kst=None):
         try:
             cfg["func"]()
             marker[slot_name] = now_kst.isoformat()
+            marker.pop(slot_name + "_last_failure", None)
             marker_changed = True
             print(f"[{slot_name}] 실행 완료")
         except Exception as e:
-            print(f"[{slot_name}] 실행 중 오류 발생, 마커 갱신 안 함 - 다음 주기에 재시도: {e}")
+            if slot_name in ("daily_report_morning", "daily_report_evening"):
+                marker[slot_name + "_last_failure"] = now_kst.isoformat()
+                marker_changed = True
+            print(f"[{slot_name}] 실행 중 오류 발생, 성공 마커 갱신 안 함 - 다음 주기에 재시도: {e}")
 
     if dart_ma_article_due:
         print("[dart_ma_article] 체크 시각 도달(평일 12:00~17:10, 마지막 체크로부터 1시간 경과) - 실행")

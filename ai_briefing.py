@@ -7,6 +7,7 @@ None/빈 리스트를 반환한다. 크롤링 자체(핵심 기능)는 AI 기능
 
 import os
 import re
+import time
 import requests
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -28,30 +29,34 @@ def _call_gemini(prompt, timeout=60):
         LAST_ERROR = "GEMINI_API_KEY 환경변수 없음"
         print("[ai_briefing] GEMINI_API_KEY 없음 - AI 기능 생략")
         return None
-    try:
-        resp = requests.post(
-            GEMINI_URL,
-            params={"key": GEMINI_API_KEY},
-            json={"contents": [{"parts": [{"text": prompt}]}]},
-            timeout=timeout,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
-    except Exception as e:
-        body = ""
+    for attempt in range(3):
+        resp = None
         try:
-            body = resp.text[:300]
-        except Exception:
-            pass
-        raw_error = f"{type(e).__name__}: {e} | body={body}"
-        # requests 예외 메시지에는 요청 URL 전체(쿼리스트링의 API 키 포함)가
-        # 그대로 들어가는 경우가 있어, 로그/저장 전에 반드시 키를 마스킹한다.
-        # (실제로 이걸 안 해서 GitHub Push Protection에 막혀 자동 push가
-        # 계속 실패했던 적이 있음 - 키가 실제로 유출되진 않았지만 원인이었음)
-        LAST_ERROR = raw_error.replace(GEMINI_API_KEY, "***") if GEMINI_API_KEY else raw_error
-        print(f"[ai_briefing] Gemini 호출 실패: {LAST_ERROR}")
-        return None
+            resp = requests.post(
+                GEMINI_URL,
+                params={"key": GEMINI_API_KEY},
+                json={"contents": [{"parts": [{"text": prompt}]}]},
+                timeout=timeout,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            LAST_ERROR = None
+            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        except Exception as e:
+            body = resp.text[:300] if resp is not None else ""
+            raw_error = f"{type(e).__name__}: {e} | body={body}"
+            # requests 예외 URL에 API 키가 포함될 수 있으므로 로그 전에 마스킹한다.
+            LAST_ERROR = raw_error.replace(GEMINI_API_KEY, "***")
+            retryable = isinstance(e, (requests.Timeout, requests.ConnectionError)) or (
+                resp is not None and resp.status_code in (429, 500, 502, 503, 504)
+            )
+            if retryable and attempt < 2:
+                delay = 2 * (attempt + 1)
+                print(f"[ai_briefing] Gemini 일시 오류 - {delay}초 후 재시도 ({attempt + 1}/2): {LAST_ERROR}")
+                time.sleep(delay)
+                continue
+            print(f"[ai_briefing] Gemini 호출 실패: {LAST_ERROR}")
+            return None
 
 
 # CLAUDE.md "수치 인용 원칙" - 과거 전체 기록과 비교하는 느낌을 주는
