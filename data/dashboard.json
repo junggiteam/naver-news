@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 08:01:25",
+  "updated_at": "2026-11-04 08:31:25",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,8 @@
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261104",
       "rcept_no": "20261103000389",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000389"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000389",
+      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -94,7 +95,8 @@
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261104",
       "rcept_no": "20261103000388",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000388"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000388",
+      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
     },
     {
       "corp_name": "애드바이오텍",
@@ -102,7 +104,8 @@
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261104",
       "rcept_no": "20261103000387",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000387"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000387",
+      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
     },
     {
       "corp_name": "베셀",
@@ -110,7 +113,8 @@
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20261104",
       "rcept_no": "20261103000386",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000386"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000386",
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유함."
     }
   ],
   "macro_indicators": [
@@ -2964,115 +2968,38 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "한진칼우",
-      "price": "39,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한진칼",
-      "price": "175,200",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "깨끗한나라",
-      "price": "1,397",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "깨끗한나라우",
-      "price": "2,385",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한진",
-      "price": "19,930",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "샘표",
-      "price": "46,600",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "샘표식품",
-      "price": "23,100",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "CJ씨푸드1우",
-      "price": "381",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "TIGER 2차전지TOP10레버리지",
-      "price": "895",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "삼성 KRX 레버리지 2차전지 TOP10 TR ETN",
-      "price": "16,735",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "항공사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "다각화된통신서비스",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
       "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "항공사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "게임엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "다각화된통신서비스",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3082,22 +3009,37 @@
       "pct": 0.0
     },
     {
-      "name": "광고",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "기계",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "통신장비",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자제품",
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3107,12 +3049,12 @@
       "pct": 0.0
     },
     {
-      "name": "석유와가스",
+      "name": "전자장비와기기",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
