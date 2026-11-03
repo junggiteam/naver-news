@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-03 12:31:18",
+  "updated_at": "2026-11-03 13:01:21",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -3.44,
-    "kosdaq_change": -3.25,
-    "kospi_value": 5657.44,
-    "kosdaq_value": 710.49
+    "kospi_change": -3.35,
+    "kosdaq_change": -3.45,
+    "kospi_value": 5662.9,
+    "kosdaq_value": 709.0
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "서울 미분양 증가와 지방 청약 마감 등 지역별 분양 시장 양극화 발생"
+    },
+    {
+      "category": "증권",
+      "text": "인공지능 산업의 수익성에 대한 시장의 우려가 확산하며 투자 심리가 위축된 가운데, 외국인과 기관 투자자의 동반 매도세가 이어지며 코스피와 코스닥 지수가 하락했다. 특히 시가총액 비중이 큰 삼성전자와 SK하이닉스 등 주요 반도체 관련주가 약세를 보이며 지수 하락을 주도했다."
     }
   ],
   "daily_term": {
@@ -82,11 +86,18 @@
     {
       "corp_name": "보락",
       "corp_code": "00123107",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261103",
+      "rcept_no": "20261103000109",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000109"
+    },
+    {
+      "corp_name": "보락",
+      "corp_code": "00123107",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20261103",
       "rcept_no": "20261103000105",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000105",
-      "ai_explanation": "회사가 신탁 방식으로 진행하던 자사주 매입 계약을 중도에 종료한다는 결정입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000105"
     },
     {
       "corp_name": "수소에너지네트워크",
@@ -94,8 +105,7 @@
       "report_nm": "감자결정",
       "rcept_dt": "20261103",
       "rcept_no": "20261103000093",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000093",
-      "ai_explanation": "자본금을 줄이기 위해 발행한 주식 수를 감소시키는 결정입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000093"
     },
     {
       "corp_name": "에이엘티",
@@ -103,8 +113,7 @@
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261103",
       "rcept_no": "20261103000081",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000081",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 정보를 수정하여 다시 알리는 것입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000081"
     },
     {
       "corp_name": "마이크로디지탈",
@@ -112,8 +121,7 @@
       "report_nm": "주요사항보고서(자기전환사채만기전취득결정)",
       "rcept_dt": "20261103",
       "rcept_no": "20261103000036",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000036",
-      "ai_explanation": "만기 전 회사가 발행했던 전환사채를 다시 사들여 소각하거나 보유하겠다는 결정입니다."
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000036"
     }
   ],
   "macro_indicators": [
@@ -3004,53 +3012,53 @@
     },
     {
       "name": "미래에셋글로벌리츠",
-      "price": "941",
-      "change_percent": "+27.51%",
-      "pct": 27.51
+      "price": "928",
+      "change_percent": "+25.75%",
+      "pct": 25.75
     }
   ],
   "top_losers": [
     {
       "name": "CJ씨푸드1우",
-      "price": "370",
-      "change_percent": "-17.78%",
-      "pct": 17.78
+      "price": "349",
+      "change_percent": "-22.44%",
+      "pct": 22.44
     },
     {
       "name": "샘표식품",
-      "price": "23,500",
-      "change_percent": "-14.23%",
-      "pct": 14.23
-    },
-    {
-      "name": "삼아알미늄",
-      "price": "49,950",
-      "change_percent": "-12.98%",
-      "pct": 12.98
+      "price": "23,400",
+      "change_percent": "-14.60%",
+      "pct": 14.6
     },
     {
       "name": "대덕전자",
-      "price": "102,800",
-      "change_percent": "-11.76%",
-      "pct": 11.76
+      "price": "101,800",
+      "change_percent": "-12.62%",
+      "pct": 12.62
     },
     {
-      "name": "HANARO 미국AI광통신TOP10",
-      "price": "6,265",
-      "change_percent": "-11.70%",
-      "pct": 11.7
+      "name": "샘표",
+      "price": "48,850",
+      "change_percent": "-12.14%",
+      "pct": 12.14
+    },
+    {
+      "name": "삼아알미늄",
+      "price": "50,300",
+      "change_percent": "-12.37%",
+      "pct": 12.37
     }
   ],
   "sector_performance": [
     {
       "name": "항공사",
-      "change_value": "+15.79%",
-      "pct": 15.79
+      "change_value": "+15.53%",
+      "pct": 15.53
     },
     {
       "name": "종이와목재",
-      "change_value": "+2.12%",
-      "pct": 2.12
+      "change_value": "+1.67%",
+      "pct": 1.67
     },
     {
       "name": "다각화된통신서비스",
@@ -3059,25 +3067,25 @@
     },
     {
       "name": "도로와철도운송",
-      "change_value": "+1.26%",
-      "pct": 1.26
+      "change_value": "+1.09%",
+      "pct": 1.09
     },
     {
       "name": "상업서비스와공급품",
-      "change_value": "+1.19%",
-      "pct": 1.19
+      "change_value": "+1.02%",
+      "pct": 1.02
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공사",
-      "change_value": "+15.79%",
-      "pct": 15.79
+      "change_value": "+15.53%",
+      "pct": 15.53
     },
     {
       "name": "종이와목재",
-      "change_value": "+2.12%",
-      "pct": 2.12
+      "change_value": "+1.67%",
+      "pct": 1.67
     },
     {
       "name": "다각화된통신서비스",
@@ -3086,48 +3094,48 @@
     },
     {
       "name": "도로와철도운송",
-      "change_value": "+1.26%",
-      "pct": 1.26
+      "change_value": "+1.09%",
+      "pct": 1.09
     },
     {
       "name": "상업서비스와공급품",
-      "change_value": "+1.19%",
-      "pct": 1.19
+      "change_value": "+1.02%",
+      "pct": 1.02
     },
     {
       "name": "광고",
-      "change_value": "+0.71%",
-      "pct": 0.71
+      "change_value": "+0.72%",
+      "pct": 0.72
     },
     {
-      "name": "생명보험",
-      "change_value": "-4.11%",
-      "pct": -4.11
+      "name": "기계",
+      "change_value": "-4.38%",
+      "pct": -4.38
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "-4.57%",
-      "pct": -4.57
-    },
-    {
-      "name": "전자제품",
-      "change_value": "-4.96%",
-      "pct": -4.96
+      "name": "전기장비",
+      "change_value": "-4.40%",
+      "pct": -4.4
     },
     {
       "name": "전기제품",
-      "change_value": "-5.25%",
-      "pct": -5.25
+      "change_value": "-5.14%",
+      "pct": -5.14
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "-5.64%",
-      "pct": -5.64
+      "name": "전자제품",
+      "change_value": "-5.67%",
+      "pct": -5.67
     },
     {
       "name": "석유와가스",
-      "change_value": "-5.82%",
-      "pct": -5.82
+      "change_value": "-5.80%",
+      "pct": -5.8
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "-6.00%",
+      "pct": -6.0
     }
   ],
   "article_counts": {
