@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-04 09:31:18",
+  "updated_at": "2026-11-04 10:01:16",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 1.68,
-    "kosdaq_change": 0.59,
-    "kospi_value": 5743.73,
-    "kosdaq_value": 708.57
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 1.45,
+    "kosdaq_change": 0.47,
+    "kospi_value": 5730.66,
+    "kosdaq_value": 707.73
   },
   "heroes": {
     "종합": {
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "삼성물산 홈닉 제휴 건설사 확대 등 건설·부동산 기술 협력 강화"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시에서 반도체 관련 종목이 반등하며 국내 증시의 투자 심리에도 긍정적인 영향을 미쳤다. 이에 힘입어 삼성전자와 SK하이닉스 등 주요 반도체 대형주가 동반 강세를 보이면서 코스피와 코스닥 지수 모두 상승 마감했다."
     }
   ],
   "daily_term": {
@@ -85,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "케이솔루션",
+      "corp_code": "01635308",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261104",
+      "rcept_no": "20261104000028",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000028",
+      "ai_explanation": "회사가 신주를 발행하여 자금을 조달하겠다는 계획의 내용을 수정했다는 의미입니다."
+    },
+    {
       "corp_name": "애드바이오텍",
       "corp_code": "01022902",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261104",
       "rcept_no": "20261103000389",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000389",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 정정하여 다시 공시함."
+      "ai_explanation": "회사가 발행한 전환사채의 주요 계약 내용이나 조건 등을 변경했다는 의미입니다."
     },
     {
       "corp_name": "애드바이오텍",
@@ -100,7 +105,7 @@
       "rcept_dt": "20261104",
       "rcept_no": "20261103000388",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000388",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 정정하여 다시 공시함."
+      "ai_explanation": "회사가 발행한 전환사채의 주요 계약 내용이나 조건 등을 변경했다는 의미입니다."
     },
     {
       "corp_name": "애드바이오텍",
@@ -109,7 +114,7 @@
       "rcept_dt": "20261104",
       "rcept_no": "20261103000387",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000387",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 정정하여 다시 공시함."
+      "ai_explanation": "회사가 발행한 전환사채의 주요 계약 내용이나 조건 등을 변경했다는 의미입니다."
     },
     {
       "corp_name": "베셀",
@@ -118,7 +123,7 @@
       "rcept_dt": "20261104",
       "rcept_no": "20261103000386",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000386",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유함."
+      "ai_explanation": "회사가 만기 전 자기 회사의 전환사채를 미리 사들여 소각하거나 보유하겠다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2980,28 +2985,28 @@
       "pct": 29.98
     },
     {
-      "name": "대동",
-      "price": "7,990",
-      "change_percent": "+22.17%",
-      "pct": 22.17
-    },
-    {
-      "name": "TYM",
-      "price": "6,310",
-      "change_percent": "+14.73%",
-      "pct": 14.73
+      "name": "한진칼우",
+      "price": "48,550",
+      "change_percent": "+24.49%",
+      "pct": 24.49
     },
     {
       "name": "한국항공우주",
-      "price": "110,900",
-      "change_percent": "+13.98%",
-      "pct": 13.98
+      "price": "110,300",
+      "change_percent": "+13.36%",
+      "pct": 13.36
     },
     {
-      "name": "코아스",
-      "price": "1,024",
-      "change_percent": "+11.18%",
-      "pct": 11.18
+      "name": "TYM",
+      "price": "6,190",
+      "change_percent": "+12.55%",
+      "pct": 12.55
+    },
+    {
+      "name": "코리아써키트",
+      "price": "79,100",
+      "change_percent": "+11.10%",
+      "pct": 11.1
     }
   ],
   "top_losers": [
@@ -3012,117 +3017,117 @@
       "pct": 15.24
     },
     {
+      "name": "깨끗한나라",
+      "price": "1,172",
+      "change_percent": "-16.11%",
+      "pct": 16.11
+    },
+    {
       "name": "한진",
-      "price": "17,830",
-      "change_percent": "-14.28%",
-      "pct": 14.28
-    },
-    {
-      "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "14,460",
-      "change_percent": "-10.33%",
-      "pct": 10.33
-    },
-    {
-      "name": "HLB글로벌",
-      "price": "1,647",
-      "change_percent": "-10.34%",
-      "pct": 10.34
+      "price": "17,900",
+      "change_percent": "-13.94%",
+      "pct": 13.94
     },
     {
       "name": "LG생활건강",
-      "price": "236,500",
-      "change_percent": "-9.73%",
-      "pct": 9.73
+      "price": "233,000",
+      "change_percent": "-11.07%",
+      "pct": 11.07
+    },
+    {
+      "name": "하이브",
+      "price": "140,300",
+      "change_percent": "-10.01%",
+      "pct": 10.01
     }
   ],
   "sector_performance": [
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+4.59%",
-      "pct": 4.59
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+4.07%",
-      "pct": 4.07
-    },
-    {
-      "name": "출판",
-      "change_value": "+4.01%",
-      "pct": 4.01
-    },
-    {
       "name": "전기장비",
-      "change_value": "+3.67%",
-      "pct": 3.67
+      "change_value": "+3.26%",
+      "pct": 3.26
     },
     {
-      "name": "건설",
-      "change_value": "+3.32%",
-      "pct": 3.32
+      "name": "게임엔터테인먼트",
+      "change_value": "+3.19%",
+      "pct": 3.19
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "+3.08%",
+      "pct": 3.08
+    },
+    {
+      "name": "다각화된통신서비스",
+      "change_value": "+2.99%",
+      "pct": 2.99
+    },
+    {
+      "name": "무선통신서비스",
+      "change_value": "+2.94%",
+      "pct": 2.94
     }
   ],
   "sector_heatmap": [
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "+4.59%",
-      "pct": 4.59
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+4.07%",
-      "pct": 4.07
-    },
-    {
-      "name": "출판",
-      "change_value": "+4.01%",
-      "pct": 4.01
-    },
-    {
       "name": "전기장비",
-      "change_value": "+3.67%",
-      "pct": 3.67
+      "change_value": "+3.26%",
+      "pct": 3.26
     },
     {
-      "name": "건설",
-      "change_value": "+3.32%",
-      "pct": 3.32
+      "name": "게임엔터테인먼트",
+      "change_value": "+3.19%",
+      "pct": 3.19
     },
     {
       "name": "전기유틸리티",
-      "change_value": "+2.77%",
-      "pct": 2.77
+      "change_value": "+3.08%",
+      "pct": 3.08
     },
     {
-      "name": "생명과학도구및서비스",
-      "change_value": "-1.02%",
-      "pct": -1.02
+      "name": "다각화된통신서비스",
+      "change_value": "+2.99%",
+      "pct": 2.99
+    },
+    {
+      "name": "무선통신서비스",
+      "change_value": "+2.94%",
+      "pct": 2.94
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+2.52%",
+      "pct": 2.52
     },
     {
       "name": "소프트웨어",
-      "change_value": "-1.65%",
-      "pct": -1.65
+      "change_value": "-2.39%",
+      "pct": -2.39
     },
     {
-      "name": "전기제품",
-      "change_value": "-1.69%",
-      "pct": -1.69
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "-2.24%",
-      "pct": -2.24
+      "name": "화장품",
+      "change_value": "-2.89%",
+      "pct": -2.89
     },
     {
       "name": "생물공학",
-      "change_value": "-3.00%",
-      "pct": -3.0
+      "change_value": "-3.64%",
+      "pct": -3.64
+    },
+    {
+      "name": "전기제품",
+      "change_value": "-3.78%",
+      "pct": -3.78
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "-3.92%",
-      "pct": -3.92
+      "change_value": "-4.35%",
+      "pct": -4.35
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "-4.42%",
+      "pct": -4.42
     }
   ],
   "article_counts": {
