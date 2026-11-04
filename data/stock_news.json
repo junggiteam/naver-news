@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 06:01:07",
+  "updated_at": "2026-11-05 06:31:05",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "53,357.19",
+      "value": "53,356.12",
       "change_percent": "▲3.03%",
       "direction": "up",
-      "as_of": "2026-11-04 16:00:53"
+      "as_of": "2026-11-04 16:20:01"
     },
     {
       "name": "나스닥",
       "value": "25,736.51",
       "change_percent": "▲1.44%",
       "direction": "up",
-      "as_of": "2026-11-04 16:00:56"
+      "as_of": "2026-11-04 16:30:51"
     },
     {
       "name": "나스닥100",
       "value": "28,437.17",
       "change_percent": "▲0.91%",
       "direction": "up",
-      "as_of": "2026-11-04 16:00:57"
+      "as_of": "2026-11-04 16:30:52"
     },
     {
       "name": "S&P500",
-      "value": "7,688.87",
+      "value": "7,688.62",
       "change_percent": "▲1.58%",
       "direction": "up",
-      "as_of": "2026-11-04 16:00:57"
+      "as_of": "2026-11-04 16:20:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "88.71",
-      "change_percent": "▼7.68%",
+      "value": "88.48",
+      "change_percent": "▼7.92%",
       "direction": "down",
-      "as_of": "2026-11-04 14:50:45"
+      "as_of": "2026-11-04 15:21:03"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "107,836,000",
+      "value": "107,835,000",
       "change_percent": "▲3.38%",
       "direction": "up",
-      "as_of": "2026-11-05 06:01:04"
+      "as_of": "2026-11-05 06:31:02"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,260,000",
-      "change_percent": "▲6.36%",
+      "value": "3,256,000",
+      "change_percent": "▲6.23%",
       "direction": "up",
-      "as_of": "2026-11-05 06:01:01"
+      "as_of": "2026-11-05 06:31:00"
     }
   ],
   "news_categories": [
@@ -140,8 +140,56 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "서울경제",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "“트럼프가 코스피 악재였네” 귀신같이 ‘다말올’…찐수혜주 따로 있다",
+          "link": "https://n.news.naver.com/mnews/article/009/0005759196?sid=101258401",
+          "upload_time": "20261105062215",
+          "published_at": "2026-11-05T06:22:15+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "美는 기존 펀드 합쳐 ETF 보수 9%↓…韓은 상장클래스 2개뿐",
+          "link": "https://n.news.naver.com/mnews/article/011/0004678873?sid=101258401",
+          "upload_time": "20261105061210",
+          "published_at": "2026-11-05T06:12:10+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 3,
+          "title": "[속보] 미국 중간선거 끝나자 다우지수 3% 급등…18개월만에 최대폭 상승",
+          "link": "https://n.news.naver.com/mnews/article/009/0005759194?sid=101258401",
+          "upload_time": "20261105060809",
+          "published_at": "2026-11-05T06:08:09+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 4,
+          "title": "[속보] 美중간선거 끝나자 다우지수 3% 급등…18개월만에 최대폭 상승",
+          "link": "https://n.news.naver.com/mnews/article/001/0016422907?sid=101258401",
+          "upload_time": "20261105060507",
+          "published_at": "2026-11-05T06:05:07+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 5,
+          "title": "8천피 4천피 둘다 적정가입니다…‘모 아니면 도 증시’ 돈버는 전략은",
+          "link": "https://n.news.naver.com/mnews/article/009/0005759191?sid=101258401",
+          "upload_time": "20261105060411",
+          "published_at": "2026-11-05T06:04:11+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 6,
+          "title": "'진작 담아두길 잘했네' 개미들 환호…하루 만에 18% 터졌다",
+          "link": "https://n.news.naver.com/mnews/article/015/0005350476?sid=101258401",
+          "upload_time": "20261105060112",
+          "published_at": "2026-11-05T06:01:12+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 7,
           "title": "E200 1000만원 낮춰 판매한 벤츠…BMW 제치고 2위 탈환",
           "link": "https://n.news.naver.com/mnews/article/011/0004678858?sid=101258401",
           "upload_time": "20261105060025",
@@ -149,7 +197,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 2,
+          "rank": 8,
           "title": "잠잠해진 공매도… 한숨 돌린 삼전닉스",
           "link": "https://n.news.naver.com/mnews/article/008/0005436787?sid=101258401",
           "upload_time": "20261105034500",
@@ -157,7 +205,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 3,
+          "rank": 9,
           "title": "개표 내내 출렁이다, 빨간불 겨우 지켰다",
           "link": "https://n.news.naver.com/mnews/article/008/0005436783?sid=101258401",
           "upload_time": "20261105030600",
@@ -165,7 +213,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 4,
+          "rank": 10,
           "title": "주식형펀드 흔들리자… 더 '안전한 바구니' 찾는다",
           "link": "https://n.news.naver.com/mnews/article/008/0005436776?sid=101258401",
           "upload_time": "20261105030000",
@@ -173,7 +221,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 5,
+          "rank": 11,
           "title": "최태원, 美 AI 투자법인 이사회 의장 맡는다",
           "link": "https://n.news.naver.com/mnews/article/011/0004678834?sid=101258401",
           "upload_time": "20261104211817",
@@ -181,7 +229,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 6,
+          "rank": 12,
           "title": "삼성바이오, 노사 교섭 또 불발…노조 6일부터 2차 파업",
           "link": "https://n.news.naver.com/mnews/article/011/0004678826?sid=101258401",
           "upload_time": "20261104200810",
@@ -189,7 +237,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 7,
+          "rank": 13,
           "title": "“AI 투자 멈추나” 美 민주당 승리에 반도체 흔들…코스피는 반등",
           "link": "https://n.news.naver.com/mnews/article/018/0006403789?sid=101258401",
           "upload_time": "20261104190914",
@@ -197,7 +245,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 8,
+          "rank": 14,
           "title": "‘최대주주 호반’ 공시에 한진칼, 애프터마켓서 한때 14%↑",
           "link": "https://n.news.naver.com/mnews/article/018/0006403788?sid=101258401",
           "upload_time": "20261104190224",
@@ -205,59 +253,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 9,
+          "rank": 15,
           "title": "코스피, 美 중간선거에 '널뛰기'…4% 급락 후 반등",
           "link": "https://n.news.naver.com/mnews/article/422/0000922891?sid=101258401",
           "upload_time": "20261104184011",
           "published_at": "2026-11-04T18:40:11+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 10,
-          "title": "[투자의 창] 청지기 투자자의 이사 선택",
-          "link": "https://n.news.naver.com/mnews/article/011/0004678786?sid=101258401",
-          "upload_time": "20261104180511",
-          "published_at": "2026-11-04T18:05:11+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 11,
-          "title": "영업익 기대치의 4.6배인데…포스코퓨처엠 목표가 놓고 證 ‘동상이몽’",
-          "link": "https://n.news.naver.com/mnews/article/011/0004678784?sid=101258401",
-          "upload_time": "20261104180412",
-          "published_at": "2026-11-04T18:04:12+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 12,
-          "title": "수익성 먹구름 낀 현대차·기아…시총 13조 증발에 목표가도 ‘뚝’",
-          "link": "https://n.news.naver.com/mnews/article/011/0004678783?sid=101258401",
-          "upload_time": "20261104180308",
-          "published_at": "2026-11-04T18:03:08+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 13,
-          "title": "K뷰티도 실적 눈높이 낮춘다…LG생건·에이피알 목표가 줄하향",
-          "link": "https://n.news.naver.com/mnews/article/011/0004678776?sid=101258401",
-          "upload_time": "20261104180108",
-          "published_at": "2026-11-04T18:01:08+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 14,
-          "title": "넥센타이어, 3분기 영업이익 61% 급감…높아진 원재료값에 ‘휘청’",
-          "link": "https://n.news.naver.com/mnews/article/011/0004678766?sid=101258401",
-          "upload_time": "20261104174912",
-          "published_at": "2026-11-04T17:49:12+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 15,
-          "title": "코넥스 하루 거래 2억 원대…코스닥 기업 옮겨도 재기 기반 취약",
-          "link": "https://n.news.naver.com/mnews/article/011/0004678760?sid=101258401",
-          "upload_time": "20261104174812",
-          "published_at": "2026-11-04T17:48:12+09:00"
         }
       ]
     },
@@ -265,8 +265,24 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "동행미디어 시대",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "저PBR 딱지 붙자 주가 들썩였지만…\"현금 없는 저평가주 피해야\"",
+          "link": "https://n.news.naver.com/mnews/article/277/0005838210?sid=101258402",
+          "upload_time": "20261105062300",
+          "published_at": "2026-11-05T06:23:00+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "美는 기존 펀드 합쳐 ETF 보수 9%↓…韓은 상장클래스 2개뿐",
+          "link": "https://n.news.naver.com/mnews/article/011/0004678873?sid=101258402",
+          "upload_time": "20261105061210",
+          "published_at": "2026-11-05T06:12:10+09:00"
+        },
+        {
+          "press_name": "동행미디어 시대",
+          "rank": 3,
           "title": "대기업도 로봇기술 확보에 미래 걸었다",
           "link": "https://n.news.naver.com/mnews/article/417/0001163293?sid=101258402",
           "upload_time": "20261105054500",
@@ -274,7 +290,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 2,
+          "rank": 4,
           "title": "지방간염, K신약이 판 뒤집을까",
           "link": "https://n.news.naver.com/mnews/article/417/0001163291?sid=101258402",
           "upload_time": "20261105053500",
@@ -282,7 +298,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 3,
+          "rank": 5,
           "title": "방산 3분기 실적 희비…KAI만 웃나",
           "link": "https://n.news.naver.com/mnews/article/417/0001163290?sid=101258402",
           "upload_time": "20261105053000",
@@ -290,7 +306,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 4,
+          "rank": 6,
           "title": "연구부터 생산까지…뷰티기기 특허 100건의 힘",
           "link": "https://n.news.naver.com/mnews/article/417/0001163289?sid=101258402",
           "upload_time": "20261105052500",
@@ -298,7 +314,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 5,
+          "rank": 7,
           "title": "\"버텨야 한다\"…삼전닉스 급락, 실적 아닌 '이것' 때문이라는데[부꾸미]",
           "link": "https://n.news.naver.com/mnews/article/008/0005436786?sid=101258402",
           "upload_time": "20261105033000",
@@ -306,7 +322,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 8,
           "title": "\"113% 올랐었는데\"…15만원→5만원대 된 풍산, 매수해도 될까 [종목e슈]",
           "link": "https://n.news.naver.com/mnews/article/018/0006403853?sid=101258402",
           "upload_time": "20261105000207",
@@ -314,7 +330,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 9,
           "title": "또 '232조 돈방석' 예고 떴는데…삼전닉스 결국 뒤집힌 이유 [분석+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005350450?sid=101258402",
           "upload_time": "20261104220113",
@@ -322,7 +338,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 8,
+          "rank": 10,
           "title": "호반그룹, 한진칼 최대주주 등극…조원태 회장 측 0.11%p 앞질러",
           "link": "https://n.news.naver.com/mnews/article/014/0005599586?sid=101258402",
           "upload_time": "20261104211417",
@@ -330,7 +346,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 9,
+          "rank": 11,
           "title": "“미국서 훈풍 불어온다”…‘블루웨이브’에 기대 커진 이곳 [주식R]",
           "link": "https://n.news.naver.com/mnews/article/215/0001271689?sid=101258402",
           "upload_time": "20261104210000",
@@ -338,7 +354,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 10,
+          "rank": 12,
           "title": "CJ·신세계·다우키움 컨소시엄 … 5200억에 중앙일보 인수 계약",
           "link": "https://n.news.naver.com/mnews/article/009/0005759152?sid=101258402",
           "upload_time": "20261104193108",
@@ -346,7 +362,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 11,
+          "rank": 13,
           "title": "[클릭 e종목]\"카카오게임즈, 게임업종 톱픽…목표가 상향\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005838171?sid=101258402",
           "upload_time": "20261104192718",
@@ -354,7 +370,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 12,
+          "rank": 14,
           "title": "호반그룹, 한진칼 최대주주 됐다…조원태 회장에 0.11%p 앞서",
           "link": "https://n.news.naver.com/mnews/article/015/0005350412?sid=101258402",
           "upload_time": "20261104182911",
@@ -362,27 +378,11 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 13,
+          "rank": 15,
           "title": "새내기주 부진한 IPO시장… ‘옥석 가리기’ 본격화",
           "link": "https://n.news.naver.com/mnews/article/014/0005599524?sid=101258402",
           "upload_time": "20261104182716",
           "published_at": "2026-11-04T18:27:16+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 14,
-          "title": "\"증권사 PB 하루가 궁금\"… 한양證 유튜브, 구독 1만2천명 돌파",
-          "link": "https://n.news.naver.com/mnews/article/014/0005599523?sid=101258402",
-          "upload_time": "20261104182713",
-          "published_at": "2026-11-04T18:27:13+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 15,
-          "title": "제약·음식료 뜨고 은행·통신 지고… 급락장 속 방어주 희비",
-          "link": "https://n.news.naver.com/mnews/article/014/0005599522?sid=101258402",
-          "upload_time": "20261104182711",
-          "published_at": "2026-11-04T18:27:11+09:00"
         }
       ]
     },
@@ -390,8 +390,56 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "한국경제TV",
           "rank": 1,
+          "title": "\"증시도 압승\"…'3% 깜짝' 다우지수, 가장 크게 웃은 이유",
+          "link": "https://n.news.naver.com/mnews/article/215/0001271698?sid=101258403",
+          "upload_time": "20261105062209",
+          "published_at": "2026-11-05T06:22:09+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
+          "title": "[속보] 필라델피아 반도체 3% 급락…텍사스 AI 데이터센터 건설 중단 우려",
+          "link": "https://n.news.naver.com/mnews/article/015/0005350480?sid=101258403",
+          "upload_time": "20261105061312",
+          "published_at": "2026-11-05T06:13:12+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 3,
+          "title": "美는 기존 펀드 합쳐 ETF 보수 9%↓…韓은 상장클래스 2개뿐",
+          "link": "https://n.news.naver.com/mnews/article/011/0004678873?sid=101258403",
+          "upload_time": "20261105061210",
+          "published_at": "2026-11-05T06:12:10+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 4,
+          "title": "[속보] 美중간선거 끝나자 다우지수 3% 급등…18개월 만에 최대폭 상승",
+          "link": "https://n.news.naver.com/mnews/article/015/0005350479?sid=101258403",
+          "upload_time": "20261105061018",
+          "published_at": "2026-11-05T06:10:18+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 5,
+          "title": "[속보]뉴욕증시, 정치적 불확실성 해소에 급등 마감",
+          "link": "https://n.news.naver.com/mnews/article/277/0005838207?sid=101258403",
+          "upload_time": "20261105060755",
+          "published_at": "2026-11-05T06:07:55+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 6,
+          "title": "[속보]민주 압승·유가 급락에 다우 3% 급등…반도체는 약세",
+          "link": "https://n.news.naver.com/mnews/article/018/0006403893?sid=101258403",
+          "upload_time": "20261105060614",
+          "published_at": "2026-11-05T06:06:14+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 7,
           "title": "이란 최고지도자 \"美 민주당 압승에도 대이란 적대정책 불변\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005838197?sid=101258403",
           "upload_time": "20261105002625",
@@ -399,7 +447,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 8,
           "title": "美 10월 ADP 민간고용 8만6000명 ↑…시장 예상 상회",
           "link": "https://n.news.naver.com/mnews/article/277/0005838196?sid=101258403",
           "upload_time": "20261105000224",
@@ -407,7 +455,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 9,
           "title": "민주당 압승·트럼프 승복에…다우·나스닥 2%대 급등 출발",
           "link": "https://n.news.naver.com/mnews/article/018/0006403851?sid=101258403",
           "upload_time": "20261104234811",
@@ -415,7 +463,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 10,
           "title": "“美 선거에 日 증시 흔들렸는데”…中 증시는 2.3% 상승",
           "link": "https://n.news.naver.com/mnews/article/018/0006403831?sid=101258403",
           "upload_time": "20261104213710",
@@ -423,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 11,
           "title": "美 중간선거 여파에 일본 증시도 하락…닛케이 1.4%↓",
           "link": "https://n.news.naver.com/mnews/article/018/0006403829?sid=101258403",
           "upload_time": "20261104212613",
@@ -431,7 +479,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 12,
           "title": "AI·가상자산 긴장…헬스케어株는 반색",
           "link": "https://n.news.naver.com/mnews/article/018/0006403791?sid=101258403",
           "upload_time": "20261104192017",
@@ -439,7 +487,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 13,
           "title": "中 창신메모리, 자사주 매입 1조원까지 두 배 늘려…13% 폭등",
           "link": "https://n.news.naver.com/mnews/article/015/0005350419?sid=101258403",
           "upload_time": "20261104190311",
@@ -447,7 +495,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 8,
+          "rank": 14,
           "title": "\"돈 싸게 빌려 줄 테니 주식 사세요\"…中인민은행이 꺼낸 파격 조치",
           "link": "https://n.news.naver.com/mnews/article/215/0001271679?sid=101258403",
           "upload_time": "20261104184532",
@@ -455,59 +503,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 9,
+          "rank": 15,
           "title": "\"투기판 된 美증시, 폭락올수도\"",
           "link": "https://n.news.naver.com/mnews/article/015/0005350337?sid=101258403",
           "upload_time": "20261104174227",
           "published_at": "2026-11-04T17:42:27+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 10,
-          "title": "美 텍사스주, ‘AI 인프라 반대’ 민주당 히노호사 주지사 선출",
-          "link": "https://n.news.naver.com/mnews/article/015/0005350313?sid=101258403",
-          "upload_time": "20261104173616",
-          "published_at": "2026-11-04T17:36:16+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 11,
-          "title": "“기업이 합쳤는데 왜 세금 내라는 거냐”…테슬라·스페이스X 합병 가능성에 청원",
-          "link": "https://n.news.naver.com/mnews/article/009/0005759030?sid=101258403",
-          "upload_time": "20261104173207",
-          "published_at": "2026-11-04T17:32:07+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 12,
-          "title": "美 중간선거에 출렁인 日 닛케이지수…급락 뒤 1.42% 하락 마감(종합)",
-          "link": "https://n.news.naver.com/mnews/article/001/0016422069?sid=101258403",
-          "upload_time": "20261104164324",
-          "published_at": "2026-11-04T16:43:24+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 13,
-          "title": "미 중간선거 결과에 나스닥선물·亞증시 출렁(종합)",
-          "link": "https://n.news.naver.com/mnews/article/001/0016421857?sid=101258403",
-          "upload_time": "20261104155452",
-          "published_at": "2026-11-04T15:54:52+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 14,
-          "title": "NBC \"美 민주당, 상원 53석 유력\"…'블루쓰나미' 현실화[美 중간선거, 운명의 날]",
-          "link": "https://n.news.naver.com/mnews/article/277/0005838069?sid=101258403",
-          "upload_time": "20261104153343",
-          "published_at": "2026-11-04T15:33:43+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 15,
-          "title": "AI 정책 우려에 나스닥선물 급락…아시아증시도 흔들",
-          "link": "https://n.news.naver.com/mnews/article/001/0016421605?sid=101258403",
-          "upload_time": "20261104150252",
-          "published_at": "2026-11-04T15:02:52+09:00"
         }
       ]
     },
@@ -807,7 +807,7 @@
       ]
     }
   ],
-  "ai_commentary": "미국 대선 결과에 따른 불확실성이 해소되면서 그간의 변동성에서 벗어나 투자 심리가 회복된 영향으로 국내 증시가 상승 마감했다. 반도체주를 포함한 주요 종목들에 대한 매수세가 유입되면서 코스피와 코스닥 지수 모두 반등에 성공했다.",
+  "ai_commentary": "미국 중간선거 결과가 가시화되면서 불확실성이 해소된 점이 투자 심리에 긍정적인 영향을 미쳤다. 특히 미국 증시의 상승세와 맞물려 국내 증시에서도 반도체 등 주요 종목을 중심으로 매수세가 유입되며 지수가 반등했다.",
   "top_gainers": [
     {
       "name": "한진칼우",
