@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-06 07:31:06",
+  "updated_at": "2026-11-06 08:01:16",
   "market_mood": {
-    "label": "급락",
-    "emoji": "🔴",
-    "kospi_change": -5.28,
-    "kosdaq_change": -5.11,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 5383.8,
     "kosdaq_value": 678.41
   },
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "전국 아파트 경매 건수 12년 7개월 만에 최다 기록하며 주택 공급 위축 심화"
-    },
-    {
-      "category": "증권",
-      "text": "미국 증시에서 AI 관련 기술주가 투매 현상으로 급락한 영향이 국내 증시로 이어지며 코스피와 코스닥 지수가 동반 하락했다. 특히 반도체와 데이터센터 관련 종목을 중심으로 매도세가 집중되면서 코스닥 지수는 최근 97일간 데이터 기준 최저치를 기록했다."
     }
   ],
   "daily_term": {
@@ -85,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "삼성바이오로직스",
+      "corp_code": "00877059",
+      "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
+      "rcept_dt": "20261106",
+      "rcept_no": "20261106000001",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000001",
+      "ai_explanation": "다른 회사의 주식이나 지분을 취득하기로 한 기존 공시의 내용을 정정하여 보고함."
+    },
+    {
       "corp_name": "대구백화점",
       "corp_code": "00108977",
       "report_nm": "[기재정정]주요사항보고서(유형자산양도결정)",
       "rcept_dt": "20261106",
       "rcept_no": "20261105000575",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000575",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등 자산을 매각하기로 한 결정을 이전 공시 내용 수정과 함께 알리는 것입니다."
+      "ai_explanation": "회사가 보유한 건물이나 토지 등 유형자산을 매각하기로 한 기존 공시의 내용을 정정하여 보고함."
     }
   ],
   "macro_indicators": [
@@ -2979,160 +2984,160 @@
     {
       "name": "깨끗한나라우",
       "price": "4,030",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "동양우",
       "price": "7,670",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "깨끗한나라",
       "price": "1,554",
-      "change_percent": "+29.93%",
-      "pct": 29.93
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "동양2우B",
       "price": "4,000",
-      "change_percent": "+29.87%",
-      "pct": 29.87
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "성창기업지주",
       "price": "6,350",
-      "change_percent": "+29.86%",
-      "pct": 29.86
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "top_losers": [
     {
       "name": "하나 레버리지 반도체 ETN",
       "price": "88,715",
-      "change_percent": "-23.33%",
-      "pct": 23.33
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "미래에셋 레버리지 반도체 ETN",
       "price": "12,460",
-      "change_percent": "-23.13%",
-      "pct": 23.13
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "KODEX 반도체레버리지",
       "price": "37,450",
-      "change_percent": "-22.15%",
-      "pct": 22.15
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "키움 레버리지 전력 TOP5 ETN",
       "price": "5,865",
-      "change_percent": "-21.70%",
-      "pct": 21.7
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "한투 레버리지WTI원유선물 ETN B",
       "price": "47,945",
-      "change_percent": "-20.22%",
-      "pct": 20.22
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_performance": [
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+8.70%",
-      "pct": 8.7
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "비철금속",
-      "change_value": "+7.34%",
-      "pct": 7.34
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+5.42%",
-      "pct": 5.42
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+4.83%",
-      "pct": 4.83
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+4.81%",
-      "pct": 4.81
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+8.70%",
-      "pct": 8.7
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "비철금속",
-      "change_value": "+7.34%",
-      "pct": 7.34
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+5.42%",
-      "pct": 5.42
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+4.83%",
-      "pct": 4.83
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "+4.81%",
-      "pct": 4.81
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "화장품",
-      "change_value": "+4.66%",
-      "pct": 4.66
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "복합기업",
-      "change_value": "-5.84%",
-      "pct": -5.84
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-8.12%",
-      "pct": -8.12
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-8.63%",
-      "pct": -8.63
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "통신장비",
-      "change_value": "-9.40%",
-      "pct": -9.4
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기장비",
-      "change_value": "-11.76%",
-      "pct": -11.76
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-13.47%",
-      "pct": -13.47
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
     "종합": 410,
     "경제": 30,
     "부동산": 30,
-    "증권": 79
+    "증권": 80
   },
   "article_count_trend": {
     "종합": {
@@ -3154,9 +3159,9 @@
       "surge": false
     },
     "증권": {
-      "today": 79,
+      "today": 80,
       "yesterday": 90,
-      "change_pct": -12.2,
+      "change_pct": -11.1,
       "surge": false
     }
   }
