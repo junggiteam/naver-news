@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06 07:01:04",
+  "updated_at": "2026-11-06 07:30:57",
   "indices": [
     {
       "name": "코스피",
@@ -34,14 +34,14 @@
       "value": "24,315.00",
       "change_percent": "▼5.52%",
       "direction": "down",
-      "as_of": "2026-11-05 17:00:54"
+      "as_of": "2026-11-05 17:15:59"
     },
     {
       "name": "나스닥100",
       "value": "26,629.81",
       "change_percent": "▼6.36%",
       "direction": "down",
-      "as_of": "2026-11-05 17:00:50"
+      "as_of": "2026-11-05 17:15:59"
     },
     {
       "name": "S&P500",
@@ -69,21 +69,21 @@
       "value": "1,356.50",
       "change_percent": "▲1.04%",
       "direction": "up",
-      "as_of": "2026-11-06 06:26:17"
+      "as_of": "2026-11-06 07:27:03"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "860.26",
-      "change_percent": "▲1.50%",
+      "value": "860.34",
+      "change_percent": "▲1.51%",
       "direction": "up",
-      "as_of": "2026-11-06 06:26:17"
+      "as_of": "2026-11-06 07:27:03"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,521.72",
-      "change_percent": "▲0.93%",
+      "value": "1,521.86",
+      "change_percent": "▲0.94%",
       "direction": "up",
-      "as_of": "2026-11-06 06:26:17"
+      "as_of": "2026-11-06 07:27:03"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "91.07",
-      "change_percent": "▲3.35%",
+      "value": "90.52",
+      "change_percent": "▲2.72%",
       "direction": "up",
-      "as_of": "2026-11-05 15:50:29"
+      "as_of": "2026-11-05 16:00:00"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "103,205,000",
-      "change_percent": "▼4.73%",
+      "value": "103,366,000",
+      "change_percent": "▼4.58%",
       "direction": "down",
-      "as_of": "2026-11-06 07:01:02"
+      "as_of": "2026-11-06 07:30:49"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "3,029,000",
-      "change_percent": "▼7.17%",
+      "value": "3,043,000",
+      "change_percent": "▼6.74%",
       "direction": "down",
-      "as_of": "2026-11-06 07:01:02"
+      "as_of": "2026-11-06 07:30:56"
     }
   ],
   "news_categories": [
@@ -140,8 +140,24 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "AI 기술주 투매에 폭락…나스닥 5.5%↓ [뉴욕증시 브리핑]",
+          "link": "https://n.news.naver.com/mnews/article/015/0005350985?sid=101258401",
+          "upload_time": "20261106071414",
+          "published_at": "2026-11-06T07:14:14+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "글로벌 시밀러 판매 호조에…셀트리온, 롯데바이오와 생산위탁 손 잡나",
+          "link": "https://n.news.naver.com/mnews/article/011/0004679341?sid=101258401",
+          "upload_time": "20261106070213",
+          "published_at": "2026-11-06T07:02:13+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 3,
           "title": "[글로벌증시] 블루쓰나미 후폭풍…뉴욕증시, AI기술주 '폭락'",
           "link": "https://n.news.naver.com/mnews/article/422/0000923382?sid=101258401",
           "upload_time": "20261106065310",
@@ -149,7 +165,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 4,
           "title": "[속보] 뉴욕증시, 기술주 투매에 급락…나스닥 5.5%↓",
           "link": "https://n.news.naver.com/mnews/article/422/0000923380?sid=101258401",
           "upload_time": "20261106063613",
@@ -157,7 +173,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 5,
           "title": "“예금으로 노후 준비가 됩니까”...은퇴 한참 남은 2030도 이 펀드로 몰린다",
           "link": "https://n.news.naver.com/mnews/article/009/0005759834?sid=101258401",
           "upload_time": "20261106060007",
@@ -165,7 +181,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 4,
+          "rank": 6,
           "title": "머니투데이 오프라인 헤드라인-6일",
           "link": "https://n.news.naver.com/mnews/article/008/0005437403?sid=101258401",
           "upload_time": "20261106040000",
@@ -173,7 +189,7 @@
         },
         {
           "press_name": "중앙일보",
-          "rank": 5,
+          "rank": 7,
           "title": "트럼프가 맞았는데 코스피가 쓰러졌다",
           "link": "https://n.news.naver.com/mnews/article/025/0003563259?sid=101258401",
           "upload_time": "20261106002904",
@@ -181,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 6,
+          "rank": 8,
           "title": "최태원, 美 중간선거에 \"증시 롤러코스터 계속\"",
           "link": "https://n.news.naver.com/mnews/article/422/0000923333?sid=101258401",
           "upload_time": "20261105221611",
@@ -189,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 7,
+          "rank": 9,
           "title": "상장사 기업분할 급감…\"주식매수청구권 과잉 규제\"",
           "link": "https://n.news.naver.com/mnews/article/422/0000923302?sid=101258401",
           "upload_time": "20261105200910",
@@ -197,7 +213,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 8,
+          "rank": 10,
           "title": "반도체 급락에 코스피 5%↓…자동차는 강세",
           "link": "https://n.news.naver.com/mnews/article/422/0000923301?sid=101258401",
           "upload_time": "20261105200813",
@@ -205,7 +221,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 9,
+          "rank": 11,
           "title": "반도체주 '흔들'…美 AI 규제 향방 예의주시",
           "link": "https://n.news.naver.com/mnews/article/422/0000923300?sid=101258401",
           "upload_time": "20261105200616",
@@ -213,7 +229,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 10,
+          "rank": 12,
           "title": "美 앰코, 광주 반도체 증설…英 엔스케일은 구미에 AIDC",
           "link": "https://n.news.naver.com/mnews/article/011/0004679256?sid=101258401",
           "upload_time": "20261105184609",
@@ -221,7 +237,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 11,
+          "rank": 13,
           "title": "美민주당 데이터센터 규제하나... 반도체·전력 인프라주 '날벼락' [불안한 증시]",
           "link": "https://n.news.naver.com/mnews/article/014/0005600243?sid=101258401",
           "upload_time": "20261105183609",
@@ -229,7 +245,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 12,
+          "rank": 14,
           "title": "비중 쏠리고 자금 몰리고… 삼전닉스에 명운 건 코스피 ETF",
           "link": "https://n.news.naver.com/mnews/article/014/0005600217?sid=101258401",
           "upload_time": "20261105182812",
@@ -237,27 +253,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 13,
+          "rank": 15,
           "title": "17조 넘긴 채권혼합 ETF…운용사 신상품 경쟁 가열",
           "link": "https://n.news.naver.com/mnews/article/011/0004679228?sid=101258401",
           "upload_time": "20261105180707",
           "published_at": "2026-11-05T18:07:07+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 14,
-          "title": "한스바이오메드, 룩셈부르크 조직은행과 공급계약…유럽 시장 공략",
-          "link": "https://n.news.naver.com/mnews/article/011/0004679226?sid=101258401",
-          "upload_time": "20261105180507",
-          "published_at": "2026-11-05T18:05:07+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 15,
-          "title": "1m 점프에 태권도까지…K로봇, 어디까지 진화했나",
-          "link": "https://n.news.naver.com/mnews/article/018/0006404562?sid=101258401",
-          "upload_time": "20261105180010",
-          "published_at": "2026-11-05T18:00:10+09:00"
         }
       ]
     },
@@ -265,16 +265,24 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "머니투데이",
           "rank": 1,
-          "title": "\"회장님들 경쟁에 주가 뛴다\"…호반건설, 한진칼 최대주주로 [분석+]",
+          "title": "코스피 야간선물 7%대 급락…美 기술주 투매 여파",
+          "link": "https://n.news.naver.com/mnews/article/008/0005437455?sid=101258402",
+          "upload_time": "20261106071133",
+          "published_at": "2026-11-06T07:11:33+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
+          "title": "회장님들 '쩐의 전쟁'에 들썩…나흘 만에 주가 135% 뛰었다 [분석+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005350975?sid=101258402",
           "upload_time": "20261106063115",
           "published_at": "2026-11-06T06:31:15+09:00"
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "TPG, 8300억 들여 롯데렌탈 잔여지분 공개매수…상장폐지 추진",
           "link": "https://n.news.naver.com/mnews/article/009/0005759836?sid=101258402",
           "upload_time": "20261106060107",
@@ -282,7 +290,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 4,
           "title": "‘장중 8% 급등’ 현대차 “무슨 일 있나요?”…30% 폭락하더니 급반등한 이유",
           "link": "https://n.news.naver.com/mnews/article/011/0004679310?sid=101258402",
           "upload_time": "20261106060010",
@@ -290,7 +298,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 5,
           "title": "“예금으로 노후 준비가 됩니까”...은퇴 한참 남은 2030도 이 펀드로 몰린다",
           "link": "https://n.news.naver.com/mnews/article/009/0005759834?sid=101258402",
           "upload_time": "20261106060007",
@@ -298,7 +306,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 5,
+          "rank": 6,
           "title": "심텍, AI서버 기판 덕에 분기 영업익 1000억 돌파",
           "link": "https://n.news.naver.com/mnews/article/417/0001163435?sid=101258402",
           "upload_time": "20261106054000",
@@ -306,7 +314,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
+          "rank": 7,
           "title": "\"더 떨어질까 겁나는데\"…반도체주 급락에 증권가 '깜짝' 전망 [분석+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005350938?sid=101258402",
           "upload_time": "20261105220116",
@@ -314,7 +322,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 7,
+          "rank": 8,
           "title": "\"투자 결실 모두 주주에게\"…KT&G 방경만의 '수확론'",
           "link": "https://n.news.naver.com/mnews/article/417/0001163422?sid=101258402",
           "upload_time": "20261105190337",
@@ -322,7 +330,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 8,
+          "rank": 9,
           "title": "[단독]IMM PE 에어퍼스트 컨티뉴펀드에 유럽 최대 사모펀드 EQT 그룹 투자 받는다",
           "link": "https://n.news.naver.com/mnews/article/009/0005759788?sid=101258402",
           "upload_time": "20261105185214",
@@ -330,7 +338,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 9,
+          "rank": 10,
           "title": "주식 담보로 1700억 빚냈는데… 증시 급락에 잠못드는 대주주 [불안한 증시]",
           "link": "https://n.news.naver.com/mnews/article/014/0005600259?sid=101258402",
           "upload_time": "20261105183918",
@@ -338,7 +346,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "한온시스템, R&D 비용 더 털고도 이익률 4.5%…\"실적 반전 신호탄\"",
           "link": "https://n.news.naver.com/mnews/article/014/0005600242?sid=101258402",
           "upload_time": "20261105183522",
@@ -346,7 +354,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 11,
+          "rank": 12,
           "title": "대출 잔액 줄어도 담보주식 늘어… 커지는 반대매매 공포 [불안한 증시]",
           "link": "https://n.news.naver.com/mnews/article/014/0005600240?sid=101258402",
           "upload_time": "20261105183518",
@@ -354,7 +362,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 12,
+          "rank": 13,
           "title": "미래에셋그룹, AI·디지털 중심 조직 재정비",
           "link": "https://n.news.naver.com/mnews/article/014/0005600224?sid=101258402",
           "upload_time": "20261105182827",
@@ -362,7 +370,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 13,
+          "rank": 14,
           "title": "출범 7개월 BDC시장… 상품 출시 1개 그쳐",
           "link": "https://n.news.naver.com/mnews/article/014/0005600218?sid=101258402",
           "upload_time": "20261105182814",
@@ -370,19 +378,11 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 14,
+          "rank": 15,
           "title": "하나에어로다이내믹스, 코스닥 '노크'",
           "link": "https://n.news.naver.com/mnews/article/014/0005600212?sid=101258402",
           "upload_time": "20261105182612",
           "published_at": "2026-11-05T18:26:12+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 15,
-          "title": "신한증권, 보이스피싱 예방체계 강화",
-          "link": "https://n.news.naver.com/mnews/article/014/0005600211?sid=101258402",
-          "upload_time": "20261105182611",
-          "published_at": "2026-11-05T18:26:11+09:00"
         }
       ]
     },
@@ -390,8 +390,64 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "한국경제TV",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "AI 규제 공포에 나스닥 5.5%↓…작년 4월 이후 최대 낙폭(종합)",
+          "link": "https://n.news.naver.com/mnews/article/001/0016425285?sid=101258403",
+          "upload_time": "20261106072157",
+          "published_at": "2026-11-06T07:21:57+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "[美특징주]나스닥 5% 급락…AI주 매도세 확산",
+          "link": "https://n.news.naver.com/mnews/article/018/0006404684?sid=101258403",
+          "upload_time": "20261106071908",
+          "published_at": "2026-11-06T07:19:08+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
+          "title": "[뉴욕증시]민주 2008년 이후 최대 승리…AI 규제 우려에 나스닥 5%대 폭락 마감(종합)",
+          "link": "https://n.news.naver.com/mnews/article/277/0005838874?sid=101258403",
+          "upload_time": "20261106071112",
+          "published_at": "2026-11-06T07:11:12+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 4,
+          "title": "AI엔 돈 아끼지 않더니…MS 돌변에 반도체주 '비명' [美증시 특징주]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001271860?sid=101258403",
+          "upload_time": "20261106070136",
+          "published_at": "2026-11-06T07:01:36+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 5,
+          "title": "나스닥 조정 국면 진입...美 중간선거 후폭풍-[굿모닝 글로벌 이슈]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001271859?sid=101258403",
+          "upload_time": "20261106070118",
+          "published_at": "2026-11-06T07:01:18+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 6,
+          "title": "美 증시, AI 기술주 투매에 급락…나스닥 5.5%↓-[글로벌 마감 시황]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001271858?sid=101258403",
+          "upload_time": "20261106070104",
+          "published_at": "2026-11-06T07:01:04+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 7,
+          "title": "하루도 안 걸렸다! 트럼프, 본색 드러내! | 패배 인정? no! 한미 증시, ‘VIX-FGI 쇼크’ 발생 | 한상춘 한국경제신문사 논설위원",
+          "link": "https://n.news.naver.com/mnews/article/215/0001271857?sid=101258403",
+          "upload_time": "20261106070042",
+          "published_at": "2026-11-06T07:00:42+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 8,
           "title": "美 증시, 공포 구간 진입…필라델피아 반도체지수 12% 급락 [글로벌 머니플로우]",
           "link": "https://n.news.naver.com/mnews/article/215/0001271856?sid=101258403",
           "upload_time": "20261106065639",
@@ -399,15 +455,15 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
-          "title": "美민주당 AI 규제 우려에 기술주 투매…나스닥 5.5% 폭락 [월스트리트in]",
+          "rank": 9,
+          "title": "美민주당 AI 규제 공포에 '패닉'…나스닥 5.5% 폭락 [월스트리트in]",
           "link": "https://n.news.naver.com/mnews/article/018/0006404678?sid=101258403",
           "upload_time": "20261106065208",
           "published_at": "2026-11-06T06:52:08+09:00"
         },
         {
           "press_name": "한국경제",
-          "rank": 3,
+          "rank": 10,
           "title": "\"하루 만에 4300조 증발\"…AI 공포에 뉴욕증시 무너졌다 [종합]",
           "link": "https://n.news.naver.com/mnews/article/015/0005350977?sid=101258403",
           "upload_time": "20261106064710",
@@ -415,7 +471,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 11,
           "title": "[뉴욕증시]민주 2008년 이후 최대 승리…AI 규제 우려에 나스닥 5%대 폭락 마감",
           "link": "https://n.news.naver.com/mnews/article/277/0005838867?sid=101258403",
           "upload_time": "20261106064144",
@@ -423,7 +479,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 5,
+          "rank": 12,
           "title": "밤 사이 무슨 일이…증시 '태풍' 불자 예외없이 '우수수'",
           "link": "https://n.news.naver.com/mnews/article/215/0001271853?sid=101258403",
           "upload_time": "20261106063211",
@@ -431,7 +487,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 6,
+          "rank": 13,
           "title": "[2보] 뉴욕증시, AI 기술주 투매에 급락…나스닥 5.5%↓",
           "link": "https://n.news.naver.com/mnews/article/001/0016425261?sid=101258403",
           "upload_time": "20261106062026",
@@ -439,7 +495,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 7,
+          "rank": 14,
           "title": "클리블랜드 연은 총재 \"인플레 억제 위해 추가 긴축 필요\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005838866?sid=101258403",
           "upload_time": "20261106061514",
@@ -447,67 +503,11 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 8,
+          "rank": 15,
           "title": "[속보] 뉴욕증시, AI 기술주 투매에 급락…나스닥 5.5%↓",
           "link": "https://n.news.naver.com/mnews/article/009/0005759839?sid=101258403",
           "upload_time": "20261106061307",
           "published_at": "2026-11-06T06:13:07+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 9,
-          "title": "[속보] AI 기술주 투매에 뉴욕증시 급락…나스닥 5.5%↓",
-          "link": "https://n.news.naver.com/mnews/article/015/0005350969?sid=101258403",
-          "upload_time": "20261106061110",
-          "published_at": "2026-11-06T06:11:10+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 10,
-          "title": "[속보] 美민주당 의회 장악 후폭풍에 뉴욕증시 급락…나스닥 5.5%↓",
-          "link": "https://n.news.naver.com/mnews/article/018/0006404667?sid=101258403",
-          "upload_time": "20261106061010",
-          "published_at": "2026-11-06T06:10:10+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 11,
-          "title": "[속보]민주 압승에 AI 규제 우려로 나스닥 5.5% 폭락 마감",
-          "link": "https://n.news.naver.com/mnews/article/277/0005838864?sid=101258403",
-          "upload_time": "20261106060808",
-          "published_at": "2026-11-06T06:08:08+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 12,
-          "title": "[1보] 뉴욕증시, AI 기술주 투매에 급락…나스닥 5.5%↓",
-          "link": "https://n.news.naver.com/mnews/article/001/0016425252?sid=101258403",
-          "upload_time": "20261106060726",
-          "published_at": "2026-11-06T06:07:26+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 13,
-          "title": "[美블루쓰나미]민주, 하원 250석 돌파…상원도 최대 56석 확보 기대",
-          "link": "https://n.news.naver.com/mnews/article/277/0005838860?sid=101258403",
-          "upload_time": "20261106051912",
-          "published_at": "2026-11-06T05:19:12+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 14,
-          "title": "팔로알토캐피탈, 美 1호 휴머노이드 상장사 '어질리티 로보틱스' 지분투자",
-          "link": "https://n.news.naver.com/mnews/article/015/0005350964?sid=101258403",
-          "upload_time": "20261106012318",
-          "published_at": "2026-11-06T01:23:18+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "[美블루쓰나미]초접전 속출…상·하원 50석 당선인 미확정",
-          "link": "https://n.news.naver.com/mnews/article/277/0005838858?sid=101258403",
-          "upload_time": "20261106011338",
-          "published_at": "2026-11-06T01:13:38+09:00"
         }
       ]
     },
@@ -799,7 +799,7 @@
       ]
     }
   ],
-  "ai_commentary": "뉴욕 증시에서 기술주가 큰 폭으로 하락하고 미국 민주당의 데이터센터 규제 우려가 더해지면서 국내 반도체 관련주를 중심으로 매도세가 이어졌다. 이에 따라 코스피는 5.28% 하락했고, 코스닥은 최근 97일간 데이터 기준 가장 낮은 수치를 기록하며 5.11% 내렸다.",
+  "ai_commentary": "미국 증시에서 AI 관련 기술주가 투매 현상으로 급락한 영향이 국내 증시로 이어지며 코스피와 코스닥 지수가 동반 하락했다. 특히 반도체와 데이터센터 관련 종목을 중심으로 매도세가 집중되면서 코스닥 지수는 최근 97일간 데이터 기준 최저치를 기록했다.",
   "top_gainers": [
     {
       "name": "깨끗한나라우",
