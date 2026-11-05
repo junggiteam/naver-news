@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-05 10:32:42",
+  "updated_at": "2026-11-05 11:01:18",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -4.18,
-    "kosdaq_change": -4.31,
-    "kospi_value": 5445.98,
-    "kosdaq_value": 684.14
+    "kospi_change": -3.96,
+    "kosdaq_change": -3.98,
+    "kospi_value": 5458.83,
+    "kosdaq_value": 686.47
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "반도체 관련 종목의 급락과 외국인의 매도세가 이어지며 오늘 코스피와 코스닥 지수는 각각 4%대 하락했습니다. 이번 하락으로 코스피와 코스닥 지수는 최근 96일간 데이터 기준으로 최저치를 기록했으며, 코스피 시장에는 매도 사이드카가 발동되었습니다."
+      "text": "미국 대선 결과에 따른 시장 불안 심리와 반도체 관련주 급락이 맞물리며 코스피와 코스닥 지수가 모두 4% 가까이 하락했습니다. 이 과정에서 외국인 매도세가 이어지며 코스피 시장에 매도 사이드카가 발동되었고, 두 지수 모두 최근 96일간 데이터 기준 최저치를 기록했습니다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "MH머트리얼즈",
+      "corp_code": "00120872",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261105",
+      "rcept_no": "20261105000062",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000062",
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매입하기로 결정했다는 의미입니다."
+    },
+    {
       "corp_name": "카카오",
       "corp_code": "00258801",
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000008",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000008",
-      "ai_explanation": "회사가 주가 안정이나 주주 가치 제고를 위해 자사 주식을 직접 사들이기로 결정함."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 매입하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "피노",
@@ -99,7 +108,7 @@
       "rcept_dt": "20261105",
       "rcept_no": "20261105000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000001",
-      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 자본금을 늘리기로 결정함."
+      "ai_explanation": "회사가 자금을 조달하기 위해 새로운 주식을 발행해 주주에게 판매하기로 결정했다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -3003,16 +3012,16 @@
       "pct": 29.86
     },
     {
-      "name": "동양우",
-      "price": "7,490",
-      "change_percent": "+26.95%",
-      "pct": 26.95
+      "name": "깨끗한나라",
+      "price": "1,515",
+      "change_percent": "+26.67%",
+      "pct": 26.67
     },
     {
-      "name": "깨끗한나라",
-      "price": "1,507",
-      "change_percent": "+26.00%",
-      "pct": 26.0
+      "name": "동양우",
+      "price": "7,670",
+      "change_percent": "+30.00%",
+      "pct": 30.0
     }
   ],
   "top_losers": [
@@ -3023,40 +3032,40 @@
       "pct": 19.78
     },
     {
+      "name": "키움 레버리지 전력 TOP5 ETN",
+      "price": "6,075",
+      "change_percent": "-18.89%",
+      "pct": 18.89
+    },
+    {
       "name": "하나 레버리지 반도체 ETN",
-      "price": "93,940",
-      "change_percent": "-18.82%",
-      "pct": 18.82
+      "price": "93,945",
+      "change_percent": "-18.81%",
+      "pct": 18.81
     },
     {
       "name": "삼성 레버리지 WTI원유 선물 ETN",
-      "price": "2,755",
-      "change_percent": "-18.37%",
-      "pct": 18.37
+      "price": "2,745",
+      "change_percent": "-18.67%",
+      "pct": 18.67
     },
     {
-      "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "6,090",
-      "change_percent": "-18.69%",
-      "pct": 18.69
-    },
-    {
-      "name": "미래에셋 레버리지 WTI원유 선물 ETN",
-      "price": "23,415",
-      "change_percent": "-18.07%",
-      "pct": 18.07
+      "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
+      "price": "47,780",
+      "change_percent": "-18.51%",
+      "pct": 18.51
     }
   ],
   "sector_performance": [
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+5.81%",
-      "pct": 5.81
+      "change_value": "+6.83%",
+      "pct": 6.83
     },
     {
       "name": "비철금속",
-      "change_value": "+5.58%",
-      "pct": 5.58
+      "change_value": "+5.81%",
+      "pct": 5.81
     },
     {
       "name": "방송과엔터테인먼트",
@@ -3065,25 +3074,25 @@
     },
     {
       "name": "제약",
-      "change_value": "+4.59%",
-      "pct": 4.59
+      "change_value": "+4.74%",
+      "pct": 4.74
     },
     {
-      "name": "담배",
-      "change_value": "+4.43%",
-      "pct": 4.43
+      "name": "다각화된통신서비스",
+      "change_value": "+4.45%",
+      "pct": 4.45
     }
   ],
   "sector_heatmap": [
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+5.81%",
-      "pct": 5.81
+      "change_value": "+6.83%",
+      "pct": 6.83
     },
     {
       "name": "비철금속",
-      "change_value": "+5.58%",
-      "pct": 5.58
+      "change_value": "+5.81%",
+      "pct": 5.81
     },
     {
       "name": "방송과엔터테인먼트",
@@ -3092,48 +3101,48 @@
     },
     {
       "name": "제약",
-      "change_value": "+4.59%",
-      "pct": 4.59
+      "change_value": "+4.74%",
+      "pct": 4.74
     },
     {
-      "name": "담배",
-      "change_value": "+4.43%",
-      "pct": 4.43
+      "name": "다각화된통신서비스",
+      "change_value": "+4.45%",
+      "pct": 4.45
     },
     {
       "name": "음료",
-      "change_value": "+4.15%",
-      "pct": 4.15
+      "change_value": "+4.21%",
+      "pct": 4.21
     },
     {
       "name": "석유와가스",
-      "change_value": "-5.16%",
-      "pct": -5.16
+      "change_value": "-5.04%",
+      "pct": -5.04
     },
     {
       "name": "우주항공과국방",
-      "change_value": "-5.63%",
-      "pct": -5.63
+      "change_value": "-6.14%",
+      "pct": -6.14
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-6.84%",
-      "pct": -6.84
+      "change_value": "-6.74%",
+      "pct": -6.74
     },
     {
       "name": "통신장비",
-      "change_value": "-8.41%",
-      "pct": -8.41
+      "change_value": "-7.94%",
+      "pct": -7.94
     },
     {
       "name": "전기장비",
-      "change_value": "-10.06%",
-      "pct": -10.06
+      "change_value": "-9.97%",
+      "pct": -9.97
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-10.82%",
-      "pct": -10.82
+      "change_value": "-10.51%",
+      "pct": -10.51
     }
   ],
   "article_counts": {
