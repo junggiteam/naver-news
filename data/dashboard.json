@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-05 11:46:42",
+  "updated_at": "2026-11-05 12:02:20",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -3.22,
-    "kosdaq_change": -3.12,
-    "kospi_value": 5500.52,
-    "kosdaq_value": 692.61
+    "kospi_change": -3.57,
+    "kosdaq_change": -3.66,
+    "kospi_value": 5480.84,
+    "kosdaq_value": 688.76
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "서초구가 도심 주택 공급 활성화를 위해 재건축초과이익환수제 폐지를 건의했다."
+    },
+    {
+      "category": "증권",
+      "text": "미국 증시 내 반도체 관련 종목의 하락세와 데이터센터 규제 우려가 국내 증시에 전해지며 코스피와 코스닥 지수가 큰 폭으로 하락했다. 특히 코스닥 지수는 최근 96일간의 데이터와 비교했을 때 최저치를 기록하며 장을 마감했다. 장중에는 코스피 시장에서 매도 사이드카가 발동되는 등 투자 심리가 위축된 모습을 보였다."
     }
   ],
   "daily_term": {
@@ -80,12 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "매커스",
+      "corp_code": "00596677",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261105",
+      "rcept_no": "20261105000118",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000118",
+      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 자사주를 직접 매입하기로 결정한 것입니다."
+    },
+    {
       "corp_name": "아이브이쥐",
       "corp_code": "01966660",
       "report_nm": "[기재정정]회사합병결정",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000116",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000116"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000116",
+      "ai_explanation": "기존에 공시했던 회사 합병 계획의 내용을 수정하거나 보완하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "카카오인베스트먼트",
@@ -93,7 +107,8 @@
       "report_nm": "[기재정정]회사분할결정",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000111",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000111"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000111",
+      "ai_explanation": "기존에 공시했던 회사 분할 계획의 내용을 수정하거나 보완하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "카카오인베스트먼트",
@@ -101,7 +116,8 @@
       "report_nm": "[기재정정]회사합병결정",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000110",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000110"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000110",
+      "ai_explanation": "기존에 공시했던 회사 합병 계획의 내용을 수정하거나 보완하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "카카오",
@@ -109,7 +125,8 @@
       "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000098",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000098"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000098",
+      "ai_explanation": "기존에 공시했던 회사 분할 계획의 내용을 수정하거나 보완하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "카카오인베스트먼트",
@@ -117,7 +134,8 @@
       "report_nm": "[기재정정]회사합병결정",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000107",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000107"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000107",
+      "ai_explanation": "기존에 공시했던 회사 합병 계획의 내용을 수정하거나 보완하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "카카오",
@@ -125,7 +143,8 @@
       "report_nm": "[기재정정]주요사항보고서(회사합병결정)",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000084",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000084"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000084",
+      "ai_explanation": "기존에 공시했던 회사 합병 계획의 내용을 수정하거나 보완하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "MH머트리얼즈",
@@ -133,7 +152,8 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000062",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000062"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000062",
+      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 자사주를 직접 매입하기로 결정한 것입니다."
     },
     {
       "corp_name": "카카오",
@@ -141,7 +161,8 @@
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000008",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000008"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000008",
+      "ai_explanation": "회사가 주가 안정 및 주주가치 제고를 위해 자사주를 직접 매입하기로 결정한 것입니다."
     },
     {
       "corp_name": "피노",
@@ -149,7 +170,8 @@
       "report_nm": "주요사항보고서(유상증자결정)",
       "rcept_dt": "20261105",
       "rcept_no": "20261105000001",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000001"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000001",
+      "ai_explanation": "회사가 신주를 발행하여 자본금을 확충하고 운영 자금 등을 조달하기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3074,116 +3096,116 @@
     },
     {
       "name": "삼성 레버리지 WTI원유 선물 ETN",
-      "price": "2,740",
-      "change_percent": "-18.81%",
-      "pct": 18.81
+      "price": "2,725",
+      "change_percent": "-19.26%",
+      "pct": 19.26
     },
     {
       "name": "미래에셋 레버리지 WTI원유 선물 ETN",
-      "price": "23,335",
-      "change_percent": "-18.35%",
-      "pct": 18.35
+      "price": "23,150",
+      "change_percent": "-19.00%",
+      "pct": 19.0
+    },
+    {
+      "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
+      "price": "47,650",
+      "change_percent": "-18.73%",
+      "pct": 18.73
     },
     {
       "name": "KB S&P 레버리지 WTI원유 선물 ETN B",
       "price": "48,430",
       "change_percent": "-18.14%",
       "pct": 18.14
-    },
-    {
-      "name": "삼성 블룸버그 레버리지 WTI원유선물 ETN B",
-      "price": "48,005",
-      "change_percent": "-18.13%",
-      "pct": 18.13
     }
   ],
   "sector_performance": [
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+7.91%",
-      "pct": 7.91
+      "change_value": "+8.29%",
+      "pct": 8.29
     },
     {
       "name": "비철금속",
-      "change_value": "+7.17%",
-      "pct": 7.17
+      "change_value": "+6.63%",
+      "pct": 6.63
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+5.95%",
-      "pct": 5.95
-    },
-    {
-      "name": "제약",
-      "change_value": "+5.19%",
-      "pct": 5.19
+      "change_value": "+5.74%",
+      "pct": 5.74
     },
     {
       "name": "자동차",
-      "change_value": "+5.14%",
-      "pct": 5.14
+      "change_value": "+5.00%",
+      "pct": 5.0
+    },
+    {
+      "name": "제약",
+      "change_value": "+4.67%",
+      "pct": 4.67
     }
   ],
   "sector_heatmap": [
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+7.91%",
-      "pct": 7.91
+      "change_value": "+8.29%",
+      "pct": 8.29
     },
     {
       "name": "비철금속",
-      "change_value": "+7.17%",
-      "pct": 7.17
+      "change_value": "+6.63%",
+      "pct": 6.63
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+5.95%",
-      "pct": 5.95
-    },
-    {
-      "name": "제약",
-      "change_value": "+5.19%",
-      "pct": 5.19
+      "change_value": "+5.74%",
+      "pct": 5.74
     },
     {
       "name": "자동차",
-      "change_value": "+5.14%",
-      "pct": 5.14
+      "change_value": "+5.00%",
+      "pct": 5.0
+    },
+    {
+      "name": "제약",
+      "change_value": "+4.67%",
+      "pct": 4.67
     },
     {
       "name": "음료",
-      "change_value": "+4.73%",
-      "pct": 4.73
+      "change_value": "+4.67%",
+      "pct": 4.67
     },
     {
       "name": "석유와가스",
-      "change_value": "-4.46%",
-      "pct": -4.46
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "-5.40%",
-      "pct": -5.4
+      "change_value": "-4.78%",
+      "pct": -4.78
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-5.97%",
-      "pct": -5.97
+      "change_value": "-6.31%",
+      "pct": -6.31
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "-6.98%",
+      "pct": -6.98
     },
     {
       "name": "통신장비",
-      "change_value": "-7.05%",
-      "pct": -7.05
+      "change_value": "-7.65%",
+      "pct": -7.65
     },
     {
       "name": "전기장비",
-      "change_value": "-8.91%",
-      "pct": -8.91
+      "change_value": "-9.44%",
+      "pct": -9.44
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-9.88%",
-      "pct": -9.88
+      "change_value": "-10.19%",
+      "pct": -10.19
     }
   ],
   "article_counts": {
