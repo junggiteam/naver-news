@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-06 09:01:26",
+  "updated_at": "2026-11-06 09:31:13",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 5383.8,
-    "kosdaq_value": 678.41
+    "label": "급락",
+    "emoji": "🔴",
+    "kospi_change": -8.55,
+    "kosdaq_change": -6.56,
+    "kospi_value": 4923.47,
+    "kosdaq_value": 633.91
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "주택 공급 확대를 위해 정부가 주택공급 통합지원센터를 신설함"
+    },
+    {
+      "category": "증권",
+      "text": "삼성전자와 SK하이닉스 등 주요 종목이 급락하면서 코스피와 코스닥 지수가 각각 8.55%와 6.56% 하락했다. 이로 인해 유가증권시장과 코스닥시장에서 서킷브레이커와 매도 사이드카가 발동되었으며, 코스피와 코스닥, 코스피200 지수는 모두 최근 97일간 최저치를 기록했다."
     }
   ],
   "daily_term": {
@@ -80,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "에이엠플러스피에프브이산곡",
+      "corp_code": "01213726",
+      "report_nm": "해산사유발생",
+      "rcept_dt": "20261106",
+      "rcept_no": "20261106000030",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000030",
+      "ai_explanation": "회사의 목적 달성이나 기간 만료 등으로 인해 법인을 소멸시키는 절차가 시작되었음을 의미합니다."
+    },
+    {
       "corp_name": "삼성바이오로직스",
       "corp_code": "00877059",
       "report_nm": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
       "rcept_dt": "20261106",
       "rcept_no": "20261106000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000001",
-      "ai_explanation": "타 기업의 주식이나 지분을 사들이기로 한 기존 결정 사항을 수정하여 공시함."
+      "ai_explanation": "다른 회사의 주식이나 출자 증권을 사들이기로 한 결정 사항을 기존보다 정확하게 수정한 것입니다."
     },
     {
       "corp_name": "대구백화점",
@@ -95,7 +108,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261105000575",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000575",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등 자산을 매각하기로 한 기존 결정 사항을 수정하여 공시함."
+      "ai_explanation": "보유 중인 건물이나 토지 등 부동산 등의 자산을 팔기로 한 결정 사항을 기존보다 정확하게 수정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2981,162 +2994,162 @@
   },
   "top_gainers": [
     {
-      "name": "동양2우B",
-      "price": "5,200",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "name": "키움 인버스 2X 전력 TOP5 ETN",
+      "price": "16,650",
+      "change_percent": "+59.87%",
+      "pct": 59.87
     },
     {
-      "name": "동양우",
-      "price": "9,600",
-      "change_percent": "+25.16%",
-      "pct": 25.16
+      "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
+      "price": "3,980",
+      "change_percent": "+59.52%",
+      "pct": 59.52
     },
     {
-      "name": "하이트진로홀딩스우",
-      "price": "8,490",
-      "change_percent": "+1.19%",
-      "pct": 1.19
+      "name": "한투 레버리지코스닥150선물 ETN",
+      "price": "22,000",
+      "change_percent": "+54.82%",
+      "pct": 54.82
     },
     {
-      "name": "SOL 국제금커버드콜액티브",
-      "price": "12,010",
-      "change_percent": "+0.63%",
-      "pct": 0.63
+      "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
+      "price": "11,930",
+      "change_percent": "+41.35%",
+      "pct": 41.35
     },
     {
-      "name": "1Q 종합채권(AA-이상)액티브",
-      "price": "97,330",
-      "change_percent": "+0.38%",
-      "pct": 0.38
+      "name": "미래에셋 인버스 2X 코스닥150 선물 ETN",
+      "price": "3,490",
+      "change_percent": "+39.60%",
+      "pct": 39.6
     }
   ],
   "top_losers": [
     {
-      "name": "두산우",
-      "price": "232,000",
-      "change_percent": "-12.12%",
-      "pct": 12.12
+      "name": "키움 레버리지 반도체TOP10 ETN",
+      "price": "27,550",
+      "change_percent": "-32.86%",
+      "pct": 32.86
     },
     {
-      "name": "동일제강",
-      "price": "1,000",
-      "change_percent": "-9.75%",
-      "pct": 9.75
+      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
+      "price": "3,640",
+      "change_percent": "-27.27%",
+      "pct": 27.27
     },
     {
-      "name": "오리엔트바이오",
-      "price": "1,232",
-      "change_percent": "-9.61%",
-      "pct": 9.61
+      "name": "키움 레버리지 전력 TOP5 ETN",
+      "price": "4,300",
+      "change_percent": "-26.68%",
+      "pct": 26.68
     },
     {
-      "name": "TCC스틸",
-      "price": "8,970",
-      "change_percent": "-8.84%",
-      "pct": 8.84
+      "name": "키움 레버리지 바이오TOP10 ETN",
+      "price": "4,760",
+      "change_percent": "-23.90%",
+      "pct": 23.9
     },
     {
-      "name": "대한전선",
-      "price": "16,490",
-      "change_percent": "-8.64%",
-      "pct": 8.64
+      "name": "삼성 iSelect 레버리지 조선 TOP10 TR ETN",
+      "price": "6,010",
+      "change_percent": "-23.78%",
+      "pct": 23.78
     }
   ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "도로와철도운송",
+      "change_value": "+5.25%",
+      "pct": 5.25
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "담배",
+      "change_value": "-0.26%",
+      "pct": -0.26
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "운송인프라",
+      "change_value": "-1.20%",
+      "pct": -1.2
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "-1.55%",
+      "pct": -1.55
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "상업서비스와공급품",
+      "change_value": "-1.70%",
+      "pct": -1.7
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "도로와철도운송",
+      "change_value": "+5.25%",
+      "pct": 5.25
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "담배",
+      "change_value": "-0.26%",
+      "pct": -0.26
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "운송인프라",
+      "change_value": "-1.20%",
+      "pct": -1.2
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "식품과기본식료품소매",
+      "change_value": "-1.55%",
+      "pct": -1.55
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "상업서비스와공급품",
+      "change_value": "-1.70%",
+      "pct": -1.7
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "가구",
+      "change_value": "-1.79%",
+      "pct": -1.79
     },
     {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "생명보험",
+      "change_value": "-8.67%",
+      "pct": -8.67
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "-8.78%",
+      "pct": -8.78
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건강관리기술",
+      "change_value": "-9.56%",
+      "pct": -9.56
     },
     {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "-10.63%",
+      "pct": -10.63
+    },
+    {
+      "name": "전기장비",
+      "change_value": "-11.78%",
+      "pct": -11.78
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "-12.13%",
+      "pct": -12.13
     }
   ],
   "article_counts": {
     "종합": 410,
     "경제": 30,
     "부동산": 30,
-    "증권": 82
+    "증권": 83
   },
   "article_count_trend": {
     "종합": {
@@ -3158,9 +3171,9 @@
       "surge": false
     },
     "증권": {
-      "today": 82,
+      "today": 83,
       "yesterday": 90,
-      "change_pct": -8.9,
+      "change_pct": -7.8,
       "surge": false
     }
   }
