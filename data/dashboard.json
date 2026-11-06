@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-06 09:31:13",
+  "updated_at": "2026-11-06 10:01:16",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -8.55,
-    "kosdaq_change": -6.56,
-    "kospi_value": 4923.47,
-    "kosdaq_value": 633.91
+    "kospi_change": -8.42,
+    "kosdaq_change": -7.11,
+    "kospi_value": 4930.38,
+    "kosdaq_value": 630.15
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "삼성전자와 SK하이닉스 등 주요 종목이 급락하면서 코스피와 코스닥 지수가 각각 8.55%와 6.56% 하락했다. 이로 인해 유가증권시장과 코스닥시장에서 서킷브레이커와 매도 사이드카가 발동되었으며, 코스피와 코스닥, 코스피200 지수는 모두 최근 97일간 최저치를 기록했다."
+      "text": "미국 증시에서 인공지능 관련주의 약세가 이어진 여파로 국내 반도체 및 주요 종목들이 큰 폭으로 하락하며 코스피와 코스닥 지수가 최근 97일간 데이터 중 최저치를 기록했다. 지수 급락에 따라 장중 일시적으로 매매가 중단되는 서킷브레이커와 매도 사이드카가 발동되었다."
     }
   ],
   "daily_term": {
@@ -90,7 +90,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261106000030",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000030",
-      "ai_explanation": "회사의 목적 달성이나 기간 만료 등으로 인해 법인을 소멸시키는 절차가 시작되었음을 의미합니다."
+      "ai_explanation": "회사가 사업 목적을 달성하거나 기간이 만료되어 법인격을 소멸시키기 위한 절차에 돌입했음을 의미합니다."
     },
     {
       "corp_name": "삼성바이오로직스",
@@ -99,7 +99,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261106000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000001",
-      "ai_explanation": "다른 회사의 주식이나 출자 증권을 사들이기로 한 결정 사항을 기존보다 정확하게 수정한 것입니다."
+      "ai_explanation": "다른 회사의 주식이나 출자 증권을 사들이기로 한 기존 결정 내용 중 일부를 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "대구백화점",
@@ -108,7 +108,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261105000575",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000575",
-      "ai_explanation": "보유 중인 건물이나 토지 등 부동산 등의 자산을 팔기로 한 결정 사항을 기존보다 정확하게 수정한 것입니다."
+      "ai_explanation": "회사가 보유한 건물이나 토지 등 유형자산을 매각하기로 한 기존 결정 내용 중 일부를 수정하여 다시 공시한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2994,155 +2994,155 @@
   },
   "top_gainers": [
     {
-      "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "16,650",
-      "change_percent": "+59.87%",
-      "pct": 59.87
-    },
-    {
-      "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-      "price": "3,980",
-      "change_percent": "+59.52%",
-      "pct": 59.52
-    },
-    {
-      "name": "한투 레버리지코스닥150선물 ETN",
-      "price": "22,000",
-      "change_percent": "+54.82%",
-      "pct": 54.82
-    },
-    {
       "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
-      "price": "11,930",
-      "change_percent": "+41.35%",
-      "pct": 41.35
+      "price": "11,885",
+      "change_percent": "+40.82%",
+      "pct": 40.82
     },
     {
-      "name": "미래에셋 인버스 2X 코스닥150 선물 ETN",
-      "price": "3,490",
-      "change_percent": "+39.60%",
-      "pct": 39.6
+      "name": "동양2우B",
+      "price": "5,200",
+      "change_percent": "+30.00%",
+      "pct": 30.0
+    },
+    {
+      "name": "동양우",
+      "price": "9,970",
+      "change_percent": "+29.99%",
+      "pct": 29.99
+    },
+    {
+      "name": "깨끗한나라우",
+      "price": "5,230",
+      "change_percent": "+29.78%",
+      "pct": 29.78
+    },
+    {
+      "name": "삼성 S&P500 VIX S/T 선물 ETN B",
+      "price": "8,560",
+      "change_percent": "+28.43%",
+      "pct": 28.43
     }
   ],
   "top_losers": [
     {
-      "name": "키움 레버리지 반도체TOP10 ETN",
-      "price": "27,550",
-      "change_percent": "-32.86%",
-      "pct": 32.86
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "3,640",
-      "change_percent": "-27.27%",
-      "pct": 27.27
-    },
-    {
       "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "4,300",
-      "change_percent": "-26.68%",
-      "pct": 26.68
+      "price": "4,370",
+      "change_percent": "-25.49%",
+      "pct": 25.49
     },
     {
-      "name": "키움 레버리지 바이오TOP10 ETN",
-      "price": "4,760",
-      "change_percent": "-23.90%",
-      "pct": 23.9
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "3,425",
+      "change_percent": "-23.46%",
+      "pct": 23.46
     },
     {
-      "name": "삼성 iSelect 레버리지 조선 TOP10 TR ETN",
-      "price": "6,010",
-      "change_percent": "-23.78%",
-      "pct": 23.78
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "3,360",
+      "change_percent": "-23.55%",
+      "pct": 23.55
+    },
+    {
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "price": "3,310",
+      "change_percent": "-22.48%",
+      "pct": 22.48
+    },
+    {
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "3,905",
+      "change_percent": "-22.06%",
+      "pct": 22.06
     }
   ],
   "sector_performance": [
     {
       "name": "도로와철도운송",
-      "change_value": "+5.25%",
-      "pct": 5.25
+      "change_value": "+5.28%",
+      "pct": 5.28
     },
     {
       "name": "담배",
-      "change_value": "-0.26%",
-      "pct": -0.26
+      "change_value": "-0.36%",
+      "pct": -0.36
     },
     {
-      "name": "운송인프라",
-      "change_value": "-1.20%",
-      "pct": -1.2
+      "name": "다각화된통신서비스",
+      "change_value": "-0.95%",
+      "pct": -0.95
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "-1.55%",
-      "pct": -1.55
+      "name": "전문소매",
+      "change_value": "-1.05%",
+      "pct": -1.05
     },
     {
-      "name": "상업서비스와공급품",
-      "change_value": "-1.70%",
-      "pct": -1.7
+      "name": "다각화된소비자서비스",
+      "change_value": "-1.07%",
+      "pct": -1.07
     }
   ],
   "sector_heatmap": [
     {
       "name": "도로와철도운송",
-      "change_value": "+5.25%",
-      "pct": 5.25
+      "change_value": "+5.28%",
+      "pct": 5.28
     },
     {
       "name": "담배",
-      "change_value": "-0.26%",
-      "pct": -0.26
+      "change_value": "-0.36%",
+      "pct": -0.36
     },
     {
-      "name": "운송인프라",
-      "change_value": "-1.20%",
-      "pct": -1.2
+      "name": "다각화된통신서비스",
+      "change_value": "-0.95%",
+      "pct": -0.95
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "-1.55%",
-      "pct": -1.55
+      "name": "전문소매",
+      "change_value": "-1.05%",
+      "pct": -1.05
     },
     {
-      "name": "상업서비스와공급품",
-      "change_value": "-1.70%",
-      "pct": -1.7
+      "name": "다각화된소비자서비스",
+      "change_value": "-1.07%",
+      "pct": -1.07
     },
     {
-      "name": "가구",
-      "change_value": "-1.79%",
-      "pct": -1.79
+      "name": "가정용품",
+      "change_value": "-1.29%",
+      "pct": -1.29
     },
     {
       "name": "생명보험",
-      "change_value": "-8.67%",
-      "pct": -8.67
+      "change_value": "-9.44%",
+      "pct": -9.44
     },
     {
       "name": "복합기업",
-      "change_value": "-8.78%",
-      "pct": -8.78
-    },
-    {
-      "name": "건강관리기술",
       "change_value": "-9.56%",
       "pct": -9.56
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "-10.63%",
-      "pct": -10.63
+      "name": "우주항공과국방",
+      "change_value": "-10.05%",
+      "pct": -10.05
     },
     {
-      "name": "전기장비",
-      "change_value": "-11.78%",
-      "pct": -11.78
+      "name": "반도체와반도체장비",
+      "change_value": "-10.21%",
+      "pct": -10.21
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-12.13%",
-      "pct": -12.13
+      "change_value": "-12.08%",
+      "pct": -12.08
+    },
+    {
+      "name": "전기장비",
+      "change_value": "-13.01%",
+      "pct": -13.01
     }
   ],
   "article_counts": {
