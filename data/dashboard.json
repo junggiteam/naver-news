@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-06 13:01:18",
+  "updated_at": "2026-11-06 13:31:06",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -4.91,
-    "kosdaq_change": -3.91,
-    "kospi_value": 5119.53,
-    "kosdaq_value": 651.89
+    "kospi_change": -5.75,
+    "kosdaq_change": -4.41,
+    "kospi_value": 5074.1,
+    "kosdaq_value": 648.48
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 기술주를 중심으로 한 AI 관련주 급락과 수급 불안이 이어지며 오늘 코스피와 코스닥 지수는 최근 97일간 데이터 중 최저치를 기록했다. 시장 변동성이 확대되자 당국은 증권사의 신용융자 담보비율 유지 의무를 3개월간 면제하고 추가 시장 안정 조치를 시사했다."
+      "text": "글로벌 증시에서 AI 관련주가 급락하며 투자 심리가 위축된 가운데, 금일 코스피와 코스닥 지수는 최근 97일간 데이터 중 최저치를 기록했다. 시장 변동성이 커지자 당국은 증권사의 신용융자 담보비율 유지 의무를 3개월간 면제하는 등 시장 안정 조치를 내놓았다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "스튜디오프리즘",
+      "corp_code": "01394261",
+      "report_nm": "회사분할결정",
+      "rcept_dt": "20261106",
+      "rcept_no": "20261106000117",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000117",
+      "ai_explanation": "회사의 사업 부문을 분리하여 별도 법인을 설립하거나 특정 사업부를 떼어내는 결정입니다."
+    },
+    {
+      "corp_name": "만도브로제",
+      "corp_code": "00916437",
+      "report_nm": "타법인주식및출자증권취득결정",
+      "rcept_dt": "20261106",
+      "rcept_no": "20261106000115",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000115",
+      "ai_explanation": "타 회사의 주식이나 지분을 사들여 경영권 확보 또는 투자 목적으로 보유하겠다는 결정입니다."
+    },
+    {
       "corp_name": "에코캡",
       "corp_code": "00870481",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261106",
       "rcept_no": "20261106000091",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000091",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 신탁을 통해 자사주를 사들이기로 결정한 것입니다."
+      "ai_explanation": "주가 안정을 위해 증권사와 계약을 맺고 자기 회사 주식을 대신 사도록 맡기는 결정입니다."
     },
     {
       "corp_name": "아가방컴퍼니",
@@ -99,7 +117,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261106000045",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000045",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 종료하기로 결정한 것입니다."
+      "ai_explanation": "기존에 증권사에 맡겼던 자기주식 취득 신탁 계약을 중단하거나 종료한다는 결정입니다."
     },
     {
       "corp_name": "에이엠플러스피에프브이산곡",
@@ -108,7 +126,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261106000030",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000030",
-      "ai_explanation": "회사가 사업 목적 달성 또는 정관 규정에 따라 법인 운영을 마무리하고 해산하는 것입니다."
+      "ai_explanation": "사업 목적 달성이나 기간 만료 등으로 인해 해당 회사의 운영을 마무리하는 절차입니다."
     },
     {
       "corp_name": "삼성바이오로직스",
@@ -117,7 +135,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261106000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000001",
-      "ai_explanation": "다른 회사의 지분이나 출자 증권을 사들이는 계약 내용에 일부 변경 사항이 발생한 것입니다."
+      "ai_explanation": "타 회사의 지분 인수 결정 내용 중 일부를 수정하거나 보완하여 다시 공시하는 것입니다."
     },
     {
       "corp_name": "대구백화점",
@@ -126,7 +144,7 @@
       "rcept_dt": "20261106",
       "rcept_no": "20261105000575",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000575",
-      "ai_explanation": "회사가 보유한 건물, 토지 등 자산을 매각하기로 한 결정 내용에 일부 변경 사항이 발생한 것입니다."
+      "ai_explanation": "보유 중인 부동산 등 유형자산을 매각하기로 한 기존 결정 내용을 수정하여 공시하는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3013,9 +3031,9 @@
   "top_gainers": [
     {
       "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
-      "price": "11,590",
-      "change_percent": "+37.32%",
-      "pct": 37.32
+      "price": "11,665",
+      "change_percent": "+38.21%",
+      "pct": 38.21
     },
     {
       "name": "한진칼우",
@@ -3030,137 +3048,137 @@
       "pct": 30.0
     },
     {
-      "name": "계양전기우",
-      "price": "4,820",
-      "change_percent": "+29.92%",
-      "pct": 29.92
-    },
-    {
       "name": "덕성우",
       "price": "5,380",
       "change_percent": "+29.79%",
       "pct": 29.79
+    },
+    {
+      "name": "깨끗한나라우",
+      "price": "5,230",
+      "change_percent": "+29.78%",
+      "pct": 29.78
     }
   ],
   "top_losers": [
     {
       "name": "키움 레버리지 전력 TOP5 ETN",
-      "price": "4,790",
-      "change_percent": "-18.33%",
-      "pct": 18.33
+      "price": "4,680",
+      "change_percent": "-20.20%",
+      "pct": 20.2
     },
     {
-      "name": "한국금융지주",
-      "price": "120,600",
-      "change_percent": "-18.01%",
-      "pct": 18.01
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "3,610",
+      "change_percent": "-19.33%",
+      "pct": 19.33
+    },
+    {
+      "name": "SOL SK하이닉스단일종목레버리지",
+      "price": "3,365",
+      "change_percent": "-19.59%",
+      "pct": 19.59
     },
     {
       "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "3,600",
-      "change_percent": "-18.09%",
-      "pct": 18.09
+      "price": "3,575",
+      "change_percent": "-18.66%",
+      "pct": 18.66
     },
     {
       "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "3,530",
-      "change_percent": "-17.91%",
-      "pct": 17.91
-    },
-    {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "3,465",
-      "change_percent": "-17.70%",
-      "pct": 17.7
+      "price": "3,470",
+      "change_percent": "-19.30%",
+      "pct": 19.3
     }
   ],
   "sector_performance": [
     {
       "name": "도로와철도운송",
-      "change_value": "+5.81%",
-      "pct": 5.81
+      "change_value": "+5.66%",
+      "pct": 5.66
     },
     {
       "name": "항공사",
-      "change_value": "+4.71%",
-      "pct": 4.71
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "+1.68%",
-      "pct": 1.68
+      "change_value": "+2.83%",
+      "pct": 2.83
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+1.64%",
-      "pct": 1.64
+      "change_value": "+1.88%",
+      "pct": 1.88
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.14%",
-      "pct": 1.14
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "+1.43%",
+      "pct": 1.43
     }
   ],
   "sector_heatmap": [
     {
       "name": "도로와철도운송",
-      "change_value": "+5.81%",
-      "pct": 5.81
+      "change_value": "+5.66%",
+      "pct": 5.66
     },
     {
       "name": "항공사",
-      "change_value": "+4.71%",
-      "pct": 4.71
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "+1.68%",
-      "pct": 1.68
+      "change_value": "+2.83%",
+      "pct": 2.83
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+1.64%",
-      "pct": 1.64
+      "change_value": "+1.88%",
+      "pct": 1.88
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.14%",
-      "pct": 1.14
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "+1.43%",
+      "pct": 1.43
     },
     {
       "name": "전문소매",
-      "change_value": "+0.29%",
-      "pct": 0.29
-    },
-    {
-      "name": "복합기업",
-      "change_value": "-5.45%",
-      "pct": -5.45
+      "change_value": "+0.16%",
+      "pct": 0.16
     },
     {
       "name": "석유와가스",
-      "change_value": "-5.52%",
-      "pct": -5.52
+      "change_value": "-5.64%",
+      "pct": -5.64
     },
     {
       "name": "증권",
-      "change_value": "-5.87%",
-      "pct": -5.87
+      "change_value": "-5.86%",
+      "pct": -5.86
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "-7.04%",
-      "pct": -7.04
+      "name": "복합기업",
+      "change_value": "-6.05%",
+      "pct": -6.05
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-7.07%",
-      "pct": -7.07
+      "change_value": "-7.28%",
+      "pct": -7.28
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "-7.68%",
+      "pct": -7.68
     },
     {
       "name": "전기장비",
-      "change_value": "-8.68%",
-      "pct": -8.68
+      "change_value": "-9.45%",
+      "pct": -9.45
     }
   ],
   "article_counts": {
