@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09 06:03:21",
+  "updated_at": "2026-11-09 06:31:44",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
@@ -28,7 +28,12 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "category": "증권",
+      "text": "미국발 경기 불안과 인공지능 산업의 실적 우려가 겹치며 외국인 투자자의 대규모 매도세가 이어져 증시가 급락했다. 국내 상장사 대다수가 연중 최저가를 기록하는 가운데, 증시 변동성 확대에 따른 반대매매 우려로 금융 당국이 신용공여 규제 완화 조치를 내놓았다."
+    }
+  ],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [
@@ -38,7 +43,8 @@
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261109",
       "rcept_no": "20261106000482",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000482"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000482",
+      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 바꿀 수 있는 권리를 부여하는 자금 조달 방식입니다."
     },
     {
       "corp_name": "서진시스템",
@@ -46,7 +52,8 @@
       "report_nm": "주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261109",
       "rcept_no": "20261106000481",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000481"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000481",
+      "ai_explanation": "회사가 채권을 발행하되, 추후 주식으로 바꿀 수 있는 권리를 부여하는 자금 조달 방식입니다."
     }
   ],
   "macro_indicators": [
@@ -3117,7 +3124,7 @@
     "종합": 393,
     "경제": 30,
     "부동산": 30,
-    "증권": 56
+    "증권": 57
   },
   "article_count_trend": {
     "종합": {
@@ -3139,9 +3146,9 @@
       "surge": false
     },
     "증권": {
-      "today": 56,
+      "today": 57,
       "yesterday": 71,
-      "change_pct": -21.1,
+      "change_pct": -19.7,
       "surge": false
     }
   }
