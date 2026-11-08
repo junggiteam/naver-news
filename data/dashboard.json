@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-09 07:31:04",
+  "updated_at": "2026-11-09 08:01:30",
   "market_mood": {
-    "label": "급락",
-    "emoji": "🔴",
-    "kospi_change": -6.02,
-    "kosdaq_change": -5.03,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 5059.69,
     "kosdaq_value": 644.27
   },
@@ -28,15 +28,19 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [
-    {
-      "category": "증권",
-      "text": "미국발 경기 침체 우려와 인공지능 산업 실적에 대한 불안감이 겹치며 외국인 투자자들의 매도세가 집중되어 지수가 급락했다. 여기에 국내 증시의 수급 악화와 대형주를 포함한 상장사들의 연중 최저가 경신이 이어지면서 시장 전반의 투자 심리가 위축되었다."
-    }
-  ],
+  "headlines": [],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [
+    {
+      "corp_name": "서진시스템",
+      "corp_code": "00838005",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20261109",
+      "rcept_no": "20261109000003",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000003",
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 공시한 것입니다."
+    },
     {
       "corp_name": "서진시스템",
       "corp_code": "00838005",
@@ -44,7 +48,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261106000483",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000483",
-      "ai_explanation": "회사가 자본으로 인정받을 수 있는 형태의 채무증권(신종자본증권 등)을 발행하기로 결정함."
+      "ai_explanation": "회사가 발행한 채권이 회계상 자본으로 인정되는 성격의 증권을 발행한다는 의미입니다."
     },
     {
       "corp_name": "서진시스템",
@@ -53,7 +57,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261106000482",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000482",
-      "ai_explanation": "회사가 주식으로 전환할 권리가 부여된 채권을 발행하여 자금을 조달하기로 결정함."
+      "ai_explanation": "투자자로부터 자금을 조달하며 향후 주식으로 전환할 수 있는 권리가 부여된 채권 발행 결정입니다."
     },
     {
       "corp_name": "서진시스템",
@@ -62,7 +66,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261106000481",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000481",
-      "ai_explanation": "회사가 주식으로 전환할 권리가 부여된 채권을 추가적으로 발행하여 자금을 조달하기로 결정함."
+      "ai_explanation": "투자자로부터 자금을 조달하며 향후 주식으로 전환할 수 있는 권리가 부여된 채권 발행 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2980,160 +2984,160 @@
     {
       "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
       "price": "11,595",
-      "change_percent": "+37.38%",
-      "pct": 37.38
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "한진칼우",
       "price": "80,600",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "동양2우B",
       "price": "5,200",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "덕성우",
       "price": "5,380",
-      "change_percent": "+29.79%",
-      "pct": 29.79
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "깨끗한나라우",
       "price": "5,230",
-      "change_percent": "+29.78%",
-      "pct": 29.78
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "top_losers": [
     {
       "name": "TIGER SK하이닉스단일종목레버리지",
       "price": "3,375",
-      "change_percent": "-20.96%",
-      "pct": 20.96
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
       "price": "3,975",
-      "change_percent": "-20.58%",
-      "pct": 20.58
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "1Q SK하이닉스선물단일종목레버리지",
       "price": "3,560",
-      "change_percent": "-20.45%",
-      "pct": 20.45
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "ACE SK하이닉스단일종목레버리지",
       "price": "3,430",
-      "change_percent": "-20.23%",
-      "pct": 20.23
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "SOL SK하이닉스단일종목레버리지",
       "price": "3,340",
-      "change_percent": "-20.19%",
-      "pct": 20.19
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_performance": [
     {
       "name": "도로와철도운송",
-      "change_value": "+5.73%",
-      "pct": 5.73
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+2.40%",
-      "pct": 2.4
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전문소매",
-      "change_value": "+2.05%",
-      "pct": 2.05
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.38%",
-      "pct": 1.38
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "IT서비스",
-      "change_value": "+1.11%",
-      "pct": 1.11
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
       "name": "도로와철도운송",
-      "change_value": "+5.73%",
-      "pct": 5.73
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+2.40%",
-      "pct": 2.4
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전문소매",
-      "change_value": "+2.05%",
-      "pct": 2.05
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.38%",
-      "pct": 1.38
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "IT서비스",
-      "change_value": "+1.11%",
-      "pct": 1.11
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "양방향미디어와서비스",
-      "change_value": "+1.11%",
-      "pct": 1.11
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-5.22%",
-      "pct": -5.22
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "화학",
-      "change_value": "-5.23%",
-      "pct": -5.23
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "손해보험",
-      "change_value": "-5.58%",
-      "pct": -5.58
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "-6.13%",
-      "pct": -6.13
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "문구류",
-      "change_value": "-6.40%",
-      "pct": -6.4
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기장비",
-      "change_value": "-7.29%",
-      "pct": -7.29
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
     "종합": 393,
     "경제": 30,
     "부동산": 30,
-    "증권": 61
+    "증권": 63
   },
   "article_count_trend": {
     "종합": {
@@ -3155,9 +3159,9 @@
       "surge": false
     },
     "증권": {
-      "today": 61,
+      "today": 63,
       "yesterday": 71,
-      "change_pct": -14.1,
+      "change_pct": -11.3,
       "surge": false
     }
   }
