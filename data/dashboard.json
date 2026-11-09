@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09 09:01:18",
+  "updated_at": "2026-11-09 09:15:56",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -10,27 +10,75 @@
   },
   "heroes": {
     "종합": {
-      "title": "美해군·해병대 고위급, 韓조선소 역량 점검…'마스가' 힘 싣나",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/08/16429913.jpg?type=nf70_70",
-      "link": "https://n.news.naver.com/article/001/0016429913?ntype=RANKING",
+      "title": "젠슨황, 中스파이 의심 여성과 불륜 인정…이사회 독립조사 착수(종합)",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/09/16430034.jpg?type=nf70_70",
+      "link": "https://n.news.naver.com/article/001/0016430034?ntype=RANKING",
       "press_name": "연합뉴스"
     },
     "경제": {
-      "title": "반도체 호황은 ‘위장된 저주’였나, 5년 후 한국 경제 거대 위기 올 수도",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/11/09/4008515.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/023/0004008515",
-      "press_name": "조선일보"
+      "title": "'반도체 깐부' 젠슨 황, 불륜 인정...시장 영향은? [뉴스UP]",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/052/2026/11/09/2430087.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/052/0002430087",
+      "press_name": "YTN"
     },
     "부동산": {
-      "title": "서울 아파트 84㎡ vs 59㎡ 가격차 1억7천만원…1년새 30%↓",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/09/16430005.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016430005",
+      "title": "삼성물산, 2조3천763억원 규모 목동13단지 재건축 수주",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/09/16430173.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016430173",
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [],
-  "daily_term": null,
-  "keyword_tags": [],
+  "headlines": [
+    {
+      "category": "종합",
+      "text": "젠슨 황 엔비디아 CEO, 불륜 인정 및 이사회 조사 착수"
+    },
+    {
+      "category": "종합",
+      "text": "삼성전자 주가 변동 및 투자 전략 관련 시장 분석 지속"
+    },
+    {
+      "category": "종합",
+      "text": "이집트 열차 추돌 사고와 일본 시즈오카 강진 등 사건 사고 발생"
+    },
+    {
+      "category": "경제",
+      "text": "코스피 등 주요 증시의 급락 이후 반등과 횡보 가능성에 대한 분석 지속"
+    },
+    {
+      "category": "경제",
+      "text": "반도체주 중심의 외국인 매도세와 증권가의 목표가 하향 조정 이어짐"
+    },
+    {
+      "category": "경제",
+      "text": "부동산 시장의 양극화 속 특정 지역 거래량 증가와 재건축 사업 추진"
+    },
+    {
+      "category": "부동산",
+      "text": "삼성물산이 2조 4천억 규모 목동13단지 재건축 시공사로 선정됨"
+    },
+    {
+      "category": "부동산",
+      "text": "서울 아파트 소형과 중형 간 가격 차이가 1년 사이 30% 축소됨"
+    },
+    {
+      "category": "부동산",
+      "text": "1기 신도시 정비 사업이 진행되는 가운데 상가보다 주택을 선호하는 추세임"
+    }
+  ],
+  "daily_term": {
+    "term": "코스피",
+    "explanation": "코스피는 우리나라를 대표하는 기업들의 주식을 한데 모아놓은 주식 시장의 종합 점수표와 같습니다. 시험 문제의 평균 점수가 오르내리듯 코스피 지수가 오르면 전체적인 경제 상황이 좋다는 뜻이고, 떨어지면 경제에 빨간불이 켜졌다는 신호로 해석합니다. 현재 우리 증시가 크게 흔들리며 많은 투자자의 관심을 집중시키고 있는 핵심 지표입니다."
+  },
+  "keyword_tags": [
+    "삼성전자 주가 흐름",
+    "코스피 반등 전망",
+    "반도체 투자 심리",
+    "부동산 공급 지연",
+    "아파트 가격 양극화",
+    "공시가격 현실화",
+    "AI 시장 변동성"
+  ],
   "dart_filings": [
     {
       "corp_name": "서진시스템",
@@ -3098,16 +3146,16 @@
     }
   ],
   "article_counts": {
-    "종합": 393,
+    "종합": 397,
     "경제": 30,
     "부동산": 30,
     "증권": 66
   },
   "article_count_trend": {
     "종합": {
-      "today": 393,
+      "today": 397,
       "yesterday": 399,
-      "change_pct": -1.5,
+      "change_pct": -0.5,
       "surge": false
     },
     "경제": {
