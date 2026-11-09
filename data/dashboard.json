@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-09 09:15:56",
+  "updated_at": "2026-11-09 09:31:07",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 5059.69,
-    "kosdaq_value": 644.27
+    "kospi_change": -0.02,
+    "kosdaq_change": -1.01,
+    "kospi_value": 5058.59,
+    "kosdaq_value": 637.74
   },
   "heroes": {
     "종합": {
@@ -87,7 +87,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261109000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000003",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 공시한 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "서진시스템",
@@ -96,7 +96,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261106000483",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000483",
-      "ai_explanation": "회사가 발행하는 채권 중 자본의 성격을 가진 증권을 발행하기로 결정한 것입니다."
+      "ai_explanation": "회계상 자본으로 인정받을 수 있는 성격의 채무증권을 발행하여 자금을 조달한다는 결정입니다."
     },
     {
       "corp_name": "서진시스템",
@@ -105,7 +105,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261106000482",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000482",
-      "ai_explanation": "주식으로 전환할 권리가 부여된 채권을 발행하여 자금을 조달하기로 결정한 것입니다."
+      "ai_explanation": "주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하여 외부에서 자금을 조달한다는 결정입니다."
     },
     {
       "corp_name": "서진시스템",
@@ -114,7 +114,7 @@
       "rcept_dt": "20261109",
       "rcept_no": "20261106000481",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000481",
-      "ai_explanation": "주식으로 전환할 권리가 부여된 채권을 발행하여 자금을 조달하기로 결정한 것입니다."
+      "ai_explanation": "주식으로 바꿀 수 있는 권리가 부여된 채권을 발행하여 외부에서 자금을 조달한다는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -3030,126 +3030,162 @@
   },
   "top_gainers": [
     {
-      "name": "맵스리얼티",
-      "price": "6,000",
-      "change_percent": "-3.23%",
-      "pct": 3.23
+      "name": "동양2우B",
+      "price": "6,760",
+      "change_percent": "+30.00%",
+      "pct": 30.0
     },
     {
-      "name": "TIGER 차이나바이오테크SOLACTIVE",
-      "price": "8,190",
-      "change_percent": "+0.55%",
-      "pct": 0.55
+      "name": "덕성우",
+      "price": "6,990",
+      "change_percent": "+29.93%",
+      "pct": 29.93
+    },
+    {
+      "name": "한진칼우",
+      "price": "104,700",
+      "change_percent": "+29.90%",
+      "pct": 29.9
+    },
+    {
+      "name": "대한항공우",
+      "price": "29,350",
+      "change_percent": "+29.87%",
+      "pct": 29.87
+    },
+    {
+      "name": "동양우",
+      "price": "8,660",
+      "change_percent": "+15.01%",
+      "pct": 15.01
     }
   ],
   "top_losers": [
     {
-      "name": "한양증권",
-      "price": "18,150",
-      "change_percent": "-1.09%",
-      "pct": 1.09
+      "name": "계양전기우",
+      "price": "3,555",
+      "change_percent": "-19.11%",
+      "pct": 19.11
     },
     {
-      "name": "INVENI",
-      "price": "13,540",
-      "change_percent": "-0.07%",
-      "pct": 0.07
+      "name": "남선알미우",
+      "price": "9,220",
+      "change_percent": "-2.33%",
+      "pct": 2.33
+    },
+    {
+      "name": "LIG디펜스앤에어로스페이스",
+      "price": "294,000",
+      "change_percent": "-9.82%",
+      "pct": 9.82
+    },
+    {
+      "name": "KB 레버리지 2차전지 TOP 10 TR ETN",
+      "price": "14,775",
+      "change_percent": "-9.30%",
+      "pct": 9.3
+    },
+    {
+      "name": "티웨이홀딩스",
+      "price": "1,200",
+      "change_percent": "-10.04%",
+      "pct": 10.04
     }
   ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "항공사",
+      "change_value": "+5.27%",
+      "pct": 5.27
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "소프트웨어",
+      "change_value": "+3.60%",
+      "pct": 3.6
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "문구류",
+      "change_value": "+2.61%",
+      "pct": 2.61
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합유틸리티",
+      "change_value": "+2.55%",
+      "pct": 2.55
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건강관리기술",
+      "change_value": "+2.23%",
+      "pct": 2.23
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "항공사",
+      "change_value": "+5.27%",
+      "pct": 5.27
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "소프트웨어",
+      "change_value": "+3.60%",
+      "pct": 3.6
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "문구류",
+      "change_value": "+2.61%",
+      "pct": 2.61
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합유틸리티",
+      "change_value": "+2.55%",
+      "pct": 2.55
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건강관리기술",
+      "change_value": "+2.23%",
+      "pct": 2.23
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "생명보험",
+      "change_value": "+2.14%",
+      "pct": 2.14
     },
     {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자제품",
+      "change_value": "-2.94%",
+      "pct": -2.94
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "화장품",
+      "change_value": "-3.43%",
+      "pct": -3.43
     },
     {
       "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "-3.51%",
+      "pct": -3.51
     },
     {
-      "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "우주항공과국방",
+      "change_value": "-3.57%",
+      "pct": -3.57
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-5.87%",
+      "pct": -5.87
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-6.16%",
+      "pct": -6.16
     }
   ],
   "article_counts": {
     "종합": 397,
     "경제": 30,
     "부동산": 30,
-    "증권": 66
+    "증권": 70
   },
   "article_count_trend": {
     "종합": {
@@ -3171,9 +3207,9 @@
       "surge": false
     },
     "증권": {
-      "today": 66,
+      "today": 70,
       "yesterday": 71,
-      "change_pct": -7.0,
+      "change_pct": -1.4,
       "surge": false
     }
   }
