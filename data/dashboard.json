@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-10 07:31:21",
+  "updated_at": "2026-11-10 08:01:16",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.81,
-    "kosdaq_change": -0.82,
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 5018.85,
     "kosdaq_value": 638.97
   },
@@ -81,13 +81,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "더블유게임즈",
+      "corp_code": "01010110",
+      "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
+      "rcept_dt": "20261110",
+      "rcept_no": "20261110000002",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000002",
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 하겠다는 결정입니다."
+    },
+    {
+      "corp_name": "쏘닉스",
+      "corp_code": "00561723",
+      "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
+      "rcept_dt": "20261110",
+      "rcept_no": "20261110000004",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000004",
+      "ai_explanation": "회사가 발행한 채권을 추후 주식으로 바꿀 수 있는 권리가 부여된 사채 발행 내용을 정정하는 공시입니다."
+    },
+    {
       "corp_name": "퀀텀레일",
       "corp_code": "00683007",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261110",
       "rcept_no": "20261109000399",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000399",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부 항목을 수정하여 다시 알리는 공시입니다."
+      "ai_explanation": "회사가 발행한 채권을 추후 주식으로 바꿀 수 있는 권리가 부여된 사채 발행 내용을 정정하는 공시입니다."
     },
     {
       "corp_name": "퀀텀레일",
@@ -96,7 +114,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000401",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000401",
-      "ai_explanation": "기존에 공시한 자본금 감소(감자) 결정 내용 중 일부 항목을 수정하여 다시 알리는 공시입니다."
+      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등의 조치를 정정한다는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2984,153 +3002,153 @@
     {
       "name": "동양2우B",
       "price": "6,760",
-      "change_percent": "+30.00%",
-      "pct": 30.0
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "아시아나IDT",
       "price": "14,130",
-      "change_percent": "+29.99%",
-      "pct": 29.99
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "덕성우",
       "price": "6,990",
-      "change_percent": "+29.93%",
-      "pct": 29.93
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "한진칼우",
       "price": "104,700",
-      "change_percent": "+29.90%",
-      "pct": 29.9
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "대원전선우",
       "price": "8,950",
-      "change_percent": "+29.90%",
-      "pct": 29.9
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "top_losers": [
     {
       "name": "코아스",
       "price": "751",
-      "change_percent": "-20.61%",
-      "pct": 20.61
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "진양화학",
       "price": "3,500",
-      "change_percent": "-14.22%",
-      "pct": 14.22
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "KB 레버리지 2차전지 TOP 10 TR ETN",
       "price": "13,980",
-      "change_percent": "-14.18%",
-      "pct": 14.18
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "삼성SDI",
       "price": "409,000",
-      "change_percent": "-12.61%",
-      "pct": 12.61
+      "change_percent": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "KODEX 2차전지산업레버리지",
       "price": "613",
-      "change_percent": "-12.18%",
-      "pct": 12.18
+      "change_percent": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_performance": [
     {
       "name": "항공사",
-      "change_value": "+5.20%",
-      "pct": 5.2
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "통신장비",
-      "change_value": "+4.79%",
-      "pct": 4.79
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "문구류",
-      "change_value": "+2.86%",
-      "pct": 2.86
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "소프트웨어",
-      "change_value": "+2.27%",
-      "pct": 2.27
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+2.20%",
-      "pct": 2.2
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공사",
-      "change_value": "+5.20%",
-      "pct": 5.2
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "통신장비",
-      "change_value": "+4.79%",
-      "pct": 4.79
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "문구류",
-      "change_value": "+2.86%",
-      "pct": 2.86
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "소프트웨어",
-      "change_value": "+2.27%",
-      "pct": 2.27
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "+2.20%",
-      "pct": 2.2
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "건강관리기술",
-      "change_value": "+2.05%",
-      "pct": 2.05
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-4.07%",
-      "pct": -4.07
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "가정용기기와용품",
-      "change_value": "-4.34%",
-      "pct": -4.34
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "해운사",
-      "change_value": "-4.91%",
-      "pct": -4.91
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-5.09%",
-      "pct": -5.09
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "생물공학",
-      "change_value": "-6.58%",
-      "pct": -6.58
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
       "name": "전기제품",
-      "change_value": "-7.36%",
-      "pct": -7.36
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
