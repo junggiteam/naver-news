@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10 08:01:16",
+  "updated_at": "2026-11-10 08:31:06",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000002",
-      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 사업 확장을 하겠다는 결정입니다."
+      "ai_explanation": "타 회사의 주식이나 출자 지분을 사들여 자회사를 만들거나 지분을 확대하기로 결정함."
     },
     {
       "corp_name": "쏘닉스",
@@ -96,7 +96,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000004",
-      "ai_explanation": "회사가 발행한 채권을 추후 주식으로 바꿀 수 있는 권리가 부여된 사채 발행 내용을 정정하는 공시입니다."
+      "ai_explanation": "회사가 발행한 채권을 추후 주식으로 바꿀 수 있는 권리가 부여된 채권의 발행 조건을 수정함."
     },
     {
       "corp_name": "퀀텀레일",
@@ -105,7 +105,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000399",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000399",
-      "ai_explanation": "회사가 발행한 채권을 추후 주식으로 바꿀 수 있는 권리가 부여된 사채 발행 내용을 정정하는 공시입니다."
+      "ai_explanation": "회사가 발행한 채권을 추후 주식으로 바꿀 수 있는 권리가 부여된 채권의 발행 조건을 수정함."
     },
     {
       "corp_name": "퀀텀레일",
@@ -114,7 +114,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000401",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000401",
-      "ai_explanation": "자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등의 조치를 정정한다는 공시입니다."
+      "ai_explanation": "회사의 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추는 등의 조정을 하기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -2998,145 +2998,63 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "동양2우B",
-      "price": "6,760",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "아시아나IDT",
-      "price": "14,130",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "덕성우",
-      "price": "6,990",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한진칼우",
-      "price": "104,700",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "대원전선우",
-      "price": "8,950",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "코아스",
-      "price": "751",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "진양화학",
-      "price": "3,500",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KB 레버리지 2차전지 TOP 10 TR ETN",
-      "price": "13,980",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "삼성SDI",
-      "price": "409,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KODEX 2차전지산업레버리지",
-      "price": "613",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "항공사",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "통신장비",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "문구류",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "레저용장비와제품",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "항공사",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "통신장비",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "문구류",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "레저용장비와제품",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "에너지장비및서비스",
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3146,7 +3064,27 @@
       "pct": 0.0
     },
     {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
       "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
@@ -3155,7 +3093,7 @@
     "종합": 407,
     "경제": 30,
     "부동산": 30,
-    "증권": 77
+    "증권": 78
   },
   "article_count_trend": {
     "종합": {
@@ -3177,9 +3115,9 @@
       "surge": false
     },
     "증권": {
-      "today": 77,
+      "today": 78,
       "yesterday": 90,
-      "change_pct": -14.4,
+      "change_pct": -13.3,
       "surge": false
     }
   }
