@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-10 11:01:26",
+  "updated_at": "2026-11-10 11:31:12",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 4.05,
-    "kosdaq_change": 4.26,
-    "kospi_value": 5221.99,
-    "kosdaq_value": 666.17
+    "kospi_change": 4.37,
+    "kosdaq_change": 3.93,
+    "kospi_value": 5238.1,
+    "kosdaq_value": 664.1
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 증시가 상승 마감하며 투자 심리에 긍정적인 영향을 미친 가운데 국내 증시도 동반 급등세를 보였다. 이에 따라 코스피와 코스닥 시장 모두 매수 사이드카가 발동되며 거래가 일시적으로 중단되기도 했다. 인공지능 관련 종목의 하락세가 진정될 조짐을 보이면서 시장 전반의 반등을 이끌었다."
+      "text": "최근 엔비디아 주가 급락에 따른 시장의 우려와는 별개로, 금일 국내 증시는 반도체 관련주를 중심으로 저가 매수세가 유입되며 상승했다. 장중 외국인과 기관 투자자들의 동반 순매수가 이어지면서 코스피와 코스닥 지수 모두 큰 폭의 오름세를 보였다."
     }
   ],
   "daily_term": {
@@ -91,7 +91,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000104",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000104",
-      "ai_explanation": "회사가 타인의 채무를 대신 갚기로 보증을 서는 결정입니다."
+      "ai_explanation": "회사가 타인의 채무를 대신 갚아주겠다고 보증하는 것을 의미합니다."
     },
     {
       "corp_name": "넥사다이내믹스",
@@ -100,7 +100,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000080",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000080",
-      "ai_explanation": "기존에 공시한 유상증자 내용 중 일부를 수정하는 것입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "금오도해상풍력",
@@ -109,7 +109,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000026",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000026",
-      "ai_explanation": "회사가 보유한 사업 부문을 다른 기업에 넘기는 결정입니다."
+      "ai_explanation": "회사가 보유한 사업 부문이나 자산 일부를 다른 곳에 넘기기로 결정한 것입니다."
     },
     {
       "corp_name": "더블유게임즈",
@@ -118,7 +118,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000002",
-      "ai_explanation": "다른 회사의 주식을 사들여 자회사로 편입하거나 투자하는 결정입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 자산으로 편입하겠다는 결정입니다."
     },
     {
       "corp_name": "쏘닉스",
@@ -127,7 +127,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000004",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부를 수정하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 관련 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "퀀텀레일",
@@ -136,7 +136,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000399",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000399",
-      "ai_explanation": "기존에 공시한 전환사채 발행 내용 중 일부를 수정하는 것입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 관련 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "퀀텀레일",
@@ -145,7 +145,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000401",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000401",
-      "ai_explanation": "기존에 공시한 자본금 감소(감자) 내용 중 일부를 수정하는 것입니다."
+      "ai_explanation": "기존에 공시한 자본금 규모를 줄이는 감자 결정 내용을 수정하여 다시 알리는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3064,9 +3064,15 @@
   "top_losers": [
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "10,750",
-      "change_percent": "-18.00%",
-      "pct": 18.0
+      "price": "10,660",
+      "change_percent": "-18.69%",
+      "pct": 18.69
+    },
+    {
+      "name": "RISE 2차전지TOP10인버스(합성)",
+      "price": "18,585",
+      "change_percent": "-15.52%",
+      "pct": 15.52
     },
     {
       "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
@@ -3075,111 +3081,105 @@
       "pct": 15.14
     },
     {
-      "name": "RISE 2차전지TOP10인버스(합성)",
-      "price": "18,620",
-      "change_percent": "-15.36%",
-      "pct": 15.36
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "9,760",
+      "change_percent": "-13.78%",
+      "pct": 13.78
     },
     {
       "name": "N2 인버스 2X 천연가스 선물 ETN",
       "price": "10,990",
       "change_percent": "-12.88%",
       "pct": 12.88
-    },
-    {
-      "name": "미래에셋 인버스 2X 반도체 ETN",
-      "price": "5,345",
-      "change_percent": "-12.95%",
-      "pct": 12.95
     }
   ],
   "sector_performance": [
     {
       "name": "항공사",
-      "change_value": "+11.67%",
-      "pct": 11.67
+      "change_value": "+13.34%",
+      "pct": 13.34
     },
     {
       "name": "전기장비",
-      "change_value": "+9.15%",
-      "pct": 9.15
+      "change_value": "+9.49%",
+      "pct": 9.49
     },
     {
       "name": "통신장비",
-      "change_value": "+7.49%",
-      "pct": 7.49
+      "change_value": "+7.39%",
+      "pct": 7.39
     },
     {
       "name": "IT서비스",
-      "change_value": "+6.09%",
-      "pct": 6.09
+      "change_value": "+6.51%",
+      "pct": 6.51
     },
     {
       "name": "건설",
-      "change_value": "+6.03%",
-      "pct": 6.03
+      "change_value": "+6.35%",
+      "pct": 6.35
     }
   ],
   "sector_heatmap": [
     {
       "name": "항공사",
-      "change_value": "+11.67%",
-      "pct": 11.67
+      "change_value": "+13.34%",
+      "pct": 13.34
     },
     {
       "name": "전기장비",
-      "change_value": "+9.15%",
-      "pct": 9.15
+      "change_value": "+9.49%",
+      "pct": 9.49
     },
     {
       "name": "통신장비",
-      "change_value": "+7.49%",
-      "pct": 7.49
+      "change_value": "+7.39%",
+      "pct": 7.39
     },
     {
       "name": "IT서비스",
-      "change_value": "+6.09%",
-      "pct": 6.09
+      "change_value": "+6.51%",
+      "pct": 6.51
     },
     {
       "name": "건설",
-      "change_value": "+6.03%",
-      "pct": 6.03
+      "change_value": "+6.35%",
+      "pct": 6.35
     },
     {
       "name": "기계",
-      "change_value": "+5.90%",
-      "pct": 5.9
-    },
-    {
-      "name": "부동산",
-      "change_value": "-1.44%",
-      "pct": -1.44
+      "change_value": "+6.00%",
+      "pct": 6.0
     },
     {
       "name": "방송과엔터테인먼트",
+      "change_value": "-1.40%",
+      "pct": -1.4
+    },
+    {
+      "name": "부동산",
       "change_value": "-1.65%",
       "pct": -1.65
     },
     {
-      "name": "담배",
-      "change_value": "-2.41%",
-      "pct": -2.41
-    },
-    {
       "name": "음료",
-      "change_value": "-2.49%",
-      "pct": -2.49
+      "change_value": "-3.03%",
+      "pct": -3.03
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "-2.83%",
-      "pct": -2.83
+      "change_value": "-3.77%",
+      "pct": -3.77
+    },
+    {
+      "name": "담배",
+      "change_value": "-3.84%",
+      "pct": -3.84
     },
     {
       "name": "복합유틸리티",
-      "change_value": "-7.36%",
-      "pct": -7.36
+      "change_value": "-5.56%",
+      "pct": -5.56
     }
   ],
   "article_counts": {
