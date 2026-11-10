@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-10 09:01:19",
+  "updated_at": "2026-11-10 09:31:10",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 5018.85,
-    "kosdaq_value": 638.97
+    "label": "급등",
+    "emoji": "🟢",
+    "kospi_change": 5.17,
+    "kosdaq_change": 4.13,
+    "kospi_value": 5278.47,
+    "kosdaq_value": 665.36
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "서울시 향후 5년 지역균형발전 계획 및 공청회 일정 발표"
+    },
+    {
+      "category": "증권",
+      "text": "미국 반도체주 강세의 영향으로 삼성전자와 SK하이닉스 등 주요 반도체 종목이 급등하며 코스피와 코스닥 지수가 동반 상승했다. 지수 급등세가 이어지자 개장 직후 유가증권시장과 코스닥시장에 모두 매수 사이드카가 발동되었다."
     }
   ],
   "daily_term": {
@@ -81,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "금오도해상풍력",
+      "corp_code": "01678905",
+      "report_nm": "영업양도결정",
+      "rcept_dt": "20261110",
+      "rcept_no": "20261110000026",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000026",
+      "ai_explanation": "회사의 사업 부문이나 자산을 다른 기업에 매각하기로 결정했다는 의미입니다."
+    },
+    {
       "corp_name": "더블유게임즈",
       "corp_code": "01010110",
       "report_nm": "주요사항보고서(타법인주식및출자증권양수결정)",
       "rcept_dt": "20261110",
       "rcept_no": "20261110000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000002",
-      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 자회사로 편입하거나 경영권을 확보하기로 결정함."
+      "ai_explanation": "타 기업의 주식이나 지분을 사들여 경영권 확보나 투자 목적으로 활용하겠다는 결정입니다."
     },
     {
       "corp_name": "쏘닉스",
@@ -96,7 +109,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261110000004",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000004",
-      "ai_explanation": "기존에 공시한 전환사채 발행 계획의 내용을 일부 수정하여 다시 알림."
+      "ai_explanation": "기존에 공시했던 전환사채 발행 계획에서 일부 내용이 변경되었음을 알리는 공시입니다."
     },
     {
       "corp_name": "퀀텀레일",
@@ -105,7 +118,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000399",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000399",
-      "ai_explanation": "기존에 공시한 전환사채 발행 계획의 내용을 일부 수정하여 다시 알림."
+      "ai_explanation": "기존에 공시했던 전환사채 발행 계획의 세부적인 조건이나 내용이 수정되었다는 의미입니다."
     },
     {
       "corp_name": "퀀텀레일",
@@ -114,7 +127,7 @@
       "rcept_dt": "20261110",
       "rcept_no": "20261109000401",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000401",
-      "ai_explanation": "기존에 공시한 자본금 감소(감자) 결정의 내용을 일부 수정하여 다시 알림."
+      "ai_explanation": "기존에 공시했던 자본금 감소(감자) 계획의 세부 내용이 일부 변경되었음을 알리는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -3000,144 +3013,162 @@
   },
   "top_gainers": [
     {
-      "name": "KODEX 코리아TDF2065액티브 적격",
-      "price": "8,250",
-      "change_percent": "+3.64%",
-      "pct": 3.64
+      "name": "대한항공우",
+      "price": "38,150",
+      "change_percent": "+29.98%",
+      "pct": 29.98
     },
     {
-      "name": "삼양홀딩스",
-      "price": "52,300",
-      "change_percent": "+1.16%",
-      "pct": 1.16
+      "name": "메타랩스",
+      "price": "1,232",
+      "change_percent": "+29.96%",
+      "pct": 29.96
     },
     {
-      "name": "KCC글라스",
-      "price": "22,050",
-      "change_percent": "+0.92%",
-      "pct": 0.92
+      "name": "아시아나IDT",
+      "price": "18,360",
+      "change_percent": "+29.94%",
+      "pct": 29.94
     },
     {
-      "name": "TIGER MKF배당귀족",
-      "price": "19,635",
-      "change_percent": "+0.80%",
-      "pct": 0.8
+      "name": "NHN",
+      "price": "77,400",
+      "change_percent": "+29.87%",
+      "pct": 29.87
     },
     {
-      "name": "KPX홀딩스",
-      "price": "88,400",
-      "change_percent": "+0.23%",
-      "pct": 0.23
+      "name": "한올바이오파마",
+      "price": "44,700",
+      "change_percent": "+20.49%",
+      "pct": 20.49
     }
   ],
   "top_losers": [
     {
-      "name": "한투 인버스2X코스닥150선물 ETN",
-      "price": "2,655",
-      "change_percent": "-8.45%",
-      "pct": 8.45
+      "name": "키움 인버스 2X 전력 TOP5 ETN",
+      "price": "10,705",
+      "change_percent": "-18.34%",
+      "pct": 18.34
     },
     {
-      "name": "TIGER 중장기국채",
-      "price": "51,585",
-      "change_percent": "-0.06%",
-      "pct": 0.06
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "9,495",
+      "change_percent": "-16.12%",
+      "pct": 16.12
+    },
+    {
+      "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
+      "price": "9,425",
+      "change_percent": "-15.05%",
+      "pct": 15.05
+    },
+    {
+      "name": "RISE 2차전지TOP10인버스(합성)",
+      "price": "18,695",
+      "change_percent": "-15.02%",
+      "pct": 15.02
+    },
+    {
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "4,290",
+      "change_percent": "-13.68%",
+      "pct": 13.68
     }
   ],
   "sector_performance": [
     {
-      "name": "레저용장비와제품",
-      "change_value": "+0.34%",
-      "pct": 0.34
+      "name": "항공사",
+      "change_value": "+10.82%",
+      "pct": 10.82
     },
     {
-      "name": "가정용품",
-      "change_value": "+0.33%",
-      "pct": 0.33
+      "name": "전기장비",
+      "change_value": "+9.42%",
+      "pct": 9.42
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.26%",
-      "pct": 0.26
+      "name": "IT서비스",
+      "change_value": "+7.82%",
+      "pct": 7.82
     },
     {
-      "name": "건축자재",
-      "change_value": "+0.05%",
-      "pct": 0.05
+      "name": "통신장비",
+      "change_value": "+7.52%",
+      "pct": 7.52
     },
     {
-      "name": "화학",
-      "change_value": "+0.01%",
-      "pct": 0.01
+      "name": "반도체와반도체장비",
+      "change_value": "+6.69%",
+      "pct": 6.69
     }
   ],
   "sector_heatmap": [
     {
-      "name": "레저용장비와제품",
-      "change_value": "+0.34%",
-      "pct": 0.34
+      "name": "항공사",
+      "change_value": "+10.82%",
+      "pct": 10.82
     },
     {
-      "name": "가정용품",
-      "change_value": "+0.33%",
-      "pct": 0.33
-    },
-    {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.26%",
-      "pct": 0.26
-    },
-    {
-      "name": "건축자재",
-      "change_value": "+0.05%",
-      "pct": 0.05
-    },
-    {
-      "name": "화학",
-      "change_value": "+0.01%",
-      "pct": 0.01
+      "name": "전기장비",
+      "change_value": "+9.42%",
+      "pct": 9.42
     },
     {
       "name": "IT서비스",
-      "change_value": "+0.01%",
-      "pct": 0.01
+      "change_value": "+7.82%",
+      "pct": 7.82
     },
     {
-      "name": "카드",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "통신장비",
+      "change_value": "+7.52%",
+      "pct": 7.52
     },
     {
-      "name": "사무용전자제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+6.69%",
+      "pct": 6.69
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "기계",
+      "change_value": "+6.35%",
+      "pct": 6.35
     },
     {
-      "name": "생물공학",
-      "change_value": "-0.01%",
-      "pct": -0.01
+      "name": "다각화된통신서비스",
+      "change_value": "-0.37%",
+      "pct": -0.37
     },
     {
-      "name": "판매업체",
-      "change_value": "-0.07%",
-      "pct": -0.07
+      "name": "부동산",
+      "change_value": "-0.65%",
+      "pct": -0.65
     },
     {
       "name": "가구",
-      "change_value": "-0.17%",
-      "pct": -0.17
+      "change_value": "-0.85%",
+      "pct": -0.85
+    },
+    {
+      "name": "음료",
+      "change_value": "-1.69%",
+      "pct": -1.69
+    },
+    {
+      "name": "담배",
+      "change_value": "-1.75%",
+      "pct": -1.75
+    },
+    {
+      "name": "복합유틸리티",
+      "change_value": "-6.53%",
+      "pct": -6.53
     }
   ],
   "article_counts": {
     "종합": 407,
     "경제": 30,
     "부동산": 30,
-    "증권": 78
+    "증권": 79
   },
   "article_count_trend": {
     "종합": {
@@ -3159,9 +3190,9 @@
       "surge": false
     },
     "증권": {
-      "today": 78,
+      "today": 79,
       "yesterday": 90,
-      "change_pct": -13.3,
+      "change_pct": -12.2,
       "surge": false
     }
   }
