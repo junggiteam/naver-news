@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 08:01:21",
+  "updated_at": "2026-11-13 08:31:02",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20261113",
       "rcept_no": "20261113000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000003",
-      "ai_explanation": "회사가 누적 결손금 보전이나 자본 구조 개선을 위해 주식 수를 줄이는 결정입니다."
+      "ai_explanation": "회사가 누적 결손금 보전이나 자본 구조 개선을 위해 주식 수를 줄이거나 액면가를 낮추는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2931,130 +2931,21 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "티와이홀딩스우",
-      "price": "4,380",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "깨끗한나라우",
-      "price": "8,980",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한진칼우",
-      "price": "132,400",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "YG PLUS",
-      "price": "3,345",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "진양화학",
-      "price": "4,180",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "DB하이텍",
-      "price": "81,600",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "NHN",
-      "price": "68,600",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "달바글로벌",
-      "price": "125,500",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "메타랩스",
-      "price": "1,378",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "태영건설우",
-      "price": "7,120",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "방송과엔터테인먼트",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "해운사",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가스유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "sector_heatmap": [
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "해운사",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가스유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "광고",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전자장비와기기",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3064,12 +2955,29 @@
       "pct": 0.0
     },
     {
-      "name": "에너지장비및서비스",
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "양방향미디어와서비스",
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3079,7 +2987,37 @@
       "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
