@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12 23:01:02",
+  "updated_at": "2026-11-12 23:31:00",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "52,486.49",
-      "change_percent": "▲0.00%",
+      "value": "52,556.27",
+      "change_percent": "▲0.13%",
       "direction": "up",
-      "as_of": "2026-11-12 09:00:53"
+      "as_of": "2026-11-12 09:30:49"
     },
     {
       "name": "나스닥",
-      "value": "25,466.19",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-11-12 09:00:54"
+      "value": "25,111.62",
+      "change_percent": "▼1.39%",
+      "direction": "down",
+      "as_of": "2026-11-12 09:30:49"
     },
     {
       "name": "나스닥100",
-      "value": "28,374.25",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-11-12 09:00:54"
+      "value": "28,006.32",
+      "change_percent": "▼1.30%",
+      "direction": "down",
+      "as_of": "2026-11-12 09:30:53"
     },
     {
       "name": "S&P500",
-      "value": "7,619.38",
-      "change_percent": "▲0.00%",
-      "direction": "up",
-      "as_of": "2026-11-12 09:00:55"
+      "value": "7,567.73",
+      "change_percent": "▼0.68%",
+      "direction": "down",
+      "as_of": "2026-11-12 09:30:53"
     },
     {
       "name": "국내금(원/돈)",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,334.00",
-      "change_percent": "▼0.26%",
+      "value": "1,332.90",
+      "change_percent": "▼0.34%",
       "direction": "down",
-      "as_of": "2026-11-12 22:59:53"
+      "as_of": "2026-11-12 23:28:53"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "835.32",
-      "change_percent": "▼0.22%",
+      "value": "835.20",
+      "change_percent": "▼0.23%",
       "direction": "down",
-      "as_of": "2026-11-12 22:59:53"
+      "as_of": "2026-11-12 23:28:53"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,479.27",
+      "value": "1,479.19",
       "change_percent": "▼0.32%",
       "direction": "down",
-      "as_of": "2026-11-12 22:59:53"
+      "as_of": "2026-11-12 23:28:53"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "86.94",
-      "change_percent": "▲0.47%",
-      "direction": "up",
-      "as_of": "2026-11-12 07:50:24"
+      "value": "86.39",
+      "change_percent": "▼0.16%",
+      "direction": "down",
+      "as_of": "2026-11-12 08:20:56"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "98,077,000",
-      "change_percent": "▼2.25%",
+      "value": "97,446,000",
+      "change_percent": "▼2.88%",
       "direction": "down",
-      "as_of": "2026-11-12 23:00:58"
+      "as_of": "2026-11-12 23:30:59"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,722,000",
-      "change_percent": "▼2.37%",
+      "value": "2,700,000",
+      "change_percent": "▼3.16%",
       "direction": "down",
-      "as_of": "2026-11-12 23:01:00"
+      "as_of": "2026-11-12 23:30:59"
     }
   ],
   "news_categories": [
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제TV",
           "rank": 1,
+          "title": "[속보] 젠슨 황, 엔비디아 CEO 사퇴...임시 CEO엔 콜레트 크레스 CFO",
+          "link": "https://n.news.naver.com/mnews/article/215/0001272602?sid=101258403",
+          "upload_time": "20261112230025",
+          "published_at": "2026-11-12T23:00:25+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "원맨 체제가 독 됐다… 흔들리는 엔비디아 패권, AMD·브로드컴 부상",
           "link": "https://n.news.naver.com/mnews/article/018/0006409127?sid=101258403",
           "upload_time": "20261112192022",
@@ -399,7 +407,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 3,
           "title": "젠슨황 거취 불확실해 엔비디아 '휘청'…美증시 선물도 끌어내려",
           "link": "https://n.news.naver.com/mnews/article/018/0006409121?sid=101258403",
           "upload_time": "20261112190314",
@@ -407,7 +415,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 4,
           "title": "[글로벌 핫스톡] AI 반도체 고도화 수혜주 ‘어드반테스트’",
           "link": "https://n.news.naver.com/mnews/article/011/0004681650?sid=101258403",
           "upload_time": "20261112185111",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 5,
           "title": "“젠슨 황 해임, 애플의 잡스 해고처럼 어리석어”…엔비디아 CEO 교체 논란",
           "link": "https://n.news.naver.com/mnews/article/009/0005762759?sid=101258403",
           "upload_time": "20261112145908",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 5,
+          "rank": 6,
           "title": "시진핑 \"중화민족 부흥 실현해야\"…대만 통일 필요성 강조",
           "link": "https://n.news.naver.com/mnews/article/277/0005841841?sid=101258403",
           "upload_time": "20261112142517",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 7,
           "title": "\"제발 고용해줘\"…해임 위기 '젠슨 황' 영입 요청에 머스크 \"영광일 것\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005841836?sid=101258403",
           "upload_time": "20261112141437",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 7,
+          "rank": 8,
           "title": "“지금이 살 때인가”…10% 빠진 美 기술주, 월가도 갈렸다",
           "link": "https://n.news.naver.com/mnews/article/018/0006408843?sid=101258403",
           "upload_time": "20261112125810",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 8,
+          "rank": 9,
           "title": "엔비디아, 젠슨 황 해임 추진…AI 반도체 시장 충격(종합)",
           "link": "https://n.news.naver.com/mnews/article/277/0005841753?sid=101258403",
           "upload_time": "20261112112317",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 9,
+          "rank": 10,
           "title": "\"중국 보안당국도 알고 있다\"…'젠슨황 불륜女' 앨리스 황, 베이징 체류 중",
           "link": "https://n.news.naver.com/mnews/article/277/0005841741?sid=101258403",
           "upload_time": "20261112111511",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "네이버 6분기 연속 매출 신기록…AI 팩토리 2조원 공급계약(종합2보)",
           "link": "https://n.news.naver.com/mnews/article/001/0016437868?sid=101258403",
           "upload_time": "20261112105649",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 11,
+          "rank": 12,
           "title": "“기업활동이 비트코인 사는 것 뿐”…스트래티지, MSCI에서 쫓겨났다",
           "link": "https://n.news.naver.com/mnews/article/009/0005762611?sid=101258403",
           "upload_time": "20261112105308",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 12,
+          "rank": 13,
           "title": "젠슨황 스캔들에 美·中 반도체 규제 강화…싱가포르에도 여파(종합)",
           "link": "https://n.news.naver.com/mnews/article/277/0005841709?sid=101258403",
           "upload_time": "20261112104900",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 13,
+          "rank": 14,
           "title": "美 공화당서 먼저 젠슨 황 퇴진론 제기…의회 강제 소환 압박에 행정부 내홍(종합)",
           "link": "https://n.news.naver.com/mnews/article/277/0005841676?sid=101258403",
           "upload_time": "20261112102246",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 14,
+          "rank": 15,
           "title": "\"앤스로픽 IPO 청약, 공모물량 수배 넘어…역대 최대규모 기대\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005841595?sid=101258403",
           "upload_time": "20261112092749",
           "published_at": "2026-11-12T09:27:49+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "젠슨 황 스캔들에 美 반도체 수출규제 강화 재점화",
-          "link": "https://n.news.naver.com/mnews/article/277/0005841515?sid=101258403",
-          "upload_time": "20261112083604",
-          "published_at": "2026-11-12T08:36:04+09:00"
         }
       ]
     },
