@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-12 10:01:12",
+  "updated_at": "2026-11-12 10:31:04",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": 0.54,
-    "kosdaq_change": -0.51,
-    "kospi_value": 5404.5,
-    "kosdaq_value": 701.48
+    "kospi_change": -0.01,
+    "kosdaq_change": -0.69,
+    "kospi_value": 5374.7,
+    "kosdaq_value": 700.27
   },
   "heroes": {
     "종합": {
@@ -80,13 +80,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "SNT모티브",
+      "corp_code": "00398792",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261112",
+      "rcept_no": "20261112000083",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000083",
+      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하기로 결정했다는 의미입니다."
+    },
+    {
       "corp_name": "SNT에너지",
       "corp_code": "00648721",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261112",
       "rcept_no": "20261112000034",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000034",
-      "ai_explanation": "회사가 신탁 기관을 통해 자사 주식을 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "SNT다이내믹스",
@@ -95,7 +104,7 @@
       "rcept_dt": "20261112",
       "rcept_no": "20261112000041",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000041",
-      "ai_explanation": "회사가 신탁 기관을 통해 자사 주식을 매입하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하기로 결정했다는 의미입니다."
     },
     {
       "corp_name": "애드바이오텍",
@@ -104,7 +113,7 @@
       "rcept_dt": "20261112",
       "rcept_no": "20261112000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000003",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 내용이 변경되어 이를 수정 공시했다는 의미입니다."
+      "ai_explanation": "이전에 공시한 전환사채 발행 관련 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "애드바이오텍",
@@ -113,7 +122,7 @@
       "rcept_dt": "20261112",
       "rcept_no": "20261112000002",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000002",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 내용이 변경되어 이를 수정 공시했다는 의미입니다."
+      "ai_explanation": "이전에 공시한 전환사채 발행 관련 내용을 수정하여 다시 알리는 것입니다."
     },
     {
       "corp_name": "애드바이오텍",
@@ -122,7 +131,7 @@
       "rcept_dt": "20261112",
       "rcept_no": "20261112000001",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000001",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 내용이 변경되어 이를 수정 공시했다는 의미입니다."
+      "ai_explanation": "이전에 공시한 전환사채 발행 관련 내용을 수정하여 다시 알리는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2994,149 +3003,149 @@
       "pct": 29.97
     },
     {
-      "name": "티와이홀딩스",
-      "price": "2,090",
-      "change_percent": "+13.77%",
-      "pct": 13.77
-    },
-    {
       "name": "계양전기우",
       "price": "6,730",
       "change_percent": "+26.03%",
       "pct": 26.03
     },
     {
-      "name": "유화증권우",
-      "price": "2,850",
-      "change_percent": "+2.52%",
-      "pct": 2.52
+      "name": "SH에너지화학",
+      "price": "3,955",
+      "change_percent": "+19.67%",
+      "pct": 19.67
     },
     {
-      "name": "ACE KPOP포커스",
-      "price": "7,040",
-      "change_percent": "+8.64%",
-      "pct": 8.64
+      "name": "티와이홀딩스",
+      "price": "2,140",
+      "change_percent": "+16.49%",
+      "pct": 16.49
+    },
+    {
+      "name": "계양전기",
+      "price": "2,900",
+      "change_percent": "+15.54%",
+      "pct": 15.54
     }
   ],
   "top_losers": [
     {
       "name": "메타랩스",
-      "price": "1,278",
-      "change_percent": "-20.17%",
-      "pct": 20.17
-    },
-    {
-      "name": "DB하이텍",
-      "price": "83,000",
-      "change_percent": "-15.65%",
-      "pct": 15.65
-    },
-    {
-      "name": "깨끗한나라우",
-      "price": "6,300",
-      "change_percent": "-8.83%",
-      "pct": 8.83
+      "price": "1,309",
+      "change_percent": "-18.24%",
+      "pct": 18.24
     },
     {
       "name": "동양2우B",
-      "price": "5,300",
-      "change_percent": "-13.82%",
-      "pct": 13.82
+      "price": "5,220",
+      "change_percent": "-15.12%",
+      "pct": 15.12
+    },
+    {
+      "name": "DB하이텍",
+      "price": "83,600",
+      "change_percent": "-15.04%",
+      "pct": 15.04
     },
     {
       "name": "메리츠금융지주",
-      "price": "112,600",
-      "change_percent": "-13.05%",
-      "pct": 13.05
+      "price": "112,800",
+      "change_percent": "-12.90%",
+      "pct": 12.9
+    },
+    {
+      "name": "NHN",
+      "price": "70,000",
+      "change_percent": "-12.83%",
+      "pct": 12.83
     }
   ],
   "sector_performance": [
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+5.92%",
-      "pct": 5.92
+      "change_value": "+6.35%",
+      "pct": 6.35
     },
     {
       "name": "소프트웨어",
-      "change_value": "+2.89%",
-      "pct": 2.89
+      "change_value": "+1.97%",
+      "pct": 1.97
     },
     {
       "name": "전기장비",
-      "change_value": "+1.84%",
-      "pct": 1.84
+      "change_value": "+1.96%",
+      "pct": 1.96
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+1.73%",
-      "pct": 1.73
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
-      "name": "반도체와반도체장비",
-      "change_value": "+1.64%",
-      "pct": 1.64
+      "name": "항공화물운송과물류",
+      "change_value": "+1.21%",
+      "pct": 1.21
     }
   ],
   "sector_heatmap": [
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+5.92%",
-      "pct": 5.92
+      "change_value": "+6.35%",
+      "pct": 6.35
     },
     {
       "name": "소프트웨어",
-      "change_value": "+2.89%",
-      "pct": 2.89
+      "change_value": "+1.97%",
+      "pct": 1.97
     },
     {
       "name": "전기장비",
-      "change_value": "+1.84%",
-      "pct": 1.84
+      "change_value": "+1.96%",
+      "pct": 1.96
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+1.73%",
-      "pct": 1.73
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "+1.64%",
-      "pct": 1.64
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "+1.49%",
-      "pct": 1.49
+      "change_value": "+1.21%",
+      "pct": 1.21
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "-2.60%",
-      "pct": -2.6
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "-3.01%",
-      "pct": -3.01
+      "name": "반도체와반도체장비",
+      "change_value": "+1.10%",
+      "pct": 1.1
     },
     {
       "name": "건강관리기술",
-      "change_value": "-3.47%",
-      "pct": -3.47
-    },
-    {
-      "name": "증권",
-      "change_value": "-3.65%",
-      "pct": -3.65
-    },
-    {
-      "name": "손해보험",
-      "change_value": "-4.14%",
-      "pct": -4.14
+      "change_value": "-3.74%",
+      "pct": -3.74
     },
     {
       "name": "문구류",
-      "change_value": "-4.29%",
-      "pct": -4.29
+      "change_value": "-3.85%",
+      "pct": -3.85
+    },
+    {
+      "name": "증권",
+      "change_value": "-4.02%",
+      "pct": -4.02
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "-4.07%",
+      "pct": -4.07
+    },
+    {
+      "name": "손해보험",
+      "change_value": "-4.79%",
+      "pct": -4.79
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-5.37%",
+      "pct": -5.37
     }
   ],
   "article_counts": {
