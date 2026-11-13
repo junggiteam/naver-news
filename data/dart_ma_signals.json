@@ -16411,11 +16411,39 @@
         "action": "회사합병결정"
       }
     ],
-    "지분인수": [],
+    "지분인수": [
+      {
+        "corp_name": "갤럭시아디바이스",
+        "corp_code": "00220242",
+        "report_nm": "타법인주식및출자증권취득결정",
+        "rcept_dt": "20261113",
+        "rcept_no": "20261113000964",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000964",
+        "action": "타법인주식및출자증권양수결정"
+      },
+      {
+        "corp_name": "갤럭시아에셋매니지먼트",
+        "corp_code": "01987070",
+        "report_nm": "타법인주식및출자증권취득결정",
+        "rcept_dt": "20261113",
+        "rcept_no": "20261113000919",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000919",
+        "action": "타법인주식및출자증권양수결정"
+      }
+    ],
     "영업양수도": [],
     "주식교환_이전": [],
     "경영권이동_최대주주변경": [],
     "자기주식": [
+      {
+        "corp_name": "셀트리온제약",
+        "corp_code": "00541349",
+        "report_nm": "주요사항보고서(자기주식처분결정)",
+        "rcept_dt": "20261113",
+        "rcept_no": "20261113000892",
+        "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000892",
+        "action": "자기주식처분결정"
+      },
       {
         "corp_name": "디티앤씨",
         "corp_code": "00675594",
@@ -16426,6 +16454,6 @@
         "action": "자기주식취득결정"
       }
     ],
-    "_updated_at": "2026-11-13 15:31:11"
+    "_updated_at": "2026-11-13 16:01:58"
   }
 }
