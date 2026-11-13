@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-13 10:01:22",
+  "updated_at": "2026-11-13 10:31:04",
   "market_mood": {
-    "label": "상승",
-    "emoji": "🔵",
-    "kospi_change": 1.96,
-    "kosdaq_change": 3.42,
-    "kospi_value": 5447.33,
-    "kosdaq_value": 720.33
+    "label": "급등",
+    "emoji": "🟢",
+    "kospi_change": 2.26,
+    "kosdaq_change": 3.84,
+    "kospi_value": 5463.64,
+    "kosdaq_value": 723.28
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "이재명 대통령이 참석한 자본시장 정책 간담회에서 시장의 불공정 행위를 엄정 단속하겠다는 의지가 밝혀지며 투자 심리가 개선되었다. 정부의 자본시장 활성화 관련 발언과 정책 추진 기대감이 복합적으로 작용하면서 코스피와 코스닥 지수가 각각 상승 마감했다."
+      "text": "정부의 자본시장 정책 간담회 개최 소식이 투자 심리에 긍정적인 영향을 미치며 국내 증시가 동반 상승했다. 특정 기업의 실적 발표와 경영진 관련 이슈가 개별 종목의 등락에 영향을 주었으나, 전반적으로는 자본시장 활성화를 위한 정책 기대감이 지수 상승을 견인했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "디티앤씨",
+      "corp_code": "00675594",
+      "report_nm": "주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261113",
+      "rcept_no": "20261113000139",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000139",
+      "ai_explanation": "회사가 주가 안정이나 주주 가치 제고를 위해 자사 주식을 직접 매입하기로 결정했다는 뜻입니다."
+    },
+    {
       "corp_name": "방림",
       "corp_code": "00122348",
       "report_nm": "[기재정정]주요사항보고서(유형자산양도결정)",
       "rcept_dt": "20261113",
       "rcept_no": "20261113000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000007",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등 자산을 매각하기로 결정했다는 내용을 정정한 공시입니다."
+      "ai_explanation": "회사가 보유한 부동산이나 설비 등 유형자산을 매각하기로 한 계획을 수정하여 다시 공시했다는 뜻입니다."
     },
     {
       "corp_name": "셀루메드",
@@ -100,7 +109,7 @@
       "rcept_dt": "20261113",
       "rcept_no": "20261113000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000003",
-      "ai_explanation": "회사가 누적 결손금 보전이나 재무 구조 개선을 위해 주식 수를 줄이기로 결정한 공시입니다."
+      "ai_explanation": "회사가 누적된 결손금을 보전하거나 재무 구조를 개선하기 위해 자본금을 줄이기로 결정했다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2959,29 +2968,29 @@
     },
     {
       "name": "금호전기",
-      "price": "8,180",
-      "change_percent": "+23.94%",
-      "pct": 23.94
+      "price": "8,130",
+      "change_percent": "+23.18%",
+      "pct": 23.18
     },
     {
-      "name": "KB 레버리지 KOSDAQ 150 선물 ETN",
-      "price": "16,240",
-      "change_percent": "+11.65%",
-      "pct": 11.65
+      "name": "동부건설우",
+      "price": "18,700",
+      "change_percent": "+11.98%",
+      "pct": 11.98
     },
     {
-      "name": "영풍",
-      "price": "31,800",
-      "change_percent": "+10.03%",
-      "pct": 10.03
+      "name": "이수페타시스",
+      "price": "92,900",
+      "change_percent": "+10.46%",
+      "pct": 10.46
     }
   ],
   "top_losers": [
     {
-      "name": "깨끗한나라우",
-      "price": "8,130",
-      "change_percent": "-9.47%",
-      "pct": 9.47
+      "name": "동양2우B",
+      "price": "4,700",
+      "change_percent": "-14.86%",
+      "pct": 14.86
     },
     {
       "name": "티와이홀딩스우",
@@ -2991,110 +3000,110 @@
     },
     {
       "name": "하나 인버스 2X 코스닥150 선물 ETN",
-      "price": "2,060",
-      "change_percent": "-11.97%",
-      "pct": 11.97
+      "price": "2,080",
+      "change_percent": "-11.11%",
+      "pct": 11.11
     },
     {
-      "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-      "price": "2,020",
-      "change_percent": "-11.40%",
-      "pct": 11.4
+      "name": "신한 인버스 2X 코스닥 150 선물 ETN",
+      "price": "2,080",
+      "change_percent": "-9.96%",
+      "pct": 9.96
     },
     {
-      "name": "동양2우B",
-      "price": "4,700",
-      "change_percent": "-14.86%",
-      "pct": 14.86
+      "name": "대신 인버스 2X 코스닥 150 선물 ETN",
+      "price": "2,085",
+      "change_percent": "-9.74%",
+      "pct": 9.74
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+5.70%",
-      "pct": 5.7
+      "change_value": "+7.12%",
+      "pct": 7.12
+    },
+    {
+      "name": "증권",
+      "change_value": "+4.59%",
+      "pct": 4.59
     },
     {
       "name": "창업투자",
-      "change_value": "+5.27%",
-      "pct": 5.27
+      "change_value": "+4.58%",
+      "pct": 4.58
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+4.25%",
-      "pct": 4.25
+      "name": "IT서비스",
+      "change_value": "+4.41%",
+      "pct": 4.41
     },
     {
-      "name": "은행",
-      "change_value": "+4.15%",
-      "pct": 4.15
-    },
-    {
-      "name": "해운사",
-      "change_value": "+4.03%",
-      "pct": 4.03
+      "name": "기계",
+      "change_value": "+4.38%",
+      "pct": 4.38
     }
   ],
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+5.70%",
-      "pct": 5.7
+      "change_value": "+7.12%",
+      "pct": 7.12
+    },
+    {
+      "name": "증권",
+      "change_value": "+4.59%",
+      "pct": 4.59
     },
     {
       "name": "창업투자",
-      "change_value": "+5.27%",
-      "pct": 5.27
+      "change_value": "+4.58%",
+      "pct": 4.58
     },
     {
-      "name": "무선통신서비스",
-      "change_value": "+4.25%",
-      "pct": 4.25
+      "name": "IT서비스",
+      "change_value": "+4.41%",
+      "pct": 4.41
     },
     {
-      "name": "은행",
-      "change_value": "+4.15%",
-      "pct": 4.15
+      "name": "기계",
+      "change_value": "+4.38%",
+      "pct": 4.38
     },
     {
       "name": "해운사",
-      "change_value": "+4.03%",
-      "pct": 4.03
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+3.86%",
-      "pct": 3.86
-    },
-    {
-      "name": "복합유틸리티",
-      "change_value": "-0.59%",
-      "pct": -0.59
+      "change_value": "+4.38%",
+      "pct": 4.38
     },
     {
       "name": "포장재",
-      "change_value": "-0.76%",
-      "pct": -0.76
+      "change_value": "-0.50%",
+      "pct": -0.5
     },
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "-0.77%",
-      "pct": -0.77
+      "name": "식품",
+      "change_value": "-0.82%",
+      "pct": -0.82
     },
     {
       "name": "가구",
-      "change_value": "-0.96%",
-      "pct": -0.96
+      "change_value": "-1.02%",
+      "pct": -1.02
+    },
+    {
+      "name": "게임엔터테인먼트",
+      "change_value": "-1.07%",
+      "pct": -1.07
     },
     {
       "name": "기타금융",
-      "change_value": "-1.10%",
-      "pct": -1.1
+      "change_value": "-1.22%",
+      "pct": -1.22
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-7.18%",
-      "pct": -7.18
+      "change_value": "-7.42%",
+      "pct": -7.42
     }
   ],
   "article_counts": {
