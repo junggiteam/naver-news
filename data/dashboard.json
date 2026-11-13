@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-13 08:50:39",
+  "updated_at": "2026-11-13 09:16:24",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 5342.73,
-    "kosdaq_value": 696.53
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 2.81,
+    "kosdaq_change": 2.93,
+    "kospi_value": 5492.81,
+    "kosdaq_value": 716.92
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "서울 아파트 거래 신청은 늘었으나 지역별 가격 양극화 현상 지속"
+    },
+    {
+      "category": "증권",
+      "text": "미국 증시의 상승세와 반도체 업종에 대한 투자 심리 회복이 국내 증시에 긍정적인 영향을 미치며 코스피와 코스닥 지수가 동반 상승했다. 한국전력의 실적 부진에도 불구하고 주요 기술주를 중심으로 매수세가 유입되면서 장중 상승 폭이 확대되었다."
     }
   ],
   "daily_term": {
@@ -87,7 +91,7 @@
       "rcept_dt": "20261113",
       "rcept_no": "20261113000007",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000007",
-      "ai_explanation": "회사가 보유한 건물이나 토지 등 유형자산을 매각하기로 결정한 내용을 정정하여 공시함."
+      "ai_explanation": "보유 중인 토지나 건물 등 유형자산을 매각하기로 결정했다는 공시입니다."
     },
     {
       "corp_name": "셀루메드",
@@ -96,7 +100,7 @@
       "rcept_dt": "20261113",
       "rcept_no": "20261113000003",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000003",
-      "ai_explanation": "누적된 결손금을 보전하거나 재무 구조를 개선하기 위해 발행주식 수를 줄이기로 결정함."
+      "ai_explanation": "회사의 자본금을 줄이기 위해 주식 수를 줄이거나 액면가를 낮추기로 결정했다는 공시입니다."
     }
   ],
   "macro_indicators": [
@@ -2940,95 +2944,157 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "금호건설",
+      "price": "11,210",
+      "change_percent": "+29.90%",
+      "pct": 29.9
+    },
+    {
+      "name": "금호전기",
+      "price": "8,260",
+      "change_percent": "+25.15%",
+      "pct": 25.15
+    },
+    {
+      "name": "이수페타시스",
+      "price": "93,900",
+      "change_percent": "+11.65%",
+      "pct": 11.65
+    },
+    {
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "4,525",
+      "change_percent": "+10.37%",
+      "pct": 10.37
+    },
+    {
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "4,640",
+      "change_percent": "+10.08%",
+      "pct": 10.08
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "티와이홀딩스우",
+      "price": "3,900",
+      "change_percent": "-10.96%",
+      "pct": 10.96
+    },
+    {
+      "name": "한국전력",
+      "price": "27,550",
+      "change_percent": "-10.11%",
+      "pct": 10.11
+    },
+    {
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "8,210",
+      "change_percent": "-9.28%",
+      "pct": 9.28
+    },
+    {
+      "name": "하나 인버스 2X 반도체 ETN",
+      "price": "2,700",
+      "change_percent": "-8.32%",
+      "pct": 8.32
+    },
+    {
+      "name": "키움 인버스 2X 반도체TOP10 ETN",
+      "price": "3,600",
+      "change_percent": "-7.93%",
+      "pct": 7.93
+    }
+  ],
   "sector_performance": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+4.59%",
+      "pct": 4.59
     },
     {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "+4.14%",
+      "pct": 4.14
     },
     {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "반도체와반도체장비",
+      "change_value": "+4.05%",
+      "pct": 4.05
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "건강관리기술",
+      "change_value": "+3.83%",
+      "pct": 3.83
     },
     {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "석유와가스",
+      "change_value": "+3.81%",
+      "pct": 3.81
     }
   ],
   "sector_heatmap": [
     {
-      "name": "음료",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "종이와목재",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "손해보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "생물공학",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기제품",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
       "name": "전자장비와기기",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+4.59%",
+      "pct": 4.59
     },
     {
-      "name": "건강관리장비와용품",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전기장비",
+      "change_value": "+4.14%",
+      "pct": 4.14
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "+4.05%",
+      "pct": 4.05
+    },
+    {
+      "name": "건강관리기술",
+      "change_value": "+3.83%",
+      "pct": 3.83
+    },
+    {
+      "name": "석유와가스",
+      "change_value": "+3.81%",
+      "pct": 3.81
+    },
+    {
+      "name": "증권",
+      "change_value": "+3.34%",
+      "pct": 3.34
+    },
+    {
+      "name": "다각화된통신서비스",
+      "change_value": "-0.98%",
+      "pct": -0.98
+    },
+    {
+      "name": "게임엔터테인먼트",
+      "change_value": "-1.03%",
+      "pct": -1.03
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-1.09%",
+      "pct": -1.09
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "-1.11%",
+      "pct": -1.11
+    },
+    {
+      "name": "항공사",
+      "change_value": "-1.17%",
+      "pct": -1.17
+    },
+    {
+      "name": "전기유틸리티",
+      "change_value": "-8.23%",
+      "pct": -8.23
     }
   ],
   "article_counts": {
