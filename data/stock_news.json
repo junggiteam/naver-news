@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 06:01:16",
+  "updated_at": "2026-11-17 06:30:52",
   "indices": [
     {
       "name": "코스피",
@@ -24,31 +24,31 @@
     },
     {
       "name": "다우존스",
-      "value": "51,610.31",
+      "value": "51,608.17",
       "change_percent": "▼1.41%",
       "direction": "down",
-      "as_of": "2026-11-16 16:01:04"
+      "as_of": "2026-11-16 16:20:01"
     },
     {
       "name": "나스닥",
       "value": "24,509.76",
       "change_percent": "▼2.49%",
       "direction": "down",
-      "as_of": "2026-11-16 16:01:04"
+      "as_of": "2026-11-16 16:30:43"
     },
     {
       "name": "나스닥100",
       "value": "27,197.15",
       "change_percent": "▼2.67%",
       "direction": "down",
-      "as_of": "2026-11-16 16:01:06"
+      "as_of": "2026-11-16 16:30:44"
     },
     {
       "name": "S&P500",
-      "value": "7,417.12",
-      "change_percent": "▼1.91%",
+      "value": "7,416.59",
+      "change_percent": "▼1.92%",
       "direction": "down",
-      "as_of": "2026-11-16 16:01:05"
+      "as_of": "2026-11-16 16:20:01"
     },
     {
       "name": "국내금(원/돈)",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "85.56",
-      "change_percent": "▼3.39%",
+      "value": "85.37",
+      "change_percent": "▼3.60%",
       "direction": "down",
-      "as_of": "2026-11-16 14:51:00"
+      "as_of": "2026-11-16 15:19:58"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "88,729,000",
-      "change_percent": "▼1.36%",
+      "value": "89,039,000",
+      "change_percent": "▼1.01%",
       "direction": "down",
-      "as_of": "2026-11-17 06:01:12"
+      "as_of": "2026-11-17 06:30:41"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,484,000",
-      "change_percent": "▼1.66%",
+      "value": "2,493,000",
+      "change_percent": "▼1.31%",
       "direction": "down",
-      "as_of": "2026-11-17 06:01:10"
+      "as_of": "2026-11-17 06:30:42"
     }
   ],
   "news_categories": [
@@ -390,8 +390,32 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "한국경제TV",
           "rank": 1,
+          "title": "\"실적 아무리 좋아도\"…여전한 의구심 또 4% 급락한 엔비디아",
+          "link": "https://n.news.naver.com/mnews/article/215/0001272969?sid=101258403",
+          "upload_time": "20261117062645",
+          "published_at": "2026-11-17T06:26:45+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "AI 매도세 계속, 뉴욕증시 일제히 하락…엔비디아 4.1%↓",
+          "link": "https://n.news.naver.com/mnews/article/001/0016445251?sid=101258403",
+          "upload_time": "20261117061530",
+          "published_at": "2026-11-17T06:15:30+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 3,
+          "title": "[속보]엔비디아 실적 앞두고 반도체주 급락…나스닥 2.5%↓",
+          "link": "https://n.news.naver.com/mnews/article/018/0006410788?sid=101258403",
+          "upload_time": "20261117061014",
+          "published_at": "2026-11-17T06:10:14+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 4,
           "title": "미·중·러 정상회담에 북핵 논의 주목…트럼프, 김정은 회동 가능성 언급(종합)",
           "link": "https://n.news.naver.com/mnews/article/277/0005843402?sid=101258403",
           "upload_time": "20261117054452",
@@ -399,7 +423,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 5,
           "title": "美 중국 AI 반도체 우회 접근 차단…트럼프 \"앨리스 황 스파이 아닐수도\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005843400?sid=101258403",
           "upload_time": "20261117051156",
@@ -407,7 +431,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 3,
+          "rank": 6,
           "title": "CNBC \"엔비디아 이사회, 젠슨 황 CEO 복귀 검토 안 해\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005843399?sid=101258403",
           "upload_time": "20261117044215",
@@ -415,15 +439,15 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 4,
-          "title": "\"AI로 일자리 잃는 시나리오 조사 중\"…케빈 워시 경고에 시장 하락 [Fed 워치]",
+          "rank": 7,
+          "title": "\"AI로 일자리 잃는 시나리오 조사 중\"…워시 한마디에 '술렁' [Fed 워치]",
           "link": "https://n.news.naver.com/mnews/article/015/0005354557?sid=101258403",
           "upload_time": "20261117035511",
           "published_at": "2026-11-17T03:55:11+09:00"
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 8,
           "title": "엔비디아, 젠슨 황 떠나도 고객사에 돈 댈까…17일 컨콜",
           "link": "https://n.news.naver.com/mnews/article/018/0006410762?sid=101258403",
           "upload_time": "20261117021508",
@@ -431,7 +455,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 9,
           "title": "트럼프 \"중국서 김정은 만날 수도…시진핑에 달려\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005843397?sid=101258403",
           "upload_time": "20261117013141",
@@ -439,7 +463,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 7,
+          "rank": 10,
           "title": "[뉴욕증시]젠슨 황 사임 후폭풍 지속…나스닥 약 2% ↓",
           "link": "https://n.news.naver.com/mnews/article/277/0005843395?sid=101258403",
           "upload_time": "20261117004603",
@@ -447,7 +471,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 8,
+          "rank": 11,
           "title": "티맵모빌리티, 3분기 영업이익 33억원…분기 기준 흑자",
           "link": "https://n.news.naver.com/mnews/article/001/0016444890?sid=101258403",
           "upload_time": "20261116173410",
@@ -455,7 +479,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 9,
+          "rank": 12,
           "title": "\"웃돈주고 사겠다\"…亞부자들, 앤트로픽 투자 러시",
           "link": "https://n.news.naver.com/mnews/article/015/0005354409?sid=101258403",
           "upload_time": "20261116173319",
@@ -463,7 +487,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 13,
           "title": "롯데호텔앤리조트, 3분기 영업익 21.1% 증가…\"해당 분기 최대\"",
           "link": "https://n.news.naver.com/mnews/article/001/0016444886?sid=101258403",
           "upload_time": "20261116173319",
@@ -471,7 +495,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 11,
+          "rank": 14,
           "title": "닛케이 일주일만 6만선 하회…엔비디아 불확실성에 AI·반도체↓",
           "link": "https://n.news.naver.com/mnews/article/001/0016444686?sid=101258403",
           "upload_time": "20261116163601",
@@ -479,35 +503,11 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 12,
+          "rank": 15,
           "title": "이달 인도증시 상승률 세계 2위…국내 관련 ETF 수익률도 '쑥'",
           "link": "https://n.news.naver.com/mnews/article/001/0016444661?sid=101258403",
           "upload_time": "20261116162540",
           "published_at": "2026-11-16T16:25:40+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 13,
-          "title": "인텔 주가 29% 급락후 주주 집단소송…\"PC 재고 부진 늦게 공시\"",
-          "link": "https://n.news.naver.com/mnews/article/001/0016444351?sid=101258403",
-          "upload_time": "20261116151750",
-          "published_at": "2026-11-16T15:17:50+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 14,
-          "title": "KB국민은행, S&P 500지수 연동 외화예금 23일까지 판매",
-          "link": "https://n.news.naver.com/mnews/article/001/0016444088?sid=101258403",
-          "upload_time": "20261116141120",
-          "published_at": "2026-11-16T14:11:20+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 15,
-          "title": "\"엔비디아 AI 자금줄 제동 땐 67조원 투자금 썰물\"",
-          "link": "https://n.news.naver.com/mnews/article/018/0006410443?sid=101258403",
-          "upload_time": "20261116124209",
-          "published_at": "2026-11-16T12:42:09+09:00"
         }
       ]
     },
@@ -751,6 +751,22 @@
         {
           "press_name": "서울경제",
           "rank": 1,
+          "title": "한때 ‘金포도’였는데…값 폭락한 샤인머스캣의 ‘1억弗 반전’ [Pick코노미]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004682897?sid=101258429",
+          "upload_time": "20261117060142",
+          "published_at": "2026-11-17T06:01:42+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 2,
+          "title": "‘지방지원금’서 소방재정 2조 돌린다…821조 총지출 방어 [Pick코노미]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004682895?sid=101258429",
+          "upload_time": "20261117060136",
+          "published_at": "2026-11-17T06:01:36+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 3,
           "title": "[단독] 소방재정 2조, 지방미래지원금서 충당",
           "link": "https://n.news.naver.com/mnews/article/011/0004682792?sid=101258429",
           "upload_time": "20261116174620",
@@ -758,7 +774,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 2,
+          "rank": 4,
           "title": "칠레 FTA로 망한다던 포도… 22년만에 수출 1억불 돌파",
           "link": "https://n.news.naver.com/mnews/article/011/0004682781?sid=101258429",
           "upload_time": "20261116174109",
@@ -766,7 +782,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 5,
           "title": "원/달러 환율, 강달러·증시 급락에도 하락…1,330원대 중반",
           "link": "https://n.news.naver.com/mnews/article/001/0016444649?sid=101258429",
           "upload_time": "20261116162351",
@@ -774,7 +790,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 4,
+          "rank": 6,
           "title": "증시 급락에도 원화는 ‘꿋꿋’…환율 1원 내린 1335.7원 마감 [김혜란의 FX]",
           "link": "https://n.news.naver.com/mnews/article/011/0004682698?sid=101258429",
           "upload_time": "20261116154708",
@@ -782,7 +798,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 5,
+          "rank": 7,
           "title": "원·달러 환율, 1.0원 내린 1335.7원 (오후 3시30분)",
           "link": "https://n.news.naver.com/mnews/article/277/0005843259?sid=101258429",
           "upload_time": "20261116154255",
@@ -790,7 +806,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 6,
+          "rank": 8,
           "title": "주택자산 상하위 10% 격차 52배로 역대최대",
           "link": "https://n.news.naver.com/mnews/article/011/0004682613?sid=101258429",
           "upload_time": "20261116120117",
