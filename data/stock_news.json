@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-11-16 19:31:03",
+  "updated_at": "2026-11-16 20:01:07",
   "indices": [
     {
       "name": "코스피",
       "value": "5,100.50",
       "change_percent": "▼3.59%",
       "direction": "down",
-      "as_of": "2026-11-16 16:15:00"
+      "as_of": "2026-11-16 20:00:00"
     },
     {
       "name": "코스닥",
       "value": "665.65",
       "change_percent": "▼4.86%",
       "direction": "down",
-      "as_of": "2026-11-16 16:15:00"
+      "as_of": "2026-11-16 20:00:00"
     },
     {
       "name": "코스피200",
       "value": "791.56",
       "change_percent": "▼4.03%",
       "direction": "down",
-      "as_of": "2026-11-16 16:15:00"
+      "as_of": "2026-11-16 20:00:00"
     },
     {
       "name": "다우존스",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,334.80",
-      "change_percent": "▼0.24%",
+      "value": "1,335.90",
+      "change_percent": "▼0.16%",
       "direction": "down",
-      "as_of": "2026-11-16 19:29:33"
+      "as_of": "2026-11-16 19:57:53"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "836.18",
-      "change_percent": "▼0.20%",
+      "value": "836.64",
+      "change_percent": "▼0.15%",
       "direction": "down",
-      "as_of": "2026-11-16 19:29:33"
+      "as_of": "2026-11-16 19:57:53"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,470.22",
-      "change_percent": "▼0.32%",
+      "value": "1,470.09",
+      "change_percent": "▼0.33%",
       "direction": "down",
-      "as_of": "2026-11-16 19:29:33"
+      "as_of": "2026-11-16 19:57:53"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "88.68",
-      "change_percent": "▲0.14%",
-      "direction": "up",
-      "as_of": "2026-11-16 04:21:01"
+      "value": "88.40",
+      "change_percent": "▼0.18%",
+      "direction": "down",
+      "as_of": "2026-11-16 04:51:05"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "88,217,000",
-      "change_percent": "▼1.93%",
+      "value": "88,252,000",
+      "change_percent": "▼1.89%",
       "direction": "down",
-      "as_of": "2026-11-16 19:31:01"
+      "as_of": "2026-11-16 20:01:01"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,467,000",
-      "change_percent": "▼2.34%",
+      "value": "2,472,000",
+      "change_percent": "▼2.14%",
       "direction": "down",
-      "as_of": "2026-11-16 19:31:00"
+      "as_of": "2026-11-16 20:01:01"
     }
   ],
   "news_categories": [
@@ -815,8 +815,14 @@
       ]
     }
   ],
-  "ai_commentary": "인공지능 산업의 성장세가 둔화될 것이라는 우려와 함께 기관 투자자들의 자금 분산 움직임이 나타나며 증시 하락에 영향을 미쳤다. 또한 주요 기업들의 실적 부진 소식이 이어지면서 투자 심리가 위축되어 코스피와 코스닥 지수가 동반 하락했다.",
+  "ai_commentary": "인공지능 산업의 성장성에 대한 시장의 의구심이 커지면서 기술주를 중심으로 투자 심리가 위축된 것이 주가 하락의 배경으로 분석된다. 증시 내 기관 투자자들이 자산 비중 조절에 나서며 매도세를 보인 점도 지수 하락에 영향을 미쳤다.",
   "top_gainers": [
+    {
+      "name": "아남전자",
+      "price": "1,438",
+      "change_percent": "+16.91%",
+      "pct": 16.91
+    },
     {
       "name": "미래에셋 인버스 2X 반도체 ETN",
       "price": "5,395",
@@ -828,12 +834,6 @@
       "price": "11,110",
       "change_percent": "+16.76%",
       "pct": 16.76
-    },
-    {
-      "name": "아남전자",
-      "price": "1,431",
-      "change_percent": "+16.34%",
-      "pct": 16.34
     },
     {
       "name": "하나 인버스 2X 반도체 ETN",
@@ -857,9 +857,9 @@
     },
     {
       "name": "한솔홈데코",
-      "price": "1,219",
-      "change_percent": "-19.59%",
-      "pct": 19.59
+      "price": "1,222",
+      "change_percent": "-19.39%",
+      "pct": 19.39
     },
     {
       "name": "한진칼우",
@@ -883,18 +883,23 @@
   "sector_performance": [
     {
       "name": "항공사",
-      "change_value": "+4.60%",
-      "pct": 4.6
+      "change_value": "+4.03%",
+      "pct": 4.03
     },
     {
       "name": "담배",
-      "change_value": "+3.52%",
-      "pct": 3.52
+      "change_value": "+3.35%",
+      "pct": 3.35
     },
     {
       "name": "손해보험",
-      "change_value": "+3.16%",
-      "pct": 3.16
+      "change_value": "+2.92%",
+      "pct": 2.92
+    },
+    {
+      "name": "레저용장비와제품",
+      "change_value": "+2.91%",
+      "pct": 2.91
     },
     {
       "name": "문구류",
@@ -902,64 +907,59 @@
       "pct": 2.78
     },
     {
-      "name": "레저용장비와제품",
-      "change_value": "+2.72%",
-      "pct": 2.72
-    },
-    {
       "name": "가정용기기와용품",
-      "change_value": "+2.26%",
-      "pct": 2.26
-    },
-    {
-      "name": "음료",
-      "change_value": "+2.04%",
-      "pct": 2.04
+      "change_value": "+2.31%",
+      "pct": 2.31
     },
     {
       "name": "해운사",
-      "change_value": "+2.03%",
-      "pct": 2.03
+      "change_value": "+2.21%",
+      "pct": 2.21
+    },
+    {
+      "name": "음료",
+      "change_value": "+2.01%",
+      "pct": 2.01
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+1.87%",
-      "pct": 1.87
+      "change_value": "+1.97%",
+      "pct": 1.97
     },
     {
       "name": "전문소매",
-      "change_value": "+1.84%",
-      "pct": 1.84
+      "change_value": "+1.81%",
+      "pct": 1.81
     },
     {
       "name": "카드",
-      "change_value": "+1.84%",
-      "pct": 1.84
+      "change_value": "+1.71%",
+      "pct": 1.71
     },
     {
       "name": "화장품",
-      "change_value": "+1.59%",
-      "pct": 1.59
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
       "name": "은행",
-      "change_value": "+1.50%",
-      "pct": 1.5
+      "change_value": "+1.55%",
+      "pct": 1.55
     },
     {
       "name": "식품",
-      "change_value": "+1.35%",
-      "pct": 1.35
+      "change_value": "+1.23%",
+      "pct": 1.23
     },
     {
-      "name": "가구",
-      "change_value": "+1.27%",
-      "pct": 1.27
+      "name": "식품과기본식료품소매",
+      "change_value": "+1.19%",
+      "pct": 1.19
     },
     {
-      "name": "창업투자",
-      "change_value": "+1.09%",
-      "pct": 1.09
+      "name": "다각화된통신서비스",
+      "change_value": "+1.13%",
+      "pct": 1.13
     },
     {
       "name": "다각화된소비자서비스",
@@ -967,154 +967,154 @@
       "pct": 1.08
     },
     {
-      "name": "다각화된통신서비스",
-      "change_value": "+0.93%",
-      "pct": 0.93
-    },
-    {
       "name": "생명보험",
-      "change_value": "+0.85%",
-      "pct": 0.85
+      "change_value": "+0.83%",
+      "pct": 0.83
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.82%",
-      "pct": 0.82
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "+0.72%",
-      "pct": 0.72
+      "name": "가구",
+      "change_value": "+0.77%",
+      "pct": 0.77
     },
     {
       "name": "무선통신서비스",
-      "change_value": "+0.63%",
-      "pct": 0.63
+      "change_value": "+0.77%",
+      "pct": 0.77
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+0.35%",
-      "pct": 0.35
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "+0.33%",
-      "pct": 0.33
+      "name": "양방향미디어와서비스",
+      "change_value": "+0.52%",
+      "pct": 0.52
     },
     {
       "name": "가스유틸리티",
-      "change_value": "+0.28%",
-      "pct": 0.28
+      "change_value": "+0.47%",
+      "pct": 0.47
+    },
+    {
+      "name": "창업투자",
+      "change_value": "+0.24%",
+      "pct": 0.24
     },
     {
       "name": "부동산",
-      "change_value": "+0.24%",
-      "pct": 0.24
+      "change_value": "+0.21%",
+      "pct": 0.21
+    },
+    {
+      "name": "항공화물운송과물류",
+      "change_value": "+0.12%",
+      "pct": 0.12
     },
     {
       "name": "광고",
-      "change_value": "+0.24%",
-      "pct": 0.24
+      "change_value": "+0.11%",
+      "pct": 0.11
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.05%",
+      "pct": 0.05
     },
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "-0.06%",
-      "pct": -0.06
+      "change_value": "-0.04%",
+      "pct": -0.04
     },
     {
       "name": "게임엔터테인먼트",
-      "change_value": "-0.09%",
-      "pct": -0.09
+      "change_value": "-0.05%",
+      "pct": -0.05
+    },
+    {
+      "name": "디스플레이패널",
+      "change_value": "-0.18%",
+      "pct": -0.18
     },
     {
       "name": "운송인프라",
-      "change_value": "-0.10%",
-      "pct": -0.1
-    },
-    {
-      "name": "조선",
       "change_value": "-0.21%",
       "pct": -0.21
     },
     {
-      "name": "가정용품",
-      "change_value": "-0.29%",
-      "pct": -0.29
+      "name": "사무용전자제품",
+      "change_value": "-0.27%",
+      "pct": -0.27
     },
     {
       "name": "제약",
-      "change_value": "-0.36%",
-      "pct": -0.36
+      "change_value": "-0.46%",
+      "pct": -0.46
     },
     {
-      "name": "디스플레이패널",
-      "change_value": "-0.42%",
-      "pct": -0.42
-    },
-    {
-      "name": "자동차부품",
+      "name": "교육서비스",
       "change_value": "-0.54%",
       "pct": -0.54
     },
     {
-      "name": "무역회사와판매업체",
-      "change_value": "-0.62%",
-      "pct": -0.62
+      "name": "조선",
+      "change_value": "-0.67%",
+      "pct": -0.67
     },
     {
       "name": "상업서비스와공급품",
-      "change_value": "-0.68%",
-      "pct": -0.68
+      "change_value": "-0.67%",
+      "pct": -0.67
     },
     {
-      "name": "교육서비스",
-      "change_value": "-0.69%",
-      "pct": -0.69
+      "name": "자동차부품",
+      "change_value": "-0.72%",
+      "pct": -0.72
+    },
+    {
+      "name": "가정용품",
+      "change_value": "-0.77%",
+      "pct": -0.77
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "-0.78%",
+      "pct": -0.78
     },
     {
       "name": "건축제품",
-      "change_value": "-0.87%",
-      "pct": -0.87
-    },
-    {
-      "name": "포장재",
-      "change_value": "-0.88%",
-      "pct": -0.88
-    },
-    {
-      "name": "비철금속",
-      "change_value": "-0.94%",
-      "pct": -0.94
-    },
-    {
-      "name": "자동차",
-      "change_value": "-1.00%",
-      "pct": -1.0
+      "change_value": "-0.80%",
+      "pct": -0.8
     },
     {
       "name": "증권",
-      "change_value": "-1.02%",
-      "pct": -1.02
+      "change_value": "-0.97%",
+      "pct": -0.97
+    },
+    {
+      "name": "포장재",
+      "change_value": "-1.04%",
+      "pct": -1.04
     },
     {
       "name": "판매업체",
-      "change_value": "-1.02%",
-      "pct": -1.02
+      "change_value": "-1.04%",
+      "pct": -1.04
     },
     {
-      "name": "사무용전자제품",
-      "change_value": "-1.07%",
-      "pct": -1.07
+      "name": "복합유틸리티",
+      "change_value": "-1.04%",
+      "pct": -1.04
+    },
+    {
+      "name": "자동차",
+      "change_value": "-1.11%",
+      "pct": -1.11
+    },
+    {
+      "name": "비철금속",
+      "change_value": "-1.13%",
+      "pct": -1.13
     },
     {
       "name": "종이와목재",
-      "change_value": "-1.09%",
-      "pct": -1.09
-    },
-    {
-      "name": "출판",
-      "change_value": "-1.13%",
-      "pct": -1.13
+      "change_value": "-1.18%",
+      "pct": -1.18
     },
     {
       "name": "도로와철도운송",
@@ -1122,59 +1122,59 @@
       "pct": -1.21
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "-1.41%",
-      "pct": -1.41
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "-1.45%",
-      "pct": -1.45
-    },
-    {
-      "name": "호텔,레스토랑,레저",
-      "change_value": "-1.48%",
-      "pct": -1.48
+      "name": "출판",
+      "change_value": "-1.36%",
+      "pct": -1.36
     },
     {
       "name": "건강관리장비와용품",
-      "change_value": "-1.53%",
-      "pct": -1.53
+      "change_value": "-1.62%",
+      "pct": -1.62
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-1.67%",
+      "pct": -1.67
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "-1.70%",
+      "pct": -1.7
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "-1.74%",
+      "pct": -1.74
     },
     {
       "name": "IT서비스",
-      "change_value": "-1.56%",
-      "pct": -1.56
-    },
-    {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "-1.78%",
-      "pct": -1.78
-    },
-    {
-      "name": "건설",
       "change_value": "-1.80%",
       "pct": -1.8
     },
     {
-      "name": "핸드셋",
-      "change_value": "-1.89%",
-      "pct": -1.89
-    },
-    {
-      "name": "복합기업",
-      "change_value": "-1.89%",
-      "pct": -1.89
-    },
-    {
-      "name": "복합유틸리티",
+      "name": "건설",
       "change_value": "-1.93%",
       "pct": -1.93
     },
     {
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "-1.97%",
+      "pct": -1.97
+    },
+    {
+      "name": "핸드셋",
+      "change_value": "-2.12%",
+      "pct": -2.12
+    },
+    {
+      "name": "복합기업",
+      "change_value": "-2.26%",
+      "pct": -2.26
+    },
+    {
       "name": "철강",
-      "change_value": "-2.28%",
-      "pct": -2.28
+      "change_value": "-2.39%",
+      "pct": -2.39
     },
     {
       "name": "기타",
@@ -1182,99 +1182,99 @@
       "pct": -2.43
     },
     {
-      "name": "석유와가스",
-      "change_value": "-2.58%",
-      "pct": -2.58
+      "name": "건축자재",
+      "change_value": "-2.79%",
+      "pct": -2.79
     },
     {
       "name": "전기제품",
-      "change_value": "-2.68%",
-      "pct": -2.68
+      "change_value": "-2.80%",
+      "pct": -2.8
     },
     {
-      "name": "건축자재",
-      "change_value": "-2.88%",
-      "pct": -2.88
+      "name": "석유와가스",
+      "change_value": "-2.86%",
+      "pct": -2.86
+    },
+    {
+      "name": "기타금융",
+      "change_value": "-3.14%",
+      "pct": -3.14
     },
     {
       "name": "화학",
-      "change_value": "-2.94%",
-      "pct": -2.94
-    },
-    {
-      "name": "컴퓨터와주변기기",
-      "change_value": "-3.05%",
-      "pct": -3.05
-    },
-    {
-      "name": "전자제품",
-      "change_value": "-3.12%",
-      "pct": -3.12
-    },
-    {
-      "name": "생물공학",
       "change_value": "-3.15%",
       "pct": -3.15
     },
     {
-      "name": "기타금융",
-      "change_value": "-3.31%",
-      "pct": -3.31
+      "name": "소프트웨어",
+      "change_value": "-3.21%",
+      "pct": -3.21
+    },
+    {
+      "name": "생물공학",
+      "change_value": "-3.29%",
+      "pct": -3.29
+    },
+    {
+      "name": "전자제품",
+      "change_value": "-3.54%",
+      "pct": -3.54
     },
     {
       "name": "건강관리기술",
-      "change_value": "-3.36%",
-      "pct": -3.36
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "-3.39%",
-      "pct": -3.39
+      "change_value": "-3.60%",
+      "pct": -3.6
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "-3.45%",
-      "pct": -3.45
+      "change_value": "-3.67%",
+      "pct": -3.67
     },
     {
       "name": "전기장비",
-      "change_value": "-3.53%",
-      "pct": -3.53
+      "change_value": "-3.67%",
+      "pct": -3.67
     },
     {
       "name": "기계",
-      "change_value": "-3.72%",
-      "pct": -3.72
+      "change_value": "-3.78%",
+      "pct": -3.78
+    },
+    {
+      "name": "컴퓨터와주변기기",
+      "change_value": "-4.02%",
+      "pct": -4.02
     },
     {
       "name": "통신장비",
-      "change_value": "-3.86%",
-      "pct": -3.86
+      "change_value": "-4.13%",
+      "pct": -4.13
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-4.14%",
-      "pct": -4.14
+      "change_value": "-4.19%",
+      "pct": -4.19
     },
     {
       "name": "디스플레이장비및부품",
-      "change_value": "-5.25%",
-      "pct": -5.25
-    },
-    {
-      "name": "반도체와반도체장비",
-      "change_value": "-6.34%",
-      "pct": -6.34
+      "change_value": "-5.42%",
+      "pct": -5.42
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-6.52%",
-      "pct": -6.52
+      "change_value": "-6.64%",
+      "pct": -6.64
+    },
+    {
+      "name": "반도체와반도체장비",
+      "change_value": "-6.74%",
+      "pct": -6.74
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-7.94%",
-      "pct": -7.94
+      "change_value": "-8.22%",
+      "pct": -8.22
     }
   ],
   "ipo_calendar": [
