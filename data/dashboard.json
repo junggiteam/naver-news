@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-16 09:31:00",
+  "updated_at": "2026-11-16 09:46:01",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": -0.21,
-    "kosdaq_change": -1.05,
-    "kospi_value": 5279.35,
-    "kosdaq_value": 692.3
+    "label": "하락",
+    "emoji": "🟠",
+    "kospi_change": -0.77,
+    "kosdaq_change": -1.98,
+    "kospi_value": 5249.86,
+    "kosdaq_value": 685.82
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "서울 분당 오피스 빌딩 거래 증가 및 기업 사무실 수요 변화"
+    },
+    {
+      "category": "증권",
+      "text": "미국 반도체 관련주의 약세와 긴축 경계감이 이어지는 가운데 외국인과 기관의 순매도가 출회하며 코스피와 코스닥 지수가 하락 마감했다. 장중 보합권 등락을 거듭하던 시장은 오후 들어 매도세가 강화되면서 코스닥을 중심으로 낙폭이 확대되었다."
     }
   ],
   "daily_term": {
@@ -2914,15 +2918,9 @@
   "top_gainers": [
     {
       "name": "형지엘리트",
-      "price": "1,550",
-      "change_percent": "+18.41%",
-      "pct": 18.41
-    },
-    {
-      "name": "진양폴리",
-      "price": "4,125",
-      "change_percent": "+10.44%",
-      "pct": 10.44
+      "price": "1,541",
+      "change_percent": "+17.72%",
+      "pct": 17.72
     },
     {
       "name": "신한 인버스2X 천연가스 선물 ETN B",
@@ -2937,13 +2935,25 @@
       "pct": 9.06
     },
     {
-      "name": "엠씨넥스",
-      "price": "17,290",
-      "change_percent": "+8.95%",
-      "pct": 8.95
+      "name": "미래에셋 -1.5X 천연가스 선물 ETN",
+      "price": "13,945",
+      "change_percent": "+8.14%",
+      "pct": 8.14
+    },
+    {
+      "name": "메리츠 인버스 2X 천연가스 선물 ETN(H)",
+      "price": "12,435",
+      "change_percent": "+7.99%",
+      "pct": 7.99
     }
   ],
   "top_losers": [
+    {
+      "name": "금호건설우",
+      "price": "16,350",
+      "change_percent": "-29.98%",
+      "pct": 29.98
+    },
     {
       "name": "유니온머티리얼",
       "price": "3,250",
@@ -2951,117 +2961,111 @@
       "pct": 12.87
     },
     {
-      "name": "혜인",
-      "price": "7,270",
-      "change_percent": "-11.99%",
-      "pct": 11.99
-    },
-    {
       "name": "TKG휴켐스",
-      "price": "11,990",
-      "change_percent": "-11.97%",
-      "pct": 11.97
+      "price": "11,860",
+      "change_percent": "-12.92%",
+      "pct": 12.92
     },
     {
-      "name": "미스토홀딩스",
-      "price": "33,950",
-      "change_percent": "-9.59%",
-      "pct": 9.59
+      "name": "동양2우B",
+      "price": "3,600",
+      "change_percent": "-12.41%",
+      "pct": 12.41
     },
     {
-      "name": "인디에프",
-      "price": "2,350",
-      "change_percent": "-8.38%",
-      "pct": 8.38
+      "name": "혜인",
+      "price": "7,230",
+      "change_percent": "-12.47%",
+      "pct": 12.47
     }
   ],
   "sector_performance": [
     {
-      "name": "창업투자",
-      "change_value": "+3.68%",
-      "pct": 3.68
+      "name": "우주항공과국방",
+      "change_value": "+2.40%",
+      "pct": 2.4
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+2.03%",
-      "pct": 2.03
+      "name": "해운사",
+      "change_value": "+2.35%",
+      "pct": 2.35
+    },
+    {
+      "name": "창업투자",
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "화장품",
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.96%",
-      "pct": 1.96
-    },
-    {
-      "name": "우주항공과국방",
-      "change_value": "+1.93%",
-      "pct": 1.93
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+1.88%",
-      "pct": 1.88
+      "change_value": "+1.56%",
+      "pct": 1.56
     }
   ],
   "sector_heatmap": [
     {
-      "name": "창업투자",
-      "change_value": "+3.68%",
-      "pct": 3.68
+      "name": "우주항공과국방",
+      "change_value": "+2.40%",
+      "pct": 2.4
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+2.03%",
-      "pct": 2.03
+      "name": "해운사",
+      "change_value": "+2.35%",
+      "pct": 2.35
+    },
+    {
+      "name": "창업투자",
+      "change_value": "+1.72%",
+      "pct": 1.72
+    },
+    {
+      "name": "화장품",
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
       "name": "다각화된통신서비스",
-      "change_value": "+1.96%",
-      "pct": 1.96
+      "change_value": "+1.56%",
+      "pct": 1.56
     },
     {
-      "name": "우주항공과국방",
-      "change_value": "+1.93%",
-      "pct": 1.93
-    },
-    {
-      "name": "생명보험",
-      "change_value": "+1.88%",
-      "pct": 1.88
-    },
-    {
-      "name": "담배",
-      "change_value": "+1.82%",
-      "pct": 1.82
-    },
-    {
-      "name": "석유와가스",
-      "change_value": "-1.35%",
-      "pct": -1.35
-    },
-    {
-      "name": "에너지장비및서비스",
-      "change_value": "-1.39%",
-      "pct": -1.39
-    },
-    {
-      "name": "철강",
-      "change_value": "-1.66%",
-      "pct": -1.66
+      "name": "손해보험",
+      "change_value": "+1.55%",
+      "pct": 1.55
     },
     {
       "name": "섬유,의류,신발,호화품",
-      "change_value": "-2.22%",
-      "pct": -2.22
+      "change_value": "-2.43%",
+      "pct": -2.43
+    },
+    {
+      "name": "에너지장비및서비스",
+      "change_value": "-2.45%",
+      "pct": -2.45
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "-2.52%",
+      "pct": -2.52
+    },
+    {
+      "name": "소프트웨어",
+      "change_value": "-2.70%",
+      "pct": -2.7
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-2.25%",
-      "pct": -2.25
+      "change_value": "-2.87%",
+      "pct": -2.87
     },
     {
       "name": "건강관리기술",
-      "change_value": "-2.76%",
-      "pct": -2.76
+      "change_value": "-3.39%",
+      "pct": -3.39
     }
   ],
   "article_counts": {
