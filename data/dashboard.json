@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-17 10:31:05",
+  "updated_at": "2026-11-17 11:01:20",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -1.47,
-    "kosdaq_change": -1.16,
-    "kospi_value": 5025.5,
-    "kosdaq_value": 657.96
+    "kospi_change": -1.37,
+    "kosdaq_change": -1.06,
+    "kospi_value": 5030.66,
+    "kosdaq_value": 658.57
   },
   "heroes": {
     "종합": {
@@ -81,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "티에이케이정보시스템",
+      "corp_code": "00249098",
+      "report_nm": "[첨부정정]주요사항보고서(자기주식취득결정)",
+      "rcept_dt": "20261117",
+      "rcept_no": "20261117000035",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000035",
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 자사주를 직접 매입하기로 결정했다는 뜻입니다."
+    },
+    {
       "corp_name": "사람인",
       "corp_code": "00857480",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261117",
       "rcept_no": "20261117000029",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000029",
-      "ai_explanation": "회사가 신탁 계약을 통해 자사주를 매입하여 주가 안정 및 주주 가치를 높이려는 결정입니다."
+      "ai_explanation": "회사가 금융기관에 자금을 맡겨 자기주식을 취득하도록 위탁 계약을 체결했다는 뜻입니다."
     },
     {
       "corp_name": "피스피스스튜디오",
@@ -96,7 +105,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000020",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000020",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 종료하기로 결정한 것입니다."
+      "ai_explanation": "기존에 체결했던 자기주식 취득 신탁 계약을 중단하고 종료하기로 결정했다는 뜻입니다."
     },
     {
       "corp_name": "대농어패럴",
@@ -105,7 +114,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000024",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000024",
-      "ai_explanation": "회사가 타인(계열사 등)의 채무를 대신 갚아주기로 보증을 서는 것을 결정한 것입니다."
+      "ai_explanation": "회사가 타인(계열사 등)의 채무를 대신 갚아주기로 보증을 서는 계약을 체결했다는 뜻입니다."
     }
   ],
   "macro_indicators": [
@@ -2957,67 +2966,67 @@
       "pct": 29.87
     },
     {
-      "name": "인디에프",
-      "price": "2,990",
-      "change_percent": "+28.60%",
-      "pct": 28.6
-    },
-    {
-      "name": "유화증권우",
-      "price": "3,120",
-      "change_percent": "+12.23%",
-      "pct": 12.23
-    },
-    {
       "name": "계양전기우",
-      "price": "4,690",
-      "change_percent": "+10.87%",
-      "pct": 10.87
+      "price": "5,490",
+      "change_percent": "+29.79%",
+      "pct": 29.79
+    },
+    {
+      "name": "인디에프",
+      "price": "3,015",
+      "change_percent": "+29.68%",
+      "pct": 29.68
     },
     {
       "name": "미래에셋 인버스 2X WTI원유 선물 ETN",
-      "price": "13,705",
-      "change_percent": "+9.99%",
-      "pct": 9.99
+      "price": "13,695",
+      "change_percent": "+9.91%",
+      "pct": 9.91
+    },
+    {
+      "name": "하나 S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "1,918",
+      "change_percent": "+9.85%",
+      "pct": 9.85
     }
   ],
   "top_losers": [
     {
       "name": "삼영",
-      "price": "3,735",
-      "change_percent": "-18.45%",
-      "pct": 18.45
+      "price": "3,635",
+      "change_percent": "-20.63%",
+      "pct": 20.63
     },
     {
       "name": "한솔홈데코",
-      "price": "1,033",
-      "change_percent": "-17.03%",
-      "pct": 17.03
+      "price": "1,027",
+      "change_percent": "-17.51%",
+      "pct": 17.51
     },
     {
       "name": "유니퀘스트",
-      "price": "11,430",
-      "change_percent": "-15.33%",
-      "pct": 15.33
+      "price": "11,260",
+      "change_percent": "-16.59%",
+      "pct": 16.59
+    },
+    {
+      "name": "휴스틸",
+      "price": "2,830",
+      "change_percent": "-15.90%",
+      "pct": 15.9
     },
     {
       "name": "삼진제약",
-      "price": "17,120",
-      "change_percent": "-15.04%",
-      "pct": 15.04
-    },
-    {
-      "name": "에스엘",
-      "price": "40,450",
-      "change_percent": "-13.94%",
-      "pct": 13.94
+      "price": "17,090",
+      "change_percent": "-15.19%",
+      "pct": 15.19
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+3.04%",
-      "pct": 3.04
+      "change_value": "+2.42%",
+      "pct": 2.42
     },
     {
       "name": "레저용장비와제품",
@@ -3025,26 +3034,26 @@
       "pct": 1.91
     },
     {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "+1.83%",
-      "pct": 1.83
+      "name": "백화점과일반상점",
+      "change_value": "+1.90%",
+      "pct": 1.9
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+1.40%",
-      "pct": 1.4
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+1.85%",
+      "pct": 1.85
     },
     {
       "name": "다각화된소비자서비스",
-      "change_value": "+1.24%",
-      "pct": 1.24
+      "change_value": "+1.09%",
+      "pct": 1.09
     }
   ],
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+3.04%",
-      "pct": 3.04
+      "change_value": "+2.42%",
+      "pct": 2.42
     },
     {
       "name": "레저용장비와제품",
@@ -3052,54 +3061,54 @@
       "pct": 1.91
     },
     {
-      "name": "섬유,의류,신발,호화품",
-      "change_value": "+1.83%",
-      "pct": 1.83
+      "name": "백화점과일반상점",
+      "change_value": "+1.90%",
+      "pct": 1.9
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+1.40%",
-      "pct": 1.4
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+1.85%",
+      "pct": 1.85
     },
     {
       "name": "다각화된소비자서비스",
-      "change_value": "+1.24%",
-      "pct": 1.24
+      "change_value": "+1.09%",
+      "pct": 1.09
     },
     {
-      "name": "제약",
-      "change_value": "+0.55%",
-      "pct": 0.55
+      "name": "사무용전자제품",
+      "change_value": "+1.08%",
+      "pct": 1.08
     },
     {
-      "name": "소프트웨어",
+      "name": "기계",
+      "change_value": "-3.15%",
+      "pct": -3.15
+    },
+    {
+      "name": "디스플레이장비및부품",
       "change_value": "-3.25%",
       "pct": -3.25
     },
     {
-      "name": "디스플레이장비및부품",
-      "change_value": "-3.34%",
-      "pct": -3.34
+      "name": "핸드셋",
+      "change_value": "-3.27%",
+      "pct": -3.27
     },
     {
-      "name": "생명보험",
-      "change_value": "-3.35%",
-      "pct": -3.35
-    },
-    {
-      "name": "기계",
-      "change_value": "-3.40%",
-      "pct": -3.4
+      "name": "소프트웨어",
+      "change_value": "-3.37%",
+      "pct": -3.37
     },
     {
       "name": "전기장비",
-      "change_value": "-3.64%",
-      "pct": -3.64
+      "change_value": "-3.86%",
+      "pct": -3.86
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-4.19%",
-      "pct": -4.19
+      "change_value": "-4.24%",
+      "pct": -4.24
     }
   ],
   "article_counts": {
