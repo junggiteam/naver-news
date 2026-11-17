@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 17:01:29",
+  "updated_at": "2026-11-17 17:31:06",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "글로벌 반도체 업황 우려와 미 국채 금리 상승 등의 영향으로 투자 심리가 위축되면서 코스피와 코스닥 지수가 동반 하락했다. 특히 코스피와 코스피200 지수는 최근 108일간의 데이터 기준으로 최저치를 기록하며 장을 마감했다. 외국인 투자자의 자금 이탈과 환율 상승 또한 시장의 하방 압력을 높이는 요인으로 작용했다."
+      "text": "미국 엔비디아의 젠슨 황 최고경영자 관련 이슈와 금리 불확실성 등이 겹치며 투자 심리가 위축되어 코스피와 코스닥 지수가 동반 하락했다. 코스피와 코스피200 지수는 이번 하락으로 최근 108일간 데이터 기준 최저치를 기록했다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "우진비앤지",
+      "corp_code": "00103547",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261117",
+      "rcept_no": "20261117000231",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000231",
+      "ai_explanation": "회사가 주주를 대상으로 신주를 발행하여 자금을 조달하겠다는 결정입니다."
+    },
+    {
       "corp_name": "다보링크",
       "corp_code": "01416642",
       "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
       "rcept_dt": "20261117",
       "rcept_no": "20261117000201",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000201",
-      "ai_explanation": "회사 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정하는 계획을 수정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "이연제약",
@@ -99,7 +108,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000188",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000188",
-      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 사들여 소각하거나 보유하겠다는 결정입니다."
+      "ai_explanation": "회사가 발행했던 전환사채를 만기 전에 미리 되사서 소각하거나 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "블루산업개발",
@@ -108,7 +117,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000192",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000192",
-      "ai_explanation": "회사 자금을 조달하기 위해 신주를 발행하여 주주 등에게 배정하는 계획을 수정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 유상증자 결정 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -117,7 +126,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000152",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000152",
-      "ai_explanation": "회사가 투자 유치를 위해 발행하는 전환사채의 주요 조건을 수정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 결정 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "원온",
@@ -126,7 +135,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000194",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000194",
-      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영권 확보나 투자 목적으로 활용하겠다는 결정입니다."
+      "ai_explanation": "다른 회사의 주식이나 지분을 사들여 경영 참여나 투자 목적으로 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "파이온엑스",
@@ -135,7 +144,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000130",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000130",
-      "ai_explanation": "회사가 투자 유치를 위해 발행하는 전환사채의 주요 조건을 수정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 결정 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "메타바이오메드",
@@ -144,7 +153,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000129",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000129",
-      "ai_explanation": "주가 안정이나 주주 가치 제고 등을 목적으로 자사 주식을 직접 매입하겠다는 결정입니다."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 사들여 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "우진아이엔에스",
@@ -153,7 +162,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000106",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000106",
-      "ai_explanation": "주가 안정을 목적으로 금융기관에 자금을 맡겨 자사주를 대신 취득하도록 계약하는 결정입니다."
+      "ai_explanation": "증권사와 계약을 맺고 일정 기간 자사 주식을 대신 매입하도록 하는 결정입니다."
     },
     {
       "corp_name": "유니드글로벌상사",
@@ -162,7 +171,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000097",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000097",
-      "ai_explanation": "계열사나 타인의 대출 등에 대해 회사가 대신 갚을 책임을 지겠다고 보증하는 결정입니다."
+      "ai_explanation": "회사가 타인이나 타사의 채무에 대해 보증을 서겠다는 결정입니다."
     },
     {
       "corp_name": "에이치티알헤시라스",
@@ -171,7 +180,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000084",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000084",
-      "ai_explanation": "타인의 채무를 담보하기 위해 회사가 보유한 자산을 담보로 제공하기로 결정한 사항입니다."
+      "ai_explanation": "회사가 타인의 채무를 위해 자사 자산을 담보로 제공하겠다는 결정입니다."
     },
     {
       "corp_name": "키다리스튜디오",
@@ -180,7 +189,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000074",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000074",
-      "ai_explanation": "주가 안정을 목적으로 금융기관에 자금을 맡겨 자사주를 대신 취득하도록 계약하는 결정입니다."
+      "ai_explanation": "증권사와 계약을 맺고 일정 기간 자사 주식을 대신 매입하도록 하는 결정입니다."
     },
     {
       "corp_name": "엠젠솔루션",
@@ -189,7 +198,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000068",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000068",
-      "ai_explanation": "회사가 운영자금이나 타법인 인수 등을 위해 전환사채를 새로 발행하기로 결정한 사항입니다."
+      "ai_explanation": "회사가 주식으로 전환 가능한 사채를 발행하여 자금을 조달하겠다는 결정입니다."
     },
     {
       "corp_name": "국일신동",
@@ -198,7 +207,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000061",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000061",
-      "ai_explanation": "주가 안정이나 주주 가치 제고 등을 목적으로 자사 주식을 직접 매입하겠다는 결정입니다."
+      "ai_explanation": "회사가 시장에서 자사 주식을 직접 사들여 보유하겠다는 결정입니다."
     },
     {
       "corp_name": "다보링크",
@@ -207,7 +216,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000059",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000059",
-      "ai_explanation": "회사가 발행하는 전환사채 관련 부속 서류의 오류를 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 관련 첨부 서류 내용을 수정한다는 의미입니다."
     },
     {
       "corp_name": "광무",
@@ -216,7 +225,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000049",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000049",
-      "ai_explanation": "주가 안정을 목적으로 금융기관에 자금을 맡겨 자사주를 대신 취득하도록 계약하는 결정입니다."
+      "ai_explanation": "증권사와 계약을 맺고 일정 기간 자사 주식을 대신 매입하도록 하는 결정입니다."
     },
     {
       "corp_name": "주성코퍼레이션",
@@ -225,7 +234,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000045",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000045",
-      "ai_explanation": "회사가 투자 유치를 위해 발행하는 전환사채의 주요 조건을 수정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 전환사채 발행 결정 내용 중 일부를 수정하거나 보완한다는 의미입니다."
     },
     {
       "corp_name": "티에이케이정보시스템",
@@ -234,7 +243,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000035",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000035",
-      "ai_explanation": "회사가 직접 자사주를 취득하기로 한 계획의 관련 서류 내용을 정정하는 공시입니다."
+      "ai_explanation": "기존에 공시한 자기주식 취득 관련 첨부 서류 내용을 수정한다는 의미입니다."
     },
     {
       "corp_name": "사람인",
@@ -243,7 +252,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000029",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000029",
-      "ai_explanation": "주가 안정을 목적으로 금융기관에 자금을 맡겨 자사주를 대신 취득하도록 계약하는 결정입니다."
+      "ai_explanation": "증권사와 계약을 맺고 일정 기간 자사 주식을 대신 매입하도록 하는 결정입니다."
     },
     {
       "corp_name": "피스피스스튜디오",
@@ -252,7 +261,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000020",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000020",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료하기로 결정한 사항입니다."
+      "ai_explanation": "기존에 체결했던 자기주식 취득 신탁 계약을 중도에 종료하겠다는 결정입니다."
     },
     {
       "corp_name": "대농어패럴",
@@ -261,7 +270,7 @@
       "rcept_dt": "20261117",
       "rcept_no": "20261117000024",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000024",
-      "ai_explanation": "계열사나 타인의 대출 등에 대해 회사가 대신 갚을 책임을 지겠다고 보증하는 결정입니다."
+      "ai_explanation": "회사가 타인이나 타사의 채무에 대해 보증을 서겠다는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -3121,19 +3130,13 @@
       "pct": 29.79
     },
     {
-      "name": "대교우B",
-      "price": "1,209",
-      "change_percent": "+23.49%",
-      "pct": 23.49
+      "name": "깨끗한나라우",
+      "price": "5,750",
+      "change_percent": "+19.67%",
+      "pct": 19.67
     }
   ],
   "top_losers": [
-    {
-      "name": "한솔홈데코",
-      "price": "935",
-      "change_percent": "-24.90%",
-      "pct": 24.9
-    },
     {
       "name": "삼영",
       "price": "3,445",
@@ -3141,10 +3144,16 @@
       "pct": 24.78
     },
     {
+      "name": "한솔홈데코",
+      "price": "941",
+      "change_percent": "-24.42%",
+      "pct": 24.42
+    },
+    {
       "name": "휴스틸",
-      "price": "2,655",
-      "change_percent": "-21.10%",
-      "pct": 21.1
+      "price": "2,650",
+      "change_percent": "-21.25%",
+      "pct": 21.25
     },
     {
       "name": "유니온머티리얼",
@@ -3153,32 +3162,32 @@
       "pct": 16.67
     },
     {
-      "name": "삼진제약",
-      "price": "16,850",
-      "change_percent": "-16.38%",
-      "pct": 16.38
+      "name": "유니퀘스트",
+      "price": "11,440",
+      "change_percent": "-15.26%",
+      "pct": 15.26
     }
   ],
   "sector_performance": [
     {
       "name": "건강관리기술",
-      "change_value": "+2.40%",
-      "pct": 2.4
+      "change_value": "+2.16%",
+      "pct": 2.16
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+2.04%",
-      "pct": 2.04
-    },
-    {
-      "name": "레저용장비와제품",
-      "change_value": "+1.92%",
-      "pct": 1.92
+      "change_value": "+2.07%",
+      "pct": 2.07
     },
     {
       "name": "문구류",
       "change_value": "+1.62%",
       "pct": 1.62
+    },
+    {
+      "name": "레저용장비와제품",
+      "change_value": "+1.36%",
+      "pct": 1.36
     },
     {
       "name": "사무용전자제품",
@@ -3189,18 +3198,13 @@
   "sector_heatmap": [
     {
       "name": "건강관리기술",
-      "change_value": "+2.40%",
-      "pct": 2.4
+      "change_value": "+2.16%",
+      "pct": 2.16
     },
     {
       "name": "백화점과일반상점",
-      "change_value": "+2.04%",
-      "pct": 2.04
-    },
-    {
-      "name": "레저용장비와제품",
-      "change_value": "+1.92%",
-      "pct": 1.92
+      "change_value": "+2.07%",
+      "pct": 2.07
     },
     {
       "name": "문구류",
@@ -3208,44 +3212,49 @@
       "pct": 1.62
     },
     {
+      "name": "레저용장비와제품",
+      "change_value": "+1.36%",
+      "pct": 1.36
+    },
+    {
       "name": "사무용전자제품",
       "change_value": "+1.21%",
       "pct": 1.21
     },
     {
-      "name": "부동산",
-      "change_value": "+0.64%",
-      "pct": 0.64
-    },
-    {
-      "name": "기계",
-      "change_value": "-4.21%",
-      "pct": -4.21
+      "name": "다각화된소비자서비스",
+      "change_value": "+0.62%",
+      "pct": 0.62
     },
     {
       "name": "에너지장비및서비스",
-      "change_value": "-4.21%",
-      "pct": -4.21
+      "change_value": "-4.14%",
+      "pct": -4.14
     },
     {
-      "name": "비철금속",
-      "change_value": "-4.30%",
-      "pct": -4.3
+      "name": "기계",
+      "change_value": "-4.19%",
+      "pct": -4.19
     },
     {
       "name": "생명보험",
-      "change_value": "-4.31%",
-      "pct": -4.31
+      "change_value": "-4.34%",
+      "pct": -4.34
+    },
+    {
+      "name": "비철금속",
+      "change_value": "-4.51%",
+      "pct": -4.51
     },
     {
       "name": "전기장비",
-      "change_value": "-4.70%",
-      "pct": -4.7
+      "change_value": "-4.76%",
+      "pct": -4.76
     },
     {
       "name": "전기유틸리티",
-      "change_value": "-6.06%",
-      "pct": -6.06
+      "change_value": "-6.19%",
+      "pct": -6.19
     }
   ],
   "article_counts": {
