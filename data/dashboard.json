@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-17 09:01:34",
+  "updated_at": "2026-11-17 09:31:15",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 5100.5,
-    "kosdaq_value": 665.65
+    "label": "하락",
+    "emoji": "🟠",
+    "kospi_change": -1.64,
+    "kosdaq_change": -1.11,
+    "kospi_value": 5016.93,
+    "kosdaq_value": 658.24
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "국토교통부, 재건축 초과이익 환수제 폐지 및 완화론에 선 그어"
+    },
+    {
+      "category": "증권",
+      "text": "미국 증시에서 인공지능 관련 종목이 약세를 보이고 엔비디아 실적에 대한 경계감이 커진 여파로 국내 증시가 하락 출발했다. 외국인 투자자의 매도세가 이어지며 코스피와 코스닥 지수가 모두 내림세를 보였고, 코스피는 장중 한때 5000선 아래로 밀려나기도 했다."
     }
   ],
   "daily_term": {
@@ -2923,144 +2927,162 @@
   },
   "top_gainers": [
     {
-      "name": "퍼시스",
-      "price": "23,900",
-      "change_percent": "-2.05%",
-      "pct": 2.05
+      "name": "인디에프",
+      "price": "3,020",
+      "change_percent": "+29.89%",
+      "pct": 29.89
     },
     {
-      "name": "동양",
-      "price": "963",
-      "change_percent": "+0.00%",
-      "pct": 0.0
+      "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
+      "price": "10,205",
+      "change_percent": "+10.09%",
+      "pct": 10.09
+    },
+    {
+      "name": "미래에셋 인버스 2X WTI원유 선물 ETN",
+      "price": "13,610",
+      "change_percent": "+9.23%",
+      "pct": 9.23
+    },
+    {
+      "name": "하나 S&P 인버스 2X WTI원유 선물 ETN B",
+      "price": "1,905",
+      "change_percent": "+9.11%",
+      "pct": 9.11
+    },
+    {
+      "name": "메리츠 인버스 2X WTI원유 선물 ETN(H)",
+      "price": "2,150",
+      "change_percent": "+8.86%",
+      "pct": 8.86
     }
   ],
   "top_losers": [
     {
-      "name": "두산우",
-      "price": "217,500",
-      "change_percent": "-6.25%",
-      "pct": 6.25
+      "name": "삼영",
+      "price": "3,750",
+      "change_percent": "-18.12%",
+      "pct": 18.12
     },
     {
-      "name": "두산",
-      "price": "546,000",
-      "change_percent": "-5.86%",
-      "pct": 5.86
+      "name": "휴스틸",
+      "price": "2,900",
+      "change_percent": "-13.82%",
+      "pct": 13.82
     },
     {
-      "name": "동화약품",
-      "price": "5,080",
-      "change_percent": "-5.40%",
-      "pct": 5.4
+      "name": "유니퀘스트",
+      "price": "11,640",
+      "change_percent": "-13.78%",
+      "pct": 13.78
     },
     {
-      "name": "CJ",
-      "price": "106,400",
-      "change_percent": "-4.74%",
-      "pct": 4.74
+      "name": "에스엘",
+      "price": "42,150",
+      "change_percent": "-10.32%",
+      "pct": 10.32
     },
     {
-      "name": "화천기공",
-      "price": "32,850",
-      "change_percent": "-4.37%",
-      "pct": 4.37
+      "name": "미래산업",
+      "price": "5,100",
+      "change_percent": "-10.99%",
+      "pct": 10.99
     }
   ],
   "sector_performance": [
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "+1.55%",
-      "pct": 1.55
-    },
-    {
       "name": "레저용장비와제품",
-      "change_value": "+0.53%",
-      "pct": 0.53
+      "change_value": "+2.55%",
+      "pct": 2.55
     },
     {
-      "name": "전기제품",
-      "change_value": "+0.30%",
-      "pct": 0.3
+      "name": "건강관리기술",
+      "change_value": "+2.30%",
+      "pct": 2.3
     },
     {
-      "name": "도로와철도운송",
-      "change_value": "+0.19%",
-      "pct": 0.19
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+1.60%",
+      "pct": 1.6
     },
     {
-      "name": "전문소매",
-      "change_value": "+0.15%",
-      "pct": 0.15
+      "name": "다각화된소비자서비스",
+      "change_value": "+1.40%",
+      "pct": 1.4
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.87%",
+      "pct": 0.87
     }
   ],
   "sector_heatmap": [
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "+1.55%",
-      "pct": 1.55
-    },
-    {
       "name": "레저용장비와제품",
-      "change_value": "+0.53%",
-      "pct": 0.53
+      "change_value": "+2.55%",
+      "pct": 2.55
     },
     {
-      "name": "전기제품",
-      "change_value": "+0.30%",
-      "pct": 0.3
+      "name": "건강관리기술",
+      "change_value": "+2.30%",
+      "pct": 2.3
     },
     {
-      "name": "도로와철도운송",
-      "change_value": "+0.19%",
-      "pct": 0.19
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "+1.60%",
+      "pct": 1.6
     },
     {
-      "name": "전문소매",
-      "change_value": "+0.15%",
-      "pct": 0.15
+      "name": "다각화된소비자서비스",
+      "change_value": "+1.40%",
+      "pct": 1.4
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.14%",
-      "pct": 0.14
+      "name": "생물공학",
+      "change_value": "+0.87%",
+      "pct": 0.87
     },
     {
-      "name": "전기장비",
-      "change_value": "-2.18%",
-      "pct": -2.18
+      "name": "제약",
+      "change_value": "+0.57%",
+      "pct": 0.57
+    },
+    {
+      "name": "디스플레이장비및부품",
+      "change_value": "-2.72%",
+      "pct": -2.72
     },
     {
       "name": "석유와가스",
-      "change_value": "-2.21%",
-      "pct": -2.21
+      "change_value": "-2.80%",
+      "pct": -2.8
     },
     {
-      "name": "철강",
-      "change_value": "-2.28%",
-      "pct": -2.28
+      "name": "전기장비",
+      "change_value": "-2.97%",
+      "pct": -2.97
     },
     {
-      "name": "전기유틸리티",
-      "change_value": "-2.62%",
-      "pct": -2.62
+      "name": "복합기업",
+      "change_value": "-3.00%",
+      "pct": -3.0
     },
     {
-      "name": "기타금융",
-      "change_value": "-2.71%",
-      "pct": -2.71
+      "name": "손해보험",
+      "change_value": "-3.32%",
+      "pct": -3.32
     },
     {
       "name": "생명보험",
-      "change_value": "-3.37%",
-      "pct": -3.37
+      "change_value": "-4.70%",
+      "pct": -4.7
     }
   ],
   "article_counts": {
     "종합": 401,
     "경제": 30,
     "부동산": 30,
-    "증권": 83
+    "증권": 84
   },
   "article_count_trend": {
     "종합": {
@@ -3082,9 +3104,9 @@
       "surge": false
     },
     "증권": {
-      "today": 83,
+      "today": 84,
       "yesterday": 82,
-      "change_pct": 1.2,
+      "change_pct": 2.4,
       "surge": false
     }
   }
