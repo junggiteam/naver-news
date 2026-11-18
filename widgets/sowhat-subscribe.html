@@ -37,7 +37,7 @@
 <div class="stb_form_result" id="stb_form_result" role="status" aria-live="polite"></div>
 <fieldset class="stb_form_set_submit"><button type="submit" class="stb_form_submit_button" id="stb_form_submit_button" disabled>뉴스레터 구독하기 <span aria-hidden="true">→</span></button></fieldset>
 </form>
-<div class="notice" id="notice" role="alert" hidden><p id="notice-text"></p><button type="button" id="notice-close">확인</button><a id="notice-link" href="https://page.stibee.com/subscriptions/479387" target="_blank" rel="noopener" style="color:#e20e0e;font-size:12px">전체 구독 페이지 열기</a></div>
+<div class="notice" id="notice" role="alert" hidden><p id="notice-text"></p><button type="button" id="notice-close">확인</button><a id="notice-link" href="https://page.stibee.com/archives/479387" target="_blank" rel="noopener" style="color:#e20e0e;font-size:12px">쏘왓레터 모아보기 →</a></div>
 <dialog id="privacy-dialog" aria-labelledby="privacy-title"><h2 id="privacy-title">개인정보 수집 및 이용</h2><p>뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다.<br>수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</p><form method="dialog"><button>닫기</button></form></dialog>
 <dialog id="marketing-dialog" aria-labelledby="marketing-title"><h2 id="marketing-title">광고성 정보 수신</h2><p>제휴 콘텐츠, 프로모션, 이벤트 정보 등의 광고성 정보를 수신합니다.</p><form method="dialog"><button>닫기</button></form></dialog>
 <noscript><a href="https://page.stibee.com/subscriptions/479387" target="_blank" rel="noopener">스티비에서 구독 신청하기</a></noscript>
@@ -53,11 +53,8 @@
     focusReturn = document.activeElement;
     document.getElementById('notice-text').textContent = text;
     const link = document.getElementById('notice-link');
-    const alreadySubscribed = /이미.{0,40}(?:구독|존재|등록|사용)|(?:구독|등록)\s*중/.test(text.replace(/\s+/g, ' '));
-    link.href = alreadySubscribed
-      ? 'https://page.stibee.com/archives/479387'
-      : 'https://page.stibee.com/subscriptions/479387';
-    link.textContent = alreadySubscribed ? '쏘왓레터 모아보기 →' : '전체 구독 페이지 열기';
+    link.href = 'https://page.stibee.com/archives/479387';
+    link.textContent = '쏘왓레터 모아보기 →';
     notice.hidden = false;
     document.getElementById('notice-close').focus();
   }
