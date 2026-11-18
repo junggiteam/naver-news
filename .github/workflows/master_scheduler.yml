@@ -40,6 +40,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: 쏘왓레터 공개 아카이브 갱신 (20분 캐시)
+        continue-on-error: true
+        run: python sowhat_archive_sync.py
+
       - name: 공개 사이트 상태 점검
         run: python service_health.py
 

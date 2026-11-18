@@ -1,0 +1,40 @@
+name: So What Archive Sync
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: master-scheduler
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install archive dependencies
+        run: pip install requests beautifulsoup4
+      - name: Refresh public So What archive
+        run: python sowhat_archive_sync.py --force
+      - name: Save archive metadata
+        run: |
+          git config user.name "junggiteam"
+          git config user.email "junggiteam@gmail.com"
+          git add data/sowhat_archive.json data/sowhat_archive_status.json
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Auto update: So What newsletter archive"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          exit 1
