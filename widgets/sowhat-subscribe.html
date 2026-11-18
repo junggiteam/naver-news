@@ -53,11 +53,11 @@
     focusReturn = document.activeElement;
     document.getElementById('notice-text').textContent = text;
     const link = document.getElementById('notice-link');
-    const alreadySubscribed = /이미\s*구독|구독\s*중/.test(text);
+    const alreadySubscribed = /이미.{0,40}(?:구독|존재|등록|사용)|(?:구독|등록)\s*중/.test(text.replace(/\s+/g, ' '));
     link.href = alreadySubscribed
       ? 'https://page.stibee.com/archives/479387'
       : 'https://page.stibee.com/subscriptions/479387';
-    link.textContent = alreadySubscribed ? '지난 쏘왓레터 모아보기 →' : '전체 구독 페이지 열기';
+    link.textContent = alreadySubscribed ? '쏘왓레터 모아보기 →' : '전체 구독 페이지 열기';
     notice.hidden = false;
     document.getElementById('notice-close').focus();
   }
