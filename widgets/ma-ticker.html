@@ -91,21 +91,20 @@
   /* 왼쪽 카테고리 뱃지 + 오른쪽 회사명/공시내용 2줄 */
   .mt-row {
     height: 52px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr);
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     color: inherit;
     text-decoration: none;
   }
   .mt-row:hover .mt-row-name { color: #142c67; }
 
-  /* 뱃지 폭을 62px 고정에서 내용에 맞춰 자동으로 늘어나게 바꿨다(2026-08) -
-     고정폭에서는 "주식교환·이전"(5글자, 실측 약 67px)이 패딩까지 감안하면
-     들어가지 못해 줄바꿈되고, 반대로 "지분인수"/"자기주식" 같은 짧은
-     라벨은 불필요하게 여백만 남아 좌측 뱃지와 우측 텍스트 사이 간격이
-     어색해 보였다. ma-ticker-mobile.html의 .mth-badge와 동일한 auto-width
-     패턴으로 통일. */
+  /* 배지 자체는 내용에 맞는 폭을 유지한다. 배지 칼럼만 84px로 확보해
+     짧은 배지와 긴 배지 모두 회사명/설명의 시작선이 같도록 정렬한다.
+     기존 52px 행 높이와 전체 260px iframe 제약은 유지한다. */
   .mt-row-badge {
+    justify-self: start;
     flex: 0 0 auto;
     padding: 4px 9px;
     border-radius: 5px;
