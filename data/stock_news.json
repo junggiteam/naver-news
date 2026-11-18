@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 07:01:04",
+  "updated_at": "2026-11-19 07:30:59",
   "indices": [
     {
       "name": "코스피",
@@ -34,14 +34,14 @@
       "value": "24,429.89",
       "change_percent": "▲0.42%",
       "direction": "up",
-      "as_of": "2026-11-18 17:00:55"
+      "as_of": "2026-11-18 17:15:59"
     },
     {
       "name": "나스닥100",
       "value": "27,116.26",
       "change_percent": "▲0.42%",
       "direction": "up",
-      "as_of": "2026-11-18 17:00:57"
+      "as_of": "2026-11-18 17:15:59"
     },
     {
       "name": "S&P500",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "82.97",
-      "change_percent": "▼3.53%",
+      "value": "83.26",
+      "change_percent": "▼3.20%",
       "direction": "down",
-      "as_of": "2026-11-18 15:51:03"
+      "as_of": "2026-11-18 16:00:00"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "85,051,000",
-      "change_percent": "▼3.72%",
+      "value": "85,161,000",
+      "change_percent": "▼3.60%",
       "direction": "down",
-      "as_of": "2026-11-19 07:01:01"
+      "as_of": "2026-11-19 07:30:56"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,404,000",
-      "change_percent": "▼3.06%",
+      "value": "2,402,000",
+      "change_percent": "▼3.15%",
       "direction": "down",
-      "as_of": "2026-11-19 07:01:01"
+      "as_of": "2026-11-19 07:30:58"
     }
   ],
   "news_categories": [
@@ -140,8 +140,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "뉴스1",
+          "press_name": "연합뉴스",
           "rank": 1,
+          "title": "4분기 실적 눈높이 낮아져…상장사 10곳중 6곳 전망치 하향",
+          "link": "https://n.news.naver.com/mnews/article/001/0016450513?sid=101258401",
+          "upload_time": "20261119070010",
+          "published_at": "2026-11-19T07:00:10+09:00"
+        },
+        {
+          "press_name": "뉴스1",
+          "rank": 2,
           "title": "앤트로픽 공모가 83달러로 높여…AI 우려 뚫고 역대 최대 IPO",
           "link": "https://n.news.naver.com/mnews/article/421/0009297558?sid=101258401",
           "upload_time": "20261119065925",
@@ -149,7 +157,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 3,
           "title": "[글로벌증시] 美증시, 엔비디아 호실적에도 혼조…코스피 향방은",
           "link": "https://n.news.naver.com/mnews/article/422/0000927668?sid=101258401",
           "upload_time": "20261119065015",
@@ -157,7 +165,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 4,
           "title": "‘성과급 파티’ 삼전닉스 인력 대체하나…아틀라스, 美 반도체 공장서 일 배운다 [biz-플러스]",
           "link": "https://n.news.naver.com/mnews/article/011/0004683779?sid=101258401",
           "upload_time": "20261119063017",
@@ -165,7 +173,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "정부는 '베어허그' 띄우지만…저평가 상장사 570곳 경영권은 '철옹성'",
           "link": "https://n.news.naver.com/mnews/article/018/0006412172?sid=101258401",
           "upload_time": "20261119061110",
@@ -173,7 +181,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 5,
+          "rank": 6,
           "title": "“인도가 부러운 날이 올줄이야”…ETF 한달 수익률 12% 넘겼다는데",
           "link": "https://n.news.naver.com/mnews/article/009/0005765898?sid=101258401",
           "upload_time": "20261119060816",
@@ -181,7 +189,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 6,
+          "rank": 7,
           "title": "장사 잘했는데 남는 돈이 없다…환율에 당한 상장사, 절반이 3분기 순손실",
           "link": "https://n.news.naver.com/mnews/article/009/0005765896?sid=101258401",
           "upload_time": "20261119060811",
@@ -189,7 +197,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 8,
           "title": "한중 문화교류 확대 기대에 엔터주 급등…에스엠 애프터마켓 상한가 [이런국장 저런주식]",
           "link": "https://n.news.naver.com/mnews/article/011/0004683760?sid=101258401",
           "upload_time": "20261119060013",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 8,
+          "rank": 9,
           "title": "수능일 주식시장 1시간 늦게 개장…정규장 오전 10시~오후 4시30분",
           "link": "https://n.news.naver.com/mnews/article/001/0016450467?sid=101258401",
           "upload_time": "20261119060010",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "뉴스1",
-          "rank": 9,
+          "rank": 10,
           "title": "엔비디아 호실적인데 '오천피' 턱걸이…주식 계좌 걸어 잠근 개미들",
           "link": "https://n.news.naver.com/mnews/article/421/0009297492?sid=101258401",
           "upload_time": "20261119060000",
@@ -213,7 +221,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "금융지주가 전망한 연말 증시…\"기술적 반등 그칠 가능성\"",
           "link": "https://n.news.naver.com/mnews/article/001/0016450443?sid=101258401",
           "upload_time": "20261119055500",
@@ -221,7 +229,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 11,
+          "rank": 12,
           "title": "오천피 이끈 기관… 삼전닉스는 숨돌리기",
           "link": "https://n.news.naver.com/mnews/article/008/0005443243?sid=101258401",
           "upload_time": "20261119040000",
@@ -229,7 +237,7 @@
         },
         {
           "press_name": "중앙일보",
-          "rank": 12,
+          "rank": 13,
           "title": "1월도 11월도 5000인데…종목 넷 중 셋은 주가 낮아졌다",
           "link": "https://n.news.naver.com/mnews/article/025/0003566266?sid=101258401",
           "upload_time": "20261119000200",
@@ -237,7 +245,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 13,
+          "rank": 14,
           "title": "한한령 해제 기대감에… SM·스튜디오드래곤 등 엔터주 상한가",
           "link": "https://n.news.naver.com/mnews/article/018/0006412109?sid=101258401",
           "upload_time": "20261118221911",
@@ -245,19 +253,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 14,
+          "rank": 15,
           "title": "평판 리스크 지면서 굳이?...적대적 M&A 투자 꺼리는 공적기금",
           "link": "https://n.news.naver.com/mnews/article/018/0006412108?sid=101258401",
           "upload_time": "20261118221622",
           "published_at": "2026-11-18T22:16:22+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "“불장 땐 선수 아닌 사람 있나”…액티브 ETF, 하락장엔 지수만도 못했다",
-          "link": "https://n.news.naver.com/mnews/article/009/0005765882?sid=101258401",
-          "upload_time": "20261118220310",
-          "published_at": "2026-11-18T22:03:10+09:00"
         }
       ]
     },
@@ -267,6 +267,46 @@
         {
           "press_name": "한국경제",
           "rank": 1,
+          "title": "\"제주항공, 한중 FTA 타결 수혜 기대…목표가↑\"-하나",
+          "link": "https://n.news.naver.com/mnews/article/015/0005355595?sid=101258402",
+          "upload_time": "20261119072513",
+          "published_at": "2026-11-19T07:25:13+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "[기로의상장사]케이디켐②합병으로 민남규 회장만 배불린다…소액주주 지분 희석",
+          "link": "https://n.news.naver.com/mnews/article/277/0005844772?sid=101258402",
+          "upload_time": "20261119072000",
+          "published_at": "2026-11-19T07:20:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
+          "title": "[클릭 e종목]한화손보, 실적 전망치 조정 반영 목표가↓",
+          "link": "https://n.news.naver.com/mnews/article/277/0005844766?sid=101258402",
+          "upload_time": "20261119070900",
+          "published_at": "2026-11-19T07:09:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 4,
+          "title": "[클릭 e종목]\"엔비디아, 여전히 좋은 실적…약정·경영진 공백은 변수\"",
+          "link": "https://n.news.naver.com/mnews/article/277/0005844765?sid=101258402",
+          "upload_time": "20261119070700",
+          "published_at": "2026-11-19T07:07:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 5,
+          "title": "삼성전기 콕집은 엔비디아…기판 계약 키우고 생산능력도 늘린다[클릭 e종목]",
+          "link": "https://n.news.naver.com/mnews/article/277/0005844764?sid=101258402",
+          "upload_time": "20261119070500",
+          "published_at": "2026-11-19T07:05:00+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 6,
           "title": "\"드디어 반등했는데\"…삼전닉스 주주들 안심 못 하는 이유 [종목+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005355581?sid=101258402",
           "upload_time": "20261119063120",
@@ -274,7 +314,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 7,
           "title": "코스닥은 16% 빠졌는데…이 종목, 나 홀로 35% 뛰었다 [종목+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005355580?sid=101258402",
           "upload_time": "20261119063117",
@@ -282,7 +322,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 3,
+          "rank": 8,
           "title": "\"중국 문 열리나\"…하루 만에 '30% 폭등' 불기둥 쏜 종목 [분석+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005355579?sid=101258402",
           "upload_time": "20261119063115",
@@ -290,7 +330,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 4,
+          "rank": 9,
           "title": "한중 문화교류 확대 기대에 엔터주 급등…에스엠 애프터마켓 상한가 [이런국장 저런주식]",
           "link": "https://n.news.naver.com/mnews/article/011/0004683760?sid=101258402",
           "upload_time": "20261119060013",
@@ -298,7 +338,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 5,
+          "rank": 10,
           "title": "엔비디아 생태계 파고드는 한국산 AI 칩",
           "link": "https://n.news.naver.com/mnews/article/417/0001164837?sid=101258402",
           "upload_time": "20261119052000",
@@ -306,7 +346,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 11,
           "title": "\"삼전 30만원·하이닉스 200만원? 지금 손절은 늦었다\"…내년 1월 기다리라는 이유",
           "link": "https://n.news.naver.com/mnews/article/014/0005606439?sid=101258402",
           "upload_time": "20261118190014",
@@ -314,7 +354,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 12,
           "title": "“바로 29% 찍었다” 퇴근한 주주들 환호…잠잠하던 엔터·여행·화장품주, 무슨 일",
           "link": "https://n.news.naver.com/mnews/article/011/0004683702?sid=101258402",
           "upload_time": "20261118185710",
@@ -322,7 +362,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 8,
+          "rank": 13,
           "title": "2026 레전드 매치성료…대전시티즌·인천유나이티드·FC안양 레전드 한자리에",
           "link": "https://n.news.naver.com/mnews/article/008/0005443182?sid=101258402",
           "upload_time": "20261118183828",
@@ -330,7 +370,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 9,
+          "rank": 14,
           "title": "삼성·LG가 작정했다…하루 만에 20% 급등한 '이 주식' 정체",
           "link": "https://n.news.naver.com/mnews/article/015/0005355514?sid=101258402",
           "upload_time": "20261118182617",
@@ -338,51 +378,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 10,
+          "rank": 15,
           "title": "반도체가 다했다…코스피 상장사 영업익 10% 증가",
           "link": "https://n.news.naver.com/mnews/article/015/0005355508?sid=101258402",
           "upload_time": "20261118182417",
           "published_at": "2026-11-18T18:24:17+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 11,
-          "title": "코스피 상장사 3분기 영업익 266%↑…10곳 중 4곳은 적자 ‘실적 양극화’",
-          "link": "https://n.news.naver.com/mnews/article/014/0005606384?sid=101258402",
-          "upload_time": "20261118181915",
-          "published_at": "2026-11-18T18:19:15+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 12,
-          "title": "업비트 ‘코인모으기’ 누적 1조 돌파",
-          "link": "https://n.news.naver.com/mnews/article/014/0005606383?sid=101258402",
-          "upload_time": "20261118181913",
-          "published_at": "2026-11-18T18:19:13+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 13,
-          "title": "\"ELS 손실구간 근접\" 내달부터 투자자에 미리 알려준다",
-          "link": "https://n.news.naver.com/mnews/article/014/0005606382?sid=101258402",
-          "upload_time": "20261118181911",
-          "published_at": "2026-11-18T18:19:11+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 14,
-          "title": "AI 투심 살아난 코스피… 5000선 회복",
-          "link": "https://n.news.naver.com/mnews/article/014/0005606357?sid=101258402",
-          "upload_time": "20261118181313",
-          "published_at": "2026-11-18T18:13:13+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 15,
-          "title": "오천피 무너진 날에도 外人은 '공매도 베팅'",
-          "link": "https://n.news.naver.com/mnews/article/014/0005606350?sid=101258402",
-          "upload_time": "20261118181119",
-          "published_at": "2026-11-18T18:11:19+09:00"
         }
       ]
     },
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "엔비디아 '깜짝 실적'도 소용 없었다…S&P500, 5일 연속 하락 [뉴욕증시 브리핑]",
+          "link": "https://n.news.naver.com/mnews/article/015/0005355596?sid=101258403",
+          "upload_time": "20261119072913",
+          "published_at": "2026-11-19T07:29:13+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "엔비디아 3%↓·AMD 5%↑…호실적 다음 날 엇갈린 AI주[월스트리트in]",
           "link": "https://n.news.naver.com/mnews/article/018/0006412184?sid=101258403",
           "upload_time": "20261119065911",
@@ -399,15 +407,15 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 2,
-          "title": "강달러에 금·엔화 우는데, 원화 나홀로 선방 [글로벌 머니플로우]",
+          "rank": 3,
+          "title": "\"투기 세력 떠났다\"…'60% 폭락'에 서늘한 경고 [글로벌 머니플로우]",
           "link": "https://n.news.naver.com/mnews/article/215/0001273217?sid=101258403",
           "upload_time": "20261119065836",
           "published_at": "2026-11-19T06:58:36+09:00"
         },
         {
           "press_name": "한국경제TV",
-          "rank": 3,
+          "rank": 4,
           "title": "엔비디아 호실적에도 美증시 혼조…다우 1% 넘게 하락-[글로벌 마감 시황]",
           "link": "https://n.news.naver.com/mnews/article/215/0001273216?sid=101258403",
           "upload_time": "20261119065813",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 4,
+          "rank": 5,
           "title": "시장이 미쳤나? 가격변수가 따로 논다! | 중간선거 후 7대 뉴 앱노멀 현상, 어떻게 이해? | 한상춘 한국경제신문사 논설위원",
           "link": "https://n.news.naver.com/mnews/article/215/0001273215?sid=101258403",
           "upload_time": "20261119065736",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 5,
+          "rank": 6,
           "title": "\"시장에 충격 줘야\"…엔비디아 고비 넘기자 날아든 '빅스텝' 경고 [굿모닝 글로벌 이슈]",
           "link": "https://n.news.naver.com/mnews/article/215/0001273213?sid=101258403",
           "upload_time": "20261119065404",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 7,
           "title": "[뉴욕증시]엔비디아 호실적에도 혼조 마감…S&P500 5거래일 연속 ↓",
           "link": "https://n.news.naver.com/mnews/article/277/0005844755?sid=101258403",
           "upload_time": "20261119065102",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 7,
+          "rank": 8,
           "title": "엔비디아 지원 기준 강화에 네오클라우드 약세…사이버보안 수요는 부각-[美증시 특징주]",
           "link": "https://n.news.naver.com/mnews/article/215/0001273212?sid=101258403",
           "upload_time": "20261119065040",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 8,
+          "rank": 9,
           "title": "앤트로픽, 공모가 83달러 책정…시총 1조5천억 달러 수준",
           "link": "https://n.news.naver.com/mnews/article/215/0001273211?sid=101258403",
           "upload_time": "20261119063746",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 9,
+          "rank": 10,
           "title": "또 나온 '빅스텝' 가능성…엔비디아 실적도 분위기 못 살렸다",
           "link": "https://n.news.naver.com/mnews/article/215/0001273210?sid=101258403",
           "upload_time": "20261119063655",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "엔비디아 호실적에도 S&P500 5일연속 하락…나스닥만 0.4%↑",
           "link": "https://n.news.naver.com/mnews/article/001/0016450490?sid=101258403",
           "upload_time": "20261119062946",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 11,
+          "rank": 12,
           "title": "앤트로픽 공모가 83달러로 결정…940억달러 역대 최대 IPO",
           "link": "https://n.news.naver.com/mnews/article/015/0005355577?sid=101258403",
           "upload_time": "20261119062814",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 12,
+          "rank": 13,
           "title": "\"앤스로픽 공모가 83달러 책정\"…희망가 웃돌고 공모 물량도 확대",
           "link": "https://n.news.naver.com/mnews/article/018/0006412175?sid=101258403",
           "upload_time": "20261119062416",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 13,
+          "rank": 14,
           "title": "\"임금 인상 앞당길것\"…엔비디아, 젠슨황 사태 후 직원 달래기",
           "link": "https://n.news.naver.com/mnews/article/018/0006412174?sid=101258403",
           "upload_time": "20261119062014",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 14,
+          "rank": 15,
           "title": "Fed 월러 이사 또 '빅스텝' 언급…10월 FOMC에선 2명만 동의 [Fed 워치]",
           "link": "https://n.news.naver.com/mnews/article/015/0005355575?sid=101258403",
           "upload_time": "20261119061907",
           "published_at": "2026-11-19T06:19:07+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "앤스로픽, 공모가 80~85달러 검토…역대 최대 IPO 전망(상보)",
-          "link": "https://n.news.naver.com/mnews/article/277/0005844749?sid=101258403",
-          "upload_time": "20261119061830",
-          "published_at": "2026-11-19T06:18:30+09:00"
         }
       ]
     },
@@ -767,7 +767,7 @@
       ]
     }
   ],
-  "ai_commentary": "엔비디아의 실적 발표 이후 시장의 불확실성이 일부 해소되면서 반도체 및 주요 대형주를 중심으로 기관의 매수세가 유입되어 지수가 상승했다. 또한 한한령 해제 기대감에 따라 엔터주가 급등한 점도 증시 전반의 투자 심리 개선에 영향을 미쳤다.",
+  "ai_commentary": "엔비디아의 실적 발표 이후 반도체 관련 종목의 움직임이 시장 흐름에 영향을 준 가운데, 한중 문화교류 확대 기대감으로 엔터테인먼트 관련주가 급등하며 지수 상승을 견인했다. 상장사들의 4분기 실적 전망치가 하향 조정되는 상황에서 기관 투자자들의 매수세가 지수 반등을 이끌었다.",
   "top_gainers": [
     {
       "name": "YG PLUS",
