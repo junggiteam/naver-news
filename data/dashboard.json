@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-18 09:01:24",
+  "updated_at": "2026-11-18 09:31:07",
   "market_mood": {
-    "label": "보합",
-    "emoji": "⚪",
-    "kospi_change": 0.0,
-    "kosdaq_change": 0.0,
-    "kospi_value": 4968.48,
-    "kosdaq_value": 650.06
+    "label": "상승",
+    "emoji": "🔵",
+    "kospi_change": 2.49,
+    "kosdaq_change": 2.04,
+    "kospi_value": 5092.39,
+    "kosdaq_value": 663.32
   },
   "heroes": {
     "종합": {
@@ -64,6 +64,10 @@
     {
       "category": "부동산",
       "text": "지방 아파트값 하락세 전환과 서울 외곽 상승으로 양극화가 완화됨"
+    },
+    {
+      "category": "증권",
+      "text": "엔비디아가 발표한 실적이 시장 예상치를 웃돌면서 반도체 관련 종목들이 강세를 보였고, 이에 따라 코스피와 코스닥 지수가 5거래일 만에 반등했다. 외국인의 순매수세가 유입되면서 달러 대비 원화 환율이 소폭 하락한 가운데 국내 증시 전반이 상승 흐름을 보였다."
     }
   ],
   "daily_term": {
@@ -80,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "SKAI",
+      "corp_code": "01381984",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261118",
+      "rcept_no": "20261118000025",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000025",
+      "ai_explanation": "회사 자금 조달을 위해 기존 또는 신규 주주로부터 돈을 받고 신주를 발행하는 결정의 수정 사항입니다."
+    },
+    {
       "corp_name": "우진비앤지",
       "corp_code": "00103547",
       "report_nm": "[기재정정]주요사항보고서(전환사채권발행결정)",
       "rcept_dt": "20261118",
       "rcept_no": "20261117000265",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000265",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
+      "ai_explanation": "회사가 자금을 빌리는 대신 향후 주식으로 바꿀 수 있는 채권을 발행하기로 한 결정의 수정 사항입니다."
     },
     {
       "corp_name": "케이쓰리아이",
@@ -95,7 +108,7 @@
       "rcept_dt": "20261118",
       "rcept_no": "20261117000264",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000264",
-      "ai_explanation": "회사가 발행한 전환사채의 주요 조건을 수정하여 다시 공시함."
+      "ai_explanation": "회사가 자금을 빌리는 대신 향후 주식으로 바꿀 수 있는 채권을 발행하기로 한 결정의 수정 사항입니다."
     },
     {
       "corp_name": "우진비앤지",
@@ -104,7 +117,7 @@
       "rcept_dt": "20261118",
       "rcept_no": "20261117000263",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000263",
-      "ai_explanation": "회사가 자금을 조달하기 위해 유상증자 발행 조건을 수정하여 다시 공시함."
+      "ai_explanation": "회사 자금 조달을 위해 기존 또는 신규 주주로부터 돈을 받고 신주를 발행하는 결정의 수정 사항입니다."
     }
   ],
   "macro_indicators": [
@@ -2940,155 +2953,155 @@
   },
   "top_gainers": [
     {
-      "name": "코스맥스비티아이",
-      "price": "23,450",
-      "change_percent": "+2.18%",
-      "pct": 2.18
+      "name": "계양전기우",
+      "price": "6,980",
+      "change_percent": "+27.14%",
+      "pct": 27.14
     },
     {
-      "name": "SP삼화",
-      "price": "5,960",
-      "change_percent": "+2.05%",
-      "pct": 2.05
+      "name": "진양산업",
+      "price": "8,240",
+      "change_percent": "+22.99%",
+      "pct": 22.99
     },
     {
-      "name": "대덕",
-      "price": "13,770",
-      "change_percent": "+4.64%",
-      "pct": 4.64
+      "name": "삼진제약",
+      "price": "18,860",
+      "change_percent": "+11.33%",
+      "pct": 11.33
     },
     {
-      "name": "현대코퍼레이션",
-      "price": "22,200",
-      "change_percent": "+0.45%",
-      "pct": 0.45
+      "name": "두산",
+      "price": "606,000",
+      "change_percent": "+12.01%",
+      "pct": 12.01
     },
     {
-      "name": "KODEX 인도타타그룹",
-      "price": "7,535",
-      "change_percent": "+0.07%",
-      "pct": 0.07
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "price": "3,605",
+      "change_percent": "+11.96%",
+      "pct": 11.96
     }
   ],
   "top_losers": [
     {
-      "name": "동양우",
-      "price": "6,630",
-      "change_percent": "-5.56%",
-      "pct": 5.56
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "10,280",
+      "change_percent": "-11.07%",
+      "pct": 11.07
     },
     {
-      "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-      "price": "2,485",
-      "change_percent": "-5.51%",
-      "pct": 5.51
+      "name": "깨끗한나라우",
+      "price": "5,200",
+      "change_percent": "-9.57%",
+      "pct": 9.57
     },
     {
-      "name": "KODEX 미국AI소프트웨어TOP10",
-      "price": "11,310",
-      "change_percent": "-2.08%",
-      "pct": 2.08
+      "name": "우진아이엔에스",
+      "price": "3,640",
+      "change_percent": "-9.00%",
+      "pct": 9.0
     },
     {
-      "name": "제일파마홀딩스",
-      "price": "6,860",
-      "change_percent": "-2.00%",
-      "pct": 2.0
+      "name": "아이에스동서",
+      "price": "12,340",
+      "change_percent": "-8.46%",
+      "pct": 8.46
     },
     {
-      "name": "전방",
-      "price": "30,350",
-      "change_percent": "-1.94%",
-      "pct": 1.94
+      "name": "N2 인버스 2X 천연가스 선물 ETN",
+      "price": "10,800",
+      "change_percent": "-7.77%",
+      "pct": 7.77
     }
   ],
   "sector_performance": [
     {
-      "name": "건축자재",
-      "change_value": "+0.04%",
-      "pct": 0.04
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+0.01%",
-      "pct": 0.01
-    },
-    {
-      "name": "기타",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "소프트웨어",
+      "change_value": "+5.31%",
+      "pct": 5.31
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+4.31%",
+      "pct": 4.31
     },
     {
-      "name": "제약",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+4.00%",
+      "pct": 4.0
+    },
+    {
+      "name": "무역회사와판매업체",
+      "change_value": "+3.23%",
+      "pct": 3.23
+    },
+    {
+      "name": "복합기업",
+      "change_value": "+3.21%",
+      "pct": 3.21
     }
   ],
   "sector_heatmap": [
     {
-      "name": "건축자재",
-      "change_value": "+0.04%",
-      "pct": 0.04
-    },
-    {
-      "name": "전자장비와기기",
-      "change_value": "+0.01%",
-      "pct": 0.01
-    },
-    {
-      "name": "기타",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "소프트웨어",
+      "change_value": "+5.31%",
+      "pct": 5.31
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "change_value": "+4.31%",
+      "pct": 4.31
     },
     {
-      "name": "제약",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "전자장비와기기",
+      "change_value": "+4.00%",
+      "pct": 4.0
     },
     {
-      "name": "화학",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "무역회사와판매업체",
+      "change_value": "+3.23%",
+      "pct": 3.23
     },
     {
-      "name": "가스유틸리티",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "복합기업",
+      "change_value": "+3.21%",
+      "pct": 3.21
     },
     {
-      "name": "석유와가스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "통신장비",
+      "change_value": "+2.72%",
+      "pct": 2.72
     },
     {
-      "name": "출판",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "조선",
+      "change_value": "-1.01%",
+      "pct": -1.01
     },
     {
-      "name": "건강관리업체및서비스",
-      "change_value": "+0.00%",
-      "pct": 0.0
+      "name": "다각화된통신서비스",
+      "change_value": "-1.16%",
+      "pct": -1.16
     },
     {
-      "name": "자동차부품",
-      "change_value": "-0.01%",
-      "pct": -0.01
+      "name": "전기유틸리티",
+      "change_value": "-1.18%",
+      "pct": -1.18
     },
     {
-      "name": "교육서비스",
-      "change_value": "-0.33%",
-      "pct": -0.33
+      "name": "광고",
+      "change_value": "-1.55%",
+      "pct": -1.55
+    },
+    {
+      "name": "은행",
+      "change_value": "-1.66%",
+      "pct": -1.66
+    },
+    {
+      "name": "섬유,의류,신발,호화품",
+      "change_value": "-1.67%",
+      "pct": -1.67
     }
   ],
   "article_counts": {
