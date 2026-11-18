@@ -69,7 +69,7 @@
 @media(prefers-reduced-motion:reduce){#sowhat-archive .swa-cover img{transition:none}#sowhat-archive .swa-card a:hover img{transform:none}}
 
 </style>
-<div id="sowhat-archive">
+<div id="sowhat-archive" data-canonical-url="https://bestexit.co.kr/sowhat-archives">
 <div class="swa-wrap"><header class="swa-top">
   <a class="swa-brand" href="https://bestexit.co.kr"><span class="swa-wordmark">SO WHAT?</span><small>중기이코노미<br>쏘왓레터</small></a>
   <nav class="swa-nav" aria-label="아카이브 주요 메뉴"><a class="swa-active" href="#sowhat-archive-list">모아보기</a><a href="https://bestexit.co.kr/daily-briefing">데일리 브리핑 ↗</a><a class="swa-exit" href="https://bestexit.co.kr">BEST EXIT</a><a class="swa-subscribe-link" href="#sowhat-subscribe-form">구독하기 <span aria-hidden="true">→</span></a></nav>
@@ -267,7 +267,7 @@
       button.addEventListener('click', () => { month.value = key; limit = 9; render(); });
       months.append(button);
     });
-    if (structured) structured.textContent = JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:'쏘왓레터 모아보기',url:'https://bestexit.co.kr/sowhat-archives',mainEntity:{'@type':'ItemList',numberOfItems:dataset.length,itemListElement:dataset.map((x,i)=>({'@type':'ListItem',position:i+1,name:x.title,url:x.url}))}});
+    if (structured) structured.textContent = JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:'쏘왓레터 모아보기',url:root.dataset.canonicalUrl || 'https://bestexit.co.kr/sowhat-archives',mainEntity:{'@type':'ItemList',numberOfItems:dataset.length,itemListElement:dataset.map((x,i)=>({'@type':'ListItem',position:i+1,name:x.title,url:x.url}))}});
   }
   function card(x, index) {
     const article = element('article', 'swa-card');
@@ -321,7 +321,7 @@
     if (refreshing || Date.now() - lastRefresh < 5 * 60 * 1000) return;
     refreshing = true;
     const bucket = Math.floor(Date.now() / 300000);
-    const endpoints = ['https://junggiteam.github.io/naver-news/data/sowhat_archive.json', 'https://raw.githubusercontent.com/junggiteam/naver-news/main/data/sowhat_archive.json'];
+    const endpoints = ['https://raw.githubusercontent.com/junggiteam/naver-news/main/data/sowhat_archive.json', 'https://junggiteam.github.io/naver-news/data/sowhat_archive.json'];
     try {
       for (const endpoint of endpoints) {
         const controller = new AbortController();

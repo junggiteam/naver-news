@@ -56,7 +56,7 @@
       button.addEventListener('click', () => { month.value = key; limit = 9; render(); });
       months.append(button);
     });
-    if (structured) structured.textContent = JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:'쏘왓레터 모아보기',url:'https://bestexit.co.kr/sowhat-archives',mainEntity:{'@type':'ItemList',numberOfItems:dataset.length,itemListElement:dataset.map((x,i)=>({'@type':'ListItem',position:i+1,name:x.title,url:x.url}))}});
+    if (structured) structured.textContent = JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:'쏘왓레터 모아보기',url:root.dataset.canonicalUrl || 'https://bestexit.co.kr/sowhat-archives',mainEntity:{'@type':'ItemList',numberOfItems:dataset.length,itemListElement:dataset.map((x,i)=>({'@type':'ListItem',position:i+1,name:x.title,url:x.url}))}});
   }
   function card(x, index) {
     const article = element('article', 'swa-card');
@@ -110,7 +110,7 @@
     if (refreshing || Date.now() - lastRefresh < 5 * 60 * 1000) return;
     refreshing = true;
     const bucket = Math.floor(Date.now() / 300000);
-    const endpoints = ['https://junggiteam.github.io/naver-news/data/sowhat_archive.json', 'https://raw.githubusercontent.com/junggiteam/naver-news/main/data/sowhat_archive.json'];
+    const endpoints = ['https://raw.githubusercontent.com/junggiteam/naver-news/main/data/sowhat_archive.json', 'https://junggiteam.github.io/naver-news/data/sowhat_archive.json'];
     try {
       for (const endpoint of endpoints) {
         const controller = new AbortController();
