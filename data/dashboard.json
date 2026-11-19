@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 09:31:17",
+  "updated_at": "2026-11-19 10:01:11",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261118000367",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000367",
-      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하겠다는 계획을 정정하여 공시한 것입니다."
+      "ai_explanation": "회사가 주식을 새로 발행해 자금을 조달하겠다는 계획의 상세 내용을 수정하여 공시함."
     },
     {
       "corp_name": "나래나노텍",
@@ -96,7 +96,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261118000368",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000368",
-      "ai_explanation": "회사가 자사주 매입 계획의 내용을 일부 변경하여 다시 공시한 것입니다."
+      "ai_explanation": "회사가 자사 주식을 매입하겠다는 기존 결정 사항 중 일부 내용을 수정하여 공시함."
     },
     {
       "corp_name": "GRT",
@@ -105,7 +105,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261118000366",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000366",
-      "ai_explanation": "회사가 운영자금이나 시설투자 등을 위해 신주를 발행하여 자금을 조달하겠다는 결정입니다."
+      "ai_explanation": "회사가 신주를 발행해 자금을 조달하기로 결정하였음을 알리는 공시임."
     }
   ],
   "macro_indicators": [
@@ -2949,8 +2949,70 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [],
-  "top_losers": [],
+  "top_gainers": [
+    {
+      "name": "TIGER 배당성장",
+      "price": "30,935",
+      "change_percent": "+1.08%",
+      "pct": 1.08
+    },
+    {
+      "name": "SOL 200커버드콜액티브",
+      "price": "9,240",
+      "change_percent": "+0.33%",
+      "pct": 0.33
+    },
+    {
+      "name": "한일홀딩스",
+      "price": "16,990",
+      "change_percent": "+1.37%",
+      "pct": 1.37
+    },
+    {
+      "name": "KODEX 미국S&P500변동성확대시커버드콜",
+      "price": "10,455",
+      "change_percent": "+0.77%",
+      "pct": 0.77
+    },
+    {
+      "name": "RISE AI플랫폼",
+      "price": "4,725",
+      "change_percent": "+0.53%",
+      "pct": 0.53
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "미창석유",
+      "price": "107,500",
+      "change_percent": "-2.54%",
+      "pct": 2.54
+    },
+    {
+      "name": "삼성 레버리지 금 선물 ETN(H)",
+      "price": "79,645",
+      "change_percent": "-1.36%",
+      "pct": 1.36
+    },
+    {
+      "name": "한양증권",
+      "price": "18,320",
+      "change_percent": "-0.97%",
+      "pct": 0.97
+    },
+    {
+      "name": "KSS해운",
+      "price": "10,710",
+      "change_percent": "-0.83%",
+      "pct": 0.83
+    },
+    {
+      "name": "롯데이노베이트",
+      "price": "16,260",
+      "change_percent": "-0.61%",
+      "pct": 0.61
+    }
+  ],
   "sector_performance": [
     {
       "name": "음료",
