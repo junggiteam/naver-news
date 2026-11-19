@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-19 14:31:19",
+  "updated_at": "2026-11-19 15:01:12",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
-    "kospi_change": -0.03,
-    "kosdaq_change": 0.45,
-    "kospi_value": 5065.87,
-    "kosdaq_value": 665.77
+    "kospi_change": 0.36,
+    "kosdaq_change": 1.09,
+    "kospi_value": 5085.63,
+    "kosdaq_value": 670.03
   },
   "heroes": {
     "종합": {
@@ -96,7 +96,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261119000123",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000123",
-      "ai_explanation": "회사가 자기 회사 주식을 사들이기 위해 신탁 기관과 계약을 맺는 것입니다."
+      "ai_explanation": "회사가 자사주 매입을 위해 신탁 기관과 위탁 계약을 체결하여 주식을 사들이기로 결정한 것입니다."
     },
     {
       "corp_name": "메디콕스",
@@ -105,7 +105,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261119000098",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000098",
-      "ai_explanation": "회사가 보유한 건물, 토지 등 유형자산을 매각하기로 결정한 것을 정정한 공시입니다."
+      "ai_explanation": "회사가 보유한 건물, 토지 등 유형자산을 매각하기로 한 결정 사항을 정정한 공시입니다."
     },
     {
       "corp_name": "크리스에프앤씨",
@@ -114,7 +114,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261119000091",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000091",
-      "ai_explanation": "이미 결정된 전환사채 발행 내용 중 첨부 서류 등을 수정하여 다시 공시하는 것입니다."
+      "ai_explanation": "앞서 결정한 전환사채 발행 내용 중 첨부 서류 등 일부를 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "사운드백신",
@@ -123,7 +123,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261119000078",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000078",
-      "ai_explanation": "앞서 결정한 전환사채 발행과 관련하여 기재된 내용을 일부 수정하는 공시입니다."
+      "ai_explanation": "앞서 결정한 전환사채 발행 내용 중 기재된 항목을 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "판타지오",
@@ -132,7 +132,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261118000367",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000367",
-      "ai_explanation": "이미 공시된 유상증자 결정 내용 중 첨부 서류 등을 수정하여 다시 제출하는 것입니다."
+      "ai_explanation": "앞서 결정한 유상증자 내용 중 첨부 서류 등 일부를 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "나래나노텍",
@@ -141,7 +141,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261118000368",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000368",
-      "ai_explanation": "앞서 결정한 자기주식 매입 계획과 관련하여 기재된 내용을 일부 수정하는 공시입니다."
+      "ai_explanation": "앞서 결정한 자사주 매입 계획 중 기재된 항목을 수정하여 다시 공시한 것입니다."
     },
     {
       "corp_name": "GRT",
@@ -150,7 +150,7 @@
       "rcept_dt": "20261119",
       "rcept_no": "20261118000366",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000366",
-      "ai_explanation": "회사가 신주를 발행하여 자본금을 늘리고 외부로부터 자금을 조달하기로 결정한 것입니다."
+      "ai_explanation": "회사가 신주를 발행하여 자본을 확충하고 운영 자금 등을 마련하기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -3003,15 +3003,9 @@
     },
     {
       "name": "동양2우B",
-      "price": "4,500",
-      "change_percent": "+23.63%",
-      "pct": 23.63
-    },
-    {
-      "name": "한국화장품제조",
-      "price": "12,910",
-      "change_percent": "+17.58%",
-      "pct": 17.58
+      "price": "4,170",
+      "change_percent": "+14.56%",
+      "pct": 14.56
     },
     {
       "name": "하나투어",
@@ -3020,10 +3014,16 @@
       "pct": 17.56
     },
     {
-      "name": "토니모리",
-      "price": "4,595",
-      "change_percent": "+15.74%",
-      "pct": 15.74
+      "name": "프리티",
+      "price": "898",
+      "change_percent": "+16.78%",
+      "pct": 16.78
+    },
+    {
+      "name": "한국화장품제조",
+      "price": "12,840",
+      "change_percent": "+16.94%",
+      "pct": 16.94
     }
   ],
   "top_losers": [
@@ -3034,117 +3034,117 @@
       "pct": 15.01
     },
     {
-      "name": "하나 인버스 2X 천연가스 선물 ETN(H)",
-      "price": "10,780",
-      "change_percent": "-12.89%",
-      "pct": 12.89
-    },
-    {
       "name": "한투 인버스2X천연가스선물 ETN B",
       "price": "9,105",
       "change_percent": "-12.75%",
       "pct": 12.75
     },
     {
-      "name": "NHN",
-      "price": "62,800",
-      "change_percent": "-12.90%",
-      "pct": 12.9
+      "name": "하나 인버스 2X 천연가스 선물 ETN(H)",
+      "price": "10,820",
+      "change_percent": "-12.57%",
+      "pct": 12.57
     },
     {
       "name": "삼성 인버스 2X 천연가스 선물 ETN D",
       "price": "12,500",
       "change_percent": "-12.22%",
       "pct": 12.22
+    },
+    {
+      "name": "N2 인버스 2X 천연가스 선물 ETN",
+      "price": "9,800",
+      "change_percent": "-12.03%",
+      "pct": 12.03
     }
   ],
   "sector_performance": [
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+11.27%",
-      "pct": 11.27
+      "change_value": "+9.65%",
+      "pct": 9.65
     },
     {
       "name": "호텔,레스토랑,레저",
-      "change_value": "+5.46%",
-      "pct": 5.46
+      "change_value": "+5.37%",
+      "pct": 5.37
     },
     {
       "name": "기타금융",
-      "change_value": "+4.62%",
-      "pct": 4.62
-    },
-    {
-      "name": "화장품",
-      "change_value": "+4.03%",
-      "pct": 4.03
+      "change_value": "+4.51%",
+      "pct": 4.51
     },
     {
       "name": "건강관리기술",
-      "change_value": "+3.82%",
-      "pct": 3.82
+      "change_value": "+4.18%",
+      "pct": 4.18
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+4.11%",
+      "pct": 4.11
     }
   ],
   "sector_heatmap": [
     {
       "name": "방송과엔터테인먼트",
-      "change_value": "+11.27%",
-      "pct": 11.27
+      "change_value": "+9.65%",
+      "pct": 9.65
     },
     {
       "name": "호텔,레스토랑,레저",
-      "change_value": "+5.46%",
-      "pct": 5.46
+      "change_value": "+5.37%",
+      "pct": 5.37
     },
     {
       "name": "기타금융",
-      "change_value": "+4.62%",
-      "pct": 4.62
-    },
-    {
-      "name": "화장품",
-      "change_value": "+4.03%",
-      "pct": 4.03
+      "change_value": "+4.51%",
+      "pct": 4.51
     },
     {
       "name": "건강관리기술",
-      "change_value": "+3.82%",
-      "pct": 3.82
+      "change_value": "+4.18%",
+      "pct": 4.18
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "+3.79%",
-      "pct": 3.79
+      "name": "전자장비와기기",
+      "change_value": "+4.11%",
+      "pct": 4.11
+    },
+    {
+      "name": "화장품",
+      "change_value": "+4.07%",
+      "pct": 4.07
     },
     {
       "name": "자동차부품",
-      "change_value": "-2.41%",
-      "pct": -2.41
+      "change_value": "-1.99%",
+      "pct": -1.99
     },
     {
       "name": "IT서비스",
-      "change_value": "-2.92%",
-      "pct": -2.92
+      "change_value": "-2.30%",
+      "pct": -2.3
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-3.14%",
-      "pct": -3.14
-    },
-    {
-      "name": "다각화된통신서비스",
-      "change_value": "-3.68%",
-      "pct": -3.68
+      "change_value": "-3.20%",
+      "pct": -3.2
     },
     {
       "name": "무역회사와판매업체",
-      "change_value": "-3.76%",
-      "pct": -3.76
+      "change_value": "-3.37%",
+      "pct": -3.37
+    },
+    {
+      "name": "다각화된통신서비스",
+      "change_value": "-3.78%",
+      "pct": -3.78
     },
     {
       "name": "문구류",
-      "change_value": "-5.44%",
-      "pct": -5.44
+      "change_value": "-4.52%",
+      "pct": -4.52
     }
   ],
   "article_counts": {
