@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20 08:01:11",
+  "updated_at": "2026-11-20 08:31:11",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -87,7 +87,7 @@
       "rcept_dt": "20261120",
       "rcept_no": "20261119000427",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000427",
-      "ai_explanation": "회사가 보유한 건물, 토지 등 자산을 매각하기로 결정했다는 공시입니다."
+      "ai_explanation": "회사가 보유한 건물, 토지 등 자산을 매각하기로 결정했다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2931,78 +2931,16 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "한국화장품",
-      "price": "6,460",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "프리티",
-      "price": "940",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "화인베스틸",
-      "price": "978",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나투어",
-      "price": "36,450",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "토니모리",
-      "price": "4,565",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "성문전자우",
-      "price": "4,215",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "인디에프",
-      "price": "2,585",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "하나 인버스 2X 천연가스 선물 ETN(H)",
-      "price": "10,820",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "9,880",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "N2 인버스 2X 천연가스 선물 ETN",
-      "price": "9,870",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "방송과엔터테인먼트",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3012,24 +2950,24 @@
       "pct": 0.0
     },
     {
-      "name": "건강관리기술",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기장비",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "방송과엔터테인먼트",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전자장비와기기",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3039,22 +2977,7 @@
       "pct": 0.0
     },
     {
-      "name": "건강관리기술",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "전기장비",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "가스유틸리티",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3064,22 +2987,37 @@
       "pct": 0.0
     },
     {
-      "name": "IT서비스",
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "무역회사와판매업체",
+      "name": "생물공학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "다각화된통신서비스",
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "문구류",
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전자장비와기기",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
