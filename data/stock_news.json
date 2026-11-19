@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20 07:01:08",
+  "updated_at": "2026-11-20 07:31:01",
   "indices": [
     {
       "name": "코스피",
@@ -34,14 +34,14 @@
       "value": "23,879.20",
       "change_percent": "▼2.25%",
       "direction": "down",
-      "as_of": "2026-11-19 17:00:59"
+      "as_of": "2026-11-19 17:15:59"
     },
     {
       "name": "나스닥100",
       "value": "26,517.05",
       "change_percent": "▼2.21%",
       "direction": "down",
-      "as_of": "2026-11-19 17:01:00"
+      "as_of": "2026-11-19 17:15:59"
     },
     {
       "name": "S&P500",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,336.50",
-      "change_percent": "▲0.19%",
+      "value": "1,335.50",
+      "change_percent": "▲0.11%",
       "direction": "up",
-      "as_of": "2026-11-20 06:56:38"
+      "as_of": "2026-11-20 07:20:12"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "836.99",
-      "change_percent": "▼0.05%",
+      "value": "836.33",
+      "change_percent": "▼0.13%",
       "direction": "down",
-      "as_of": "2026-11-20 06:56:38"
+      "as_of": "2026-11-20 07:20:12"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,465.81",
-      "change_percent": "▲0.11%",
+      "value": "1,464.91",
+      "change_percent": "▲0.04%",
       "direction": "up",
-      "as_of": "2026-11-20 06:56:38"
+      "as_of": "2026-11-20 07:20:12"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "83.85",
-      "change_percent": "▲0.71%",
-      "direction": "up",
-      "as_of": "2026-11-19 15:50:50"
+      "value": "83.21",
+      "change_percent": "▼0.06%",
+      "direction": "down",
+      "as_of": "2026-11-19 16:00:00"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "83,874,000",
-      "change_percent": "▼2.27%",
+      "value": "84,704,000",
+      "change_percent": "▼1.30%",
       "direction": "down",
-      "as_of": "2026-11-20 07:01:06"
+      "as_of": "2026-11-20 07:31:00"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,375,000",
-      "change_percent": "▼1.70%",
+      "value": "2,399,000",
+      "change_percent": "▼0.70%",
       "direction": "down",
-      "as_of": "2026-11-20 07:01:01"
+      "as_of": "2026-11-20 07:31:00"
     }
   ],
   "news_categories": [
@@ -140,8 +140,32 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "앤트로픽 상장 직후 AI株 투매…나스닥 2.25%↓ [뉴욕증시 브리핑]",
+          "link": "https://n.news.naver.com/mnews/article/015/0005356173?sid=101258401",
+          "upload_time": "20261120070710",
+          "published_at": "2026-11-20T07:07:10+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
+          "title": "[MUST KNOW5]앤트로픽, 상장 30분 만에 시초가 대비 13% 급락...변동성 '극심'",
+          "link": "https://n.news.naver.com/mnews/article/018/0006412869?sid=101258401",
+          "upload_time": "20261120070605",
+          "published_at": "2026-11-20T07:06:05+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 3,
+          "title": "신약 개발사에 베팅…곳간 두둑해진 제약사",
+          "link": "https://n.news.naver.com/mnews/article/011/0004684236?sid=101258401",
+          "upload_time": "20261120070127",
+          "published_at": "2026-11-20T07:01:27+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 4,
           "title": "[글로벌증시] 美증시, 앤트로픽 상장에도 하락…나스닥 2%대↓",
           "link": "https://n.news.naver.com/mnews/article/422/0000928055?sid=101258401",
           "upload_time": "20261120065510",
@@ -149,7 +173,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
+          "rank": 5,
           "title": "'7만전자·20만닉스' 말한 전문가 \"아직 본격 폭락 시작 안 했다\"",
           "link": "https://n.news.naver.com/mnews/article/018/0006412855?sid=101258401",
           "upload_time": "20261120060812",
@@ -157,7 +181,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 3,
+          "rank": 6,
           "title": "해외 금융사 보고서 시차 없이 본다…한투證 ‘독점 글로벌 리서치’ 1000만 뷰 돌파",
           "link": "https://n.news.naver.com/mnews/article/011/0004684218?sid=101258401",
           "upload_time": "20261120060608",
@@ -165,7 +189,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 4,
+          "rank": 7,
           "title": "외국인, 10월 K주식 26조 더 팔았다…두 달째 순매도",
           "link": "https://n.news.naver.com/mnews/article/015/0005356153?sid=101258401",
           "upload_time": "20261120060119",
@@ -173,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 5,
+          "rank": 8,
           "title": "외국인 10월 국내 주식 26조원 팔았다…2개월째 순매도",
           "link": "https://n.news.naver.com/mnews/article/001/0016453395?sid=101258401",
           "upload_time": "20261120060001",
@@ -181,7 +205,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 6,
+          "rank": 9,
           "title": "앤트로픽 상장, 임직원 수 천 명 백만장자 반열",
           "link": "https://n.news.naver.com/mnews/article/422/0000928039?sid=101258401",
           "upload_time": "20261120054813",
@@ -189,7 +213,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 7,
+          "rank": 10,
           "title": "앤트로픽, 111.5달러에 상장 첫날 거래 시작",
           "link": "https://n.news.naver.com/mnews/article/422/0000928032?sid=101258401",
           "upload_time": "20261120053011",
@@ -197,7 +221,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 8,
+          "rank": 11,
           "title": "\"코스피 9000에서 5000으로\"…개미들 손실 563조원 추정",
           "link": "https://n.news.naver.com/mnews/article/014/0005607174?sid=101258401",
           "upload_time": "20261120044013",
@@ -205,7 +229,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 9,
+          "rank": 12,
           "title": "\"AI 투자심리·한한령 풀리나\" 기대감… 수능일 '증시 한파' 없었다",
           "link": "https://n.news.naver.com/mnews/article/008/0005443898?sid=101258401",
           "upload_time": "20261120041700",
@@ -213,7 +237,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 10,
+          "rank": 13,
           "title": "“여태껏 숨참고 기다렸습니다”…한한령 빗장 풀리자 용틀임한 종목들",
           "link": "https://n.news.naver.com/mnews/article/009/0005766456?sid=101258401",
           "upload_time": "20261119204810",
@@ -221,7 +245,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 11,
+          "rank": 14,
           "title": "앤트로픽 효과에 반등…코스피 5,100선 탈환",
           "link": "https://n.news.naver.com/mnews/article/422/0000927949?sid=101258401",
           "upload_time": "20261119201710",
@@ -229,35 +253,11 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 12,
+          "rank": 15,
           "title": "유캐스트 일반청약 경쟁률 0.5대 1 …3년 10개월만에 첫 미달",
           "link": "https://n.news.naver.com/mnews/article/001/0016453194?sid=101258401",
           "upload_time": "20261119190054",
           "published_at": "2026-11-19T19:00:54+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 13,
-          "title": "'특수 정밀화학 소재 제조사' 피지티, 코스닥 상장예심 통과",
-          "link": "https://n.news.naver.com/mnews/article/001/0016453180?sid=101258401",
-          "upload_time": "20261119184910",
-          "published_at": "2026-11-19T18:49:10+09:00"
-        },
-        {
-          "press_name": "서울경제",
-          "rank": 14,
-          "title": "HLB·HLB생명과학 합병 재추진…내년 6월 완료 목표",
-          "link": "https://n.news.naver.com/mnews/article/011/0004684142?sid=101258401",
-          "upload_time": "20261119183809",
-          "published_at": "2026-11-19T18:38:09+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "코스피200·코스닥150 리밸런싱…대한광통신에 685억 유입될 듯",
-          "link": "https://n.news.naver.com/mnews/article/015/0005356055?sid=101258401",
-          "upload_time": "20261119181109",
-          "published_at": "2026-11-19T18:11:09+09:00"
         }
       ]
     },
@@ -265,8 +265,16 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "한국경제",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "‘항공 제조 토탈 솔루션’ 하나에어로다이내믹스, 코스닥 입성[오늘상장]",
+          "link": "https://n.news.naver.com/mnews/article/018/0006412867?sid=101258402",
+          "upload_time": "20261120070217",
+          "published_at": "2026-11-20T07:02:17+09:00"
+        },
+        {
+          "press_name": "한국경제",
+          "rank": 2,
           "title": "하루 늦게 덮친 엔비디아 후폭풍…韓 네오클라우드 '급락' [종목+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005356163?sid=101258402",
           "upload_time": "20261120063117",
@@ -274,7 +282,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 2,
+          "rank": 3,
           "title": "'어닝 쇼크' 씨어스, 지수 편입 힘입어 반등 이어갈까 [종목+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005356162?sid=101258402",
           "upload_time": "20261120063115",
@@ -282,7 +290,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 3,
+          "rank": 4,
           "title": "올리브영, 매장 물류거점 키운다",
           "link": "https://n.news.naver.com/mnews/article/417/0001165008?sid=101258402",
           "upload_time": "20261120060000",
@@ -290,7 +298,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 4,
+          "rank": 5,
           "title": "사드 사태 학습효과 유통업계, 중국 신규 투자 '글쎄'",
           "link": "https://n.news.naver.com/mnews/article/417/0001165003?sid=101258402",
           "upload_time": "20261120054500",
@@ -298,7 +306,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 5,
+          "rank": 6,
           "title": "한미 비만약 돌풍…2주 만에 100억",
           "link": "https://n.news.naver.com/mnews/article/417/0001165000?sid=101258402",
           "upload_time": "20261120053500",
@@ -306,7 +314,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 6,
+          "rank": 7,
           "title": "AI 안경 막아선 대기업, 협력사 보안은 허술'",
           "link": "https://n.news.naver.com/mnews/article/417/0001164999?sid=101258402",
           "upload_time": "20261120053000",
@@ -314,7 +322,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 7,
+          "rank": 8,
           "title": "\"그래, 이 맛이야\"",
           "link": "https://n.news.naver.com/mnews/article/417/0001164997?sid=101258402",
           "upload_time": "20261120052500",
@@ -322,7 +330,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 8,
+          "rank": 9,
           "title": "앤트로픽 드디어 나스닥 데뷔…외인 K증시 돌아올까 [분석+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005356122?sid=101258402",
           "upload_time": "20261119220112",
@@ -330,7 +338,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 9,
+          "rank": 10,
           "title": "\"회계개혁으로 감사 독립성 강화… 가격 아닌 품질 경쟁해야\"",
           "link": "https://n.news.naver.com/mnews/article/014/0005607084?sid=101258402",
           "upload_time": "20261119183019",
@@ -338,7 +346,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 10,
+          "rank": 11,
           "title": "사모 MMF 설계 혼란… 유통체계도 불투명 [토큰시대 반쪽 출발하나 (下)]",
           "link": "https://n.news.naver.com/mnews/article/014/0005607083?sid=101258402",
           "upload_time": "20261119183015",
@@ -346,7 +354,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 11,
+          "rank": 12,
           "title": "HLB·HLB생명과학, 합병 재추진…그룹 조직개편",
           "link": "https://n.news.naver.com/mnews/article/277/0005845297?sid=101258402",
           "upload_time": "20261119182641",
@@ -354,7 +362,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 12,
+          "rank": 13,
           "title": "'한한령 해빙무드'… 엔터·여행·화장품주 줄줄이 상한가",
           "link": "https://n.news.naver.com/mnews/article/014/0005607072?sid=101258402",
           "upload_time": "20261119182615",
@@ -362,7 +370,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 13,
+          "rank": 14,
           "title": "어닝쇼크 한국금융지주 \"저가매수\" vs \"신중론\"",
           "link": "https://n.news.naver.com/mnews/article/015/0005356051?sid=101258402",
           "upload_time": "20261119180813",
@@ -370,19 +378,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 14,
+          "rank": 15,
           "title": "KB증권, 지역관광 AI 펀드에 20억 출자",
           "link": "https://n.news.naver.com/mnews/article/015/0005356026?sid=101258402",
           "upload_time": "20261119175827",
           "published_at": "2026-11-19T17:58:27+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "부동산 조정은 일생일대 기회 … 싱가포르 호텔 등 주목을",
-          "link": "https://n.news.naver.com/mnews/article/009/0005766417?sid=101258402",
-          "upload_time": "20261119174810",
-          "published_at": "2026-11-19T17:48:10+09:00"
         }
       ]
     },
@@ -392,6 +392,62 @@
         {
           "press_name": "이데일리",
           "rank": 1,
+          "title": "美 은행주 4일새 6.6% 급락…약세 신호 '데드크로스' 떴다",
+          "link": "https://n.news.naver.com/mnews/article/018/0006412875?sid=101258403",
+          "upload_time": "20261120072208",
+          "published_at": "2026-11-20T07:22:08+09:00"
+        },
+        {
+          "press_name": "연합뉴스",
+          "rank": 2,
+          "title": "앤트로픽 상장에도 뉴욕증시 2%대 급락…다우 50,000선 붕괴(종합)",
+          "link": "https://n.news.naver.com/mnews/article/001/0016453451?sid=101258403",
+          "upload_time": "20261120071837",
+          "published_at": "2026-11-20T07:18:37+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 3,
+          "title": "앤트로픽 상장 뒤 기술주 매도…사이버보안주는 실적·수요 기대에 강세-[美증시 특징주]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273345?sid=101258403",
+          "upload_time": "20261120070759",
+          "published_at": "2026-11-20T07:07:59+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 4,
+          "title": "엔비디아 피했더니…공매도 보고서에 '술렁' 美반도체 강자 [굿모닝 글로벌 이슈]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273344?sid=101258403",
+          "upload_time": "20261120070751",
+          "published_at": "2026-11-20T07:07:51+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 5,
+          "title": "국제유가, 군사 위협 vs 공급 증가 전망 저울질 [글로벌 머니플로우]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273343?sid=101258403",
+          "upload_time": "20261120070744",
+          "published_at": "2026-11-20T07:07:44+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 6,
+          "title": "앤트로픽 상장 첫날, 뉴욕증시 일제히 조정…다우 5만선 아래로-[글로벌 마감 시황]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273342?sid=101258403",
+          "upload_time": "20261120070732",
+          "published_at": "2026-11-20T07:07:32+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 7,
+          "title": "이게 무슨 소리? 엔비디아와 연관된 트럼프 | 젠슨 황 복귀 위해 앤트로픽 IPO 대성공 막았나? | 한상춘 한국경제신문사 논설위원",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273341?sid=101258403",
+          "upload_time": "20261120070715",
+          "published_at": "2026-11-20T07:07:15+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 8,
           "title": "앤스로픽 웃고 월가 울었다…뉴욕증시 2%대 급락[월스트리트in]",
           "link": "https://n.news.naver.com/mnews/article/018/0006412863?sid=101258403",
           "upload_time": "20261120065708",
@@ -399,15 +455,15 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 2,
-          "title": "'역사적 데뷔' 첫날부터 출렁…앤트로픽, 한때 시총 2조달러",
+          "rank": 9,
+          "title": "앤트로픽, 나스닥 입성...시총 2조달러 찍고 97.17달러 마감",
           "link": "https://n.news.naver.com/mnews/article/215/0001273339?sid=101258403",
           "upload_time": "20261120064055",
           "published_at": "2026-11-20T06:40:55+09:00"
         },
         {
           "press_name": "한국경제TV",
-          "rank": 3,
+          "rank": 10,
           "title": "\"대어 효과 어디로 갔나\" 개미 어리둥절…5만선 이탈한 다우",
           "link": "https://n.news.naver.com/mnews/article/215/0001273337?sid=101258403",
           "upload_time": "20261120063020",
@@ -415,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 11,
           "title": "AMD도 中 제재 기업과 연계 의혹…주가 8% 급락",
           "link": "https://n.news.naver.com/mnews/article/018/0006412859?sid=101258403",
           "upload_time": "20261120063015",
@@ -423,7 +479,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 12,
           "title": "'17% 수익' vs '13% 손실'…앤스로픽 상장 첫날 희비 갈린 이유는",
           "link": "https://n.news.naver.com/mnews/article/018/0006412858?sid=101258403",
           "upload_time": "20261120062908",
@@ -431,7 +487,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 6,
+          "rank": 13,
           "title": "앤트로픽 상장에도 뉴욕증시 2%대 급락…다우 50,000선 아래로",
           "link": "https://n.news.naver.com/mnews/article/001/0016453420?sid=101258403",
           "upload_time": "20261120061840",
@@ -439,7 +495,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 7,
+          "rank": 14,
           "title": "[속보] 앤트로픽, 상장 첫날 97.17달러로 마감",
           "link": "https://n.news.naver.com/mnews/article/015/0005356156?sid=101258403",
           "upload_time": "20261120061013",
@@ -447,67 +503,11 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 8,
+          "rank": 15,
           "title": "[속보]앤스로픽 상장 첫날 뉴욕증시 2%대 급락…다우 5만선 붕괴",
           "link": "https://n.news.naver.com/mnews/article/018/0006412856?sid=101258403",
           "upload_time": "20261120060908",
           "published_at": "2026-11-20T06:09:08+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 9,
-          "title": "[속보]앤스로픽 증시 입성에도 일제히 하락 마감",
-          "link": "https://n.news.naver.com/mnews/article/277/0005845365?sid=101258403",
-          "upload_time": "20261120060855",
-          "published_at": "2026-11-20T06:08:55+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 10,
-          "title": "미·중·러, 석유 공급 확대 합의…전쟁 해법은 빠져",
-          "link": "https://n.news.naver.com/mnews/article/277/0005845358?sid=101258403",
-          "upload_time": "20261120055909",
-          "published_at": "2026-11-20T05:59:09+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 11,
-          "title": "앤스로픽 공모주, 기관 절반 넘게 '빈손'…해외 투자자 대거 탈락",
-          "link": "https://n.news.naver.com/mnews/article/018/0006412844?sid=101258403",
-          "upload_time": "20261120055214",
-          "published_at": "2026-11-20T05:52:14+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 12,
-          "title": "트럼프, 김정은과 회담 불발…향후 만남 가능성 열어둬",
-          "link": "https://n.news.naver.com/mnews/article/277/0005845354?sid=101258403",
-          "upload_time": "20261120045314",
-          "published_at": "2026-11-20T04:53:14+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 13,
-          "title": "앤스로픽 34% 급등 출발 뒤 뒷걸음…시초가 매수자는 15% 손실",
-          "link": "https://n.news.naver.com/mnews/article/018/0006412814?sid=101258403",
-          "upload_time": "20261120032408",
-          "published_at": "2026-11-20T03:24:08+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 14,
-          "title": "앤스로픽 직원도 IPO로 '돈방석'…아모데이 \"AI 안전·성공 모두 잡겠다\"",
-          "link": "https://n.news.naver.com/mnews/article/277/0005845353?sid=101258403",
-          "upload_time": "20261120021501",
-          "published_at": "2026-11-20T02:15:01+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 15,
-          "title": "앤스로픽, 상장 첫날 34% 급등…시초가 111.50달러(상보)",
-          "link": "https://n.news.naver.com/mnews/article/277/0005845352?sid=101258403",
-          "upload_time": "20261120015752",
-          "published_at": "2026-11-20T01:57:52+09:00"
         }
       ]
     },
@@ -515,8 +515,16 @@
       "category": "채권·선물",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "아시아경제",
           "rank": 1,
+          "title": "벤처 투자금은 넘쳐나는데 상장 벤처캐피털 주가 지지부진한 까닭은[VC는 지금]",
+          "link": "https://n.news.naver.com/mnews/article/277/0005845371?sid=101258404",
+          "upload_time": "20261120071600",
+          "published_at": "2026-11-20T07:16:00+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 2,
           "title": "한진부터 두산까지…BBB급 기업 신용등급 상향 ‘청신호’",
           "link": "https://n.news.naver.com/mnews/article/018/0006412746?sid=101258404",
           "upload_time": "20261119190311",
@@ -524,7 +532,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "국고채 금리, 일제히 하락…유가 급락·외국인 매수(종합)",
           "link": "https://n.news.naver.com/mnews/article/001/0016453036?sid=101258404",
           "upload_time": "20261119174752",
@@ -532,7 +540,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "[속보]코스피 1.39%·코스닥 3.32%↑…한중 경제협력 기대에 엔터·여행주 강세",
           "link": "https://n.news.naver.com/mnews/article/018/0006412638?sid=101258404",
           "upload_time": "20261119163711",
@@ -540,7 +548,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 4,
+          "rank": 5,
           "title": "증시·금리 불안에 MMF '역대최대' 300조 육박…반도체머니도",
           "link": "https://n.news.naver.com/mnews/article/001/0016452211?sid=101258404",
           "upload_time": "20261119143316",
@@ -548,7 +556,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 5,
+          "rank": 6,
           "title": "전주시 내년 지방채 200억 발행…시의원 \"책임 전가\" 반발",
           "link": "https://n.news.naver.com/mnews/article/001/0016452186?sid=101258404",
           "upload_time": "20261119142603",
@@ -556,7 +564,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 6,
+          "rank": 7,
           "title": "코스피·코스닥 동반 상승…한중 FTA 기대에 오락·문화주 강세",
           "link": "https://n.news.naver.com/mnews/article/018/0006412485?sid=101258404",
           "upload_time": "20261119134309",
@@ -564,7 +572,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 7,
+          "rank": 8,
           "title": "해외에 갚을 돈보다 받을 돈 4168억달러 많아…5년 만에 최대",
           "link": "https://n.news.naver.com/mnews/article/277/0005845027?sid=101258404",
           "upload_time": "20261119120000",
@@ -572,7 +580,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 8,
+          "rank": 9,
           "title": "[속보]엔비디아 호실적에도 AI 경계감…코스피 보합권 등락 속 코스닥 상승",
           "link": "https://n.news.naver.com/mnews/article/018/0006412318?sid=101258404",
           "upload_time": "20261119100416",
@@ -580,7 +588,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 10,
           "title": "엔비디아 5거래일째 하락…AI 투자 경계에 반도체주 희비[뉴스새벽배송]",
           "link": "https://n.news.naver.com/mnews/article/018/0006412215?sid=101258404",
           "upload_time": "20261119080616",
@@ -588,7 +596,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 10,
+          "rank": 11,
           "title": "美 지니어스법 시행 두 달 앞…감독기관 조율 ‘막판 변수’[크립토 레이더]",
           "link": "https://n.news.naver.com/mnews/article/277/0005844776?sid=101258404",
           "upload_time": "20261119073200",
@@ -596,7 +604,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 11,
+          "rank": 12,
           "title": "4대은행 올해 고정이하여신 23% 늘 때 대손충당금 2% 증가",
           "link": "https://n.news.naver.com/mnews/article/001/0016450440?sid=101258404",
           "upload_time": "20261119055100",
@@ -791,7 +799,7 @@
       ]
     }
   ],
-  "ai_commentary": "미국 증시 하락에도 불구하고 국내 증시는 AI 관련 투자 심리가 개선되고 한한령 완화 기대감이 유입되면서 동반 상승했다. 또한 코스피200 및 코스닥150 지수 리밸런싱에 따른 자금 유입 기대와 특정 종목의 합병 추진 등 개별 기업 이슈가 시장의 상승 폭을 키웠다.",
+  "ai_commentary": "미국 증시에서 앤트로픽 상장 이후 AI 관련 종목의 변동성이 확대되는 흐름이 나타났으나, 국내 증시에서는 한한령 해제에 대한 기대감이 커지며 반등세가 이어졌다. 전날까지 지속되던 투자 심리 위축이 완화되면서 코스피와 코스닥 지수 모두 상승세로 장을 마감했다.",
   "top_gainers": [
     {
       "name": "한국화장품",
