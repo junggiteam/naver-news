@@ -1,51 +1,35 @@
 {
-  "updated_at": "2026-11-24 07:31:34",
+  "updated_at": "2026-11-24 08:04:46",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -3.31,
-    "kosdaq_change": -1.58,
+    "label": "보합",
+    "emoji": "⚪",
+    "kospi_change": 0.0,
+    "kosdaq_change": 0.0,
     "kospi_value": 4708.54,
     "kosdaq_value": 635.45
   },
   "heroes": {
     "종합": {
-      "title": "젠슨 황, 엔비디아 CEO로 11일만에 복귀…이사회 만장일치 의결(종합)",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/23/16459303.jpg?type=nf70_70",
-      "link": "https://n.news.naver.com/article/001/0016459303?ntype=RANKING",
+      "title": "젠슨황, 11일만에 엔비디아 CEO 전격복귀…이사회 \"안보위험 없다\"(종합2보)",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/24/16459317.jpg?type=nf70_70",
+      "link": "https://n.news.naver.com/article/001/0016459317?ntype=RANKING",
       "press_name": "연합뉴스"
     },
     "경제": {
-      "title": "순간 최대 1156마력… 시속 100㎞까지 2.5초 만에 도달",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/023/2026/11/24/4011288.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/023/0004011288",
-      "press_name": "조선일보"
+      "title": "[스타트 경제] 트럼프가 되돌린 젠슨 황, 진짜 호재일까...우리 증시 미칠 파장은?",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/052/2026/11/24/2437107.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/052/0002437107",
+      "press_name": "YTN"
     },
     "부동산": {
-      "title": "LH, 공공주택 4천232가구 공모 연기…연내 선정 차질 우려",
-      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/23/16459180.jpg?type=nf220_150",
-      "link": "https://n.news.naver.com/mnews/article/001/0016459180",
+      "title": "강남구, 내달 정비사업아카데미서 조합원 지위 양도기준 강의",
+      "thumbnail": "https://mimgnews.pstatic.net/image/origin/001/2026/11/24/16459426.jpg?type=nf220_150",
+      "link": "https://n.news.naver.com/mnews/article/001/0016459426",
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [
-    {
-      "category": "종합",
-      "text": "코스피와 코스닥, 코스피200 지수가 최근 115일 내 최저치를 기록함"
-    },
-    {
-      "category": "종합",
-      "text": "엔비디아 젠슨 황 CEO 복귀 결정에 따른 주가 급등과 나스닥 상승"
-    },
-    {
-      "category": "종합",
-      "text": "반도체 주식 하락과 증시 침체 속 개인 투자자들의 손실 지속 우려"
-    }
-  ],
-  "daily_term": {
-    "term": "자사주 취득",
-    "explanation": "기업이 시장에 풀린 자기 회사의 주식을 직접 다시 사들이는 것을 말합니다. 주식 수가 줄어들면 기존 주식 한 주의 가치가 높아지기 때문에, 보통 주가 하락을 막거나 주주들의 이익을 챙겨주기 위한 부양책으로 사용됩니다. 우리 집의 방 개수가 줄어들면 남은 방 하나하나의 가치가 더 귀해지는 것과 비슷한 원리입니다."
-  },
+  "headlines": [],
+  "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [],
   "macro_indicators": [
@@ -101,9 +85,9 @@
     {
       "class": "심리지표",
       "name": "소비자심리지수",
-      "value": "105.4",
+      "value": "103.1",
       "unit": null,
-      "cycle": "202610"
+      "cycle": "202611"
     }
   ],
   "support_programs": [
@@ -2879,170 +2863,108 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "23,300",
-      "change_percent": "+10.77%",
-      "pct": 10.77
-    },
-    {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "21,245",
-      "change_percent": "+10.68%",
-      "pct": 10.68
-    },
-    {
-      "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
-      "price": "14,205",
-      "change_percent": "+8.89%",
-      "pct": 8.89
-    },
-    {
-      "name": "에이피알",
-      "price": "256,000",
-      "change_percent": "+8.70%",
-      "pct": 8.7
-    },
-    {
-      "name": "금호건설우",
-      "price": "17,750",
-      "change_percent": "+7.97%",
-      "pct": 7.97
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "동양2우B",
-      "price": "3,000",
-      "change_percent": "-21.05%",
-      "pct": 21.05
-    },
-    {
-      "name": "NHN",
-      "price": "50,000",
-      "change_percent": "-18.30%",
-      "pct": 18.3
-    },
-    {
-      "name": "남성",
-      "price": "2,945",
-      "change_percent": "-17.97%",
-      "pct": 17.97
-    },
-    {
-      "name": "한진칼우",
-      "price": "82,500",
-      "change_percent": "-17.25%",
-      "pct": 17.25
-    },
-    {
-      "name": "삼성에스디에스",
-      "price": "178,900",
-      "change_percent": "-14.61%",
-      "pct": 14.61
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "전자장비와기기",
-      "change_value": "+2.06%",
-      "pct": 2.06
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "통신장비",
-      "change_value": "+1.44%",
-      "pct": 1.44
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.12%",
-      "pct": 1.12
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "화장품",
-      "change_value": "+0.99%",
-      "pct": 0.99
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+0.31%",
-      "pct": 0.31
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
+      "name": "음료",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "종이와목재",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "호텔,레스토랑,레저",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "건강관리업체및서비스",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "손해보험",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "출판",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "생물공학",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "방송과엔터테인먼트",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
       "name": "전자장비와기기",
-      "change_value": "+2.06%",
-      "pct": 2.06
+      "change_value": "+0.00%",
+      "pct": 0.0
     },
     {
-      "name": "통신장비",
-      "change_value": "+1.44%",
-      "pct": 1.44
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.12%",
-      "pct": 1.12
-    },
-    {
-      "name": "화장품",
-      "change_value": "+0.99%",
-      "pct": 0.99
-    },
-    {
-      "name": "컴퓨터와주변기기",
-      "change_value": "+0.31%",
-      "pct": 0.31
-    },
-    {
-      "name": "사무용전자제품",
-      "change_value": "+0.26%",
-      "pct": 0.26
-    },
-    {
-      "name": "가정용기기와용품",
-      "change_value": "-5.40%",
-      "pct": -5.4
-    },
-    {
-      "name": "건설",
-      "change_value": "-5.81%",
-      "pct": -5.81
-    },
-    {
-      "name": "항공사",
-      "change_value": "-6.02%",
-      "pct": -6.02
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "-6.19%",
-      "pct": -6.19
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "-6.34%",
-      "pct": -6.34
-    },
-    {
-      "name": "IT서비스",
-      "change_value": "-7.83%",
-      "pct": -7.83
+      "name": "건강관리장비와용품",
+      "change_value": "+0.00%",
+      "pct": 0.0
     }
   ],
   "article_counts": {
-    "종합": 405,
+    "종합": 404,
     "경제": 30,
     "부동산": 30,
     "증권": 83
   },
   "article_count_trend": {
     "종합": {
-      "today": 405,
+      "today": 404,
       "yesterday": 405,
-      "change_pct": 0.0,
+      "change_pct": -0.2,
       "surge": false
     },
     "경제": {
