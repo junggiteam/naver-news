@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-23 13:31:06",
+  "updated_at": "2026-11-23 13:46:02",
   "market_mood": {
     "label": "하락",
     "emoji": "🟠",
-    "kospi_change": -3.43,
-    "kosdaq_change": -1.03,
-    "kospi_value": 4703.03,
-    "kosdaq_value": 639.04
+    "kospi_change": -3.29,
+    "kosdaq_change": -0.82,
+    "kospi_value": 4709.65,
+    "kosdaq_value": 640.41
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 반도체주 급락의 여파로 외국인 투자자의 매도세가 이어지며 코스피와 코스닥 지수가 하락했다. 코스피와 코스닥 모두 최근 114일간 데이터 기준으로 최저치를 기록했으며, 코스피 시장에서는 매도 사이드카가 발동되었다. 정부는 시장 안정을 위해 증권시장안정펀드를 포함한 비상 대응 계획을 검토하고 있다."
+      "text": "미국발 반도체 관련주 급락의 여파로 투자 심리가 위축되면서 코스피와 코스닥 지수가 큰 폭으로 하락했다. 특히 코스피와 코스피200은 최근 114일간의 데이터와 비교했을 때 가장 낮은 수치를 기록하며 장중 매도 사이드카가 발동되었다. 이에 따라 정부는 시장 안정을 위한 비상 대응 계획을 가동할 준비를 마친 상태다."
     }
   ],
   "daily_term": {
@@ -84,13 +84,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "삼표산업",
+      "corp_code": "00999032",
+      "report_nm": "감자결정",
+      "rcept_dt": "20261123",
+      "rcept_no": "20261123000102",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000102",
+      "ai_explanation": "자본금을 줄이기 위해 주식 수를 감소시키는 결정입니다."
+    },
+    {
       "corp_name": "세나테크놀로지",
       "corp_code": "01010615",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20261123",
       "rcept_no": "20261123000064",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000064",
-      "ai_explanation": "회사가 증권사와 맺었던 자기주식 매입 신탁 계약을 중도에 종료한다는 결정입니다."
+      "ai_explanation": "자사주를 사들이기 위해 맺었던 신탁 계약을 종료하는 결정입니다."
     },
     {
       "corp_name": "달바글로벌",
@@ -99,7 +108,7 @@
       "rcept_dt": "20261123",
       "rcept_no": "20261123000047",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000047",
-      "ai_explanation": "회사가 증권사와 맺었던 자기주식 매입 신탁 계약을 중도에 종료한다는 결정입니다."
+      "ai_explanation": "자사주를 사들이기 위해 맺었던 신탁 계약을 종료하는 결정입니다."
     },
     {
       "corp_name": "앱튼",
@@ -108,7 +117,7 @@
       "rcept_dt": "20261123",
       "rcept_no": "20261120000633",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000633",
-      "ai_explanation": "회사가 운영 자금 등을 조달하기 위해 주식을 새로 발행하여 자금을 모으기로 한 결정의 정정 공시입니다."
+      "ai_explanation": "이미 공시한 유상증자 내용 중 일부를 수정하는 결정입니다."
     }
   ],
   "macro_indicators": [
@@ -2954,28 +2963,28 @@
   },
   "top_gainers": [
     {
-      "name": "하나 인버스 2X K방산TOP10 ETN",
-      "price": "21,125",
-      "change_percent": "+10.05%",
-      "pct": 10.05
-    },
-    {
       "name": "에이피알",
       "price": "258,500",
       "change_percent": "+9.77%",
       "pct": 9.77
     },
     {
-      "name": "금호건설우",
-      "price": "18,020",
-      "change_percent": "+9.61%",
-      "pct": 9.61
+      "name": "하나 인버스 2X K방산TOP10 ETN",
+      "price": "21,050",
+      "change_percent": "+9.66%",
+      "pct": 9.66
     },
     {
       "name": "키움 인버스 2X K방산 TOP5 ETN",
-      "price": "23,035",
-      "change_percent": "+9.51%",
-      "pct": 9.51
+      "price": "22,965",
+      "change_percent": "+9.18%",
+      "pct": 9.18
+    },
+    {
+      "name": "금호건설우",
+      "price": "17,810",
+      "change_percent": "+8.33%",
+      "pct": 8.33
     },
     {
       "name": "미래에셋 1.5X S&P500 VIX S/T선물 ETN",
@@ -2987,9 +2996,9 @@
   "top_losers": [
     {
       "name": "화승엔터프라이즈",
-      "price": "1,434",
-      "change_percent": "-19.30%",
-      "pct": 19.3
+      "price": "1,423",
+      "change_percent": "-19.92%",
+      "pct": 19.92
     },
     {
       "name": "NHN",
@@ -3005,59 +3014,69 @@
     },
     {
       "name": "삼성에스디에스",
-      "price": "177,500",
-      "change_percent": "-15.27%",
-      "pct": 15.27
+      "price": "180,400",
+      "change_percent": "-13.89%",
+      "pct": 13.89
     },
     {
-      "name": "동양2우B",
-      "price": "3,350",
-      "change_percent": "-11.84%",
-      "pct": 11.84
+      "name": "GS건설",
+      "price": "24,800",
+      "change_percent": "-13.44%",
+      "pct": 13.44
     }
   ],
   "sector_performance": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+2.52%",
-      "pct": 2.52
+      "change_value": "+2.47%",
+      "pct": 2.47
     },
     {
       "name": "화장품",
-      "change_value": "+1.57%",
-      "pct": 1.57
+      "change_value": "+1.60%",
+      "pct": 1.6
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+0.35%",
-      "pct": 0.35
+      "change_value": "+0.67%",
+      "pct": 0.67
     },
     {
-      "name": "다각화된소비자서비스",
-      "change_value": "-0.31%",
-      "pct": -0.31
+      "name": "문구류",
+      "change_value": "+0.34%",
+      "pct": 0.34
     },
     {
       "name": "담배",
-      "change_value": "-0.39%",
-      "pct": -0.39
+      "change_value": "-0.06%",
+      "pct": -0.06
     }
   ],
   "sector_heatmap": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+2.52%",
-      "pct": 2.52
+      "change_value": "+2.47%",
+      "pct": 2.47
     },
     {
       "name": "화장품",
-      "change_value": "+1.57%",
-      "pct": 1.57
+      "change_value": "+1.60%",
+      "pct": 1.6
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+0.35%",
-      "pct": 0.35
+      "change_value": "+0.67%",
+      "pct": 0.67
+    },
+    {
+      "name": "문구류",
+      "change_value": "+0.34%",
+      "pct": 0.34
+    },
+    {
+      "name": "담배",
+      "change_value": "-0.06%",
+      "pct": -0.06
     },
     {
       "name": "다각화된소비자서비스",
@@ -3065,44 +3084,34 @@
       "pct": -0.31
     },
     {
-      "name": "담배",
-      "change_value": "-0.39%",
-      "pct": -0.39
-    },
-    {
-      "name": "운송인프라",
-      "change_value": "-0.58%",
-      "pct": -0.58
+      "name": "항공사",
+      "change_value": "-4.90%",
+      "pct": -4.9
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-5.35%",
-      "pct": -5.35
-    },
-    {
-      "name": "항공사",
-      "change_value": "-5.39%",
-      "pct": -5.39
+      "change_value": "-5.00%",
+      "pct": -5.0
     },
     {
       "name": "항공화물운송과물류",
-      "change_value": "-5.95%",
-      "pct": -5.95
-    },
-    {
-      "name": "양방향미디어와서비스",
-      "change_value": "-7.38%",
-      "pct": -7.38
+      "change_value": "-5.55%",
+      "pct": -5.55
     },
     {
       "name": "건설",
-      "change_value": "-7.66%",
-      "pct": -7.66
+      "change_value": "-7.44%",
+      "pct": -7.44
+    },
+    {
+      "name": "양방향미디어와서비스",
+      "change_value": "-7.47%",
+      "pct": -7.47
     },
     {
       "name": "IT서비스",
-      "change_value": "-8.38%",
-      "pct": -8.38
+      "change_value": "-7.85%",
+      "pct": -7.85
     }
   ],
   "article_counts": {
