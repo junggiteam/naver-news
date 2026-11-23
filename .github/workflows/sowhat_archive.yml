@@ -1,23 +1,30 @@
 name: So What Archive Sync
 
 on:
-  schedule:
-    - cron: '7,37 * * * *'
+  # The sowhat-cron Worker dispatches the regular runs on Korean business days.
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/sowhat_archive.yml
+      - sowhat_archive_sync.py
 
 permissions:
   contents: write
 
 concurrency:
-  group: master-scheduler
+  group: sowhat-archive-sync
   cancel-in-progress: false
 
 jobs:
   sync:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
