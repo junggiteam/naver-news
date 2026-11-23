@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-23 11:01:25",
+  "updated_at": "2026-11-23 11:31:09",
   "market_mood": {
-    "label": "하락",
-    "emoji": "🟠",
-    "kospi_change": -3.62,
-    "kosdaq_change": -2.23,
-    "kospi_value": 4693.67,
-    "kosdaq_value": 631.26
+    "label": "급락",
+    "emoji": "🔴",
+    "kospi_change": -4.86,
+    "kosdaq_change": -3.33,
+    "kospi_value": 4633.22,
+    "kosdaq_value": 624.21
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "미국 증시의 동반 하락 여파와 투자 심리 위축이 맞물리며 오늘 코스피와 코스닥 지수는 각각 3.62%와 2.23% 하락했습니다. 이번 하락으로 코스피와 코스닥은 최근 114일간 데이터 기준으로 최저치를 기록했습니다. 정부는 시장 불안정을 완화하기 위해 증권시장안정펀드 활용 방안 등을 논의하며 대응에 나섰습니다."
+      "text": "외국인 투자자의 대규모 순매도가 이어지면서 코스피와 코스닥 지수 모두 하락세를 보였습니다. 오늘 코스피와 코스닥 지수는 각각 최근 114일간 데이터 기준 최저치를 기록했습니다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "세나테크놀로지",
+      "corp_code": "01010615",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+      "rcept_dt": "20261123",
+      "rcept_no": "20261123000064",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000064",
+      "ai_explanation": "회사가 자사주 매입을 위해 금융기관과 맺었던 신탁 계약을 중도에 종료한다는 의미입니다."
+    },
+    {
       "corp_name": "달바글로벌",
       "corp_code": "01649204",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20261123",
       "rcept_no": "20261123000047",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000047",
-      "ai_explanation": "회사 자사주를 사들이기 위해 체결했던 신탁 계약을 중도에 해지하기로 결정했다는 의미입니다."
+      "ai_explanation": "회사가 자사주 매입을 위해 금융기관과 맺었던 신탁 계약을 중도에 종료한다는 의미입니다."
     },
     {
       "corp_name": "앱튼",
@@ -100,7 +109,7 @@
       "rcept_dt": "20261123",
       "rcept_no": "20261120000633",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000633",
-      "ai_explanation": "기존에 공시했던 유상증자 계획 중 일부 내용(금액, 일정 등)을 수정하여 다시 알린다는 의미입니다."
+      "ai_explanation": "기존에 공시한 유상증자(주식 발행을 통한 자금 조달) 결정 내용 중 일부를 수정했다는 의미입니다."
     }
   ],
   "macro_indicators": [
@@ -2947,154 +2956,154 @@
   "top_gainers": [
     {
       "name": "금호건설우",
-      "price": "18,410",
-      "change_percent": "+11.98%",
-      "pct": 11.98
+      "price": "19,410",
+      "change_percent": "+18.07%",
+      "pct": 18.07
     },
     {
-      "name": "한국화장품",
-      "price": "7,000",
-      "change_percent": "+8.36%",
-      "pct": 8.36
-    },
-    {
-      "name": "에이피알",
-      "price": "256,500",
-      "change_percent": "+8.92%",
-      "pct": 8.92
+      "name": "하나 인버스 2X K방산TOP10 ETN",
+      "price": "21,350",
+      "change_percent": "+11.23%",
+      "pct": 11.23
     },
     {
       "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "15,465",
-      "change_percent": "+7.92%",
-      "pct": 7.92
+      "price": "15,905",
+      "change_percent": "+10.99%",
+      "pct": 10.99
     },
     {
-      "name": "KIWOOM 200선물인버스2X",
-      "price": "142",
-      "change_percent": "+7.58%",
-      "pct": 7.58
+      "name": "키움 인버스 2X K방산 TOP5 ETN",
+      "price": "23,200",
+      "change_percent": "+10.29%",
+      "pct": 10.29
+    },
+    {
+      "name": "PLUS 200선물인버스2X",
+      "price": "294",
+      "change_percent": "+10.53%",
+      "pct": 10.53
     }
   ],
   "top_losers": [
     {
+      "name": "화승엔터프라이즈",
+      "price": "1,428",
+      "change_percent": "-19.64%",
+      "pct": 19.64
+    },
+    {
       "name": "NHN",
-      "price": "50,300",
-      "change_percent": "-17.81%",
-      "pct": 17.81
+      "price": "49,900",
+      "change_percent": "-18.46%",
+      "pct": 18.46
     },
     {
       "name": "남성",
-      "price": "2,965",
-      "change_percent": "-17.41%",
-      "pct": 17.41
+      "price": "2,960",
+      "change_percent": "-17.55%",
+      "pct": 17.55
     },
     {
-      "name": "화승엔터프라이즈",
-      "price": "1,476",
-      "change_percent": "-16.94%",
-      "pct": 16.94
+      "name": "삼성에스디에스",
+      "price": "173,800",
+      "change_percent": "-17.04%",
+      "pct": 17.04
     },
     {
       "name": "GS건설",
       "price": "24,000",
       "change_percent": "-16.23%",
       "pct": 16.23
-    },
-    {
-      "name": "삼성에스디에스",
-      "price": "175,700",
-      "change_percent": "-16.13%",
-      "pct": 16.13
     }
   ],
   "sector_performance": [
     {
       "name": "화장품",
-      "change_value": "+1.24%",
-      "pct": 1.24
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.17%",
-      "pct": 1.17
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "+0.46%",
-      "pct": 0.46
+      "change_value": "+0.62%",
+      "pct": 0.62
     },
     {
       "name": "담배",
-      "change_value": "+0.11%",
-      "pct": 0.11
+      "change_value": "+0.06%",
+      "pct": 0.06
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-0.01%",
+      "pct": -0.01
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "-0.31%",
+      "pct": -0.31
     },
     {
       "name": "운송인프라",
-      "change_value": "-0.50%",
-      "pct": -0.5
+      "change_value": "-0.74%",
+      "pct": -0.74
     }
   ],
   "sector_heatmap": [
     {
       "name": "화장품",
-      "change_value": "+1.24%",
-      "pct": 1.24
-    },
-    {
-      "name": "인터넷과카탈로그소매",
-      "change_value": "+1.17%",
-      "pct": 1.17
-    },
-    {
-      "name": "다각화된소비자서비스",
-      "change_value": "+0.46%",
-      "pct": 0.46
+      "change_value": "+0.62%",
+      "pct": 0.62
     },
     {
       "name": "담배",
-      "change_value": "+0.11%",
-      "pct": 0.11
+      "change_value": "+0.06%",
+      "pct": 0.06
+    },
+    {
+      "name": "인터넷과카탈로그소매",
+      "change_value": "-0.01%",
+      "pct": -0.01
+    },
+    {
+      "name": "다각화된소비자서비스",
+      "change_value": "-0.31%",
+      "pct": -0.31
     },
     {
       "name": "운송인프라",
-      "change_value": "-0.50%",
-      "pct": -0.5
+      "change_value": "-0.74%",
+      "pct": -0.74
     },
     {
       "name": "도로와철도운송",
-      "change_value": "-0.71%",
-      "pct": -0.71
+      "change_value": "-0.81%",
+      "pct": -0.81
     },
     {
-      "name": "게임엔터테인먼트",
-      "change_value": "-5.16%",
-      "pct": -5.16
+      "name": "석유와가스",
+      "change_value": "-5.97%",
+      "pct": -5.97
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-6.24%",
-      "pct": -6.24
+      "change_value": "-6.50%",
+      "pct": -6.5
     },
     {
       "name": "생명보험",
-      "change_value": "-6.58%",
-      "pct": -6.58
+      "change_value": "-7.11%",
+      "pct": -7.11
     },
     {
       "name": "건설",
-      "change_value": "-8.00%",
-      "pct": -8.0
+      "change_value": "-8.57%",
+      "pct": -8.57
     },
     {
       "name": "양방향미디어와서비스",
-      "change_value": "-8.11%",
-      "pct": -8.11
+      "change_value": "-8.75%",
+      "pct": -8.75
     },
     {
       "name": "IT서비스",
-      "change_value": "-8.50%",
-      "pct": -8.5
+      "change_value": "-9.83%",
+      "pct": -9.83
     }
   ],
   "article_counts": {
