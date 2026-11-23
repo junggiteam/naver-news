@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 07:01:08",
+  "updated_at": "2026-11-24 07:30:52",
   "indices": [
     {
       "name": "코스피",
@@ -34,14 +34,14 @@
       "value": "24,089.56",
       "change_percent": "▲6.51%",
       "direction": "up",
-      "as_of": "2026-11-23 17:00:56"
+      "as_of": "2026-11-23 17:15:59"
     },
     {
       "name": "나스닥100",
       "value": "26,746.10",
       "change_percent": "▲6.86%",
       "direction": "up",
-      "as_of": "2026-11-23 17:01:00"
+      "as_of": "2026-11-23 17:15:59"
     },
     {
       "name": "S&P500",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "80.37",
-      "change_percent": "▼3.64%",
+      "value": "80.17",
+      "change_percent": "▼3.88%",
       "direction": "down",
-      "as_of": "2026-11-23 15:50:38"
+      "as_of": "2026-11-23 16:00:00"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "83,794,000",
-      "change_percent": "▲0.28%",
+      "value": "83,699,000",
+      "change_percent": "▲0.17%",
       "direction": "up",
-      "as_of": "2026-11-24 07:01:06"
+      "as_of": "2026-11-24 07:30:50"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,355,000",
-      "change_percent": "▲0.13%",
-      "direction": "up",
-      "as_of": "2026-11-24 07:01:06"
+      "value": "2,344,000",
+      "change_percent": "▼0.34%",
+      "direction": "down",
+      "as_of": "2026-11-24 07:30:51"
     }
   ],
   "news_categories": [
@@ -140,8 +140,56 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "이데일리",
+          "press_name": "서울경제",
           "rank": 1,
+          "title": "오천피 무너졌지만…산업연 “내년 반도체 수출 30% 더 는다”[Pick코노미]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004685381?sid=101258401",
+          "upload_time": "20261124072907",
+          "published_at": "2026-11-24T07:29:07+09:00"
+        },
+        {
+          "press_name": "매일경제",
+          "rank": 2,
+          "title": "75만원에 산 현대차, 24만원 됐다…외국인 지분도 확 줄었다는데",
+          "link": "https://n.news.naver.com/mnews/article/009/0005767962?sid=101258401",
+          "upload_time": "20261124071506",
+          "published_at": "2026-11-24T07:15:06+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 3,
+          "title": "“계좌만 봐도 속 쓰린데”…삼전닉스 목표가 ‘최대 43%’ 낮춘 골드만",
+          "link": "https://n.news.naver.com/mnews/article/011/0004685379?sid=101258401",
+          "upload_time": "20261124071209",
+          "published_at": "2026-11-24T07:12:09+09:00"
+        },
+        {
+          "press_name": "뉴스1",
+          "rank": 4,
+          "title": "'젠슨황 복귀' 나스닥 6.5% 폭등…엔비디아 시총 1조달러 늘어",
+          "link": "https://n.news.naver.com/mnews/article/421/0009306049?sid=101258401",
+          "upload_time": "20261124070315",
+          "published_at": "2026-11-24T07:03:15+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 5,
+          "title": "신약·화장품 기업도 ‘연어주사제’ 도전장",
+          "link": "https://n.news.naver.com/mnews/article/011/0004685375?sid=101258401",
+          "upload_time": "20261124070117",
+          "published_at": "2026-11-24T07:01:17+09:00"
+        },
+        {
+          "press_name": "서울경제",
+          "rank": 6,
+          "title": "아리바이오, 치매 치료제 78주 임상서도 효과…내년 하반기 FDA 허가 신청",
+          "link": "https://n.news.naver.com/mnews/article/011/0004685373?sid=101258401",
+          "upload_time": "20261124070111",
+          "published_at": "2026-11-24T07:01:11+09:00"
+        },
+        {
+          "press_name": "이데일리",
+          "rank": 7,
           "title": "[MUST KNOW5]젠슨 황은 복귀·SK하이닉스 ADR 20% 폭등…시장 하락 멈췄나",
           "link": "https://n.news.naver.com/mnews/article/018/0006414453?sid=101258401",
           "upload_time": "20261124070007",
@@ -149,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 2,
+          "rank": 8,
           "title": "[글로벌증시] 뉴욕증시, 나스닥 6%대 급등…엔비디아 31%↑",
           "link": "https://n.news.naver.com/mnews/article/422/0000929233?sid=101258401",
           "upload_time": "20261124065307",
@@ -157,7 +205,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 9,
           "title": "통신보안 외치면 뭐하나…“군대 방화벽 57% 자동문 수준입니다”",
           "link": "https://n.news.naver.com/mnews/article/009/0005767950?sid=101258401",
           "upload_time": "20261124061506",
@@ -165,7 +213,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 4,
+          "rank": 10,
           "title": "\"삼전닉스 개미들 긴장\"…글로벌 투자은행들 신중론 확산",
           "link": "https://n.news.naver.com/mnews/article/014/0005608606?sid=101258401",
           "upload_time": "20261124060112",
@@ -173,7 +221,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 11,
           "title": "\"삼성전자 30만원에 물렸다면 3년 각오\"…40년 슈퍼개미의 경고",
           "link": "https://n.news.naver.com/mnews/article/014/0005608602?sid=101258401",
           "upload_time": "20261124053011",
@@ -181,7 +229,7 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 6,
+          "rank": 12,
           "title": "아시아 증시, 정부 대책에도 AI 회의론 속 하락세",
           "link": "https://n.news.naver.com/mnews/article/422/0000929197?sid=101258401",
           "upload_time": "20261124050613",
@@ -189,7 +237,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 7,
+          "rank": 13,
           "title": "\"주식앱 지웠다\" 손 놓은 개미, 손 쓰는 정부…10조 증안펀드 통할까",
           "link": "https://n.news.naver.com/mnews/article/008/0005445301?sid=101258401",
           "upload_time": "20261124050000",
@@ -197,7 +245,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 8,
+          "rank": 14,
           "title": "누적 수출액 1조 76억달러…세계 4대 수출강국 ‘눈앞’",
           "link": "https://n.news.naver.com/mnews/article/018/0006414421?sid=101258401",
           "upload_time": "20261124045615",
@@ -205,59 +253,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 9,
+          "rank": 15,
           "title": "젠슨 황 돌아오자 분위기 달라졌다…SK하닉 美서 20% '반전'",
           "link": "https://n.news.naver.com/mnews/article/015/0005357352?sid=101258401",
           "upload_time": "20261124011123",
           "published_at": "2026-11-24T01:11:23+09:00"
-        },
-        {
-          "press_name": "연합뉴스TV",
-          "rank": 10,
-          "title": "젠슨 황 복귀에 나스닥 7% 급등…엔비디아 33%↑",
-          "link": "https://n.news.naver.com/mnews/article/422/0000929188?sid=101258401",
-          "upload_time": "20261124010415",
-          "published_at": "2026-11-24T01:04:15+09:00"
-        },
-        {
-          "press_name": "중앙일보",
-          "rank": 11,
-          "title": "눈물의 코스피…5개월새 ‘9114→4708’ 반토막",
-          "link": "https://n.news.naver.com/mnews/article/025/0003567400?sid=101258401",
-          "upload_time": "20261124002353",
-          "published_at": "2026-11-24T00:23:53+09:00"
-        },
-        {
-          "press_name": "뉴스1",
-          "rank": 12,
-          "title": "'스캔들' 젠슨 황, 11일 만에 전격 복귀…엔비디아 30% 폭등(종합2보)",
-          "link": "https://n.news.naver.com/mnews/article/421/0009305911?sid=101258401",
-          "upload_time": "20261124001744",
-          "published_at": "2026-11-24T00:17:44+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 13,
-          "title": "\"원금만 회복하면 주식 절대 안 할게요\" 절규에도…\"최악의 방법\" 경고",
-          "link": "https://n.news.naver.com/mnews/article/018/0006414404?sid=101258401",
-          "upload_time": "20261123231212",
-          "published_at": "2026-11-23T23:12:12+09:00"
-        },
-        {
-          "press_name": "연합뉴스TV",
-          "rank": 14,
-          "title": "증시 급락에 증안펀드 카드…\"시기·규모 검토\"",
-          "link": "https://n.news.naver.com/mnews/article/422/0000929153?sid=101258401",
-          "upload_time": "20261123222310",
-          "published_at": "2026-11-23T22:23:10+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "\"2년 치 연봉 날렸다\" 개미 비명에…전문가 '뜻밖의 조언' [분석+]",
-          "link": "https://n.news.naver.com/mnews/article/015/0005357310?sid=101258401",
-          "upload_time": "20261123220110",
-          "published_at": "2026-11-23T22:01:10+09:00"
         }
       ]
     },
@@ -265,8 +265,48 @@
       "category": "기업·종목분석",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "한국경제",
           "rank": 1,
+          "title": "\"HL홀딩스, 자회사 부진에 적자전환 쇼크…목표가↓\"-하나",
+          "link": "https://n.news.naver.com/mnews/article/015/0005357367?sid=101258402",
+          "upload_time": "20261124071013",
+          "published_at": "2026-11-24T07:10:13+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
+          "title": "해킹 늘자 보안 수요도 쑥…안랩, 내년 영업익 38% 증가 전망[클릭 e종목]",
+          "link": "https://n.news.naver.com/mnews/article/277/0005846715?sid=101258402",
+          "upload_time": "20261124071000",
+          "published_at": "2026-11-24T07:10:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 3,
+          "title": "美 주가 따라가는 비트코인…반감기로 가격 예측하는 시대는 끝났다[크립토 레이더]",
+          "link": "https://n.news.naver.com/mnews/article/277/0005846713?sid=101258402",
+          "upload_time": "20261124070700",
+          "published_at": "2026-11-24T07:07:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 4,
+          "title": "\"중국차 수출 늘고 운반선 모자라…현대글로비스 목표가 유지\" [클릭 e종목]",
+          "link": "https://n.news.naver.com/mnews/article/277/0005846712?sid=101258402",
+          "upload_time": "20261124070500",
+          "published_at": "2026-11-24T07:05:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 5,
+          "title": "[클릭 e종목]HL홀딩스 목표가 낮췄지만…\"7% 배당, 하방 지지\"",
+          "link": "https://n.news.naver.com/mnews/article/277/0005846711?sid=101258402",
+          "upload_time": "20261124070100",
+          "published_at": "2026-11-24T07:01:00+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 6,
           "title": "[클릭 e종목]\"롯데관광개발, 지금 매수 기회...목표주가는 19% 하향\"",
           "link": "https://n.news.naver.com/mnews/article/277/0005846710?sid=101258402",
           "upload_time": "20261124070000",
@@ -274,7 +314,7 @@
         },
         {
           "press_name": "머니투데이",
-          "rank": 2,
+          "rank": 7,
           "title": "코스피 야간선물 7% 점프…美 '젠슨황 복귀랠리' 동반급등",
           "link": "https://n.news.naver.com/mnews/article/008/0005445327?sid=101258402",
           "upload_time": "20261124063320",
@@ -282,7 +322,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 3,
+          "rank": 8,
           "title": "또 녹아내린 삼전닉스…증권가가 바닥 확신 못하는 이유 [분석+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005357361?sid=101258402",
           "upload_time": "20261124063115",
@@ -290,7 +330,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 4,
+          "rank": 9,
           "title": "건설주, 트럼프 '해외 데이터센터 과세' 경고에 '우수수' [종목+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005357360?sid=101258402",
           "upload_time": "20261124063112",
@@ -298,7 +338,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 10,
           "title": "\"지금 주가도 저평가 아니다\"…SK하이닉스 목표가 또 낮춘 이유",
           "link": "https://n.news.naver.com/mnews/article/014/0005608598?sid=101258402",
           "upload_time": "20261124040014",
@@ -306,7 +346,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 6,
+          "rank": 11,
           "title": "[속보]엔비디아, 젠슨 황 CEO 복귀에 30% 넘게 급등 출발",
           "link": "https://n.news.naver.com/mnews/article/277/0005846677?sid=101258402",
           "upload_time": "20261123234233",
@@ -314,7 +354,7 @@
         },
         {
           "press_name": "동행미디어 시대",
-          "rank": 7,
+          "rank": 12,
           "title": "롯데월드타워 담보 2년 만에 풀렸다…월드몰은 아직",
           "link": "https://n.news.naver.com/mnews/article/417/0001165348?sid=101258402",
           "upload_time": "20261123220427",
@@ -322,7 +362,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 8,
+          "rank": 13,
           "title": "4만원대서 3000원대로 '처참'…90% 폭락에도 1600억 또 질렀다 [종목+]",
           "link": "https://n.news.naver.com/mnews/article/015/0005357307?sid=101258402",
           "upload_time": "20261123210112",
@@ -330,7 +370,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 9,
+          "rank": 14,
           "title": "‘185만닉스’ 경고했던 애널리스트…이번엔 목표가 ‘105만원’ 제시",
           "link": "https://n.news.naver.com/mnews/article/018/0006414388?sid=101258402",
           "upload_time": "20261123202511",
@@ -338,51 +378,11 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 10,
+          "rank": 15,
           "title": "다 떨어지는데 혼자 '선방'…폭락장 비껴간 '이 종목'",
           "link": "https://n.news.naver.com/mnews/article/215/0001273679?sid=101258402",
           "upload_time": "20261123201000",
           "published_at": "2026-11-23T20:10:00+09:00"
-        },
-        {
-          "press_name": "헤럴드경제",
-          "rank": 11,
-          "title": "“삼성전자 목표주가 35만원” 글로벌IB, 삼전닉스 목표가 낮췄다 [투자360]",
-          "link": "https://n.news.naver.com/mnews/article/016/0002727316?sid=101258402",
-          "upload_time": "20261123194515",
-          "published_at": "2026-11-23T19:45:15+09:00"
-        },
-        {
-          "press_name": "연합뉴스",
-          "rank": 12,
-          "title": "글로벌IB, 삼전닉스 목표가 잇달아 하향…2028년 업황 둔화 우려",
-          "link": "https://n.news.naver.com/mnews/article/001/0016459205?sid=101258402",
-          "upload_time": "20261123193241",
-          "published_at": "2026-11-23T19:32:41+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 13,
-          "title": "“설마 4천피 붕괴까지 가겠습니까”…여의도 센터장들이 꼽은 저점은?",
-          "link": "https://n.news.naver.com/mnews/article/009/0005767891?sid=101258402",
-          "upload_time": "20261123185712",
-          "published_at": "2026-11-23T18:57:12+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 14,
-          "title": "K-뷰티 날개에 화장품 펌프·튜브 용기도 '훨훨'[클릭 e종목]",
-          "link": "https://n.news.naver.com/mnews/article/277/0005846641?sid=101258402",
-          "upload_time": "20261123183000",
-          "published_at": "2026-11-23T18:30:00+09:00"
-        },
-        {
-          "press_name": "파이낸셜뉴스",
-          "rank": 15,
-          "title": "증안펀드·자사주 완화 카드 ‘역부족’… 외국인 매도에 휘청 [증시 장중 4600도 붕괴]",
-          "link": "https://n.news.naver.com/mnews/article/014/0005608558?sid=101258402",
-          "upload_time": "20261123182830",
-          "published_at": "2026-11-23T18:28:30+09:00"
         }
       ]
     },
@@ -390,8 +390,64 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "한국경제TV",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "젠슨황 돌아오자 나스닥 6.5%↑…엔비디아 시총 증가 '역대 최대'[월스트리트in]",
+          "link": "https://n.news.naver.com/mnews/article/018/0006414457?sid=101258403",
+          "upload_time": "20261124071011",
+          "published_at": "2026-11-24T07:10:11+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 2,
+          "title": "젠슨 황, 돌아온다...엔비디아 CEO 전격 복귀-[굿모닝 글로벌 이슈]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273715?sid=101258403",
+          "upload_time": "20261124070518",
+          "published_at": "2026-11-24T07:05:18+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 3,
+          "title": "젠슨 황 복귀에 AI주 반등…건강보험주는 메디케어 개편안에 약세-[美증시 특징주]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273713?sid=101258403",
+          "upload_time": "20261124070456",
+          "published_at": "2026-11-24T07:04:56+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 4,
+          "title": "돌아온 젠슨 황과 함께 날아오른 뉴욕증시…나스닥 6.5%↑ [글로벌 마감시황]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273712?sid=101258403",
+          "upload_time": "20261124070419",
+          "published_at": "2026-11-24T07:04:19+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 5,
+          "title": "젠슨 황 복귀에 환호한 날…JP모건의 '내년' 투자 조언 보니[ 글로벌 IB리포트 ]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273711?sid=101258403",
+          "upload_time": "20261124070344",
+          "published_at": "2026-11-24T07:03:44+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 6,
+          "title": "젠슨 황 복귀에 뉴욕증시 기술주 '환호'  [ 美증시 특징주 ]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273710?sid=101258403",
+          "upload_time": "20261124070219",
+          "published_at": "2026-11-24T07:02:19+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 7,
+          "title": "대형 호재? 트럼프 대통령이 직접 나섰다 | 구제된 젠슨 황, 엔비디아 제2 전성기 이끌까? | 한상춘 한국경제신문사 논설위원",
+          "link": "https://n.news.naver.com/mnews/article/215/0001273709?sid=101258403",
+          "upload_time": "20261124070150",
+          "published_at": "2026-11-24T07:01:50+09:00"
+        },
+        {
+          "press_name": "한국경제TV",
+          "rank": 8,
           "title": "연말 소비 시즌 본격화…월가가 주목한 투자 아이디어 5선-[美증시 특징주]",
           "link": "https://n.news.naver.com/mnews/article/215/0001273707?sid=101258403",
           "upload_time": "20261124064801",
@@ -399,7 +455,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 2,
+          "rank": 9,
           "title": "[뉴욕증시]젠슨 황 복귀에 폭등 마감…엔비디아 31% ↑(종합)",
           "link": "https://n.news.naver.com/mnews/article/277/0005846704?sid=101258403",
           "upload_time": "20261124064003",
@@ -407,7 +463,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 3,
+          "rank": 10,
           "title": "엔비디아 시총 하룻새 1천300조원↑…AI·반도체주 급등",
           "link": "https://n.news.naver.com/mnews/article/001/0016459403?sid=101258403",
           "upload_time": "20261124063704",
@@ -415,7 +471,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 4,
+          "rank": 11,
           "title": "젠슨 황의 귀환에 뒤집힌 월가...엔비디아 31%·나스닥 6.5% 폭등 [월가월부]",
           "link": "https://n.news.naver.com/mnews/article/009/0005767954?sid=101258403",
           "upload_time": "20261124063606",
@@ -423,7 +479,7 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 5,
+          "rank": 12,
           "title": "젠슨 황이 돌아왔다…모건스탠리 \"절호의 매수 기회\"",
           "link": "https://n.news.naver.com/mnews/article/215/0001273705?sid=101258403",
           "upload_time": "20261124063317",
@@ -431,15 +487,15 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
-          "title": "젠슨황 복귀에 나스닥 6.5% 급등…나스닥100 시총 2조달러↑ [뉴욕증시 브리핑]",
+          "rank": 13,
+          "title": "\"젠슨 황 돌아오자 난리 났다\"…하루 만에 2680조원 불어난 월가 [뉴욕증시 브리핑]",
           "link": "https://n.news.naver.com/mnews/article/015/0005357358?sid=101258403",
           "upload_time": "20261124062615",
           "published_at": "2026-11-24T06:26:15+09:00"
         },
         {
           "press_name": "이데일리",
-          "rank": 7,
+          "rank": 14,
           "title": "[속보]젠슨 황 귀환에 엔비디아 31%·SK하닉 20%↑…나스닥 6.5%↑",
           "link": "https://n.news.naver.com/mnews/article/018/0006414448?sid=101258403",
           "upload_time": "20261124061011",
@@ -447,67 +503,11 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 8,
+          "rank": 15,
           "title": "[속보] 뉴욕증시, 나스닥 6%대 급등 마감…엔비디아 31.5%↑",
           "link": "https://n.news.naver.com/mnews/article/015/0005357357?sid=101258403",
           "upload_time": "20261124060810",
           "published_at": "2026-11-24T06:08:10+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 9,
-          "title": "트럼프 \"내가 엔비디아 이사회 설득\"…젠슨 황 복귀 개입 인정",
-          "link": "https://n.news.naver.com/mnews/article/277/0005846689?sid=101258403",
-          "upload_time": "20261124055731",
-          "published_at": "2026-11-24T05:57:31+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 10,
-          "title": "젠슨 황이 바닥 만들었나…월가 \"AI 랠리 재개\" vs \"반짝 반등\"",
-          "link": "https://n.news.naver.com/mnews/article/018/0006414434?sid=101258403",
-          "upload_time": "20261124052219",
-          "published_at": "2026-11-24T05:22:19+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 11,
-          "title": "美 민주당, 내년 6월 대선 경선 돌입…인원 20명 제한",
-          "link": "https://n.news.naver.com/mnews/article/277/0005846687?sid=101258403",
-          "upload_time": "20261124042401",
-          "published_at": "2026-11-24T04:24:01+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 12,
-          "title": "젠슨 황 귀환에 엔비디아·SK하이닉스 폭등…트럼프 \"내 개입 중요\"(종합)",
-          "link": "https://n.news.naver.com/mnews/article/018/0006414419?sid=101258403",
-          "upload_time": "20261124015012",
-          "published_at": "2026-11-24T01:50:12+09:00"
-        },
-        {
-          "press_name": "아시아경제",
-          "rank": 13,
-          "title": "트럼프 행정부, 한국·EU·호주 디지털 규제 301 조사 검토",
-          "link": "https://n.news.naver.com/mnews/article/277/0005846685?sid=101258403",
-          "upload_time": "20261124013025",
-          "published_at": "2026-11-24T01:30:25+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 14,
-          "title": "젠슨 황, 엔비디아 CEO 전격 복귀…이사회 만장일치 결정",
-          "link": "https://n.news.naver.com/mnews/article/015/0005357354?sid=101258403",
-          "upload_time": "20261124011519",
-          "published_at": "2026-11-24T01:15:19+09:00"
-        },
-        {
-          "press_name": "한국경제",
-          "rank": 15,
-          "title": "돌아온 'AI 황제'에 환호…엔비디아 폭등 출발",
-          "link": "https://n.news.naver.com/mnews/article/015/0005357353?sid=101258403",
-          "upload_time": "20261124011219",
-          "published_at": "2026-11-24T01:12:19+09:00"
         }
       ]
     },
