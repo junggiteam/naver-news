@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-24 09:31:10",
+  "updated_at": "2026-11-24 10:01:15",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 6.11,
-    "kosdaq_change": 4.9,
-    "kospi_value": 4996.32,
-    "kosdaq_value": 666.57
+    "kospi_change": 6.67,
+    "kosdaq_change": 4.95,
+    "kospi_value": 5022.45,
+    "kosdaq_value": 666.89
   },
   "heroes": {
     "종합": {
@@ -28,7 +28,12 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "category": "증권",
+      "text": "엔비디아 CEO 젠슨 황의 복귀 소식이 전해지며 반도체 관련주를 중심으로 투자 심리가 회복되어 국내 증시가 큰 폭으로 상승했다. 이로 인해 코스피와 코스닥 시장에서 모두 매수 사이드카가 발동되었으며 달러 대비 원화 환율도 하락세를 보였다."
+    }
+  ],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [
@@ -39,7 +44,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000043",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000043",
-      "ai_explanation": "운영 자금 등을 마련하기 위해 주식을 새로 발행하여 자본금을 늘리는 결정입니다."
+      "ai_explanation": "회사가 주식을 새로 발행하여 자본금을 확충하고 운영 자금 등을 조달하기로 결정한 것입니다."
     },
     {
       "corp_name": "제일기획",
@@ -48,7 +53,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000020",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000020",
-      "ai_explanation": "주가 안정 및 주주 가치 제고를 목적으로 회사 자금으로 자사 주식을 사들이는 결정입니다."
+      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 위해 시장에서 자사 주식을 직접 사들이기로 결정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2885,53 +2890,53 @@
   "top_gainers": [
     {
       "name": "현대오토에버",
-      "price": "341,000",
-      "change_percent": "+22.22%",
-      "pct": 22.22
+      "price": "344,500",
+      "change_percent": "+23.48%",
+      "pct": 23.48
     },
     {
-      "name": "두산",
-      "price": "635,000",
-      "change_percent": "+17.38%",
-      "pct": 17.38
-    },
-    {
-      "name": "TIGER 200IT레버리지",
-      "price": "139,200",
-      "change_percent": "+18.10%",
-      "pct": 18.1
-    },
-    {
-      "name": "TIGER 미국필라델피아반도체레버리지(합성)",
-      "price": "44,850",
-      "change_percent": "+17.50%",
-      "pct": 17.5
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "3,595",
+      "change_percent": "+20.03%",
+      "pct": 20.03
     },
     {
       "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "3,465",
-      "change_percent": "+17.26%",
-      "pct": 17.26
+      "price": "3,555",
+      "change_percent": "+20.30%",
+      "pct": 20.3
+    },
+    {
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "price": "3,615",
+      "change_percent": "+19.50%",
+      "pct": 19.5
+    },
+    {
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "price": "3,720",
+      "change_percent": "+18.85%",
+      "pct": 18.85
     }
   ],
   "top_losers": [
     {
       "name": "한솔홈데코",
-      "price": "734",
-      "change_percent": "-21.91%",
-      "pct": 21.91
+      "price": "724",
+      "change_percent": "-22.98%",
+      "pct": 22.98
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9,540",
-      "change_percent": "-18.15%",
-      "pct": 18.15
+      "price": "9,270",
+      "change_percent": "-20.46%",
+      "pct": 20.46
     },
     {
-      "name": "케이아이이",
-      "price": "7,120",
-      "change_percent": "-17.88%",
-      "pct": 17.88
+      "name": "키움 인버스 2X 전력 TOP5 ETN",
+      "price": "9,750",
+      "change_percent": "-17.27%",
+      "pct": 17.27
     },
     {
       "name": "하나 인버스 2X 반도체 ETN",
@@ -2940,106 +2945,106 @@
       "pct": 16.6
     },
     {
-      "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "9,835",
-      "change_percent": "-16.55%",
-      "pct": 16.55
+      "name": "미래에셋 인버스 2X 반도체 ETN",
+      "price": "5,090",
+      "change_percent": "-16.01%",
+      "pct": 16.01
     }
   ],
   "sector_performance": [
     {
       "name": "전자제품",
-      "change_value": "+12.61%",
-      "pct": 12.61
+      "change_value": "+14.67%",
+      "pct": 14.67
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+10.22%",
-      "pct": 10.22
+      "change_value": "+10.77%",
+      "pct": 10.77
     },
     {
       "name": "IT서비스",
-      "change_value": "+9.31%",
-      "pct": 9.31
+      "change_value": "+9.67%",
+      "pct": 9.67
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+7.88%",
-      "pct": 7.88
+      "change_value": "+8.42%",
+      "pct": 8.42
     },
     {
       "name": "전기장비",
-      "change_value": "+7.88%",
-      "pct": 7.88
+      "change_value": "+8.16%",
+      "pct": 8.16
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자제품",
-      "change_value": "+12.61%",
-      "pct": 12.61
+      "change_value": "+14.67%",
+      "pct": 14.67
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+10.22%",
-      "pct": 10.22
+      "change_value": "+10.77%",
+      "pct": 10.77
     },
     {
       "name": "IT서비스",
-      "change_value": "+9.31%",
-      "pct": 9.31
+      "change_value": "+9.67%",
+      "pct": 9.67
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "+7.88%",
-      "pct": 7.88
+      "change_value": "+8.42%",
+      "pct": 8.42
     },
     {
       "name": "전기장비",
-      "change_value": "+7.88%",
-      "pct": 7.88
+      "change_value": "+8.16%",
+      "pct": 8.16
     },
     {
-      "name": "복합기업",
-      "change_value": "+7.33%",
-      "pct": 7.33
+      "name": "기계",
+      "change_value": "+7.82%",
+      "pct": 7.82
     },
     {
-      "name": "기타금융",
-      "change_value": "-0.26%",
-      "pct": -0.26
+      "name": "포장재",
+      "change_value": "-0.21%",
+      "pct": -0.21
     },
     {
       "name": "상업서비스와공급품",
-      "change_value": "-0.32%",
-      "pct": -0.32
+      "change_value": "-0.44%",
+      "pct": -0.44
     },
     {
-      "name": "카드",
-      "change_value": "-0.50%",
-      "pct": -0.5
-    },
-    {
-      "name": "가구",
+      "name": "백화점과일반상점",
       "change_value": "-0.65%",
       "pct": -0.65
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "-0.73%",
-      "pct": -0.73
+      "name": "가구",
+      "change_value": "-0.85%",
+      "pct": -0.85
     },
     {
-      "name": "백화점과일반상점",
-      "change_value": "-0.77%",
-      "pct": -0.77
+      "name": "방송과엔터테인먼트",
+      "change_value": "-1.40%",
+      "pct": -1.4
+    },
+    {
+      "name": "카드",
+      "change_value": "-1.86%",
+      "pct": -1.86
     }
   ],
   "article_counts": {
     "종합": 404,
     "경제": 30,
     "부동산": 30,
-    "증권": 85
+    "증권": 86
   },
   "article_count_trend": {
     "종합": {
@@ -3061,9 +3066,9 @@
       "surge": false
     },
     "증권": {
-      "today": 85,
+      "today": 86,
       "yesterday": 85,
-      "change_pct": 0.0,
+      "change_pct": 1.2,
       "surge": false
     }
   }
