@@ -55,11 +55,12 @@
   const notice = document.getElementById('notice');
   let focusReturn;
   // Subscription source: the 중기이코노미 homepage keeps the default; the So What archive
-  // (sowhat.bestexit.co.kr, or its copy on bestexit.co.kr) loads this form with ?from=archive.
+  // loads this form with ?from=archive; embedded on sowhat.bestexit.co.kr or the archive copy on
+  // www.bestexit.co.kr counts as the archive too (old pasted code without the parameter).
   const params = new URLSearchParams(location.search);
   let parent = '';
   try { parent = (location.ancestorOrigins && location.ancestorOrigins[0]) || new URL(document.referrer).origin; } catch (_) {}
-  const fromArchive = params.get('from') === 'archive' || /^https:\/\/sowhat\.bestexit\.co\.kr$/.test(parent);
+  const fromArchive = params.get('from') === 'archive' || /^https:\/\/(sowhat|www)\.bestexit\.co\.kr$/.test(parent);
   // PC or mobile follows the archive's own layout (it posts {swaPc} on load and resize: 820px and
   // below = mobile); before that message arrives, the device type decides.
   function markSource() {
