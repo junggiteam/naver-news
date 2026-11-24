@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>중기이코노미 쏘왓레터 구독</title>
 <meta name="robots" content="noindex">
-<script>(function(){var r=document.documentElement;function set(on){r.classList.toggle("swa-pc",!!on)}set(/(^#|&)pc(&|$)/.test(location.hash));addEventListener("message",function(e){if(!/^https:\/\/(sowhat|www)\.bestexit\.co\.kr$|^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(e.origin))return;if(e.data&&typeof e.data.swaPc==="boolean")set(e.data.swaPc)})})();</script>
+<script>(function(){var r=document.documentElement;function set(on){r.classList.toggle("swa-pc",!!on)}set(/(^#|&)pc(&|$)/.test(location.hash));addEventListener("message",function(e){if(!/^https:\/\/(sowhat|www)\.bestexit\.co\.kr$|^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(e.origin))return;if(e.data&&typeof e.data.swaPc==="boolean"){r.dataset.swaLayout=e.data.swaPc?"pc":"m";set(e.data.swaPc)}})})();</script>
 <style>
 :root{--brand:#e20e0e;color-scheme:light;font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;color:#242424;background:#fff}
 #stb_form_submit_button > span{display:inline-block;transform:translateX(0)}
@@ -54,6 +54,22 @@
   const submit = document.getElementById('stb_form_submit_button');
   const notice = document.getElementById('notice');
   let focusReturn;
+  // Subscription source: the 중기이코노미 homepage keeps the default; the So What archive
+  // (sowhat.bestexit.co.kr, or its copy on bestexit.co.kr) loads this form with ?from=archive.
+  const params = new URLSearchParams(location.search);
+  let parent = '';
+  try { parent = (location.ancestorOrigins && location.ancestorOrigins[0]) || new URL(document.referrer).origin; } catch (_) {}
+  const fromArchive = params.get('from') === 'archive' || /^https:\/\/sowhat\.bestexit\.co\.kr$/.test(parent);
+  // PC or mobile follows the archive's own layout (it posts {swaPc} on load and resize: 820px and
+  // below = mobile); before that message arrives, the device type decides.
+  function markSource() {
+    if (!fromArchive) return;
+    const layout = document.documentElement.dataset.swaLayout;
+    const pc = layout ? layout === 'pc' : !/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    document.getElementById('stb_referer2').value = '쏘왓레터 아카이브 구독폼(' + (pc ? 'PC' : 'M') + ')';
+  }
+  markSource();
+  addEventListener('message', () => setTimeout(markSource, 0));
   function message(text) {
     focusReturn = document.activeElement;
     document.getElementById('notice-text').textContent = text;
@@ -65,6 +81,7 @@
   }
   document.getElementById('notice-close').addEventListener('click', () => {notice.hidden = true; focusReturn?.focus();});
   document.querySelectorAll('[data-modal]').forEach(button => button.addEventListener('click', () => document.getElementById(button.dataset.modal).showModal()));
+  form.addEventListener('submit', markSource, true);
   form.addEventListener('submit', event => {
     if (!window.STBSUBFORM) {event.preventDefault();event.stopImmediatePropagation();message('구독폼을 불러오지 못했습니다. 잠시 후 새로고침해 주세요.');}
   });
