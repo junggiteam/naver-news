@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-24 14:01:16",
+  "updated_at": "2026-11-24 14:16:19",
   "market_mood": {
     "label": "급등",
     "emoji": "🟢",
-    "kospi_change": 7.15,
-    "kosdaq_change": 5.1,
-    "kospi_value": 5045.4,
-    "kosdaq_value": 667.86
+    "kospi_change": 7.04,
+    "kosdaq_change": 5.16,
+    "kospi_value": 5040.04,
+    "kosdaq_value": 668.22
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "젠슨 황 엔비디아 CEO의 복귀 소식과 함께 반도체 관련주가 강세를 보이면서 코스피와 코스닥 지수가 급등했다. 최근 이어진 증시의 변동성 속에서 반도체 대형주 중심의 투자 심리가 회복되며 지수 반등이 나타났다."
+      "text": "엔비디아의 젠슨 황 CEO가 복귀하며 인공지능 관련 산업의 불확실성이 일부 해소된 점이 투자 심리에 긍정적인 영향을 미쳤다. 이와 함께 금융 당국이 불법 공매도 집중 감시에 나서고 증시 안정화 방안을 검토하면서 매수 사이드카가 발동되는 등 시장 변동성이 크게 나타났다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,31 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "엑셀세라퓨틱스",
+      "corp_code": "01492217",
+      "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261124",
+      "rcept_no": "20261124000227",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000227",
+      "ai_explanation": "회사가 기존에 발표한 유상증자 계획 내용을 수정하여 다시 공시함."
+    },
+    {
+      "corp_name": "애니플러스",
+      "corp_code": "01335578",
+      "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+      "rcept_dt": "20261124",
+      "rcept_no": "20261124000204",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000204",
+      "ai_explanation": "회사가 자사주 매입을 위해 증권사와 신탁 계약을 체결함."
+    },
+    {
       "corp_name": "케이엔제이",
       "corp_code": "00769158",
       "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
       "rcept_dt": "20261124",
       "rcept_no": "20261124000193",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000193",
-      "ai_explanation": "회사 자금을 맡겨 자사주를 사들이던 신탁 계약을 종료한다는 뜻입니다."
+      "ai_explanation": "회사가 증권사와 체결했던 자사주 매입 신탁 계약을 종료함."
     },
     {
       "corp_name": "에이치앤엘어드밴스드",
@@ -100,7 +118,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000190",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000190",
-      "ai_explanation": "회사가 발행하는 채권 중 자본으로 인정받는 성격의 증권을 발행한다는 뜻입니다."
+      "ai_explanation": "자본으로 인정되는 성격의 채권(전환사채 등)을 발행하기로 결정함."
     },
     {
       "corp_name": "앱코",
@@ -109,7 +127,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000181",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000181",
-      "ai_explanation": "회사 자금을 금융기관에 맡겨 자사주를 매입하도록 계약을 체결한다는 뜻입니다."
+      "ai_explanation": "회사가 자사주 매입을 위해 증권사와 신탁 계약을 체결함."
     },
     {
       "corp_name": "엑셀세라퓨틱스",
@@ -118,7 +136,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000172",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000172",
-      "ai_explanation": "회사가 신주를 발행해 자본금을 늘리고 외부 자금을 조달하겠다는 뜻입니다."
+      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 유상증자를 결정함."
     },
     {
       "corp_name": "아리바이오LAB",
@@ -127,7 +145,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000146",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000146",
-      "ai_explanation": "기존에 공시했던 유상증자 내용 중 일부 항목을 수정하여 정정했다는 뜻입니다."
+      "ai_explanation": "회사가 기존에 발표한 유상증자 계획 내용을 수정하여 다시 공시함."
     },
     {
       "corp_name": "신흥",
@@ -136,7 +154,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000139",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000139",
-      "ai_explanation": "회사가 보유 중인 자사주를 시장에 내다 팔아 처분하겠다는 뜻입니다."
+      "ai_explanation": "회사가 보유하고 있던 자사주를 시장 등에 내다 팔기로 결정함."
     },
     {
       "corp_name": "엑세스바이오",
@@ -145,7 +163,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000108",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000108",
-      "ai_explanation": "회사 자금을 금융기관에 맡겨 자사주를 매입하도록 계약을 체결한다는 뜻입니다."
+      "ai_explanation": "회사가 자사주 매입을 위해 증권사와 신탁 계약을 체결함."
     },
     {
       "corp_name": "이랜드스포츠",
@@ -154,7 +172,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000043",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000043",
-      "ai_explanation": "회사가 신주를 발행해 자본금을 늘리고 외부 자금을 조달하겠다는 뜻입니다."
+      "ai_explanation": "회사가 운영 자금 조달 등을 위해 신주를 발행하여 유상증자를 결정함."
     },
     {
       "corp_name": "제일기획",
@@ -163,7 +181,7 @@
       "rcept_dt": "20261124",
       "rcept_no": "20261124000020",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000020",
-      "ai_explanation": "회사가 직접 시장에서 자사주를 매입하기로 결정했다는 뜻입니다."
+      "ai_explanation": "회사가 시장에서 직접 자사주를 사들이기로 결정함."
     }
   ],
   "macro_indicators": [
@@ -3012,142 +3030,142 @@
     },
     {
       "name": "롯데에너지머티리얼즈",
-      "price": "43,350",
-      "change_percent": "+20.08%",
-      "pct": 20.08
+      "price": "43,850",
+      "change_percent": "+21.47%",
+      "pct": 21.47
     },
     {
-      "name": "ACE SK하이닉스단일종목레버리지",
-      "price": "3,560",
-      "change_percent": "+18.86%",
-      "pct": 18.86
+      "name": "KODEX 2차전지산업레버리지",
+      "price": "636",
+      "change_percent": "+18.88%",
+      "pct": 18.88
     },
     {
-      "name": "이수스페셜티케미컬",
-      "price": "81,300",
-      "change_percent": "+18.51%",
-      "pct": 18.51
+      "name": "키움 레버리지 2차전지산업 ETN",
+      "price": "5,115",
+      "change_percent": "+18.27%",
+      "pct": 18.27
     }
   ],
   "top_losers": [
     {
       "name": "케이아이이",
-      "price": "6,400",
-      "change_percent": "-26.18%",
-      "pct": 26.18
+      "price": "6,620",
+      "change_percent": "-23.64%",
+      "pct": 23.64
     },
     {
       "name": "한솔홈데코",
-      "price": "746",
-      "change_percent": "-20.64%",
-      "pct": 20.64
+      "price": "758",
+      "change_percent": "-19.36%",
+      "pct": 19.36
     },
     {
       "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9,520",
-      "change_percent": "-18.32%",
-      "pct": 18.32
-    },
-    {
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "12,740",
-      "change_percent": "-16.51%",
-      "pct": 16.51
+      "price": "9,590",
+      "change_percent": "-17.72%",
+      "pct": 17.72
     },
     {
       "name": "키움 인버스 2X 전력 TOP5 ETN",
-      "price": "9,910",
-      "change_percent": "-15.91%",
-      "pct": 15.91
+      "price": "9,845",
+      "change_percent": "-16.46%",
+      "pct": 16.46
+    },
+    {
+      "name": "KIWOOM 200선물인버스2X",
+      "price": "120",
+      "change_percent": "-15.49%",
+      "pct": 15.49
     }
   ],
   "sector_performance": [
     {
       "name": "전자제품",
-      "change_value": "+15.89%",
-      "pct": 15.89
+      "change_value": "+16.01%",
+      "pct": 16.01
     },
     {
       "name": "자동차",
-      "change_value": "+11.30%",
-      "pct": 11.3
+      "change_value": "+11.18%",
+      "pct": 11.18
     },
     {
       "name": "자동차부품",
-      "change_value": "+10.49%",
-      "pct": 10.49
+      "change_value": "+10.29%",
+      "pct": 10.29
     },
     {
       "name": "IT서비스",
-      "change_value": "+10.21%",
-      "pct": 10.21
+      "change_value": "+10.26%",
+      "pct": 10.26
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+9.90%",
-      "pct": 9.9
+      "change_value": "+10.10%",
+      "pct": 10.1
     }
   ],
   "sector_heatmap": [
     {
       "name": "전자제품",
-      "change_value": "+15.89%",
-      "pct": 15.89
+      "change_value": "+16.01%",
+      "pct": 16.01
     },
     {
       "name": "자동차",
-      "change_value": "+11.30%",
-      "pct": 11.3
+      "change_value": "+11.18%",
+      "pct": 11.18
     },
     {
       "name": "자동차부품",
-      "change_value": "+10.49%",
-      "pct": 10.49
+      "change_value": "+10.29%",
+      "pct": 10.29
     },
     {
       "name": "IT서비스",
-      "change_value": "+10.21%",
-      "pct": 10.21
+      "change_value": "+10.26%",
+      "pct": 10.26
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+9.90%",
-      "pct": 9.9
+      "change_value": "+10.10%",
+      "pct": 10.1
     },
     {
-      "name": "기계",
-      "change_value": "+9.55%",
-      "pct": 9.55
+      "name": "전기제품",
+      "change_value": "+10.05%",
+      "pct": 10.05
     },
     {
-      "name": "식품과기본식료품소매",
-      "change_value": "+0.40%",
-      "pct": 0.4
+      "name": "건축제품",
+      "change_value": "+0.56%",
+      "pct": 0.56
     },
     {
       "name": "운송인프라",
-      "change_value": "+0.14%",
-      "pct": 0.14
+      "change_value": "+0.23%",
+      "pct": 0.23
     },
     {
       "name": "레저용장비와제품",
-      "change_value": "-0.15%",
-      "pct": -0.15
-    },
-    {
-      "name": "가구",
-      "change_value": "-0.25%",
-      "pct": -0.25
+      "change_value": "-0.01%",
+      "pct": -0.01
     },
     {
       "name": "전문소매",
-      "change_value": "-0.28%",
-      "pct": -0.28
+      "change_value": "-0.13%",
+      "pct": -0.13
+    },
+    {
+      "name": "가구",
+      "change_value": "-0.35%",
+      "pct": -0.35
     },
     {
       "name": "카드",
-      "change_value": "-0.62%",
-      "pct": -0.62
+      "change_value": "-0.87%",
+      "pct": -0.87
     }
   ],
   "article_counts": {
