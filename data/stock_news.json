@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 21:31:09",
+  "updated_at": "2026-11-24 22:01:04",
   "indices": [
     {
       "name": "코스피",
@@ -66,24 +66,24 @@
     },
     {
       "name": "원/달러 환율",
-      "value": "1,343.50",
-      "change_percent": "▲0.07%",
+      "value": "1,343.80",
+      "change_percent": "▲0.10%",
       "direction": "up",
-      "as_of": "2026-11-24 21:29:33"
+      "as_of": "2026-11-24 21:58:12"
     },
     {
       "name": "원/엔 환율(100엔)",
-      "value": "844.38",
+      "value": "844.36",
       "change_percent": "▲0.00%",
       "direction": "up",
-      "as_of": "2026-11-24 21:29:33"
+      "as_of": "2026-11-24 21:58:12"
     },
     {
       "name": "원/유로 환율",
-      "value": "1,472.27",
-      "change_percent": "▲0.58%",
+      "value": "1,473.01",
+      "change_percent": "▲0.63%",
       "direction": "up",
-      "as_of": "2026-11-24 21:29:33"
+      "as_of": "2026-11-24 21:58:12"
     },
     {
       "name": "USD/JPY",
@@ -101,10 +101,10 @@
     },
     {
       "name": "WTI(국제유가)",
-      "value": "80.03",
-      "change_percent": "▼0.17%",
-      "direction": "down",
-      "as_of": "2026-11-24 06:20:20"
+      "value": "80.37",
+      "change_percent": "▲0.25%",
+      "direction": "up",
+      "as_of": "2026-11-24 06:51:02"
     },
     {
       "name": "국고채(3년)",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "82,185,000",
-      "change_percent": "▼1.84%",
+      "value": "82,400,000",
+      "change_percent": "▼1.58%",
       "direction": "down",
-      "as_of": "2026-11-24 21:31:07"
+      "as_of": "2026-11-24 22:01:01"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,314,000",
-      "change_percent": "▼0.94%",
+      "value": "2,323,000",
+      "change_percent": "▼0.56%",
       "direction": "down",
-      "as_of": "2026-11-24 21:31:08"
+      "as_of": "2026-11-24 22:01:01"
     }
   ],
   "news_categories": [
@@ -140,8 +140,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "이데일리",
           "rank": 1,
+          "title": "\"5000피 탈환 코스피, 바닥 다졌나?\"…전문가 판단은",
+          "link": "https://n.news.naver.com/mnews/article/018/0006415016?sid=101258401",
+          "upload_time": "20261124220012",
+          "published_at": "2026-11-24T22:00:12+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 2,
           "title": "젠슨황 복귀 훈풍에 코스피 급등…5,000선 회복",
           "link": "https://n.news.naver.com/mnews/article/422/0000929542?sid=101258401",
           "upload_time": "20261124191616",
@@ -149,7 +157,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 2,
+          "rank": 3,
           "title": "“기업들, 탄소가격 따른 영업이익 변화까지 보여줘야”",
           "link": "https://n.news.naver.com/mnews/article/009/0005768435?sid=101258401",
           "upload_time": "20261124185807",
@@ -157,7 +165,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 3,
+          "rank": 4,
           "title": "내년 회계사 최소선발인원 1100명…3년 연속 감축",
           "link": "https://n.news.naver.com/mnews/article/009/0005768431?sid=101258401",
           "upload_time": "20261124182907",
@@ -165,7 +173,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 4,
+          "rank": 5,
           "title": "\"금리는 지켰는데 배당은?\"…인천 스퀘어원, 홈플러스 빈자리 채우기 '숙제'",
           "link": "https://n.news.naver.com/mnews/article/018/0006414972?sid=101258401",
           "upload_time": "20261124181814",
@@ -173,7 +181,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 5,
+          "rank": 6,
           "title": "외국인도 돌아왔다… 7거래일간 5조 팔다 순매수 전환 [젠슨 황 복귀]",
           "link": "https://n.news.naver.com/mnews/article/014/0005609168?sid=101258401",
           "upload_time": "20261124181813",
@@ -181,7 +189,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 6,
+          "rank": 7,
           "title": "'黃의 귀환'… 코스피 단숨에 5000선 탈환 [젠슨 황 복귀]",
           "link": "https://n.news.naver.com/mnews/article/014/0005609156?sid=101258401",
           "upload_time": "20261124181509",
@@ -189,7 +197,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 7,
+          "rank": 8,
           "title": "“ESS 공급망도 中이 싹쓸이 위기…‘제어·보안 기술’ 국산화 시급”",
           "link": "https://n.news.naver.com/mnews/article/011/0004685743?sid=101258401",
           "upload_time": "20261124181412",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 8,
+          "rank": 9,
           "title": "국민연금 때문에 꼬인 증시 수급...“증안펀드 10조론 역부족” [최재원의 마켓워치]",
           "link": "https://n.news.naver.com/mnews/article/009/0005768429?sid=101258401",
           "upload_time": "20261124181407",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 9,
+          "rank": 10,
           "title": "황성엽 금투협 회장, 히시다 일본자산운용협회 회장 초청…국내 금융사 日 진출 지원",
           "link": "https://n.news.naver.com/mnews/article/011/0004685741?sid=101258401",
           "upload_time": "20261124180911",
@@ -213,7 +221,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 10,
+          "rank": 11,
           "title": "KAI, 국방품질경영상 단체부문 ‘대통령표창’",
           "link": "https://n.news.naver.com/mnews/article/011/0004685739?sid=101258401",
           "upload_time": "20261124180813",
@@ -221,7 +229,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 11,
+          "rank": 12,
           "title": "[마켓인]다올투자증권 매각설…최대주주 지분 유동화 검토",
           "link": "https://n.news.naver.com/mnews/article/018/0006414968?sid=101258401",
           "upload_time": "20261124180612",
@@ -229,7 +237,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 12,
+          "rank": 13,
           "title": "오천피 되찾았지만…\"AI 랠리 재개\" vs \"2~3일 더 지켜봐야\"",
           "link": "https://n.news.naver.com/mnews/article/015/0005357752?sid=101258401",
           "upload_time": "20261124180313",
@@ -237,7 +245,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 13,
+          "rank": 14,
           "title": "'한방' 먹은 공매도…하루새 16조원 날려",
           "link": "https://n.news.naver.com/mnews/article/015/0005357751?sid=101258401",
           "upload_time": "20261124180216",
@@ -245,19 +253,11 @@
         },
         {
           "press_name": "연합뉴스TV",
-          "rank": 14,
+          "rank": 15,
           "title": "[앵커리포트] 젠슨황 복귀에 K-반도체 화색…변동성 극복은 숙제로",
           "link": "https://n.news.naver.com/mnews/article/422/0000929515?sid=101258401",
           "upload_time": "20261124180110",
           "published_at": "2026-11-24T18:01:10+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "금감원 “랩어카운트 과도한 투자손실…내부통제 강화”",
-          "link": "https://n.news.naver.com/mnews/article/009/0005768420?sid=101258401",
-          "upload_time": "20261124175809",
-          "published_at": "2026-11-24T17:58:09+09:00"
         }
       ]
     },
