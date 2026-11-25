@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-25 12:31:20",
+  "updated_at": "2026-11-25 13:01:22",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
-    "kospi_change": -5.81,
-    "kosdaq_change": -2.52,
-    "kospi_value": 4715.34,
-    "kosdaq_value": 649.12
+    "kospi_change": -5.55,
+    "kosdaq_change": -2.03,
+    "kospi_value": 4728.3,
+    "kosdaq_value": 652.34
   },
   "heroes": {
     "종합": {
@@ -67,7 +67,7 @@
     },
     {
       "category": "증권",
-      "text": "엔비디아를 비롯한 글로벌 반도체 관련주의 급락으로 투자 심리가 위축되면서 코스피와 코스닥 지수가 큰 폭으로 하락했다. 특히 외국인 투자자의 대규모 매도세가 이어지며 삼성전자와 SK하이닉스 등 주요 반도체 종목이 급락함에 따라 코스피와 코스피200은 최근 116일간 데이터 기준으로 가장 낮은 수치를 기록했다."
+      "text": "반도체 관련주의 급락과 외국인의 대규모 매도세가 이어지며 코스피와 코스닥 지수가 큰 폭으로 하락했다. 투자 심리가 위축된 가운데 코스피200 지수는 최근 116일간 데이터 기준으로 최저치를 기록했다. 이 과정에서 코스피 시장에는 매도 사이드카가 발동되기도 했다."
     }
   ],
   "daily_term": {
@@ -85,13 +85,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "현대로템",
+      "corp_code": "00302926",
+      "report_nm": "주요사항보고서(자기주식처분결정)",
+      "rcept_dt": "20261125",
+      "rcept_no": "20261125000244",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000244",
+      "ai_explanation": "회사가 보유하고 있던 자사주를 시장에 내다 팔기로 결정했음을 의미합니다."
+    },
+    {
       "corp_name": "나무가",
       "corp_code": "00819374",
       "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
       "rcept_dt": "20261125",
       "rcept_no": "20261125000222",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000222",
-      "ai_explanation": "회사가 신탁 기관을 통해 자사주를 사들이기로 결정함."
+      "ai_explanation": "금융기관에 돈을 맡겨 일정 기간 자사주를 매입하도록 계약했음을 의미합니다."
     },
     {
       "corp_name": "세보엠이씨",
@@ -100,7 +109,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000186",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000186",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료함."
+      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 종료했음을 의미합니다."
     },
     {
       "corp_name": "액트로",
@@ -109,7 +118,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000185",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000185",
-      "ai_explanation": "무상으로 주식을 발행하여 기존 주주들에게 나누어줌."
+      "ai_explanation": "주주들에게 대가 없이 주식을 추가로 발행하여 나눠주기로 결정했음을 의미합니다."
     },
     {
       "corp_name": "현대바이오랜드",
@@ -118,7 +127,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000164",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000164",
-      "ai_explanation": "회사의 특정 사업 부문이나 전체 영업 활동을 일시 혹은 영구 중단함."
+      "ai_explanation": "회사의 특정 사업부나 생산 시설의 가동을 일시적 또는 영구적으로 중단함을 의미합니다."
     },
     {
       "corp_name": "나무가",
@@ -127,7 +136,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000106",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000106",
-      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 종료함."
+      "ai_explanation": "기존에 체결했던 자사주 취득 신탁 계약을 중도에 종료했음을 의미합니다."
     },
     {
       "corp_name": "유니드글로벌상사",
@@ -136,7 +145,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000138",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000138",
-      "ai_explanation": "회사가 다른 법인의 채무를 대신 갚겠다고 보증을 섬."
+      "ai_explanation": "회사가 타인(계열사 등)의 채무를 대신 갚아주겠다고 보증을 섰음을 의미합니다."
     },
     {
       "corp_name": "유니드글로벌상사",
@@ -145,7 +154,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000125",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000125",
-      "ai_explanation": "회사가 다른 법인의 채무를 대신 갚겠다고 보증을 섬."
+      "ai_explanation": "회사가 타인(계열사 등)의 채무를 대신 갚아주겠다고 보증을 섰음을 의미합니다."
     },
     {
       "corp_name": "디엔서비스",
@@ -154,7 +163,7 @@
       "rcept_dt": "20261125",
       "rcept_no": "20261125000058",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000058",
-      "ai_explanation": "회사가 신주를 발행하여 자금을 추가로 조달함."
+      "ai_explanation": "회사가 운영 자금 등을 확보하기 위해 주식을 새로 발행해 자본을 늘리기로 결정했음을 의미합니다."
     }
   ],
   "macro_indicators": [
@@ -3035,130 +3044,130 @@
     },
     {
       "name": "다올투자증권",
-      "price": "4,000",
-      "change_percent": "+25.79%",
-      "pct": 25.79
+      "price": "4,005",
+      "change_percent": "+25.94%",
+      "pct": 25.94
     }
   ],
   "top_losers": [
     {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "2,855",
-      "change_percent": "-19.80%",
-      "pct": 19.8
-    },
-    {
       "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "2,860",
-      "change_percent": "-19.55%",
-      "pct": 19.55
+      "price": "2,890",
+      "change_percent": "-18.71%",
+      "pct": 18.71
     },
     {
-      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
-      "price": "4,505",
-      "change_percent": "-19.41%",
-      "pct": 19.41
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "price": "2,800",
+      "change_percent": "-18.13%",
+      "pct": 18.13
     },
     {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "2,715",
-      "change_percent": "-19.08%",
-      "pct": 19.08
+      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
+      "price": "3,275",
+      "change_percent": "-18.84%",
+      "pct": 18.84
     },
     {
       "name": "RISE 삼성전자단일종목레버리지",
-      "price": "4,375",
-      "change_percent": "-18.98%",
-      "pct": 18.98
+      "price": "4,430",
+      "change_percent": "-17.96%",
+      "pct": 17.96
+    },
+    {
+      "name": "키움 레버리지 반도체TOP10 ETN",
+      "price": "27,750",
+      "change_percent": "-18.38%",
+      "pct": 18.38
     }
   ],
   "sector_performance": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+10.87%",
-      "pct": 10.87
+      "change_value": "+12.35%",
+      "pct": 12.35
     },
     {
       "name": "화장품",
-      "change_value": "+6.40%",
-      "pct": 6.4
+      "change_value": "+7.57%",
+      "pct": 7.57
     },
     {
-      "name": "게임엔터테인먼트",
+      "name": "항공사",
+      "change_value": "+4.94%",
+      "pct": 4.94
+    },
+    {
+      "name": "소프트웨어",
       "change_value": "+4.56%",
       "pct": 4.56
     },
     {
-      "name": "항공사",
-      "change_value": "+4.03%",
-      "pct": 4.03
-    },
-    {
-      "name": "제약",
-      "change_value": "+3.75%",
-      "pct": 3.75
+      "name": "게임엔터테인먼트",
+      "change_value": "+4.37%",
+      "pct": 4.37
     }
   ],
   "sector_heatmap": [
     {
       "name": "인터넷과카탈로그소매",
-      "change_value": "+10.87%",
-      "pct": 10.87
+      "change_value": "+12.35%",
+      "pct": 12.35
     },
     {
       "name": "화장품",
-      "change_value": "+6.40%",
-      "pct": 6.4
+      "change_value": "+7.57%",
+      "pct": 7.57
     },
     {
-      "name": "게임엔터테인먼트",
+      "name": "항공사",
+      "change_value": "+4.94%",
+      "pct": 4.94
+    },
+    {
+      "name": "소프트웨어",
       "change_value": "+4.56%",
       "pct": 4.56
     },
     {
-      "name": "항공사",
-      "change_value": "+4.03%",
-      "pct": 4.03
+      "name": "게임엔터테인먼트",
+      "change_value": "+4.37%",
+      "pct": 4.37
     },
     {
       "name": "제약",
-      "change_value": "+3.75%",
-      "pct": 3.75
-    },
-    {
-      "name": "소프트웨어",
-      "change_value": "+3.48%",
-      "pct": 3.48
+      "change_value": "+4.21%",
+      "pct": 4.21
     },
     {
       "name": "석유와가스",
-      "change_value": "-6.00%",
-      "pct": -6.0
+      "change_value": "-5.81%",
+      "pct": -5.81
     },
     {
       "name": "복합기업",
-      "change_value": "-6.54%",
-      "pct": -6.54
+      "change_value": "-6.11%",
+      "pct": -6.11
     },
     {
       "name": "전기장비",
-      "change_value": "-7.05%",
-      "pct": -7.05
+      "change_value": "-6.74%",
+      "pct": -6.74
     },
     {
       "name": "전자장비와기기",
-      "change_value": "-9.16%",
-      "pct": -9.16
+      "change_value": "-8.68%",
+      "pct": -8.68
     },
     {
       "name": "반도체와반도체장비",
-      "change_value": "-9.46%",
-      "pct": -9.46
+      "change_value": "-9.03%",
+      "pct": -9.03
     },
     {
       "name": "생명보험",
-      "change_value": "-10.20%",
-      "pct": -10.2
+      "change_value": "-10.21%",
+      "pct": -10.21
     }
   ],
   "article_counts": {
