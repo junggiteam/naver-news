@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 08:01:08",
+  "updated_at": "2026-11-26 08:31:12",
   "market_mood": {
     "label": "보합",
     "emoji": "⚪",
@@ -86,7 +86,7 @@
       "rcept_dt": "20261126",
       "rcept_no": "20261125000790",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000790",
-      "ai_explanation": "회사의 사업 일부를 다른 기업에 넘기기로 한 기존 공시 내용의 세부 사항을 수정했다는 의미입니다."
+      "ai_explanation": "회사가 사업의 일부를 다른 곳에 넘기기로 한 기존 공시 내용을 정정하여 다시 알리는 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2950,140 +2950,83 @@
     "holiday": "한국천문연구원 특일정보 API 실시간 연동",
     "labor": "일반 규정 기준 안내 (공식 오픈 API 없음)"
   },
-  "top_gainers": [
-    {
-      "name": "동양2우B",
-      "price": "3,900",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "케이아이이",
-      "price": "8,800",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "깨끗한나라",
-      "price": "1,420",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "한진칼우",
-      "price": "110,000",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "12,275",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
-  "top_losers": [
-    {
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "2,745",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
-      "price": "2,610",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "미래에셋 레버리지 SK하이닉스 단일종목ETN",
-      "price": "3,145",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "1Q SK하이닉스선물단일종목레버리지",
-      "price": "2,780",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "SOL SK하이닉스단일종목레버리지",
-      "price": "2,630",
-      "change_percent": "+0.00%",
-      "pct": 0.0
-    }
-  ],
+  "top_gainers": [],
+  "top_losers": [],
   "sector_performance": [
     {
-      "name": "인터넷과카탈로그소매",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "화장품",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "항공사",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "게임엔터테인먼트",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     }
   ],
   "sector_heatmap": [
     {
-      "name": "인터넷과카탈로그소매",
+      "name": "음료",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "소프트웨어",
+      "name": "종이와목재",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "화장품",
+      "name": "호텔,레스토랑,레저",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "항공사",
+      "name": "건강관리업체및서비스",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "게임엔터테인먼트",
+      "name": "손해보험",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "제약",
+      "name": "출판",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "통신장비",
+      "name": "생물공학",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "복합기업",
+      "name": "방송과엔터테인먼트",
       "change_value": "+0.00%",
       "pct": 0.0
     },
     {
-      "name": "전기장비",
+      "name": "우주항공과국방",
+      "change_value": "+0.00%",
+      "pct": 0.0
+    },
+    {
+      "name": "전기제품",
       "change_value": "+0.00%",
       "pct": 0.0
     },
@@ -3093,12 +3036,7 @@
       "pct": 0.0
     },
     {
-      "name": "생명보험",
-      "change_value": "+0.00%",
-      "pct": 0.0
-    },
-    {
-      "name": "반도체와반도체장비",
+      "name": "건강관리장비와용품",
       "change_value": "+0.00%",
       "pct": 0.0
     }
