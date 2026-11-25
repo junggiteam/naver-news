@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 03:01:31",
+  "updated_at": "2026-11-26 03:31:35",
   "market_mood": {
     "label": "급락",
     "emoji": "🔴",
@@ -28,7 +28,12 @@
       "press_name": "연합뉴스"
     }
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "category": "증권",
+      "text": "미국 반도체 기업의 주가 하락 여파로 삼성전자와 SK하이닉스 등 주요 종목들이 약세를 보이면서 코스피와 코스닥 지수가 동반 하락했다. 특히 코스피와 코스피200 지수는 최근 117일간 데이터 기준으로 최저치를 기록하며 장중 사이드카가 발동되는 등 변동성이 확대되었다."
+    }
+  ],
   "daily_term": null,
   "keyword_tags": [],
   "dart_filings": [
@@ -38,7 +43,8 @@
       "report_nm": "[기재정정]주요사항보고서(영업양도결정)",
       "rcept_dt": "20261126",
       "rcept_no": "20261125000790",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000790"
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000790",
+      "ai_explanation": "회사가 사업 부문 일부를 다른 곳에 넘기기로 한 결정을 정정하여 다시 공시함."
     }
   ],
   "macro_indicators": [
