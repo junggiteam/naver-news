@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-26 11:48:35",
+  "updated_at": "2026-11-26 12:01:24",
   "market_mood": {
     "label": "상승",
     "emoji": "🔵",
-    "kospi_change": 1.09,
-    "kosdaq_change": 2.1,
-    "kospi_value": 4748.52,
-    "kosdaq_value": 664.33
+    "kospi_change": 0.61,
+    "kosdaq_change": 1.42,
+    "kospi_value": 4726.18,
+    "kosdaq_value": 659.89
   },
   "heroes": {
     "종합": {
@@ -64,10 +64,6 @@
     {
       "category": "부동산",
       "text": "서울 황학동 및 금천구 일대 등 노후 지역 정비 사업 추진"
-    },
-    {
-      "category": "증권",
-      "text": "한국은행의 기준금리 인상에도 불구하고 금리 고점 도달에 대한 신중론이 제기되면서 투자 심리가 개선되었다. 여기에 삼성SDI의 대규모 자사주 소각 발표와 함께 외국인과 기관 투자자의 동반 매수세가 유입되면서 지수 상승을 견인했다."
     }
   ],
   "daily_term": {
@@ -85,13 +81,22 @@
   ],
   "dart_filings": [
     {
+      "corp_name": "유디엠텍",
+      "corp_code": "01498576",
+      "report_nm": "주요사항보고서(유상증자결정)",
+      "rcept_dt": "20261126",
+      "rcept_no": "20261126000229",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000229",
+      "ai_explanation": "회사가 신주를 발행해 자본금을 늘리고 외부로부터 자금을 조달하기로 결정한 것입니다."
+    },
+    {
       "corp_name": "한창제지",
       "corp_code": "00163761",
       "report_nm": "주요사항보고서(자기주식취득결정)",
       "rcept_dt": "20261126",
       "rcept_no": "20261126000191",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000191",
-      "ai_explanation": "회사가 주가 안정 및 주주 가치 제고를 목적으로 자사 주식을 직접 매입하기로 결정함."
+      "ai_explanation": "회사가 자사 주가를 안정시키거나 주주 가치를 제고하기 위해 직접 자사주를 사들이는 것입니다."
     },
     {
       "corp_name": "AJ네트웍스",
@@ -100,7 +105,7 @@
       "rcept_dt": "20261126",
       "rcept_no": "20261126000182",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000182",
-      "ai_explanation": "회사가 자사주 매입을 위해 금융기관과 신탁 계약을 맺고 주식을 취득하기로 결정함."
+      "ai_explanation": "금융기관에 자금을 맡겨 간접적인 방식으로 자사주를 매입하겠다고 결정한 것입니다."
     },
     {
       "corp_name": "케이티클라우드",
@@ -109,7 +114,7 @@
       "rcept_dt": "20261126",
       "rcept_no": "20261126000123",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000123",
-      "ai_explanation": "회사가 사업 운영 등을 위해 토지, 건물, 설비 등 규모가 큰 자산을 사들이기로 결정함."
+      "ai_explanation": "건물, 기계장치 등 현금화하기 어려운 고가의 자산을 매입하기로 결정한 것입니다."
     },
     {
       "corp_name": "아티스트컴퍼니",
@@ -118,7 +123,7 @@
       "rcept_dt": "20261126",
       "rcept_no": "20261125000790",
       "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000790",
-      "ai_explanation": "회사의 특정 사업 부문을 다른 기업에 넘기기로 한 기존 공시 내용을 정정함."
+      "ai_explanation": "회사의 특정 사업부문이나 영업권을 다른 기업에 넘기기로 한 내용을 정정한 것입니다."
     }
   ],
   "macro_indicators": [
@@ -2985,41 +2990,41 @@
   "top_gainers": [
     {
       "name": "깨끗한나라",
-      "price": "1,649",
-      "change_percent": "+16.13%",
-      "pct": 16.13
+      "price": "1,752",
+      "change_percent": "+23.38%",
+      "pct": 23.38
     },
     {
       "name": "동양2우B",
-      "price": "4,520",
-      "change_percent": "+15.90%",
-      "pct": 15.9
-    },
-    {
-      "name": "SOL 우주항공밸류체인",
-      "price": "6,450",
-      "change_percent": "+11.59%",
-      "pct": 11.59
+      "price": "4,400",
+      "change_percent": "+12.82%",
+      "pct": 12.82
     },
     {
       "name": "깨끗한나라우",
-      "price": "6,500",
-      "change_percent": "+10.17%",
-      "pct": 10.17
+      "price": "7,100",
+      "change_percent": "+20.34%",
+      "pct": 20.34
     },
     {
-      "name": "롯데관광개발",
-      "price": "11,640",
+      "name": "SOL 우주항공밸류체인",
+      "price": "6,365",
       "change_percent": "+10.12%",
       "pct": 10.12
+    },
+    {
+      "name": "체시스",
+      "price": "4,185",
+      "change_percent": "+9.84%",
+      "pct": 9.84
     }
   ],
   "top_losers": [
     {
       "name": "서원",
-      "price": "638",
-      "change_percent": "-16.49%",
-      "pct": 16.49
+      "price": "628",
+      "change_percent": "-17.80%",
+      "pct": 17.8
     },
     {
       "name": "티와이홀딩스우",
@@ -3029,15 +3034,15 @@
     },
     {
       "name": "현대그린푸드",
-      "price": "17,860",
-      "change_percent": "-12.02%",
-      "pct": 12.02
+      "price": "17,970",
+      "change_percent": "-11.48%",
+      "pct": 11.48
     },
     {
       "name": "대창",
-      "price": "686",
-      "change_percent": "-9.74%",
-      "pct": 9.74
+      "price": "695",
+      "change_percent": "-8.55%",
+      "pct": 8.55
     },
     {
       "name": "신한 블룸버그 인버스2X WTI원유선물 ETN B",
@@ -3049,97 +3054,97 @@
   "sector_performance": [
     {
       "name": "창업투자",
-      "change_value": "+8.37%",
-      "pct": 8.37
+      "change_value": "+7.06%",
+      "pct": 7.06
     },
     {
       "name": "기타금융",
-      "change_value": "+5.45%",
-      "pct": 5.45
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+5.04%",
-      "pct": 5.04
+      "change_value": "+4.77%",
+      "pct": 4.77
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.52%",
-      "pct": 4.52
+      "change_value": "+4.54%",
+      "pct": 4.54
+    },
+    {
+      "name": "통신장비",
+      "change_value": "+4.15%",
+      "pct": 4.15
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+4.30%",
-      "pct": 4.3
+      "change_value": "+3.84%",
+      "pct": 3.84
     }
   ],
   "sector_heatmap": [
     {
       "name": "창업투자",
-      "change_value": "+8.37%",
-      "pct": 8.37
+      "change_value": "+7.06%",
+      "pct": 7.06
     },
     {
       "name": "기타금융",
-      "change_value": "+5.45%",
-      "pct": 5.45
-    },
-    {
-      "name": "통신장비",
-      "change_value": "+5.04%",
-      "pct": 5.04
+      "change_value": "+4.77%",
+      "pct": 4.77
     },
     {
       "name": "생명과학도구및서비스",
-      "change_value": "+4.52%",
-      "pct": 4.52
+      "change_value": "+4.54%",
+      "pct": 4.54
+    },
+    {
+      "name": "통신장비",
+      "change_value": "+4.15%",
+      "pct": 4.15
     },
     {
       "name": "전자장비와기기",
-      "change_value": "+4.30%",
-      "pct": 4.3
+      "change_value": "+3.84%",
+      "pct": 3.84
     },
     {
-      "name": "방송과엔터테인먼트",
-      "change_value": "+4.18%",
-      "pct": 4.18
+      "name": "사무용전자제품",
+      "change_value": "+3.41%",
+      "pct": 3.41
     },
     {
       "name": "부동산",
-      "change_value": "-1.67%",
-      "pct": -1.67
-    },
-    {
-      "name": "자동차",
-      "change_value": "-2.38%",
-      "pct": -2.38
+      "change_value": "-1.99%",
+      "pct": -1.99
     },
     {
       "name": "자동차부품",
-      "change_value": "-2.45%",
-      "pct": -2.45
+      "change_value": "-2.71%",
+      "pct": -2.71
+    },
+    {
+      "name": "자동차",
+      "change_value": "-2.95%",
+      "pct": -2.95
     },
     {
       "name": "무선통신서비스",
-      "change_value": "-3.10%",
-      "pct": -3.1
-    },
-    {
-      "name": "항공화물운송과물류",
-      "change_value": "-3.33%",
-      "pct": -3.33
+      "change_value": "-3.18%",
+      "pct": -3.18
     },
     {
       "name": "항공사",
-      "change_value": "-3.55%",
-      "pct": -3.55
+      "change_value": "-3.19%",
+      "pct": -3.19
+    },
+    {
+      "name": "항공화물운송과물류",
+      "change_value": "-3.47%",
+      "pct": -3.47
     }
   ],
   "article_counts": {
     "종합": 413,
     "경제": 30,
     "부동산": 30,
-    "증권": 80
+    "증권": 85
   },
   "article_count_trend": {
     "종합": {
@@ -3161,9 +3166,9 @@
       "surge": false
     },
     "증권": {
-      "today": 80,
+      "today": 85,
       "yesterday": 85,
-      "change_pct": -5.9,
+      "change_pct": 0.0,
       "surge": false
     }
   }
