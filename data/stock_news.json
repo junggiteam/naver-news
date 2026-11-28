@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28 16:01:06",
+  "updated_at": "2026-11-28 16:31:06",
   "indices": [
     {
       "name": "코스피",
@@ -122,17 +122,17 @@
     },
     {
       "name": "비트코인(원/코인)",
-      "value": "81,271,000",
-      "change_percent": "▲0.04%",
-      "direction": "up",
-      "as_of": "2026-11-28 16:01:00"
+      "value": "81,200,000",
+      "change_percent": "▼0.05%",
+      "direction": "down",
+      "as_of": "2026-11-28 16:31:00"
     },
     {
       "name": "이더리움(원/코인)",
-      "value": "2,253,000",
-      "change_percent": "▼0.18%",
+      "value": "2,252,000",
+      "change_percent": "▼0.22%",
       "direction": "down",
-      "as_of": "2026-11-28 16:01:01"
+      "as_of": "2026-11-28 16:31:02"
     }
   ],
   "news_categories": [
@@ -140,8 +140,16 @@
       "category": "시황·전망",
       "items": [
         {
-          "press_name": "연합뉴스TV",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "“참으면서 진행했는데 갑자기”…생방 중 눈물 쏟은 주식전문가, 왜?",
+          "link": "https://n.news.naver.com/mnews/article/009/0005770262?sid=101258401",
+          "upload_time": "20261128162211",
+          "published_at": "2026-11-28T16:22:11+09:00"
+        },
+        {
+          "press_name": "연합뉴스TV",
+          "rank": 2,
           "title": "뉴욕증시 일제히 상승…AI 투자 우려 완화",
           "link": "https://n.news.naver.com/mnews/article/422/0000930779?sid=101258401",
           "upload_time": "20261128113416",
@@ -149,15 +157,15 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 2,
-          "title": "“현대차 그때 더 팔걸” 김구라도 후회…반년 만에 주가 ‘폭삭’",
+          "rank": 3,
+          "title": "“70만원일 때 더 팔걸”…김구라도 후회한 현대차, 반년 새 64% 폭락",
           "link": "https://n.news.naver.com/mnews/article/018/0006416845?sid=101258401",
           "upload_time": "20261128112311",
           "published_at": "2026-11-28T11:23:11+09:00"
         },
         {
           "press_name": "한국경제",
-          "rank": 3,
+          "rank": 4,
           "title": "\"이제 살 때 아닌가요?\"…서학개미들 가장 위험한 순간",
           "link": "https://n.news.naver.com/mnews/article/015/0005359310?sid=101258401",
           "upload_time": "20261128110113",
@@ -165,7 +173,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 4,
+          "rank": 5,
           "title": "못 지나갈 법한 길도 ‘거뜬’…한계 지우는 지프 랭글러 루비콘 [온더로드]",
           "link": "https://n.news.naver.com/mnews/article/011/0004687125?sid=101258401",
           "upload_time": "20261128103111",
@@ -173,7 +181,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 5,
+          "rank": 6,
           "title": "메디큐브로 대박 났는데…3900억 주고 화장품 회사 또 산 이유[위클리IB]",
           "link": "https://n.news.naver.com/mnews/article/018/0006416829?sid=101258401",
           "upload_time": "20261128100415",
@@ -181,7 +189,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 6,
+          "rank": 7,
           "title": "[IPO챗] 연말 IPO 한파 속 내주 8개사 수요예측 예정",
           "link": "https://n.news.naver.com/mnews/article/001/0016468636?sid=101258401",
           "upload_time": "20261128090003",
@@ -189,7 +197,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 7,
+          "rank": 8,
           "title": "[머니플로우] 하락장에 \"빚투 겁난다\" 신용 잔고 13개월만에 최저",
           "link": "https://n.news.naver.com/mnews/article/001/0016468612?sid=101258401",
           "upload_time": "20261128080004",
@@ -197,7 +205,7 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 8,
+          "rank": 9,
           "title": "“주가 10만원 더 오릅니다”…현대오토에버 목표가 47만 원 나왔다 [줍줍 리포트]",
           "link": "https://n.news.naver.com/mnews/article/011/0004687095?sid=101258401",
           "upload_time": "20261128070026",
@@ -205,7 +213,7 @@
         },
         {
           "press_name": "중앙일보",
-          "rank": 9,
+          "rank": 10,
           "title": "코스피200 ETF 샀는데 삼전닉스가 58%…‘분산투자’의 배신",
           "link": "https://n.news.naver.com/mnews/article/025/0003568557?sid=101258401",
           "upload_time": "20261128070001",
@@ -213,7 +221,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 10,
+          "rank": 11,
           "title": "“오래 기다렸죠?” 돌아온 외국인…삼전닉스 내다팔더니 ‘이것’ 샀다",
           "link": "https://n.news.naver.com/mnews/article/009/0005770173?sid=101258401",
           "upload_time": "20261128062011",
@@ -221,7 +229,7 @@
         },
         {
           "press_name": "파이낸셜뉴스",
-          "rank": 11,
+          "rank": 12,
           "title": "[이번주 증시는?]사이드카가 '출근 도장' 찍은 롤코 증시..젠슨황 '하루천하' 뒤 극적 반전",
           "link": "https://n.news.naver.com/mnews/article/014/0005610973?sid=101258401",
           "upload_time": "20261128060114",
@@ -229,7 +237,7 @@
         },
         {
           "press_name": "중앙일보",
-          "rank": 12,
+          "rank": 13,
           "title": "반포 큰손들이 먼저 움직인다…주식 접고 택한 투자법",
           "link": "https://n.news.naver.com/mnews/article/025/0003568552?sid=101258401",
           "upload_time": "20261128060001",
@@ -237,7 +245,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 13,
+          "rank": 14,
           "title": "주가 오를때만 \"내 덕\"…美언론들, 약발 다한 '트럼프풋' 지적",
           "link": "https://n.news.naver.com/mnews/article/001/0016468536?sid=101258401",
           "upload_time": "20261128044353",
@@ -245,19 +253,11 @@
         },
         {
           "press_name": "서울경제",
-          "rank": 14,
+          "rank": 15,
           "title": "SK증권, 차기 각자대표 후보에 박삼규·최창훈",
           "link": "https://n.news.naver.com/mnews/article/011/0004687066?sid=101258401",
           "upload_time": "20261127234310",
           "published_at": "2026-11-27T23:43:10+09:00"
-        },
-        {
-          "press_name": "이데일리",
-          "rank": 15,
-          "title": "7만 아닌 4만전자?…전문가의 메모리 업황 경고",
-          "link": "https://n.news.naver.com/mnews/article/018/0006416764?sid=101258401",
-          "upload_time": "20261127225506",
-          "published_at": "2026-11-27T22:55:06+09:00"
         }
       ]
     },
@@ -390,8 +390,16 @@
       "category": "해외증시",
       "items": [
         {
-          "press_name": "아시아경제",
+          "press_name": "매일경제",
           "rank": 1,
+          "title": "“참으면서 진행했는데 갑자기”…생방 중 눈물 쏟은 주식전문가, 왜?",
+          "link": "https://n.news.naver.com/mnews/article/009/0005770262?sid=101258403",
+          "upload_time": "20261128162211",
+          "published_at": "2026-11-28T16:22:11+09:00"
+        },
+        {
+          "press_name": "아시아경제",
+          "rank": 2,
           "title": "젠슨황 복귀에 억울하다는 中…풀리지 않는 스파이 의혹[시사쇼]",
           "link": "https://n.news.naver.com/mnews/article/277/0005849042?sid=101258403",
           "upload_time": "20261128090000",
@@ -399,7 +407,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 2,
+          "rank": 3,
           "title": "美증시 에너지업종 올들어 37% 상승…AI에 가려진 주도주",
           "link": "https://n.news.naver.com/mnews/article/001/0016468625?sid=101258403",
           "upload_time": "20261128082008",
@@ -407,7 +415,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 3,
+          "rank": 4,
           "title": "[마켓엑세스] 시장지수 아래에 숨어있는 미국 증시의 새로운 기회",
           "link": "https://n.news.naver.com/mnews/article/018/0006416800?sid=101258403",
           "upload_time": "20261128080223",
@@ -415,7 +423,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 4,
+          "rank": 5,
           "title": "AI주 흔들렸는데 장비 주문은 늘었다…美증시 반등의 두 조건[주末머니]",
           "link": "https://n.news.naver.com/mnews/article/277/0005849035?sid=101258403",
           "upload_time": "20261128080000",
@@ -423,7 +431,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 5,
+          "rank": 6,
           "title": "[주末머니]AI 규제에 내수까지…中기술주, 내년 1분기가 분수령",
           "link": "https://n.news.naver.com/mnews/article/277/0005849031?sid=101258403",
           "upload_time": "20261128075000",
@@ -431,7 +439,7 @@
         },
         {
           "press_name": "한국경제",
-          "rank": 6,
+          "rank": 7,
           "title": "AI 투자 우려 속 기술주 반등…나스닥 2.3% 상승 [뉴욕증시]",
           "link": "https://n.news.naver.com/mnews/article/015/0005359282?sid=101258403",
           "upload_time": "20261128071212",
@@ -439,7 +447,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 7,
+          "rank": 8,
           "title": "한국서 5% 뛴 SK하이닉스, 미국선 7%대 급등…나스닥도 2.31%↑",
           "link": "https://n.news.naver.com/mnews/article/009/0005770181?sid=101258403",
           "upload_time": "20261128065908",
@@ -447,7 +455,7 @@
         },
         {
           "press_name": "연합뉴스",
-          "rank": 8,
+          "rank": 9,
           "title": "샌디스크 16%↑…메모리주, '이익절벽' 우려 속 주간 반등",
           "link": "https://n.news.naver.com/mnews/article/001/0016468562?sid=101258403",
           "upload_time": "20261128064201",
@@ -455,7 +463,7 @@
         },
         {
           "press_name": "매일경제",
-          "rank": 9,
+          "rank": 10,
           "title": "주식시장 새내기인데 첫날 몸값이 6.6조원…개미가 만나는 美 기업 달라졌다",
           "link": "https://n.news.naver.com/mnews/article/009/0005770178?sid=101258403",
           "upload_time": "20261128062907",
@@ -463,7 +471,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 10,
+          "rank": 11,
           "title": "\"증시도 블프다\" 저가매수 나선 월가…나스닥 2.3%↑[월스트리트in]",
           "link": "https://n.news.naver.com/mnews/article/018/0006416776?sid=101258403",
           "upload_time": "20261128034212",
@@ -471,7 +479,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 11,
+          "rank": 12,
           "title": "[속보]나스닥 2.3% 급등…다우는 4년만에 최고의 한 주",
           "link": "https://n.news.naver.com/mnews/article/018/0006416775?sid=101258403",
           "upload_time": "20261128031011",
@@ -479,7 +487,7 @@
         },
         {
           "press_name": "이데일리",
-          "rank": 12,
+          "rank": 13,
           "title": "부양책 시사+120조원대 자사주 매입…중국 선전지수 7% 뛰었다",
           "link": "https://n.news.naver.com/mnews/article/018/0006416686?sid=101258403",
           "upload_time": "20261127164507",
@@ -487,7 +495,7 @@
         },
         {
           "press_name": "아시아경제",
-          "rank": 13,
+          "rank": 14,
           "title": "中 국무원 '증시 안정' 주문에…상하이지수 3600선 회복",
           "link": "https://n.news.naver.com/mnews/article/277/0005848950?sid=101258403",
           "upload_time": "20261127161845",
@@ -495,19 +503,11 @@
         },
         {
           "press_name": "한국경제TV",
-          "rank": 14,
+          "rank": 15,
           "title": "반토막 난 중국 기술주…장중 날아든 소식에 14% 폭등",
           "link": "https://n.news.naver.com/mnews/article/215/0001274219?sid=101258403",
           "upload_time": "20261127160005",
           "published_at": "2026-11-27T16:00:05+09:00"
-        },
-        {
-          "press_name": "매일경제",
-          "rank": 15,
-          "title": "증시 ‘들었다 놨다’ 외국인 “하루 만에 1조 넘게 샀다”…코스피 4900선 회복",
-          "link": "https://n.news.naver.com/mnews/article/009/0005770008?sid=101258403",
-          "upload_time": "20261127155418",
-          "published_at": "2026-11-27T15:54:18+09:00"
         }
       ]
     },
@@ -711,7 +711,7 @@
       ]
     }
   ],
-  "ai_commentary": "미국 증시가 인공지능 관련 투자 심리 회복으로 상승 마감하면서 국내 증시도 투자자들의 매수세가 유입되며 동반 상승했다. 최근 증시 변동성이 확대되는 과정에서 외국인 투자자들의 수급 변화가 나타나며 지수 상승을 견인했다.",
+  "ai_commentary": "미국 증시가 인공지능 관련 투자 우려 완화로 일제히 상승하며 국내 증시에도 긍정적인 영향을 미쳤다. 지난주 사이드카가 발동되는 등 변동성이 컸던 국내 증시는 외국인 투자자들의 매수세가 유입되면서 코스피와 코스닥 지수가 큰 폭으로 반등했다.",
   "top_gainers": [
     {
       "name": "영흥",
